@@ -1,0 +1,227 @@
+body {font-family: "Lato", sans-serif;}
+
+.tabc{
+width: 57%; float:left;
+}
+
+.searchc{
+width: 100%;
+    float: left;
+}
+
+.thbanner{    margin-left: 2%;
+    width: 37%;     float: left;     margin-top: 51px;
+    }
+	
+.bimg{
+width: 100%;
+    margin-left: 2%;
+	padding-bottom: 3%;
+
+}	
+
+.anthumb{
+   width: 100% !important;
+    margin-left: 2% !important;
+}
+
+.pdfthumb{
+    width: 100% !important;
+    margin-left: 2% !important;
+}
+
+h2{
+
+font-size: 18px !important;
+    font-weight: 200;
+    margin-top: -20px;
+	}
+
+h3{
+font-weight: 100;
+}	
+
+.spanlabel{
+color: #f5821f; font-weight: 100; font-style: italic;
+}
+
+.seemore{
+color: #f5821f;
+}
+
+.presult{
+    margin-left: 2%;
+    width: 100%;
+	    margin-top: 2%;
+}
+
+.h2result{
+    padding: 9px 21px !important;
+    margin-top: 0%;
+}
+
+.rtxtp{
+padding: 9px 0% 0% 0% !important; 
+}
+.atxtp{
+padding-top: 3% !important;
+}
+
+.bmore{
+padding-top: 7px;
+}
+
+.ulist.tab{
+list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   /* border: 1px solid #ccc;
+    background-color: #f1f1f1;*/
+	    border-bottom: 1px solid #ccc;
+}
+
+
+
+
+/* Float the list items side by side */
+.ulist.tab.eff {float: left;
+    border-right: 1px solid #ccc;
+	    font-weight: 100;
+    border-bottom: none;
+}
+
+
+
+
+/* Style the links inside the list items */
+.ulist.tab.eff a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 10px/* 16px */;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+
+
+
+/* Change background color of links on hover */
+.ulist.tab.eff a:hover {
+   /* background-color: #ddd;
+	border-bottom: 2px solid #f5821f;
+	color: #f5821f;*/
+	    font-weight: bold;
+}
+
+/* Create an active/current tablink class */
+.ulist.tab.eff. a:focus, .activetab {
+   /* background-color: #ccc;*/
+	border-bottom: 2px solid #f5821f;
+	color: #f5821f !important;
+	    font-weight: bold;
+}
+
+.activetab{
+    /* background-color: #ccc; */
+    border-bottom: 2px solid #f5821f;
+    color: #f5821f !important;
+    font-weight: bold;
+
+}
+
+
+.ulist.tab.eff a:focus, .activeli {
+   /* background-color: #ccc;*/
+	border-bottom: 2px solid #f5821f;
+	color: #f5821f !important;
+	    font-weight: bold;
+}
+
+
+/* Style the tab content */
+.tabcontent {
+    padding: 6px 12px;
+    /*border: 1px solid #ccc;*/
+    border-top: none;
+}
+
+
+@media only screen and (max-width:360px){
+
+.tabc{
+width: 100%; 
+}
+
+.thbanner{   
+    width: 100%; 
+margin-left: 0%;
+    }
+
+.bimg{
+    margin-left: 0%;
+}		
+
+.anthumb{
+   margin-left: 0% !important;
+}	
+	
+.ulist.tab.eff{
+float: none;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+}
+
+
+@media only screen and (max-width:450px){
+.tabc{
+width: 100%; 
+}
+
+.thbanner{   
+    width: 100%; 
+margin-left: 0%;
+    }
+
+.bimg{
+    margin-left: 0%;
+}		
+
+.anthumb{
+   margin-left: 0% !important;
+}	
+
+.ulist.tab.eff{
+float: none;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+}
+
+
+@media only screen and (max-width: 980px){
+.tabc{
+width: 100%; 
+}
+
+.thbanner{   
+    width: 100%; 
+margin-left: 0%;
+    }
+
+.bimg{
+    margin-left: 0%;
+}		
+
+.anthumb{
+   margin-left: 0% !important;
+}
+
+.pdfthumb{
+     margin-left: 0% !important;
+}
+	
+}
