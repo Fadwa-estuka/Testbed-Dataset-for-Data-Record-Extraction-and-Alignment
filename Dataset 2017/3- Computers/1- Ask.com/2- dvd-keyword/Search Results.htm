@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]> <html lang='en' class='ie7'> <![endif]-->
+<!--[if IE 8 ]> <html lang='en' class='ie8'> <![endif]-->
+<!--[if IE 9 ]> <html lang='en' class='ie9'> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Ask.com - What's Your Question?</title>
+<script src="Search%20Results_files/ads"></script><script async="" src="Search%20Results_files/amzn_ads.js"></script><script async="" src="Search%20Results_files/10952.js"></script><script async="" src="Search%20Results_files/headertag"></script><script async="" src="Search%20Results_files/varccauds"></script><script async="" src="Search%20Results_files/gpt.js"></script><script type="text/javascript" async="" src="Search%20Results_files/analytics.js"></script><script async="" src="Search%20Results_files/beacon.js"></script><script async="" src="Search%20Results_files/gtm.js"></script><script async="" src="Search%20Results_files/iacpublisher.js"></script><script async="" src="Search%20Results_files/async-ads.js"></script><script type="text/javascript">
+var ss=function(){},cs=function(){};
+var _docReadyFns = [];
+$j = function(){return {ready:function(fn){_docReadyFns.push(fn);}};};
+window.onload = function() {
+for (var i = 0; i < _docReadyFns.length; i++) {
+var fn = _docReadyFns[i];
+if (typeof fn === 'function') fn.call(document, jQuery);
+}
+};
+var JASK = JASK || {};
+JASK.cfg = (function() {
+return {
+"ldomain":"www.ask.com" ,
+"_ldomain":"www.ask.com",
+"disableSearchBoxFocus":true,
+"appendSearchQuery":true,
+"fixedRR":false,
+"displayAdBelowFold":true,
+"landingPageVersion":"askV2",
+"sbFocusColor":"#a8d4f5",
+"fixedHeaderScroll":false,
+"baseImprovement":false,
+"flyoverDelay":"500"
+};
+})();
+</script>
+<script type="text/javascript">
+</script> <link rel="shortcut icon" href="http://www.ask.com/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.ask.com/ask-search.xml" title="Ask Search">
+<link rel="apple-touch-icon" href="http://www.ask.com/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="76x76" href="http://www.ask.com/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="120x120" href="http://www.ask.com/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="http://www.ask.com/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="http://www.ask.com/apple-touch-icon-180x180.png"> <meta name="robots" content="noindex, nofollow"> 
+<script type="text/javascript" charset="utf-8">
+(function(G,o,O,g,L,e){G[g]=G[g]||function(){(G[g]['q']=G[g]['q']||[]).push( arguments)},G[g]['t']=1*new Date;L=o.createElement(O),e=o.getElementsByTagName( O)[0];L.async=1;L.src='//www.google.com/adsense/search/async-ads.js'; e.parentNode.insertBefore(L,e)})(window,document,'script','_googCsa');
+</script>
+<script type="text/javascript" charset="utf-8">
+var ask = (typeof ask === 'undefined') ? {} : ask;
+ask.CSA = {};
+(function(){
+var _logInConsole = false,
+_csaStartTime = new Date(), _csaResponseTime = null,
+_domReady = false,
+_showSerpTimeoutCleared = false,
+_showSerpTimeoutLength = 2000,
+_showSerpTimer = null,
+_log = function(){
+if(('false' === 'true') && window.console && console.log) {
+console.log(Array.prototype.slice.call(arguments));
+}
+},
+_domCallbacks = [],
+_csaCallbacksObjects = [];
+ask.CSA.startTime = _csaStartTime;
+ask.CSA.responseReceived = false;
+ask.CSA.adsShown = false;
+ask.CSA.responseTime = null; ask.CSA.adsShownTime = null; ask.CSA.domReadyTime = null; ask.CSA.serpShownTime = null; ask.CSA.serpVisible = false;
+ask.CSA.showSerpTimeoutFired = false;
+ask.CSA.showSerpTimeoutLength = _showSerpTimeoutLength;
+ask.CSA.showSerpStartTime = null;
+ask.CSA.numTopAds = null;
+ask.CSA.numBottomAds = null;
+ask.CSA.numRightAds = null;
+ask.CSA.adDepth = null;
+ask.CSA.serpHiddenPreAds = null;
+ask.CSA.serpShownPostAds = null;
+ask.CSA.viewportHeight = null;
+ask.CSA.viewportWidth = null;
+ask.CSA.centerRailHeight = null;
+ask.CSA.centerRailWidth = null;
+ask.CSA.rightRailHeight = null;
+ask.CSA.rightRailWidth = null;
+ask.CSA.csaHeight = null;
+ask.CSA.csaWidth = null;
+ask.CSA.adContentRatio = null;
+ask.CSA.optimizeAdRequest = null;
+ask.CSA.calculateAdContentMetrics = null;
+ask.CSA.gslExtensions = null;
+ask.CSA.addCSALoadCallback = function(adsCb, timeoutCb, timeoutValue){
+_log("addCSALoadCallback", adsCb, timeoutCb, timeoutValue);
+var callbackObj = null;
+if(typeof adsCb !== "function") {
+return;
+}
+callbackObj = { adsCb: adsCb, timeoutCb: timeoutCb, timeoutValue: timeoutValue, timeout: null };
+if(ask.CSA.adsShown) {
+adsCb();
+} else {
+if(typeof timeoutCb === "function" && timeoutValue > 0) {
+callbackObj.timeout = setTimeout(function(){
+var idx = ask.CSA.indexOf(_csaCallbacksObjects, callbackObj);
+if(idx > -1) {
+handleCallbackTimeout(callbackObj);
+}
+}, timeoutValue);
+}
+_csaCallbacksObjects.push(callbackObj);
+}
+};
+ask.CSA.startShowSerpTimeout = function(){
+_log("startShowSerpTimeout", _showSerpTimeoutLength);
+_showSerpTimer = setTimeout(handleSerpTimeout, _showSerpTimeoutLength);
+ask.CSA.showSerpStartTime = new Date() - _csaStartTime;
+};
+ask.CSA.domReady = function(){
+_log("domReady");
+_domReady = true;
+ask.CSA.domReadyTime = new Date() - _csaStartTime;
+invokeCallbacks(_domCallbacks);
+};
+ask.CSA.showSerp = makeSerpVisible;
+ask.CSA.handleTopAdsLoaded = function(containerName, adsLoaded){
+_log("handleTopAdsLoaded " + adsLoaded);
+addBackgroundColor(adsLoaded, containerName, ask.CSA.adblock1["colorBackground"]);
+ask.CSA.adsShown = true;
+ask.CSA.adsShownTime = new Date() - _csaStartTime;
+makeSerpVisible();
+fireCSACallbacks();
+};
+ask.CSA.handleNoTopAdsLoaded = noAdLoadedCallback;
+ask.CSA.handleBottomAdsLoaded = function(containerName, adsLoaded){
+_log("handleBottomAdsLoaded " + adsLoaded);
+addBackgroundColor(adsLoaded, containerName, ask.CSA.adblock2["colorBackground"]);
+if (false) {
+ask.CSA.adsShown = true;
+ask.CSA.adsShownTime = new Date() - _csaStartTime;
+makeSerpVisible();
+fireCSACallbacks();
+}
+};
+ask.CSA.handleNoBottomAdsLoaded = noAdLoadedCallback;
+ask.CSA.handleRightAdsLoaded = function(containerName, adsLoaded){
+_log("handleRightAdsLoaded " + adsLoaded);
+addBackgroundColor(adsLoaded, containerName, ask.CSA.adblock3["colorBackground"]);
+};
+ask.CSA.handleNoRightAdsLoaded = noAdLoadedCallback;
+ask.CSA.handleCSAResponse = function(numAdsMap) {
+_log("handleCSAResponse " + numAdsMap);
+ask.CSA.responseTime = new Date() - _csaStartTime;
+if (numAdsMap["magic1"] != undefined) {
+ask.CSA.numTopAds = numAdsMap["magic1"];
+ask.CSA.adDepth = ask.CSA.numTopAds;
+}
+if (numAdsMap["magic2"] != undefined) {
+ask.CSA.numBottomAds = numAdsMap["magic2"];
+}
+if (ask.CSA.adDepth < ask.CSA.numBottomAds) {
+ask.CSA.adDepth = ask.CSA.numBottomAds;
+}
+if (numAdsMap["magic3"] != undefined) {
+ask.CSA.numRightAds = numAdsMap["magic3"];
+}
+if(_domReady) {
+processAdResponse();
+} else {
+_domCallbacks.push(processAdResponse);
+}
+};
+function processAdResponse(){
+_log("processAdResponse");
+ask.CSA.responseReceived = true;
+setCSAMetaDataCookie();
+}
+function isSerpVisible() {
+var visible = false,
+selectors = ["#midblock", "#rightblock", "#mobile-footer", ".mobile-web-results", ".hcsa", ".footer"],
+elems = null;
+for(var i = 0; i < selectors.length; i++) {
+if(visible) continue;
+try{
+elems = document.querySelectorAll(selectors[i]);
+} catch(e) {
+_log("Error fetching serp elements: " + e);
+}
+if(elems) {
+for(var j = 0; j < elems.length; j++) {
+visible=(visible || isVisible(elems[j]));
+}
+}
+}
+return visible;
+}
+function isVisible(elem) {
+var outOfFlow = (elem.offsetWidth !== 0 || elem.offsetHeight !== 0),
+invisible = false;
+try {
+invisible = (window.getComputedStyle(elem).getPropertyValue("visibility") === "hidden");
+} catch(e) {
+_log("Error getting style of elem: " + e);
+}
+return outOfFlow || invisible;
+}
+function makeSerpVisible() {
+if(ask.CSA.serpVisible) return;
+_log("makeSerpVisible");
+var css = '#mid-content,#right-content,#midblock,#rightblock,#mobile-footer,.mobile-web-results,.hcsa,.footer { visibility:visible;}';
+var head = document.getElementsByTagName('head')[0];
+var style = document.createElement('style');
+style.type = 'text/css';
+if (style.styleSheet){
+style.styleSheet.cssText = css;
+} else {
+style.appendChild(document.createTextNode(css));
+}
+head.appendChild(style);
+if (!_showSerpTimeoutCleared) {
+clearTimeout(_showSerpTimer);
+_showSerpTimeoutCleared = true;
+}
+ask.CSA.serpVisible = true;
+ask.CSA.serpShownTime = new Date() - _csaStartTime;
+}
+function setCSAMetaDataCookie(){
+var defaultDomain = '.ask.com',
+currentDomain = getRootDomain();
+if (currentDomain && currentDomain != '') {
+defaultDomain = currentDomain;
+}
+document.cookie = 'adDepth=' + ask.CSA.adDepth + ';path=/;domain=' + defaultDomain;
+document.cookie = 'ad_cnt=' + (ask.CSA.numTopAds + ask.CSA.numBottomAds) + ';path=/;domain='+ defaultDomain;
+}
+function getRootDomain() {
+try {
+var loc = document.createElement("a");
+loc.href = window.location.href;
+var hostArray = loc.hostname.split('.');
+var newArray = [hostArray[hostArray.length-2], hostArray[hostArray.length-1]];
+var rootDomain = '.'.concat(newArray.join('.'));
+return rootDomain;
+} catch(e) {
+console.log(e);
+return '';
+}
+}
+function updateMonitoringHash(){
+_log("updateMonitoringHash");
+var topAds = ask.CSA.numTopAds || 0,
+bottomAds = ask.CSA.numBottomAds || 0,
+rightAds = ask.CSA.numRightAds || 0,
+hash = "num_ads_top=" + topAds +
+"&num_ads_bottom=" + bottomAds +
+"&num_ads_right=" + rightAds +
+"&total_num_ads=" + (topAds + bottomAds) +
+"&content_hidden_pre_ads=" + (ask.CSA.serpHiddenPreAds ? 1 : 0) +
+"&content_shown_post_ads=" + (ask.CSA.serpShownPostAds ? 1 : 0) +
+"&ads_response_time_ms=" + ask.CSA.responseTime;
+window.location.hash = hash;
+}
+function updateMonitoringElement(){
+_log("updateMonitoringElement");
+var topAds = ask.CSA.numTopAds || 0,
+bottomAds = ask.CSA.numBottomAds || 0,
+rightAds = ask.CSA.numRightAds || 0,
+body = document.getElementsByTagName("body")[0],
+elem = document.createElement("div");
+elem.setAttribute("id", "csa-monitor-data");
+elem.setAttribute("style", "visibility: hidden;");
+elem.setAttribute("data-num_ads_top", topAds);
+elem.setAttribute("data-num_ads_bottom", bottomAds);
+elem.setAttribute("data-num_ads_right", rightAds);
+elem.setAttribute("data-total_num_ads", topAds + bottomAds + rightAds);
+elem.setAttribute("data-content_hidden_pre_ads", ask.CSA.serpHiddenPreAds ? 1 : 0);
+elem.setAttribute("data-content_shown_post_ads", ask.CSA.serpShownPostAds ? 1 : 0);
+elem.setAttribute("data-ads_response_time_ms", ask.CSA.responseTime);
+body.appendChild(elem);
+}
+function noAdLoadedCallback(containerName, adsLoaded) {
+_log("noAdLoadedCallback");
+function process(){
+var adContainer = document.getElementById(containerName);
+var csaBackfillRS = document.getElementById('top-csa-bkfil');
+if(adContainer) {
+adContainer.style.display = "none";
+}
+if(csaBackfillRS){
+csaBackfillRS.style.display = "block";
+}
+makeSerpVisible();
+}
+if(_domReady) {
+process();
+} else {
+_domCallbacks.push(process);
+}
+}
+function addBackgroundColor(adsLoaded, containerName, shadeSelector) {
+var adElement = document.getElementById(containerName);
+if (adElement) {
+adElement.style.backgroundColor = shadeSelector;
+}
+}
+function handleCallbackTimeout(callbackObj) {
+_log("handleCallbackTimeout", callbackObj);
+clearTimeout(callbackObj.timeout);
+callbackObj.timeoutCb();
+}
+function handleSerpTimeout() {
+_log("handleSerpTimeout");
+makeSerpVisible();
+ask.CSA.showSerpTimeoutFired = true;
+_showSerpTimeoutCleared = true;
+}
+function fireCSACallbacks(){
+_log("fireCSACallbacks");
+var csaCallbacks = [];
+for(var i = 0; i < _csaCallbacksObjects.length; i++) {
+csaCallbacks.push(_csaCallbacksObjects[i].adsCb);
+clearTimeout(_csaCallbacksObjects[i].timeout);
+}
+_csaCallbacksObjects = [];
+_log("csaCallbacks: ", csaCallbacks);
+invokeCallbacks(csaCallbacks);
+}
+function invokeCallbacks(callbacks) {
+if(callbacks.length) {
+for(var i = 0; i < callbacks.length; i++) {
+if(typeof callbacks[i] == "function") {
+_log("invoking callback " + i);
+try{
+callbacks[i].call(null);
+} catch(e){
+}
+}
+}
+callbacks.splice(0, callbacks.length);
+}
+}
+ask.CSA.optimizeAdRequest = function optimizeAdRequest(adblock) {
+var h = (Math.max(document.documentElement.clientHeight, window.innerHeight || 0));
+var w = (Math.max(document.documentElement.clientWidth, window.innerWidth || 0));
+var enabledForOrientation = "" === "true" ? true : h > w;
+var enabled = "";
+if(enabled === "true" && 800 > h && enabledForOrientation) {
+if(adblock && typeof adblock.maxTop !== "undefined") {
+adblock.maxTop -= 1;
+}
+}
+}
+})();
+_googCsa('jsLoadedCallback', function () {
+var pageOptions = ask.CSA.pageOptions = {"instantPreviews":false,"clickToCall":false,"plusOnes":true,"hl":"","offerExtension":false,"query":"dvd","linkTarget":"_blank","heightConstrained":false,"channel":"computers-hardware,orig_serpSearchTopBox,ud_desktop,ask-non-dla","adtest":"off","numRepeated":"5","adsafe":"medium","attributionSpacingBelow":7,"oe":"utf-8","rightHandAttribution":false,"siteLinks":true,"pubId":"aj-cat-intl","location":false,"domainLinkAboveDescription":true,"ie":"utf-8","isAndroidTablet":false,"adPage":"1","sellerRatings":true};
+if (pageOptions) {
+pageOptions['adsResponseCallback'] = ask.CSA.handleCSAResponse;
+}
+if (!false) {
+var adblock1 = ask.CSA.adblock1 = {"container":"magic1","lineHeightDomainLink":"18","colorBackground":"#FFFFFF","colorText":"#333333","fontSizeAttribution":"13","colorAttribution":"#333333","verticalSpacing":"9","clicktrackUrl":"//clk-askus.ask.com/clk?pos=top&q=dvd&qid=A532A5994B1D2495DBD46F494F4F05AD&ip=8ef43f87&o=0&l=dir&qsrc=1&page=1&cl=aj-cat-intl&ch=computers-hardware%2Corig_serpSearchTopBox%2Cud_desktop%2Cask-non-dla&c=a&p_uid=&p_clk_id=&anxu=http%3A%2F%2Fwww.ask.com%2Fweb&pl=6e386H%3DQr0%26yyE%3DhAgyQesff_dIq_Gorwxcfx%2BpLRs3d%25ft49o6sGx2mu2nvt%26vc%3DCgHTv%266U%3Db32f7v9ZchKSwNjtb%250qqOjeVaWh5LNz%26uW%3Dtf9Gvgs%26gV%3DZoA9Pcn6mNWGyl6b%26bWoY%3DEK-uIg-9Dwf%26ddz%3D2bVFZR7mo-X%25Loa2SrwwTofe6_3dCuP7lviKQ%2BqmWKSQuQr_NeFPvibGedgQs-svm-0G2%26Nk%3DQxJCoL%26Wo%3DYQA.Gyl%26aYO%3D%26Jy%3D5vPEDsBQQLS%268g%3DYhquS%267Hj%3DaR%26uE%3DR1f%26K8%3DR%26Yf%3D%267X%2B%3D%26Q%3DT&gclid=&up=e7d9J%3DfO3SbR%26DQ%3DUrR%26rx%3Dt5B%26OO.FLdxyC%3DlTL%26pf.O%2BukRh%3Dly-gMl-sLEF%26lY.JOFp2NeWJg45B%3DpV79IBCpp-OUsDcYgP%2C41JL_RjevMx%25SqwNSIu2N%2CEu_lZfIUkE%2CmXb-P8I-JM%25%26k%3D%25Fhfl%2B","colorTitleLink":"#3300B5","lineHeightTitle":"18","colorDomainLink":"#0E7744","lineHeightDescription":"18","fontSizeDescription":"15","width":"99.5%","fontSizeDomainLink":"14","colorAdSeparator":"#FFFFFF","clickableBackgrounds":true,"lines":"3","longerHeadlines":true,"fontSizeTitle":"18","detailedAttribution":true,"maxTop":"5"};
+if (adblock1) {
+adblock1['noAdLoadedCallback'] = ask.CSA.handleNoTopAdsLoaded;
+adblock1['adLoadedCallback'] = ask.CSA.handleTopAdsLoaded;
+}
+}
+var adblock2 = ask.CSA.adblock2 = {"container":"magic2","lineHeightDomainLink":"18","colorBackground":"#FFFFFF","colorText":"#333333","fontSizeAttribution":"13","colorAttribution":"#333333","verticalSpacing":"9","clicktrackUrl":"//clk-askus.ask.com/clk?pos=bottom&q=dvd&qid=A532A5994B1D2495DBD46F494F4F05AD&ip=8ef43f87&o=0&l=dir&qsrc=1&page=1&cl=aj-cat-intl&ch=computers-hardware%2Corig_serpSearchTopBox%2Cud_desktop%2Cask-non-dla&c=a&p_uid=&p_clk_id=&anxu=http%3A%2F%2Fwww.ask.com%2Fweb&pl=c12953%3DZAg%26KrF%3DNHSvviIc4_jwr_wBMFlz3SU0Xq4TJ3EGPpwHqok7sHq0He%26sp%3DPG9KF%26aL%3DM5RstnNtpWgCD8Noh8srylRi8fAlqgDx%266Q%3DA61VVUG%26NH%3Dk1hlRidP1pRZKz17%26RPhz%3DJk-g5J-veH1%26rAC%3D0kZE8XPlF-5qOIpP3JVMeBSUH_77ApGkAPUngVHtuZKt%25DS_2V7JoWj1RJ9vS-Obk-dNA%261t%3DD38KQf%26py%3DZo8.V73%26IlN%3D%26B0%3DHTYXx%2B3W6KG%26XV%3D9xWCa%26SOZ%3Dza%26%25U%3DeXn%26Ft%3Du%26vT%3D%26lk6%3D%26e%3DY&gclid=&up=fa38W%3Dt4SXD2%26%2BR%3Dvz3%26sg%3DDPG%26A5.WYZYg1%3D2wT%264N.IBrF80%3DHC-XG9-bUGW%26HD.RDyG%2BfCRPqRIz%3Di4xXq3T01-u5J%2B58al%2C1bcl_RAfdMYBMkaD3tqbf%2CcM_OPynxCC%2CwJ0-oOz-6Uq%26b%3D8feO2eMGx","colorTitleLink":"#3300B5","lineHeightTitle":"18","number":"5","colorDomainLink":"#0E7744","lineHeightDescription":"18","fontSizeDescription":"15","width":"99.5%","fontSizeDomainLink":"14","colorAdSeparator":"#FFFFFF","clickableBackgrounds":true,"lines":"3","longerHeadlines":true,"fontSizeTitle":"18","detailedAttribution":true};
+if (adblock2) {
+adblock2['noAdLoadedCallback'] = ask.CSA.handleNoBottomAdsLoaded;
+adblock2['adLoadedCallback'] = ask.CSA.handleBottomAdsLoaded;
+}
+if(typeof adblock1 != 'undefined' && null != adblock1 &&
+typeof ask.CSA.optimizeAdRequest === "function" && pageOptions.isAndroidTablet === true) {
+ask.CSA.optimizeAdRequest(adblock1);
+}
+function calculateSurplus(rr,ad,offset,win) {
+return win > 0 ? ((win+rr-offset) - (ad*2))/2 : -1;
+}
+function applyRules(surplus,breakpoints) {
+if(surplus > 0) {
+for(var i=0;i<breakpoints.length;i++) {
+var min = breakpoints[i].pixels;
+var max = breakpoints[i+1] ? breakpoints[i+1].pixels : 10000;
+if(surplus > min && surplus <= max) {
+return breakpoints[i].extensions || [];
+} else if(surplus < min) {
+return [];
+}
+}
+return breakpoints[i-1].extensions || [];
+} else {
+return [];
+}
+}
+function enableExtensions(extensions,csaCfg,pageCfg) {
+for(var i=0;i<extensions.length;i++) {
+var value = extensions[i].indexOf(':') != -1 ? extensions[i].substring(extensions[i].indexOf(':')+1) : true;
+var ext = extensions[i].indexOf(':') != -1 ? extensions[i].substring(0,extensions[i].indexOf(':')) : extensions[i];
+csaCfg[ext]=value;
+pageCfg[ext]=value;
+}
+var loggingParams = extensions.join(";").replace(/heightConstrained\:false/,"multiLineSiteLinks").replace(/siteLinks\;/,"");
+ask.CSA.gslExtensions = loggingParams;
+}
+var pl_rqnum = 0;
+var blocks = ['ads', pageOptions];
+if (typeof adblock1 != 'undefined' && null != adblock1) {
+pl_rqnum = parseInt(adblock1.maxTop);
+blocks.push(adblock1);
+}
+if (typeof adblock2 != 'undefined' && null != adblock2) {
+pl_rqnum = pl_rqnum + parseInt(adblock2.number);
+blocks.push(adblock2);
+}
+if (typeof adblock3 != 'undefined' && null != adblock3) {
+pl_rqnum = pl_rqnum + parseInt(adblock3.number);
+blocks.push(adblock3);
+}
+window['backfillParam'] = window.backfillParam || {};
+if (typeof adblock1 != 'undefined' && null != adblock1) {
+window['backfillParam']['pl_hex'] = adblock1.colorBackground ? adblock1.colorBackground : "#FFFFFF";
+window['backfillParam']['pl_clksp'] = adblock1.clickableBackgrounds;
+} else {
+window['backfillParam']['pl_hex'] = adblock2.colorBackground ? adblock2.colorBackground : "#FFFFFF";
+window['backfillParam']['pl_clksp'] = adblock2.clickableBackgrounds;
+}
+window['backfillParam']['pl_cl'] = pageOptions.pubId,
+window['backfillParam']['pl_ch'] = pageOptions.channel,
+window['backfillParam']['pl_type'] = 'csa';
+window['backfillParam']['pl_rp'] = (pageOptions.numRepeated) ? true : false;
+window['backfillParam']['pl_rqnum'] = pl_rqnum;
+window['backfillParam']['pl_timeout'] = ask.CSA.showSerpTimeoutLength ? ask.CSA.showSerpTimeoutLength : 0;
+try {
+_googCsa.apply(null, blocks);
+} catch (err) {
+ask.CSA.showSerp();
+}
+});
+ask.CSA.indexOf = function indexOf(inputObj, findObj) {
+for (var index = 0, length = inputObj.length; index < length; index++) {
+if (inputObj[index] === findObj) { return index; }
+}
+return -1;
+}
+</script>
+<style type="text/css">
+#magic1 {
+border-bottom: 1px solid #EBEBEB;
+}
+#magic2 {
+border-top: 1px solid #EBEBEB;
+}
+</style>
+<noscript>
+<style type="text/css">
+#midblock,#rightblock,#mobile-footer,.mobile-web-results,.hcsa,.footer {
+visibility:visible !important;
+}
+</style>
+</noscript>
+<link href="Search%20Results_files/sas-31783be6ccbbb998fa309ae0703961f3871fb977.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" id="displayAdConfiguration">
+/*********************************************************
+* Including the adyield libraries, load the library and
+* initalize the ad server
+*/
+var CONTAINER_TIMEOUT = 1500;
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+googletag.slots = googletag.slots || {};
+var iacjs = iacjs || {};
+iacjs.que = iacjs.que || [];
+window.asynLoader = function(scriptInfo) {
+var p, tag = document.createElement("script"),
+node = document.getElementsByTagName("script")[0];
+tag.async = true;
+for (p in scriptInfo) {
+if (scriptInfo.hasOwnProperty(p)) {
+tag[p] = scriptInfo[p];
+}
+}
+node.parentNode.insertBefore(tag, node);
+};
+function initAdServer() {
+if (iacjs.initAdserverSet) return;
+asynLoader({
+src: "//www.googletagservices.com/tag/js/gpt.js"
+});
+iacjs.initAdserverSet = true;
+}
+asynLoader({
+src: "//www.iacpublish.com/iacpublisher.min-ask.js"
+});
+get_request_identifier = (function() {
+return Math.random().toString(36).substr(2)
+}());
+</script>
+<script>
+var slotsDefined = [];
+slotsDefined.push({
+placement: 'dart-0',
+code: '/23219321/iac.ask-ask.us.dw/web/organic-dirN-0/0/',
+sizes: [
+[300, 250]
+],
+ad_uuid: "300x250_1",
+targeting: {
+pos: "bot",
+pos2: "300x250_1"
+}
+})
+var ad_config = {
+pageTargeting: {
+lang: "eng",
+loc: "us",
+ref: "direct",
+dc_ref: encodeURIComponent("http://www.ask.com/web?q=dvd&qsrc=1&o=0&l=dir&qo=serpSearchTopBox"),
+iabcat: "iab19-35",
+rpv: "4",
+ptype: "results",
+tx1: "dirN",
+tx2: "computers_and_electronics",
+ldid:"0",
+dow: new Date().getDay().toString(),
+rquid: get_request_identifier
+},
+slots: slotsDefined
+}
+</script>
+<script>
+iacjs.que.push(function() {
+iacjs.addAdUnits(ad_config.slots);
+iacjs.pageTargeting = ad_config.pageTargeting;
+iacjs.requestBids({
+bidsBackHandler: function() {
+window.initAdServer();
+}
+})
+});
+</script>
+<script>
+(function() {
+var slots = ad_config.slots || [];
+var index, pageTarget;
+var pageTargeting = ad_config.pageTargeting || {};
+var defineSlot = function(slot) {
+if (typeof slot === 'object') {
+(function(slot) {
+googletag.cmd.push(function() {
+googletag.slots[slot.placement] = googletag.defineSlot(slot.code, slot.sizes, slot.placement).addService(googletag.pubads());
+for (target in slot.targeting) {
+if (slot.targeting.hasOwnProperty(target)) {
+googletag.slots[slot.placement].setTargeting(target, slot.targeting[target])
+}
+}
+})
+})(slot)
+} else {
+console.log('slot not defined', slot)
+}
+};
+window.defineSlot = defineSlot;
+if (slots.length > 0) {
+for (index = 0; index < slots.length; index++) {
+defineSlot(slots[index]);
+}
+}
+googletag.cmd.push(function() {
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+googletag.cmd.push(function() {
+iacjs.que.push(function() {
+iacjs.setTargetingForGPTAsync();
+});
+});
+iacjs.timeout = window.setTimeout(initAdServer, CONTAINER_TIMEOUT);
+})();
+</script>
+<link type="text/css" rel="stylesheet" href="Search%20Results_files/ask_web.css">
+<style>
+.hcsa {
+visibility: hidden;
+}
+.sprite {
+background-image: url(//sp.ask.com/sh/i/images/ask-sprite-1.0.1.png);
+}
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+.sprite {
+background-image: url(//sp.ask.com/sh/i/images/ask-sprite-1.0.1-@2x.png);
+background-size: 111px 180px;
+}
+}
+#magic2 {
+border-bottom: 1px solid #ebebeb;
+}
+.rightrail-web-result-title-link{
+text-decoration: none;
+bottom: 5px;
+position: relative;
+}
+a.sa_headline, .web-results-more-link, .web-result-title-link, .news-result-item-link {
+text-decoration: none;
+}
+.sa a:hover{
+text-decoration: none;
+}
+.rightrail-web-results-title{
+display: block;
+color: #666;
+font-size: 13px;
+line-height: 16px;
+padding-bottom: 6px;
+}
+.web-result-title, .sa_headline {
+font-size: 18px;
+line-height: 20px;
+}
+.web-result-description {
+font-size: 15px;
+line-height: 18px;
+}
+.web-result-url {
+font-size: 14px;
+line-height: 16px;
+}
+.qna-title {
+font-size: 14px;
+font-weight: bold;
+line-height: 18px;
+}
+.qna-description {
+font-size: 14px;
+line-height: 18px;
+}
+.qna-source {
+font-size: 14px;
+line-height: 17px;
+}
+.related-search {
+padding-bottom: 9px;
+}
+.related-search-item-link {
+font-size: 16px;
+line-height: 18px;
+}
+.cloud-right {
+width: 310px;
+}
+.related-search-cloud-item-link {
+color: #3300b5;
+text-decoration: none;
+display: inline;
+font-size: 16px;
+line-height: 24px;
+}
+a.related-search-cloud-item-link:hover {
+text-decoration: underline;
+}
+.sa_abstract {
+font-size: 15px;
+line-height: 18px;
+}
+.sa_content_block{
+font-size: 14px;
+}
+#magic2 {
+border-bottom: none;
+}
+.related-search-item-link {
+display: block;
+line-height: 18px;
+text-overflow: ellipsis;
+overflow: hidden;
+}
+</style><script src="Search%20Results_files/cc.js" async="" id="LOTCC_4737"></script><script src="Search%20Results_files/i.js" async=""></script><style type="text/css">#mid-content,#right-content,#midblock,#rightblock,#mobile-footer,.mobile-web-results,.hcsa,.footer { visibility:visible;}</style><script src="Search%20Results_files/pubads_impl_110.js" async=""></script><link rel="prefetch" href="http://tpc.googlesyndication.com/safeframe/1-0-6/html/container.html"></head>
+ <body>
+<script type="text/javascript">
+var dataLayer = [
+{
+"channel": "web",
+"affiliateid": "0",
+"sessionid": "1721398918",
+"ldid": "",
+"acquisitiondivision": "dirN"
+}
+];
+</script>
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-T3KVMC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-T3KVMC');</script>
+<div class="l-header">
+<div class="searchbox">
+<div class="searchbox-logo sprite ur js-searchbox-logo">
+<a class="searchbox-logo-link" onmousedown="uaction(this,{up:'2d29Q=Sf1LR1&amp;a=hs1K6b&amp;7A=q&amp;vX=2TG+%TwgiO&amp;8g=63EFycRW4h&amp;K0=O&amp;GD=M2hZvJepl'});" title="Ask.com" href="http://www.ask.com/?qsrc=14137&amp;o=0&amp;l=dir">
+<span class="alt-text">askLogo</span>
+</a>
+</div>
+<div class="searchbox-wrapper">
+<div class="searchbox-container js-searchbox-container">
+<form id="js-searchbox-top-form" action="/web">
+<input id="js-top-q" data-ordinal="0" class="searchbox-q js-searchbox-q" value="dvd" name="q" autocomplete="off" autocorrect="off" autocapitalize="off" maxlength="2048" type="text">
+<input value="1" name="qsrc" type="hidden">
+<input value="0" name="o" type="hidden">
+<input value="dir" name="l" type="hidden">
+<input value="serpSearchTopBox" id="qo" name="qo" type="hidden">
+<button class="searchbox-button js-sb-button" type="submit" value="">
+<div class="searchbox-magnifier sprite"></div>
+</button>
+</form>
+<div class="ac_results" style="position: relative; display: none; max-height: 300px; z-index: 9999; left: -1px; top: 8px;"></div></div>
+<div class="searchbox-clear sprite js-searchbox-clear" title="clear"></div>
+<div class="searchbox-poweredby sprite"></div>
+</div>
+</div>
+<div class="nav-links ur">
+<ul>
+<li class="nav-links-active">Answers</li>
+<li>
+<span class="nav-separator">|</span>
+<a class="nav-link js-nav-link" onmousedown="uaction(this,{up:'e598h=0nf5tw&amp;U=wv0SjC&amp;A4=H&amp;f1=MfFT8qHHpB&amp;pr=i92FOEcQf+&amp;3R=X&amp;3O=E0bXrtK%r'});" href="http://www.ask.com/youtube?q=dvd&amp;qsrc=167&amp;qo=channelNavigation&amp;o=0&amp;l=dir">Videos</a>
+</li>
+</ul>
+</div> </div>
+<div class="l-content">
+<div class="l-mid-content hcsa">
+<div id="csaTop" class="ad-top"><div id="magic1" style="width: 99.5%; font-weight: normal; text-align: center; height: 484px; background-color: rgb(255, 255, 255);"><iframe marginwidth="0" marginheight="0" allowtransparency="true" scrolling="no" style="visibility: visible; height: 484px;" name="{&quot;name&quot;:&quot;master-1&quot;,&quot;slave-1-1&quot;:{&quot;clicktrackUrl&quot;:&quot;//clk-askus.ask.com/clk?pos=bottom&amp;q=dvd&amp;qid=A532A5994B1D2495DBD46F494F4F05AD&amp;ip=8ef43f87&amp;o=0&amp;l=dir&amp;qsrc=1&amp;page=1&amp;cl=aj-cat-intl&amp;ch=computers-hardware%2Corig_serpSearchTopBox%2Cud_desktop%2Cask-non-dla&amp;c=a&amp;p_uid=&amp;p_clk_id=&amp;anxu=http%3A%2F%2Fwww.ask.com%2Fweb&amp;pl=c12953%3DZAg%26KrF%3DNHSvviIc4_jwr_wBMFlz3SU0Xq4TJ3EGPpwHqok7sHq0He%26sp%3DPG9KF%26aL%3DM5RstnNtpWgCD8Noh8srylRi8fAlqgDx%266Q%3DA61VVUG%26NH%3Dk1hlRidP1pRZKz17%26RPhz%3DJk-g5J-veH1%26rAC%3D0kZE8XPlF-5qOIpP3JVMeBSUH_77ApGkAPUngVHtuZKt%25DS_2V7JoWj1RJ9vS-Obk-dNA%261t%3DD38KQf%26py%3DZo8.V73%26IlN%3D%26B0%3DHTYXx%2B3W6KG%26XV%3D9xWCa%26SOZ%3Dza%26%25U%3DeXn%26Ft%3Du%26vT%3D%26lk6%3D%26e%3DY&amp;gclid=&amp;up=fa38W%3Dt4SXD2%26%2BR%3Dvz3%26sg%3DDPG%26A5.WYZYg1%3D2wT%264N.IBrF80%3DHC-XG9-bUGW%26HD.RDyG%2BfCRPqRIz%3Di4xXq3T01-u5J%2B58al%2C1bcl_RAfdMYBMkaD3tqbf%2CcM_OPynxCC%2CwJ0-oOz-6Uq%26b%3D8feO2eMGx&quot;,&quot;container&quot;:&quot;magic2&quot;,&quot;linkTarget&quot;:&quot;_blank&quot;,&quot;verticalSpacing&quot;:&quot;9&quot;,&quot;lines&quot;:&quot;3&quot;,&quot;colorAdSeparator&quot;:&quot;#FFFFFF&quot;,&quot;colorText&quot;:&quot;#333333&quot;,&quot;colorTitleLink&quot;:&quot;#3300B5&quot;,&quot;colorDomainLink&quot;:&quot;#0E7744&quot;,&quot;colorBackground&quot;:&quot;#FFFFFF&quot;,&quot;colorAttribution&quot;:&quot;#333333&quot;,&quot;fontSizeTitle&quot;:&quot;18px&quot;,&quot;fontSizeDescription&quot;:&quot;15px&quot;,&quot;fontSizeDomainLink&quot;:&quot;14px&quot;,&quot;fontSizeAttribution&quot;:&quot;13px&quot;,&quot;rightHandAttribution&quot;:false,&quot;clickableBackgrounds&quot;:true,&quot;adIconLocation&quot;:&quot;ad-left&quot;,&quot;lineHeightTitle&quot;:&quot;18&quot;,&quot;lineHeightDescription&quot;:&quot;18&quot;,&quot;lineHeightDomainLink&quot;:&quot;18&quot;,&quot;domainLinkAboveDescription&quot;:true,&quot;heightConstrained&quot;:false,&quot;width&quot;:&quot;99.5%&quot;,&quot;detailedAttribution&quot;:true,&quot;attributionSpacingBelow&quot;:7,&quot;type&quot;:&quot;ads&quot;,&quot;hl&quot;:&quot;&quot;,&quot;columns&quot;:1,&quot;horizontalAlignment&quot;:&quot;left&quot;,&quot;resultsPageQueryParam&quot;:&quot;query&quot;},&quot;master-1&quot;:{&quot;clicktrackUrl&quot;:&quot;//clk-askus.ask.com/clk?pos=top&amp;q=dvd&amp;qid=A532A5994B1D2495DBD46F494F4F05AD&amp;ip=8ef43f87&amp;o=0&amp;l=dir&amp;qsrc=1&amp;page=1&amp;cl=aj-cat-intl&amp;ch=computers-hardware%2Corig_serpSearchTopBox%2Cud_desktop%2Cask-non-dla&amp;c=a&amp;p_uid=&amp;p_clk_id=&amp;anxu=http%3A%2F%2Fwww.ask.com%2Fweb&amp;pl=6e386H%3DQr0%26yyE%3DhAgyQesff_dIq_Gorwxcfx%2BpLRs3d%25ft49o6sGx2mu2nvt%26vc%3DCgHTv%266U%3Db32f7v9ZchKSwNjtb%250qqOjeVaWh5LNz%26uW%3Dtf9Gvgs%26gV%3DZoA9Pcn6mNWGyl6b%26bWoY%3DEK-uIg-9Dwf%26ddz%3D2bVFZR7mo-X%25Loa2SrwwTofe6_3dCuP7lviKQ%2BqmWKSQuQr_NeFPvibGedgQs-svm-0G2%26Nk%3DQxJCoL%26Wo%3DYQA.Gyl%26aYO%3D%26Jy%3D5vPEDsBQQLS%268g%3DYhquS%267Hj%3DaR%26uE%3DR1f%26K8%3DR%26Yf%3D%267X%2B%3D%26Q%3DT&amp;gclid=&amp;up=e7d9J%3DfO3SbR%26DQ%3DUrR%26rx%3Dt5B%26OO.FLdxyC%3DlTL%26pf.O%2BukRh%3Dly-gMl-sLEF%26lY.JOFp2NeWJg45B%3DpV79IBCpp-OUsDcYgP%2C41JL_RjevMx%25SqwNSIu2N%2CEu_lZfIUkE%2CmXb-P8I-JM%25%26k%3D%25Fhfl%2B&quot;,&quot;container&quot;:&quot;magic1&quot;,&quot;linkTarget&quot;:&quot;_blank&quot;,&quot;verticalSpacing&quot;:&quot;9&quot;,&quot;lines&quot;:&quot;3&quot;,&quot;colorAdSeparator&quot;:&quot;#FFFFFF&quot;,&quot;colorText&quot;:&quot;#333333&quot;,&quot;colorTitleLink&quot;:&quot;#3300B5&quot;,&quot;colorDomainLink&quot;:&quot;#0E7744&quot;,&quot;colorBackground&quot;:&quot;#FFFFFF&quot;,&quot;colorAttribution&quot;:&quot;#333333&quot;,&quot;fontSizeTitle&quot;:&quot;18px&quot;,&quot;fontSizeDescription&quot;:&quot;15px&quot;,&quot;fontSizeDomainLink&quot;:&quot;14px&quot;,&quot;fontSizeAttribution&quot;:&quot;13px&quot;,&quot;rightHandAttribution&quot;:false,&quot;clickableBackgrounds&quot;:true,&quot;adIconLocation&quot;:&quot;ad-left&quot;,&quot;lineHeightTitle&quot;:&quot;18&quot;,&quot;lineHeightDescription&quot;:&quot;18&quot;,&quot;lineHeightDomainLink&quot;:&quot;18&quot;,&quot;domainLinkAboveDescription&quot;:true,&quot;heightConstrained&quot;:false,&quot;width&quot;:&quot;99.5%&quot;,&quot;detailedAttribution&quot;:true,&quot;attributionSpacingBelow&quot;:7,&quot;type&quot;:&quot;ads&quot;,&quot;hl&quot;:&quot;&quot;,&quot;columns&quot;:1,&quot;horizontalAlignment&quot;:&quot;left&quot;,&quot;resultsPageQueryParam&quot;:&quot;query&quot;}}" id="master-1" src="Search%20Results_files/ads.htm" width="100%" frameborder="0"></iframe></div></div>
+<script>
+window['backfillParam'] = window['backfillParam'] || {};
+window['backfillParam']['pl_tmodn'] = 1;
+ask.CSA.startShowSerpTimeout();
+</script>
+<div class="l-web-results web-results content-mid">
+<div class="web-results-header-title">Web Results</div>
+<div class="ur web-result tsrc_SAS" data-zen="true">
+<div class="sasr sa_wide sa-cont ur" data-zen="true" data-en="asa" data-extended="da_sn=00090&amp;da_origin=raw&amp;da_sro=1789735&amp;da_lhs=1789729&amp;da_lhx=Amazon%3A+categories&amp;da_cat=16&amp;da_lhp=1&amp;da_partner=6" data-partner="6" data-area="82">
+<div class="sa" data-origin="raw" data-sn="00090" data-sro="1789735" data-lhs="1789729" data-desc="Amazon: categories">
+<a href="http://www.amazon.com/s/ref=nb_ss_gw?url=search-alias%3Daps&amp;field-keywords=Movies&amp;x=0&amp;y=0&amp;tag=askcom05-20" class="sa_headline sa_ext" target="_blank" onmousedown="uaction(this,{up:'fd19K=jSe%eCnhsS&amp;7=w1LpDL&amp;nw=b&amp;6Y=y5W4kw3VV%M&amp;r+=3Ya4pwCUj&amp;pp=m&amp;+i=E%E03o&amp;Vg=Ws2iheZKFVkjM7k&amp;yL.%dvY0fP8V0Bf=ocjF&amp;F3.z4GHAxf=9sJL98f&amp;ua.NNp%=3i&amp;By.gndhg=rl&amp;M3.MVXKGVIwXT=4&amp;Cy.ABlsYKU=M&amp;fQ.0gc4+CXB=O%&amp;wy.W2w7ncRy=%Vjja'});">Amazon.com results for <b>Movies</b></a>
+<div class="sa_col">
+<script>
+function sa_amazon_detect_img(target) {
+if(target.width==1&&target.height==1){
+target.src="http://sa.aos.ask.com/us/static/dd/noimg.png";
+}
+}
+</script>
+<div class="sa_amz_block">
+<div class="sa_amz_item">
+<a href="https://www.amazon.com/Arrival-Amy-Adams/dp/B01M3XJHGR%3FSubscriptionId%3D06KMPSHEDSXXQMQVT482%26tag%3Daskcom05-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB01M3XJHGR" class="sa_ext" target="_blank" onmousedown="uaction(this,{up:'fd19K=jSe%eCnhsS&amp;7=w1LpDL&amp;nw=b&amp;6Y=y5W4kw3VV%M&amp;r+=3Ya4pwCUj&amp;pp=m&amp;+i=E%E03o&amp;Vg=Ws2iheZKFVkjM7k&amp;yL.%dvY0fP8V0Bf=ocjF&amp;F3.z4GHAxf=9sJL98f&amp;ua.NNp%=3i&amp;By.gndhg=rl&amp;M3.MVXKGVIwXT=4&amp;Cy.ABlsYKU=M&amp;fQ.0gc4+CXB=O%&amp;wy.W2w7ncRy=%Vjja'});">
+<img src="Search%20Results_files/noimg.png" onload="sa_amazon_detect_img(this);">
+</a>
+</div>
+<div class="sa_amz_block_right">
+<div class="sa_amz_title">
+<a href="https://www.amazon.com/Arrival-Amy-Adams/dp/B01M3XJHGR%3FSubscriptionId%3D06KMPSHEDSXXQMQVT482%26tag%3Daskcom05-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB01M3XJHGR" class="title sa_ext" target="_blank" onmousedown="uaction(this,{up:'fd19K=jSe%eCnhsS&amp;7=w1LpDL&amp;nw=b&amp;6Y=y5W4kw3VV%M&amp;r+=3Ya4pwCUj&amp;pp=m&amp;+i=E%E03o&amp;Vg=Ws2iheZKFVkjM7k&amp;yL.%dvY0fP8V0Bf=ocjF&amp;F3.z4GHAxf=9sJL98f&amp;ua.NNp%=3i&amp;By.gndhg=rl&amp;M3.MVXKGVIwXT=4&amp;Cy.ABlsYKU=M&amp;fQ.0gc4+CXB=O%&amp;wy.W2w7ncRy=%Vjja'});">Arrival</a>
+</div>
+<div class="sa_amz_price">
+</div>
+</div>
+</div>
+<div class="sa_amz_block">
+<div class="sa_amz_item">
+<a href="https://www.amazon.com/Hacksaw-Ridge-Andrew-Garfield/dp/B01M4NFW68%3FSubscriptionId%3D06KMPSHEDSXXQMQVT482%26tag%3Daskcom05-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB01M4NFW68" class="sa_ext" target="_blank" onmousedown="uaction(this,{up:'fd19K=jSe%eCnhsS&amp;7=w1LpDL&amp;nw=b&amp;6Y=y5W4kw3VV%M&amp;r+=3Ya4pwCUj&amp;pp=m&amp;+i=E%E03o&amp;Vg=Ws2iheZKFVkjM7k&amp;yL.%dvY0fP8V0Bf=ocjF&amp;F3.z4GHAxf=9sJL98f&amp;ua.NNp%=3i&amp;By.gndhg=rl&amp;M3.MVXKGVIwXT=4&amp;Cy.ABlsYKU=M&amp;fQ.0gc4+CXB=O%&amp;wy.W2w7ncRy=%Vjja'});">
+<img src="Search%20Results_files/noimg.png" onload="sa_amazon_detect_img(this);">
+</a>
+</div>
+<div class="sa_amz_block_right">
+<div class="sa_amz_title">
+<a href="https://www.amazon.com/Hacksaw-Ridge-Andrew-Garfield/dp/B01M4NFW68%3FSubscriptionId%3D06KMPSHEDSXXQMQVT482%26tag%3Daskcom05-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB01M4NFW68" class="title sa_ext" target="_blank" onmousedown="uaction(this,{up:'fd19K=jSe%eCnhsS&amp;7=w1LpDL&amp;nw=b&amp;6Y=y5W4kw3VV%M&amp;r+=3Ya4pwCUj&amp;pp=m&amp;+i=E%E03o&amp;Vg=Ws2iheZKFVkjM7k&amp;yL.%dvY0fP8V0Bf=ocjF&amp;F3.z4GHAxf=9sJL98f&amp;ua.NNp%=3i&amp;By.gndhg=rl&amp;M3.MVXKGVIwXT=4&amp;Cy.ABlsYKU=M&amp;fQ.0gc4+CXB=O%&amp;wy.W2w7ncRy=%Vjja'});">Hacksaw Ridge</a>
+</div>
+<div class="sa_amz_price">
+</div>
+</div>
+</div>
+<div class="sa_amz_block">
+<div class="sa_amz_item">
+<a href="https://www.amazon.com/Trolls-Anna-Kendrick/dp/B01M8GGL9M%3FSubscriptionId%3D06KMPSHEDSXXQMQVT482%26tag%3Daskcom05-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB01M8GGL9M" class="sa_ext" target="_blank" onmousedown="uaction(this,{up:'fd19K=jSe%eCnhsS&amp;7=w1LpDL&amp;nw=b&amp;6Y=y5W4kw3VV%M&amp;r+=3Ya4pwCUj&amp;pp=m&amp;+i=E%E03o&amp;Vg=Ws2iheZKFVkjM7k&amp;yL.%dvY0fP8V0Bf=ocjF&amp;F3.z4GHAxf=9sJL98f&amp;ua.NNp%=3i&amp;By.gndhg=rl&amp;M3.MVXKGVIwXT=4&amp;Cy.ABlsYKU=M&amp;fQ.0gc4+CXB=O%&amp;wy.W2w7ncRy=%Vjja'});">
+<img src="Search%20Results_files/noimg.png" onload="sa_amazon_detect_img(this);">
+</a>
+</div>
+<div class="sa_amz_block_right">
+<div class="sa_amz_title">
+<a href="https://www.amazon.com/Trolls-Anna-Kendrick/dp/B01M8GGL9M%3FSubscriptionId%3D06KMPSHEDSXXQMQVT482%26tag%3Daskcom05-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB01M8GGL9M" class="title sa_ext" target="_blank" onmousedown="uaction(this,{up:'fd19K=jSe%eCnhsS&amp;7=w1LpDL&amp;nw=b&amp;6Y=y5W4kw3VV%M&amp;r+=3Ya4pwCUj&amp;pp=m&amp;+i=E%E03o&amp;Vg=Ws2iheZKFVkjM7k&amp;yL.%dvY0fP8V0Bf=ocjF&amp;F3.z4GHAxf=9sJL98f&amp;ua.NNp%=3i&amp;By.gndhg=rl&amp;M3.MVXKGVIwXT=4&amp;Cy.ABlsYKU=M&amp;fQ.0gc4+CXB=O%&amp;wy.W2w7ncRy=%Vjja'});">Trolls</a>
+</div>
+<div class="sa_amz_price">
+</div>
+</div>
+</div>
+<div class="sa_content_block" style="clear:both;"></div>
+<a href="http://www.amazon.com/s/ref=nb_ss_gw?url=search-alias%3Daps&amp;field-keywords=Movies&amp;x=0&amp;y=0&amp;tag=askcom05-20" class="sa_ext" target="_blank" onmousedown="uaction(this,{up:'fd19K=jSe%eCnhsS&amp;7=w1LpDL&amp;nw=b&amp;6Y=y5W4kw3VV%M&amp;r+=3Ya4pwCUj&amp;pp=m&amp;+i=E%E03o&amp;Vg=Ws2iheZKFVkjM7k&amp;yL.%dvY0fP8V0Bf=ocjF&amp;F3.z4GHAxf=9sJL98f&amp;ua.NNp%=3i&amp;By.gndhg=rl&amp;M3.MVXKGVIwXT=4&amp;Cy.ABlsYKU=M&amp;fQ.0gc4+CXB=O%&amp;wy.W2w7ncRy=%Vjja'});">More products from Amazon.com »</a>
+</div>
+</div>
+</div>
+<div class="clear-both"></div>
+</div>
+<div class="ur web-result tsrc_SAS" data-zen="true">
+<div class="sasr sa_wide sa-cont ur" data-zen="true" data-en="pgsa" data-extended="da_sn=00090&amp;da_origin=raw&amp;da_sro=2138881&amp;da_lhs=2138840&amp;da_lhx=PriceGrabber%3A+simple&amp;da_cat=16&amp;da_lhp=1&amp;da_partner=18" data-partner="18" data-area="51">
+<div class="sa sa_blended" data-origin="raw" data-sn="00090" data-sro="2138881" data-lhs="2138840" data-desc="PriceGrabber: simple">
+<a href="http://shop411.com/shopping?q=dvd&amp;o=23070&amp;qo=shoppingSmartAnswer" class="sa_headline sa_clt" onmousedown="uaction(this,{up:'31091=vgaWF34B9i&amp;v=kUcyYT&amp;Qo=4&amp;sr=+rxyGpSq0xQ&amp;YZ=XgJBQ5aag&amp;a0=n&amp;Cj=tZKTtMFrkqZ6&amp;Wd=mfnq5bG2N1nLdlJ&amp;9z.zYf8zkJCDoE7=hZxQ&amp;I%.XAS%8pB=X3Sfg0F&amp;+F.NHdZ=9x&amp;AJ.zZmNK=fL9&amp;Cd.pZ+FKan8th=e&amp;PC.4j69s69=1k&amp;QZ.kf6%i47E=K4&amp;0x.Fmh4V1Us=u+Fai'});">Shopping results for <b>dvd</b></a>
+<div class="sa_col">
+<div class="sa_shop_item">
+<div class="sa_shop_img">
+<a href="http://rd.bizrate.com/rd?t=http%3A%2F%2Fc.affil.walmart.com%2Ft%2Fcsebr01%3Fl%3Dhttp%253A%252F%252Fwww.walmart.com%252Fip%252FONN-9-Portable-DVD-Player-with-Matching-Headphones-and-Bag%252F51234556%253Fwmlspartner%253Dbizratecom%2526affcmpid%253D2550549250%2526tmode%253D0000%2526bcfg%253D5b4fa28d2b45e2b3b8e604da7bf5df7b%2526veh%253Dcse%26szredirectid%3DSZ_REDIRECT_ID&amp;mid=401&amp;cat_id=11530000&amp;atom=10395&amp;prod_id=&amp;oid=6771875373&amp;pos=1&amp;b_id=18&amp;bid_type=1&amp;bamt=78dd84de4e0292ec&amp;cobrand=1&amp;ppr=ea6316be792c3b6c&amp;af_sid=94&amp;mpid=51234556&amp;keyword=dvd&amp;rf=af1&amp;af_assettype_id=10&amp;af_creative_id=2912&amp;af_id=615133&amp;af_placement_id=1" class="sa_ext" target="_blank" onmousedown="uaction(this,{up:'31091=vgaWF34B9i&amp;v=kUcyYT&amp;Qo=4&amp;sr=+rxyGpSq0xQ&amp;YZ=XgJBQ5aag&amp;a0=n&amp;Cj=tZKTtMFrkqZ6&amp;Wd=mfnq5bG2N1nLdlJ&amp;9z.zYf8zkJCDoE7=hZxQ&amp;I%.XAS%8pB=X3Sfg0F&amp;+F.NHdZ=9x&amp;AJ.zZmNK=fL9&amp;Cd.pZ+FKan8th=e&amp;PC.4j69s69=1k&amp;QZ.kf6%i47E=K4&amp;0x.Fmh4V1Us=u+Fai'});">
+<img src="Search%20Results_files/6771875373.jpg">
+</a>
+</div>
+<div class="sa_shop_title">
+<a href="http://rd.bizrate.com/rd?t=http%3A%2F%2Fc.affil.walmart.com%2Ft%2Fcsebr01%3Fl%3Dhttp%253A%252F%252Fwww.walmart.com%252Fip%252FONN-9-Portable-DVD-Player-with-Matching-Headphones-and-Bag%252F51234556%253Fwmlspartner%253Dbizratecom%2526affcmpid%253D2550549250%2526tmode%253D0000%2526bcfg%253D5b4fa28d2b45e2b3b8e604da7bf5df7b%2526veh%253Dcse%26szredirectid%3DSZ_REDIRECT_ID&amp;mid=401&amp;cat_id=11530000&amp;atom=10395&amp;prod_id=&amp;oid=6771875373&amp;pos=1&amp;b_id=18&amp;bid_type=1&amp;bamt=78dd84de4e0292ec&amp;cobrand=1&amp;ppr=ea6316be792c3b6c&amp;af_sid=94&amp;mpid=51234556&amp;keyword=dvd&amp;rf=af1&amp;af_assettype_id=10&amp;af_creative_id=2912&amp;af_id=615133&amp;af_placement_id=1" class="sa_ext" target="_blank" onmousedown="uaction(this,{up:'31091=vgaWF34B9i&amp;v=kUcyYT&amp;Qo=4&amp;sr=+rxyGpSq0xQ&amp;YZ=XgJBQ5aag&amp;a0=n&amp;Cj=tZKTtMFrkqZ6&amp;Wd=mfnq5bG2N1nLdlJ&amp;9z.zYf8zkJCDoE7=hZxQ&amp;I%.XAS%8pB=X3Sfg0F&amp;+F.NHdZ=9x&amp;AJ.zZmNK=fL9&amp;Cd.pZ+FKan8th=e&amp;PC.4j69s69=1k&amp;QZ.kf6%i47E=K4&amp;0x.Fmh4V1Us=u+Fai'});">ONN 9" Portable DVD Player with</a>
+</div>
+<div class="sa_shop_price">
+$54.99
+</div>
+<div class="sa_shop_merchants">
+Walmart.com
+</div>
+</div>
+<div class="sa_shop_item">
+<div class="sa_shop_img">
+<a href="http://rd.bizrate.com/rd?t=http%3A%2F%2Fc.affil.walmart.com%2Ft%2Fcsebr01%3Fl%3Dhttp%253A%252F%252Fwww.walmart.com%252Fip%252FONN-9-Portable-DVD-Player-with-Matching-Headphones-and-Bag%252F51234548%253Fwmlspartner%253Dbizratecom%2526affcmpid%253D1862683432%2526tmode%253D0000%2526bcfg%253D5b4fa28d2b45e2b3b8e604da7bf5df7b%2526veh%253Dcse%26szredirectid%3DSZ_REDIRECT_ID&amp;mid=401&amp;cat_id=11530000&amp;atom=10395&amp;prod_id=&amp;oid=6771851675&amp;pos=1&amp;b_id=18&amp;bid_type=1&amp;bamt=78dd84de4e0292ec&amp;cobrand=1&amp;ppr=ea6316be792c3b6c&amp;af_sid=94&amp;mpid=51234548&amp;keyword=dvd&amp;rf=af1&amp;af_assettype_id=10&amp;af_creative_id=2912&amp;af_id=615133&amp;af_placement_id=1" class="sa_ext" target="_blank" onmousedown="uaction(this,{up:'31091=vgaWF34B9i&amp;v=kUcyYT&amp;Qo=4&amp;sr=+rxyGpSq0xQ&amp;YZ=XgJBQ5aag&amp;a0=n&amp;Cj=tZKTtMFrkqZ6&amp;Wd=mfnq5bG2N1nLdlJ&amp;9z.zYf8zkJCDoE7=hZxQ&amp;I%.XAS%8pB=X3Sfg0F&amp;+F.NHdZ=9x&amp;AJ.zZmNK=fL9&amp;Cd.pZ+FKan8th=e&amp;PC.4j69s69=1k&amp;QZ.kf6%i47E=K4&amp;0x.Fmh4V1Us=u+Fai'});">
+<img src="Search%20Results_files/6771851675.jpg">
+</a>
+</div>
+<div class="sa_shop_title">
+<a href="http://rd.bizrate.com/rd?t=http%3A%2F%2Fc.affil.walmart.com%2Ft%2Fcsebr01%3Fl%3Dhttp%253A%252F%252Fwww.walmart.com%252Fip%252FONN-9-Portable-DVD-Player-with-Matching-Headphones-and-Bag%252F51234548%253Fwmlspartner%253Dbizratecom%2526affcmpid%253D1862683432%2526tmode%253D0000%2526bcfg%253D5b4fa28d2b45e2b3b8e604da7bf5df7b%2526veh%253Dcse%26szredirectid%3DSZ_REDIRECT_ID&amp;mid=401&amp;cat_id=11530000&amp;atom=10395&amp;prod_id=&amp;oid=6771851675&amp;pos=1&amp;b_id=18&amp;bid_type=1&amp;bamt=78dd84de4e0292ec&amp;cobrand=1&amp;ppr=ea6316be792c3b6c&amp;af_sid=94&amp;mpid=51234548&amp;keyword=dvd&amp;rf=af1&amp;af_assettype_id=10&amp;af_creative_id=2912&amp;af_id=615133&amp;af_placement_id=1" class="sa_ext" target="_blank" onmousedown="uaction(this,{up:'31091=vgaWF34B9i&amp;v=kUcyYT&amp;Qo=4&amp;sr=+rxyGpSq0xQ&amp;YZ=XgJBQ5aag&amp;a0=n&amp;Cj=tZKTtMFrkqZ6&amp;Wd=mfnq5bG2N1nLdlJ&amp;9z.zYf8zkJCDoE7=hZxQ&amp;I%.XAS%8pB=X3Sfg0F&amp;+F.NHdZ=9x&amp;AJ.zZmNK=fL9&amp;Cd.pZ+FKan8th=e&amp;PC.4j69s69=1k&amp;QZ.kf6%i47E=K4&amp;0x.Fmh4V1Us=u+Fai'});">ONN 9" Portable DVD Player with</a>
+</div>
+<div class="sa_shop_price">
+$54.99
+</div>
+<div class="sa_shop_merchants">
+Walmart.com
+</div>
+</div>
+<div class="sa_shop_item">
+<div class="sa_shop_img">
+<a href="http://rd.bizrate.com/rd?t=http%3A%2F%2Fc.affil.walmart.com%2Ft%2Fcsebr01%3Fl%3Dhttp%253A%252F%252Fwww.walmart.com%252Fip%252FEmatic-14-Portable-DVD-Player-with-Remote-Carrying-Case-and-Headphones%252F54591088%253Fwmlspartner%253Dbizratecom%2526affcmpid%253D1426475832%2526tmode%253D0000%2526bcfg%253D5b4fa28d2b45e2b3b8e604da7bf5df7b%2526veh%253Dcse%26szredirectid%3DSZ_REDIRECT_ID&amp;mid=401&amp;cat_id=11530000&amp;atom=10395&amp;prod_id=&amp;oid=7066204580&amp;pos=1&amp;b_id=18&amp;bid_type=1&amp;bamt=78dd84de4e0292ec&amp;cobrand=1&amp;ppr=c534ae4970c9a25d&amp;af_sid=94&amp;mpid=54591088&amp;brandId=736563&amp;keyword=dvd&amp;rf=af1&amp;af_assettype_id=10&amp;af_creative_id=2912&amp;af_id=615133&amp;af_placement_id=1" class="sa_ext" target="_blank" onmousedown="uaction(this,{up:'31091=vgaWF34B9i&amp;v=kUcyYT&amp;Qo=4&amp;sr=+rxyGpSq0xQ&amp;YZ=XgJBQ5aag&amp;a0=n&amp;Cj=tZKTtMFrkqZ6&amp;Wd=mfnq5bG2N1nLdlJ&amp;9z.zYf8zkJCDoE7=hZxQ&amp;I%.XAS%8pB=X3Sfg0F&amp;+F.NHdZ=9x&amp;AJ.zZmNK=fL9&amp;Cd.pZ+FKan8th=e&amp;PC.4j69s69=1k&amp;QZ.kf6%i47E=K4&amp;0x.Fmh4V1Us=u+Fai'});">
+<img src="Search%20Results_files/7066204580.jpg">
+</a>
+</div>
+<div class="sa_shop_title">
+<a href="http://rd.bizrate.com/rd?t=http%3A%2F%2Fc.affil.walmart.com%2Ft%2Fcsebr01%3Fl%3Dhttp%253A%252F%252Fwww.walmart.com%252Fip%252FEmatic-14-Portable-DVD-Player-with-Remote-Carrying-Case-and-Headphones%252F54591088%253Fwmlspartner%253Dbizratecom%2526affcmpid%253D1426475832%2526tmode%253D0000%2526bcfg%253D5b4fa28d2b45e2b3b8e604da7bf5df7b%2526veh%253Dcse%26szredirectid%3DSZ_REDIRECT_ID&amp;mid=401&amp;cat_id=11530000&amp;atom=10395&amp;prod_id=&amp;oid=7066204580&amp;pos=1&amp;b_id=18&amp;bid_type=1&amp;bamt=78dd84de4e0292ec&amp;cobrand=1&amp;ppr=c534ae4970c9a25d&amp;af_sid=94&amp;mpid=54591088&amp;brandId=736563&amp;keyword=dvd&amp;rf=af1&amp;af_assettype_id=10&amp;af_creative_id=2912&amp;af_id=615133&amp;af_placement_id=1" class="sa_ext" target="_blank" onmousedown="uaction(this,{up:'31091=vgaWF34B9i&amp;v=kUcyYT&amp;Qo=4&amp;sr=+rxyGpSq0xQ&amp;YZ=XgJBQ5aag&amp;a0=n&amp;Cj=tZKTtMFrkqZ6&amp;Wd=mfnq5bG2N1nLdlJ&amp;9z.zYf8zkJCDoE7=hZxQ&amp;I%.XAS%8pB=X3Sfg0F&amp;+F.NHdZ=9x&amp;AJ.zZmNK=fL9&amp;Cd.pZ+FKan8th=e&amp;PC.4j69s69=1k&amp;QZ.kf6%i47E=K4&amp;0x.Fmh4V1Us=u+Fai'});">Ematic 14" Portable DVD Player</a>
+</div>
+<div class="sa_shop_price">
+$82.41
+</div>
+<div class="sa_shop_merchants">
+Walmart.com
+</div>
+</div>
+<div class="sa_shop_item sa_shop_item_div">
+<div class="sa_shop_img">
+<a href="http://rd.bizrate.com/rd?t=http%3A%2F%2Fwww.buydig.com%2Fshop%2Fproduct.aspx%3Fsku%3DHPP4K16UTABA%26ref%3DConnexity_Buydig%26omid%3D105%26utm_source%3DConnexity_Buydig%26utm_medium%3DCSE%26utm_item%3DHPP4K16UTABA%26CAWELAID%3D230005120001696116&amp;mid=24992&amp;cat_id=461&amp;atom=10038&amp;prod_id=7002488933&amp;oid=7208435923&amp;pos=1&amp;b_id=18&amp;bid_type=8&amp;bamt=48cd9202db195e9b&amp;cobrand=1&amp;ppr=3dd241e89a212a46&amp;af_sid=94&amp;mpid=HPP4K16UTABA&amp;brandId=32295&amp;keyword=dvd&amp;rf=af1&amp;af_assettype_id=10&amp;af_creative_id=2912&amp;af_id=615133&amp;af_placement_id=1" class="sa_ext" target="_blank" onmousedown="uaction(this,{up:'31091=vgaWF34B9i&amp;v=kUcyYT&amp;Qo=4&amp;sr=+rxyGpSq0xQ&amp;YZ=XgJBQ5aag&amp;a0=n&amp;Cj=tZKTtMFrkqZ6&amp;Wd=mfnq5bG2N1nLdlJ&amp;9z.zYf8zkJCDoE7=hZxQ&amp;I%.XAS%8pB=X3Sfg0F&amp;+F.NHdZ=9x&amp;AJ.zZmNK=fL9&amp;Cd.pZ+FKan8th=e&amp;PC.4j69s69=1k&amp;QZ.kf6%i47E=K4&amp;0x.Fmh4V1Us=u+Fai'});">
+<img src="Search%20Results_files/7208435923.jpg">
+</a>
+</div>
+<div class="sa_shop_title">
+<a href="http://rd.bizrate.com/rd?t=http%3A%2F%2Fwww.buydig.com%2Fshop%2Fproduct.aspx%3Fsku%3DHPP4K16UTABA%26ref%3DConnexity_Buydig%26omid%3D105%26utm_source%3DConnexity_Buydig%26utm_medium%3DCSE%26utm_item%3DHPP4K16UTABA%26CAWELAID%3D230005120001696116&amp;mid=24992&amp;cat_id=461&amp;atom=10038&amp;prod_id=7002488933&amp;oid=7208435923&amp;pos=1&amp;b_id=18&amp;bid_type=8&amp;bamt=48cd9202db195e9b&amp;cobrand=1&amp;ppr=3dd241e89a212a46&amp;af_sid=94&amp;mpid=HPP4K16UTABA&amp;brandId=32295&amp;keyword=dvd&amp;rf=af1&amp;af_assettype_id=10&amp;af_creative_id=2912&amp;af_id=615133&amp;af_placement_id=1" class="sa_ext" target="_blank" onmousedown="uaction(this,{up:'31091=vgaWF34B9i&amp;v=kUcyYT&amp;Qo=4&amp;sr=+rxyGpSq0xQ&amp;YZ=XgJBQ5aag&amp;a0=n&amp;Cj=tZKTtMFrkqZ6&amp;Wd=mfnq5bG2N1nLdlJ&amp;9z.zYf8zkJCDoE7=hZxQ&amp;I%.XAS%8pB=X3Sfg0F&amp;+F.NHdZ=9x&amp;AJ.zZmNK=fL9&amp;Cd.pZ+FKan8th=e&amp;PC.4j69s69=1k&amp;QZ.kf6%i47E=K4&amp;0x.Fmh4V1Us=u+Fai'});">HP Business 800G2ED TWR i56500</a>
+</div>
+<div class="sa_shop_price">
+$911.10
+</div>
+<div class="sa_shop_merchants">
+Buydig.com
+</div>
+</div>
+<div class="sa_shop_item">
+<div class="sa_shop_img">
+<a href="http://rd.bizrate.com/rd?t=https%3A%2F%2Fjet.com%2Fproduct%2Fdetail%2F7e145cf9d4c5408fb59c611594604ef9%3Fjcmp%3Dplacse%3Acnx%3ANJ%3AElectronics%3AComputers_Accessories%3ADesktops%3Adur%3Ana&amp;mid=297996&amp;cat_id=461&amp;atom=10038&amp;prod_id=&amp;oid=7156209522&amp;pos=1&amp;b_id=18&amp;bid_type=8&amp;bamt=2fed68ce8c2e85f1&amp;cobrand=1&amp;ppr=374a038886b2df72&amp;af_sid=94&amp;mpid=7e145cf9d4c5408fb59c611594604ef9&amp;keyword=dvd&amp;rf=af1&amp;af_assettype_id=10&amp;af_creative_id=2912&amp;af_id=615133&amp;af_placement_id=1" class="sa_ext" target="_blank" onmousedown="uaction(this,{up:'31091=vgaWF34B9i&amp;v=kUcyYT&amp;Qo=4&amp;sr=+rxyGpSq0xQ&amp;YZ=XgJBQ5aag&amp;a0=n&amp;Cj=tZKTtMFrkqZ6&amp;Wd=mfnq5bG2N1nLdlJ&amp;9z.zYf8zkJCDoE7=hZxQ&amp;I%.XAS%8pB=X3Sfg0F&amp;+F.NHdZ=9x&amp;AJ.zZmNK=fL9&amp;Cd.pZ+FKan8th=e&amp;PC.4j69s69=1k&amp;QZ.kf6%i47E=K4&amp;0x.Fmh4V1Us=u+Fai'});">
+<img src="Search%20Results_files/7156209522.jpg">
+</a>
+</div>
+<div class="sa_shop_title">
+<a href="http://rd.bizrate.com/rd?t=https%3A%2F%2Fjet.com%2Fproduct%2Fdetail%2F7e145cf9d4c5408fb59c611594604ef9%3Fjcmp%3Dplacse%3Acnx%3ANJ%3AElectronics%3AComputers_Accessories%3ADesktops%3Adur%3Ana&amp;mid=297996&amp;cat_id=461&amp;atom=10038&amp;prod_id=&amp;oid=7156209522&amp;pos=1&amp;b_id=18&amp;bid_type=8&amp;bamt=2fed68ce8c2e85f1&amp;cobrand=1&amp;ppr=374a038886b2df72&amp;af_sid=94&amp;mpid=7e145cf9d4c5408fb59c611594604ef9&amp;keyword=dvd&amp;rf=af1&amp;af_assettype_id=10&amp;af_creative_id=2912&amp;af_id=615133&amp;af_placement_id=1" class="sa_ext" target="_blank" onmousedown="uaction(this,{up:'31091=vgaWF34B9i&amp;v=kUcyYT&amp;Qo=4&amp;sr=+rxyGpSq0xQ&amp;YZ=XgJBQ5aag&amp;a0=n&amp;Cj=tZKTtMFrkqZ6&amp;Wd=mfnq5bG2N1nLdlJ&amp;9z.zYf8zkJCDoE7=hZxQ&amp;I%.XAS%8pB=X3Sfg0F&amp;+F.NHdZ=9x&amp;AJ.zZmNK=fL9&amp;Cd.pZ+FKan8th=e&amp;PC.4j69s69=1k&amp;QZ.kf6%i47E=K4&amp;0x.Fmh4V1Us=u+Fai'});">HP Envy 23 inch Beats Special</a>
+</div>
+<div class="sa_shop_price">
+$1,573.95
+</div>
+<div class="sa_shop_merchants">
+Jet.com
+</div>
+</div>
+<div class="sa_shop_item sa_shop_item_last">
+<div class="sa_shop_img">
+<a href="http://rd.bizrate.com/rd?t=https%3A%2F%2Fjet.com%2Fproduct%2Fdetail%2F60f4eae4300c4a7f8400c815eff34180%3Fjcmp%3Dplacse%3Acnx%3ANJ%3AElectronics%3AComputers_Accessories%3ADesktops%3Adur%3Ana&amp;mid=297996&amp;cat_id=461&amp;atom=10038&amp;prod_id=&amp;oid=6953139781&amp;pos=1&amp;b_id=18&amp;bid_type=8&amp;bamt=2fed68ce8c2e85f1&amp;cobrand=1&amp;ppr=e517e77c5a8ef966&amp;af_sid=94&amp;mpid=60f4eae4300c4a7f8400c815eff34180&amp;keyword=dvd&amp;rf=af1&amp;af_assettype_id=10&amp;af_creative_id=2912&amp;af_id=615133&amp;af_placement_id=1" class="sa_ext" target="_blank" onmousedown="uaction(this,{up:'31091=vgaWF34B9i&amp;v=kUcyYT&amp;Qo=4&amp;sr=+rxyGpSq0xQ&amp;YZ=XgJBQ5aag&amp;a0=n&amp;Cj=tZKTtMFrkqZ6&amp;Wd=mfnq5bG2N1nLdlJ&amp;9z.zYf8zkJCDoE7=hZxQ&amp;I%.XAS%8pB=X3Sfg0F&amp;+F.NHdZ=9x&amp;AJ.zZmNK=fL9&amp;Cd.pZ+FKan8th=e&amp;PC.4j69s69=1k&amp;QZ.kf6%i47E=K4&amp;0x.Fmh4V1Us=u+Fai'});">
+<img src="Search%20Results_files/6953139781.jpg">
+</a>
+</div>
+<div class="sa_shop_title">
+<a href="http://rd.bizrate.com/rd?t=https%3A%2F%2Fjet.com%2Fproduct%2Fdetail%2F60f4eae4300c4a7f8400c815eff34180%3Fjcmp%3Dplacse%3Acnx%3ANJ%3AElectronics%3AComputers_Accessories%3ADesktops%3Adur%3Ana&amp;mid=297996&amp;cat_id=461&amp;atom=10038&amp;prod_id=&amp;oid=6953139781&amp;pos=1&amp;b_id=18&amp;bid_type=8&amp;bamt=2fed68ce8c2e85f1&amp;cobrand=1&amp;ppr=e517e77c5a8ef966&amp;af_sid=94&amp;mpid=60f4eae4300c4a7f8400c815eff34180&amp;keyword=dvd&amp;rf=af1&amp;af_assettype_id=10&amp;af_creative_id=2912&amp;af_id=615133&amp;af_placement_id=1" class="sa_ext" target="_blank" onmousedown="uaction(this,{up:'31091=vgaWF34B9i&amp;v=kUcyYT&amp;Qo=4&amp;sr=+rxyGpSq0xQ&amp;YZ=XgJBQ5aag&amp;a0=n&amp;Cj=tZKTtMFrkqZ6&amp;Wd=mfnq5bG2N1nLdlJ&amp;9z.zYf8zkJCDoE7=hZxQ&amp;I%.XAS%8pB=X3Sfg0F&amp;+F.NHdZ=9x&amp;AJ.zZmNK=fL9&amp;Cd.pZ+FKan8th=e&amp;PC.4j69s69=1k&amp;QZ.kf6%i47E=K4&amp;0x.Fmh4V1Us=u+Fai'});">HP Envy 23 inch Premium High</a>
+</div>
+<div class="sa_shop_price">
+$1,416.45
+</div>
+<div class="sa_shop_merchants">
+Jet.com
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="clear-both"></div>
+</div>
+<div class="web-result ur tsrc_Wiki-SA " data-zen="true">
+<h2 class="web-result-title">
+<a class="web-result-title-link" href="https://en.wikipedia.org/wiki/DVD" target="_blank" onmousedown="uaction(this,{up:'5139I=+577COMcm2&amp;2=orTStJ&amp;sv=4&amp;A1=9O8X&amp;j+=KLiWhdfMIrH&amp;1z=d&amp;d+b=7rVwN&amp;bv=AT6DfJS80o7Fvw5'});"><kw>DVD</kw> - Wikipedia</a>
+</h2>
+<p class="web-result-url">en.wikipedia.org/wiki/DVD</p>
+<p class="web-result-description"> <kw>DVD</kw> is a digital optical disc storage format invented and developed by Philips, 
+Sony, Toshiba, and Panasonic in 1995. The medium can store any kind of digital
+&nbsp;... </p>
+</div> <div class="web-result ur tsrc_tled " data-zen="true">
+<h2 class="web-result-title">
+<a class="web-result-title-link" href="https://dvd.netflix.com/" onmousedown="uaction(this,{up:'bc59F=YnOfIjLBKL&amp;g=16RpiF&amp;Ek=7&amp;Op=a0sHvtQx7PQw&amp;aE=ZL2eZ&amp;5L=7&amp;P6=fxyCggbtnPhpfQ8'});" target="_blank"><kw>DVD</kw> Netflix: Rent Movies and TV Shows on <kw>DVD</kw> and Blu-ray</a>
+</h2>
+<p class="web-result-url">dvd.netflix.com/</p>
+<p class="web-result-description">Rent Movies and TV Shows on <kw>DVD</kw> and Blu-ray. 1-month free trial! Fast, free 
+delivery. No late fees.</p>
+</div>
+<div class="web-result ur tsrc_tled " data-zen="true">
+<h2 class="web-result-title">
+<a class="web-result-title-link" href="https://www.moviefone.com/dvd/" onmousedown="uaction(this,{up:'c8c9O=5BIO+qwwzL&amp;V=jgJU1b&amp;qG=c&amp;H6=nuJfzlsZ26OR&amp;Yi=j0GhG&amp;bf=x&amp;S7=CmYvuuZfsqq7bRB'});" target="_blank">New <kw>DVD</kw> Releases - All Genres (2017) | Moviefone</a>
+</h2>
+<p class="web-result-url">www.moviefone.com/dvd/</p>
+<p class="web-result-description">Check out now available All Genres movies on <kw>DVD</kw> and get ratings, reviews, 
+trailers and clips for now available All Genres <kw>DVD</kw> releases.</p>
+</div>
+<div class="web-result ur tsrc_tled " data-zen="true">
+<h2 class="web-result-title">
+<a class="web-result-title-link" href="https://www.rottentomatoes.com/dvd/" onmousedown="uaction(this,{up:'4739n=S0zfPcKS6W&amp;t=zEhP%q&amp;nZ=f&amp;Oq=3oG0z%g7oNtn&amp;HU=RULM5&amp;uH=U&amp;8N=qD6AFEXKZtfY6Mh'});" target="_blank">Top <kw>DVD</kw> Rentals and Reviews - Rotten Tomatoes</a>
+</h2>
+<p class="web-result-url">www.rottentomatoes.com/dvd/</p>
+<p class="web-result-description">Search for Movie and TV titles available on <kw>DVD</kw> and streaming services. Let the 
+Tomatometer help you find something Fresh to watch!</p>
+</div>
+<div class="web-result ur tsrc_tled " data-zen="true">
+<h2 class="web-result-title">
+<a class="web-result-title-link" href="https://www.walmart.com/cp/dvds/530598" onmousedown="uaction(this,{up:'f7a9D=8O8UqW%V3x&amp;K=0ZNYY8&amp;LY=t&amp;QI=T05+g%3+Y+Bj&amp;8F=jJ3WV&amp;dR=r&amp;jp=qzD7wZR9HbxeFTW'});" target="_blank">Movies - Walmart.com</a>
+</h2>
+<p class="web-result-url">www.walmart.com/cp/dvds/530598</p>
+<p class="web-result-description">Walmart's huge selection of movies on <kw>DVD</kw>, Blu-ray and digital HD includes 
+something for everyone. Browse our family favorites for a fun movie night with the
+&nbsp;...</p>
+</div>
+<div class="web-result ur tsrc_tled " data-zen="true">
+<h2 class="web-result-title">
+<a class="web-result-title-link" href="http://www.dvdsreleasedates.com/" onmousedown="uaction(this,{up:'9a19P=yj7ZJPvSbP&amp;s=Q0s2I0&amp;Pn=9&amp;z+=GwG1qyuossVX&amp;0S=uLg2X&amp;Dq=q&amp;cc=mqnhQKtImR1dGqf'});" target="_blank"><kw>DVDs</kw> Release Dates - Latest Info on New <kw>DVD</kw> Releases</a>
+</h2>
+<p class="web-result-url">www.dvdsreleasedates.com/</p>
+<p class="web-result-description">See the best complete schedule of new <kw>DVD</kw> releases. Also new <kw>DVD</kw> release 
+date announcements and estimates for all the upcoming and latest <kw>DVD</kw> releases
+,&nbsp;...</p>
+</div>
+<div class="web-result ur tsrc_tled " data-zen="true">
+<h2 class="web-result-title">
+<a class="web-result-title-link" href="https://www.amazon.com/Best-Sellers-Movies-TV-DVD/zgbs/movies-tv/2958934011?tag=askcomdelta-20" onmousedown="uaction(this,{up:'ee89a=XKhJt9y1i3&amp;m=nrzNDP&amp;P2=s&amp;L3=+dcNMEn5FYav&amp;4K=8bbhV&amp;Yc=6&amp;yr=2t6pkawJJGp8UE3'});" target="_blank">Amazon Best Sellers: Best <kw>DVD</kw> - Amazon.com</a>
+</h2>
+<p class="web-result-url">www.amazon.com/Best-Sellers-Movies-TV-DVD/zgbs/movies-tv/2958934011</p>
+<p class="web-result-description">Discover the best <kw>DVD</kw> in Best Sellers. Find the top 100 most popular items in 
+Amazon STRING(movies-and-tv_44751) Best Sellers.</p>
+</div>
+<div class="web-result ur tsrc_tled " data-zen="true">
+<h2 class="web-result-title">
+<a class="web-result-title-link" href="http://www.ebay.com/rpp/dvds-movies" onmousedown="uaction(this,{up:'b4f9Y=2lqpp%3A7q&amp;d=Q7l1Zk&amp;0A=AG&amp;z7=AvtiBW27Qg88&amp;u+=isSTi&amp;W3=W&amp;4+=WCEYgF6aEBVwJ4p'});" target="_blank"><kw>DVDs</kw> &amp; Movies - <kw>DVDs</kw> &amp; Blu-Ray for Sale Online | eBay</a>
+</h2>
+<p class="web-result-url">www.ebay.com/rpp/dvds-movies</p>
+<p class="web-result-description">Shop eBay to own all your favorite movies. Browse the <kw>DVD</kw> &amp; Blu-Ray collection 
+for Disney movies, horror movies, TV shows, comedy movies &amp; much more.</p>
+</div>
+</div>
+<div id="csaBottom"><div id="magic2" style="width: 99.5%; font-weight: normal; text-align: center; height: 484px; background-color: rgb(255, 255, 255);"><iframe marginwidth="0" marginheight="0" allowtransparency="true" scrolling="no" style="visibility: visible; height: 484px;" name="slave-1-1|{&quot;name&quot;:&quot;master-1&quot;,&quot;slave-1-1&quot;:{&quot;clicktrackUrl&quot;:&quot;//clk-askus.ask.com/clk?pos=bottom&amp;q=dvd&amp;qid=A532A5994B1D2495DBD46F494F4F05AD&amp;ip=8ef43f87&amp;o=0&amp;l=dir&amp;qsrc=1&amp;page=1&amp;cl=aj-cat-intl&amp;ch=computers-hardware%2Corig_serpSearchTopBox%2Cud_desktop%2Cask-non-dla&amp;c=a&amp;p_uid=&amp;p_clk_id=&amp;anxu=http%3A%2F%2Fwww.ask.com%2Fweb&amp;pl=c12953%3DZAg%26KrF%3DNHSvviIc4_jwr_wBMFlz3SU0Xq4TJ3EGPpwHqok7sHq0He%26sp%3DPG9KF%26aL%3DM5RstnNtpWgCD8Noh8srylRi8fAlqgDx%266Q%3DA61VVUG%26NH%3Dk1hlRidP1pRZKz17%26RPhz%3DJk-g5J-veH1%26rAC%3D0kZE8XPlF-5qOIpP3JVMeBSUH_77ApGkAPUngVHtuZKt%25DS_2V7JoWj1RJ9vS-Obk-dNA%261t%3DD38KQf%26py%3DZo8.V73%26IlN%3D%26B0%3DHTYXx%2B3W6KG%26XV%3D9xWCa%26SOZ%3Dza%26%25U%3DeXn%26Ft%3Du%26vT%3D%26lk6%3D%26e%3DY&amp;gclid=&amp;up=fa38W%3Dt4SXD2%26%2BR%3Dvz3%26sg%3DDPG%26A5.WYZYg1%3D2wT%264N.IBrF80%3DHC-XG9-bUGW%26HD.RDyG%2BfCRPqRIz%3Di4xXq3T01-u5J%2B58al%2C1bcl_RAfdMYBMkaD3tqbf%2CcM_OPynxCC%2CwJ0-oOz-6Uq%26b%3D8feO2eMGx&quot;,&quot;container&quot;:&quot;magic2&quot;,&quot;linkTarget&quot;:&quot;_blank&quot;,&quot;verticalSpacing&quot;:&quot;9&quot;,&quot;lines&quot;:&quot;3&quot;,&quot;colorAdSeparator&quot;:&quot;#FFFFFF&quot;,&quot;colorText&quot;:&quot;#333333&quot;,&quot;colorTitleLink&quot;:&quot;#3300B5&quot;,&quot;colorDomainLink&quot;:&quot;#0E7744&quot;,&quot;colorBackground&quot;:&quot;#FFFFFF&quot;,&quot;colorAttribution&quot;:&quot;#333333&quot;,&quot;fontSizeTitle&quot;:&quot;18px&quot;,&quot;fontSizeDescription&quot;:&quot;15px&quot;,&quot;fontSizeDomainLink&quot;:&quot;14px&quot;,&quot;fontSizeAttribution&quot;:&quot;13px&quot;,&quot;rightHandAttribution&quot;:false,&quot;clickableBackgrounds&quot;:true,&quot;adIconLocation&quot;:&quot;ad-left&quot;,&quot;lineHeightTitle&quot;:&quot;18&quot;,&quot;lineHeightDescription&quot;:&quot;18&quot;,&quot;lineHeightDomainLink&quot;:&quot;18&quot;,&quot;domainLinkAboveDescription&quot;:true,&quot;heightConstrained&quot;:false,&quot;width&quot;:&quot;99.5%&quot;,&quot;detailedAttribution&quot;:true,&quot;attributionSpacingBelow&quot;:7,&quot;type&quot;:&quot;ads&quot;,&quot;hl&quot;:&quot;&quot;,&quot;columns&quot;:1,&quot;horizontalAlignment&quot;:&quot;left&quot;,&quot;resultsPageQueryParam&quot;:&quot;query&quot;},&quot;master-1&quot;:{&quot;clicktrackUrl&quot;:&quot;//clk-askus.ask.com/clk?pos=top&amp;q=dvd&amp;qid=A532A5994B1D2495DBD46F494F4F05AD&amp;ip=8ef43f87&amp;o=0&amp;l=dir&amp;qsrc=1&amp;page=1&amp;cl=aj-cat-intl&amp;ch=computers-hardware%2Corig_serpSearchTopBox%2Cud_desktop%2Cask-non-dla&amp;c=a&amp;p_uid=&amp;p_clk_id=&amp;anxu=http%3A%2F%2Fwww.ask.com%2Fweb&amp;pl=6e386H%3DQr0%26yyE%3DhAgyQesff_dIq_Gorwxcfx%2BpLRs3d%25ft49o6sGx2mu2nvt%26vc%3DCgHTv%266U%3Db32f7v9ZchKSwNjtb%250qqOjeVaWh5LNz%26uW%3Dtf9Gvgs%26gV%3DZoA9Pcn6mNWGyl6b%26bWoY%3DEK-uIg-9Dwf%26ddz%3D2bVFZR7mo-X%25Loa2SrwwTofe6_3dCuP7lviKQ%2BqmWKSQuQr_NeFPvibGedgQs-svm-0G2%26Nk%3DQxJCoL%26Wo%3DYQA.Gyl%26aYO%3D%26Jy%3D5vPEDsBQQLS%268g%3DYhquS%267Hj%3DaR%26uE%3DR1f%26K8%3DR%26Yf%3D%267X%2B%3D%26Q%3DT&amp;gclid=&amp;up=e7d9J%3DfO3SbR%26DQ%3DUrR%26rx%3Dt5B%26OO.FLdxyC%3DlTL%26pf.O%2BukRh%3Dly-gMl-sLEF%26lY.JOFp2NeWJg45B%3DpV79IBCpp-OUsDcYgP%2C41JL_RjevMx%25SqwNSIu2N%2CEu_lZfIUkE%2CmXb-P8I-JM%25%26k%3D%25Fhfl%2B&quot;,&quot;container&quot;:&quot;magic1&quot;,&quot;linkTarget&quot;:&quot;_blank&quot;,&quot;verticalSpacing&quot;:&quot;9&quot;,&quot;lines&quot;:&quot;3&quot;,&quot;colorAdSeparator&quot;:&quot;#FFFFFF&quot;,&quot;colorText&quot;:&quot;#333333&quot;,&quot;colorTitleLink&quot;:&quot;#3300B5&quot;,&quot;colorDomainLink&quot;:&quot;#0E7744&quot;,&quot;colorBackground&quot;:&quot;#FFFFFF&quot;,&quot;colorAttribution&quot;:&quot;#333333&quot;,&quot;fontSizeTitle&quot;:&quot;18px&quot;,&quot;fontSizeDescription&quot;:&quot;15px&quot;,&quot;fontSizeDomainLink&quot;:&quot;14px&quot;,&quot;fontSizeAttribution&quot;:&quot;13px&quot;,&quot;rightHandAttribution&quot;:false,&quot;clickableBackgrounds&quot;:true,&quot;adIconLocation&quot;:&quot;ad-left&quot;,&quot;lineHeightTitle&quot;:&quot;18&quot;,&quot;lineHeightDescription&quot;:&quot;18&quot;,&quot;lineHeightDomainLink&quot;:&quot;18&quot;,&quot;domainLinkAboveDescription&quot;:true,&quot;heightConstrained&quot;:false,&quot;width&quot;:&quot;99.5%&quot;,&quot;detailedAttribution&quot;:true,&quot;attributionSpacingBelow&quot;:7,&quot;type&quot;:&quot;ads&quot;,&quot;hl&quot;:&quot;&quot;,&quot;columns&quot;:1,&quot;horizontalAlignment&quot;:&quot;left&quot;,&quot;resultsPageQueryParam&quot;:&quot;query&quot;}}" id="slave-1-1" src="Search%20Results_files/iframe.htm" width="100%" frameborder="0"></iframe></div></div>
+<script>
+window['backfillParam'] = window['backfillParam'] || {};
+window['backfillParam']['pl_bmodn'] = 3;
+</script>
+<div class="l-pagination pagination">
+<ul>
+<li class="pagination-number pagination-active">1</li>
+<a class="pagination-number-link" href="http://www.ask.com/web?q=dvd&amp;page=2&amp;l=dir&amp;qid=A532A5994B1D2495DBD46F494F4F05AD&amp;o=0&amp;qsrc=998&amp;qo=pagination" onmousedown="uaction(this,{up:'1488n=zeHm0pYaaA&amp;Q=GWjf6K&amp;Lo=2&amp;5e=l9X%ZRW1my&amp;lO=uEp6gIxhPL&amp;5l=J&amp;by=+6JwtN+QSh4d3fG'});">
+<li class="pagination-number">
+2
+</li>
+</a>
+<a class="pagination-number-link" href="http://www.ask.com/web?q=dvd&amp;page=3&amp;l=dir&amp;qid=A532A5994B1D2495DBD46F494F4F05AD&amp;o=0&amp;qsrc=998&amp;qo=pagination" onmousedown="uaction(this,{up:'58f95=4U%ZHtFE+Y&amp;S=XeYE6t&amp;Bd=H&amp;gc=GpGcTGf6US&amp;kQ=Hm80eO23B%&amp;pS=n&amp;ON=mGvJjn56hX1z03B'});">
+<li class="pagination-number">
+3
+</li>
+</a>
+<a class="pagination-number-link" href="http://www.ask.com/web?q=dvd&amp;page=4&amp;l=dir&amp;qid=A532A5994B1D2495DBD46F494F4F05AD&amp;o=0&amp;qsrc=998&amp;qo=pagination" onmousedown="uaction(this,{up:'45f8z=rT0GtHmEgu&amp;m=hDSTQ4&amp;Y9=V&amp;05=b+tCX248rS&amp;7z=F7Mtyivjcu&amp;E3=e&amp;5J=tIKjqvjes8lehb8'});">
+<li class="pagination-number">
+4
+</li>
+</a>
+<a class="pagination-number-link" href="http://www.ask.com/web?q=dvd&amp;page=5&amp;l=dir&amp;qid=A532A5994B1D2495DBD46F494F4F05AD&amp;o=0&amp;qsrc=998&amp;qo=pagination" onmousedown="uaction(this,{up:'c889H=WYJccDnukd&amp;I=o4kE%V&amp;7m=l&amp;lP=YHpVizCUsm&amp;kL=otM35wjaAt&amp;k8=v&amp;Kl=JX4XONcWTuM4GJZ'});">
+<li class="pagination-number">
+5
+</li>
+</a>
+<a class="js-pagination-next" href="http://www.ask.com/web?q=dvd&amp;page=2&amp;l=dir&amp;qid=A532A5994B1D2495DBD46F494F4F05AD&amp;o=0&amp;qsrc=998&amp;qo=pagination" onmousedown="uaction(this,{up:'a568I=eHZsnFY4iB&amp;z=kL8Hxh&amp;ly=e&amp;kB=d9XhzDDWH9&amp;Mw=w0yz2QoyhG&amp;Fp=V&amp;TR=01bx6ppzfD7Gdju'});">
+<li class="pagination-next">Next</li>
+</a>
+</ul>
+</div>
+</div>
+<div class="l-right-content hcsa">
+<div id="scroller-anchor"></div>
+<div id="scroller" style="visibility: visible; position: relative; top: 0px;">
+<div class="l-rightrail-related-searches rightrail-related-searches content-right" data-zen="true">
+<h2 class="related-searches-title">Related Search</h2>
+<ul>
+<li class="related-search ur">
+<a class="related-search-item-link" onmousedown="uaction(this,{up:'2a19f=3LPKw3OPwZUgB&amp;6=ycne2&amp;L6=9&amp;db=ve9TGQNgm6A48&amp;mX=yJ7Z&amp;cZ=a&amp;HU=4Ow7FIeDkrpeNDj'});" href="http://www.ask.com/web?q=DVD+Copy+Software+Free&amp;qsrc=6&amp;o=0&amp;l=dir&amp;qo=relatedSearchNarrow"><b>DVD</b> Copy Software Free</a>
+</li>
+<li class="related-search ur">
+<a class="related-search-item-link" onmousedown="uaction(this,{up:'fc19i=7y%h7kCTBNcQ+&amp;o=nfs4l&amp;iF=r&amp;3f=z3rre%CkrUUBH&amp;FL=BNUi&amp;My=t&amp;wY=9CQEd24GoeKNmW9'});" href="http://www.ask.com/web?q=DVD+Movies&amp;qsrc=6&amp;o=0&amp;l=dir&amp;qo=relatedSearchNarrow"><b>DVD</b> Movies</a>
+</li>
+<li class="related-search ur">
+<a class="related-search-item-link" onmousedown="uaction(this,{up:'ce19m=amsRFErWFAxnK&amp;H=bjwRF&amp;Sd=M&amp;Si=ERM0PrqnvHd+f&amp;ZA=FSIC&amp;j8=N&amp;k1=bp+cOjTKt44lWeY'});" href="http://www.ask.com/web?q=DVD+Latest+Movie+Releases&amp;qsrc=6&amp;o=0&amp;l=dir&amp;qo=relatedSearchNarrow"><b>DVD</b> Latest Movie Releases</a>
+</li>
+<li class="related-search ur">
+<a class="related-search-item-link" onmousedown="uaction(this,{up:'a019p=e+NoeXf0KoRXi&amp;1=2mBF0&amp;pO=6&amp;Gm=IE6ynLfrAvxIQ&amp;go=IWvX&amp;TH=6&amp;+5=gdtLmDHNxRnUvxM'});" href="http://www.ask.com/web?q=DVD+Shrink&amp;qsrc=6&amp;o=0&amp;l=dir&amp;qo=relatedSearchNarrow"><b>DVD</b> Shrink</a>
+</li>
+<li class="related-search ur">
+<a class="related-search-item-link" onmousedown="uaction(this,{up:'7219t=jZ7YOf63ObauT&amp;i=QqFsi&amp;Zm=p&amp;vp=Nsp7Y45uEiSgo&amp;Ad=M1jf&amp;qf=o&amp;Z8=k2OjXWwRCFHs5RB'});" href="http://www.ask.com/web?q=DVD+Release+Dates&amp;qsrc=6&amp;o=0&amp;l=dir&amp;qo=relatedSearchNarrow"><b>DVD</b> Release Dates</a>
+</li>
+<li class="related-search ur">
+<a class="related-search-item-link" onmousedown="uaction(this,{up:'4419w=nMqvnyU7T1u4r&amp;C=FtKgD&amp;wX=J&amp;jt=RfJFwmUyJ8aPZ&amp;T3=P58A&amp;0Q=H&amp;Oa=pQ8SvekUGs21E%p'});" href="http://www.ask.com/web?q=Transferring+VHS+Movies+to+DVD&amp;qsrc=6&amp;o=0&amp;l=dir&amp;qo=relatedSearchNarrow">Transferring VHS Movies to <b>DVD</b></a>
+</li>
+<li class="related-search ur">
+<a class="related-search-item-link" onmousedown="uaction(this,{up:'1619A=sAK5XSJ%XOPB2&amp;V=txO5X&amp;6v=4&amp;%w=W54c7FIBNVvnx&amp;bS=T%WU&amp;xo=1&amp;Cd=tDrq6x+YLgkzcse'});" href="http://www.ask.com/web?q=Convert+VHS+Tapes+to+DVD&amp;qsrc=6&amp;o=0&amp;l=dir&amp;qo=relatedSearchNarrow">Convert VHS Tapes to <b>DVD</b></a>
+</li>
+<li class="related-search ur">
+<a class="related-search-item-link" onmousedown="uaction(this,{up:'e819D=wn5Cw+xc2C9+A&amp;d=iATTg&amp;D6=m&amp;YA=0SmMFZxFSJPW8&amp;uG=WcJd&amp;7Z=i&amp;rh=yrLZERZ1P5F8NL4'});" href="http://www.ask.com/web?q=VHS+to+DVD+Converter&amp;qsrc=6&amp;o=0&amp;l=dir&amp;qo=relatedSearchNarrow">VHS to <b>DVD</b> Converter</a>
+</li>
+<li class="related-search ur">
+<a class="related-search-item-link" onmousedown="uaction(this,{up:'ba19H=Bbna6tmf6psI+&amp;w=8EXGA&amp;bE=H&amp;ND=5GHjeglIWw%uG&amp;Ov=0hxx&amp;Ex=C&amp;fk=Ce6xd%O5UTZGl5T'});" href="http://www.ask.com/web?q=Yourself+Transfer+VHS+to+DVD&amp;qsrc=6&amp;o=0&amp;l=dir&amp;qo=relatedSearchNarrow">Yourself Transfer VHS to <b>DVD</b></a>
+</li>
+<li class="related-search ur">
+<a class="related-search-item-link" onmousedown="uaction(this,{up:'8c19K=F0IJFMaj+dMgJ&amp;Q=XH2uV&amp;Kd=S%&amp;F+=GU4vPb9DobgaZ&amp;gW=wkUc&amp;7h=V&amp;7L=2x2ZbvNBnmXnhKM'});" href="http://www.ask.com/web?q=New+Released+Movie+List&amp;qsrc=6&amp;o=0&amp;l=dir&amp;qo=relatedSearchExpand">New Released Movie List</a>
+</li>
+<li class="related-search ur">
+<a class="related-search-item-link" onmousedown="uaction(this,{up:'70d8F=1VsWj2JR6Q4dR&amp;T=U8g3t&amp;Hz=0g&amp;cw=qufPeb4PAzZcZ&amp;Xu=jcNF&amp;A7=Z&amp;wT=QJuG5KlQnzF4uSH'});" href="http://www.ask.com/web?q=Dvd43&amp;qsrc=6&amp;o=0&amp;l=dir&amp;qo=relatedSearchExpand">Dvd43</a>
+</li>
+<li class="related-search ur">
+<a class="related-search-item-link" onmousedown="uaction(this,{up:'5fa9J=rUGj5Ohwcl26q&amp;5=k8lQr&amp;Mb=kR&amp;hM=fIiMu%0wahKIS&amp;v1=IlgT&amp;Vp=q&amp;oc=ebW5wiilPi5LRPv'});" href="http://www.ask.com/web?q=Digital+Bits&amp;qsrc=6&amp;o=0&amp;l=dir&amp;qo=relatedSearchExpand">Digital Bits</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="displayAd dartAd" style="margin: 431px 0px 0px; visibility: visible; position: absolute; top: 346px;">
+<div id="dart-0">
+<script type="text/javascript">
+googletag.cmd.push(function() { googletag.display('dart-0'); });
+</script>
+<div id="google_ads_iframe_/23219321/iac.ask-ask.us.dw/web/organic-dirN-0/0/_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/23219321/iac.ask-ask.us.dw/web/organic-dirN-0/0/_0" title="3rd party ad content" name="google_ads_iframe_/23219321/iac.ask-ask.us.dw/web/organic-dirN-0/0/_0" scrolling="no" marginwidth="0" marginheight="0" style="border: 0px none; vertical-align: bottom;" srcdoc="" width="300" height="250" frameborder="0"></iframe></div></div>
+</div>
+</div>
+</div>
+<div class="clear-both"></div>
+<div class="l-footer hcsa">
+<div class="footer-links">
+<a onmousedown="uaction(this,{up:'2c48G=B5Y21BWH6&amp;J=qlYqRQ&amp;pW=N&amp;5R=hQ9FjqTmmX&amp;oY=4NQXrxWOQc&amp;Js=u&amp;bx=RDoM+eX8B'});" href="http://about.ask.com/" class="footer-link" target="_top">About</a>
+<span>·</span>
+<a onmousedown="uaction(this,{up:'25f8H=h177m8eS8&amp;O=WBF6w+&amp;Na=C&amp;tU=7QCnICrLki&amp;22=CiyGzdJcx5&amp;Bx=N&amp;eu=AuCOAGjdH'});" href="http://www.ask.com/privacy-policy" class="footer-link" target="_top">Privacy</a>
+<span>·</span>
+<a onmousedown="uaction(this,{up:'3da8I=QaSI6nG32&amp;%=3lJviv&amp;2F=5&amp;ni=GY7Zmovw5M&amp;GX=qrMMs3wtvy&amp;00=P&amp;or=cCrkmTPkE'});" href="http://www.ask.com/terms-of-service" class="footer-link" target="_top">Terms</a>
+<span>·</span>
+<a onmousedown="uaction(this,{up:'33580=1T15WE0tx&amp;0=vSVXX6&amp;TG=T&amp;4Q=fYRawzkoP7&amp;Au=KXL0lJAmZp&amp;8y=T&amp;pF=reDDg6aId'});" href="http://about.ask.com/jobs" class="footer-link" target="_top">Careers</a>
+<span>·</span>
+<a onmousedown="uaction(this,{up:'c708N=ykeqEaVpp&amp;B=7nYCcb&amp;7r=P&amp;Je=7z7KrRa9O4&amp;0o=PzK6v1%Dcn&amp;gZ=b&amp;4n=3DXW3y+Ba'});" href="http://feedback.ask.com/" class="footer-link" target="_top">Feedback</a>
+<span>·</span>
+<a onmousedown="uaction(this,{up:'b8b8j=cNm4Zcb8p&amp;c=y+DPR4&amp;rc=D&amp;Ff=rx8qn0fujm&amp;+q=U50N+Gt1sc&amp;G2=1&amp;4S=L29uqwwde'});" href="http://help.ask.com/" class="footer-link" target="_top">Help</a>
+<span class="footer-copyright">© 2017 Ask.com</span>
+</div>
+</div>
+<script src="Search%20Results_files/ask_web.js" type="text/javascript"></script>
+<script type="text/javascript">
+JASK.ssCfg = (function(){
+return {
+"appendTo":"#sb,.qbox,.js-searchbox-container",
+"channel":"web",
+"path":"web",
+"disableTurnOffLink":"'false'",
+"disableSS": false,
+"server":"//ss.ask.com",
+"ldomain":"//www.ask.com/",
+"ssBold":"'false'",
+"clearSearchHistory":"Clear search history",
+"max":"",
+"ssFromQueryHistory":"true",
+"queryHistory":"",
+"queryHistoryContentColor":"#663399",
+"ssContentColor":"'false'",
+"ssContentColorCode": "",
+"matchingTextUnBold": "",
+"suggestionTextUnBold": "",
+"ssItems":"",
+"appendParams":[]
+};
+})();
+</script>
+<script type="text/javascript">
+var UInfo = window.UInfo || {};
+UInfo.pl = "c868XP=y7O&tIB=3iTNyLxNW_xdg_ivpF78GYH8EzXxyaGMQsNaHiTV4oj5EG&KH=cNU+z&U4=gx8lZsw3THrT0EjrsshkuzU8MpO8JqZk&X4=Y0nfgYv&jZ=Ce5voRjLVdkE4AWr&DZHv=3z-ezD-LRGz&ET2=gp2obSGoz-L+7wNuvvWrOqsDi_2dr2KUDkbkzhgL8%F29xa_MkGwhSvkPdSqQ-VoW-+Ad&ii=b3bncy&kY=dVY.3hJ&v8Z=AOV.7KLb-dkunvkPbVJcLp5nE42eu+Y+I29YQtoaIEt&gY=fA+C%5OjLQ0&3D=roImH&fhM=h9&kL=+rh&yB=w&8P=&GWn=&d=u";
+</script>
+<script type="text/javascript" src="Search%20Results_files/ads.js">
+</script>
+<script type="text/javascript">
+var _AnemoneParams2 = {
+appId: 'T2_AskUS',
+appVersion: 'd45cd49',
+appDate: '2017-01-18T22:18:00Z',
+serverName: 'askus036iad.io.askjeeves.info',
+uniqueUser: 'BDAB8BB7-FC05-4749-A351-3AD274F1C183',
+backFillRequired: true,
+suppressCookies: false,
+eventId: '9FCC9F68-BCAB-481D-BA4A-43869431D010',
+browserLanguage: 'en-us',
+maxSession: 30,
+domain: '.ask.com',
+url: '/ulog',
+logPageView: false
+};
+</script>
+<script type="text/javascript" src="Search%20Results_files/ask_unified.js"></script>
+<script type="text/javascript">
+var ask = (typeof ask === 'undefined') ? {} : ask;
+(function(){
+var _timedOut = false,
+_fullPayload = window.backfillParam || {}, _timeFromSerpStart = null,
+_adsLoggingTimeout = null,
+_dynamicLoggingTimeout = null;
+try{
+_timeFromSerpStart = ((new Date() - ask.CSA.startTime) - ask.CSA.showSerpStartTime);
+_adsLoggingTimeout = parseInt('2000') - _timeFromSerpStart;
+_dynamicLoggingTimeout = Math.max(_adsLoggingTimeout, 1);
+}catch(e){
+_dynamicLoggingTimeout = 2000;
+}
+function mixinCSAAdData(payload){
+var externalData = {
+csaInfo: {
+domTime: ask.CSA.domReadyTime ? ask.CSA.domReadyTime : 0,
+adsResponseTime: ask.CSA.responseTime ? ask.CSA.responseTime : 0,
+adsShownTime: ask.CSA.adsShownTime ? ask.CSA.adsShownTime : 0,
+serpShownTime: ask.CSA.serpShownTime ? ask.CSA.serpShownTime : 0,
+supplement: _timedOut,
+serpTimedOut: !!ask.CSA.showSerpTimeoutFired,
+serpTimeoutStartTime: ask.CSA.showSerpStartTime ? ask.CSA.showSerpStartTime : 0,
+dynamicTimeout: _dynamicLoggingTimeout,
+viewportHeight: ask.CSA.viewportHeight ? ask.CSA.viewportHeight : 0,
+viewportWidth: ask.CSA.viewportWidth ? ask.CSA.viewportWidth : 0,
+adContentRatio: ask.CSA.adContentRatio ? ask.CSA.adContentRatio : 0,
+csaHeight: ask.CSA.csaHeight ? ask.CSA.csaHeight : 0,
+csaWidth: ask.CSA.csaWidth ? ask.CSA.csaWidth : 0,
+centerRailHeight: ask.CSA.centerRailHeight ? ask.CSA.centerRailHeight : 0,
+centerRailWidth: ask.CSA.centerRailWidth ? ask.CSA.centerRailWidth : 0,
+rightRailHeight: ask.CSA.rightRailHeight ? ask.CSA.rightRailHeight : 0,
+rightRailWidth: ask.CSA.rightRailWidth ? ask.CSA.rightRailWidth : 0,
+gslExtensions : ask.CSA.gslExtensions ? ask.CSA.gslExtensions : ""
+}
+};
+payload.pl_time = ask.CSA.responseTime ? ask.CSA.responseTime : 0;
+payload.pl_tnum = ask.CSA.numTopAds ? ask.CSA.numTopAds : 0;
+payload.pl_bnum = ask.CSA.numBottomAds ? ask.CSA.numBottomAds : 0;
+payload.pl_rrnum = ask.CSA.numRightAds ? ask.CSA.numRightAds : 0;
+payload.pl_rnum = parseInt(payload.pl_tnum) + parseInt(payload.pl_bnum) + parseInt(payload.pl_rrnum);
+try{
+mixinNavigationTimingInfo(externalData);
+payload.pl_edata = JSON.stringify(externalData);
+}catch(e){
+}
+}
+function mixinNavigationTimingInfo(eData) {
+if (typeof window.performance === 'undefined') {
+return;
+}
+var navInfo = eData["navInfo"] = {},
+csaInfo = eData.csaInfo,
+timing = window.performance.timing,
+navigation = window.performance.navigation,
+navStart = timing.navigationStart;
+navInfo.redirectCount = navigation.redirectCount;
+navInfo.navType = navigation.type;
+csaInfo.csaStartTime = (ask.CSA.startTime.getTime() - navStart);
+for (var k in timing) {
+//if (timing.hasOwnProperty(k)) {
+navInfo[k] = Math.max((timing[k] - navStart), 0);
+//}
+}
+}
+if (typeof ask !== 'undefined' && typeof ask.CSA !== 'undefined' && typeof ask.CSA.addCSALoadCallback === "function") {
+ask.CSA.addCSALoadCallback(function(){
+var payload = _timedOut ? { pl_supplement:true, pl_cl:_fullPayload.pl_cl, pl_ch:_fullPayload.pl_ch } : _fullPayload;
+var bookmark = false;
+if(typeof ask.CSA.calculateAdContentMetrics === "function") {
+ask.CSA.calculateAdContentMetrics(bookmark);
+}
+mixinCSAAdData(payload);
+logBackfillEvent(payload);
+}, function(){
+_timedOut = true;
+logBackfillEvent(_fullPayload);
+}, _dynamicLoggingTimeout);
+} else {
+logBackfillEvent(_fullPayload);
+}
+function addBingParams(payload) {
+payload.presentation={"count":0};
+payload.provider={};
+payload.pl_bfj = JSON.stringify(payload);
+return payload;
+}
+function logBackfillEvent(payload) {
+payload['anxi'] = JSUtil.defaultVal(_AnemoneParams2.eventId, '');
+payload.pl_as = !window.canRunAds ? true : false;
+ask.backFillPayload = payload;
+_Anemone.logEvent('BackFill', payload);
+}
+})();
+</script>
+<script>
+$j(window).load(function(){
+setTimeout(function(){
+if(
+typeof getNavigationTimingInfo === "function" &&
+typeof _Anemone === "object"
+) {
+if(
+ask &&
+ask.backFillPayload &&
+ask.backFillPayload.pl_edata &&
+JSON.parse(ask.backFillPayload.pl_edata).navInfo &&
+JSON.parse(ask.backFillPayload.pl_edata).navInfo.loadEventEnd
+) {
+console.log("abort 2nd backfill ",JSON.parse(ask.backFillPayload.pl_edata).navInfo.loadEventEnd);
+return;
+}
+var navInfo = getNavigationTimingInfo(window),
+payload = {};
+if(navInfo) {
+payload.pl_edata = {};
+payload.presentation={"count":0};
+payload.provider={};
+payload.pl_bfj = JSON.stringify(payload);
+payload.pl_edata.navInfo = navInfo;
+payload.pl_edata = JSON.stringify(payload.pl_edata);
+//console.log("nav info ",JSON.parse(payload.pl_edata));
+payload['anxi'] = JSUtil.defaultVal(_AnemoneParams2.eventId, '');
+_Anemone.logEvent('BackFill', payload);
+}
+}
+},0);
+});
+</script> 
+<script>
+var _comscore = _comscore || [];
+_comscore.push({c1: "2", c2: "6034776", c3: "", c4: ""});
+(function () {
+var s = document.createElement("script"), el = document.getElementsByTagName("script")[0];
+s.async = true;
+s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+el.parentNode.insertBefore(s, el);
+})();
+</script>
+<noscript>
+<img src=""http://b.scorecardresearch.com/p?c1=2&c2=6034776&c3=&c4=&c5=&c6=&c15=&cv=2.0&cj=1"
+/>
+</noscript> <script>
+function lotame_getScript(e,t,id){var n=document.getElementsByTagName("head")[0],r=!1,i=document.createElement("script");i.src=e,i.async=true,i.id=id||"",i.onload=i.onreadystatechange=function(){!r&&(!this.readyState||this.readyState==="loaded"||this.readyState==="complete")&&(r=!0,typeof t=="function"&&t())},n.appendChild(i)};
+lotame_getScript("//tags.crwdcntrl.net/c/4737/cc.js?ns=_cc4737",function(){
+_cc4737.bcp();
+},"LOTCC_4737");
+</script>
+<script type="text/javascript">
+var ask = ask || {},
+sp = sp || {};
+sp.gls_top = parseInt('$gslTop');
+sp.gls_bottom = parseInt('$gslBottom');
+sp.ad_count = (window['google_ads']) ? window['google_ads'].length : (sp.gls_top + sp.gls_bottom);
+ask.adsPixelTimeout = '2000';
+function initPixel(cb, cbTimeout) {
+if (typeof ask !== 'undefined' && typeof ask.CSA !== 'undefined' && typeof ask.CSA.addCSALoadCallback === "function") {
+ask.CSA.addCSALoadCallback(function() {
+cb(true);
+}, function(){
+cbTimeout();
+}, ask.adsPixelTimeout);
+} else {
+cb(false);
+}
+}
+$j(document).ready(function(){
+if (typeof ask !== 'undefined' && typeof ask.CSA !== 'undefined' && typeof ask.CSA.domReady == "function") {
+ask.CSA.domReady();
+}
+});
+</script>
+<script>
+$j(document).ready(function () {
+function isVisible(el) {
+var winTop = $j(window).scrollTop();
+var elTop = el.offset().top;
+var elBottom = elTop + el.height();
+return (elBottom >= winTop);
+}
+$j(function () {
+var moveDiv = function () {
+var scrollTop = $j(window).scrollTop();
+var divAnchor = $j("#scroller-anchor").offset().top;
+var divDisplayAdAnchor = $j(".displayAd").offset().top;
+var moveableDiv = $j("#scroller");
+var displayAdDiv = $j(".displayAd");
+var rsDivHeight = $j("#scroller").height();
+if (scrollTop < 50) {
+moveableDiv.css({visibility: "visible", position: "relative", top: "0"});
+displayAdDiv.css({visibility: "visible", position: "absolute", top: rsDivHeight, margin: "431px 0 0 0"});
+} else if (scrollTop > divAnchor) {
+moveableDiv.css({visibility: "visible", position: "fixed", top: "15px"});
+if ((scrollTop + rsDivHeight) >= (divDisplayAdAnchor)) {
+displayAdDiv.css({visibility: "visible", position: "fixed", top: rsDivHeight, margin: "10px 0 0 0"});
+}
+} else {
+displayAdDiv.css({visibility: "visible", position: "absolute", top: rsDivHeight, margin: "431px 0 0 0"});
+}
+};
+$j(window).scroll(moveDiv);
+moveDiv();
+});
+});
+</script>
+
+
+<script type="text/javascript" id="">window.addEventListener("beforeunload",function(a){a=(new Date).getTime()-google_tag_manager["GTM-T3KVMC"].macro('gtm8');var b=18E5;a>b&&(a=b);window.dataLayer.push({event:"unloadEvent",timeonpage:a})});</script><script type="text/javascript" id="">try{if("index.investopedia.com"!==window.location.hostname){var dlayer=window.dataLayer;if("undefined"!=typeof jQuery){var flag75=!1,flag100=!1;jQuery(window).scroll(function(){var a=jQuery(window).scrollTop()+jQuery(window).height(),b=jQuery(document).height();a>=.75*b&&!1===flag75&&(flag75=!0,dlayer.push({event:"ScrollDistance",eventCategory:"Scroll Depth",eventAction:"Percentage",eventLabel:"75%",eventValue:1}));a>=b&&!1===flag100&&(flag100=!0,dlayer.push({event:"ScrollDistance",eventCategory:"Scroll Depth",
+eventAction:"Percentage",eventLabel:"100%",eventValue:1}))})}}}catch(a){};</script><iframe id="LOTCCFrameSun Feb 26 2017 16:13:26 GMT-0800 (Pacific Standard Time)" src="Search%20Results_files/rtifr.htm" style="border: 0px none; width: 0px; height: 0px; display: block;"></iframe></body></html>

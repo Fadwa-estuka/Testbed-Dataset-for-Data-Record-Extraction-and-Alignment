@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]> <html lang='en' class='ie7'> <![endif]-->
+<!--[if IE 8 ]> <html lang='en' class='ie8'> <![endif]-->
+<!--[if IE 9 ]> <html lang='en' class='ie9'> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Ask.com - What's Your Question?</title>
+<script async="" src="Search%20Results_files/amzn_ads.js"></script><script async="" src="Search%20Results_files/10952.js"></script><script async="" src="Search%20Results_files/headertag"></script><script async="" src="Search%20Results_files/varccauds"></script><script src="Search%20Results_files/ads"></script><script async="" src="Search%20Results_files/gpt.js"></script><script type="text/javascript" async="" src="Search%20Results_files/analytics.js"></script><script async="" src="Search%20Results_files/beacon.js"></script><script async="" src="Search%20Results_files/gtm.js"></script><script async="" src="Search%20Results_files/iacpublisher.js"></script><script async="" src="Search%20Results_files/async-ads.js"></script><script type="text/javascript">
+var ss=function(){},cs=function(){};
+var _docReadyFns = [];
+$j = function(){return {ready:function(fn){_docReadyFns.push(fn);}};};
+window.onload = function() {
+for (var i = 0; i < _docReadyFns.length; i++) {
+var fn = _docReadyFns[i];
+if (typeof fn === 'function') fn.call(document, jQuery);
+}
+};
+var JASK = JASK || {};
+JASK.cfg = (function() {
+return {
+"ldomain":"www.ask.com" ,
+"_ldomain":"www.ask.com",
+"disableSearchBoxFocus":true,
+"appendSearchQuery":true,
+"fixedRR":false,
+"displayAdBelowFold":true,
+"landingPageVersion":"askV2",
+"sbFocusColor":"#a8d4f5",
+"fixedHeaderScroll":false,
+"baseImprovement":false,
+"flyoverDelay":"500"
+};
+})();
+</script>
+<script type="text/javascript">
+</script> <link rel="shortcut icon" href="http://www.ask.com/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.ask.com/ask-search.xml" title="Ask Search">
+<link rel="apple-touch-icon" href="http://www.ask.com/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="76x76" href="http://www.ask.com/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="120x120" href="http://www.ask.com/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="http://www.ask.com/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="http://www.ask.com/apple-touch-icon-180x180.png"> <meta name="robots" content="noindex, nofollow"> 
+<script type="text/javascript" charset="utf-8">
+(function(G,o,O,g,L,e){G[g]=G[g]||function(){(G[g]['q']=G[g]['q']||[]).push( arguments)},G[g]['t']=1*new Date;L=o.createElement(O),e=o.getElementsByTagName( O)[0];L.async=1;L.src='//www.google.com/adsense/search/async-ads.js'; e.parentNode.insertBefore(L,e)})(window,document,'script','_googCsa');
+</script>
+<script type="text/javascript" charset="utf-8">
+var ask = (typeof ask === 'undefined') ? {} : ask;
+ask.CSA = {};
+(function(){
+var _logInConsole = false,
+_csaStartTime = new Date(), _csaResponseTime = null,
+_domReady = false,
+_showSerpTimeoutCleared = false,
+_showSerpTimeoutLength = 2000,
+_showSerpTimer = null,
+_log = function(){
+if(('false' === 'true') && window.console && console.log) {
+console.log(Array.prototype.slice.call(arguments));
+}
+},
+_domCallbacks = [],
+_csaCallbacksObjects = [];
+ask.CSA.startTime = _csaStartTime;
+ask.CSA.responseReceived = false;
+ask.CSA.adsShown = false;
+ask.CSA.responseTime = null; ask.CSA.adsShownTime = null; ask.CSA.domReadyTime = null; ask.CSA.serpShownTime = null; ask.CSA.serpVisible = false;
+ask.CSA.showSerpTimeoutFired = false;
+ask.CSA.showSerpTimeoutLength = _showSerpTimeoutLength;
+ask.CSA.showSerpStartTime = null;
+ask.CSA.numTopAds = null;
+ask.CSA.numBottomAds = null;
+ask.CSA.numRightAds = null;
+ask.CSA.adDepth = null;
+ask.CSA.serpHiddenPreAds = null;
+ask.CSA.serpShownPostAds = null;
+ask.CSA.viewportHeight = null;
+ask.CSA.viewportWidth = null;
+ask.CSA.centerRailHeight = null;
+ask.CSA.centerRailWidth = null;
+ask.CSA.rightRailHeight = null;
+ask.CSA.rightRailWidth = null;
+ask.CSA.csaHeight = null;
+ask.CSA.csaWidth = null;
+ask.CSA.adContentRatio = null;
+ask.CSA.optimizeAdRequest = null;
+ask.CSA.calculateAdContentMetrics = null;
+ask.CSA.gslExtensions = null;
+ask.CSA.addCSALoadCallback = function(adsCb, timeoutCb, timeoutValue){
+_log("addCSALoadCallback", adsCb, timeoutCb, timeoutValue);
+var callbackObj = null;
+if(typeof adsCb !== "function") {
+return;
+}
+callbackObj = { adsCb: adsCb, timeoutCb: timeoutCb, timeoutValue: timeoutValue, timeout: null };
+if(ask.CSA.adsShown) {
+adsCb();
+} else {
+if(typeof timeoutCb === "function" && timeoutValue > 0) {
+callbackObj.timeout = setTimeout(function(){
+var idx = ask.CSA.indexOf(_csaCallbacksObjects, callbackObj);
+if(idx > -1) {
+handleCallbackTimeout(callbackObj);
+}
+}, timeoutValue);
+}
+_csaCallbacksObjects.push(callbackObj);
+}
+};
+ask.CSA.startShowSerpTimeout = function(){
+_log("startShowSerpTimeout", _showSerpTimeoutLength);
+_showSerpTimer = setTimeout(handleSerpTimeout, _showSerpTimeoutLength);
+ask.CSA.showSerpStartTime = new Date() - _csaStartTime;
+};
+ask.CSA.domReady = function(){
+_log("domReady");
+_domReady = true;
+ask.CSA.domReadyTime = new Date() - _csaStartTime;
+invokeCallbacks(_domCallbacks);
+};
+ask.CSA.showSerp = makeSerpVisible;
+ask.CSA.handleTopAdsLoaded = function(containerName, adsLoaded){
+_log("handleTopAdsLoaded " + adsLoaded);
+addBackgroundColor(adsLoaded, containerName, ask.CSA.adblock1["colorBackground"]);
+ask.CSA.adsShown = true;
+ask.CSA.adsShownTime = new Date() - _csaStartTime;
+makeSerpVisible();
+fireCSACallbacks();
+};
+ask.CSA.handleNoTopAdsLoaded = noAdLoadedCallback;
+ask.CSA.handleBottomAdsLoaded = function(containerName, adsLoaded){
+_log("handleBottomAdsLoaded " + adsLoaded);
+addBackgroundColor(adsLoaded, containerName, ask.CSA.adblock2["colorBackground"]);
+if (false) {
+ask.CSA.adsShown = true;
+ask.CSA.adsShownTime = new Date() - _csaStartTime;
+makeSerpVisible();
+fireCSACallbacks();
+}
+};
+ask.CSA.handleNoBottomAdsLoaded = noAdLoadedCallback;
+ask.CSA.handleRightAdsLoaded = function(containerName, adsLoaded){
+_log("handleRightAdsLoaded " + adsLoaded);
+addBackgroundColor(adsLoaded, containerName, ask.CSA.adblock3["colorBackground"]);
+};
+ask.CSA.handleNoRightAdsLoaded = noAdLoadedCallback;
+ask.CSA.handleCSAResponse = function(numAdsMap) {
+_log("handleCSAResponse " + numAdsMap);
+ask.CSA.responseTime = new Date() - _csaStartTime;
+if (numAdsMap["magic1"] != undefined) {
+ask.CSA.numTopAds = numAdsMap["magic1"];
+ask.CSA.adDepth = ask.CSA.numTopAds;
+}
+if (numAdsMap["magic2"] != undefined) {
+ask.CSA.numBottomAds = numAdsMap["magic2"];
+}
+if (ask.CSA.adDepth < ask.CSA.numBottomAds) {
+ask.CSA.adDepth = ask.CSA.numBottomAds;
+}
+if (numAdsMap["magic3"] != undefined) {
+ask.CSA.numRightAds = numAdsMap["magic3"];
+}
+if(_domReady) {
+processAdResponse();
+} else {
+_domCallbacks.push(processAdResponse);
+}
+};
+function processAdResponse(){
+_log("processAdResponse");
+ask.CSA.responseReceived = true;
+setCSAMetaDataCookie();
+}
+function isSerpVisible() {
+var visible = false,
+selectors = ["#midblock", "#rightblock", "#mobile-footer", ".mobile-web-results", ".hcsa", ".footer"],
+elems = null;
+for(var i = 0; i < selectors.length; i++) {
+if(visible) continue;
+try{
+elems = document.querySelectorAll(selectors[i]);
+} catch(e) {
+_log("Error fetching serp elements: " + e);
+}
+if(elems) {
+for(var j = 0; j < elems.length; j++) {
+visible=(visible || isVisible(elems[j]));
+}
+}
+}
+return visible;
+}
+function isVisible(elem) {
+var outOfFlow = (elem.offsetWidth !== 0 || elem.offsetHeight !== 0),
+invisible = false;
+try {
+invisible = (window.getComputedStyle(elem).getPropertyValue("visibility") === "hidden");
+} catch(e) {
+_log("Error getting style of elem: " + e);
+}
+return outOfFlow || invisible;
+}
+function makeSerpVisible() {
+if(ask.CSA.serpVisible) return;
+_log("makeSerpVisible");
+var css = '#mid-content,#right-content,#midblock,#rightblock,#mobile-footer,.mobile-web-results,.hcsa,.footer { visibility:visible;}';
+var head = document.getElementsByTagName('head')[0];
+var style = document.createElement('style');
+style.type = 'text/css';
+if (style.styleSheet){
+style.styleSheet.cssText = css;
+} else {
+style.appendChild(document.createTextNode(css));
+}
+head.appendChild(style);
+if (!_showSerpTimeoutCleared) {
+clearTimeout(_showSerpTimer);
+_showSerpTimeoutCleared = true;
+}
+ask.CSA.serpVisible = true;
+ask.CSA.serpShownTime = new Date() - _csaStartTime;
+}
+function setCSAMetaDataCookie(){
+var defaultDomain = '.ask.com',
+currentDomain = getRootDomain();
+if (currentDomain && currentDomain != '') {
+defaultDomain = currentDomain;
+}
+document.cookie = 'adDepth=' + ask.CSA.adDepth + ';path=/;domain=' + defaultDomain;
+document.cookie = 'ad_cnt=' + (ask.CSA.numTopAds + ask.CSA.numBottomAds) + ';path=/;domain='+ defaultDomain;
+}
+function getRootDomain() {
+try {
+var loc = document.createElement("a");
+loc.href = window.location.href;
+var hostArray = loc.hostname.split('.');
+var newArray = [hostArray[hostArray.length-2], hostArray[hostArray.length-1]];
+var rootDomain = '.'.concat(newArray.join('.'));
+return rootDomain;
+} catch(e) {
+console.log(e);
+return '';
+}
+}
+function updateMonitoringHash(){
+_log("updateMonitoringHash");
+var topAds = ask.CSA.numTopAds || 0,
+bottomAds = ask.CSA.numBottomAds || 0,
+rightAds = ask.CSA.numRightAds || 0,
+hash = "num_ads_top=" + topAds +
+"&num_ads_bottom=" + bottomAds +
+"&num_ads_right=" + rightAds +
+"&total_num_ads=" + (topAds + bottomAds) +
+"&content_hidden_pre_ads=" + (ask.CSA.serpHiddenPreAds ? 1 : 0) +
+"&content_shown_post_ads=" + (ask.CSA.serpShownPostAds ? 1 : 0) +
+"&ads_response_time_ms=" + ask.CSA.responseTime;
+window.location.hash = hash;
+}
+function updateMonitoringElement(){
+_log("updateMonitoringElement");
+var topAds = ask.CSA.numTopAds || 0,
+bottomAds = ask.CSA.numBottomAds || 0,
+rightAds = ask.CSA.numRightAds || 0,
+body = document.getElementsByTagName("body")[0],
+elem = document.createElement("div");
+elem.setAttribute("id", "csa-monitor-data");
+elem.setAttribute("style", "visibility: hidden;");
+elem.setAttribute("data-num_ads_top", topAds);
+elem.setAttribute("data-num_ads_bottom", bottomAds);
+elem.setAttribute("data-num_ads_right", rightAds);
+elem.setAttribute("data-total_num_ads", topAds + bottomAds + rightAds);
+elem.setAttribute("data-content_hidden_pre_ads", ask.CSA.serpHiddenPreAds ? 1 : 0);
+elem.setAttribute("data-content_shown_post_ads", ask.CSA.serpShownPostAds ? 1 : 0);
+elem.setAttribute("data-ads_response_time_ms", ask.CSA.responseTime);
+body.appendChild(elem);
+}
+function noAdLoadedCallback(containerName, adsLoaded) {
+_log("noAdLoadedCallback");
+function process(){
+var adContainer = document.getElementById(containerName);
+var csaBackfillRS = document.getElementById('top-csa-bkfil');
+if(adContainer) {
+adContainer.style.display = "none";
+}
+if(csaBackfillRS){
+csaBackfillRS.style.display = "block";
+}
+makeSerpVisible();
+}
+if(_domReady) {
+process();
+} else {
+_domCallbacks.push(process);
+}
+}
+function addBackgroundColor(adsLoaded, containerName, shadeSelector) {
+var adElement = document.getElementById(containerName);
+if (adElement) {
+adElement.style.backgroundColor = shadeSelector;
+}
+}
+function handleCallbackTimeout(callbackObj) {
+_log("handleCallbackTimeout", callbackObj);
+clearTimeout(callbackObj.timeout);
+callbackObj.timeoutCb();
+}
+function handleSerpTimeout() {
+_log("handleSerpTimeout");
+makeSerpVisible();
+ask.CSA.showSerpTimeoutFired = true;
+_showSerpTimeoutCleared = true;
+}
+function fireCSACallbacks(){
+_log("fireCSACallbacks");
+var csaCallbacks = [];
+for(var i = 0; i < _csaCallbacksObjects.length; i++) {
+csaCallbacks.push(_csaCallbacksObjects[i].adsCb);
+clearTimeout(_csaCallbacksObjects[i].timeout);
+}
+_csaCallbacksObjects = [];
+_log("csaCallbacks: ", csaCallbacks);
+invokeCallbacks(csaCallbacks);
+}
+function invokeCallbacks(callbacks) {
+if(callbacks.length) {
+for(var i = 0; i < callbacks.length; i++) {
+if(typeof callbacks[i] == "function") {
+_log("invoking callback " + i);
+try{
+callbacks[i].call(null);
+} catch(e){
+}
+}
+}
+callbacks.splice(0, callbacks.length);
+}
+}
+ask.CSA.optimizeAdRequest = function optimizeAdRequest(adblock) {
+var h = (Math.max(document.documentElement.clientHeight, window.innerHeight || 0));
+var w = (Math.max(document.documentElement.clientWidth, window.innerWidth || 0));
+var enabledForOrientation = "" === "true" ? true : h > w;
+var enabled = "";
+if(enabled === "true" && 800 > h && enabledForOrientation) {
+if(adblock && typeof adblock.maxTop !== "undefined") {
+adblock.maxTop -= 1;
+}
+}
+}
+})();
+_googCsa('jsLoadedCallback', function () {
+var pageOptions = ask.CSA.pageOptions = {"instantPreviews":false,"clickToCall":false,"plusOnes":true,"hl":"","offerExtension":false,"query":" pc computers","linkTarget":"_blank","heightConstrained":false,"channel":"computers-other,orig_homepageSearchBox,ud_desktop,ask-non-dla","adtest":"off","numRepeated":"5","adsafe":"medium","attributionSpacingBelow":7,"oe":"utf-8","rightHandAttribution":false,"siteLinks":true,"pubId":"aj-cat-intl","location":false,"domainLinkAboveDescription":true,"ie":"utf-8","isAndroidTablet":false,"adPage":"1","sellerRatings":true};
+if (pageOptions) {
+pageOptions['adsResponseCallback'] = ask.CSA.handleCSAResponse;
+}
+if (!false) {
+var adblock1 = ask.CSA.adblock1 = {"container":"magic1","lineHeightDomainLink":"18","colorBackground":"#FFFFFF","colorText":"#333333","fontSizeAttribution":"13","colorAttribution":"#333333","verticalSpacing":"9","clicktrackUrl":"//clk-askus.ask.com/clk?pos=top&q=+pc+computers&qid=79BDD1E4707E7B73F98FE6E85D7127EB&ip=8ef43f87&o=0&l=dir&qsrc=0&page=1&cl=aj-cat-intl&ch=computers-other%2Corig_homepageSearchBox%2Cud_desktop%2Cask-non-dla&c=a&p_uid=&p_clk_id=&anxu=http%3A%2F%2Fwww.ask.com%2Fweb&pl=5525%2Bu%3DWLeIuhE2grLEH%26NTO%3Dh8eoySeCU_Mu8_pGplx3BiEBGnBn0y6PA%26Td%3DddIA9%26li%3DktnpYkfktQuYvufV4B0D1FdIlRkLcuw3%26wp%3DHUlGwO7%26xZ%3DZRMjVnvOI%25MrWT6PF%26v87h%3D3a-mIV-ER1l%26DZl%3DJinxvsu%2BW-0V9%25aLwVOa0X_UeMeL6WxtaC2Celcg5CE67_brr8lLjPk6xZD-XKJ-2Y3%26x4%3D7%255QQM%262W%3DM4E.jVB%26nxU%3D%26P6%3DowAHwBPB7bm%26MI%3DST%25Ws%26BHz%3DD5%26Xw%3DlKl%264R%3DW%26TO%3D%26ga8%3D%26r%3DF&gclid=&up=af1cW%3DphCRK2%26bo%3D27B%26pr%3Dr%2BN%26FU.jZdzXF%3DGF6%2688.9AFTy1%3DO0-%2B0U-0Ew7%26%25E.tYVJPt9GMiN54%3DAEacRyyhk-fP%2B%2B5%2CiiOC_hdZh3WwXEUBNGOKkd%2CRB_KGCtw8k%2CC1S-4Fp-7JO%26Q%3D2wSMy8","colorTitleLink":"#3300B5","lineHeightTitle":"18","colorDomainLink":"#0E7744","lineHeightDescription":"18","fontSizeDescription":"15","width":"99.5%","fontSizeDomainLink":"14","colorAdSeparator":"#FFFFFF","clickableBackgrounds":true,"lines":"3","longerHeadlines":true,"fontSizeTitle":"18","detailedAttribution":true,"maxTop":"5"};
+if (adblock1) {
+adblock1['noAdLoadedCallback'] = ask.CSA.handleNoTopAdsLoaded;
+adblock1['adLoadedCallback'] = ask.CSA.handleTopAdsLoaded;
+}
+}
+var adblock2 = ask.CSA.adblock2 = {"container":"magic2","lineHeightDomainLink":"18","colorBackground":"#FFFFFF","colorText":"#333333","fontSizeAttribution":"13","colorAttribution":"#333333","verticalSpacing":"9","clicktrackUrl":"//clk-askus.ask.com/clk?pos=bottom&q=+pc+computers&qid=79BDD1E4707E7B73F98FE6E85D7127EB&ip=8ef43f87&o=0&l=dir&qsrc=0&page=1&cl=aj-cat-intl&ch=computers-other%2Corig_homepageSearchBox%2Cud_desktop%2Cask-non-dla&c=a&p_uid=&p_clk_id=&anxu=http%3A%2F%2Fwww.ask.com%2Fweb&pl=b75cmK%3DfK7NMiKl4XDGy%26b8Y%3DMTn9epSlk_y%25i_a8GpbA3HKGQwIqrTLhT%26R3%3DxXK6K%263R%3D7OCTxQAbrWuDqDtRuc1fvbAtuJC6x%2Bgn%26Ch%3DuGLdVto%26ay%3DYBYDF9FoEtkUukvGi%26FPXq%3DrC-KO%25-ektY%26Q8E%3DhxL6zaEp5-CqvV%2BatTz6XF_UaahpDcteUdoVGIBxO%2BBMG_nxZ8Bx%25N796uj-Osk-7cl%26PX%3Divz0yB%26jM%3DyOh.ikH%26X6v%3D%26I8%3DYUGMwhAg0Md%26DV%3DUhKUu%26ZzJ%3DeR%26Gi%3D6nu%26Vh%3DR%261%2B%3D%26YQM%3D%26L%3Da&gclid=&up=31d5K%3DaZvg%2Bx%263R%3DGSX%26lT%3DVAD%26su.maWKbE%3DSQ6%26kk.LVxI4d%3DN0-0Ep-IdbA%26%2Bp.ISM9bdp%25Ql34n%3Dlr6lNrRPS-PWEKR%2CGiRb_lhXceDQNpNI7ss4Hr%2CPA_HNtyFxE%2CeT4-mfz-tCO%26R%3D2xJVDUy53","colorTitleLink":"#3300B5","lineHeightTitle":"18","number":"5","colorDomainLink":"#0E7744","lineHeightDescription":"18","fontSizeDescription":"15","width":"99.5%","fontSizeDomainLink":"14","colorAdSeparator":"#FFFFFF","clickableBackgrounds":true,"lines":"3","longerHeadlines":true,"fontSizeTitle":"18","detailedAttribution":true};
+if (adblock2) {
+adblock2['noAdLoadedCallback'] = ask.CSA.handleNoBottomAdsLoaded;
+adblock2['adLoadedCallback'] = ask.CSA.handleBottomAdsLoaded;
+}
+if(typeof adblock1 != 'undefined' && null != adblock1 &&
+typeof ask.CSA.optimizeAdRequest === "function" && pageOptions.isAndroidTablet === true) {
+ask.CSA.optimizeAdRequest(adblock1);
+}
+function calculateSurplus(rr,ad,offset,win) {
+return win > 0 ? ((win+rr-offset) - (ad*2))/2 : -1;
+}
+function applyRules(surplus,breakpoints) {
+if(surplus > 0) {
+for(var i=0;i<breakpoints.length;i++) {
+var min = breakpoints[i].pixels;
+var max = breakpoints[i+1] ? breakpoints[i+1].pixels : 10000;
+if(surplus > min && surplus <= max) {
+return breakpoints[i].extensions || [];
+} else if(surplus < min) {
+return [];
+}
+}
+return breakpoints[i-1].extensions || [];
+} else {
+return [];
+}
+}
+function enableExtensions(extensions,csaCfg,pageCfg) {
+for(var i=0;i<extensions.length;i++) {
+var value = extensions[i].indexOf(':') != -1 ? extensions[i].substring(extensions[i].indexOf(':')+1) : true;
+var ext = extensions[i].indexOf(':') != -1 ? extensions[i].substring(0,extensions[i].indexOf(':')) : extensions[i];
+csaCfg[ext]=value;
+pageCfg[ext]=value;
+}
+var loggingParams = extensions.join(";").replace(/heightConstrained\:false/,"multiLineSiteLinks").replace(/siteLinks\;/,"");
+ask.CSA.gslExtensions = loggingParams;
+}
+var pl_rqnum = 0;
+var blocks = ['ads', pageOptions];
+if (typeof adblock1 != 'undefined' && null != adblock1) {
+pl_rqnum = parseInt(adblock1.maxTop);
+blocks.push(adblock1);
+}
+if (typeof adblock2 != 'undefined' && null != adblock2) {
+pl_rqnum = pl_rqnum + parseInt(adblock2.number);
+blocks.push(adblock2);
+}
+if (typeof adblock3 != 'undefined' && null != adblock3) {
+pl_rqnum = pl_rqnum + parseInt(adblock3.number);
+blocks.push(adblock3);
+}
+window['backfillParam'] = window.backfillParam || {};
+if (typeof adblock1 != 'undefined' && null != adblock1) {
+window['backfillParam']['pl_hex'] = adblock1.colorBackground ? adblock1.colorBackground : "#FFFFFF";
+window['backfillParam']['pl_clksp'] = adblock1.clickableBackgrounds;
+} else {
+window['backfillParam']['pl_hex'] = adblock2.colorBackground ? adblock2.colorBackground : "#FFFFFF";
+window['backfillParam']['pl_clksp'] = adblock2.clickableBackgrounds;
+}
+window['backfillParam']['pl_cl'] = pageOptions.pubId,
+window['backfillParam']['pl_ch'] = pageOptions.channel,
+window['backfillParam']['pl_type'] = 'csa';
+window['backfillParam']['pl_rp'] = (pageOptions.numRepeated) ? true : false;
+window['backfillParam']['pl_rqnum'] = pl_rqnum;
+window['backfillParam']['pl_timeout'] = ask.CSA.showSerpTimeoutLength ? ask.CSA.showSerpTimeoutLength : 0;
+try {
+_googCsa.apply(null, blocks);
+} catch (err) {
+ask.CSA.showSerp();
+}
+});
+ask.CSA.indexOf = function indexOf(inputObj, findObj) {
+for (var index = 0, length = inputObj.length; index < length; index++) {
+if (inputObj[index] === findObj) { return index; }
+}
+return -1;
+}
+</script>
+<style type="text/css">
+#magic1 {
+border-bottom: 1px solid #EBEBEB;
+}
+#magic2 {
+border-top: 1px solid #EBEBEB;
+}
+</style>
+<noscript>
+<style type="text/css">
+#midblock,#rightblock,#mobile-footer,.mobile-web-results,.hcsa,.footer {
+visibility:visible !important;
+}
+</style>
+</noscript>
+<link href="Search%20Results_files/sas-31783be6ccbbb998fa309ae0703961f3871fb977.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" id="displayAdConfiguration">
+/*********************************************************
+* Including the adyield libraries, load the library and
+* initalize the ad server
+*/
+var CONTAINER_TIMEOUT = 1500;
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+googletag.slots = googletag.slots || {};
+var iacjs = iacjs || {};
+iacjs.que = iacjs.que || [];
+window.asynLoader = function(scriptInfo) {
+var p, tag = document.createElement("script"),
+node = document.getElementsByTagName("script")[0];
+tag.async = true;
+for (p in scriptInfo) {
+if (scriptInfo.hasOwnProperty(p)) {
+tag[p] = scriptInfo[p];
+}
+}
+node.parentNode.insertBefore(tag, node);
+};
+function initAdServer() {
+if (iacjs.initAdserverSet) return;
+asynLoader({
+src: "//www.googletagservices.com/tag/js/gpt.js"
+});
+iacjs.initAdserverSet = true;
+}
+asynLoader({
+src: "//www.iacpublish.com/iacpublisher.min-ask.js"
+});
+get_request_identifier = (function() {
+return Math.random().toString(36).substr(2)
+}());
+</script>
+<script>
+var slotsDefined = [];
+slotsDefined.push({
+placement: 'dart-0',
+code: '/23219321/iac.ask-ask.us.dw/web/organic-dirN-0/0/',
+sizes: [
+[300, 250]
+],
+ad_uuid: "300x250_1",
+targeting: {
+pos: "bot",
+pos2: "300x250_1"
+}
+})
+var ad_config = {
+pageTargeting: {
+lang: "eng",
+loc: "us",
+ref: "direct",
+dc_ref: encodeURIComponent("http://www.ask.com/web?q=+pc+computers&qsrc=0&o=0&l=dir&qo=homepageSearchBox"),
+iabcat: "iab19-35",
+rpv: "68",
+ptype: "results",
+tx1: "dirN",
+tx2: "computers_and_electronics",
+ldid:"0",
+dow: new Date().getDay().toString(),
+rquid: get_request_identifier
+},
+slots: slotsDefined
+}
+</script>
+<script>
+iacjs.que.push(function() {
+iacjs.addAdUnits(ad_config.slots);
+iacjs.pageTargeting = ad_config.pageTargeting;
+iacjs.requestBids({
+bidsBackHandler: function() {
+window.initAdServer();
+}
+})
+});
+</script>
+<script>
+(function() {
+var slots = ad_config.slots || [];
+var index, pageTarget;
+var pageTargeting = ad_config.pageTargeting || {};
+var defineSlot = function(slot) {
+if (typeof slot === 'object') {
+(function(slot) {
+googletag.cmd.push(function() {
+googletag.slots[slot.placement] = googletag.defineSlot(slot.code, slot.sizes, slot.placement).addService(googletag.pubads());
+for (target in slot.targeting) {
+if (slot.targeting.hasOwnProperty(target)) {
+googletag.slots[slot.placement].setTargeting(target, slot.targeting[target])
+}
+}
+})
+})(slot)
+} else {
+console.log('slot not defined', slot)
+}
+};
+window.defineSlot = defineSlot;
+if (slots.length > 0) {
+for (index = 0; index < slots.length; index++) {
+defineSlot(slots[index]);
+}
+}
+googletag.cmd.push(function() {
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+googletag.cmd.push(function() {
+iacjs.que.push(function() {
+iacjs.setTargetingForGPTAsync();
+});
+});
+iacjs.timeout = window.setTimeout(initAdServer, CONTAINER_TIMEOUT);
+})();
+</script>
+<link type="text/css" rel="stylesheet" href="Search%20Results_files/ask_web.css">
+<style>
+.hcsa {
+visibility: hidden;
+}
+.sprite {
+background-image: url(//sp.ask.com/sh/i/images/ask-sprite-1.0.1.png);
+}
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+.sprite {
+background-image: url(//sp.ask.com/sh/i/images/ask-sprite-1.0.1-@2x.png);
+background-size: 111px 180px;
+}
+}
+#magic2 {
+border-bottom: 1px solid #ebebeb;
+}
+.rightrail-web-result-title-link{
+text-decoration: none;
+bottom: 5px;
+position: relative;
+}
+a.sa_headline, .web-results-more-link, .web-result-title-link, .news-result-item-link {
+text-decoration: none;
+}
+.sa a:hover{
+text-decoration: none;
+}
+.rightrail-web-results-title{
+display: block;
+color: #666;
+font-size: 13px;
+line-height: 16px;
+padding-bottom: 6px;
+}
+.web-result-title, .sa_headline {
+font-size: 18px;
+line-height: 20px;
+}
+.web-result-description {
+font-size: 15px;
+line-height: 18px;
+}
+.web-result-url {
+font-size: 14px;
+line-height: 16px;
+}
+.qna-title {
+font-size: 14px;
+font-weight: bold;
+line-height: 18px;
+}
+.qna-description {
+font-size: 14px;
+line-height: 18px;
+}
+.qna-source {
+font-size: 14px;
+line-height: 17px;
+}
+.related-search {
+padding-bottom: 9px;
+}
+.related-search-item-link {
+font-size: 16px;
+line-height: 18px;
+}
+.cloud-right {
+width: 310px;
+}
+.related-search-cloud-item-link {
+color: #3300b5;
+text-decoration: none;
+display: inline;
+font-size: 16px;
+line-height: 24px;
+}
+a.related-search-cloud-item-link:hover {
+text-decoration: underline;
+}
+.sa_abstract {
+font-size: 15px;
+line-height: 18px;
+}
+.sa_content_block{
+font-size: 14px;
+}
+#magic2 {
+border-bottom: none;
+}
+.related-search-item-link {
+display: block;
+line-height: 18px;
+text-overflow: ellipsis;
+overflow: hidden;
+}
+</style><script src="Search%20Results_files/cc.js" async="" id="LOTCC_4737"></script><style type="text/css">#mid-content,#right-content,#midblock,#rightblock,#mobile-footer,.mobile-web-results,.hcsa,.footer { visibility:visible;}</style><script src="Search%20Results_files/pubads_impl_110.js" async=""></script><link rel="prefetch" href="http://tpc.googlesyndication.com/safeframe/1-0-6/html/container.html"><script src="Search%20Results_files/i.js" async=""></script></head>
+ <body>
+<script type="text/javascript">
+var dataLayer = [
+{
+"channel": "web",
+"affiliateid": "0",
+"sessionid": "762936329",
+"ldid": "",
+"acquisitiondivision": "dirN"
+}
+];
+</script>
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-T3KVMC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-T3KVMC');</script>
+<div class="l-header">
+<div class="searchbox">
+<div class="searchbox-logo sprite ur js-searchbox-logo">
+<a class="searchbox-logo-link" onmousedown="uaction(this,{up:'af8cF=%KBAOo&amp;3=Wg84l4&amp;Jx=8&amp;CV=PPbhYTFmjG&amp;49=uBA8yfXNOE&amp;c5=w&amp;+E=TTIIrVo6X'});" title="Ask.com" href="http://www.ask.com/?qsrc=14137&amp;o=0&amp;l=dir">
+<span class="alt-text">askLogo</span>
+</a>
+</div>
+<div class="searchbox-wrapper">
+<div class="searchbox-container js-searchbox-container">
+<form id="js-searchbox-top-form" action="/web">
+<input id="js-top-q" data-ordinal="0" class="searchbox-q js-searchbox-q" value=" pc computers" name="q" autocomplete="off" autocorrect="off" autocapitalize="off" maxlength="2048" type="text">
+<input value="1" name="qsrc" type="hidden">
+<input value="0" name="o" type="hidden">
+<input value="dir" name="l" type="hidden">
+<input value="serpSearchTopBox" id="qo" name="qo" type="hidden">
+<button class="searchbox-button js-sb-button" type="submit" value="">
+<div class="searchbox-magnifier sprite"></div>
+</button>
+</form>
+<div class="ac_results" style="position: relative; display: none; max-height: 300px; z-index: 9999; left: -1px; top: 8px;"></div></div>
+<div class="searchbox-clear sprite js-searchbox-clear" title="clear"></div>
+<div class="searchbox-poweredby sprite"></div>
+</div>
+</div>
+<div class="nav-links ur">
+<ul>
+<li class="nav-links-active">Answers</li>
+<li>
+<span class="nav-separator">|</span>
+<a class="nav-link js-nav-link" onmousedown="uaction(this,{up:'7e650=I+jtzC&amp;e=QNyhHU&amp;Qn=l&amp;k8=Pmn3HbR6ka&amp;Pg=mKt7Qsx55m&amp;45=l&amp;Pj=4NLMcvf6L'});" href="http://www.ask.com/youtube?q=+pc+computers&amp;qsrc=167&amp;qo=channelNavigation&amp;o=0&amp;l=dir">Videos</a>
+</li>
+</ul>
+</div> </div>
+<div class="l-content">
+<div class="l-mid-content hcsa">
+<div id="csaTop" class="ad-top"><div id="magic1" style="width: 99.5%; font-weight: normal; text-align: center; height: 580px; background-color: rgb(255, 255, 255);"><iframe marginwidth="0" marginheight="0" allowtransparency="true" scrolling="no" style="visibility: visible; height: 580px;" name="{&quot;name&quot;:&quot;master-1&quot;,&quot;slave-1-1&quot;:{&quot;clicktrackUrl&quot;:&quot;//clk-askus.ask.com/clk?pos=bottom&amp;q=+pc+computers&amp;qid=79BDD1E4707E7B73F98FE6E85D7127EB&amp;ip=8ef43f87&amp;o=0&amp;l=dir&amp;qsrc=0&amp;page=1&amp;cl=aj-cat-intl&amp;ch=computers-other%2Corig_homepageSearchBox%2Cud_desktop%2Cask-non-dla&amp;c=a&amp;p_uid=&amp;p_clk_id=&amp;anxu=http%3A%2F%2Fwww.ask.com%2Fweb&amp;pl=b75cmK%3DfK7NMiKl4XDGy%26b8Y%3DMTn9epSlk_y%25i_a8GpbA3HKGQwIqrTLhT%26R3%3DxXK6K%263R%3D7OCTxQAbrWuDqDtRuc1fvbAtuJC6x%2Bgn%26Ch%3DuGLdVto%26ay%3DYBYDF9FoEtkUukvGi%26FPXq%3DrC-KO%25-ektY%26Q8E%3DhxL6zaEp5-CqvV%2BatTz6XF_UaahpDcteUdoVGIBxO%2BBMG_nxZ8Bx%25N796uj-Osk-7cl%26PX%3Divz0yB%26jM%3DyOh.ikH%26X6v%3D%26I8%3DYUGMwhAg0Md%26DV%3DUhKUu%26ZzJ%3DeR%26Gi%3D6nu%26Vh%3DR%261%2B%3D%26YQM%3D%26L%3Da&amp;gclid=&amp;up=31d5K%3DaZvg%2Bx%263R%3DGSX%26lT%3DVAD%26su.maWKbE%3DSQ6%26kk.LVxI4d%3DN0-0Ep-IdbA%26%2Bp.ISM9bdp%25Ql34n%3Dlr6lNrRPS-PWEKR%2CGiRb_lhXceDQNpNI7ss4Hr%2CPA_HNtyFxE%2CeT4-mfz-tCO%26R%3D2xJVDUy53&quot;,&quot;container&quot;:&quot;magic2&quot;,&quot;linkTarget&quot;:&quot;_blank&quot;,&quot;verticalSpacing&quot;:&quot;9&quot;,&quot;lines&quot;:&quot;3&quot;,&quot;colorAdSeparator&quot;:&quot;#FFFFFF&quot;,&quot;colorText&quot;:&quot;#333333&quot;,&quot;colorTitleLink&quot;:&quot;#3300B5&quot;,&quot;colorDomainLink&quot;:&quot;#0E7744&quot;,&quot;colorBackground&quot;:&quot;#FFFFFF&quot;,&quot;colorAttribution&quot;:&quot;#333333&quot;,&quot;fontSizeTitle&quot;:&quot;18px&quot;,&quot;fontSizeDescription&quot;:&quot;15px&quot;,&quot;fontSizeDomainLink&quot;:&quot;14px&quot;,&quot;fontSizeAttribution&quot;:&quot;13px&quot;,&quot;rightHandAttribution&quot;:false,&quot;clickableBackgrounds&quot;:true,&quot;adIconLocation&quot;:&quot;ad-left&quot;,&quot;lineHeightTitle&quot;:&quot;18&quot;,&quot;lineHeightDescription&quot;:&quot;18&quot;,&quot;lineHeightDomainLink&quot;:&quot;18&quot;,&quot;domainLinkAboveDescription&quot;:true,&quot;heightConstrained&quot;:false,&quot;width&quot;:&quot;99.5%&quot;,&quot;detailedAttribution&quot;:true,&quot;attributionSpacingBelow&quot;:7,&quot;type&quot;:&quot;ads&quot;,&quot;hl&quot;:&quot;&quot;,&quot;columns&quot;:1,&quot;horizontalAlignment&quot;:&quot;left&quot;,&quot;resultsPageQueryParam&quot;:&quot;query&quot;},&quot;master-1&quot;:{&quot;clicktrackUrl&quot;:&quot;//clk-askus.ask.com/clk?pos=top&amp;q=+pc+computers&amp;qid=79BDD1E4707E7B73F98FE6E85D7127EB&amp;ip=8ef43f87&amp;o=0&amp;l=dir&amp;qsrc=0&amp;page=1&amp;cl=aj-cat-intl&amp;ch=computers-other%2Corig_homepageSearchBox%2Cud_desktop%2Cask-non-dla&amp;c=a&amp;p_uid=&amp;p_clk_id=&amp;anxu=http%3A%2F%2Fwww.ask.com%2Fweb&amp;pl=5525%2Bu%3DWLeIuhE2grLEH%26NTO%3Dh8eoySeCU_Mu8_pGplx3BiEBGnBn0y6PA%26Td%3DddIA9%26li%3DktnpYkfktQuYvufV4B0D1FdIlRkLcuw3%26wp%3DHUlGwO7%26xZ%3DZRMjVnvOI%25MrWT6PF%26v87h%3D3a-mIV-ER1l%26DZl%3DJinxvsu%2BW-0V9%25aLwVOa0X_UeMeL6WxtaC2Celcg5CE67_brr8lLjPk6xZD-XKJ-2Y3%26x4%3D7%255QQM%262W%3DM4E.jVB%26nxU%3D%26P6%3DowAHwBPB7bm%26MI%3DST%25Ws%26BHz%3DD5%26Xw%3DlKl%264R%3DW%26TO%3D%26ga8%3D%26r%3DF&amp;gclid=&amp;up=af1cW%3DphCRK2%26bo%3D27B%26pr%3Dr%2BN%26FU.jZdzXF%3DGF6%2688.9AFTy1%3DO0-%2B0U-0Ew7%26%25E.tYVJPt9GMiN54%3DAEacRyyhk-fP%2B%2B5%2CiiOC_hdZh3WwXEUBNGOKkd%2CRB_KGCtw8k%2CC1S-4Fp-7JO%26Q%3D2wSMy8&quot;,&quot;container&quot;:&quot;magic1&quot;,&quot;linkTarget&quot;:&quot;_blank&quot;,&quot;verticalSpacing&quot;:&quot;9&quot;,&quot;lines&quot;:&quot;3&quot;,&quot;colorAdSeparator&quot;:&quot;#FFFFFF&quot;,&quot;colorText&quot;:&quot;#333333&quot;,&quot;colorTitleLink&quot;:&quot;#3300B5&quot;,&quot;colorDomainLink&quot;:&quot;#0E7744&quot;,&quot;colorBackground&quot;:&quot;#FFFFFF&quot;,&quot;colorAttribution&quot;:&quot;#333333&quot;,&quot;fontSizeTitle&quot;:&quot;18px&quot;,&quot;fontSizeDescription&quot;:&quot;15px&quot;,&quot;fontSizeDomainLink&quot;:&quot;14px&quot;,&quot;fontSizeAttribution&quot;:&quot;13px&quot;,&quot;rightHandAttribution&quot;:false,&quot;clickableBackgrounds&quot;:true,&quot;adIconLocation&quot;:&quot;ad-left&quot;,&quot;lineHeightTitle&quot;:&quot;18&quot;,&quot;lineHeightDescription&quot;:&quot;18&quot;,&quot;lineHeightDomainLink&quot;:&quot;18&quot;,&quot;domainLinkAboveDescription&quot;:true,&quot;heightConstrained&quot;:false,&quot;width&quot;:&quot;99.5%&quot;,&quot;detailedAttribution&quot;:true,&quot;attributionSpacingBelow&quot;:7,&quot;type&quot;:&quot;ads&quot;,&quot;hl&quot;:&quot;&quot;,&quot;columns&quot;:1,&quot;horizontalAlignment&quot;:&quot;left&quot;,&quot;resultsPageQueryParam&quot;:&quot;query&quot;}}" id="master-1" src="Search%20Results_files/ads.htm" width="100%" frameborder="0"></iframe></div></div>
+<script>
+window['backfillParam'] = window['backfillParam'] || {};
+window['backfillParam']['pl_tmodn'] = 1;
+ask.CSA.startShowSerpTimeout();
+</script>
+<div class="l-web-results web-results content-mid">
+<div class="web-results-header-title">Web Results</div>
+<div class="ur web-result tsrc_SAS" data-zen="true">
+<div class="sasr sa_wide sa-cont ur" data-zen="true" data-en="pgsa" data-extended="da_sn=00090&amp;da_origin=raw&amp;da_sro=2138881&amp;da_lhs=2138840&amp;da_lhx=PriceGrabber%3A+simple&amp;da_cat=16&amp;da_lhp=1&amp;da_partner=18" data-partner="18" data-area="51">
+<div class="sa" data-origin="raw" data-sn="00090" data-sro="2138881" data-lhs="2138840" data-desc="PriceGrabber: simple">
+<a href="http://shop411.com/shopping?q=pc+computers&amp;o=23070&amp;qo=shoppingSmartAnswer" class="sa_headline sa_clt" onmousedown="uaction(this,{up:'4c1cO=ZKh4delRY4&amp;a=xcjNWR&amp;8o=A&amp;gH=7mnBKxX6mGj&amp;3S=Vl2+rWwDj&amp;2b=U&amp;Wi=lL9dQZXjZgXH&amp;GT=RL45TN6SKUjZ9I2&amp;Wd.AqNlqNcexEfW=oQsG&amp;eq.me0FeIw=v3C9H4G&amp;cK.7MCx=Uv&amp;vA.YF1LX=sj1&amp;PL.5AyjFk%JTO=y&amp;bG.Kp3388s=XN&amp;0v.vjyHTx62=VL&amp;Ey.C8QvRCva=zrxZK'});">Shopping results for <b>pc computers</b></a>
+<div class="sa_col">
+<div class="sa_shop_item">
+<div class="sa_shop_img">
+<a href="http://rd.bizrate.com/rd?t=https%3A%2F%2Fsoftware-now.com%2Fwindows-8-pro-download-1-install%2F&amp;mid=238649&amp;cat_id=461&amp;atom=10038&amp;prod_id=&amp;oid=7226106674&amp;pos=1&amp;b_id=18&amp;bid_type=0&amp;bamt=a5fedf14fd8fec0d&amp;cobrand=1&amp;ppr=933f2c61f5e54c1e&amp;af_sid=21&amp;mpid=3565&amp;keyword=pc%20computers&amp;rf=af1&amp;af_assettype_id=10&amp;af_creative_id=2912&amp;af_id=615133&amp;af_placement_id=1" class="sa_ext" target="_blank" onmousedown="uaction(this,{up:'4c1cO=ZKh4delRY4&amp;a=xcjNWR&amp;8o=A&amp;gH=7mnBKxX6mGj&amp;3S=Vl2+rWwDj&amp;2b=U&amp;Wi=lL9dQZXjZgXH&amp;GT=RL45TN6SKUjZ9I2&amp;Wd.AqNlqNcexEfW=oQsG&amp;eq.me0FeIw=v3C9H4G&amp;cK.7MCx=Uv&amp;vA.YF1LX=sj1&amp;PL.5AyjFk%JTO=y&amp;bG.Kp3388s=XN&amp;0v.vjyHTx62=VL&amp;Ey.C8QvRCva=zrxZK'});">
+<img src="Search%20Results_files/7226106674.jpg">
+</a>
+</div>
+<div class="sa_shop_title">
+<a href="http://rd.bizrate.com/rd?t=https%3A%2F%2Fsoftware-now.com%2Fwindows-8-pro-download-1-install%2F&amp;mid=238649&amp;cat_id=461&amp;atom=10038&amp;prod_id=&amp;oid=7226106674&amp;pos=1&amp;b_id=18&amp;bid_type=0&amp;bamt=a5fedf14fd8fec0d&amp;cobrand=1&amp;ppr=933f2c61f5e54c1e&amp;af_sid=21&amp;mpid=3565&amp;keyword=pc%20computers&amp;rf=af1&amp;af_assettype_id=10&amp;af_creative_id=2912&amp;af_id=615133&amp;af_placement_id=1" class="sa_ext" target="_blank" onmousedown="uaction(this,{up:'4c1cO=ZKh4delRY4&amp;a=xcjNWR&amp;8o=A&amp;gH=7mnBKxX6mGj&amp;3S=Vl2+rWwDj&amp;2b=U&amp;Wi=lL9dQZXjZgXH&amp;GT=RL45TN6SKUjZ9I2&amp;Wd.AqNlqNcexEfW=oQsG&amp;eq.me0FeIw=v3C9H4G&amp;cK.7MCx=Uv&amp;vA.YF1LX=sj1&amp;PL.5AyjFk%JTO=y&amp;bG.Kp3388s=XN&amp;0v.vjyHTx62=VL&amp;Ey.C8QvRCva=zrxZK'});">Windows 8 Pro Download 1 Install</a>
+</div>
+<div class="sa_shop_price">
+$49.79
+</div>
+<div class="sa_shop_merchants">
+Software-now.com
+</div>
+</div>
+<div class="sa_shop_item">
+<div class="sa_shop_img">
+<a href="http://rd.bizrate.com/rd?t=http%3A%2F%2Fc.affil.walmart.com%2Ft%2Fcsebr01%3Fl%3Dhttp%253A%252F%252Fwww.walmart.com%252Fip%252FManufacturer-Refurbished-Acer-Aspire-Iconia-One-with-WiFi-10.1-Touchscreen-Tablet-PC-Featuring-Android-5.1-Lollipop-Operating-System-White%252F51871948%253Fwmlspartner%253Dbizratecom%2526affcmpid%253D3657845535%2526tmode%253D0000%2526bcfg%253D57bf9d00452227d144cce9d2bb1f8704%2526veh%253Dcse%26szredirectid%3DSZ_REDIRECT_ID&amp;mid=401&amp;cat_id=9257&amp;atom=9262&amp;prod_id=&amp;oid=6871665919&amp;pos=1&amp;b_id=18&amp;bid_type=1&amp;bamt=78dd84de4e0292ec&amp;cobrand=1&amp;ppr=5151f966a145e649&amp;af_sid=21&amp;mpid=51871948&amp;brandId=32472&amp;keyword=pc%20computers&amp;rf=af1&amp;af_assettype_id=10&amp;af_creative_id=2912&amp;af_id=615133&amp;af_placement_id=1" class="sa_ext" target="_blank" onmousedown="uaction(this,{up:'4c1cO=ZKh4delRY4&amp;a=xcjNWR&amp;8o=A&amp;gH=7mnBKxX6mGj&amp;3S=Vl2+rWwDj&amp;2b=U&amp;Wi=lL9dQZXjZgXH&amp;GT=RL45TN6SKUjZ9I2&amp;Wd.AqNlqNcexEfW=oQsG&amp;eq.me0FeIw=v3C9H4G&amp;cK.7MCx=Uv&amp;vA.YF1LX=sj1&amp;PL.5AyjFk%JTO=y&amp;bG.Kp3388s=XN&amp;0v.vjyHTx62=VL&amp;Ey.C8QvRCva=zrxZK'});">
+<img src="Search%20Results_files/6871665919.jpg">
+</a>
+</div>
+<div class="sa_shop_title">
+<a href="http://rd.bizrate.com/rd?t=http%3A%2F%2Fc.affil.walmart.com%2Ft%2Fcsebr01%3Fl%3Dhttp%253A%252F%252Fwww.walmart.com%252Fip%252FManufacturer-Refurbished-Acer-Aspire-Iconia-One-with-WiFi-10.1-Touchscreen-Tablet-PC-Featuring-Android-5.1-Lollipop-Operating-System-White%252F51871948%253Fwmlspartner%253Dbizratecom%2526affcmpid%253D3657845535%2526tmode%253D0000%2526bcfg%253D57bf9d00452227d144cce9d2bb1f8704%2526veh%253Dcse%26szredirectid%3DSZ_REDIRECT_ID&amp;mid=401&amp;cat_id=9257&amp;atom=9262&amp;prod_id=&amp;oid=6871665919&amp;pos=1&amp;b_id=18&amp;bid_type=1&amp;bamt=78dd84de4e0292ec&amp;cobrand=1&amp;ppr=5151f966a145e649&amp;af_sid=21&amp;mpid=51871948&amp;brandId=32472&amp;keyword=pc%20computers&amp;rf=af1&amp;af_assettype_id=10&amp;af_creative_id=2912&amp;af_id=615133&amp;af_placement_id=1" class="sa_ext" target="_blank" onmousedown="uaction(this,{up:'4c1cO=ZKh4delRY4&amp;a=xcjNWR&amp;8o=A&amp;gH=7mnBKxX6mGj&amp;3S=Vl2+rWwDj&amp;2b=U&amp;Wi=lL9dQZXjZgXH&amp;GT=RL45TN6SKUjZ9I2&amp;Wd.AqNlqNcexEfW=oQsG&amp;eq.me0FeIw=v3C9H4G&amp;cK.7MCx=Uv&amp;vA.YF1LX=sj1&amp;PL.5AyjFk%JTO=y&amp;bG.Kp3388s=XN&amp;0v.vjyHTx62=VL&amp;Ey.C8QvRCva=zrxZK'});">Manufacturer Refurbished Acer</a>
+</div>
+<div class="sa_shop_price">
+$113.85
+</div>
+<div class="sa_shop_merchants">
+Walmart.com
+</div>
+</div>
+<div class="sa_shop_item">
+<div class="sa_shop_img">
+<a href="http://rd.bizrate.com/rd?t=http%3A%2F%2Fc.affil.walmart.com%2Ft%2Fcsebr01%3Fl%3Dhttp%253A%252F%252Fwww.walmart.com%252Fip%252FiView-SupraPad-with-WiFi-10.1-Touchscreen-Tablet-PC-Featuring-Android-6.0-Marshmallow-Operating-System%252F54188909%253Fwmlspartner%253Dbizratecom%2526affcmpid%253D1527139075%2526tmode%253D0000%2526bcfg%253D57bf9d00452227d144cce9d2bb1f8704%2526veh%253Dcse%26szredirectid%3DSZ_REDIRECT_ID&amp;mid=401&amp;cat_id=9257&amp;atom=9262&amp;prod_id=&amp;oid=7009846834&amp;pos=1&amp;b_id=18&amp;bid_type=1&amp;bamt=78dd84de4e0292ec&amp;cobrand=1&amp;ppr=341705eab4764c96&amp;af_sid=21&amp;mpid=54188909&amp;brandId=32472&amp;keyword=pc%20computers&amp;rf=af1&amp;af_assettype_id=10&amp;af_creative_id=2912&amp;af_id=615133&amp;af_placement_id=1" class="sa_ext" target="_blank" onmousedown="uaction(this,{up:'4c1cO=ZKh4delRY4&amp;a=xcjNWR&amp;8o=A&amp;gH=7mnBKxX6mGj&amp;3S=Vl2+rWwDj&amp;2b=U&amp;Wi=lL9dQZXjZgXH&amp;GT=RL45TN6SKUjZ9I2&amp;Wd.AqNlqNcexEfW=oQsG&amp;eq.me0FeIw=v3C9H4G&amp;cK.7MCx=Uv&amp;vA.YF1LX=sj1&amp;PL.5AyjFk%JTO=y&amp;bG.Kp3388s=XN&amp;0v.vjyHTx62=VL&amp;Ey.C8QvRCva=zrxZK'});">
+<img src="Search%20Results_files/7009846834.jpg">
+</a>
+</div>
+<div class="sa_shop_title">
+<a href="http://rd.bizrate.com/rd?t=http%3A%2F%2Fc.affil.walmart.com%2Ft%2Fcsebr01%3Fl%3Dhttp%253A%252F%252Fwww.walmart.com%252Fip%252FiView-SupraPad-with-WiFi-10.1-Touchscreen-Tablet-PC-Featuring-Android-6.0-Marshmallow-Operating-System%252F54188909%253Fwmlspartner%253Dbizratecom%2526affcmpid%253D1527139075%2526tmode%253D0000%2526bcfg%253D57bf9d00452227d144cce9d2bb1f8704%2526veh%253Dcse%26szredirectid%3DSZ_REDIRECT_ID&amp;mid=401&amp;cat_id=9257&amp;atom=9262&amp;prod_id=&amp;oid=7009846834&amp;pos=1&amp;b_id=18&amp;bid_type=1&amp;bamt=78dd84de4e0292ec&amp;cobrand=1&amp;ppr=341705eab4764c96&amp;af_sid=21&amp;mpid=54188909&amp;brandId=32472&amp;keyword=pc%20computers&amp;rf=af1&amp;af_assettype_id=10&amp;af_creative_id=2912&amp;af_id=615133&amp;af_placement_id=1" class="sa_ext" target="_blank" onmousedown="uaction(this,{up:'4c1cO=ZKh4delRY4&amp;a=xcjNWR&amp;8o=A&amp;gH=7mnBKxX6mGj&amp;3S=Vl2+rWwDj&amp;2b=U&amp;Wi=lL9dQZXjZgXH&amp;GT=RL45TN6SKUjZ9I2&amp;Wd.AqNlqNcexEfW=oQsG&amp;eq.me0FeIw=v3C9H4G&amp;cK.7MCx=Uv&amp;vA.YF1LX=sj1&amp;PL.5AyjFk%JTO=y&amp;bG.Kp3388s=XN&amp;0v.vjyHTx62=VL&amp;Ey.C8QvRCva=zrxZK'});">iView SupraPad with WiFi 10.1"</a>
+</div>
+<div class="sa_shop_price">
+$64.47
+</div>
+<div class="sa_shop_merchants">
+Walmart.com
+</div>
+</div>
+<div class="sa_shop_item sa_shop_item_div">
+<div class="sa_shop_img">
+<a href="http://rd.bizrate.com/rd?t=http%3A%2F%2Fc.affil.walmart.com%2Ft%2Fcsebr01%3Fl%3Dhttp%253A%252F%252Fwww.walmart.com%252Fip%252FiView-SupraPad-with-WiFi-10.1-Touchscreen-Tablet-PC-Featuring-Android-6.0-Marshmallow-Operating-System%252F54188904%253Fwmlspartner%253Dbizratecom%2526affcmpid%253D3624291080%2526tmode%253D0000%2526bcfg%253D57bf9d00452227d144cce9d2bb1f8704%2526veh%253Dcse%26szredirectid%3DSZ_REDIRECT_ID&amp;mid=401&amp;cat_id=9257&amp;atom=9262&amp;prod_id=&amp;oid=7009890933&amp;pos=1&amp;b_id=18&amp;bid_type=1&amp;bamt=78dd84de4e0292ec&amp;cobrand=1&amp;ppr=390362e50a463dad&amp;af_sid=21&amp;mpid=54188904&amp;brandId=32472&amp;keyword=pc%20computers&amp;rf=af1&amp;af_assettype_id=10&amp;af_creative_id=2912&amp;af_id=615133&amp;af_placement_id=1" class="sa_ext" target="_blank" onmousedown="uaction(this,{up:'4c1cO=ZKh4delRY4&amp;a=xcjNWR&amp;8o=A&amp;gH=7mnBKxX6mGj&amp;3S=Vl2+rWwDj&amp;2b=U&amp;Wi=lL9dQZXjZgXH&amp;GT=RL45TN6SKUjZ9I2&amp;Wd.AqNlqNcexEfW=oQsG&amp;eq.me0FeIw=v3C9H4G&amp;cK.7MCx=Uv&amp;vA.YF1LX=sj1&amp;PL.5AyjFk%JTO=y&amp;bG.Kp3388s=XN&amp;0v.vjyHTx62=VL&amp;Ey.C8QvRCva=zrxZK'});">
+<img src="Search%20Results_files/7009890933.jpg">
+</a>
+</div>
+<div class="sa_shop_title">
+<a href="http://rd.bizrate.com/rd?t=http%3A%2F%2Fc.affil.walmart.com%2Ft%2Fcsebr01%3Fl%3Dhttp%253A%252F%252Fwww.walmart.com%252Fip%252FiView-SupraPad-with-WiFi-10.1-Touchscreen-Tablet-PC-Featuring-Android-6.0-Marshmallow-Operating-System%252F54188904%253Fwmlspartner%253Dbizratecom%2526affcmpid%253D3624291080%2526tmode%253D0000%2526bcfg%253D57bf9d00452227d144cce9d2bb1f8704%2526veh%253Dcse%26szredirectid%3DSZ_REDIRECT_ID&amp;mid=401&amp;cat_id=9257&amp;atom=9262&amp;prod_id=&amp;oid=7009890933&amp;pos=1&amp;b_id=18&amp;bid_type=1&amp;bamt=78dd84de4e0292ec&amp;cobrand=1&amp;ppr=390362e50a463dad&amp;af_sid=21&amp;mpid=54188904&amp;brandId=32472&amp;keyword=pc%20computers&amp;rf=af1&amp;af_assettype_id=10&amp;af_creative_id=2912&amp;af_id=615133&amp;af_placement_id=1" class="sa_ext" target="_blank" onmousedown="uaction(this,{up:'4c1cO=ZKh4delRY4&amp;a=xcjNWR&amp;8o=A&amp;gH=7mnBKxX6mGj&amp;3S=Vl2+rWwDj&amp;2b=U&amp;Wi=lL9dQZXjZgXH&amp;GT=RL45TN6SKUjZ9I2&amp;Wd.AqNlqNcexEfW=oQsG&amp;eq.me0FeIw=v3C9H4G&amp;cK.7MCx=Uv&amp;vA.YF1LX=sj1&amp;PL.5AyjFk%JTO=y&amp;bG.Kp3388s=XN&amp;0v.vjyHTx62=VL&amp;Ey.C8QvRCva=zrxZK'});">iView SupraPad with WiFi 10.1"</a>
+</div>
+<div class="sa_shop_price">
+$68.00
+</div>
+<div class="sa_shop_merchants">
+Walmart.com
+</div>
+</div>
+<div class="sa_shop_item">
+<div class="sa_shop_img">
+<a href="http://rd.bizrate.com/rd?t=https%3A%2F%2Fjet.com%2Fproduct%2Fdetail%2F6b3a5a0b502846418df765d00348b7a8%3Fjcmp%3Dplacse%3Acnx%3ANJ%3AElectronics%3AComputers_Accessories%3ALaptops%3Adur%3Ana&amp;mid=297996&amp;cat_id=462&amp;atom=10039&amp;prod_id=&amp;oid=6973604687&amp;pos=1&amp;b_id=18&amp;bid_type=8&amp;bamt=be85fa8f6ad737f6&amp;cobrand=1&amp;ppr=cd115941015e867c&amp;af_sid=21&amp;mpid=6b3a5a0b502846418df765d00348b7a8&amp;brandId=42881&amp;keyword=pc%20computers&amp;rf=af1&amp;af_assettype_id=10&amp;af_creative_id=2912&amp;af_id=615133&amp;af_placement_id=1" class="sa_ext" target="_blank" onmousedown="uaction(this,{up:'4c1cO=ZKh4delRY4&amp;a=xcjNWR&amp;8o=A&amp;gH=7mnBKxX6mGj&amp;3S=Vl2+rWwDj&amp;2b=U&amp;Wi=lL9dQZXjZgXH&amp;GT=RL45TN6SKUjZ9I2&amp;Wd.AqNlqNcexEfW=oQsG&amp;eq.me0FeIw=v3C9H4G&amp;cK.7MCx=Uv&amp;vA.YF1LX=sj1&amp;PL.5AyjFk%JTO=y&amp;bG.Kp3388s=XN&amp;0v.vjyHTx62=VL&amp;Ey.C8QvRCva=zrxZK'});">
+<img src="Search%20Results_files/6973604687.jpg">
+</a>
+</div>
+<div class="sa_shop_title">
+<a href="http://rd.bizrate.com/rd?t=https%3A%2F%2Fjet.com%2Fproduct%2Fdetail%2F6b3a5a0b502846418df765d00348b7a8%3Fjcmp%3Dplacse%3Acnx%3ANJ%3AElectronics%3AComputers_Accessories%3ALaptops%3Adur%3Ana&amp;mid=297996&amp;cat_id=462&amp;atom=10039&amp;prod_id=&amp;oid=6973604687&amp;pos=1&amp;b_id=18&amp;bid_type=8&amp;bamt=be85fa8f6ad737f6&amp;cobrand=1&amp;ppr=cd115941015e867c&amp;af_sid=21&amp;mpid=6b3a5a0b502846418df765d00348b7a8&amp;brandId=42881&amp;keyword=pc%20computers&amp;rf=af1&amp;af_assettype_id=10&amp;af_creative_id=2912&amp;af_id=615133&amp;af_placement_id=1" class="sa_ext" target="_blank" onmousedown="uaction(this,{up:'4c1cO=ZKh4delRY4&amp;a=xcjNWR&amp;8o=A&amp;gH=7mnBKxX6mGj&amp;3S=Vl2+rWwDj&amp;2b=U&amp;Wi=lL9dQZXjZgXH&amp;GT=RL45TN6SKUjZ9I2&amp;Wd.AqNlqNcexEfW=oQsG&amp;eq.me0FeIw=v3C9H4G&amp;cK.7MCx=Uv&amp;vA.YF1LX=sj1&amp;PL.5AyjFk%JTO=y&amp;bG.Kp3388s=XN&amp;0v.vjyHTx62=VL&amp;Ey.C8QvRCva=zrxZK'});">Asus ROG G752VS (VR Ready)</a>
+</div>
+<div class="sa_shop_price">
+$2,256.45
+</div>
+<div class="sa_shop_merchants">
+Jet.com
+</div>
+</div>
+<div class="sa_shop_item sa_shop_item_last">
+<div class="sa_shop_img">
+<a href="http://rd.bizrate.com/rd?t=https%3A%2F%2Fjet.com%2Fproduct%2Fdetail%2Fd4f09a35d2c0429f80a36be807a5a984%3Fjcmp%3Dplacse%3Acnx%3ANJ%3AElectronics%3AComputers_Accessories%3ALaptops%3Adur%3Ana&amp;mid=297996&amp;cat_id=462&amp;atom=10039&amp;prod_id=&amp;oid=6995077601&amp;pos=1&amp;b_id=18&amp;bid_type=8&amp;bamt=be85fa8f6ad737f6&amp;cobrand=1&amp;ppr=36d2c4c74a163f02&amp;af_sid=21&amp;mpid=d4f09a35d2c0429f80a36be807a5a984&amp;brandId=1522&amp;keyword=pc%20computers&amp;rf=af1&amp;af_assettype_id=10&amp;af_creative_id=2912&amp;af_id=615133&amp;af_placement_id=1" class="sa_ext" target="_blank" onmousedown="uaction(this,{up:'4c1cO=ZKh4delRY4&amp;a=xcjNWR&amp;8o=A&amp;gH=7mnBKxX6mGj&amp;3S=Vl2+rWwDj&amp;2b=U&amp;Wi=lL9dQZXjZgXH&amp;GT=RL45TN6SKUjZ9I2&amp;Wd.AqNlqNcexEfW=oQsG&amp;eq.me0FeIw=v3C9H4G&amp;cK.7MCx=Uv&amp;vA.YF1LX=sj1&amp;PL.5AyjFk%JTO=y&amp;bG.Kp3388s=XN&amp;0v.vjyHTx62=VL&amp;Ey.C8QvRCva=zrxZK'});">
+<img src="Search%20Results_files/6995077601.jpg">
+</a>
+</div>
+<div class="sa_shop_title">
+<a href="http://rd.bizrate.com/rd?t=https%3A%2F%2Fjet.com%2Fproduct%2Fdetail%2Fd4f09a35d2c0429f80a36be807a5a984%3Fjcmp%3Dplacse%3Acnx%3ANJ%3AElectronics%3AComputers_Accessories%3ALaptops%3Adur%3Ana&amp;mid=297996&amp;cat_id=462&amp;atom=10039&amp;prod_id=&amp;oid=6995077601&amp;pos=1&amp;b_id=18&amp;bid_type=8&amp;bamt=be85fa8f6ad737f6&amp;cobrand=1&amp;ppr=36d2c4c74a163f02&amp;af_sid=21&amp;mpid=d4f09a35d2c0429f80a36be807a5a984&amp;brandId=1522&amp;keyword=pc%20computers&amp;rf=af1&amp;af_assettype_id=10&amp;af_creative_id=2912&amp;af_id=615133&amp;af_placement_id=1" class="sa_ext" target="_blank" onmousedown="uaction(this,{up:'4c1cO=ZKh4delRY4&amp;a=xcjNWR&amp;8o=A&amp;gH=7mnBKxX6mGj&amp;3S=Vl2+rWwDj&amp;2b=U&amp;Wi=lL9dQZXjZgXH&amp;GT=RL45TN6SKUjZ9I2&amp;Wd.AqNlqNcexEfW=oQsG&amp;eq.me0FeIw=v3C9H4G&amp;cK.7MCx=Uv&amp;vA.YF1LX=sj1&amp;PL.5AyjFk%JTO=y&amp;bG.Kp3388s=XN&amp;0v.vjyHTx62=VL&amp;Ey.C8QvRCva=zrxZK'});">HP 17z Touchscreen 17.3'' High</a>
+</div>
+<div class="sa_shop_price">
+$733.95
+</div>
+<div class="sa_shop_merchants">
+Jet.com
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="clear-both"></div>
+</div>
+<div class="ur web-result tsrc_SAS" data-zen="true">
+<div class="sasr sa_wide sa-cont ur" data-zen="true" data-en="asa" data-extended="da_sn=00090&amp;da_origin=raw&amp;da_sro=1789282&amp;da_lhs=1789173&amp;da_lhx=Amazon%3A+simple&amp;da_cat=16&amp;da_lhp=1&amp;da_partner=6" data-partner="6" data-area="82">
+<div class="sa sa_blended" data-origin="raw" data-sn="00090" data-sro="1789282" data-lhs="1789173" data-desc="Amazon: simple">
+<a href="http://www.amazon.com/s/ref=nb_ss_gw?url=search-alias%3Daps&amp;field-keywords=pc+computers&amp;x=0&amp;y=0&amp;tag=askcom05-20" class="sa_headline sa_ext" target="_blank" onmousedown="uaction(this,{up:'c06ct=sL5%yatm8V&amp;C=ta7yhF&amp;Pu=n&amp;Uj=wzR%u+dyrJr&amp;qg=nhkUlILHE&amp;Cl=h&amp;GK=boaQ09&amp;gI=8U2wwyqXLh3GxJ8&amp;f1.dUKvHDMMpSsQ=VpgY&amp;mn.PUL0iKU=bQ7+Fpv&amp;Qb.4WTm=v4&amp;nN.+ywkL=Rk&amp;sj.cM6ZZQ8WV5=y&amp;m1.bYCcbOU=C&amp;jp.U3gYa8bE=6b&amp;%x.HpJROMNU=qsc4t'});">Amazon.com results for <b>pc computers</b></a>
+<div class="sa_col">
+<script>
+function sa_amazon_detect_img(target) {
+if(target.width==1&&target.height==1){
+target.src="http://sa.aos.ask.com/us/static/dd/noimg.png";
+}
+}
+</script>
+<div class="sa_amz_block">
+<div class="sa_amz_item">
+<a href="https://www.amazon.com/HP-Windows-Desktop-Computer-Monitor/dp/B01ES0MUUA%3FSubscriptionId%3D06KMPSHEDSXXQMQVT482%26tag%3Daskcom05-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB01ES0MUUA" class="sa_ext" target="_blank" onmousedown="uaction(this,{up:'c06ct=sL5%yatm8V&amp;C=ta7yhF&amp;Pu=n&amp;Uj=wzR%u+dyrJr&amp;qg=nhkUlILHE&amp;Cl=h&amp;GK=boaQ09&amp;gI=8U2wwyqXLh3GxJ8&amp;f1.dUKvHDMMpSsQ=VpgY&amp;mn.PUL0iKU=bQ7+Fpv&amp;Qb.4WTm=v4&amp;nN.+ywkL=Rk&amp;sj.cM6ZZQ8WV5=y&amp;m1.bYCcbOU=C&amp;jp.U3gYa8bE=6b&amp;%x.HpJROMNU=qsc4t'});">
+<img src="Search%20Results_files/51-TxSWbmL.jpg" onload="sa_amazon_detect_img(this);">
+</a>
+</div>
+<div class="sa_amz_block_right">
+<div class="sa_amz_title">
+<a href="https://www.amazon.com/HP-Windows-Desktop-Computer-Monitor/dp/B01ES0MUUA%3FSubscriptionId%3D06KMPSHEDSXXQMQVT482%26tag%3Daskcom05-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB01ES0MUUA" class="title sa_ext" target="_blank" onmousedown="uaction(this,{up:'c06ct=sL5%yatm8V&amp;C=ta7yhF&amp;Pu=n&amp;Uj=wzR%u+dyrJr&amp;qg=nhkUlILHE&amp;Cl=h&amp;GK=boaQ09&amp;gI=8U2wwyqXLh3GxJ8&amp;f1.dUKvHDMMpSsQ=VpgY&amp;mn.PUL0iKU=bQ7+Fpv&amp;Qb.4WTm=v4&amp;nN.+ywkL=Rk&amp;sj.cM6ZZQ8WV5=y&amp;m1.bYCcbOU=C&amp;jp.U3gYa8bE=6b&amp;%x.HpJROMNU=qsc4t'});">HP Elite 8000 Windows 10 </a>
+</div>
+<div class="sa_amz_price">
+</div>
+</div>
+</div>
+<div class="sa_amz_block">
+<div class="sa_amz_item">
+<a href="https://www.amazon.com/Optiplex-17-Inch-Computer-Core2Duo-Professional/dp/B00T5AHCBQ%3FSubscriptionId%3D06KMPSHEDSXXQMQVT482%26tag%3Daskcom05-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00T5AHCBQ" class="sa_ext" target="_blank" onmousedown="uaction(this,{up:'c06ct=sL5%yatm8V&amp;C=ta7yhF&amp;Pu=n&amp;Uj=wzR%u+dyrJr&amp;qg=nhkUlILHE&amp;Cl=h&amp;GK=boaQ09&amp;gI=8U2wwyqXLh3GxJ8&amp;f1.dUKvHDMMpSsQ=VpgY&amp;mn.PUL0iKU=bQ7+Fpv&amp;Qb.4WTm=v4&amp;nN.+ywkL=Rk&amp;sj.cM6ZZQ8WV5=y&amp;m1.bYCcbOU=C&amp;jp.U3gYa8bE=6b&amp;%x.HpJROMNU=qsc4t'});">
+<img src="Search%20Results_files/51IAa6a-xdL.jpg" onload="sa_amazon_detect_img(this);">
+</a>
+</div>
+<div class="sa_amz_block_right">
+<div class="sa_amz_title">
+<a href="https://www.amazon.com/Optiplex-17-Inch-Computer-Core2Duo-Professional/dp/B00T5AHCBQ%3FSubscriptionId%3D06KMPSHEDSXXQMQVT482%26tag%3Daskcom05-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00T5AHCBQ" class="title sa_ext" target="_blank" onmousedown="uaction(this,{up:'c06ct=sL5%yatm8V&amp;C=ta7yhF&amp;Pu=n&amp;Uj=wzR%u+dyrJr&amp;qg=nhkUlILHE&amp;Cl=h&amp;GK=boaQ09&amp;gI=8U2wwyqXLh3GxJ8&amp;f1.dUKvHDMMpSsQ=VpgY&amp;mn.PUL0iKU=bQ7+Fpv&amp;Qb.4WTm=v4&amp;nN.+ywkL=Rk&amp;sj.cM6ZZQ8WV5=y&amp;m1.bYCcbOU=C&amp;jp.U3gYa8bE=6b&amp;%x.HpJROMNU=qsc4t'});">Dell Optiplex 17-Inch. LCD </a>
+</div>
+<div class="sa_amz_price">
+</div>
+</div>
+</div>
+<div class="sa_amz_block">
+<div class="sa_amz_item">
+<a href="https://www.amazon.com/Dell-OptiPlex-745-Processor-Professional/dp/B00IOWAEQ6%3FSubscriptionId%3D06KMPSHEDSXXQMQVT482%26tag%3Daskcom05-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00IOWAEQ6" class="sa_ext" target="_blank" onmousedown="uaction(this,{up:'c06ct=sL5%yatm8V&amp;C=ta7yhF&amp;Pu=n&amp;Uj=wzR%u+dyrJr&amp;qg=nhkUlILHE&amp;Cl=h&amp;GK=boaQ09&amp;gI=8U2wwyqXLh3GxJ8&amp;f1.dUKvHDMMpSsQ=VpgY&amp;mn.PUL0iKU=bQ7+Fpv&amp;Qb.4WTm=v4&amp;nN.+ywkL=Rk&amp;sj.cM6ZZQ8WV5=y&amp;m1.bYCcbOU=C&amp;jp.U3gYa8bE=6b&amp;%x.HpJROMNU=qsc4t'});">
+<img src="Search%20Results_files/511SmJ46NUL.jpg" onload="sa_amazon_detect_img(this);">
+</a>
+</div>
+<div class="sa_amz_block_right">
+<div class="sa_amz_title">
+<a href="https://www.amazon.com/Dell-OptiPlex-745-Processor-Professional/dp/B00IOWAEQ6%3FSubscriptionId%3D06KMPSHEDSXXQMQVT482%26tag%3Daskcom05-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00IOWAEQ6" class="title sa_ext" target="_blank" onmousedown="uaction(this,{up:'c06ct=sL5%yatm8V&amp;C=ta7yhF&amp;Pu=n&amp;Uj=wzR%u+dyrJr&amp;qg=nhkUlILHE&amp;Cl=h&amp;GK=boaQ09&amp;gI=8U2wwyqXLh3GxJ8&amp;f1.dUKvHDMMpSsQ=VpgY&amp;mn.PUL0iKU=bQ7+Fpv&amp;Qb.4WTm=v4&amp;nN.+ywkL=Rk&amp;sj.cM6ZZQ8WV5=y&amp;m1.bYCcbOU=C&amp;jp.U3gYa8bE=6b&amp;%x.HpJROMNU=qsc4t'});">Dell OptiPlex 745 19in </a>
+</div>
+<div class="sa_amz_price">
+</div>
+</div>
+</div>
+<div class="sa_content_block" style="clear:both;"></div>
+<a href="http://www.amazon.com/s/ref=nb_ss_gw?url=search-alias%3Daps&amp;field-keywords=pc+computers&amp;x=0&amp;y=0&amp;tag=askcom05-20" class="sa_ext" target="_blank" onmousedown="uaction(this,{up:'c06ct=sL5%yatm8V&amp;C=ta7yhF&amp;Pu=n&amp;Uj=wzR%u+dyrJr&amp;qg=nhkUlILHE&amp;Cl=h&amp;GK=boaQ09&amp;gI=8U2wwyqXLh3GxJ8&amp;f1.dUKvHDMMpSsQ=VpgY&amp;mn.PUL0iKU=bQ7+Fpv&amp;Qb.4WTm=v4&amp;nN.+ywkL=Rk&amp;sj.cM6ZZQ8WV5=y&amp;m1.bYCcbOU=C&amp;jp.U3gYa8bE=6b&amp;%x.HpJROMNU=qsc4t'});">More products from Amazon.com »</a>
+</div>
+</div>
+</div>
+<div class="clear-both"></div>
+</div>
+<div class="web-result ur tsrc_Wiki-SA " data-zen="true">
+<h2 class="web-result-title">
+<a class="web-result-title-link" href="https://en.wikipedia.org/wiki/Personal_computer" target="_blank" onmousedown="uaction(this,{up:'7efcl=wbIT1Z0YY5&amp;3=WqCSBh&amp;HH=z&amp;Wy=GypB&amp;pX=al9y4z140ly&amp;Ky=v&amp;na5=y72ue&amp;ww=P%gmXC7mjIAfG6Y'});">Personal <kw>computer</kw> - Wikipedia</a>
+</h2>
+<p class="web-result-url">en.wikipedia.org/wiki/Personal_computer</p>
+<p class="web-result-description"> A personal computer (<kw>PC</kw>) is a multi-purpose electronic computer whose size, 
+capabilities, and price make it feasible for individual use. PCs are intended to be
+&nbsp;... </p>
+</div> <div class="web-result ur tsrc_tled " data-zen="true">
+<h2 class="web-result-title">
+<a class="web-result-title-link" href="http://www.bestbuy.com/site/electronics/computers-pcs/abcat0500000.c?id=abcat0500000" onmousedown="uaction(this,{up:'a2dcp=%1jZ7P56wX&amp;A=6swTNN&amp;Da=O&amp;Uw=zJHKC3oj%3VS&amp;kk=LtucF&amp;ZH=%&amp;z0=TuAjLXGPV2qb2n5'});" target="_blank"><kw>Computers</kw>: <kw>PC</kw>, Laptop &amp; Tablet Options - Best Buy</a>
+</h2>
+<p class="web-result-url">www.bestbuy.com/site/electronics/computers-pcs/abcat0500000.c?id=abcat0500000</p>
+<p class="web-result-description">Get a <kw>computer</kw> designed to meet your needs, including laptops, desktops, all-in-
+one <kw>computers</kw>, monitors, and <kw>computer</kw> hardware at Best Buy.</p>
+</div>
+<div class="web-result ur tsrc_tled " data-zen="true">
+<h2 class="web-result-title">
+<a class="web-result-title-link" href="https://www.amazon.com/computer-pc-hardware-accessories-add-ons/b?ie=UTF8&amp;node=541966&amp;tag=askcomdelta-20" onmousedown="uaction(this,{up:'beecQ=ghHTZ6Itab&amp;u=YSL4%Z&amp;RC=F&amp;QK=g4pXBRTvnk%3&amp;Q8=MDftq&amp;8J=U&amp;88=aJTqjFLUKdff85G'});" target="_blank"><kw>Computers</kw> &amp; Accessories | Amazon.com</a>
+</h2>
+<p class="web-result-url">www.amazon.com/computer-pc-hardware-accessories-add-ons/b?ie=UTF8&amp;node=541966</p>
+<p class="web-result-description">Shop for your IT needs including laptops, desktops, monitors, tablets, <kw>PC</kw> gaming, 
+hard drives &amp; storage, accessories, components, networking, and Amazon's&nbsp;...</p>
+</div>
+<div class="web-result ur tsrc_tled " data-zen="true">
+<h2 class="web-result-title">
+<a class="web-result-title-link" href="https://www.walmart.com/cp/computers/3951" onmousedown="uaction(this,{up:'58fcT=Ds4VBKRu5k&amp;n=Y2nJ9o&amp;Y3=E&amp;wj=t1m1yN747fD5&amp;k2=w%vmr&amp;8L=M&amp;oB=YAqoTvzl44kccT2'});" target="_blank"><kw>Computers</kw> for Home and Office at Every Day Low Price | Walmart.com</a>
+</h2>
+<p class="web-result-url">www.walmart.com/cp/computers/3951</p>
+<p class="web-result-description">Find your next <kw>computer</kw> at Walmart.com. Shop laptops, desktops, netbooks, ultra
+-books and tablets at Every Day Low prices.</p>
+</div>
+<div class="web-result ur tsrc_tled " data-zen="true">
+<h2 class="web-result-title">
+<a class="web-result-title-link" href="https://www.newegg.com/Computer-Systems/Store" onmousedown="uaction(this,{up:'b10cj=tfFQdwJUr7&amp;w=Ra99vi&amp;HI=w&amp;c3=plOJLCjLAzCL&amp;5P=fPvEY&amp;M2=x&amp;Fe=uQt2GemY8gVNxAl'});" target="_blank"><kw>Computer</kw> Systems - Newegg.com</a>
+</h2>
+<p class="web-result-url">www.newegg.com/Computer-Systems/Store</p>
+<p class="web-result-description">Shop <kw>Computers</kw>, Laptops and 2-in-1's from HP, Microsoft, Dell, Lenovo and 
+more! Newegg offers the best prices, fast shipping and top-rated customer 
+service!</p>
+</div>
+<div class="web-result ur tsrc_tled " data-zen="true">
+<h2 class="web-result-title">
+<a class="web-result-title-link" href="https://www.microsoftstore.com/store/msusa/en_US/cat/All-PCs-tablets/categoryID.69404700" onmousedown="uaction(this,{up:'071cT=5rMn6bAqzf&amp;+=mzMw1Y&amp;PT=2&amp;9E=kP0Os5Mj31kO&amp;he=elv4c&amp;NM=W&amp;aK=2cf1YBpqaCdKlVW'});" target="_blank"><kw>Computers</kw>: <kw>PCs</kw>, Tablets, Laptops and More | Microsoft Store</a>
+</h2>
+<p class="web-result-url">www.microsoftstore.com/store/msusa/en_US/cat/All-PCs-tablets/categoryID.69404700</p>
+<p class="web-result-description">Find the perfect <kw>PC</kw>. From desktop computers to laptops and tablets, the Microsoft 
+Store offers powerful devices for all that you do.</p>
+</div>
+<div class="web-result ur tsrc_tled " data-zen="true">
+<h2 class="web-result-title">
+<a class="web-result-title-link" href="http://www.frys.com/template/computerspc" onmousedown="uaction(this,{up:'9b2ck=FLCjquHRHx&amp;x=gr3+oC&amp;5N=V&amp;xT=vaa2UVIxKk41&amp;g4=JxKlr&amp;Yg=I&amp;bU=Nt2%0lYytRwRVD1'});" target="_blank">Fry's Electronics | <kw>PC Computers</kw></a>
+</h2>
+<p class="web-result-url">www.frys.com/template/computerspc</p>
+<p class="web-result-description">Shop Frys.com for <kw>pc computers</kw>. ... Headsets/Headphones · Desktop PC w/ 1TB 
+Hard Drive. ships_free. Dell XPS Mainstream Desktop PC w/ 1TB Hard Drive.</p>
+</div>
+<div class="web-result ur tsrc_tled " data-zen="true">
+<h2 class="web-result-title">
+<a class="web-result-title-link" href="http://www.dell.com/en-us/shop/category/desktops" onmousedown="uaction(this,{up:'ad3cp=uYrnwaiU4I&amp;U=i5Hipv&amp;cG=Ne&amp;tb=nFSyOQJJf%Xh&amp;Xa=5l%dO&amp;LZ=N&amp;87=ka6cY9IUp9xWoSQ'});" target="_blank">Desktop <kw>Computers</kw> &amp; All-in-One <kw>PCs</kw> – XPS &amp; Inspiron | Dell United ...</a>
+</h2>
+<p class="web-result-url">www.dell.com/en-us/shop/category/desktops</p>
+<p class="web-result-description">Shop for Desktop <kw>Computers</kw> and All-in-One <kw>PCs</kw> at Dell.com. Discover Inspiron, 
+XPS and Alienware gaming desktop <kw>PCs</kw>. Build your customized <kw>PC</kw> today!</p>
+</div>
+</div>
+<div id="csaBottom"><div id="magic2" style="width: 99.5%; font-weight: normal; text-align: center; height: 580px; background-color: rgb(255, 255, 255);"><iframe marginwidth="0" marginheight="0" allowtransparency="true" scrolling="no" style="visibility: visible; height: 580px;" name="slave-1-1|{&quot;name&quot;:&quot;master-1&quot;,&quot;slave-1-1&quot;:{&quot;clicktrackUrl&quot;:&quot;//clk-askus.ask.com/clk?pos=bottom&amp;q=+pc+computers&amp;qid=79BDD1E4707E7B73F98FE6E85D7127EB&amp;ip=8ef43f87&amp;o=0&amp;l=dir&amp;qsrc=0&amp;page=1&amp;cl=aj-cat-intl&amp;ch=computers-other%2Corig_homepageSearchBox%2Cud_desktop%2Cask-non-dla&amp;c=a&amp;p_uid=&amp;p_clk_id=&amp;anxu=http%3A%2F%2Fwww.ask.com%2Fweb&amp;pl=b75cmK%3DfK7NMiKl4XDGy%26b8Y%3DMTn9epSlk_y%25i_a8GpbA3HKGQwIqrTLhT%26R3%3DxXK6K%263R%3D7OCTxQAbrWuDqDtRuc1fvbAtuJC6x%2Bgn%26Ch%3DuGLdVto%26ay%3DYBYDF9FoEtkUukvGi%26FPXq%3DrC-KO%25-ektY%26Q8E%3DhxL6zaEp5-CqvV%2BatTz6XF_UaahpDcteUdoVGIBxO%2BBMG_nxZ8Bx%25N796uj-Osk-7cl%26PX%3Divz0yB%26jM%3DyOh.ikH%26X6v%3D%26I8%3DYUGMwhAg0Md%26DV%3DUhKUu%26ZzJ%3DeR%26Gi%3D6nu%26Vh%3DR%261%2B%3D%26YQM%3D%26L%3Da&amp;gclid=&amp;up=31d5K%3DaZvg%2Bx%263R%3DGSX%26lT%3DVAD%26su.maWKbE%3DSQ6%26kk.LVxI4d%3DN0-0Ep-IdbA%26%2Bp.ISM9bdp%25Ql34n%3Dlr6lNrRPS-PWEKR%2CGiRb_lhXceDQNpNI7ss4Hr%2CPA_HNtyFxE%2CeT4-mfz-tCO%26R%3D2xJVDUy53&quot;,&quot;container&quot;:&quot;magic2&quot;,&quot;linkTarget&quot;:&quot;_blank&quot;,&quot;verticalSpacing&quot;:&quot;9&quot;,&quot;lines&quot;:&quot;3&quot;,&quot;colorAdSeparator&quot;:&quot;#FFFFFF&quot;,&quot;colorText&quot;:&quot;#333333&quot;,&quot;colorTitleLink&quot;:&quot;#3300B5&quot;,&quot;colorDomainLink&quot;:&quot;#0E7744&quot;,&quot;colorBackground&quot;:&quot;#FFFFFF&quot;,&quot;colorAttribution&quot;:&quot;#333333&quot;,&quot;fontSizeTitle&quot;:&quot;18px&quot;,&quot;fontSizeDescription&quot;:&quot;15px&quot;,&quot;fontSizeDomainLink&quot;:&quot;14px&quot;,&quot;fontSizeAttribution&quot;:&quot;13px&quot;,&quot;rightHandAttribution&quot;:false,&quot;clickableBackgrounds&quot;:true,&quot;adIconLocation&quot;:&quot;ad-left&quot;,&quot;lineHeightTitle&quot;:&quot;18&quot;,&quot;lineHeightDescription&quot;:&quot;18&quot;,&quot;lineHeightDomainLink&quot;:&quot;18&quot;,&quot;domainLinkAboveDescription&quot;:true,&quot;heightConstrained&quot;:false,&quot;width&quot;:&quot;99.5%&quot;,&quot;detailedAttribution&quot;:true,&quot;attributionSpacingBelow&quot;:7,&quot;type&quot;:&quot;ads&quot;,&quot;hl&quot;:&quot;&quot;,&quot;columns&quot;:1,&quot;horizontalAlignment&quot;:&quot;left&quot;,&quot;resultsPageQueryParam&quot;:&quot;query&quot;},&quot;master-1&quot;:{&quot;clicktrackUrl&quot;:&quot;//clk-askus.ask.com/clk?pos=top&amp;q=+pc+computers&amp;qid=79BDD1E4707E7B73F98FE6E85D7127EB&amp;ip=8ef43f87&amp;o=0&amp;l=dir&amp;qsrc=0&amp;page=1&amp;cl=aj-cat-intl&amp;ch=computers-other%2Corig_homepageSearchBox%2Cud_desktop%2Cask-non-dla&amp;c=a&amp;p_uid=&amp;p_clk_id=&amp;anxu=http%3A%2F%2Fwww.ask.com%2Fweb&amp;pl=5525%2Bu%3DWLeIuhE2grLEH%26NTO%3Dh8eoySeCU_Mu8_pGplx3BiEBGnBn0y6PA%26Td%3DddIA9%26li%3DktnpYkfktQuYvufV4B0D1FdIlRkLcuw3%26wp%3DHUlGwO7%26xZ%3DZRMjVnvOI%25MrWT6PF%26v87h%3D3a-mIV-ER1l%26DZl%3DJinxvsu%2BW-0V9%25aLwVOa0X_UeMeL6WxtaC2Celcg5CE67_brr8lLjPk6xZD-XKJ-2Y3%26x4%3D7%255QQM%262W%3DM4E.jVB%26nxU%3D%26P6%3DowAHwBPB7bm%26MI%3DST%25Ws%26BHz%3DD5%26Xw%3DlKl%264R%3DW%26TO%3D%26ga8%3D%26r%3DF&amp;gclid=&amp;up=af1cW%3DphCRK2%26bo%3D27B%26pr%3Dr%2BN%26FU.jZdzXF%3DGF6%2688.9AFTy1%3DO0-%2B0U-0Ew7%26%25E.tYVJPt9GMiN54%3DAEacRyyhk-fP%2B%2B5%2CiiOC_hdZh3WwXEUBNGOKkd%2CRB_KGCtw8k%2CC1S-4Fp-7JO%26Q%3D2wSMy8&quot;,&quot;container&quot;:&quot;magic1&quot;,&quot;linkTarget&quot;:&quot;_blank&quot;,&quot;verticalSpacing&quot;:&quot;9&quot;,&quot;lines&quot;:&quot;3&quot;,&quot;colorAdSeparator&quot;:&quot;#FFFFFF&quot;,&quot;colorText&quot;:&quot;#333333&quot;,&quot;colorTitleLink&quot;:&quot;#3300B5&quot;,&quot;colorDomainLink&quot;:&quot;#0E7744&quot;,&quot;colorBackground&quot;:&quot;#FFFFFF&quot;,&quot;colorAttribution&quot;:&quot;#333333&quot;,&quot;fontSizeTitle&quot;:&quot;18px&quot;,&quot;fontSizeDescription&quot;:&quot;15px&quot;,&quot;fontSizeDomainLink&quot;:&quot;14px&quot;,&quot;fontSizeAttribution&quot;:&quot;13px&quot;,&quot;rightHandAttribution&quot;:false,&quot;clickableBackgrounds&quot;:true,&quot;adIconLocation&quot;:&quot;ad-left&quot;,&quot;lineHeightTitle&quot;:&quot;18&quot;,&quot;lineHeightDescription&quot;:&quot;18&quot;,&quot;lineHeightDomainLink&quot;:&quot;18&quot;,&quot;domainLinkAboveDescription&quot;:true,&quot;heightConstrained&quot;:false,&quot;width&quot;:&quot;99.5%&quot;,&quot;detailedAttribution&quot;:true,&quot;attributionSpacingBelow&quot;:7,&quot;type&quot;:&quot;ads&quot;,&quot;hl&quot;:&quot;&quot;,&quot;columns&quot;:1,&quot;horizontalAlignment&quot;:&quot;left&quot;,&quot;resultsPageQueryParam&quot;:&quot;query&quot;}}" id="slave-1-1" src="Search%20Results_files/iframe.htm" width="100%" frameborder="0"></iframe></div></div>
+<script>
+window['backfillParam'] = window['backfillParam'] || {};
+window['backfillParam']['pl_bmodn'] = 3;
+</script>
+<div class="l-pagination pagination">
+<ul>
+<li class="pagination-number pagination-active">1</li>
+<a class="pagination-number-link" href="http://www.ask.com/web?q=+pc+computers&amp;page=2&amp;l=dir&amp;qid=79BDD1E4707E7B73F98FE6E85D7127EB&amp;o=0&amp;qsrc=998&amp;qo=pagination" onmousedown="uaction(this,{up:'83f5E=YvLGVksJrj&amp;A=Fk64G8&amp;J5=p&amp;dB=IvH6Qp5Jxt&amp;Jt=M8PUuVNqNT&amp;Z1=f&amp;qV=w0f+JSbzcmLSE%e'});">
+<li class="pagination-number">
+2
+</li>
+</a>
+<a class="pagination-number-link" href="http://www.ask.com/web?q=+pc+computers&amp;page=3&amp;l=dir&amp;qid=79BDD1E4707E7B73F98FE6E85D7127EB&amp;o=0&amp;qsrc=998&amp;qo=pagination" onmousedown="uaction(this,{up:'e93cq=8pLRopwSI%&amp;9=jOcxqe&amp;JV=O&amp;q2=m8qvJNLH8b&amp;Oz=sJJFJ0Yr20&amp;SQ=V&amp;8X=Iw7NRHKcPXAZjUU'});">
+<li class="pagination-number">
+3
+</li>
+</a>
+<a class="pagination-number-link" href="http://www.ask.com/web?q=+pc+computers&amp;page=4&amp;l=dir&amp;qid=79BDD1E4707E7B73F98FE6E85D7127EB&amp;o=0&amp;qsrc=998&amp;qo=pagination" onmousedown="uaction(this,{up:'9305q=pNPbTQxZW5&amp;G=Ek4+oD&amp;Xb=S&amp;f3=RHeM0k9DJ9&amp;hD=ZvUgI3n32K&amp;6S=v&amp;2x=BfAi4%fdLFy3rsM'});">
+<li class="pagination-number">
+4
+</li>
+</a>
+<a class="pagination-number-link" href="http://www.ask.com/web?q=+pc+computers&amp;page=5&amp;l=dir&amp;qid=79BDD1E4707E7B73F98FE6E85D7127EB&amp;o=0&amp;qsrc=998&amp;qo=pagination" onmousedown="uaction(this,{up:'712c8=9K24FLwAbv&amp;S=yxA1ab&amp;88=5&amp;Dq=iURWo6q9w1&amp;H2=B4R9BQkWDl&amp;sk=f&amp;0N=dBuRnvEwmu1vTaR'});">
+<li class="pagination-number">
+5
+</li>
+</a>
+<a class="js-pagination-next" href="http://www.ask.com/web?q=+pc+computers&amp;page=2&amp;l=dir&amp;qid=79BDD1E4707E7B73F98FE6E85D7127EB&amp;o=0&amp;qsrc=998&amp;qo=pagination" onmousedown="uaction(this,{up:'8415c=ZOhbsAwdwy&amp;a=8Xga8f&amp;UJ=O&amp;UJ=UTUbyKPNNN&amp;0w=ynCUO%8oD7&amp;QY=D&amp;Bi=qUp6Cii24kRRtEh'});">
+<li class="pagination-next">Next</li>
+</a>
+</ul>
+</div>
+</div>
+<div class="l-right-content hcsa">
+<div id="scroller-anchor"></div>
+<div id="scroller" style="visibility: visible; position: relative; top: 0px;">
+<div class="l-rightrail-related-searches rightrail-related-searches content-right" data-zen="true">
+<h2 class="related-searches-title">Related Search</h2>
+<ul>
+<li class="related-search ur">
+<a class="related-search-item-link" onmousedown="uaction(this,{up:'f71cX=WvSMf3f1g3Zqy&amp;2=q9JSU&amp;g2=e&amp;f8=bFx2knKr+zf4e&amp;Ay=cmTH&amp;kj=k&amp;Ji=i%2AZ4q2WAslQpp'});" href="http://www.ask.com/web?q=Best+Brand+PC+Computer&amp;qsrc=6&amp;o=0&amp;l=dir&amp;qo=relatedSearchNarrow">Best Brand <b>PC</b> <b>Computer</b></a>
+</li>
+<li class="related-search ur">
+<a class="related-search-item-link" onmousedown="uaction(this,{up:'151cX=OMtgCOn1%iAWV&amp;N=y9B9v&amp;Mn=2&amp;n8=5W%xH%Ss3QTzC&amp;lF=dd%j&amp;RH=7&amp;Qj=+pE7lPx3NR6Sc+w'});" href="http://www.ask.com/web?q=History+of+PC+Computers&amp;qsrc=6&amp;o=0&amp;l=dir&amp;qo=relatedSearchNarrow">History of <b>PC</b> <b>Computers</b></a>
+</li>
+<li class="related-search ur">
+<a class="related-search-item-link" onmousedown="uaction(this,{up:'331cY=F27N0yu21ycrh&amp;x=F%sn9&amp;hL=N&amp;u9=WaM35UZsU6u5Z&amp;7N=d7oW&amp;l4=R&amp;Yj=3FfBIzF3F7HmzWE'});" href="http://www.ask.com/web?q=PC+Magazine&amp;qsrc=6&amp;o=0&amp;l=dir&amp;qo=relatedSearchNarrow"><b>PC</b> Magazine</a>
+</li>
+<li class="related-search ur">
+<a class="related-search-item-link" onmousedown="uaction(this,{up:'511cY=xhIhljC2TPPXE&amp;i=N%kEK&amp;N8=z&amp;C9=OrnyqF7tMl8Al&amp;SU=eYFy&amp;Sq=C&amp;5k=UWT86kM4wmjTXGL'});" href="http://www.ask.com/web?q=PC+Vs+Mac+Which+Is+Better&amp;qsrc=6&amp;o=0&amp;l=dir&amp;qo=relatedSearchNarrow"><b>PC</b> Vs Mac Which Is Better</a>
+</li>
+<li class="related-search ur">
+<a class="related-search-item-link" onmousedown="uaction(this,{up:'6f1cZ=oxkOJ5J3K5rs2&amp;4=U+bUm&amp;iu=k&amp;J%=FH14OpctDBJ6I&amp;C2=eQV+&amp;mN=m&amp;bk=MauCr6U4oCWnirT'});" href="http://www.ask.com/web?q=Dell+Computers&amp;qsrc=6&amp;o=0&amp;l=dir&amp;qo=relatedSearchExpand">Dell <b>Computers</b></a>
+</li>
+<li class="related-search ur">
+<a class="related-search-item-link" onmousedown="uaction(this,{up:'8d1cZ=gOXi6QR3Ck4Yn&amp;P=2+5+Z&amp;OR=8&amp;R%=xYCz+akuvSlB6&amp;n9=fHaN&amp;T+=9&amp;il=Dr89PR15fTyUGb0'});" href="http://www.ask.com/web?q=Different+Types+of+Computer+Monitors&amp;qsrc=6&amp;o=0&amp;l=dir&amp;qo=relatedSearchExpand">Different Types of <b>Computer</b> Monitors</a>
+</li>
+<li class="related-search ur">
+<a class="related-search-item-link" onmousedown="uaction(this,{up:'ab1c0=94zPsAY4tAGtL&amp;z=9aWpB&amp;jd=T&amp;Y+=oce5xWrum8Y7r&amp;9f=fzqo&amp;nw=T&amp;ql=vHJDaB9599+o3Y8'});" href="http://www.ask.com/web?q=Compare+PCs+Vs+Mainframes&amp;qsrc=6&amp;o=0&amp;l=dir&amp;qo=relatedSearchExpand">Compare PCs Vs Mainframes</a>
+</li>
+<li class="related-search ur">
+<a class="related-search-item-link" onmousedown="uaction(this,{up:'c91c0=1jajPl64lRhZ8&amp;k=faOGc&amp;PA=F&amp;6+=gtRAUHzvenACP&amp;Um=gqH2&amp;UU=E&amp;xm=mYl%yme60oNVpId'});" href="http://www.ask.com/web?q=Simple+Difference+between+Mac+and+PC&amp;qsrc=6&amp;o=0&amp;l=dir&amp;qo=relatedSearchExpand">Simple Difference between Mac and <b>PC</b></a>
+</li>
+<li class="related-search ur">
+<a class="related-search-item-link" onmousedown="uaction(this,{up:'e71c1=SzOQb7b5c7Vuu&amp;6=mbFWQ&amp;kY=q&amp;ba=9Jt6grGv7Db8a&amp;Eu=giXD&amp;of=o&amp;Fm=ecYEV8m6SEopMtl'});" href="http://www.ask.com/web?q=Mainframe+Computers+Advantages+Disadvantages&amp;qsrc=6&amp;o=0&amp;l=dir&amp;qo=relatedSearchExpand">Mainframe <b>Computers</b> Advantages Disadvantages</a>
+</li>
+<li class="related-search ur">
+<a class="related-search-item-link" onmousedown="uaction(this,{up:'051c1=KQpkySj56mw0R&amp;R=ubxbr&amp;Qj=5S&amp;%3=bZMkrPTBYySth&amp;ya=kchV&amp;Cx=B&amp;6+=rJ7tCmMmC6EB%v0'});" href="http://www.ask.com/web?q=Mac+Computers&amp;qsrc=6&amp;o=0&amp;l=dir&amp;qo=relatedSearchExpand">Mac <b>Computers</b></a>
+</li>
+<li class="related-search ur">
+<a class="related-search-item-link" onmousedown="uaction(this,{up:'a925w=hW2DRrrzGTK%j&amp;J=lqqTw&amp;Bc=0J&amp;St=O+TU+UPQd75Yy&amp;97=DUrZ&amp;g7=V&amp;KL=iKMydFVvocGmy3m'});" href="http://www.ask.com/web?q=PC+World&amp;qsrc=6&amp;o=0&amp;l=dir&amp;qo=relatedSearchExpand"><b>PC</b> World</a>
+</li>
+<li class="related-search ur">
+<a class="related-search-item-link" onmousedown="uaction(this,{up:'090ct=Kp+jOsOzyZK1z&amp;t=rJtQ9&amp;Tv=Jj&amp;Ir=T9Q0%IstGaYA2&amp;VN=HYn3&amp;bi=q&amp;J0=dhfwpFrFq8Q8ZgH'});" href="http://www.ask.com/web?q=Mainframe+Definition&amp;qsrc=6&amp;o=0&amp;l=dir&amp;qo=relatedSearchExpand">Mainframe Definition</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="displayAd dartAd" style="margin: 431px 0px 0px; visibility: visible; position: absolute; top: 346px;">
+<div id="dart-0">
+<script type="text/javascript">
+googletag.cmd.push(function() { googletag.display('dart-0'); });
+</script>
+<div id="google_ads_iframe_/23219321/iac.ask-ask.us.dw/web/organic-dirN-0/0/_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/23219321/iac.ask-ask.us.dw/web/organic-dirN-0/0/_0" title="3rd party ad content" name="google_ads_iframe_/23219321/iac.ask-ask.us.dw/web/organic-dirN-0/0/_0" scrolling="no" marginwidth="0" marginheight="0" style="border: 0px none; vertical-align: bottom;" srcdoc="" width="300" height="250" frameborder="0"></iframe></div></div>
+</div>
+</div>
+</div>
+<div class="clear-both"></div>
+<div class="l-footer hcsa">
+<div class="footer-links">
+<a onmousedown="uaction(this,{up:'5e35h=5mo3DVqkG&amp;e=ONjkVg&amp;mq=k&amp;Fc=xH7expoZJS&amp;Do=Kr13ELcmKO&amp;ji=i&amp;ZB=Mvaw0owJ%'});" href="http://about.ask.com/" class="footer-link" target="_top">About</a>
+<span>·</span>
+<a onmousedown="uaction(this,{up:'b305i=vFam21FX2&amp;9=uIC24t&amp;CV=W&amp;ap=PKUoCVv6BQ&amp;3s=qSI48Dck19&amp;Bd=m&amp;Lb=EmpoP4cVW'});" href="http://www.ask.com/privacy-policy" class="footer-link" target="_top">Privacy</a>
+<span>·</span>
+<a onmousedown="uaction(this,{up:'79d5L=D9VCBNl04&amp;b=9y7oE8&amp;yz=t&amp;CO=Ne9eSmxn+d&amp;Sc=gckfgWD0sn&amp;Pk=7&amp;Yc=cpzcQnjwo'});" href="http://www.ask.com/terms-of-service" class="footer-link" target="_top">Terms</a>
+<span>·</span>
+<a onmousedown="uaction(this,{up:'f2a5o=HxQxC0Jd2&amp;b=Y53bWX&amp;r+=c&amp;JE=aqy341e9%j&amp;TV=4LDVRWeBQR&amp;JU=h&amp;Tp=JnXIi%%iP'});" href="http://about.ask.com/jobs" class="footer-link" target="_top">Careers</a>
+<span>·</span>
+<a onmousedown="uaction(this,{up:'5d75Y=ZDcUlm4nc&amp;T=e2F++H&amp;wr=o&amp;ga=KzU2W7nzim&amp;PO=wLmfBTMoUK&amp;4%=D&amp;Jx=q3KDs7U2q'});" href="http://feedback.ask.com/" class="footer-link" target="_top">Feedback</a>
+<span>·</span>
+<a onmousedown="uaction(this,{up:'fa45b=G%gr1GzcP&amp;0=c+d5A8&amp;3%=g&amp;1E=eUVsdTIYoB&amp;q%=prhyh2ZEnk&amp;zl=V&amp;Mk=A8eKzZSqu'});" href="http://help.ask.com/" class="footer-link" target="_top">Help</a>
+<span class="footer-copyright">© 2017 Ask.com</span>
+</div>
+</div>
+<script src="Search%20Results_files/ask_web.js" type="text/javascript"></script>
+<script type="text/javascript">
+JASK.ssCfg = (function(){
+return {
+"appendTo":"#sb,.qbox,.js-searchbox-container",
+"channel":"web",
+"path":"web",
+"disableTurnOffLink":"'false'",
+"disableSS": false,
+"server":"//ss.ask.com",
+"ldomain":"//www.ask.com/",
+"ssBold":"'false'",
+"clearSearchHistory":"Clear search history",
+"max":"",
+"ssFromQueryHistory":"true",
+"queryHistory":"",
+"queryHistoryContentColor":"#663399",
+"ssContentColor":"'false'",
+"ssContentColorCode": "",
+"matchingTextUnBold": "",
+"suggestionTextUnBold": "",
+"ssItems":"",
+"appendParams":[]
+};
+})();
+</script>
+<script type="text/javascript">
+var UInfo = window.UInfo || {};
+UInfo.pl = "0915Xb=QbwEpsrbbl54E&qIr=euAgxZ7JT_CSs_qfiWzl28HEBqF+rQ+kx&oj=tIsH8&kh=sbUC7NgMD22DFpiPefyMb4i6zZWmqlDT&M0=jZB1F8n&BD=w%zvHH3uJt3Fad6x%&SRl1=pE-8Gi-R9cL&zLN=%ZGcWSi5n-9egB4BUopxBq_e8CLQt15h7Wz+FUMy2od7y_c3b7BmOiPIL0k-AHe-YCJ&zd=LzCewW&6z=sXd.bDd&tEC=lGD.eBHV-38IVaQukDKxknqwtqxpn+rxsPoKggewFBJ&od=A4e12z1Dlax&7+=qsk1%&3hJ=2N&wa=0bs&Fj=x&7N=&8o0=&f=s";
+</script>
+<script type="text/javascript" src="Search%20Results_files/ads.js">
+</script>
+<script type="text/javascript">
+var _AnemoneParams2 = {
+appId: 'T2_AskUS',
+appVersion: 'd45cd49',
+appDate: '2017-01-18T22:18:00Z',
+serverName: 'askus029iad.io.askjeeves.info',
+uniqueUser: 'BDAB8BB7-FC05-4749-A351-3AD274F1C183',
+backFillRequired: true,
+suppressCookies: false,
+eventId: '6C992556-AC7D-441A-B395-CDFEC36FE061',
+browserLanguage: 'en-us',
+maxSession: 30,
+domain: '.ask.com',
+url: '/ulog',
+logPageView: false
+};
+</script>
+<script type="text/javascript" src="Search%20Results_files/ask_unified.js"></script>
+<script type="text/javascript">
+var ask = (typeof ask === 'undefined') ? {} : ask;
+(function(){
+var _timedOut = false,
+_fullPayload = window.backfillParam || {}, _timeFromSerpStart = null,
+_adsLoggingTimeout = null,
+_dynamicLoggingTimeout = null;
+try{
+_timeFromSerpStart = ((new Date() - ask.CSA.startTime) - ask.CSA.showSerpStartTime);
+_adsLoggingTimeout = parseInt('2000') - _timeFromSerpStart;
+_dynamicLoggingTimeout = Math.max(_adsLoggingTimeout, 1);
+}catch(e){
+_dynamicLoggingTimeout = 2000;
+}
+function mixinCSAAdData(payload){
+var externalData = {
+csaInfo: {
+domTime: ask.CSA.domReadyTime ? ask.CSA.domReadyTime : 0,
+adsResponseTime: ask.CSA.responseTime ? ask.CSA.responseTime : 0,
+adsShownTime: ask.CSA.adsShownTime ? ask.CSA.adsShownTime : 0,
+serpShownTime: ask.CSA.serpShownTime ? ask.CSA.serpShownTime : 0,
+supplement: _timedOut,
+serpTimedOut: !!ask.CSA.showSerpTimeoutFired,
+serpTimeoutStartTime: ask.CSA.showSerpStartTime ? ask.CSA.showSerpStartTime : 0,
+dynamicTimeout: _dynamicLoggingTimeout,
+viewportHeight: ask.CSA.viewportHeight ? ask.CSA.viewportHeight : 0,
+viewportWidth: ask.CSA.viewportWidth ? ask.CSA.viewportWidth : 0,
+adContentRatio: ask.CSA.adContentRatio ? ask.CSA.adContentRatio : 0,
+csaHeight: ask.CSA.csaHeight ? ask.CSA.csaHeight : 0,
+csaWidth: ask.CSA.csaWidth ? ask.CSA.csaWidth : 0,
+centerRailHeight: ask.CSA.centerRailHeight ? ask.CSA.centerRailHeight : 0,
+centerRailWidth: ask.CSA.centerRailWidth ? ask.CSA.centerRailWidth : 0,
+rightRailHeight: ask.CSA.rightRailHeight ? ask.CSA.rightRailHeight : 0,
+rightRailWidth: ask.CSA.rightRailWidth ? ask.CSA.rightRailWidth : 0,
+gslExtensions : ask.CSA.gslExtensions ? ask.CSA.gslExtensions : ""
+}
+};
+payload.pl_time = ask.CSA.responseTime ? ask.CSA.responseTime : 0;
+payload.pl_tnum = ask.CSA.numTopAds ? ask.CSA.numTopAds : 0;
+payload.pl_bnum = ask.CSA.numBottomAds ? ask.CSA.numBottomAds : 0;
+payload.pl_rrnum = ask.CSA.numRightAds ? ask.CSA.numRightAds : 0;
+payload.pl_rnum = parseInt(payload.pl_tnum) + parseInt(payload.pl_bnum) + parseInt(payload.pl_rrnum);
+try{
+mixinNavigationTimingInfo(externalData);
+payload.pl_edata = JSON.stringify(externalData);
+}catch(e){
+}
+}
+function mixinNavigationTimingInfo(eData) {
+if (typeof window.performance === 'undefined') {
+return;
+}
+var navInfo = eData["navInfo"] = {},
+csaInfo = eData.csaInfo,
+timing = window.performance.timing,
+navigation = window.performance.navigation,
+navStart = timing.navigationStart;
+navInfo.redirectCount = navigation.redirectCount;
+navInfo.navType = navigation.type;
+csaInfo.csaStartTime = (ask.CSA.startTime.getTime() - navStart);
+for (var k in timing) {
+//if (timing.hasOwnProperty(k)) {
+navInfo[k] = Math.max((timing[k] - navStart), 0);
+//}
+}
+}
+if (typeof ask !== 'undefined' && typeof ask.CSA !== 'undefined' && typeof ask.CSA.addCSALoadCallback === "function") {
+ask.CSA.addCSALoadCallback(function(){
+var payload = _timedOut ? { pl_supplement:true, pl_cl:_fullPayload.pl_cl, pl_ch:_fullPayload.pl_ch } : _fullPayload;
+var bookmark = false;
+if(typeof ask.CSA.calculateAdContentMetrics === "function") {
+ask.CSA.calculateAdContentMetrics(bookmark);
+}
+mixinCSAAdData(payload);
+logBackfillEvent(payload);
+}, function(){
+_timedOut = true;
+logBackfillEvent(_fullPayload);
+}, _dynamicLoggingTimeout);
+} else {
+logBackfillEvent(_fullPayload);
+}
+function addBingParams(payload) {
+payload.presentation={"count":0};
+payload.provider={};
+payload.pl_bfj = JSON.stringify(payload);
+return payload;
+}
+function logBackfillEvent(payload) {
+payload['anxi'] = JSUtil.defaultVal(_AnemoneParams2.eventId, '');
+payload.pl_as = !window.canRunAds ? true : false;
+ask.backFillPayload = payload;
+_Anemone.logEvent('BackFill', payload);
+}
+})();
+</script>
+<script>
+$j(window).load(function(){
+setTimeout(function(){
+if(
+typeof getNavigationTimingInfo === "function" &&
+typeof _Anemone === "object"
+) {
+if(
+ask &&
+ask.backFillPayload &&
+ask.backFillPayload.pl_edata &&
+JSON.parse(ask.backFillPayload.pl_edata).navInfo &&
+JSON.parse(ask.backFillPayload.pl_edata).navInfo.loadEventEnd
+) {
+console.log("abort 2nd backfill ",JSON.parse(ask.backFillPayload.pl_edata).navInfo.loadEventEnd);
+return;
+}
+var navInfo = getNavigationTimingInfo(window),
+payload = {};
+if(navInfo) {
+payload.pl_edata = {};
+payload.presentation={"count":0};
+payload.provider={};
+payload.pl_bfj = JSON.stringify(payload);
+payload.pl_edata.navInfo = navInfo;
+payload.pl_edata = JSON.stringify(payload.pl_edata);
+//console.log("nav info ",JSON.parse(payload.pl_edata));
+payload['anxi'] = JSUtil.defaultVal(_AnemoneParams2.eventId, '');
+_Anemone.logEvent('BackFill', payload);
+}
+}
+},0);
+});
+</script> 
+<script>
+var _comscore = _comscore || [];
+_comscore.push({c1: "2", c2: "6034776", c3: "", c4: ""});
+(function () {
+var s = document.createElement("script"), el = document.getElementsByTagName("script")[0];
+s.async = true;
+s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+el.parentNode.insertBefore(s, el);
+})();
+</script>
+<noscript>
+<img src=""http://b.scorecardresearch.com/p?c1=2&c2=6034776&c3=&c4=&c5=&c6=&c15=&cv=2.0&cj=1"
+/>
+</noscript> <script>
+function lotame_getScript(e,t,id){var n=document.getElementsByTagName("head")[0],r=!1,i=document.createElement("script");i.src=e,i.async=true,i.id=id||"",i.onload=i.onreadystatechange=function(){!r&&(!this.readyState||this.readyState==="loaded"||this.readyState==="complete")&&(r=!0,typeof t=="function"&&t())},n.appendChild(i)};
+lotame_getScript("//tags.crwdcntrl.net/c/4737/cc.js?ns=_cc4737",function(){
+_cc4737.bcp();
+},"LOTCC_4737");
+</script>
+<script type="text/javascript">
+var ask = ask || {},
+sp = sp || {};
+sp.gls_top = parseInt('$gslTop');
+sp.gls_bottom = parseInt('$gslBottom');
+sp.ad_count = (window['google_ads']) ? window['google_ads'].length : (sp.gls_top + sp.gls_bottom);
+ask.adsPixelTimeout = '2000';
+function initPixel(cb, cbTimeout) {
+if (typeof ask !== 'undefined' && typeof ask.CSA !== 'undefined' && typeof ask.CSA.addCSALoadCallback === "function") {
+ask.CSA.addCSALoadCallback(function() {
+cb(true);
+}, function(){
+cbTimeout();
+}, ask.adsPixelTimeout);
+} else {
+cb(false);
+}
+}
+$j(document).ready(function(){
+if (typeof ask !== 'undefined' && typeof ask.CSA !== 'undefined' && typeof ask.CSA.domReady == "function") {
+ask.CSA.domReady();
+}
+});
+</script>
+<script>
+$j(document).ready(function () {
+function isVisible(el) {
+var winTop = $j(window).scrollTop();
+var elTop = el.offset().top;
+var elBottom = elTop + el.height();
+return (elBottom >= winTop);
+}
+$j(function () {
+var moveDiv = function () {
+var scrollTop = $j(window).scrollTop();
+var divAnchor = $j("#scroller-anchor").offset().top;
+var divDisplayAdAnchor = $j(".displayAd").offset().top;
+var moveableDiv = $j("#scroller");
+var displayAdDiv = $j(".displayAd");
+var rsDivHeight = $j("#scroller").height();
+if (scrollTop < 50) {
+moveableDiv.css({visibility: "visible", position: "relative", top: "0"});
+displayAdDiv.css({visibility: "visible", position: "absolute", top: rsDivHeight, margin: "431px 0 0 0"});
+} else if (scrollTop > divAnchor) {
+moveableDiv.css({visibility: "visible", position: "fixed", top: "15px"});
+if ((scrollTop + rsDivHeight) >= (divDisplayAdAnchor)) {
+displayAdDiv.css({visibility: "visible", position: "fixed", top: rsDivHeight, margin: "10px 0 0 0"});
+}
+} else {
+displayAdDiv.css({visibility: "visible", position: "absolute", top: rsDivHeight, margin: "431px 0 0 0"});
+}
+};
+$j(window).scroll(moveDiv);
+moveDiv();
+});
+});
+</script>
+
+
+<script type="text/javascript" id="">window.addEventListener("beforeunload",function(a){a=(new Date).getTime()-google_tag_manager["GTM-T3KVMC"].macro('gtm8');var b=18E5;a>b&&(a=b);window.dataLayer.push({event:"unloadEvent",timeonpage:a})});</script><script type="text/javascript" id="">try{if("index.investopedia.com"!==window.location.hostname){var dlayer=window.dataLayer;if("undefined"!=typeof jQuery){var flag75=!1,flag100=!1;jQuery(window).scroll(function(){var a=jQuery(window).scrollTop()+jQuery(window).height(),b=jQuery(document).height();a>=.75*b&&!1===flag75&&(flag75=!0,dlayer.push({event:"ScrollDistance",eventCategory:"Scroll Depth",eventAction:"Percentage",eventLabel:"75%",eventValue:1}));a>=b&&!1===flag100&&(flag100=!0,dlayer.push({event:"ScrollDistance",eventCategory:"Scroll Depth",
+eventAction:"Percentage",eventLabel:"100%",eventValue:1}))})}}}catch(a){};</script><iframe id="LOTCCFrameSun Feb 26 2017 15:56:37 GMT-0800 (Pacific Standard Time)" src="Search%20Results_files/rtifr.htm" style="border: 0px none; width: 0px; height: 0px; display: block;"></iframe></body></html>
