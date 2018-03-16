@@ -1,0 +1,458 @@
+/* :asset_packager_compatibility, 'config/asset_packages.yml' @ 1485296272 */
+
+
+/* :files, 'public/stylesheets/shared', ... @ (none) */
+
+
+/* :files, 'app/views', ... @ 1485296271 */
+/* app/views/discover/modules/article_info.css @ 1485296271 */
+.article_info {color: #666; text-transform: uppercase; font-size: 12px; height: 22px; max-width: 278px}
+.article_info .logo {height: 16px; margin-top: 2px}
+.article_info span {vertical-align: top}
+.article_info .with_circle {padding-right: 20px; position: relative}
+.article_info .with_circle:after {content: ''; margin: 0 8px; border-radius: 50%; width: 4px; height: 4px; background: #e1e1e1; position: absolute; top: 7px}
+.article_info .article_length {font-size: 16px}
+
+
+/* :class_inlines, 'app/views', ... @ 1485296272 */
+/* app/views/shared/carousels/document_cells.css @ 1485296272 */
+.autogen_class_views_shared_carousels_document_cells {list-style: none; padding-left: 0; padding-top: 12px}
+
+
+/* app/views/shared/cross_sell_banner.css @ 1485296272 */
+.autogen_class_views_shared_cross_sell_banner .cross_sell_banner {padding: 40px; text-align: center}
+.autogen_class_views_shared_cross_sell_banner .cross_sell_banner .title {font-weight: normal; font-size: 24px; color: #444; padding-bottom: 20px}
+
+
+/* app/views/discover/modules/article_list.css @ 1485296271 */
+.autogen_class_views_discover_modules_article_list {border-left: 1px solid #e1e1e1; width: 100%; -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1}
+.autogen_class_views_discover_modules_article_list .articles_list .article_row {margin-left: 22px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; padding: 25px 0px}
+.autogen_class_views_discover_modules_article_list .articles_list .article_row:not(:last-child) {border-bottom: 1px solid #e1e1e1}
+.autogen_class_views_discover_modules_article_list .articles_list .article {-webkit-box-align: center;-webkit-align-items: center;-ms-flex-align: center;align-items: center}
+.autogen_class_views_discover_modules_article_list .articles_list a, .autogen_class_views_discover_modules_article_list .articles_list .info_wrapper {width: 100%}
+.autogen_class_views_discover_modules_article_list .articles_list .info {max-height: 75px; overflow: hidden}
+.autogen_class_views_discover_modules_article_list .articles_list .subheadline {max-height: 42px; overflow: hidden}
+.autogen_class_views_discover_modules_article_list .articles_list .article_image, .autogen_class_views_discover_modules_article_list .articles_list .metadata {display: none}
+
+
+/* app/views/discover/modules/article_row.css @ 1485296271 */
+.autogen_class_views_discover_modules_article_row .article {display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; cursor: pointer}
+.autogen_class_views_discover_modules_article_row .article .headline {font-weight: bold; font-size: 18px; color: #444}
+.autogen_class_views_discover_modules_article_row .article .subheadline {font-size: 16px; color: #666}
+.autogen_class_views_discover_modules_article_row .article .metadata {font-size: 14px; color: #666}
+.autogen_class_views_discover_modules_article_row .article .view_article {padding: 22px; padding-left: 30px; color: #e1e1e1}
+.autogen_class_views_discover_modules_article_row .article .info_wrapper:hover div {color: #6ac6e2}
+.autogen_class_views_discover_modules_article_row .article .info_wrapper:active div {color: #135987}
+
+
+/* app/views/discover/modules/articles_carousel.css @ 1485296271 */
+.autogen_class_views_discover_modules_articles_carousel .carousel {height: 224px}
+.autogen_class_views_discover_modules_articles_carousel.show_title .carousel {height: 224px}
+.autogen_class_views_discover_modules_articles_carousel .has_article_cells {padding-top: 12px}
+
+
+/* app/views/discover/modules/articles_cells.css @ 1485296271 */
+.autogen_class_views_discover_modules_articles_cells {list-style: none; padding-left: 0}
+.autogen_class_views_discover_modules_articles_cells .object_cell {position: relative}
+.autogen_class_views_discover_modules_articles_cells .object_cell:hover .card_library_button_container {opacity: 1}
+.autogen_class_views_discover_modules_articles_cells .object_cell .card_library_button_container {position: absolute; top: 4px; right: 4px; opacity: 0; z-index: 1}
+.autogen_class_views_discover_modules_articles_cells .object_cell .card_library_button_container.child_has_focus {opacity: 1}
+.autogen_class_views_discover_modules_articles_cells .article_cell {border-radius: 4px; border: 1px solid #e1e1e1; margin: 0 20px 20px 0; width: 306px; height: 202px; display: inline-block; vertical-align: top; box-sizing: border-box; position: relative; background: white; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); -webkit-transition: opacity 0.2s ease-in-out; transition: opacity 0.2s ease-in-out}
+@media (max-width: 667px) {.autogen_class_views_discover_modules_articles_cells .article_cell {width: 270px}
+.autogen_class_views_discover_modules_articles_cells .article_cell .article_date {display: none}
+.autogen_class_views_discover_modules_articles_cells .article_cell.has_square_image .tile_image {width: 57px; height: 57px}
+}
+.autogen_class_views_discover_modules_articles_cells .article_cell .article_link {position: absolute; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden}
+.autogen_class_views_discover_modules_articles_cells .article_cell .article_link:active {opacity: 0.5}
+.autogen_class_views_discover_modules_articles_cells .article_cell.has_square_image .tile_image {display: none}
+.autogen_class_views_discover_modules_articles_cells .article_cell.has_square_image .tile_title, .autogen_class_views_discover_modules_articles_cells .article_cell.has_square_image .description {margin-right: 85px}
+.autogen_class_views_discover_modules_articles_cells .article_cell.has_square_image .tile_title {font-size: 18px; line-height: 23.4px; max-height: 48.8px; /* +1 prevents low baseline logs */ overflow: hidden; display: block; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical}
+.autogen_class_views_discover_modules_articles_cells .article_cell.has_square_image:not(.single_line) .description {font-size: 16px; line-height: 1.5; max-height: 7.5; /* +1 prevents low baseline logs */ overflow: hidden; display: block; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical}
+.autogen_class_views_discover_modules_articles_cells .article_cell.has_square_image .square_image {position: absolute; right: 14px; top: 48px}
+.autogen_class_views_discover_modules_articles_cells .article_cell.has_square_image .square_image img {border: 1px solid #e1e1e1}
+.autogen_class_views_discover_modules_articles_cells .article_cell.single_line .tile_title, .autogen_class_views_discover_modules_articles_cells .article_cell.single_line .description {white-space: nowrap; overflow: hidden; text-overflow: ellipsis}
+.autogen_class_views_discover_modules_articles_cells .article_cell:not(.single_line) .tile_title {font-size: 18px; line-height: 23.4px; max-height: 48.8px; /* +1 prevents low baseline logs */ overflow: hidden; display: block; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; color: #444; margin-bottom: 4px}
+.autogen_class_views_discover_modules_articles_cells .article_cell:not(.single_line) .description {font-size: 16px; line-height: 1.5; max-height: 5; /* +1 prevents low baseline logs */ overflow: hidden; display: block; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical}
+.autogen_class_views_discover_modules_articles_cells .article_cell.double_line .description {display: none}
+.autogen_class_views_discover_modules_articles_cells .article_cell.no_image .tile_image {display: none}
+.autogen_class_views_discover_modules_articles_cells .article_cell.no_image .description {font-size: 16px; line-height: 1.5; max-height: 7.5; /* +1 prevents low baseline logs */ overflow: hidden; display: block; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; max-height: 94px; /* firefox max height */ }
+.autogen_class_views_discover_modules_articles_cells .article_cell .tile_title {margin-top: 6px; margin-bottom: 0; font-size: 18px; color: #444; font-weight: bold}
+.autogen_class_views_discover_modules_articles_cells .article_cell .description {color: #666}
+.autogen_class_views_discover_modules_articles_cells .article_cell .tile_content {text-align: left; box-sizing: border-box; height: 100px; padding: 16px 14px; font-family: Sofia Pro, sans-serif}
+.autogen_class_views_discover_modules_articles_cells .article_cell .tile_image {overflow: hidden; border-top: 1px solid #e1e1e1; height: 99px; border-radius: 0px 0px 3px 3px}
+.autogen_class_views_discover_modules_articles_cells .article_cell .tile_image img {position: relative}
+.autogen_class_views_discover_modules_articles_cells .article_cell .opaque_layer {background: rgba(0, 0, 0, 0.45); position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0; -webkit-transition: opacity 0.3s; transition: opacity 0.3s}
+.autogen_class_views_discover_modules_articles_cells .article_cell:hover .opaque_layer {background: rgba(0, 0, 0, 0.45); opacity: 1}
+.autogen_class_views_discover_modules_articles_cells .article_cell:active .opaque_layer {z-index: 10}
+
+
+/* app/views/discover/modules/author_cells.css @ 1485296271 */
+.autogen_class_views_discover_modules_author_cells {list-style: none; padding-left: 0}
+.autogen_class_views_discover_modules_author_cells .author_cell {display: inline-block; text-align: left; border-radius: 4px; box-shadow: 0 0 4px rgba(0, 0, 0, 0.1); border: 1px solid #e1e1e1; opacity: 1; -webkit-transition: background-color 0.5s, opacity 0.2s; transition: background-color 0.5s, opacity 0.2s; height: 168px; box-sizing: border-box; display: block; width: 308px}
+.autogen_class_views_discover_modules_author_cells .author_cell .author_link {color: #444}
+.autogen_class_views_discover_modules_author_cells .author_cell .author_link .author_header_container, .autogen_class_views_discover_modules_author_cells .author_cell .author_link .author_body {padding: 20px}
+.autogen_class_views_discover_modules_author_cells .author_cell .author_link .author_header_container {border-bottom: 1px solid #e1e1e1; position: relative}
+.autogen_class_views_discover_modules_author_cells .author_cell .author_link .author_header_container .publisher_icon {position: absolute; top: 15px; right: 15px}
+.autogen_class_views_discover_modules_author_cells .author_cell .author_link .author_header {font-size: 25px; line-height: 25px; max-height: 26px; /* +1 prevents low baseline logs */ overflow: hidden; display: block; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; font-size: 20px; position: relative; padding-right: 30px}
+.autogen_class_views_discover_modules_author_cells .author_cell .author_link .author_header .icon-top_author {position: absolute; right: 0}
+.autogen_class_views_discover_modules_author_cells .author_cell .author_link .title_prefix {color: #999}
+.autogen_class_views_discover_modules_author_cells .author_cell .author_link .title {font-size: 18px; line-height: 22px; max-height: 46px; /* +1 prevents low baseline logs */ overflow: hidden; display: block; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical}
+.autogen_class_views_discover_modules_author_cells .author_cell:hover {background-color: #f4f4f4}
+.autogen_class_views_discover_modules_author_cells .author_cell:active {opacity: 0.45}
+
+
+/* app/views/discover/modules/authors_carousel.css @ 1485296271 */
+.autogen_class_views_discover_modules_authors_carousel .carousel {height: 185px}
+.autogen_class_views_discover_modules_authors_carousel .paddle {top: 67px}
+.autogen_class_views_discover_modules_authors_carousel .author_cell {background-color: #fff}
+.autogen_class_views_discover_modules_authors_carousel .carousel.carousel {height: 170px}
+
+
+/* app/views/discover/modules/blurb_carousel.css @ 1485296271 */
+@charset "UTF-8"; .autogen_class_views_discover_modules_blurb_carousel .carousel .carousel_scrolling .document_cell {margin-right: 25px; width: auto}
+.autogen_class_views_discover_modules_blurb_carousel .carousel .carousel_scrolling .document_cell:last-child {margin-right: 0}
+.autogen_class_views_discover_modules_blurb_carousel .carousel_scrolling {text-align: left}
+.autogen_class_views_discover_modules_blurb_carousel .doc_link {display: inline-block; width: auto; margin-right: 20px}
+.autogen_class_views_discover_modules_blurb_carousel .blurb_cell {display: inline-block; width: 297px; height: 220px; margin-top: 20px; margin-right: 40px; background: url('https://s1-f.scribdassets.com/images/browse/quotemark.jpg?1485296359') 100% 0 no-repeat; position: relative}
+@media (min-width: 1512px) {.autogen_class_views_discover_modules_blurb_carousel .blurb_cell {width: 291px}
+}
+.autogen_class_views_discover_modules_blurb_carousel .blurb_cell:last-child {margin-right: 0}
+.autogen_class_views_discover_modules_blurb_carousel .blurb_cell h3 {white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin: 0; font-family: Livory, serif; font-size: 22px; font-style: italic; line-height: 26px; max-height: 52px; overflow: hidden; color: #444}
+.autogen_class_views_discover_modules_blurb_carousel .blurb_cell h3:before {content: "“"; color: #666}
+.autogen_class_views_discover_modules_blurb_carousel .blurb_cell h3:after {content: "”"; color: #666}
+.autogen_class_views_discover_modules_blurb_carousel .blurb_cell .editorial_description {margin: 0; font-size: 14px; margin-top: 14px; color: #666}
+.autogen_class_views_discover_modules_blurb_carousel .blurb_cell .text_content {position: relative; z-index: 1}
+.autogen_class_views_discover_modules_blurb_carousel .blurb_cell .editor_signature {position: absolute; right: 0; bottom: -20px; display: inline-block; text-align: center; color: #666}
+.autogen_class_views_discover_modules_blurb_carousel .blurb_cell .editor_signature img {width: 100px}
+.autogen_class_views_discover_modules_blurb_carousel .blurb_cell .editor_signature .editor_label {position: relative; top: -30px; font-size: 14px}
+
+
+/* app/views/discover/modules/content_types.css @ 1485296271 */
+.autogen_class_views_discover_modules_content_types ul {padding-left: 0; list-style: none}
+.autogen_class_views_discover_modules_content_types .browse_banner {margin: 0px 80px}
+.autogen_class_views_discover_modules_content_types .browse_banner .row {margin: auto; width: 700px}
+.autogen_class_views_discover_modules_content_types .browse_banner .row .content_selector {display: inline-block; width: 50%}
+.autogen_class_views_discover_modules_content_types .browse_banner .row .item {display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; color: #444; margin: 0 40px}
+.autogen_class_views_discover_modules_content_types .browse_banner .row .item .icon_wrapper {width: 100px; height: 100px; /*center the icon*/ display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; text-align: center}
+.autogen_class_views_discover_modules_content_types .browse_banner .row .item .icon_wrapper .icon {font-size: 65px}
+.autogen_class_views_discover_modules_content_types .browse_banner .row .item .icon_wrapper .icon.icon-article {font-size: 85px}
+.autogen_class_views_discover_modules_content_types .browse_banner .row .item .details {padding-left: 20px; width: 150px}
+.autogen_class_views_discover_modules_content_types .browse_banner .row .item .details .content_title {font-family: Livory, serif; font-weight: normal; font-size: 24px; color: #444; margin: 0}
+.autogen_class_views_discover_modules_content_types .browse_banner .row .item .details .content_description {font-family: livory; font-style: italic; font-size: 16px; color: #666; margin: 0}
+.autogen_class_views_discover_modules_content_types .browse_banner .row .item:hover {color: #6ac6e2}
+.autogen_class_views_discover_modules_content_types .browse_banner .row .item:hover .details .content_title, .autogen_class_views_discover_modules_content_types .browse_banner .row .item:hover .details .content_description {color: #6ac6e2}
+.autogen_class_views_discover_modules_content_types .browse_banner .row .item:active {color: #135987}
+.autogen_class_views_discover_modules_content_types .browse_banner .row .item:active .details .content_title, .autogen_class_views_discover_modules_content_types .browse_banner .row .item:active .details .content_description {color: #135987}
+
+
+/* app/views/discover/modules/featured_author.css @ 1485296271 */
+.autogen_class_views_discover_modules_featured_author {color: #444; color: white; margin: 40px auto; min-height: 310px; overflow: hidden; padding-bottom: 40px; position: relative; text-align: center; cursor: pointer; display: block}
+.autogen_class_views_discover_modules_featured_author p {color: white}
+.autogen_class_views_discover_modules_featured_author .background_layer {position: absolute; z-index: 1; top: 0; bottom: 0; left: 0; right: 0}
+.autogen_class_views_discover_modules_featured_author .background_layer {z-index: 1}
+.autogen_class_views_discover_modules_featured_author .background_layer:after {position: absolute; bottom: 17px; left: 0; right: 0; height: 1px; background: rgba(255, 255, 255, 0.5); content: ""}
+.autogen_class_views_discover_modules_featured_author .content_layer {position: relative; z-index: 2}
+.autogen_class_views_discover_modules_featured_author .decor_outer {text-align: center; position: relative; z-index: 1}
+.autogen_class_views_discover_modules_featured_author .decor_header {color: white; letter-spacing: 0.1em; margin-top: 8px; display: inline-block; position: relative; line-height: 18px; text-transform: uppercase; font-size: 13px}
+.autogen_class_views_discover_modules_featured_author .decor_header:before, .autogen_class_views_discover_modules_featured_author .decor_header:after {content: ""; height: 1px; background: rgba(255, 255, 255, 0.5); position: absolute; top: 9px}
+.autogen_class_views_discover_modules_featured_author .decor_header:before {right: 105%; left: -1000px}
+.autogen_class_views_discover_modules_featured_author .decor_header:after {left: 105%; right: -1000px}
+.autogen_class_views_discover_modules_featured_author .module_summary {width: 666px; margin: 0 auto; margin-top: 40px}
+.autogen_class_views_discover_modules_featured_author .module_summary.subtitle {font-size: 14px; margin: 0 auto}
+.autogen_class_views_discover_modules_featured_author .author_image, .autogen_class_views_discover_modules_featured_author .author_summary, .autogen_class_views_discover_modules_featured_author .book_cover_container {display: inline-block; vertical-align: top}
+.autogen_class_views_discover_modules_featured_author p {color: #444}
+.autogen_class_views_discover_modules_featured_author .author_image {width: 115px; height: 115px; border-radius: 115px; margin: 20px 60px 0 30px}
+.autogen_class_views_discover_modules_featured_author .author_summary {text-align: center; max-width: 300px; margin-top: 35px}
+.autogen_class_views_discover_modules_featured_author .author_summary h2 {font-size: 30px; margin: 0; font-family: Livory, serif}
+.autogen_class_views_discover_modules_featured_author .author_summary p {margin: 0}
+.autogen_class_views_discover_modules_featured_author .author_summary .subtitle {font-size: 14px; color: #666; margin-top: 4px}
+.autogen_class_views_discover_modules_featured_author .author_summary .book_title {font-family: Livory, serif; font-style: italic; font-size: 18px; margin-top: 2px}
+.autogen_class_views_discover_modules_featured_author .module_summary {margin-top: 13px; position: relative; z-index: 1}
+.autogen_class_views_discover_modules_featured_author .button_row {margin-top: 24px}
+.autogen_class_views_discover_modules_featured_author .decor_header {color: #444}
+.autogen_class_views_discover_modules_featured_author .decor_header:before, .autogen_class_views_discover_modules_featured_author .decor_header:after {background: #dadada}
+.autogen_class_views_discover_modules_featured_author .background_layer:after {background: #dadada; z-index: 1}
+.autogen_class_views_discover_modules_featured_author .book_cover_container {margin-top: 18px; margin-left: 80px; margin-right: 36px; position: relative}
+.autogen_class_views_discover_modules_featured_author .book_cover_container .document_cell {width: 90px}
+.autogen_class_views_discover_modules_featured_author .book_cover_container .document_cell .thumb {width: 90px; height: 120px; margin-bottom: 0}
+
+
+/* app/views/discover/modules/featured_collection.css @ 1485296271 */
+.autogen_class_views_discover_modules_featured_collection {background: #CFCFCF; margin-top: 50px; padding: 35px 0 35px 0; background-repeat: no-repeat; background-position: left}
+.autogen_class_views_discover_modules_featured_collection.dark, .autogen_class_views_discover_modules_featured_collection.dark.discover_row {color: white}
+.autogen_class_views_discover_modules_featured_collection.dark .paddle.page_left, .autogen_class_views_discover_modules_featured_collection.dark.discover_row .paddle.page_left {background-image: url('https://s2-f.scribdassets.com/images/home/logged_in/ic_home_control_left_arrow_light.png?1485296359')}
+.autogen_class_views_discover_modules_featured_collection.dark .paddle.page_right, .autogen_class_views_discover_modules_featured_collection.dark.discover_row .paddle.page_right {background-image: url('https://s2-f.scribdassets.com/images/home/logged_in/ic_home_control_right_arrow_light.png?1485296359')}
+.autogen_class_views_discover_modules_featured_collection.dark .module_title, .autogen_class_views_discover_modules_featured_collection.dark.discover_row .module_title {color: white}
+.autogen_class_views_discover_modules_featured_collection .document_cell {margin-right: 26px}
+.autogen_class_views_discover_modules_featured_collection .document_cell:last-child {margin-right: 0}
+.autogen_class_views_discover_modules_featured_collection .carousel_title {display: none}
+.autogen_class_views_discover_modules_featured_collection .module_content {margin-left: 514px}
+.autogen_class_views_discover_modules_featured_collection.discover_row .module_content .module_title {white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-weight: 200; font-size: 32px; margin-bottom: 9px; margin-right: 50px; margin-top: 0; padding-left: 30px; text-transform: initial; text-align: left}
+.autogen_class_views_discover_modules_featured_collection .module_description {font-size: 18px; margin-bottom: 10px; margin-right: 50px; padding-left: 30px}
+.autogen_class_views_discover_modules_featured_collection .carousel:before {background: -webkit-linear-gradient(left, #cfcfcf 0%, #cfcfcf 53%, rgba(207, 207, 207, 0) 100%);background: linear-gradient(to right, #cfcfcf 0%, #cfcfcf 53%, rgba(207, 207, 207, 0) 100%)}
+.autogen_class_views_discover_modules_featured_collection .carousel:after {background: -webkit-linear-gradient(left, rgba(207, 207, 207, 0) 0%, #cfcfcf 53%, #cfcfcf 100%);background: linear-gradient(to right, rgba(207, 207, 207, 0) 0%, #cfcfcf 53%, #cfcfcf 100%)}
+.autogen_class_views_discover_modules_featured_collection .star_ratings {text-align: center; font-size: 15px}
+.autogen_class_views_discover_modules_featured_collection .star_ratings .rating_star {width: 18px; color: #999}
+.autogen_class_views_discover_modules_featured_collection .star_ratings .rating_star.light_lit {color: #999}
+.autogen_class_views_discover_modules_featured_collection .module_content .module_row {margin-bottom: 0; width: auto; padding-right: 25px}
+.autogen_class_views_discover_modules_featured_collection .module_content .module_row .document_cell {margin-right: 26px}
+@media (min-width: 1512px) {.autogen_class_views_discover_modules_featured_collection .module_content .module_row .document_cell {margin-right: 52px}
+}
+
+
+/* app/views/discover/modules/featured_document.css @ 1485296271 */
+@charset "UTF-8"; .autogen_class_views_discover_modules_featured_document {color: white; margin: 40px auto; min-height: 310px; overflow: hidden; padding-bottom: 40px; position: relative; text-align: center; cursor: pointer; display: block}
+.autogen_class_views_discover_modules_featured_document p {color: white}
+.autogen_class_views_discover_modules_featured_document .image_layer, .autogen_class_views_discover_modules_featured_document .background_layer {position: absolute; z-index: 1; top: 0; bottom: 0; left: 0; right: 0}
+.autogen_class_views_discover_modules_featured_document .background_layer {z-index: 1}
+.autogen_class_views_discover_modules_featured_document .background_layer:after {position: absolute; bottom: 17px; left: 0; right: 0; height: 1px; background: rgba(255, 255, 255, 0.5); content: ""}
+.autogen_class_views_discover_modules_featured_document .content_layer {position: relative; z-index: 2}
+.autogen_class_views_discover_modules_featured_document .decor_outer {text-align: center; position: relative; z-index: 1}
+.autogen_class_views_discover_modules_featured_document .decor_header {color: white; letter-spacing: 0.1em; margin-top: 8px; display: inline-block; position: relative; line-height: 18px; text-transform: uppercase; font-size: 13px}
+.autogen_class_views_discover_modules_featured_document .decor_header:before, .autogen_class_views_discover_modules_featured_document .decor_header:after {content: ""; height: 1px; background: rgba(255, 255, 255, 0.5); position: absolute; top: 9px}
+.autogen_class_views_discover_modules_featured_document .decor_header:before {right: 105%; left: -1000px}
+.autogen_class_views_discover_modules_featured_document .decor_header:after {left: 105%; right: -1000px}
+.autogen_class_views_discover_modules_featured_document .module_summary {width: 666px; margin: 0 auto; margin-top: 40px}
+.autogen_class_views_discover_modules_featured_document .module_summary.subtitle {font-size: 14px; margin: 0 auto}
+.autogen_class_views_discover_modules_featured_document .content_layer {color: #444; text-align: left}
+.autogen_class_views_discover_modules_featured_document .margined {margin-right: 300px; margin-left: 50px}
+.autogen_class_views_discover_modules_featured_document h2 {font-family: Livory, serif; font-style: italic; margin: 30px 0 20px 0; font-size: 36px}
+.autogen_class_views_discover_modules_featured_document h2:before {content: "“"; color: #666}
+.autogen_class_views_discover_modules_featured_document h2:after {content: "”"; color: #666}
+.autogen_class_views_discover_modules_featured_document .editorial_description {color: #666; line-height: 1.8; position: relative; zoom: 1; margin-left: 1px; padding-left: 15px; border-left: 4px solid #dadada}
+.autogen_class_views_discover_modules_featured_document .editorial_description:after {content: ""; display: table; clear: both}
+.autogen_class_views_discover_modules_featured_document .button_row {margin: 30px 0 0 0}
+.autogen_class_views_discover_modules_featured_document .decor_header {color: #444}
+.autogen_class_views_discover_modules_featured_document .decor_header:before, .autogen_class_views_discover_modules_featured_document .decor_header:after {background: #dadada}
+.autogen_class_views_discover_modules_featured_document .background_layer:after {background: #dadada; z-index: 1}
+.autogen_class_views_discover_modules_featured_document .background_layer .book_cover_container {right: 50px; top: 45px; position: absolute}
+.autogen_class_views_discover_modules_featured_document .background_layer .document_cell {width: 192px}
+.autogen_class_views_discover_modules_featured_document .background_layer .document_cell .thumb {width: 192px; height: 256px}
+.autogen_class_views_discover_modules_featured_document .editor_signature {position: absolute; left: 0; right: 0; bottom: 25px; text-align: center; z-index: 1; color: #666}
+.autogen_class_views_discover_modules_featured_document .editor_signature img {width: 130px}
+.autogen_class_views_discover_modules_featured_document .editor_signature .editor_label {position: relative; top: -40px; font-size: 14px}
+
+
+/* app/views/discover/modules/hero_banner.css @ 1485296271 */
+.autogen_class_views_discover_modules_hero_banner .hero_banner {height: 164px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center}
+.autogen_class_views_discover_modules_hero_banner .multi_banner .hero_banner {background-position: center; background-size: cover; background-color: #135987}
+.autogen_class_views_discover_modules_hero_banner .single_banner .hero_banner {border-bottom: 1px solid lightgrey}
+.autogen_class_views_discover_modules_hero_banner .single_banner .hero_banner .header_content {display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center}
+.autogen_class_views_discover_modules_hero_banner .single_banner .hero_banner .header_content .icon {font-size: 45px}
+.autogen_class_views_discover_modules_hero_banner .single_banner .hero_banner .header_content .title {padding-top: 4px; font-family: livory; font-family: Livory, serif; font-weight: regular; font-size: 30px; color: #444}
+.autogen_class_views_discover_modules_hero_banner .single_banner .hero_banner .header_content .sub_title {padding-top: 4px; font-family: Livory, serif; font-style: italic; font-size: 16px; color: #666; text-align: center}
+.autogen_class_views_discover_modules_hero_banner .multi_banner {position: relative}
+.autogen_class_views_discover_modules_hero_banner .multi_banner .hero_banner {background-size: cover; background-position: center; background-repeat: no-repeat}
+.autogen_class_views_discover_modules_hero_banner .multi_banner .hero_banner:before {content: ""; position: absolute; height: 130px; left: 0; right: 0; bottom: 0; background-image: -webkit-linear-gradient(transparent, #222); background-image: linear-gradient(transparent, #222)}
+.autogen_class_views_discover_modules_hero_banner .multi_banner .hero_banner .header_content {z-index: 1}
+.autogen_class_views_discover_modules_hero_banner .multi_banner .hero_banner .header_content .title {text-align: center; font-weight: bold; font-size: 30px; color: white; margin-top: 40px}
+.autogen_class_views_discover_modules_hero_banner .multi_banner .hero_banner .header_content .filter {text-align: center; font-weight: normal; font-size: 18px}
+.autogen_class_views_discover_modules_hero_banner .multi_banner .hero_banner .header_content .filter .filter_current_btn {background: transparent; border: none; border-bottom: 1px solid white; cursor: pointer; font-family: Sofia Pro, sans-serif}
+.autogen_class_views_discover_modules_hero_banner .multi_banner .hero_banner .header_content .filter .filter_current_btn .filter_title {font-size: 16px}
+.autogen_class_views_discover_modules_hero_banner .multi_banner .hero_banner .header_content .filter .filter_current_btn .icon-down_arrow {font-size: 10px; margin-left: 10px}
+.autogen_class_views_discover_modules_hero_banner .multi_banner .hero_banner .header_content .filter .filter_list {width: 200px; margin: 0 auto; display: none; z-index: 1; border-radius: 3px; padding: 10px 0px; list-style-type: none; background: white; box-shadow: 0px 0px 10px #444}
+.autogen_class_views_discover_modules_hero_banner .multi_banner .hero_banner .header_content .filter .filter_current_btn, .autogen_class_views_discover_modules_hero_banner .multi_banner .hero_banner .header_content .filter .filter_current_no_options, .autogen_class_views_discover_modules_hero_banner .multi_banner .hero_banner .header_content .filter .filter_item {text-align: center; color: white}
+.autogen_class_views_discover_modules_hero_banner .multi_banner .hero_banner .header_content .filter .filter_current_no_options {border: none}
+.autogen_class_views_discover_modules_hero_banner .multi_banner .hero_banner .header_content .filter .filter_item {min-width: 200px; height: 44px; line-height: 44px; -webkit-transition: background 0.2s, color 0.2s; transition: background 0.2s, color 0.2s}
+.autogen_class_views_discover_modules_hero_banner .multi_banner .hero_banner .header_content .filter .filter_item a {color: #444; display: block; width: 100%; height: 100%}
+.autogen_class_views_discover_modules_hero_banner .multi_banner .hero_banner .header_content .filter .filter_item:hover {background: #f4f4f4}
+.autogen_class_views_discover_modules_hero_banner .multi_banner .hero_banner .header_content .filter .filter_item:active {background: #e1e1e1}
+.autogen_class_views_discover_modules_hero_banner .multi_banner .hero_banner .header_content .filter .filter_item.selected {background: #eee}
+.autogen_class_views_discover_modules_hero_banner .multi_banner .hero_banner .header_content .filter .filter_item.selected a {font-weight: bold}
+.autogen_class_views_discover_modules_hero_banner .breadcrumb, .autogen_class_views_discover_modules_hero_banner .description, .autogen_class_views_discover_modules_hero_banner .single_banner {margin: 0 auto; width: 969px}
+@media (min-width: 1512px) {.autogen_class_views_discover_modules_hero_banner .breadcrumb, .autogen_class_views_discover_modules_hero_banner .description, .autogen_class_views_discover_modules_hero_banner .single_banner {width: 1457px}
+}
+.autogen_class_views_discover_modules_hero_banner .breadcrumb {padding: 14px 0px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: baseline; -webkit-align-items: baseline; -ms-flex-align: baseline; align-items: baseline; font-size: 14px}
+.autogen_class_views_discover_modules_hero_banner .breadcrumb .breadcrumb_caret {margin: 0px 5px}
+.autogen_class_views_discover_modules_hero_banner .breadcrumb .breadcrumb_caret {color: #666; font-size: 8px}
+.autogen_class_views_discover_modules_hero_banner .description {text-align: center; font-family: livory; font-style: italic; font-size: 18px; color: #666; padding-bottom: 30px; border-bottom: 1px solid lightgrey}
+
+
+/* app/views/discover/modules/interest_cells.css @ 1485296271 */
+.autogen_class_views_discover_modules_interest_cells {list-style: none; padding-left: 0}
+.autogen_class_views_discover_modules_interest_cells .object_cell {display: inline-block; box-sizing: border-box; height: 226px; padding: 20px; position: relative; text-align: center; width: 226px}
+@media (min-width: 1512px) {.autogen_class_views_discover_modules_interest_cells .object_cell {width: 225px}
+}
+.autogen_class_views_discover_modules_interest_cells .object_cell.compact {height: 103px}
+.autogen_class_views_discover_modules_interest_cells .object_cell.compact.cell_modulus_0 {margin-left: -246px; margin-top: 123px}
+.autogen_class_views_discover_modules_interest_cells .object_cell.compact .interest_title {font-size: 20px; line-height: 20px; max-height: 42px; /* +1 prevents low baseline logs */ overflow: hidden; display: block; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical}
+.autogen_class_views_discover_modules_interest_cells .object_cell.compact:before {background: -webkit-linear-gradient(bottom, #222222 0%, rgba(34, 34, 34, 0.5) 80px, rgba(34, 34, 34, 0) 100%);background: linear-gradient(to top, #222222 0%, rgba(34, 34, 34, 0.5) 80px, rgba(34, 34, 34, 0) 100%)}
+.autogen_class_views_discover_modules_interest_cells .object_cell .interest_link {border-radius: 4px; box-shadow: 0 0 4px rgba(0, 0, 0, 0.1); border: 1px solid #e1e1e1; background-color: #999; height: 100%; left: 0; position: absolute; top: 0; width: 100%}
+.autogen_class_views_discover_modules_interest_cells .object_cell .interest_link .interest_title {font-size: 20px; line-height: 24px; max-height: 75px; /* +1 prevents low baseline logs */ overflow: hidden; display: block; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; bottom: 15px; color: #fff; font-size: 20px; font-weight: bold; left: 0; padding: 0 20px 5px 20px; position: absolute; text-shadow: 0 0 10px #222; width: 186px; z-index: 10; max-height: 70px}
+.autogen_class_views_discover_modules_interest_cells .object_cell .interest_link:before {opacity: 0.8; -webkit-transition: opacity 0.3s; transition: opacity 0.3s; background: -webkit-linear-gradient(bottom, black 0%, transparent 130px, transparent 100%); background: linear-gradient(to top, black 0%, transparent 130px, transparent 100%); border-radius: 4px; content: ""; display: block; height: 100%; left: 0; position: absolute; top: 0; width: 100%}
+.autogen_class_views_discover_modules_interest_cells .object_cell .interest_link .opaque_layer {background: rgba(0, 0, 0, 0.45); position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0; -webkit-transition: opacity 0.3s; transition: opacity 0.3s}
+.autogen_class_views_discover_modules_interest_cells .object_cell .interest_link:hover .opaque_layer {background: rgba(0, 0, 0, 0.45); opacity: 1}
+.autogen_class_views_discover_modules_interest_cells .object_cell .interest_link:active .opaque_layer {z-index: 10}
+
+
+/* app/views/discover/modules/interest_list.css @ 1485296271 */
+.autogen_class_views_discover_modules_interest_list {width: 1024px; max-width: 1024px; margin: 0 auto 40px auto; /*Tabbed Browse List*/ }
+.autogen_class_views_discover_modules_interest_list .content_header {text-align: center}
+.autogen_class_views_discover_modules_interest_list .browse_lists {display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex}
+.autogen_class_views_discover_modules_interest_list .browse_list {display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex; -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; padding-left: 0}
+.autogen_class_views_discover_modules_interest_list .browse_list.left {margin-right: 20px; margin-left: 80px}
+.autogen_class_views_discover_modules_interest_list .browse_list.right {margin-right: 80px}
+.autogen_class_views_discover_modules_interest_list li {list-style: none}
+.autogen_class_views_discover_modules_interest_list .browse_list_item {-webkit-transition: background 0.2s, font-weight 0.2s;transition: background 0.2s, font-weight 0.2s; color: #444; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; cursor: pointer; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; height: 60px; border-bottom: 1px solid lightgrey; padding: 0 15px; font-size: 18px}
+.autogen_class_views_discover_modules_interest_list .browse_list_item .carrot {font-size: 14px; color: lightgrey}
+.autogen_class_views_discover_modules_interest_list .browse_list_item:hover {color: #6ac6e2}
+.autogen_class_views_discover_modules_interest_list .browse_list_item:active {color: #135987}
+.autogen_class_views_discover_modules_interest_list .view_more_footer {font-weight: bold; text-align: center; color: #1a7bba}
+.autogen_class_views_discover_modules_interest_list .list_expand_btn {-webkit-transition: opacity 0.2s;transition: opacity 0.2s; cursor: pointer; margin: 20px 0px}
+.autogen_class_views_discover_modules_interest_list .list_expand_btn:hover {opacity: 0.8}
+.autogen_class_views_discover_modules_interest_list .content_body {position: relative}
+.autogen_class_views_discover_modules_interest_list .expanding .content_body {height: 245px; overflow: hidden}
+.autogen_class_views_discover_modules_interest_list .simple .view_more_footer {display: none}
+.autogen_class_views_discover_modules_interest_list .tabbed_browse_list, .autogen_class_views_discover_modules_interest_list .notab_browse_list {margin-top: 50px}
+.autogen_class_views_discover_modules_interest_list .tabbed_browse_list .tabs.control {display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; padding: 0px; margin-bottom: 0px; border-bottom: 1px solid lightgrey}
+.autogen_class_views_discover_modules_interest_list .tabbed_browse_list .tabs.control li:last-child button {margin-right: 0}
+.autogen_class_views_discover_modules_interest_list .tabbed_browse_list button {color: #666; cursor: pointer; border: none; background: white; outline: none; padding: 0px; height: 60px; margin-right: 65px; border-bottom: 3px solid white; font-family: inherit; -webkit-transition: color 0.2s ease-in-out; transition: color 0.2s ease-in-out}
+.autogen_class_views_discover_modules_interest_list .tabbed_browse_list button:hover {color: #444}
+.autogen_class_views_discover_modules_interest_list .tabbed_browse_list button.active {color: #1a7bba; border-bottom: 3px solid #1a7bba}
+.autogen_class_views_discover_modules_interest_list .tab_content {display: none}
+.autogen_class_views_discover_modules_interest_list .tab_content.active {display: block}
+.autogen_class_views_discover_modules_interest_list .module_subtitle {margin-top: -20px; margin-bottom: 20px}
+
+
+/* app/views/discover/modules/interests_carousel.css @ 1485296271 */
+.autogen_class_views_discover_modules_interests_carousel .carousel {height: 230px}
+
+
+/* app/views/discover/modules/issue_preview.css @ 1485296271 */
+.autogen_class_views_discover_modules_issue_preview .container_link:hover div, .autogen_class_views_discover_modules_issue_preview .container_link:hover button {color: #6ac6e2}
+.autogen_class_views_discover_modules_issue_preview .container_link:hover .overlay {opacity: 0.5 !important}
+.autogen_class_views_discover_modules_issue_preview .container_link:active div, .autogen_class_views_discover_modules_issue_preview .container_link:active button {color: #135987}
+.autogen_class_views_discover_modules_issue_preview .hero_section {padding: 26px; max-width: 144px}
+.autogen_class_views_discover_modules_issue_preview .hero_section .hero_image {height: 192px; overflow: hidden}
+.autogen_class_views_discover_modules_issue_preview .hero_section > div:not(:last-child) {margin-bottom: 6px}
+.autogen_class_views_discover_modules_issue_preview .hero_section .title {font-family: livory; font-size: 20px; color: #444}
+.autogen_class_views_discover_modules_issue_preview .hero_section .subtitle {font-size: 16px; color: #666}
+.autogen_class_views_discover_modules_issue_preview .hero_section.card .title {max-height: 50px; overflow: hidden}
+.autogen_class_views_discover_modules_issue_preview .hero_section.card button {text-align: left}
+.autogen_class_views_discover_modules_issue_preview .hero_section.page {padding: 30px}
+.autogen_class_views_discover_modules_issue_preview .hero_section.page > div:not(:last-child) {margin-bottom: 8px}
+.autogen_class_views_discover_modules_issue_preview .hero_section.page .nav_panel {display: block; padding: 0px 3px; margin-bottom: 30px}
+.autogen_class_views_discover_modules_issue_preview .hero_section.page .nav_panel .nav_button {display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex; -webkit-box-align: baseline; -webkit-align-items: baseline; -ms-flex-align: baseline; align-items: baseline}
+.autogen_class_views_discover_modules_issue_preview .hero_section.page .nav_panel .nav_button.prev {float: left}
+.autogen_class_views_discover_modules_issue_preview .hero_section.page .nav_panel .nav_button.next {float: right}
+.autogen_class_views_discover_modules_issue_preview .hero_section.page .title {font-size: 22px}
+.autogen_class_views_discover_modules_issue_preview .hero_section.page .nav_button {font-size: 12px; color: #1a7bba}
+.autogen_class_views_discover_modules_issue_preview .hero_section.page .nav_button .icon {font-size: 9px}
+.autogen_class_views_discover_modules_issue_preview .hero_section.page .nav_button:active {color: #135987}
+
+
+/* app/views/discover/modules/issue_with_articles.css @ 1485296271 */
+.autogen_class_views_discover_modules_issue_with_articles .issue_card {width: 780px; max-height: 360px; margin: 0px auto; border: 1px solid #e1e1e1; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; background: white}
+
+
+/* app/views/discover/modules/profile_banner.css @ 1485296271 */
+.autogen_class_views_discover_modules_profile_banner {padding: 50px 24px; color: white; background: #154264}
+.autogen_class_views_discover_modules_profile_banner .banner_container {display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; margin: 0 auto; max-width: 975px}
+.autogen_class_views_discover_modules_profile_banner .banner_container .headline {position: relative}
+@media (max-width: 1025px) {.autogen_class_views_discover_modules_profile_banner .banner_container {-webkit-box-orient: vertical;-webkit-box-direction: normal;-webkit-flex-direction: column;-ms-flex-direction: column;flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center}
+}
+.autogen_class_views_discover_modules_profile_banner .profile_image_container .profile_thumbnail {width: 75px; height: 75px; line-height: 74px; border: 2px solid white; color: white; background-color: #154264}
+@media (max-width: 1025px) {.autogen_class_views_discover_modules_profile_banner .profile_image_container .profile_thumbnail {height: 84px; width: 84px; line-height: 83px}
+}
+.autogen_class_views_discover_modules_profile_banner .profile_image_container .profile_thumbnail.circle {border-radius: 100px}
+.autogen_class_views_discover_modules_profile_banner .profile_image_container .profile_thumbnail.icon-user {font-size: 74px; background-color: white}
+@media (max-width: 1025px) {.autogen_class_views_discover_modules_profile_banner .profile_image_container .profile_thumbnail.icon-user {font-size: 84px}
+}
+.autogen_class_views_discover_modules_profile_banner .profile_image_container .profile_thumbnail.icon-user:before {color: #154264}
+.autogen_class_views_discover_modules_profile_banner .contribution_type {display: inline; background: white; padding: 2px 5px; margin-bottom: 6px; font-size: 12px; font-weight: bold; color: #135987; letter-spacing: 0.05em; text-transform: uppercase}
+.autogen_class_views_discover_modules_profile_banner .profile_name {margin-bottom: 10px; font-size: 32px; font-weight: bold}
+@media (max-width: 1025px) {.autogen_class_views_discover_modules_profile_banner .profile_name {margin-top: 18px}
+}
+.autogen_class_views_discover_modules_profile_banner .profile_info {margin: 0px 24px; -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; position: relative}
+@media (max-width: 1025px) {.autogen_class_views_discover_modules_profile_banner .profile_info {width: auto; margin-top: -15px}
+}
+.autogen_class_views_discover_modules_profile_banner .stats.wide {position: absolute; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; bottom: 0px; right: 0px}
+.autogen_class_views_discover_modules_profile_banner .stats.wide .stat {margin: 0px 5px}
+.autogen_class_views_discover_modules_profile_banner .stats.wide .stat .count {font-weight: bold}
+@media (max-width: 1025px) {.autogen_class_views_discover_modules_profile_banner .stats.wide {display: none}
+}
+.autogen_class_views_discover_modules_profile_banner .stats.narrow {display: none}
+@media (max-width: 1025px) {.autogen_class_views_discover_modules_profile_banner .stats.narrow {display: block}
+}
+.autogen_class_views_discover_modules_profile_banner .stat .quantifier {text-transform: uppercase}
+.autogen_class_views_discover_modules_profile_banner .read_more, .autogen_class_views_discover_modules_profile_banner .read_less {color: white; border-bottom: 1px solid lightgray; margin-left: 5px}
+.autogen_class_views_discover_modules_profile_banner .user_controls {margin-top: 20px}
+.autogen_class_views_discover_modules_profile_banner .description_wrapper .full.description {display: none}
+@media (max-width: 1025px) {.autogen_class_views_discover_modules_profile_banner .description_wrapper {margin-top: 34px}
+}
+.autogen_class_views_discover_modules_profile_banner .description_wrapper.show_full .full.description {display: block}
+.autogen_class_views_discover_modules_profile_banner .description_wrapper.show_full .short.description {display: none}
+@media (max-width: 1025px) {.autogen_class_views_discover_modules_profile_banner .banner_container .headline, .autogen_class_views_discover_modules_profile_banner .banner_container .stat, .autogen_class_views_discover_modules_profile_banner .banner_container .description_wrapper.super_short {text-align: center}
+.autogen_class_views_discover_modules_profile_banner .banner_container .stat .count {padding-right: 3px}
+}
+
+
+/* app/views/discover/modules/promo.css @ 1485296271 */
+.autogen_class_views_discover_modules_promo {position: relative; text-align: center; color: #fff; padding: 40px 0; background-color: #d8d8d8; background-repeat: no-repeat; background-size: cover; background-position: center; margin-top: 30px; box-shadow: 0 0 4px rgba(0, 0, 0, 0.1)}
+.autogen_class_views_discover_modules_promo h2 {color: inherit; font-family: Livory, serif}
+.autogen_class_views_discover_modules_promo .annual_text {padding: 0 40px}
+.autogen_class_views_discover_modules_promo .flat_btn {color: inherit}
+.autogen_class_views_discover_modules_promo .close_btn {position: absolute; top: 20px; right: 20px; color: #fff}
+.autogen_class_views_discover_modules_promo.is_annual_upsell {height: 90px; background: url('https://s1-f.scribdassets.com/images/annual_upsell/background_annual_plans_banner.jpg?1485296359'); color: white}
+.autogen_class_views_discover_modules_promo.is_annual_upsell h2 {font-size: 28px; margin: 0 0 5px 0; color: white}
+.autogen_class_views_discover_modules_promo.is_annual_upsell p {color: white}
+.autogen_class_views_discover_modules_promo.is_annual_upsell .close_btn {color: white}
+.autogen_class_views_discover_modules_promo.is_annual_upsell .annual_text {text-align: left; margin-right: 230px}
+.autogen_class_views_discover_modules_promo.is_annual_upsell .upsell_btn {position: absolute; right: 100px; bottom: 40px}
+.autogen_class_views_discover_modules_promo.is_referral {background-image: url('https://s1-f.scribdassets.com/images/home/logged_in/promo_referrals_bg_small.jpg?1485296359')}
+.autogen_class_views_discover_modules_promo.is_personalize {background-image: url('https://s2-f.scribdassets.com/images/home/logged_in/promo_personalization_bg_small.jpg?1485296359'); background-position: center right}
+.autogen_class_views_discover_modules_promo.is_bundles {background-image: url('https://s1-f.scribdassets.com/images/account_settings/bundles/banner_image_1512.png?1485296359'); background-position: 50%; background-size: cover}
+.autogen_class_views_discover_modules_promo.is_bundles .close_btn {color: #444}
+.autogen_class_views_discover_modules_promo.is_bundles h2, .autogen_class_views_discover_modules_promo.is_bundles p {color: #444}
+.autogen_class_views_discover_modules_promo.is_bundles h2 {margin: 0}
+.autogen_class_views_discover_modules_promo.is_bundles p {width: 300px; margin: 0 auto 24px auto}
+@media (min-width: 1023px) {.autogen_class_views_discover_modules_promo.is_referral {background-image: url('https://s2-f.scribdassets.com/images/home/logged_in/promo_referrals_bg_large.jpg?1485296359')}
+.autogen_class_views_discover_modules_promo.is_personalize {background-image: url('https://s1-f.scribdassets.com/images/home/logged_in/promo_personalization_bg_large.jpg?1485296359')}
+}
+
+
+/* app/views/discover/modules/search_article_list.css @ 1485296271 */
+.autogen_class_views_discover_modules_search_article_list .articles_list .info {max-height: 97px; overflow: hidden}
+.autogen_class_views_discover_modules_search_article_list .articles_list .info .metadata {display: none}
+.autogen_class_views_discover_modules_search_article_list .articles_list .thumbnail_cap {margin-left: 0; border-radius: 4px; border: 1px solid #f4f4f4; overflow: hidden}
+.autogen_class_views_discover_modules_search_article_list .articles_list .view_article {display: none}
+.autogen_class_views_discover_modules_search_article_list .articles_list .article_image {display: none}
+.autogen_class_views_discover_modules_search_article_list .articles_list .article_info {margin-bottom: 4px}
+.autogen_class_views_discover_modules_search_article_list .articles_list .article_row:not(:last-child) {border-bottom-color: transparent}
+
+
+/* app/views/discover/modules/selects.css @ 1485296271 */
+.autogen_class_views_discover_modules_selects.scribd_select .carousel_outer {padding-bottom: 60px}
+.autogen_class_views_discover_modules_selects.scribd_select .view_more {text-align: center}
+.autogen_class_views_discover_modules_selects.scribd_select .carousel_scrollbar {bottom: 100px}
+.autogen_class_views_discover_modules_selects.scribd_select .carousel_subtitle {color: gray600; font-size: 16px; text-align: center}
+
+
+/* app/views/discover/modules/square_collections_carousel.css @ 1485296271 */
+.autogen_class_views_discover_modules_square_collections_carousel .carousel:before {background: -webkit-linear-gradient(left, white 0%, white 53%, rgba(255, 255, 255, 0) 100%);background: linear-gradient(to right, white 0%, white 53%, rgba(255, 255, 255, 0) 100%)}
+.autogen_class_views_discover_modules_square_collections_carousel .carousel:after {background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, white 53%, white 100%);background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 53%, white 100%)}
+
+
+/* app/views/discover/modules/trusted_source_cells.css @ 1485296271 */
+.autogen_class_views_discover_modules_trusted_source_cells {list-style: none; padding-left: 0}
+.autogen_class_views_discover_modules_trusted_source_cells .trusted_source_cell {display: inline-block; text-align: left; border-radius: 4px; box-shadow: 0 0 4px rgba(0, 0, 0, 0.1); border: 1px solid #e1e1e1; opacity: 1; -webkit-transition: background-color 0.5s, opacity 0.2s; transition: background-color 0.5s, opacity 0.2s; height: 168px; box-sizing: border-box; display: block; overflow: hidden; width: 308px}
+.autogen_class_views_discover_modules_trusted_source_cells .trusted_source_cell .trusted_source_header_container {-webkit-transition: background-color 0.5s, opacity 0.2s;transition: background-color 0.5s, opacity 0.2s}
+.autogen_class_views_discover_modules_trusted_source_cells .trusted_source_cell .trusted_source_link {color: #444}
+.autogen_class_views_discover_modules_trusted_source_cells .trusted_source_cell .trusted_source_link .trusted_source_header_container {background-color: #fff; padding: 20px}
+.autogen_class_views_discover_modules_trusted_source_cells .trusted_source_cell .trusted_source_link .trusted_source_header_container {border-bottom: 1px solid #e1e1e1}
+.autogen_class_views_discover_modules_trusted_source_cells .trusted_source_cell .trusted_source_link .trusted_source_header {font-size: 25px; line-height: 25px; max-height: 26px; /* +1 prevents low baseline logs */ overflow: hidden; display: block; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; font-size: 20px; font-weight: normal; margin: 0; position: relative; padding-right: 20px}
+.autogen_class_views_discover_modules_trusted_source_cells .trusted_source_cell .trusted_source_link .trusted_source_header_prefix {color: #999}
+.autogen_class_views_discover_modules_trusted_source_cells .trusted_source_cell .trusted_source_link .trusted_source_body ul {padding-left: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin: 0}
+.autogen_class_views_discover_modules_trusted_source_cells .trusted_source_cell .trusted_source_link .trusted_source_body ul li {list-style: none; display: inline-block}
+.autogen_class_views_discover_modules_trusted_source_cells .trusted_source_cell:hover {background-color: #f4f4f4}
+.autogen_class_views_discover_modules_trusted_source_cells .trusted_source_cell:hover .trusted_source_header_container {background-color: #f4f4f4}
+.autogen_class_views_discover_modules_trusted_source_cells .trusted_source_cell:active {opacity: 0.45}
+
+
+/* app/views/discover/modules/trusted_sources_carousel.css @ 1485296271 */
+.autogen_class_views_discover_modules_trusted_sources_carousel .carousel.carousel {/*hack to override specificity with min impact- better than !important*/ height: 170px}
+.autogen_class_views_discover_modules_trusted_sources_carousel .paddle {top: 75px}
+
+
+/* app/views/discover/modules/view_all.css @ 1485296271 */
+.autogen_class_views_discover_modules_view_all {padding-top: 30px; border-top: 1px solid #e1e1e1; text-align: center}
