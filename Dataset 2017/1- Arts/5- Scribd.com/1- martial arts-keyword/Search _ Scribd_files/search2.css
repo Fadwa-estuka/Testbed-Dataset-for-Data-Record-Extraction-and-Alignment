@@ -1,0 +1,398 @@
+/* :asset_packager_compatibility, 'config/asset_packages.yml' @ 1485296272 */
+
+
+/* :files, 'public/stylesheets/shared', ... @ (none) */
+
+
+/* :files, 'app/views', ... @ 1485296272 */
+/* app/views/search/common.css @ 1485296272 */
+.search_styles .small_title {font-size: 18px; color: #999}
+.search_styles .small_header {font-size: 14px; text-transform: uppercase; font-weight: bold; margin-bottom: 14px}
+.search_styles .small_header:not(a) {color: #999}
+.search_styles .small_text {font-size: 14px; color: #999}
+.search_styles .info_icon {color: #666; background-color: #e1e1e1; border-radius: 50%; font-size: 14px; text-align: center; position: absolute; cursor: pointer; top: 8px; right: 8px; width: 20px; height: 20px}
+
+
+/* app/views/discover/modules/article_info.css @ 1485296271 */
+.article_info {color: #666; text-transform: uppercase; font-size: 12px; height: 22px; max-width: 278px}
+.article_info .logo {height: 16px; margin-top: 2px}
+.article_info span {vertical-align: top}
+.article_info .with_circle {padding-right: 20px; position: relative}
+.article_info .with_circle:after {content: ''; margin: 0 8px; border-radius: 50%; width: 4px; height: 4px; background: #e1e1e1; position: absolute; top: 7px}
+.article_info .article_length {font-size: 16px}
+
+
+/* app/views/shared/carousels/paddles.css @ 1485296272 */
+.has_paddles.paddles_visible .paddle {opacity: 0.3}
+.has_paddles .paddle {-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none; border: none; cursor: pointer; outline: none; position: absolute; width: 17px; height: 30px; z-index: 3; top: 94px; opacity: 0; -webkit-transition: all 0.25s ease-in-out; transition: all 0.25s ease-in-out}
+.has_paddles .paddle:hover, .has_paddles .paddle:focus {opacity: 1}
+.has_paddles .page_left {left: 0; background: url('https://s1-f.scribdassets.com/images/home/logged_in/ic_home_control_left_arrow.png?1485296359') left center no-repeat}
+.has_paddles .page_right {right: 0; background: url('https://s2-f.scribdassets.com/images/home/logged_in/ic_home_control_right_arrow.png?1485296359') right center no-repeat}
+.has_paddles.on_first_page .page_left {display: none}
+.has_paddles.on_last_page .page_right {display: none}
+.smaller_doc_thumb_width.show_title .paddle {top: 80px}
+.smaller_doc_thumb_width .paddle {top: 60px}
+
+
+/* app/views/shared/carousels/document_cell.css @ 1485296272 */
+@-webkit-keyframes popin {0% {opacity: 0; -webkit-transform: scale(0.8); transform: scale(0.8)}
+75% {-webkit-transform: scale(1.3);transform: scale(1.3)}
+100% {opacity: 1; -webkit-transform: scale(1); transform: scale(1)}
+}
+@keyframes popin {0% {opacity: 0; -webkit-transform: scale(0.8); transform: scale(0.8)}
+75% {-webkit-transform: scale(1.3);transform: scale(1.3)}
+100% {opacity: 1; -webkit-transform: scale(1); transform: scale(1)}
+}
+.has_document_cells .block_layer {/* This element covers the cell to prevent pointer events. */ position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 10}
+.has_document_cells .list_view_data {display: none}
+.has_document_cells.list_view_mode .document_cell {margin: 15px 0 35px 0; width: auto; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start}
+.has_document_cells.list_view_mode .document_cell .upvotes .vote {margin-right: 0}
+.has_document_cells.list_view_mode .document_cell .thumb {margin-bottom: 0; width: 108px; height: 144px}
+.has_document_cells.list_view_mode .document_cell .thumb .comic_series_cover {width: 108px; height: 144px}
+.has_document_cells.list_view_mode .document_cell .star_ratings {padding: 6px 0}
+.has_document_cells.list_view_mode .document_cell .star_ratings .stats {font-size: 14px}
+.has_document_cells.list_view_mode .document_cell .subtitle {display: none}
+.has_document_cells.list_view_mode .document_cell .list_view_data {display: block}
+.has_document_cells.list_view_mode .document_cell .list_view_data .page_count, .has_document_cells.list_view_mode .document_cell .list_view_data .views_count {white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 14px; color: #999}
+.has_document_cells.list_view_mode .document_cell .under_title.one_line {display: none}
+.has_document_cells.list_view_mode .document_cell .under_title:not(.one_line) {display: none}
+.has_document_cells .doc_link {display: inline-block; width: 100%}
+.has_document_cells .document_cell {width: 144px; white-space: normal; vertical-align: top; text-align: left}
+.has_document_cells .document_cell .sheet_music_meta {display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center}
+.has_document_cells .document_cell .sheet_music_meta .instrument, .has_document_cells .document_cell .sheet_music_meta .difficulty {margin-bottom: 0}
+.has_document_cells .document_cell .sheet_music_meta .name {color: #666; font-weight: normal}
+.has_document_cells .document_cell .sheet_music_meta .diff {text-align: center; width: 33%}
+.has_document_cells .document_cell.interaction_disabled {position: relative}
+.has_document_cells .document_cell.smaller_cell {width: 108px}
+.has_document_cells .document_cell.smaller_cell .skirt .title {margin-top: 15px; font-size: 14px; line-height: 18px}
+.has_document_cells .document_cell.smaller_cell .skirt .content_thumbnail {top: -11px}
+.has_document_cells .document_cell.smaller_cell .under_title {display: none}
+.has_document_cells .document_cell.smaller_cell .thumb {width: 108px; height: 144px}
+.has_document_cells .document_cell.smaller_cell .thumb .comic_series_cover {width: 108px; height: 144px}
+.has_document_cells .document_cell.smaller_cell .thumb .under_title {display: none}
+.has_document_cells .document_cell.smallest_cell {width: 72px}
+.has_document_cells .document_cell.smallest_cell .under_title {display: none}
+.has_document_cells .document_cell.smallest_cell .thumb {margin-right: 20px; width: 72px; height: 96px}
+.has_document_cells .document_cell.smallest_cell .thumb .comic_series_cover {width: 72px; height: 96px}
+.has_document_cells .document_cell.smallest_cell .thumb .under_title {display: none}
+.has_document_cells .document_cell.is_series .series_lines {position: absolute; top: -4px; left: 0; right: 0; margin: 0 3px; border-top: 2px solid #1a7bba}
+.has_document_cells .document_cell.is_series .series_lines:before {border-top: 2px solid #1a7bba; opacity: 0.3; content: ''; display: block; position: absolute; left: 6px; right: 6px; top: -10px}
+.has_document_cells .document_cell.is_series .series_lines:after {border-top: 2px solid #1a7bba; content: ''; display: block; position: absolute; left: 3px; right: 3px; top: -6px; opacity: 0.7}
+.has_document_cells .document_cell.in_my_library:not(.is_series) .reading_progress_outer {display: block}
+.has_document_cells .document_cell.no_book_page.is_audiobook .action_layer .read_icon {display: none}
+.has_document_cells .document_cell.no_book_page.is_audiobook .action_layer .play_icon {display: block}
+.has_document_cells .document_cell.no_book_page .action_layer .read_icon {display: block}
+.has_document_cells .document_cell .under_title {margin-top: 20px; font-family: Livory, serif; font-style: italic; text-align: center; font-size: 16px; line-height: 21px; max-height: 44px; /* +1 prevents low baseline logs */ overflow: hidden; display: block; color: #444}
+.has_document_cells .document_cell .under_title:not(.one_line) {display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical}
+.has_document_cells .document_cell .under_title.one_line {white-space: nowrap; overflow: hidden; text-overflow: ellipsis}
+.has_document_cells .document_cell .subtitle {font-family: Livory, serif; font-style: italic; text-align: center; font-size: 16px; line-height: 21px; max-height: 22px; /* +1 prevents low baseline logs */ overflow: hidden; display: block; color: #444}
+.has_document_cells .document_cell .flag {top: 0; bottom: auto; display: block; white-space: nowrap}
+.has_document_cells .document_cell .thumb {position: relative; background-color: #E6E8E9; box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); width: 144px; height: 192px; margin-bottom: 14px}
+.has_document_cells .document_cell .thumb:hover .overlay, .has_document_cells .document_cell .thumb.hover .overlay {opacity: 0.5}
+.has_document_cells .document_cell .thumb:hover .overlay .sprite, .has_document_cells .document_cell .thumb.hover .overlay .sprite {opacity: 0.5}
+.has_document_cells .document_cell .thumb:hover .main_action, .has_document_cells .document_cell .thumb.hover .main_action {opacity: 1}
+.has_document_cells .document_cell .thumb.is_book .shadow_overlay {display: block}
+.has_document_cells .document_cell .thumb .shadow_overlay {display: none}
+.has_document_cells .document_cell .thumb .overlay, .has_document_cells .document_cell .thumb .shadow_overlay, .has_document_cells .document_cell .thumb .doc_link {position: absolute; top: 0; right: 0; bottom: 0; left: 0}
+.has_document_cells .document_cell .thumb .overlay {-webkit-transition: opacity 0.1s ease-in-out;transition: opacity 0.1s ease-in-out; opacity: 0; background: #3d4044}
+.has_document_cells .document_cell .thumb .overlay .sprite {position: absolute; opacity: 0; left: 50%; top: 50%; margin-left: -23px; margin-top: -18px}
+.has_document_cells .document_cell .thumb .shadow_overlay {background: url('https://s1-f.scribdassets.com/images/petunia/thumbnail_overlay_185x250.png?1485296359') 0 0 no-repeat; background-size: cover}
+.has_document_cells .document_cell .thumb > img {width: 100%; height: 100%}
+.has_document_cells .document_cell .thumb > img.lazy_loading {opacity: 0}
+.has_document_cells .document_cell .document_title {color: #333333; margin: 10px 15px 0 15px; word-wrap: break-word; font-size: 14px; line-height: 15px; overflow: hidden; max-height: 30px}
+.has_document_cells .document_cell .document_title a {color: inherit}
+.has_document_cells .document_cell .list_view_data {margin-left: 15px}
+.has_document_cells .document_cell .list_view_title {font-family: Livory, serif; font-style: italic; font-size: 16px; line-height: 20px; color: #444; font-size: 16px; line-height: 20px; max-height: 42px; /* +1 prevents low baseline logs */ overflow: hidden; display: block; max-width: 400px; word-wrap: break-word}
+.has_document_cells .document_cell .decorative {font-family: Livory, serif}
+.has_document_cells .document_cell .views_count .decorative {color: #666; font-size: 14px}
+.has_document_cells .document_cell .list_view_publisher {font-size: 14px; word-wrap: break-word; line-height: 1.5}
+.has_document_cells .document_cell .action_layer .main_action {position: absolute; left: 50%; top: 50%; color: white; z-index: 1; opacity: 0; -webkit-transition: opacity 0.2s ease-in-out; transition: opacity 0.2s ease-in-out}
+.has_document_cells .document_cell .action_layer .info_icon {font-size: 25px; margin-left: -5px; margin-top: -18px}
+.has_document_cells .document_cell .action_layer .read_icon {display: none; font-size: 40px; margin-left: -20px; margin-top: -16px}
+.has_document_cells .document_cell .action_layer .play_icon {display: none; font-size: 44px; margin-left: -22px; margin-top: -20px}
+.has_document_cells .document_cell.has_color_background .reading_progress_outer {background: #135987}
+.has_document_cells .document_cell.has_color_background .reading_progress_outer .reading_progress_outer_dark_overlay {display: block}
+.has_document_cells .flag {position: absolute; color: white; font-size: 9px; font-weight: bold; letter-spacing: 1px; border-radius: 0; bottom: -20px; height: 20px; line-height: 21px; left: 0; right: 0; text-align: center}
+.has_document_cells .has_flag .content {margin-top: 30px}
+.has_document_cells .has_flag .flag {display: block}
+.has_document_cells .has_flag.is_purchase .flag {background: #1A7BBA}
+.has_document_cells .has_flag.is_geo_restricted .flag, .has_document_cells .has_flag.is_expiring_content .flag {background: #999999}
+.has_document_cells .has_flag.is_sample .flag {background: #C1C1BE}
+.has_document_cells .has_flag.is_scribd_select .flag {position: absolute; top: 0; left: 0; width: 45px; height: 45px; font-size: 16px; color: #fff; opacity: 0.9}
+.has_document_cells .has_flag.is_scribd_select .flag:before, .has_document_cells .has_flag.is_scribd_select .flag:after {position: absolute; top: 0; content: ""; display: block; border-style: solid}
+.has_document_cells .has_flag.is_scribd_select .flag:before {border-width: 47px 47px 0 0; border-color: rgba(0, 0, 0, 0.2) transparent transparent transparent}
+.has_document_cells .has_flag.is_scribd_select .flag:after {border-width: 45px 45px 0 0; border-color: #fff transparent transparent transparent}
+.has_document_cells .has_flag.is_scribd_select .flag span {position: absolute; top: 0; left: 0; width: 25.875px; height: 27.9px; line-height: 27.9px; z-index: 1; text-align: center; background-repeat: no-repeat; background-size: 100%}
+.has_document_cells .has_flag.is_scribd_select .flag span {background-image: url('https://s1-f.scribdassets.com/images/badges/scribd_selects_logo.svg?1485296359')}
+.has_document_cells .reading_progress_outer {display: none; bottom: -12px; position: absolute; left: 0; right: 0; height: 5px; background: #e1e1e1; border-radius: 10px; overflow: hidden}
+.has_document_cells .reading_progress_outer.dark {background: #135987}
+.has_document_cells .reading_progress_outer .reading_progress_inner {background: #6ac6e2; position: absolute; top: 0; bottom: 0; left: 0}
+.has_document_cells .reading_progress_outer .reading_progress_outer_dark_overlay {display: none; background: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; right: 0; bottom: 0}
+.has_document_cells {/* articles */ }
+.has_document_cells .document_cell.card {border-radius: 4px; box-shadow: 0 0 4px rgba(0, 0, 0, 0.1); border: 1px solid #e1e1e1; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); box-sizing: border-box; width: 306px; background: white; line-height: 21px; position: relative; margin-bottom: 20px; display: inline-block; margin-right: 20px}
+@media (max-width: 667px) {.has_document_cells .document_cell.card {width: 270px}
+.has_document_cells .document_cell.card .doc_link {width: 270px}
+}
+.has_document_cells .document_cell.card .doc_link {-webkit-transition: opacity 0.2s ease-in-out;transition: opacity 0.2s ease-in-out}
+.has_document_cells .document_cell.card .doc_link:active {opacity: 0.5}
+.has_document_cells .document_cell.card .tooltip {text-align: center}
+.has_document_cells .document_cell.card .series_lines {display: none}
+.has_document_cells .document_cell.card:hover .card_library_button_container {opacity: 1}
+.has_document_cells .document_cell.card .shadow_overlay {display: none}
+.has_document_cells .document_cell.card .thumb.is_book .shadow_overlay {display: none}
+.has_document_cells .document_cell.card .thumb {overflow: hidden}
+.has_document_cells .document_cell.card .card_library_button_container {color: #444; position: absolute; top: 4px; right: 4px; opacity: 0; z-index: 1; -webkit-transition: opacity 0.2 ease-in-out; transition: opacity 0.2 ease-in-out}
+.has_document_cells .document_cell.card .card_library_button_container:hover {color: #6ac6e2; border-color: #6ac6e2}
+.has_document_cells .document_cell.card .card_library_button_container.child_has_focus {opacity: 1}
+.has_document_cells .document_cell.card .editors_pick_badge {line-height: 33px; position: relative; padding-left: 27px; right: 2px; color: #666; font-size: 16px; font-family: Livory, serif; font-style: italic}
+.has_document_cells .document_cell.card .editors_pick_badge .icon {font-size: 16px; margin-right: 5px}
+.has_document_cells .document_cell.card .card_content {display: inline-block; box-sizing: border-box; width: 158px; height: 192px; vertical-align: top; padding: 12px; position: relative}
+@media (max-width: 667px) {.has_document_cells .document_cell.card .card_content {width: 125px}
+}
+.has_document_cells .document_cell.card .card_content .title {margin-top: 0; margin-bottom: 2px; margin-right: 20px; color: #444; font-family: Livory, serif; font-size: 18px; line-height: 24px; max-height: 50px; /* +1 prevents low baseline logs */ overflow: hidden; display: block; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical}
+.has_document_cells .document_cell.card .card_content .author {margin-bottom: 6px; margin-top: 0; color: #666; max-height: 42px; font-size: 14px; font-weight: normal; font-size: 14px; line-height: 1.5; max-height: 5; /* +1 prevents low baseline logs */ overflow: hidden; display: block; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical}
+.has_document_cells .document_cell.card .card_content .star_ratings {height: 30px}
+.has_document_cells .document_cell.card .card_content .star_ratings .stats {font-size: 14px}
+.has_document_cells .document_cell.card .card_content .length {position: absolute; bottom: 10px; left: 12px; font-size: 14px; font-weight: bold; text-transform: uppercase; color: #666}
+.has_document_cells .document_cell.card .card_content .ic_editors_pick {display: inline-block; width: 30px; height: 30px; background: url('https://s1-f.scribdassets.com/images/document_cells/metadata_cards/ic_editors_pick.svg?1485296359'); background-size: cover; position: absolute; left: 0px}
+.has_document_cells .document_cell.card .card_description {margin: 12px 12px 12px 12px; height: 84px}
+.has_document_cells .document_cell.card .card_description .card_text {font-size: 16px; line-height: 24px; max-height: 75px; /* +1 prevents low baseline logs */ overflow: hidden; display: block; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; color: #666}
+.has_document_cells .document_cell.card .card_description .interest_pill {display: inline-block; height: 22px; border: 1px solid #e1e1e1; font-size: 14px; color: #666; margin-right: 10px; margin-bottom: 2px; border-radius: 30px; padding: 0 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis}
+.has_document_cells .document_cell.card.smaller_cell .thumb {margin: 12px 0 0 12px}
+.has_document_cells .document_cell.card.smaller_cell .card_content {width: 182px; /* borders */ height: 156px}
+@media (max-width: 667px) {.has_document_cells .document_cell.card.smaller_cell .card_content {width: 146px; /* borders */ height: 156px}
+}
+.has_document_cells .document_cell.card.smaller_cell .length {bottom: -3px}
+.has_document_cells .document_cell.card .thumb {display: inline-block; vertical-align: top; margin-bottom: 0; border-right: 1px solid #e1e1e1; box-shadow: initial; border-radius: 4px 0 0 4px}
+.has_document_cells .document_cell.card .thumb.has_description {border: 1px solid #e1e1e1; border-radius: initial}
+.has_document_cells .document_cell .thumb.is_article {background: white}
+.has_document_cells .document_cell .thumb.is_article > img {height: initial}
+.has_document_cells .document_cell .thumb.is_article .reading_progress_outer {display: none}
+.has_document_cells .document_cell .thumb.is_article .shadow_overlay {display: none}
+.has_document_cells .article_details {position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; overflow: hidden}
+.has_document_cells .article_details .article_cell_info {padding: 14px 10px 22px; position: relative}
+.has_document_cells .article_details .article_info_inner.truncated {overflow: hidden}
+.has_document_cells .article_details .publisher_logo, .has_document_cells .article_details .article_length {position: absolute}
+.has_document_cells .article_details .publisher_logo {top: 0}
+.has_document_cells .article_details .article_title {line-height: 18px; font-weight: bold; margin: 6px 0 4px; overflow: hidden; font-size: 14px}
+.has_document_cells .article_details .article_length {bottom: 0; font-size: 12px; text-transform: uppercase; color: #666}
+.has_document_cells .article_details .article_title, .has_document_cells .article_details .article_subtitle {color: #444}
+.has_document_cells .article_details .article_subtitle {font-size: 14px; line-height: 18px}
+.has_document_cells .article_details.has_article_image {top: 70px}
+.has_document_cells .article_details.has_article_image .article_info_inner, .has_document_cells .article_details.has_article_image .article_title {max-height: 42px}
+.has_document_cells .article_details:not(.has_article_image) .article_info_inner {max-height: 100px}
+.has_document_cells .smaller_cell .article_details .article_subtitle {font-size: 12px}
+.has_document_cells .smaller_cell .article_details.has_article_image {top: 55px}
+.has_document_cells .smaller_cell .article_details:not(.has_article_image) .titles_container {max-height: 75px}
+/* fixes a shift in the hovercard */ .cover_drop .article_details .article_length {bottom: 3px}
+
+
+/* app/views/shared/carousels/sheet_music_icons.css @ 1485296272 */
+.has_sheet_music_icons .instrument, .has_sheet_music_icons .difficulty {display: inline-block; width: 40px; height: 40px; margin-bottom: 10px}
+.has_sheet_music_icons .difficulty.advanced {background: url('https://s1-f.scribdassets.com/images/book_preview/ic_difficulty_advanced.svg?1485296359')}
+.has_sheet_music_icons .difficulty.beginner {background: url('https://s1-f.scribdassets.com/images/book_preview/ic_difficulty_beginner.svg?1485296359')}
+.has_sheet_music_icons .difficulty.intermediate {background: url('https://s1-f.scribdassets.com/images/book_preview/ic_difficulty_intermediate.svg?1485296359')}
+.has_sheet_music_icons .difficulty.mixed {background: url('https://s2-f.scribdassets.com/images/book_preview/ic_difficulty_mixed.svg?1485296359')}
+.has_sheet_music_icons .instrument.brass, .has_sheet_music_icons .instrument.trumpet, .has_sheet_music_icons .instrument.tuba, .has_sheet_music_icons .instrument.trombone, .has_sheet_music_icons .instrument.french_horn, .has_sheet_music_icons .instrument.tenor_sax, .has_sheet_music_icons .instrument.alto_sax {background: url('https://s1-f.scribdassets.com/images/book_preview/ic_instrument_brass.svg?1485296359')}
+.has_sheet_music_icons .instrument.drums_percussion {background: url('https://s1-f.scribdassets.com/images/book_preview/ic_instrument_drums-percussion.svg?1485296359')}
+.has_sheet_music_icons .instrument.guitar, .has_sheet_music_icons .instrument.bass, .has_sheet_music_icons .instrument.ukulele {background: url('https://s2-f.scribdassets.com/images/book_preview/ic_instrument_guitar-bass-fretted.svg?1485296359')}
+.has_sheet_music_icons .instrument.piano {background: url('https://s1-f.scribdassets.com/images/book_preview/ic_instrument_piano.svg?1485296359')}
+.has_sheet_music_icons .instrument.cello, .has_sheet_music_icons .instrument.violin, .has_sheet_music_icons .instrument.viola, .has_sheet_music_icons .instrument.double_bass {background: url('https://s1-f.scribdassets.com/images/book_preview/ic_instrument_strings.svg?1485296359')}
+.has_sheet_music_icons .instrument.vocal {background: url('https://s1-f.scribdassets.com/images/book_preview/ic_instrument_vocal.svg?1485296359')}
+.has_sheet_music_icons .instrument.woodwinds, .has_sheet_music_icons .instrument.clarinet, .has_sheet_music_icons .instrument.flute_piccolo, .has_sheet_music_icons .instrument.recorder {background: url('https://s2-f.scribdassets.com/images/book_preview/ic_instrument_woodwind.svg?1485296359')}
+
+
+/* :class_inlines, 'app/views', ... @ 1485296272 */
+/* app/views/shared/react/radio_input.css @ 1485296272 */
+.autogen_class_views_shared_react_radio_input {position: relative}
+.autogen_class_views_shared_react_radio_input label {cursor: pointer}
+.autogen_class_views_shared_react_radio_input .radio_input {visibility: hidden; margin: 0; width: 0; height: 0; position: absolute; top: 0; left: 0}
+.autogen_class_views_shared_react_radio_input .radio_label {display: block}
+.autogen_class_views_shared_react_radio_input .radio_label.checked:before {content: "\e633"; color: #1a7bba}
+.autogen_class_views_shared_react_radio_input .radio_label .input_text {color: #666; display: inline-block; vertical-align: top; line-height: 20px; height: 20px}
+.autogen_class_views_shared_react_radio_input .radio_label:before {display: inline-block; font-family: 'scribd'; content: "\e647"; margin-right: 10px; font-size: 20px; cursor: pointer; color: #e1e1e1; vertical-align: top; position: relative; top: 1px}
+.autogen_class_views_shared_react_radio_input .radio_label:hover .input_text {color: #444}
+.autogen_class_views_shared_react_radio_input .radio_label:hover:before {color: #6ac6e2}
+.autogen_class_views_shared_react_radio_input .radio_label.checked:hover:before {color: #6ac6e2}
+
+
+/* app/views/shared/react/documents.css @ 1485296272 */
+.autogen_class_views_shared_react_documents .document_cell {display: inline-block; margin-right: 39px; margin-bottom: 36px}
+.autogen_class_views_shared_react_documents .autogen_class_views_shared_react_upvotes {padding: 0; border: 0; height: 42px}
+.autogen_class_views_shared_react_documents .autogen_class_views_shared_react_upvotes .upvotes {border: 0; margin: 0}
+.autogen_class_views_shared_react_documents .autogen_class_views_shared_react_upvotes .upvotes .vote {margin-right: 20px}
+.autogen_class_views_shared_react_documents .paginator .page {width: 30px; height: 30px; line-height: 30px; display: inline-block; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.autogen_class_views_shared_react_documents .paginator .next {margin-left: 15px; text-decoration: none}
+.autogen_class_views_shared_react_documents .paginator .next:after {font-family: 'scribd'; font-size: 16px; top: -1px; vertical-align: middle; position: relative; content: "\e60d"}
+.autogen_class_views_shared_react_documents .paginator .previous {margin-right: 15px; text-decoration: none}
+.autogen_class_views_shared_react_documents .paginator .previous:after {font-family: 'scribd'; font-size: 16px; top: -1px; vertical-align: middle; position: relative; content: "\e60f"}
+.autogen_class_views_shared_react_documents .paginator .selected {background-color: #B3B3B3; color: white; border-radius: 3px; cursor: default}
+
+
+/* app/views/shared/react/authors.css @ 1485296272 */
+.autogen_class_views_shared_react_authors .author_cell {display: inline-block; vertical-align: top; width: 240px; text-align: center; margin: 0 30px 80px 30px; margin-bottom: 100px}
+.autogen_class_views_shared_react_authors .author_cell h2 {margin: 0; font-size: 22px; margin-top: 13px}
+.autogen_class_views_shared_react_authors .author_cell .sub {color: #999; font-size: 12px; text-transform: uppercase; margin-top: 10px; line-height: 20px}
+.autogen_class_views_shared_react_authors .author_cell .book_list {margin-top: 5px}
+.autogen_class_views_shared_react_authors .list_view .author.author_cell {margin-left: 0; display: block; width: auto; text-align: left; margin-bottom: 30px}
+.autogen_class_views_shared_react_authors .list_view .autogen_class_views_shared_react_persona {display: inline-block}
+.autogen_class_views_shared_react_authors .list_view .author_data {display: inline-block; margin-left: 20px; vertical-align: top; color: #444}
+.autogen_class_views_shared_react_authors .list_view h2 {margin-top: 0}
+.autogen_class_views_shared_react_authors .list_view .sub {margin-top: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis}
+.autogen_class_views_shared_react_authors .list_view .author_contribution_type {color: #666; margin-top: 0}
+
+
+/* app/views/shared/react/articles.css @ 1485296272 */
+.autogen_class_views_shared_react_articles .autogen_class_views_discover_modules_search_article_list {border-left: 0}
+.autogen_class_views_shared_react_articles .autogen_class_views_discover_modules_search_article_list .articles_list .article_row {margin-left: 0}
+.autogen_class_views_shared_react_articles .list_view_mode .article_cell {display: block; border: none; width: auto; border-radius: 0; box-shadow: initial; height: 140px}
+.autogen_class_views_shared_react_articles .list_view_mode .article_cell .tile_content {width: auto}
+.autogen_class_views_shared_react_articles .list_view_mode .article_cell .tile_header {width: auto}
+.autogen_class_views_shared_react_articles .list_view_mode .article_cell .description {max-width: 500px}
+.autogen_class_views_shared_react_articles .list_view_mode .article_cell .card_library_button_container {display: none}
+.autogen_class_views_shared_react_articles .list_view_mode .article_cell .article_link {left: -15px}
+.autogen_class_views_shared_react_articles .list_view_mode .article_cell .article_link:hover {background: #f4f4f4}
+.autogen_class_views_shared_react_articles .list_view_mode .article_cell .tile_image {display: none}
+.autogen_class_views_shared_react_articles .list_view_mode .article_cell .star_ratings {display: none}
+
+
+/* app/views/shared/react/collections.css @ 1485296272 */
+.autogen_class_views_shared_react_collections .autogen_class_views_shared_grids_object_grid {padding-left: 0}
+
+
+/* app/views/shared/react/paginator.css @ 1485296272 */
+.autogen_class_views_shared_react_paginator {text-align: center; margin-top: 1px; padding-top: 1px; border-top: 1px solid #e1e1e1; border-bottom: 1px solid #e1e1e1; text-align: center; height: 50px; line-height: 30px}
+.autogen_class_views_shared_react_paginator span, .autogen_class_views_shared_react_paginator a {width: 30px; display: inline-block; height: 30px; line-height: 30px}
+.autogen_class_views_shared_react_paginator .next {margin-left: 15px; text-decoration: none}
+.autogen_class_views_shared_react_paginator .next:after {font-family: 'scribd'; font-size: 16px; top: -1px; vertical-align: middle; position: relative; content: "\e60d"}
+.autogen_class_views_shared_react_paginator .previous {margin-right: 15px; text-decoration: none}
+.autogen_class_views_shared_react_paginator .previous:after {font-family: 'scribd'; font-size: 16px; top: -1px; vertical-align: middle; position: relative; content: "\e60f"}
+.autogen_class_views_shared_react_paginator .selected {background-color: #B3B3B3; color: white; border-radius: 3px}
+
+
+/* app/views/shared/grids/search_result_grid.css @ 1485296272 */
+.search_document_grid.object_grid {padding-left: 0}
+.search_document_grid.object_grid .object_cell.document_cell {width: 344px; margin-bottom: 30px; margin-right: 20px; position: relative}
+.search_document_grid.object_grid .object_cell.document_cell .thumb {display: inline-block}
+.search_document_grid.object_grid .object_cell.document_cell .content {width: 206px; overflow: hidden; margin-left: 24px; display: inline-block; vertical-align: top; margin-top: 0}
+.search_document_grid.object_grid .object_cell.document_cell .content .title {font-size: 18px; line-height: 24px; max-height: 75px; /* +1 prevents low baseline logs */ overflow: hidden; display: block; color: #666; -webkit-transition: color 0.3s ease-in-out; transition: color 0.3s ease-in-out; font-family: Livory, serif}
+.search_document_grid.object_grid .object_cell.document_cell .content .title:hover {color: #444}
+.search_document_grid.object_grid .object_cell.document_cell .content em {color: #666; font-style: normal; background: #eee; padding: 0 2px}
+.search_document_grid .reading_progress_outer {width: 108px}
+.search_document_grid .rating_container {margin: 4px 0}
+.search_document_grid .rating_container .stats {color: #999; position: relative; top: -1px}
+.search_document_grid .author_list {white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-weight: bold}
+.search_document_grid .page_count {white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 14px; color: #999}
+
+
+/* app/views/search/app.css @ 1485296272 */
+.autogen_class_views_search_app {background: white}
+.autogen_class_views_search_app .column_container {min-height: 500px; width: 1024px; margin: 0 auto}
+.autogen_class_views_search_app .column_container .column {display: inline-block; vertical-align: top}
+.autogen_class_views_search_app .column_container .column.filter_column {width: 254px; padding-left: 42px; padding-right: 20px; box-sizing: border-box}
+.autogen_class_views_search_app .column_container .column.results {width: 695px; border-left: 1px solid #e1e1e1; box-sizing: border-box; padding-left: 35px}
+.autogen_class_views_search_app .similar_suggestion {color: #444; border-bottom: 1px solid #e1e1e1; margin-bottom: 32px; padding-bottom: 32px}
+.autogen_class_views_search_app .similar_suggestion .similar_suggestion {font-weight: bold}
+.autogen_class_views_search_app .set_result {width: 210px; height: 120px; padding: 25px 14px 14px; margin-bottom: 35px; box-sizing: border-box; display: inline-block; position: relative; background-color: #135987; text-align: center}
+.autogen_class_views_search_app .set_result .set_background {position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-size: cover}
+.autogen_class_views_search_app .set_result .set_background .background_dimmer {position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.3; background: black}
+.autogen_class_views_search_app .set_result .set_title {font-family: Livory, serif; position: relative; z-index: 1; color: white}
+.autogen_class_views_search_app .set_result .set_count {position: absolute; bottom: 15px; left: 0; right: 0; color: white; font-size: 16px}
+.autogen_class_views_search_app .single_type_result .authors, .autogen_class_views_search_app .single_type_result .collection_container {min-height: 470px}
+.autogen_class_views_search_app .document_content {min-height: 600px; width: 740px; position: relative}
+.autogen_class_views_search_app .document_content .loading_layer {position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 2}
+.autogen_class_views_search_app .document_content .loading_layer .white_layer {position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.8; background: white}
+.autogen_class_views_search_app .document_content .loading_layer .scribd_spinner {width: 60px; height: 60px; position: absolute; margin: 0 auto; top: 200px; left: 0; right: 0}
+.autogen_class_views_search_app .document_content .empty_state {width: 684px; text-align: center; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex}
+.autogen_class_views_search_app .document_content .empty_state .message_centerer {margin: 51px auto; color: #666; font-size: 14px; width: 220px}
+.autogen_class_views_search_app .document_content .empty_state .message_centerer .empty_image {margin: 0 auto 13px auto; display: block; width: 86px; height: 61px; background-image: url('https://s2-f.scribdassets.com/images/search/empty_search.svg?1485296359'); background-repeat: no-repeat; background-size: contain}
+.autogen_class_views_search_app .document_content .empty_state .message_centerer .user_query {font-weight: bold}
+.autogen_class_views_search_app .document_content .autogen_class_views_shared_react_paginator {margin-top: 20px}
+.autogen_class_views_search_app .document_content .autogen_class_views_shared_react_paginator .paginator {padding-top: 12px; padding-bottom: 50px; border-bottom: none}
+.autogen_class_views_search_app .cell_container .has_document_cells:not(:list_view_mode) .document_cell {display: inline-block; margin-right: 39px; margin-bottom: 36px}
+.autogen_class_views_search_app .search_input_container {width: 695px; margin-top: 38px; margin-bottom: 29px}
+.autogen_class_views_search_app .search_input_container .search_input {width: 695px}
+.autogen_class_views_search_app .search_input_container .suggestions {z-index: 19}
+.autogen_class_views_search_app .result_top_row {width: 695px; position: relative}
+.autogen_class_views_search_app .result_top_row .breadcrumbs {color: #666; margin-bottom: 24px; font-size: 14px}
+.autogen_class_views_search_app .result_top_row .breadcrumbs .crumb {margin: 0 5px}
+.autogen_class_views_search_app .result_top_row .breadcrumbs .suggestions {background: white; border: 1px solid #e1e1e1; padding: 4px 0; border-radius: 4px; box-shadow: 0 0 4px rgba(0, 0, 0, 0.1); border: 1px solid #e1e1e1; box-sizing: border-box; position: absolute; bottom: -45px; left: 0; right: 0; font-size: 14px; line-height: 14px}
+.autogen_class_views_search_app .result_top_row .breadcrumbs .suggestions .suggestion {color: #666; -webkit-transition: all 200ms ease-in-out; transition: all 200ms ease-in-out; padding: 8px 18px}
+.autogen_class_views_search_app .result_top_row .breadcrumbs .suggestions .suggestion:hover {color: #444; background: #f4f4f4}
+.autogen_class_views_search_app .result_top_row .view_mode {position: absolute; right: -5px; top: 0}
+.autogen_class_views_search_app .result_top_row .view_mode .icon {font-size: 24px; cursor: pointer; margin-left: 3px; color: #666; -webkit-transition: color 0.2s ease-in-out; transition: color 0.2s ease-in-out}
+.autogen_class_views_search_app .result_top_row .view_mode .icon:hover {color: #6ac6e2}
+.autogen_class_views_search_app .result_top_row .view_mode .icon.inactive {opacity: 0.5}
+.autogen_class_views_search_app .top_result {border-bottom: 1px solid #e1e1e1; margin-bottom: 26px; width: 695px}
+.autogen_class_views_search_app .top_result .view_more {position: absolute; top: 0; right: 46px; text-transform: uppercase; font-size: 14px; cursor: pointer; font-weight: bold; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.autogen_class_views_search_app .top_result .view_more .caret {font-size: 12px}
+.autogen_class_views_search_app .top_result .top_title {margin-bottom: 21px; font-size: 14px; text-transform: uppercase; color: #444; font-weight: bold}
+.autogen_class_views_search_app .top_result .top_title .caret {font-size: 11px}
+.autogen_class_views_search_app .tops .article_cell {margin-right: 40px}
+.autogen_class_views_search_app .tops .article_cell:nth-child(n+3) {display: none}
+.autogen_class_views_search_app .tops .cell_container .document_cell {margin-bottom: 33px}
+.autogen_class_views_search_app .tops .row_header {margin-bottom: 24px; margin-right: 45px}
+.autogen_class_views_search_app .tops .row_header .row_title {font-size: 24px}
+.autogen_class_views_search_app .tops .row_header .see_all {float: right; margin-top: 8px; font-weight: bold; text-transform: uppercase; font-size: 14px}
+.autogen_class_views_search_app .tops .row_header .see_all .caret {font-size: 11px; margin-left: 6px}
+.autogen_class_views_search_app .tops .authors {margin-top: 0; width: 695px}
+.autogen_class_views_search_app .tops .authors .author_cell {width: 128px; margin: 0 11px 57px 0px; margin: 0 10px 57px 0}
+.autogen_class_views_search_app .tops .authors .author_cell .author_title {font-size: 14px; font-weight: normal; color: #444; font-size: 14px; line-height: 22px; max-height: 46px; /* +1 prevents low baseline logs */ overflow: hidden; display: block}
+.autogen_class_views_search_app .collection_container .object_cell.collection_cell {margin-right: 39px}
+.autogen_class_views_search_app .collection_container .collection_data {max-width: 500px}
+.autogen_class_views_search_app .authors {margin-top: 39px}
+.autogen_class_views_search_app .authors .author_cell {width: 170px}
+.autogen_class_views_search_app .authors h2 {font-size: 18px; line-height: 1.5; max-height: 5; /* +1 prevents low baseline logs */ overflow: hidden; display: block; word-wrap: break-word; font-size: 18px}
+.autogen_class_views_search_app .authors .author_data {max-width: 400px}
+.autogen_class_views_search_app .authors .author_data .sub {font-size: 12px; line-height: 18px; max-height: 38px; /* +1 prevents low baseline logs */ overflow: hidden; display: block}
+.autogen_class_views_search_app .filters {box-sizing: border-box; margin-top: 50px; font-size: 14px}
+.autogen_class_views_search_app .filters .see_more, .autogen_class_views_search_app .filters .see_less {display: block; font-size: 14px; cursor: pointer; color: #666; font-weight: bold; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; margin-top: 5px; padding: 3px 0 3px 12px}
+.autogen_class_views_search_app .filters .see_more:hover, .autogen_class_views_search_app .filters .see_less:hover {color: #444; background: #f4f4f4}
+.autogen_class_views_search_app .filters .filter {margin-bottom: 30px}
+.autogen_class_views_search_app .filters .filter .radio_label:before {top: 0}
+.autogen_class_views_search_app .filters .filter .input_text {white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 150px}
+.autogen_class_views_search_app .filters .category_filter .filter_title {margin-bottom: 4px}
+.autogen_class_views_search_app .filters .category_filter .branch {position: relative}
+.autogen_class_views_search_app .filters .category_filter .branch .branch {padding-left: 12px}
+.autogen_class_views_search_app .filters .category_filter .branch .caret {font-size: 10px; font-weight: bold; position: absolute; left: 0px; top: 8px}
+.autogen_class_views_search_app .filters .category_filter .branch .item {line-height: 19px; padding: 3px 0; cursor: pointer; color: #666; background: transparent; padding-left: 12px}
+.autogen_class_views_search_app .filters .category_filter .branch .item:hover {color: #444; background: #f4f4f4}
+.autogen_class_views_search_app .filters .category_filter .branch .item:hover.selected:not(.with_caret) {background: transparent}
+.autogen_class_views_search_app .filters .category_filter .branch .item.see_more, .autogen_class_views_search_app .filters .category_filter .branch .item.see_less {margin: 0}
+.autogen_class_views_search_app .filters .category_filter .branch .item.selected {font-weight: bold; color: #444; display: block}
+.autogen_class_views_search_app .filters .category_filter .branch .item.selected:not(.with_caret) {cursor: default}
+.autogen_class_views_search_app .html_wrapper {display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex}
+.autogen_class_views_search_app .radio_form_radio_input {margin: 4px 10px 4px 0}
+.autogen_class_views_search_app .radio_form_radio_input .radio_label {padding: 3px 0 3px 8px}
+.autogen_class_views_search_app .radio_form_radio_input .radio_label:hover {background: #f4f4f4; box-shadow: -5px 0 0 #f4f4f4}
+.autogen_class_views_search_app .single_type_result .has_document_cells .doc_link {display: inline; width: auto}
+.autogen_class_views_search_app .top_result {zoom: 1}
+.autogen_class_views_search_app .top_result:after {content: ""; display: table; clear: both}
+.autogen_class_views_search_app .top_result ul {margin-right: 20px; float: left}
+.autogen_class_views_search_app .top_result .object_cell {margin-right: 20px}
+
+
+/* app/views/search/unavailable_result.css @ 1485296272 */
+.autogen_class_views_search_unavailable_result {background: #e1e1e1}
+.autogen_class_views_search_unavailable_result .page_column {position: relative; top: -70px; width: 996px; margin: 40px auto; margin-bottom: 0; padding-bottom: 50px; box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1); background: white; min-height: 500px; border: 1px solid transparent}
+.autogen_class_views_search_unavailable_result .page_column .grid_header {text-align: center}
+.autogen_class_views_search_unavailable_result .header {height: 230px; padding: 30px; background: #f4f4f4; text-align: center}
+.autogen_class_views_search_unavailable_result .header .content {margin: 0 auto; max-width: 996px}
+.autogen_class_views_search_unavailable_result .header .content .thumbnail {position: relative; background-color: #E6E8E9; box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); width: 145px; height: 200px; display: inline-block; vertical-align: top}
+.autogen_class_views_search_unavailable_result .header .content .thumbnail:hover .overlay, .autogen_class_views_search_unavailable_result .header .content .thumbnail.hover .overlay {opacity: 0.5}
+.autogen_class_views_search_unavailable_result .header .content .thumbnail:hover .overlay .sprite, .autogen_class_views_search_unavailable_result .header .content .thumbnail.hover .overlay .sprite {opacity: 0.5}
+.autogen_class_views_search_unavailable_result .header .content .thumbnail:hover .main_action, .autogen_class_views_search_unavailable_result .header .content .thumbnail.hover .main_action {opacity: 1}
+.autogen_class_views_search_unavailable_result .header .content .thumbnail.is_book .shadow_overlay {display: block}
+.autogen_class_views_search_unavailable_result .header .content .thumbnail .shadow_overlay {display: none}
+.autogen_class_views_search_unavailable_result .header .content .thumbnail .overlay, .autogen_class_views_search_unavailable_result .header .content .thumbnail .shadow_overlay, .autogen_class_views_search_unavailable_result .header .content .thumbnail .doc_link {position: absolute; top: 0; right: 0; bottom: 0; left: 0}
+.autogen_class_views_search_unavailable_result .header .content .thumbnail .overlay {-webkit-transition: opacity 0.1s ease-in-out;transition: opacity 0.1s ease-in-out; opacity: 0; background: #3d4044}
+.autogen_class_views_search_unavailable_result .header .content .thumbnail .overlay .sprite {position: absolute; opacity: 0; left: 50%; top: 50%; margin-left: -23px; margin-top: -18px}
+.autogen_class_views_search_unavailable_result .header .content .thumbnail .shadow_overlay {background: url('https://s1-f.scribdassets.com/images/petunia/thumbnail_overlay_185x250.png?1485296359') 0 0 no-repeat; background-size: cover}
+.autogen_class_views_search_unavailable_result .header .content .thumbnail.round {background-color: #a84a73; border-radius: 50%; height: 145px}
+.autogen_class_views_search_unavailable_result .header .content .thumbnail.round .initials {display: block; line-height: 200px; text-transform: uppercase; color: white; font-size: 42px; line-height: 145px; font-family: Livory, serif}
+.autogen_class_views_search_unavailable_result .header .content .thumbnail .initials {display: none}
+.autogen_class_views_search_unavailable_result .header .content .info {display: inline-block; text-align: left; margin-left: 30px}
+
+
+/* app/views/search/unavailable_author.css @ 1485296272 */
+.autogen_class_views_search_unavailable_author .content {position: relative; top: 50%; -webkit-transform: translateY(-60%); transform: translateY(-60%)}

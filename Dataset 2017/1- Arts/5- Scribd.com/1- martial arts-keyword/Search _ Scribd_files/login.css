@@ -1,0 +1,141 @@
+/* :asset_packager_compatibility, 'config/asset_packages.yml' @ 1485296272 */
+
+
+/* :files, 'public/stylesheets/shared', ... @ (none) */
+
+
+/* :files, 'app/views', ... @ (none) */
+
+
+/* :class_inlines, 'app/views', ... @ 1485296272 */
+/* app/views/archive_flow/_doc_info.css @ 1485296271 */
+.lightbox .autogen_class_views_archive_flow_doc_info .doc_info {background-color: transparent}
+.autogen_class_views_archive_flow_doc_info .doc_info {overflow: auto; background-color: #ecf3f5}
+.autogen_class_views_archive_flow_doc_info .doc_info .thumbnail {width: 183px; height: 250px}
+.autogen_class_views_archive_flow_doc_info .doc_info .overlay {width: 183px; height: 250px}
+.autogen_class_views_archive_flow_doc_info .doc_info .info {font-family: Sofia Pro, sans-serif; font-family: Helvetica, sans-serif; margin-top: 10px}
+.autogen_class_views_archive_flow_doc_info .doc_info .info h2 {font-weight: normal; line-height: 17px; word-break: break-word; max-width: 300px}
+.autogen_class_views_archive_flow_doc_info .doc_info .info h5 {color: #146c88; font-weight: normal}
+.autogen_class_views_archive_flow_doc_info .doc_info .info p {color: #666; line-height: 20px}
+.autogen_class_views_archive_flow_doc_info .doc_info .info .file_types {color: #b3b3b3}
+.autogen_class_views_archive_flow_doc_info .doc_info .info * {font-size: 13px; width: 360px; margin: 0; padding: 0 0 5px 0}
+
+
+/* app/views/shared/_contained_page.css @ 1485296272 */
+.autogen_class_views_shared_contained_page .home_container {margin-top: 45px; width: 998px}
+.autogen_class_views_shared_contained_page .home_container > .header {padding: 10px 60px; border-bottom: 1px solid #e1e1e1}
+.autogen_class_views_shared_contained_page .page_section {padding: 37px 60px; border-bottom: 1px solid #e1e1e1}
+.autogen_class_views_shared_contained_page .page_section:last-child {border-bottom: 0}
+.autogen_class_views_shared_contained_page .page_section.light {background: #fff}
+
+
+/* app/views/shared/buttons/payments.css @ 1485296272 */
+.autogen_class_views_shared_buttons_payments {position: relative}
+.autogen_class_views_shared_buttons_payments .flat_btn {vertical-align: middle}
+.autogen_class_views_shared_buttons_payments .spinner {color: #666; margin-left: 15px; display: inline-block; vertical-align: middle; -webkit-transition: opacity 0.15s ease-in-out; transition: opacity 0.15s ease-in-out; opacity: 0; visibility: hidden}
+.autogen_class_views_shared_buttons_payments .spinner.active {opacity: 1; visibility: visible}
+.autogen_class_views_shared_buttons_payments .spinner img {vertical-align: middle}
+
+
+/* app/views/login/checkout_flow_login.css @ 1485296272 */
+.autogen_class_views_login_checkout_flow_login .home_container {width: 1000px; min-height: 0}
+.autogen_class_views_login_checkout_flow_login .container.page_section {margin: 0 auto; min-height: 500px; padding: 0 0 60px 0}
+.autogen_class_views_login_checkout_flow_login input[type=text], .autogen_class_views_login_checkout_flow_login input[type=password] {width: 300px; margin-bottom: 10px}
+.autogen_class_views_login_checkout_flow_login #account_form {position: relative}
+.autogen_class_views_login_checkout_flow_login .login_top {text-align: left; margin-left: 65px; margin-right: 65px; border-bottom: 1px solid #E9E9E9; height: 160px}
+.autogen_class_views_login_checkout_flow_login .login_top .login_title {color: #666; padding-top: 40px; padding-bottom: 30px}
+.autogen_class_views_login_checkout_flow_login .scribd_login, .autogen_class_views_login_checkout_flow_login .email_login {display: inline-block; vertical-align: top; font-size: 16px; width: 357px; margin-right: 65px}
+.autogen_class_views_login_checkout_flow_login .scribd_login:last-child, .autogen_class_views_login_checkout_flow_login .scribd_login.last, .autogen_class_views_login_checkout_flow_login .email_login:last-child, .autogen_class_views_login_checkout_flow_login .email_login.last {margin-right: 0}
+.autogen_class_views_login_checkout_flow_login .scribd_login h2, .autogen_class_views_login_checkout_flow_login .email_login h2 {margin-top: 0}
+.autogen_class_views_login_checkout_flow_login .scribd_login {margin-left: 65px}
+.autogen_class_views_login_checkout_flow_login .email_login {vertical-align: top; border-left: 1px solid #E9E9E9; padding-left: 65px}
+.autogen_class_views_login_checkout_flow_login .login_section {margin-top: 40px}
+.autogen_class_views_login_checkout_flow_login .login_section p {color: #666}
+.autogen_class_views_login_checkout_flow_login .login_section .sub_links {margin: 10px 0 0 0}
+.autogen_class_views_login_checkout_flow_login .error {color: #f2736e; margin-bottom: 10px}
+
+
+/* app/views/login/login.css @ 1485296272 */
+.autogen_class_views_login_login {text-align: center}
+.autogen_class_views_login_login .inline_lightbox {text-align: left; background: white; display: inline-block; margin: 40px 0; padding: 40px; box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1)}
+
+
+/* app/views/shared/login/base_lightbox.css @ 1485296272 */
+.autogen_class_views_shared_login_base_lightbox {width: 400px; text-align: center}
+.autogen_class_views_shared_login_base_lightbox h1 {font-family: Livory, serif; font-size: 24px; color: #444; margin: 0}
+.autogen_class_views_shared_login_base_lightbox h2 {font-size: 16px; font-weight: normal; color: #444; margin: 0}
+.autogen_class_views_shared_login_base_lightbox .sub_title {font-weight: normal}
+.autogen_class_views_shared_login_base_lightbox a, .autogen_class_views_shared_login_base_lightbox .text_btn {font-weight: bold}
+.autogen_class_views_shared_login_base_lightbox form, .autogen_class_views_shared_login_base_lightbox .form {margin-top: 18px}
+.autogen_class_views_shared_login_base_lightbox .wrapper > .content {padding: 32px 40px 54px}
+.autogen_class_views_shared_login_base_lightbox .error_msg {margin-top: 6px; font-size: 14px; color: #d12338}
+.autogen_class_views_shared_login_base_lightbox .flat_btn, .autogen_class_views_shared_login_base_lightbox .input {display: block; width: 100%}
+.autogen_class_views_shared_login_base_lightbox .flat_btn.facebook, .autogen_class_views_shared_login_base_lightbox .input.facebook {padding: 0 5px}
+.autogen_class_views_shared_login_base_lightbox .inputs {text-align: left}
+.autogen_class_views_shared_login_base_lightbox .inputs .error_msg {display: none}
+.autogen_class_views_shared_login_base_lightbox .inputs .input_row {position: relative; margin: 0 0 14px}
+.autogen_class_views_shared_login_base_lightbox .inputs .input_row:last-child {margin-top: 0}
+.autogen_class_views_shared_login_base_lightbox .button_container {margin: 18px 0}
+.autogen_class_views_shared_login_base_lightbox .login_alt {margin: 18px -40px -54px; padding: 30px; background-color: #f4f4f4}
+.autogen_class_views_shared_login_base_lightbox label {display: block; font-size: 14px; font-weight: bold; color: #444}
+.autogen_class_views_shared_login_base_lightbox label .help {font-weight: normal}
+.autogen_class_views_shared_login_base_lightbox input {border: 1px solid #ccc; margin-top: 4px}
+.autogen_class_views_shared_login_base_lightbox input:focus {outline: none; border-color: #6ac6e2; box-shadow: 0 0 5px #6ac6e2; -webkit-transition: border-color 0.3s, box-shadow 0.3s; transition: border-color 0.3s, box-shadow 0.3s}
+.autogen_class_views_shared_login_base_lightbox .password_toggle_btn {position: absolute; vertical-align: middle; top: 34px; display: inline-block; width: auto; right: 14px; font-size: 16px; font-weight: bold; color: #1a7bba}
+.autogen_class_views_shared_login_base_lightbox .input_row.password input {padding-right: 62px}
+.autogen_class_views_shared_login_base_lightbox .input_row.has_error input[type=text], .autogen_class_views_shared_login_base_lightbox .input_row.has_error input[type=password], .autogen_class_views_shared_login_base_lightbox .input_row.has_error textarea {border-color: #d12338}
+.autogen_class_views_shared_login_base_lightbox .input_row.has_error .error_msg {text-align: left; display: block}
+
+
+/* app/views/shared/login/email_missing_lightbox.css @ 1485296272 */
+.autogen_class_views_shared_login_email_missing_lightbox h2 {margin-top: 18px}
+.autogen_class_views_shared_login_email_missing_lightbox .form {margin-top: 18px}
+.autogen_class_views_shared_login_email_missing_lightbox .button_container {margin: 18px 0 0}
+
+
+/* app/views/shared/login/forgot_password_lightbox.css @ 1485296272 */
+.autogen_class_views_shared_login_forgot_password_lightbox h2 {margin-top: 18px}
+.autogen_class_views_shared_login_forgot_password_lightbox h3 {font-size: 24px; font-weight: normal; margin: 18px 0}
+.autogen_class_views_shared_login_forgot_password_lightbox .input_row {text-align: left}
+.autogen_class_views_shared_login_forgot_password_lightbox .label_message {width: 250px; margin: 20px auto 5px; text-align: left; color: #666}
+.autogen_class_views_shared_login_forgot_password_lightbox .button_container {margin-bottom: 36px}
+
+
+/* app/views/shared/login/google_login_button.css @ 1485296272 */
+.autogen_class_views_shared_login_google_login_button .flat_btn {background-color: #fff; color: #444; border: 1px solid #ccc}
+.autogen_class_views_shared_login_google_login_button .icon-google {background-image: url('https://s1-f.scribdassets.com/images/icons/google_logo.svg?1485296359'); display: inline-block; width: 25px; height: 25px; top: 6px}
+
+
+/* app/views/shared/login/join_lightbox.css @ 1485296272 */
+.autogen_class_views_shared_login_join_lightbox {width: 400px; text-align: center}
+.autogen_class_views_shared_login_join_lightbox .facebook_row {margin: 18px 0 8px}
+.autogen_class_views_shared_login_join_lightbox .current_email {font-weight: bold; margin: 18px 0}
+.autogen_class_views_shared_login_join_lightbox .break {position: relative; margin: 16px 0 10px; color: #666; border-bottom: 1px solid #ccc; height: .5em}
+.autogen_class_views_shared_login_join_lightbox .break span {position: relative; top: -50%; background-color: #fff; padding: 0 14px}
+.autogen_class_views_shared_login_join_lightbox .password_form .button_container {margin-top: 18px}
+.autogen_class_views_shared_login_join_lightbox .password_form .login_alt > div:first-child {margin-bottom: 15px}
+.autogen_class_views_shared_login_join_lightbox .form_options {text-align: left}
+.autogen_class_views_shared_login_join_lightbox .form_options .remember_me input {margin-right: 5px}
+.autogen_class_views_shared_login_join_lightbox .form_options .remember_me .label_text {font-weight: normal}
+.autogen_class_views_shared_login_join_lightbox .join_option {width: auto; margin: 0 auto; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; text-align: left; font-weight: normal}
+.autogen_class_views_shared_login_join_lightbox .join_option input {margin-top: 5px; margin-right: 10px}
+.autogen_class_views_shared_login_join_lightbox .join_option > div {-webkit-box-flex: 1;-webkit-flex: 1;-ms-flex: 1;flex: 1; color: #666; font-size: 14px}
+.autogen_class_views_shared_login_join_lightbox .join_disclaimer {font-size: 14px}
+.autogen_class_views_shared_login_join_lightbox .join_disclaimer a {font-weight: bold}
+.autogen_class_views_shared_login_join_lightbox .forgot_password_btn {margin: 18px 0}
+
+
+/* app/views/shared/login/loading_lightbox.css @ 1485296272 */
+.autogen_class_views_shared_login_loading_lightbox {text-align: center; width: 540px}
+.autogen_class_views_shared_login_loading_lightbox .loader {display: block; margin: 25px auto 0 auto}
+.autogen_class_views_shared_login_loading_lightbox .content {padding: 40px}
+.autogen_class_views_shared_login_loading_lightbox h3 {font-weight: normal; font-size: 18px; margin: 10px}
+.autogen_class_views_shared_login_loading_lightbox h1 {font-size: 42px; margin: 0}
+
+
+/* app/views/zendesk_sessions/new.css @ 1485296272 */
+.autogen_class_views_zendesk_sessions_new .inline_lightbox h2 {display: none}
+.autogen_class_views_zendesk_sessions_new .inline_lightbox h1 {max-width: 540px; margin: 0 auto}
+.autogen_class_views_zendesk_sessions_new .home_container {box-sizing: border-box; max-width: 865px; padding: 40px; margin-top: 0; text-align: center}
+.autogen_class_views_zendesk_sessions_new .home_container h2 {margin-top: 0}
+.autogen_class_views_zendesk_sessions_new .home_container p {margin: 0}
