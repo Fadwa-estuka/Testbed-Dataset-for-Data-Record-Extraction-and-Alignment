@@ -1,0 +1,32 @@
+#oiSubmitBtn {
+    font-family: CNN,Helvetica Neue,Helvetica,Arial,Utkal,sans-serif
+}
+
+
+#oiSubmitBtn:after {
+    margin-left: 10px;
+    content: "\f107";
+    font-family: cnn-icons;
+}
+
+
+.successDisplay .zn.t-light {
+    padding: 0;
+}
+
+.zn-newsletters-hub-success {
+    margin-top: 0px;
+}
+
+
+.zn-newsletters-hub {
+    padding: 20px 0;
+}
+
+.zn-newsletters-hub-success .zn-header {
+    display: none;
+}
+
+#oi_wrapper {
+    margin: 0;
+}
