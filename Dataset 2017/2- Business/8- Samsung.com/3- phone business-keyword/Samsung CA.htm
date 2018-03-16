@@ -1,0 +1,2110 @@
+<!DOCTYPE html>
+<html itemscope="" itemtype="http://schema.org/WebPage" lang="en-CA"><head>
+
+    	
+        <title>Search | Samsung CA</title>
+        <meta name="title" content="Search | Samsung CA">
+ 
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+        
+        <link rel="canonical" href="http://www.samsung.com/ca/search/">
+        
+        
+        <meta name="keywords" content="Search">
+        <meta name="description" content="Search">
+        <meta name="date" content="2016-12-01"><!--Latest Publishing Date -->
+        <meta name="sitecode" content="ca">
+
+        <meta name="twitter:card" content="Summary">
+        <meta name="twitter:site" content="@SamsungCanada">
+        <meta name="twitter:creator" content="@SamsungCanada">
+        <meta name="twitter:url" content="http://www.samsung.com/ca/search/">
+        <meta name="twitter:title" content="Search">
+        <meta name="twitter:description" content="Search">
+        <meta name="twitter:image" content="http://cdn.samsung.com/etc/designs/smg/global/imgs/logo-square-letter.png">
+    
+        <meta property="og:url" content="http://www.samsung.com/ca/search/">
+        <meta property="og:image" content="http://cdn.samsung.com/etc/designs/smg/global/imgs/logo-square-letter.png">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Samsung ca">
+        <meta property="og:locale" content="en-CA">
+        <meta property="og:title" content="Search">
+        <meta property="og:description" content="Search">
+        <meta property="og:country-name" content="ca">    
+    
+        <meta itemprop="name" content="Samsung ca">
+        <meta itemprop="image" content="http://cdn.samsung.com/etc/designs/smg/global/imgs/logo-square-letter.png">
+        <meta itemprop="url" content="http://www.samsung.com/ca/search/">
+        <meta itemprop="description" content="Search">
+        <meta itemprop="keywords" content="Search">
+
+        <link rel="shortcut icon" href="http://cdn.samsung.com/etc/designs/smg/global/imgs/favicon.ico">
+        <link rel="apple-touch-icon" href="http://cdn.samsung.com/etc/designs/smg/global/imgs/app_ico.gif">
+        
+
+ 
+            
+        <link rel="stylesheet" href="Samsung%20CA_files/page.css" type="text/css">
+  
+        
+        
+        
+
+        
+
+        <link rel="stylesheet" href="Samsung%20CA_files/page-search-ajax.css" type="text/css">
+
+        
+        <link rel="stylesheet" href="Samsung%20CA_files/ca.css" type="text/css">
+        <!--[if lt IE 9]>
+            <script src="/etc/designs/smg/global/ie9/html5.js"></script>
+        <![endif]-->
+        
+<script type="text/javascript">
+/* DataLayer for Samsung - Last Modified Date 2016-07-13 by Kim myounggyu */
+var siteCode = "";
+var pageURL = "";
+var loginStatus = "";
+
+siteCode = window.location.href.split("/")[3];
+pageURL = window.location.href;
+
+//loginStatus
+var logCheck = document.cookie.match("iPlanetDirectoryPro");
+
+if(logCheck == undefined || logCheck == null){
+	loginStatus = "logged out";
+}else{
+	//login usable countries
+	"au,cn,nz,es,fr,it,nl,de,se,uk,sec,ru,be,be_fr,pl,dk,fi,no,ch,ch_fr,pt,ca,ca_fr".indexOf(siteCode)!=-1? loginStatus = "logged in": loginStatus = "logged out";
+}
+
+var digitalData = {
+		"page" : { 
+			"pageInfo" : {
+				"siteCode" : siteCode,
+                "siteSection": "", //pathIndicator정보 이용하여 설정
+				"pageName" : "", //pathIndicator정보 이용하여 설정
+				"pageURL" : pageURL,
+				"pageTrack" : "" //All page(server-side)
+				},
+			"pathIndicator" : { //product page(server-side)
+				"depth_2" : "",
+				"depth_3" : "",
+				"depth_4" : "",
+				"depth_5" : ""
+				}
+		},
+		"user" : {
+			"loginStatus" : loginStatus
+			},
+		"product" : {
+			"category" : "", // pathIndicator depth정보 이용하여 설정
+			"model_code" : "", // PD class정보 이용하여 설정 
+			"model_name" : "", // PD page(server-side)
+			"displayName" : "", // PD class정보 이용하여 설정
+			"pvi_type_code" : "", //PD page(server-side)
+			"pvi_type_name" : "", //PD page(server-side)
+			"pvi_subtype_code" : "", //PD page(server-side)
+			"pvi_subtype_name" : "" //PD page(server-side)
+			}
+}
+
+//server-side
+digitalData.page.pageInfo.pageTrack = "product search"; 
+
+// depth Info.
+var depth = window.location.href.split("/").length;
+var depth_last = window.location.href.split("/")[depth-1];
+if(depth_last =="" || depth_last.charAt(0)=="?"){
+    depth -= 1;
+}
+
+// set site section value
+if((digitalData.page.pathIndicator.depth_2 != "")||(digitalData.page.pageInfo.pageTrack == "flagship pdp")){
+    digitalData.page.pageInfo.siteSection = siteCode + ":consumer"; //product page
+}else if(depth == 4){ 
+    digitalData.page.pageInfo.siteSection = siteCode + ":home"; //home
+}else{
+     digitalData.page.pageInfo.siteSection = siteCode + ":" + window.location.href.split("/")[4];
+}
+
+// set product category value
+if(digitalData.page.pathIndicator.depth_3 != ""){
+    digitalData.product.category = digitalData.page.pathIndicator.depth_3;
+}
+
+// set pathIndicator(not product page)
+if(digitalData.page.pathIndicator.depth_2 == ""){
+    if(depth >= 5) digitalData.page.pathIndicator.depth_2 = window.location.href.split("/")[4]
+    if(depth >= 6) digitalData.page.pathIndicator.depth_3 = window.location.href.split("/")[5]
+    if(depth >= 7) digitalData.page.pathIndicator.depth_4 = window.location.href.split("/")[6]
+    if(depth >= 8) digitalData.page.pathIndicator.depth_5 = window.location.href.split("/")[7]
+}
+
+// set pageName
+var pageName = siteCode;
+if(digitalData.page.pathIndicator.depth_2 != "")
+    pageName += ":" + digitalData.page.pathIndicator.depth_2;
+if(digitalData.page.pathIndicator.depth_3 != "")
+    pageName += ":" + digitalData.page.pathIndicator.depth_3;
+if(digitalData.page.pathIndicator.depth_4 != "")
+    pageName += ":" + digitalData.page.pathIndicator.depth_4;
+if(digitalData.page.pathIndicator.depth_5 != "")
+    pageName += ":" + digitalData.page.pathIndicator.depth_5;
+
+// check PD, GPD
+var pageTrackName = digitalData.page.pageInfo.pageTrack;
+digitalData.page.pageInfo.pageName = pageName;
+
+</script>
+		
+        <script src="Samsung%20CA_files/satelliteLib-b574e6b2051c0f5a4cf07c34505d9186d49002b0.js"></script>
+    <script src="Samsung%20CA_files/satellite-584e53cf64746d557900c411.js"></script><script src="Samsung%20CA_files/AppMeasurement.js"></script></head>
+    <body>
+        
+        <div id="wrap">
+            
+<header id="header" role="banner">
+    <div class="s-skip-content">
+        <a href="#content" id="skipToContent">Skip to content</a>        <a href="#accHelp" id="skipToAccHelp">Skip to accessibility help</a>    </div>
+  <div class="cookie-notice js-cookie" role="status" style="display: none;">
+        <p class="cookie-notice__desc">This site uses cookies. By continuing to browse the site you are agreeing to our use of cookies.</p>
+        <a href="http://www.samsung.com/ca/info/privacy/" class="cookie-notice__link">Find out more here</a>
+        <button type="button" class="cookie-notice__btn-close js-cookie-close">Close</button>
+    </div>  
+    <div class="parsys ipar iparsys"><div class="section"><div class="new"></div>
+</div><div class="iparys_inherited"><div class="parsys ipar iparsys"><div class="cm-g-static-content section">
+  <style scoped="scoped">
+@charset "utf-8";
+.s-promotion-static {
+  position: relative;
+  background-color: #efefef;
+  border-bottom: 1px solid #dadada;
+}
+
+.s-promotion-static-inner {
+  position: relative;
+  padding: 10px 0 8px;
+  max-width: 1254px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.s-promotion-static-desc {
+  display: inline-block;
+  margin-left: 13px;
+  padding-left: 18px;
+  border-left: 1px solid #dadada;
+  font-weight: bold;
+  font-size: 14px;
+  color: #363636;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.s-promotion-static-desc:first-child {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.s-promotion-static-link {
+  display: inline-block;
+  margin-left: 18px;
+  font-size: 12px;
+  color: #1428a0;
+}
+
+.s-promotion-static .promotion-icon {
+  line-height: 0;
+}
+
+.s-promotion-static .promotion-icon:after {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  background-repeat: no-repeat;
+  color: transparent;
+  content: '.';
+}
+
+.s-promotion-static .promotion-icon.ico-close {
+  position: absolute;
+  top: 9px;
+  right: 15px;
+  padding: 10px;
+}
+
+.s-promotion-static .promotion-icon.ico-close:after {
+  width: 12px;
+  height: 12px;
+  background-image: url(/etc/designs/smg/global/imgs/ico-close.png);
+}
+
+.s-promotion-static .promotion-icon.ico-close:hover:after, .s-promotion-static .promotion-icon.ico-close:focus:after, .s-promotion-static .promotion-icon.ico-close:active:after {
+  background-position: 0 -14px;
+}
+
+.s-promotion-static .promotion-icon.ico-right {
+  display: inline-block;
+  margin-top: -2px;
+  margin-left: 10px;
+  line-height: 0;
+  vertical-align: middle;
+}
+
+.s-promotion-static .promotion-icon.ico-right:after {
+  width: 7px;
+  height: 11px;
+  background-image: url(/etc/designs/smg/global/imgs/arw-right-blue.png);
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 768px) {
+  .s-promotion-static-inner {
+    padding: 6px 24px 5px;
+  }
+  .s-promotion-static-desc {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .s-promotion-static-link {
+    margin-left: 10px;
+    font-size: 10px;
+  }
+  .s-promotion-static .promotion-icon.ico-close {
+    top: 0;
+    right: 0;
+    padding: 10px 8px;
+  }
+  .s-promotion-static .promotion-icon.ico-close:after {
+    width: 8px;
+    height: 8px;
+    background-size: 8px 17px;
+  }
+  .s-promotion-static .promotion-icon.ico-close:hover:after, .s-promotion-static .promotion-icon.ico-close:focus:after, .s-promotion-static .promotion-icon.ico-close:active:after {
+    background-position: 0 -9px;
+  }
+  .s-promotion-static .promotion-icon.ico-right {
+    width: 5px;
+    height: 8px;
+  }
+  .s-promotion-static .promotion-icon.ico-right:after {
+    width: 5px;
+    height: 8px;
+    background-size: 5px 8px;
+  }
+} 
+.gb-gnb__promotion .s-ico-close:after {
+    width: 12px;
+    height: 12px;
+    background-image: url("/ca/home/svg-arw-right-hover.svg");
+}
+.gb-gnb__promotion-link {
+    display: inline-block;
+    margin-left: 18px;
+    font-size: 12px;
+    color: #1428a0;
+    font-family: 'SamsungOne',arial !important;
+}
+
+.gb-gnb__promotion-link .s-arw-right:after {
+width: 7px;
+height: 11px;
+background-image: url("/ca/home/svg-arw-right-hover.svg");}
+.gb-gnb__promotion-link .s-svg:after {
+position: relative;
+top: 0;
+left: 0;
+display: block;
+background-repeat: no-repeat;
+color: transparent;
+content: '.';
+}
+</style>
+
+
+<!--googleoff: all-->
+	<!--<div class="s-promotion-static-inner">
+		<p class="s-promotion-static-desc">COMMITTED TO QUALITY<a href="/ca/note7-press-conference/" class="s-promotion-static-link">SEE THE DETAILS<span class="promotion-icon ico-right"></span></a></p>
+		
+		<button type="button" class="promotion-icon ico-close"><span class="blind">Close</span></button>
+	</div>-->
+<!--googleon: all-->
+
+
+
+
+
+<div class="s-promotion-static">
+<!--googleoff: all-->
+	<div class="s-promotion-static-inner">
+		<p class="s-promotion-static-desc">COMMITTED TO QUALITY<a href="http://www.samsung.com/ca/note7-press-conference/" class="s-promotion-static-link">SEE DETAILS<span class="promotion-icon ico-right"></span></a></p>
+		<p class="s-promotion-static-desc">Update: Cause of Galaxy Note7 Incidents<a href="http://www.samsung.com/ca/news/local/samsung-electronics-announces-cause-of-galaxy-note7-incidents-in-press-conference/" class="s-promotion-static-link">VIEW ANNOUNCEMENT<span class="promotion-icon ico-right"></span></a></p>
+		<button type="button" class="promotion-icon ico-close"><span class="blind">Close</span></button>
+	</div>
+<!--googleon: all-->
+</div>
+
+<script>
+;(function(win,doc,callback){'use strict';callback=callback||function(){};function detach(){if(doc.addEventListener){doc.removeEventListener('DOMContentLoaded',completed);}else{doc.detachEvent('onreadystatechange',completed);}}function completed(){if(doc.addEventListener||event.type==='load'||doc.readyState==='complete'){detach();callback(window,window.jQuery);}}function init(){if (doc.addEventListener){doc.addEventListener('DOMContentLoaded',completed);}else{doc.attachEvent('onreadystatechange',completed);}}init();})(window,document,function(win,$){
+	$(window).on('load', function(){
+$('.s-promotion-static .ico-close').on('click', function() {
+$(this).closest('.s-promotion-static').css('display', 'none');
+  });
+});
+
+
+});
+</script>
+
+</div>
+</div>
+</div>
+</div>
+
+    <div class="cm-g-gnb gnb"><nav class="gb-gnb" role="navigation">
+	<!--googleoff: all-->
+	
+	<div class="gb-gnb__dimmed" style="display: none"></div>
+	
+	<div class="gb-gnb__bar">
+		<div class="gb-gnb__bar-inner">
+			
+			<a href="http://www.samsung.com/ca/" class="s-svg gb-gnb__logo"><span class="blind">Samsung</span></a>
+			
+			<button type="button" class="s-svg s-gnb-toggler"><span class="blind">Open the Menu</span></button>
+
+			
+			<ul class="gb-gnb__main" role="tablist"><li class="s-depth1-wrap" role="presentation">
+                <a href="#" class="s-btn-toggler js-toggler js-depth1-link" data-link-info="false^^" role="tab" data-omni="mobile" aria-selected="false">MOBILE</a>
+                <div class="gb-gnb__drop-desktop">
+                    <div class="gb-gnb__drop-inner" role="tabpanel">
+                        
+                            <div class="s-depth2-col">
+                                <ul>
+                                    <li class="s-depth2-wrap">
+                                        <a href="http://www.samsung.com/ca/mobile/" class="s-depth2-link" data-omni="mobile:mobile">Mobile<span class="s-svg s-arw-right"></span></a>
+                                        
+                                        
+                                        
+                                        
+                                        <div class="s-depth3-wrap">
+                                             <ul>
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/smartphones/" class="s-depth3-link" data-omni="mobile:mobile:smartphones">Smartphones</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/tablets/" class="s-depth3-link" data-omni="mobile:mobile:tablets">Tablets</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/windows-tablets/all-windows-tablets/?windows-tablets" class="s-depth3-link" data-omni="mobile:mobile:windows tablets">Windows Tablets</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/wearables/" class="s-depth3-link" data-omni="mobile:mobile:wearables">Wearables</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/mobile-accessories/" class="s-depth3-link" data-omni="mobile:mobile:accessories">Accessories</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                            <div class="s-depth2-col">
+                                <ul>
+                                    <li class="s-depth2-wrap">
+                                        
+                                        
+                                        
+                                        <span class="s-depth2-link" data-omni="mobile:mobile apps">Mobile Apps</span>
+                                        
+                                        <div class="s-depth3-wrap">
+                                             <ul>
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/apps/mobile/findmymobile/" class="s-depth3-link" data-omni="mobile:mobile apps:find my mobile">Find my mobile</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/apps/mobile/galaxyapps/" class="s-depth3-link" data-omni="mobile:mobile apps:galaxy apps">Galaxy Apps</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/support/convergence/sidesync/index.html" class="s-depth3-link" data-omni="mobile:mobile apps:sidesync">SideSync</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/support/smartswitch/" class="s-depth3-link" data-omni="mobile:mobile apps:smart switch">Smart Switch</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/apps/mobile/theme/" class="s-depth3-link" data-omni="mobile:mobile apps:theme service">Theme Service</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                            <div class="s-depth2-col s-col-featured">
+                                <ul>
+                                    <li class="s-depth2-wrap">
+                                        
+                                        
+                                        
+                                        <span class="s-depth2-link" data-omni="mobile:featured">FEATURED</span>
+                                        
+                                        <div class="s-depth3-wrap">
+                                             <ul>
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/smartphones/galaxy-s7/overview/" class="s-depth3-link" data-omni="mobile:featured:galaxy s7">Galaxy S7</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/wearables/gear-vr-r323/" class="s-depth3-link" data-omni="mobile:featured:gear vr">Gear VR</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/wearables/gear-360-c200/" class="s-depth3-link" data-omni="mobile:featured:gear 360">Gear 360</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/wearables/gear-fit-2-r360/SM-R3600DANXAC/" class="s-depth3-link" data-omni="mobile:featured:gear fit2">Gear Fit2</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/tablets/galaxy-tab-s2-9-7-t813/SM-T813NZKEXAC/" class="s-depth3-link" data-omni="mobile:featured:tab s2">Tab S2</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                     
+                        <div class="s-depth2-col s-col-imagepromo">
+                            <a href="http://www.samsung.com/ca/smartphones/galaxy-s7/overview/" data-omni="Galaxy S7"><img src="Samsung%20CA_files/GNB_Mobile_EN.jpg" alt="Galaxy S7" width="425" height="240"></a>
+                        </div>
+                        <button type="button" title="Close Menu" class="s-svg s-ico-close"><span class="blind">Close Menu</span></button>
+                    </div>
+                </div>
+            </li><li class="s-depth1-wrap" role="presentation">
+                <a href="#" class="s-btn-toggler js-toggler js-depth1-link" data-link-info="false^^" role="tab" data-omni="tv-av" aria-selected="false">TV &amp; AV</a>
+                <div class="gb-gnb__drop-desktop">
+                    <div class="gb-gnb__drop-inner" role="tabpanel">
+                        
+                            <div class="s-depth2-col">
+                                <ul>
+                                    <li class="s-depth2-wrap">
+                                        <a href="http://www.samsung.com/ca/tvs/overview/" class="s-depth2-link" data-omni="tv-av:tv">TV<span class="s-svg s-arw-right"></span></a>
+                                        
+                                        
+                                        
+                                        
+                                        <div class="s-depth3-wrap">
+                                             <ul>
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/tvs/all-tvs/?suhd" class="s-depth3-link" data-omni="tv-av:tv:suhd tv">SUHD TV</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/tvs/all-tvs/?uhd" class="s-depth3-link" data-omni="tv-av:tv:uhd tv">UHD TV</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/tvs/all-tvs/?full-hd" class="s-depth3-link" data-omni="tv-av:tv:full hd tv">FULL HD TV</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/tvs/all-tvs/?hd" class="s-depth3-link" data-omni="tv-av:tv:hd tv">HD TV</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/tv-accessories/all-tv-accessories/?tv-accessories" class="s-depth3-link" data-omni="tv-av:tv:tv accessories">TV Accessories</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             </ul>
+                                        </div>
+                                    </li>
+                                
+                                    <li class="s-depth2-wrap">
+                                        
+                                        
+                                        
+                                        <span class="s-depth2-link" data-omni="tv-av:tv apps">TV Apps</span>
+                                        
+                                        <div class="s-depth3-wrap">
+                                             <ul>
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/smarthome/" class="s-depth3-link" data-omni="tv-av:tv apps:smart home">Smart Home</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/apps/tv/smart-view/" class="s-depth3-link" data-omni="tv-av:tv apps:smart view">Smart View</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                            <div class="s-depth2-col">
+                                <ul>
+                                    <li class="s-depth2-wrap">
+                                        <a href="http://www.samsung.com/ca/audio-video/" class="s-depth2-link" data-omni="tv-av:audio - video">Audio &amp; Video<span class="s-svg s-arw-right"></span></a>
+                                        
+                                        
+                                        
+                                        
+                                        <div class="s-depth3-wrap">
+                                             <ul>
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/audio-video/all-audio-video/?soundbar" class="s-depth3-link" data-omni="tv-av:audio - video:soundbar">Soundbar</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/audio-video/all-audio-video/?wireless-audio" class="s-depth3-link" data-omni="tv-av:audio - video:wireless audio">Wireless Audio</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/audio-video/all-audio-video/?blu-ray-dvd-player" class="s-depth3-link" data-omni="tv-av:audio - video:blu-ray dvd player">Blu-ray &amp; DVD Player</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/audio-video/all-audio-video/?home-entertainment-system" class="s-depth3-link" data-omni="tv-av:audio - video:home entertainment system">Home Entertainment System</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/audio-video/all-audio-video/?digital-component" class="s-depth3-link" data-omni="tv-av:audio - video:digital component">Digital Component</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                            <div class="s-depth2-col s-col-featured">
+                                <ul>
+                                    <li class="s-depth2-wrap">
+                                        
+                                        
+                                        
+                                        <span class="s-depth2-link" data-omni="tv-av:featured">FEATURED</span>
+                                        
+                                        <div class="s-depth3-wrap">
+                                             <ul>
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/tvs/suhd-ks9000/UN75KS9000FXZC/" class="s-depth3-link" data-omni="tv-av:featured:suhd tv">SUHD TV</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/audio-video/soundbar-k950/" class="s-depth3-link" data-omni="tv-av:featured:dolby atmos soundbar">Dolby Atmos Soundbar</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/tvs/suhd-ks9810/" class="s-depth3-link" data-omni="tv-av:featured:curved tv">Curved TV</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                     
+                        <div class="s-depth2-col s-col-imagepromo">
+                            <a href="http://www.samsung.com/ca/tvs/suhd-ks9000/UN75KS9000FXZC/" data-omni="SUHD TV"><img src="Samsung%20CA_files/GNB_CE_EN.jpg" alt="SUHD TV" width="425" height="240"></a>
+                        </div>
+                        <button type="button" title="Close Menu" class="s-svg s-ico-close"><span class="blind">Close Menu</span></button>
+                    </div>
+                </div>
+            </li><li class="s-depth1-wrap" role="presentation">
+                <a href="#" class="s-btn-toggler js-toggler js-depth1-link" data-link-info="false^^" role="tab" data-omni="appliances" aria-selected="false">APPLIANCES</a>
+                <div class="gb-gnb__drop-desktop">
+                    <div class="gb-gnb__drop-inner" role="tabpanel">
+                        
+                            <div class="s-depth2-col">
+                                <ul>
+                                    <li class="s-depth2-wrap">
+                                        <a href="http://www.samsung.com/ca/home-appliances/" class="s-depth2-link" data-omni="appliances:home appliances">Home Appliances<span class="s-svg s-arw-right"></span></a>
+                                        
+                                        
+                                        
+                                        
+                                        <div class="s-depth3-wrap">
+                                             <ul>
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/refrigerators/" class="s-depth3-link" data-omni="appliances:home appliances:refrigerators">Refrigerators</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/cooking-appliances/" class="s-depth3-link" data-omni="appliances:home appliances:cooking appliances">Cooking Appliances</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/dishwashers/" class="s-depth3-link" data-omni="appliances:home appliances:dishwashers">Dishwashers</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/washing-machines/" class="s-depth3-link" data-omni="appliances:home appliances:washing machines">Washing Machines</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/vacuum-cleaners/" class="s-depth3-link" data-omni="appliances:home appliances:vacuum cleaners">Vacuum Cleaners</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                            <div class="s-depth2-col">
+                                
+                            </div>
+                        
+                            <div class="s-depth2-col s-col-featured">
+                                <ul>
+                                    <li class="s-depth2-wrap">
+                                        
+                                        
+                                        
+                                        <span class="s-depth2-link" data-omni="appliances:featured">FEATURED</span>
+                                        
+                                        <div class="s-depth3-wrap">
+                                             <ul>
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/washing-machines/washer-wf50k7500av/" class="s-depth3-link" data-omni="appliances:featured:addwash">AddWash</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/home-appliances/" class="s-depth3-link" data-omni="appliances:featured:built in appliances">Built In Appliances</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/home-appliances/" class="s-depth3-link" data-omni="appliances:featured:family hub">Family Hub</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/cooking-appliances/gas-range-ny58j9850ws/" class="s-depth3-link" data-omni="appliances:featured:dynamic duo">Dynamic Duo</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                     
+                        <div class="s-depth2-col s-col-imagepromo">
+                            <a href="http://www.samsung.com/ca/washing-machines/washer-wf50k7500av/" data-omni="AddWash"><img src="Samsung%20CA_files/GNB_HA_EN.jpg" alt="AddWash" width="425" height="240"></a>
+                        </div>
+                        <button type="button" title="Close Menu" class="s-svg s-ico-close"><span class="blind">Close Menu</span></button>
+                    </div>
+                </div>
+            </li><li class="s-depth1-wrap" role="presentation">
+                <a href="#" class="s-btn-toggler js-toggler js-depth1-link" data-link-info="false^^" role="tab" data-omni="more" aria-selected="false">MORE</a>
+                <div class="gb-gnb__drop-desktop">
+                    <div class="gb-gnb__drop-inner" role="tabpanel">
+                        
+                            <div class="s-depth2-col">
+                                <ul>
+                                    <li class="s-depth2-wrap">
+                                        
+                                        
+                                        
+                                        <span class="s-depth2-link" data-omni="more:cameras">Cameras</span>
+                                        
+                                        <div class="s-depth3-wrap">
+                                             <ul>
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/cameras/all-cameras/" class="s-depth3-link" data-omni="more:cameras:cameras">Cameras</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/camera-lenses/all-camera-lenses/" class="s-depth3-link" data-omni="more:cameras:lenses">Lenses</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/camera-accessories/all-camera-accessories/" class="s-depth3-link" data-omni="more:cameras:accessories">Accessories</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             </ul>
+                                        </div>
+                                    </li>
+                                
+                                    <li class="s-depth2-wrap">
+                                        <a href="http://www.samsung.com/ca/it/" class="s-depth2-link" data-omni="more:it">IT<span class="s-svg s-arw-right"></span></a>
+                                        
+                                        
+                                        
+                                        
+                                        <div class="s-depth3-wrap">
+                                             <ul>
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/monitors/" class="s-depth3-link" data-omni="more:it:monitor">Monitor</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/printers/" class="s-depth3-link" data-omni="more:it:printers-multifunction">Printers &amp; Multifunction</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/printers/all-printers/?supplies" class="s-depth3-link" data-omni="more:it:printer supplies">Printer Supplies</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                            <div class="s-depth2-col">
+                                <ul>
+                                    <li class="s-depth2-wrap">
+                                        <a href="http://www.samsung.com/ca/memory-storage/" class="s-depth2-link" data-omni="more:memory - storage">Memory &amp; Storage<span class="s-svg s-arw-right"></span></a>
+                                        
+                                        
+                                        
+                                        
+                                        <div class="s-depth3-wrap">
+                                             <ul>
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/ssd" class="s-depth3-link" data-omni="more:memory - storage:ssd">SSD</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/memory-storage/all-memory-storage/?portable-ssd" class="s-depth3-link" data-omni="more:memory - storage:portable ssd">Portable SSD</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/memory-cards/" class="s-depth3-link" data-omni="more:memory - storage:memory cards">Memory Cards</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                            <div class="s-depth2-col s-col-featured">
+                                <ul>
+                                    <li class="s-depth2-wrap">
+                                        
+                                        
+                                        
+                                        <span class="s-depth2-link" data-omni="more:featured">FEATURED</span>
+                                        
+                                        <div class="s-depth3-wrap">
+                                             <ul>
+                                                 <li>
+                                                    <a href="http://www.samsung.com/ca/monitors/curved-cfg70/" class="s-depth3-link" data-omni="more:featured:curved gaming monitor">Curved Gaming Monitor</a>
+                                                    
+                                                    
+                                                    
+                                                 </li>
+                                             </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                     
+                        <div class="s-depth2-col s-col-imagepromo">
+                            <a href="http://www.samsung.com/ca/monitors/curved-cfg70/" data-omni="Curved Gaming Monitor"><img src="Samsung%20CA_files/GNB_IT_EN.jpg" alt="Curved Gaming Monitor" width="425" height="240"></a>
+                        </div>
+                        <button type="button" title="Close Menu" class="s-svg s-ico-close"><span class="blind">Close Menu</span></button>
+                    </div>
+                </div>
+            </li></ul>
+			
+
+			
+			
+			<div class="gb-gnb__drop-mobile drilldown" style="min-height: 575px">
+				<div class="gb-gnb__drop-mobile-wrap drilldown-container">
+					<div class="drilldown-root">
+						<ul class="s-depth1-wrap" id="mobile_left"><li>
+                <a href="#" class="s-depth1-link" data-omni="mobile">MOBILE<span class="s-svg s-arw-right"></span></a>
+                <div class="drilldown-sub">
+                    <div class="drilldown-back">
+                        <a href="#" class="s-btn-back"><span class="s-svg s-arw-left"></span><span class="blind">Back to 1 Depth Menu</span></a>
+                    </div>
+                    <ul>
+                        <li class="s-depth2-wrap">
+                            <a href="http://www.samsung.com/ca/mobile/" class="s-depth2-link" data-omni="mobile:mobile">Mobile<span class="s-svg s-arw-right"></span></a>
+                            
+                            
+                            
+                            <ul>
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/smartphones/" data-omni="mobile:mobile:smartphones">Smartphones</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/tablets/" data-omni="mobile:mobile:tablets">Tablets</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/windows-tablets/all-windows-tablets/?windows-tablets" data-omni="mobile:mobile:windows tablets">Windows Tablets</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/wearables/" data-omni="mobile:mobile:wearables">Wearables</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/mobile-accessories/" data-omni="mobile:mobile:accessories">Accessories</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            </ul>
+                        </li>
+                    
+                        <li class="s-depth2-wrap">
+                            
+                            
+                            
+                            <span class="s-depth2-link" data-omni="mobile:mobile apps">Mobile Apps</span>
+                            <ul>
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/apps/mobile/findmymobile/" data-omni="mobile:mobile apps:find my mobile">Find my mobile</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/apps/mobile/galaxyapps/" data-omni="mobile:mobile apps:galaxy apps">Galaxy Apps</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/support/convergence/sidesync/index.html" data-omni="mobile:mobile apps:sidesync">SideSync</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/support/smartswitch/" data-omni="mobile:mobile apps:smart switch">Smart Switch</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/apps/mobile/theme/" data-omni="mobile:mobile apps:theme service">Theme Service</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            </ul>
+                        </li>
+                    
+                        <li class="s-depth2-wrap">
+                            
+                            
+                            
+                            <span class="s-depth2-link" data-omni="mobile:featured">FEATURED</span>
+                            <ul>
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/smartphones/galaxy-s7/overview/" data-omni="mobile:featured:galaxy s7">Galaxy S7</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/wearables/gear-vr-r323/" data-omni="mobile:featured:gear vr">Gear VR</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/wearables/gear-360-c200/" data-omni="mobile:featured:gear 360">Gear 360</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/wearables/gear-fit-2-r360/SM-R3600DANXAC/" data-omni="mobile:featured:gear fit2">Gear Fit2</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/tablets/galaxy-tab-s2-9-7-t813/SM-T813NZKEXAC/" data-omni="mobile:featured:tab s2">Tab S2</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li><li>
+                <a href="#" class="s-depth1-link" data-omni="tv-av">TV &amp; AV<span class="s-svg s-arw-right"></span></a>
+                <div class="drilldown-sub">
+                    <div class="drilldown-back">
+                        <a href="#" class="s-btn-back"><span class="s-svg s-arw-left"></span><span class="blind">Back to 1 Depth Menu</span></a>
+                    </div>
+                    <ul>
+                        <li class="s-depth2-wrap">
+                            <a href="http://www.samsung.com/ca/tvs/overview/" class="s-depth2-link" data-omni="tv-av:tv">TV<span class="s-svg s-arw-right"></span></a>
+                            
+                            
+                            
+                            <ul>
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/tvs/all-tvs/?suhd" data-omni="tv-av:tv:suhd tv">SUHD TV</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/tvs/all-tvs/?uhd" data-omni="tv-av:tv:uhd tv">UHD TV</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/tvs/all-tvs/?full-hd" data-omni="tv-av:tv:full hd tv">FULL HD TV</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/tvs/all-tvs/?hd" data-omni="tv-av:tv:hd tv">HD TV</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/tv-accessories/all-tv-accessories/?tv-accessories" data-omni="tv-av:tv:tv accessories">TV Accessories</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            </ul>
+                        </li>
+                    
+                        <li class="s-depth2-wrap">
+                            
+                            
+                            
+                            <span class="s-depth2-link" data-omni="tv-av:tv apps">TV Apps</span>
+                            <ul>
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/smarthome/" data-omni="tv-av:tv apps:smart home">Smart Home</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/apps/tv/smart-view/" data-omni="tv-av:tv apps:smart view">Smart View</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            </ul>
+                        </li>
+                    
+                        <li class="s-depth2-wrap">
+                            <a href="http://www.samsung.com/ca/audio-video/" class="s-depth2-link" data-omni="tv-av:audio - video">Audio &amp; Video<span class="s-svg s-arw-right"></span></a>
+                            
+                            
+                            
+                            <ul>
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/audio-video/all-audio-video/?soundbar" data-omni="tv-av:audio - video:soundbar">Soundbar</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/audio-video/all-audio-video/?wireless-audio" data-omni="tv-av:audio - video:wireless audio">Wireless Audio</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/audio-video/all-audio-video/?blu-ray-dvd-player" data-omni="tv-av:audio - video:blu-ray dvd player">Blu-ray &amp; DVD Player</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/audio-video/all-audio-video/?home-entertainment-system" data-omni="tv-av:audio - video:home entertainment system">Home Entertainment System</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/audio-video/all-audio-video/?digital-component" data-omni="tv-av:audio - video:digital component">Digital Component</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            </ul>
+                        </li>
+                    
+                        <li class="s-depth2-wrap">
+                            
+                            
+                            
+                            <span class="s-depth2-link" data-omni="tv-av:featured">FEATURED</span>
+                            <ul>
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/tvs/suhd-ks9000/UN75KS9000FXZC/" data-omni="tv-av:featured:suhd tv">SUHD TV</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/audio-video/soundbar-k950/" data-omni="tv-av:featured:dolby atmos soundbar">Dolby Atmos Soundbar</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/tvs/suhd-ks9810/" data-omni="tv-av:featured:curved tv">Curved TV</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li><li>
+                <a href="#" class="s-depth1-link" data-omni="appliances">APPLIANCES<span class="s-svg s-arw-right"></span></a>
+                <div class="drilldown-sub">
+                    <div class="drilldown-back">
+                        <a href="#" class="s-btn-back"><span class="s-svg s-arw-left"></span><span class="blind">Back to 1 Depth Menu</span></a>
+                    </div>
+                    <ul>
+                        <li class="s-depth2-wrap">
+                            <a href="http://www.samsung.com/ca/home-appliances/" class="s-depth2-link" data-omni="appliances:home appliances">Home Appliances<span class="s-svg s-arw-right"></span></a>
+                            
+                            
+                            
+                            <ul>
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/refrigerators/" data-omni="appliances:home appliances:refrigerators">Refrigerators</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/cooking-appliances/" data-omni="appliances:home appliances:cooking appliances">Cooking Appliances</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/dishwashers/" data-omni="appliances:home appliances:dishwashers">Dishwashers</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/washing-machines/" data-omni="appliances:home appliances:washing machines">Washing Machines</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/vacuum-cleaners/" data-omni="appliances:home appliances:vacuum cleaners">Vacuum Cleaners</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            </ul>
+                        </li>
+                    
+                        <li class="s-depth2-wrap">
+                            
+                            
+                            
+                            <span class="s-depth2-link" data-omni="appliances:featured">FEATURED</span>
+                            <ul>
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/washing-machines/washer-wf50k7500av/" data-omni="appliances:featured:addwash">AddWash</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/home-appliances/" data-omni="appliances:featured:built in appliances">Built In Appliances</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/home-appliances/" data-omni="appliances:featured:family hub">Family Hub</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/cooking-appliances/gas-range-ny58j9850ws/" data-omni="appliances:featured:dynamic duo">Dynamic Duo</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li><li>
+                <a href="#" class="s-depth1-link" data-omni="more">MORE<span class="s-svg s-arw-right"></span></a>
+                <div class="drilldown-sub">
+                    <div class="drilldown-back">
+                        <a href="#" class="s-btn-back"><span class="s-svg s-arw-left"></span><span class="blind">Back to 1 Depth Menu</span></a>
+                    </div>
+                    <ul>
+                        <li class="s-depth2-wrap">
+                            
+                            
+                            
+                            <span class="s-depth2-link" data-omni="more:cameras">Cameras</span>
+                            <ul>
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/cameras/all-cameras/" data-omni="more:cameras:cameras">Cameras</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/camera-lenses/all-camera-lenses/" data-omni="more:cameras:lenses">Lenses</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/camera-accessories/all-camera-accessories/" data-omni="more:cameras:accessories">Accessories</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            </ul>
+                        </li>
+                    
+                        <li class="s-depth2-wrap">
+                            <a href="http://www.samsung.com/ca/it/" class="s-depth2-link" data-omni="more:it">IT<span class="s-svg s-arw-right"></span></a>
+                            
+                            
+                            
+                            <ul>
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/monitors/" data-omni="more:it:monitor">Monitor</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/printers/" data-omni="more:it:printers-multifunction">Printers &amp; Multifunction</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/printers/all-printers/?supplies" data-omni="more:it:printer supplies">Printer Supplies</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            </ul>
+                        </li>
+                    
+                        <li class="s-depth2-wrap">
+                            <a href="http://www.samsung.com/ca/memory-storage/" class="s-depth2-link" data-omni="more:memory - storage">Memory &amp; Storage<span class="s-svg s-arw-right"></span></a>
+                            
+                            
+                            
+                            <ul>
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/ssd" data-omni="more:memory - storage:ssd">SSD</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/memory-storage/all-memory-storage/?portable-ssd" data-omni="more:memory - storage:portable ssd">Portable SSD</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/memory-cards/" data-omni="more:memory - storage:memory cards">Memory Cards</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            </ul>
+                        </li>
+                    
+                        <li class="s-depth2-wrap">
+                            
+                            
+                            
+                            <span class="s-depth2-link" data-omni="more:featured">FEATURED</span>
+                            <ul>
+                                <li>
+                                    <a class="s-depth3-link" href="http://www.samsung.com/ca/monitors/curved-cfg70/" data-omni="more:featured:curved gaming monitor">Curved Gaming Monitor</a>
+                                    
+                                    
+                                    
+                                </li> 
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li></ul>
+						<ul class="s-depth1-wrap" id="mobile_right"><li>
+                <a class="s-depth1-link" href="http://www.samsung.com/ca/support/" data-omni="support">SUPPORT</a>
+                
+                
+                
+                
+                <div class="custom-layer-content" style="display:none">
+                    
+                </div>
+            </li><li>
+                
+                <a class="s-depth1-link" href="http://www.samsung.com/ca/business/" target="_blank" data-omni="business" title="BUSINESS : Open in a New Window">BUSINESS<span class="s-svg s-ico-new-window"></span></a>
+                
+                
+                
+                <div class="custom-layer-content" style="display:none">
+                    
+                </div>
+            </li>
+							
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+
+			
+			<button type="button" class="s-svg s-ico-close js-mo-close"><span class="blind">Close the Menu</span></button>
+
+			<div class="gb-gnb__sub">
+				<ul class="gb-gnb__sub-nav" role="tablist"><li class="s-depth1-wrap">
+                <a href="http://www.samsung.com/ca/support/" class="s-btn-link" data-omni="support">SUPPORT<span class="s-svg s-arw-right"></span></a>
+                
+                
+                
+                
+                <div class="custom-layer-content" style="display:none">
+                    
+                </div>
+            </li><li class="s-depth1-wrap">
+                
+                <a href="http://www.samsung.com/ca/business/" target="_blank" class="s-btn-link" data-omni="business" title="BUSINESS : Open in a New Window">BUSINESS<span class="s-svg s-ico-new-window"></span></a>
+                
+                
+                
+                <div class="custom-layer-content" style="display:none">
+                    
+                </div>
+            </li></ul>
+				
+				<ul class="gb-gnb__utility">
+					
+					
+					<li>
+						
+						<button type="button" class="s-btn-utility js-ico-search" title="Search" aria-expanded="false" data-omni="search"><span class="s-svg s-ico-search"><span class="blind">Open Search Layer</span></span><span class="s-search-arrow"></span></button>
+						
+						<div class="gb-gnb__search">
+							<div class="gb-gnb__search-inner">
+								<div class="gb-gnb__search-bar">
+									<div class="gb-gnb__search-input-wrap">
+										<label for="inp_srch" class="blind">Input Search Keyword</label>
+										<input id="inp_srch" name="gnb_search" class="gb-gnb__search-input" placeholder="Galaxy S7" autocomplete="off" type="text">
+										<button type="submit" class="s-svg s-ico-search"><span class="blind">Search</span></button>
+										
+										<button type="button" class="s-svg s-ico-close"><span class="blind">Search Layer Close</span></button>
+									</div>
+									<div class="gb-gnb__search-history" style="display: ">
+										<div class="gb-gnb__search-history-title">Search History</div>
+										<ul></ul>
+										<button type="button" class="gb-gnb__search-history-close">CLEAR HISTORY</button>
+									</div>
+								</div>
+								<div class="gb-gnb__search-suggest">
+									<div class="gb-gnb__search-suggest-inner">
+										
+										<div class="gb-gnb__search-typeahead" style="display: none">
+											<div class="gb-gnb__search-typeahead-title"></div>
+											<ul></ul>
+										</div>
+										
+										
+										<p class="gb-gnb__search-suggest-nodata" style="display: ">No Suggestions</p>
+										
+										<div class="gb-gnb__search-suggest-list" style="display: none"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</li>
+					<!-- Cart Icon -->
+					
+				</ul>
+				<!-- 회원로그인 폼 (한글) -->
+				<form id="loginForm" name="loginForm" method="post" action="https://account.samsung.com/account/check.do">
+					<input name="actionID" value="StartAP" type="hidden">
+					<input name="serviceID" value="f6982h5w86" type="hidden">
+					<input name="serviceName" value="SAMSUNG" type="hidden">
+					<input name="domain" value="www.samsung.com" type="hidden">
+					<input name="countryCode" value="CA" type="hidden">
+					<input name="languageCode" value="en" type="hidden">
+					<input name="registURL" id="registURL" value="/aemapi/data-login/afterLogin.ca.json" type="hidden">
+					<input name="returnURL" id="returnURL" type="hidden">
+					<input name="goBackURL" id="goBackURL" value="" type="hidden">
+					<input name="ssoType" value="OPT_VAL" type="hidden">
+					<input name="svcIptLgnID" id="userId" value="" type="hidden">
+					<input name="svcIptLgnPD" id="userPass" value="" type="hidden">
+					<input name="emailActivationURL" id="emailActivationURL" value="/aemapi/data-login/emailActivationURL.ca.json" type="hidden">
+				</form>
+				<!-- 회원가입 폼 -->
+				<form id="joinForm" name="joinForm" method="post" action="https://account.samsung.com/account/check.do">
+					<input name="actionID" value="SignupAP" type="hidden">
+					<input name="serviceID" value="f6982h5w86" type="hidden">
+					<input name="serviceName" value="SAMSUNG" type="hidden">
+					<input name="domain" value="www.samsung.com" type="hidden">
+					<input name="countryCode" value="CA" type="hidden">
+					<input name="languageCode" value="en" type="hidden">
+					<input name="registURL" id="joinRegistURL" value="/aemapi/data-login/afterLogin.ca.json" type="hidden">
+					<input name="returnURL" id="joinReturnURL" type="hidden">
+					<input name="goBackURL" id="joinGoBackURL" value="" type="hidden">
+					<input name="ssoType" value="OPT_VAL" type="hidden">
+					<input name="emailActivationURL" id="joinEmailActivationURL" value="/aemapi/data-login/emailActivationURL.ca.json" type="hidden">
+				</form>
+				<!-- Find Email 폼 -->
+				<form id="findAccountForm" name="findAccountForm" method="post" action="https://account.samsung.com/account/check.do">
+					<input name="actionID" value="FindEmail" type="hidden">
+					<input name="serviceID" value="f6982h5w86" type="hidden">
+					<input name="serviceName" value="SAMSUNG" type="hidden">
+					<input name="domain" value="www.samsung.com" type="hidden">
+					<input name="countryCode" value="CA" type="hidden">
+					<input name="languageCode" value="en" type="hidden">
+					<input name="goBackURL" id="findGoBackURL" value="" type="hidden">
+					<input name="ssoType" value="OPT_VAL" type="hidden">
+				</form>
+
+				<form id="textForm" name="textForm">
+					<input name="signBtnText1" id="signBtnText1" value="signBtnText1" type="hidden">
+					<input name="signBtnText2" id="signBtnText2" value="signBtnText2" type="hidden">
+					<input name="errorTitleText" id="errorTitleText" value="errorTitleText" type="hidden">
+					<input name="errorText1" id="errorText1" value="errorText1" type="hidden">
+					<input name="errorText2" id="errorText2" value="errorText2" type="hidden">
+					<input name="errorText3" id="errorText3" value="errorText3" type="hidden">
+					<input name="errorText4" id="errorText4" value="errorText4" type="hidden">
+					<input name="wishText" id="errorText4" value="The product has been added to your wish list." type="hidden">
+					<input name="badReqTest" id="errorText4" value="Bad Request. Some or all of the data provided is invalid. Please contact VOC Center." type="hidden">
+					<input name="productCountText" id="productCountText" value="Number of Products" type="hidden">
+				</form>
+				
+					<input name="searchPath" id="searchPath" value="/ca/search.html" type="hidden">
+				
+				<input name="domain" id="domain" value="www.samsung.com" type="hidden">
+				<input name="siteCode" id="siteCode" value="ca" type="hidden">
+				<input name="useLogin" id="useLogin" value="N" type="hidden">
+				<input name="useStore" id="useStore" value="N" type="hidden">
+				<input name="storeDomain" id="storeDomain" value="https://shop.samsung.com" type="hidden">
+				<input name="hiddenSearch" id="hiddenSearch" value="Galaxy S7" type="hidden">
+				<input name="loginURL" id="loginURL" value="/ca/login.html" type="hidden">
+				<input name="loginLinkURL" id="loginLinkURL" type="hidden">
+
+				<!-- No Access Layer Popup -->
+				<div class="layer_popup" id="confirmPopup" style="display:none;">
+					<div id="popup-type02" class="popAlign" style="top: 394px; left: 545px;">
+						<div class="popup_wrap">
+							<h2 class="pop-tit"></h2>
+							<p class="msg-text tc"></p>
+							<div class="pop-btn">
+								<a href="javascript:void(0)" class="button login-leave-btn" title="No Access OK">OK</a>
+							</div>
+							<button class="close-button icon-close-x login-leave-btn" data-focus-id="shop-popover-close" data-tab-disable="true" tabindex="0">
+								<span class="blind">No Access Close</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<!-- 장바구니 가득찬 경우 Layer Popup -->
+				<div class="layer_popup" style="display:none;">
+					<div id="gloval_message_popup" class="popup-nextgen-type popAlign" style="top: 394px; left: 545px;">
+						<div class="popup_wrap">
+							<p class="msg-text tc">Sorry, there is insufficient stock for your cart.</p>
+							<div class="pop-btn">
+								<a href="#" class="button">OK</a>
+							</div>
+							<button class="close-button icon-close-x" data-focus-id="shop-popover-close" data-tab-disable="true" tabindex="0">
+								<span class="blind">Layer Popup Close</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<!-- 장바구니 삭제버튼 클릭 시 Layer -->
+				<div class="layer_popup" style="display: none;">
+					<div id="popup_delete_product_cart" class="popup-nextgen-type popAlign" style="top: 394px; left: 545px;">
+						<div class="popup_wrap">
+							<p class="pop-tit">Remove a Product</p>
+							<p class="msg-text">Without this product, applied coupon or promotion code cannot be redeemed.<br>Are you sure to remove this product?</p>
+							<div class="pop-btn">
+								<a style="display: inline-block;" href="#" class="button" id="btnMoveToWishList" onclick="javascript: removeConfirmButton('Y');">Move to wish list</a>
+								<a href="#" class="button gray" onclick="javascript: removeConfirmButton('N');">Delete</a>
+							</div>
+							<button class="close-button icon-close-x" data-focus-id="shop-popover-close" data-tab-disable="true" tabindex="0">
+								<span class="blind">Layer Popup Close</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="layer_popup" style="display: none;">
+					<div id="popup_alert" class="popup-nextgen-type popAlign" tabindex="0" data-focus-id="shop-popover-wrap" data-tab-previous="shop-popover-close" style="top: 394px; left: 545px;">
+						<div class="popup_wrap">
+							<p class="msg-text tc"></p>
+							<div class="pop-btn">
+								<a href="javascript:void(0);" class="button alert-ok-button" data-popup="close">OK</a>
+							</div>
+							<button class="close-button icon-close-x" data-focus-id="shop-popover-close" data-tab-next="shop-popover-wrap" data-popup="close" data-tab-disable="true" tabindex="0">
+								<span class="blind">Layer Popup Close</span>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- 정책동의 1단계 Layer -->
+				<div class="layer_popup" id="privacyPopup" style="display: none;">
+					<div id="popup_privacy" class="popAlign" style="top: 394px; left: 478px;">
+						<form action="#" method="post" name="" id="">
+							<fieldset>
+								<legend>Privacy Policy</legend>
+								<div class="popup_wrap">
+									<div class="popup_title">Privacy Policy</div>
+									<div class="popup_cont">
+										<div class="privacy_wrap">
+											<div class="check_box">
+												<input name="privacy-terms" id="privacy-terms" type="checkbox">
+												<label for="privacy-terms" class="check_text">
+													I have read and agree to the Samsung.com <a href="http://www.samsung.com/ca/info/privacy.html" target="_blank" class="privacy_link">Privacy Policy</a>
+												</label>
+												<!-- ERROR : Clicked PROCEED TO STORE button : display:block -->
+												<p class="check_error" id="errorPrivacy" style="display: none;">Tick this box to proceed to Samsung.com.</p>
+												<!-- //ERROR : Clicked PROCEED TO STORE button -->
+											</div>
+											<div class="check_box">
+												<input name="privacy-terms2" id="privacy-terms2" type="checkbox">
+												<label for="privacy-terms2" class="check_text">By ticking this box, I accept Samsung Service Updates, including : </label><p class="check_txt">Samsung.com
+ Services and marketing information, new product and service 
+announcements as well as special offers, events and newsletters.</p>
+											</div>
+											<div class="privacy_btn">
+												<a href="javascript:void(0)" class="button" id="privacyBtn">PROCEED TO SAMSUNG.COM</a>
+												<a href="javascript:void(0)" class="button login-leave-btn">LEAVE PAGE</a>
+											</div>
+										</div>
+									</div>
+									<button class="close-button icon-close-x login-leave-btn" data-focus-id="shop-popover-close" data-tab-disable="true" tabindex="0">
+										<span class="blind">Close Privacy Policy</span>
+									</button>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+
+				<!-- 정책동의 2단계 Layer -->
+				<div class="layer_popup" id="preferencePopup" style="display: none;">
+					<div id="popup-type04" class="popAlign" style="top: 394px; left: 545px;">
+						<div class="popup_wrap">
+							<p class="pop-tit">Check Preferences</p>
+							<p class="msg-text">Help us to make recommendations for you by updating your product preferences.</p>
+							<div class="pop-btn">
+								<a href="javascript:void(0)" class="button" id="preferenceCheckBtn" title="Go to check preferences page">YES</a>
+								<a href="javascript:void(0)" class="button login-close-btn" id="privacyCloseBtn" title="Check preferences later">LATER</a>
+							</div>
+							<button class="close-button icon-close-x login-close-btn" data-focus-id="shop-popover-close" data-tab-disable="true" tabindex="0">
+								<span class="blind">Close Check Preferences</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Black Background Area -->
+				<div id="dimContainer">
+					<div class="lightbox-skrim" style="display:none"></div>
+				</div>
+		</div>
+		</div>
+	</div>
+	<!--googleon: all-->
+</nav>
+
+
+<div class="gb-gnb__cart-empty" role="dialog" style="display: none;">
+	<p class="gb-gnb__cart-empty-desc">Your cart is empty.</p>
+<!--<a href="#" class="gb-gnb__cart-empty-link">Continue shopping Continue shopping Continue shopping</a> -->
+	<a href="#" class="gb-gnb__cart-empty-link js-cart-close">OK</a><!-- close type -->
+	<button type="button" class="gb-gnb__cart-empty-close js-cart-close"><span class="blind">Layer Popup Close</span></button>
+</div>
+
+
+<div class="cm-custom-popup js-custom-pop" role="dialog" style="display: none">
+    <div class="cm-custom-popup__inner">
+        <div class="cm-custom-popup__popup-area" style="max-width: 414px;">
+            
+            <div class="cm-custom-popup__custom-area">
+            </div>
+            <div class="cm-custom-popup__checkbox-wrap">
+                <input id="_nomore_shop_terms" class="cm-custom-popup__checkbox-input" type="checkbox">
+                <label for="_nomore_shop_terms" class="cm-custom-popup__checkbox-label">Do not show again</label>
+            </div>
+            
+            <div class="cm-custom-popup__link-wrap">
+                <a href="#" class="cm-custom-popup__link" target="_blank" title="Open in a New Window">Go</a>
+            </div>
+            <button type="button" class="cm-custom-popup__close js-custom-pop-close"><span>Layer Popup Close</span></button>
+        </div>
+    </div>
+</div>
+
+
+<div class="s-layer-dimmed" style="display: none;"></div></div>
+
+    <input name="typeAheadDomain" id="typeAheadDomain" value="//searchapi.samsung.com/search/" type="hidden">
+    <input name="scene7domain" id="scene7domain" value="http://images.samsung.com/is/image/samsung/" type="hidden">
+    <input name="reviewUseYN" id="reviewUseYN" value="Y" type="hidden">
+    <input name="reevooUseYN" id="reevooUseYN" value="N" type="hidden">
+    <input name="frontApiStageInfo" id="frontApiStageInfo" value="live" type="hidden">
+    <input name="gnbRunmodeInfo" id="gnbRunmodeInfo" value="live" type="hidden">
+</header>
+
+            
+            
+
+
+
+
+<div class="result" id="content">
+	<form method="post" name="searhForm" id="searchForm">
+		<input name="searchFirst" id="searchFirst" value="N" type="hidden">
+		<input name="firstSearchYN" id="firstSearchYN" value="Y" type="hidden">
+		<input name="siteCd" id="siteCd" value="ca" type="hidden">
+		<input name="uri" id="uri" value="/ca/search.html" type="hidden">
+		<input name="m" id="m" type="hidden">
+		<input name="currentPage" id="currentPage" value="1" type="hidden">
+		<input name="selectfilter" id="selectfilter" type="hidden">
+		<input name="start" id="start" value="0" type="hidden">
+		<input name="num" id="num" value="3" type="hidden">
+		<input name="recentlyviewId" id="recentlyviewId" value="" type="hidden">
+		<input name="nm" id="nm" value="null" type="hidden">
+		<input name="pv" id="pv" value="null" type="hidden">
+		<input name="filterSearchCode" id="filterSearchCode" value="null" type="hidden">
+		<input name="viewType" id="viewType" value="list" type="hidden">
+		<input name="filterTerms" id="filterTerms" type="hidden">
+		<input name="useReviews" id="useReviews" value="Y" type="hidden">
+		<input name="reevooYn" id="reevooYn" value="" type="hidden">
+		<input name="searchDomain" id="searchDomain" value="//searchapi.samsung.com/" type="hidden">
+		<input name="srpS7domain" id="srpS7domain" value="http://images.samsung.com/is/image/samsung/" type="hidden">
+		<input name="didYouMeanType" id="didYouMeanType" type="hidden">
+		<input name="orgsearchvalue" id="orgsearchvalue" type="hidden">
+		<input name="didYouMean" id="didYouMean" type="hidden">
+		<input name="backButton" id="backButton" value="Y" type="hidden">
+		<input name="backReload" id="backReload" value="Y" type="hidden">
+		<input name="stageInfo" id="stageInfo" value="live" type="hidden">
+		<input name="loadingbarFlag" id="loadingbarFlag" value="true" type="hidden">
+		<input name="latitude" id="latitude" value="" type="hidden">
+		<input name="longitude" id="longitude" value="" type="hidden">
+		<input name="wtb-categorySubTypeCode" id="wtb-categorySubTypeCode" value="" type="hidden">
+		<input name="current_model_code" id="current_model_code" value="" type="hidden">
+		<input id="wtb-sitecode" value="ca" type="hidden">
+		<input name="priceDisplayYn" id="priceDisplayYn" value="N" type="hidden">
+		<input name="instoreUseYn" id="instoreUseYn" value="" type="hidden">
+		<input name="onlineUseYn" id="onlineUseYn" value="" type="hidden">
+		<input name="videoFlag" id="videoFlag" value="true" type="hidden">
+
+		<!-- result header -->
+		<div class="result-header">
+			<!-- search result count -->
+			<div class="result-header-message">Showing <em>251</em> result(s) for "<em>phone business</em>"<p></p></div>
+			<!-- search result count -->
+			<div class="result-header__option" style="display:none">
+				<div class="option-view">
+					<em>View</em>
+					<div class="ico-button-group">
+						<button type="button" id="viewGrid" onclick="javascript:typeView('grid');" class="ico_grid">Grid</button>
+						<button type="button" id="viewList" onclick="javascript:typeView('list');" class="ico_list  active">List</button>
+					</div>
+				</div>
+				<div class="option-sort">
+					<em><label for="sortBy">Sort By</label></em>
+					<select id="sortBy" name="sortBy" onchange="javascrrpt:goSortBy();">
+						<option value="relevance" selected="selected">Relevance</option>
+						<option value="date_descending">Newest </option>
+						<option value="date_ascending">Oldest</option>
+						
+						<option value="modelname_ascending">A-Z</option>
+						<option value="modelname_descending">Z-A</option>
+						<option value="popularity">Popularity</option>
+					</select>
+				</div>
+				<div class="option-page">
+					<em><label for="resultsPerPage">Results Per Page</label></em>
+					<select name="resultsPerPage" id="resultsPerPage" onchange="javascrrpt:goPerPage()">
+						<option value="30" selected="selected">30</option>
+						<option value="60">60</option>
+						<option value="90">90</option>
+					</select>
+				</div>
+
+				<button type="button" class="btn-filters">Filters</button>
+			</div>
+		</div>
+	</form>
+	<!-- //result header -->
+
+	<!--/* result contents */-->
+	<div class="result-contents">
+		<!--/* filter */-->
+		<div class="result-filter" style="display: block;">
+			<!--/* left selected filter */-->
+			<div class="result-filter__header">
+				<div class="result-filter__title result-filter__title--pc">Filter by</div>
+				<div class="result-filter__title result-filter__title--mobile">Filters</div>
+			</div>
+			<!--/* left selected filter */-->
+
+			<div class="result-filter__body">
+				<div class="result-filter__option">
+					<a href="#" onclick="javascript:gofirstSearch();" id="viewallresults" class="result-filter__option-all">View All Results</a>
+					<a href="#" onclick="javascript:gofirstSearch();" id="clearallfilters" class="result-filter__option-all" style="display: none;">Clear All Filters</a>
+				</div>
+
+				<!--/* leftfilter */-->
+				<div class="js-result-filter__category-body"><div class="result-filter__category open"><button type="button" class="category__title"><span class="txt">Category</span> <span class="ico-toggle"><span class="blind">Collaps</span></span></button><fieldset><legend class="blind">category option</legend> <ul class="category__option"><li class="category__option-lst"><input title="Products" id="category-optioncategoryProducts" nm="category" filterserchcode="C10000000" onclick="javascript:editFilter(this, 'category','Products','C10000000','150');" data-omni="products" data-check="" type="checkbox"><label for="category-optioncategoryProducts">Products</label></li><li class="category__option-lst"><input title="Accessories" id="category-optioncategoryAccessories" nm="category" filterserchcode="C20000000" onclick="javascript:editFilter(this, 'category','Accessories','C20000000','21');" data-omni="accessories" data-check="" type="checkbox"><label for="category-optioncategoryAccessories">Accessories</label></li><li class="category__option-lst"><input title="Support" id="category-optioncategorySupport" nm="category" filterserchcode="C40000000" onclick="javascript:editFilter(this, 'category','Support','C40000000','16');" data-omni="support" data-check="" type="checkbox"><label for="category-optioncategorySupport">Support</label></li><li class="category__option-lst"><input title="News" id="category-optioncategoryNews" nm="category" filterserchcode="C60000000" onclick="javascript:editFilter(this, 'category','News','C60000000','27');" data-omni="news" data-check="" type="checkbox"><label for="category-optioncategoryNews">News</label></li><li class="category__option-lst"><input title="Others" id="category-optioncategoryOthers" nm="category" filterserchcode="C70000000" onclick="javascript:editFilter(this, 'category','Others','C70000000','37');" data-omni="others" data-check="" type="checkbox"><label for="category-optioncategoryOthers">Others</label></li></ul></fieldset></div><div class="result-filter__category open"><button type="button" class="category__title"><span class="txt">Item Type</span> <span class="ico-toggle"><span class="blind">Collaps</span></span></button><fieldset><legend class="blind">category option</legend> <ul class="category__option"><li class="category__option-lst"><input title="Mobile Accessories" id="category-optionitemTypeMobileAccessories" nm="itemType" filterserchcode="I11060000" onclick="javascript:editFilter(this, 'itemType','MobileAccessories','I11060000','21');" data-omni="accessories" data-check="" type="checkbox"><label for="category-optionitemTypeMobileAccessories">Mobile Accessories</label></li><li class="category__option-lst"><input title="Printer &amp; Multifunction" id="category-optionitemTypePrinterMultifunction" nm="itemType" filterserchcode="I15020000" onclick="javascript:editFilter(this, 'itemType','PrinterMultifunction','I15020000','0');" data-omni="printer-multifunction" data-check="" type="checkbox"><label for="category-optionitemTypePrinterMultifunction">Printer &amp; Multifunction</label></li><li class="category__option-lst"><input title="Smartphones" id="category-optionitemTypeSmartphones" nm="itemType" filterserchcode="I11010000" onclick="javascript:editFilter(this, 'itemType','Smartphones','I11010000','0');" data-omni="smartphones" data-check="" type="checkbox"><label for="category-optionitemTypeSmartphones">Smartphones</label></li><li class="category__option-lst"><input title="Tablets" id="category-optionitemTypeTablets" nm="itemType" filterserchcode="I11020000" onclick="javascript:editFilter(this, 'itemType','Tablets','I11020000','0');" data-omni="tablets" data-check="" type="checkbox"><label for="category-optionitemTypeTablets">Tablets</label></li><li class="category__option-lst"><input title="Windows Tablets" id="category-optionitemTypeWindowsTablets" nm="itemType" filterserchcode="I11070000" onclick="javascript:editFilter(this, 'itemType','WindowsTablets','I11070000','0');" data-omni="windows-tablets" data-check="" type="checkbox"><label for="category-optionitemTypeWindowsTablets">Windows Tablets</label></li></ul></fieldset></div><div class="result-filter__category open"><button type="button" class="category__title"><span class="txt">Business</span> <span class="ico-toggle"><span class="blind">Collaps</span></span></button><fieldset><legend class="blind">category option</legend> <ul class="category__option"><li class="category__option-lst"><input title="Business Monitor" id="category-optionbusinessBusinessMonitor" nm="business" filterserchcode="BB1400001" onclick="javascript:editFilter(this, 'business','BusinessMonitor','BB1400001','0');" data-omni="business-monitor" data-check="" type="checkbox"><label for="category-optionbusinessBusinessMonitor">Business Monitor</label></li><li class="category__option-lst"><input title="Memory &amp; Storage" id="category-optionbusinessMemoryStorage" nm="business" filterserchcode="BB1500063" onclick="javascript:editFilter(this, 'business','MemoryStorage','BB1500063','0');" data-omni="memory-storage" data-check="" type="checkbox"><label for="category-optionbusinessMemoryStorage">Memory &amp; Storage</label></li><li class="category__option-lst"><input title="Printers &amp; Multifunction" id="category-optionbusinessPrintersMultifunction" nm="business" filterserchcode="BB0100001" onclick="javascript:editFilter(this, 'business','PrintersMultifunction','BB0100001','0');" data-omni="printers-multifunction" data-check="" type="checkbox"><label for="category-optionbusinessPrintersMultifunction">Printers &amp; Multifunction</label></li><li class="category__option-lst"><input title="SMART Hospitality Display" id="category-optionbusinessSMARTHospitalityDisplay" nm="business" filterserchcode="BB0600001" onclick="javascript:editFilter(this, 'business','SMARTHospitalityDisplay','BB0600001','0');" data-omni="smart-hospitality-display" data-check="" type="checkbox"><label for="category-optionbusinessSMARTHospitalityDisplay">SMART Hospitality Display</label></li><li class="category__option-lst"><input title="SMART Signage" id="category-optionbusinessSMARTSignage" nm="business" filterserchcode="BB0700001" onclick="javascript:editFilter(this, 'business','SMARTSignage','BB0700001','0');" data-omni="smart-signage" data-check="" type="checkbox"><label for="category-optionbusinessSMARTSignage">SMART Signage</label></li><li class="category__option-lst" style="display: none;"><input title="SMART Cloud Display" id="category-optionbusinessSMARTCloudDisplay" nm="business" filterserchcode="BB0800001" onclick="javascript:editFilter(this, 'business','SMARTCloudDisplay','BB0800001','0');" data-omni="smart-cloud-display" data-check="" type="checkbox"><label for="category-optionbusinessSMARTCloudDisplay">SMART Cloud Display</label></li><li class="category__option-lst" style="display: none;"><input title="SMART Signage TV" id="category-optionbusinessSMARTSignageTV" nm="business" filterserchcode="BB1500072" onclick="javascript:editFilter(this, 'business','SMARTSignageTV','BB1500072','0');" data-omni="smart-signage-tv" data-check="" type="checkbox"><label for="category-optionbusinessSMARTSignageTV">SMART Signage TV</label></li><li class="category__option-lst" style="display: none;"><input title="SMART LED Signage " id="category-optionbusinessSMARTLEDSignage" nm="business" filterserchcode="BB1500136" onclick="javascript:editFilter(this, 'business','SMARTLEDSignage','BB1500136','0');" data-omni="smart-led-signage" data-check="" type="checkbox"><label for="category-optionbusinessSMARTLEDSignage">SMART LED Signage </label></li></ul><button type="button" class="btn-more"><span>Show More...</span></button></fieldset></div><div class="result-filter__category"><button type="button" class="category__title"><span class="txt">News</span> <span class="ico-toggle"><span class="blind">Collaps</span></span></button><fieldset style="display: none;"><legend class="blind">category option</legend> <ul class="category__option"><li class="category__option-lst"><input title="CES News" id="category-optionnewsCESNews" nm="news" filterserchcode="S10001081" onclick="javascript:editFilter(this, 'news','CESNews','S10001081','0');" data-omni="cesnews" data-check="" type="checkbox"><label for="category-optionnewsCESNews">CES News</label></li><li class="category__option-lst"><input title="Corporate News" id="category-optionnewsCorporateNews" nm="news" filterserchcode="S10001079" onclick="javascript:editFilter(this, 'news','CorporateNews','S10001079','0');" data-omni="corporatenews" data-check="" type="checkbox"><label for="category-optionnewsCorporateNews">Corporate News</label></li><li class="category__option-lst"><input title="Product News" id="category-optionnewsProductNews" nm="news" filterserchcode="S10001078" onclick="javascript:editFilter(this, 'news','ProductNews','S10001078','0');" data-omni="productnews" data-check="" type="checkbox"><label for="category-optionnewsProductNews">Product News</label></li></ul></fieldset></div></div>
+				<!--/* leftfilter */-->
+			</div>
+		</div>
+		<!--/* filter */-->
+
+		<div class="result-cont">
+			<!--/* banner */-->
+			<div id="banner_result"></div>
+			<!--/* banner */-->
+			<!--/* [D] 검색 list
+				search-result__wrap--gride 일 때 아래  클래스 별 최대 높이값 적용
+				.search-result--product, .product-img, .product-details__title, .product-price-ratings, .product-serial, .product-price-ratings, .price-suggested, .family-option
+				
+				단, 해상도 640 이하일 경우 search-result__wrap--gride / search-result__wrap--list 구분없이 높이 적용 하지 않음(모두 list 스타일)
+				예외 : .search-result--app-display 의 경우 해상도 640 이하 일때도 높이 적용(gride 스타일) / 480 이하일 때 높이 적용하지 않음(list 스타일)
+			 */-->
+
+			<!--/* 검색 all */-->
+			<!--/* 검색 all : group + gride view */-->
+			<div id="main_result_view"><div class="js-result-grid"><div class="result-group"><div class="group-header"><h2><a href="javascript:void(0);" onclick="addContentSource('category','Products','C10000000','150');">Products</a></h2><p class="result-summery"><em>150</em> Result(s) for "<em>phone business</em>"</p></div><a href="javascript:void(0);" onclick="addContentSource('category','Products','C10000000','150');" data-omni="view Products" class="view-all">View Products</a><div class="search-result__wrap search-result__wrap--gride"><ul class="search-result__list"><li class="search-result--product" id="gridProducts0" style="height: 344px;"><div class="product-img" style="height: 180px;"><a href="http://www.samsung.com/ca/smartphones/galaxy-s7-g930w8/SM-G930WZKAXAC/" name="detailPageLink" link_info="/ca/smartphones/galaxy-s7-g930w8/SM-G930WZKAXAC/@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/smartphones/galaxy-s7-g930w8/SM-G930WZKAXAC/" class="product-img__link"><img src="Samsung%20CA_files/ca-galaxy-s7-g930w8-sm-g930wzkaxac-001-front-black-thumb-1.png" alt="Side R Gold" width="180" height="180"></a><button type="button" class="btn-ico-zoom" onclick="javascript:showImage('ca-galaxy-s7-g930w8-sm-g930wzkaxac-000000001-front-black,ca-galaxy-s7-g930w8-sm-g930wzkaxac-000000002-back-black,ca-galaxy-s7-g930w8-sm-g930wzkaxac-000000003-30l-black,ca-galaxy-s7-g930w8-sm-g930wzkaxac-000000004-30-black,ca-galaxy-s7-g930w8-sm-g930wzkaxac-000000005-sidel-black,ca-galaxy-s7-g930w8-sm-g930wzkaxac-000000006-sider-black','Galaxy S7','SM-G930WZKAXAC','','870','$870.00','870','$870.00','113','82','/ca/smartphones/galaxy-s7-g930w8/SM-G930WZKAXAC/','/ca/smartphones/galaxy-s7-g930w8/SM-G930WZKAXAC/#reviews','','','','','','ca-galaxy-s7-g930w8-sm-g930wzkaxac-000000001-front-black,ca-galaxy-s7-g930w8-sm-g930wzkaxac-000000002-back-black,ca-galaxy-s7-g930w8-sm-g930wzkaxac-000000003-30l-black,ca-galaxy-s7-g930w8-sm-g930wzkaxac-000000004-30-black,ca-galaxy-s7-g930w8-sm-g930wzkaxac-000000005-sidel-black,ca-galaxy-s7-g930w8-sm-g930wzkaxac-000000006-sider-black');"><span>Zoom</span></button></div><div class="product-details"><div class="product-details__title" style="height: 20px;"><a href="http://www.samsung.com/ca/smartphones/galaxy-s7-g930w8/SM-G930WZKAXAC/" name="detailPageLink" link_info="/ca/smartphones/galaxy-s7-g930w8/SM-G930WZKAXAC/@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/smartphones/galaxy-s7-g930w8/SM-G930WZKAXAC/">Galaxy S7</a></div><div class="product-info"><div class="product-info-data"><div class="product-price-ratings"></div><div class="product-energy-label"></div><div class="family-option" style="height: 30px;"><div class="customizations color"><em class="custom-type" data-omni="color|sm-g930w8|sm-g930wzkaxac">Color</em><ul class="customizations-option"><li aria-disabled="false"><button type="button" class="selected" title="black" style="background:#000000" onclick="javascript:fmyChipchange('0','0','gridProducts0','#000000','COLOR','COLOR:#000000','grid');"><span>black</span></button></li><li aria-disabled="false"><button type="button" class="" title="silver" style="background:#dbdbdb" onclick="javascript:fmyChipchange('0','0','gridProducts0','#dbdbdb','COLOR','COLOR:#000000','grid');"><span>silver</span></button></li><li aria-disabled="false"><button type="button" class="" title="gold" style="background:#e1dec4" onclick="javascript:fmyChipchange('0','0','gridProducts0','#e1dec4','COLOR','COLOR:#000000','grid');"><span>gold</span></button></li></ul></div></div><a href="javascript:void(0);" class="btn-find-online js-cta-buy-etc" data-iacode="11010100" data-modelcode="SM-G930WZKAXAC" data-omni-type="where to buy" data-omni="sm-g930w8|sm-g930wzkaxac">Where to Buy</a></div><ul class="product-highlights"><li><em class="figure"><img src="Samsung%20CA_files/feature-icon-fingerprint-sensor-black.svg" alt="Fingerprint Sensor" width="50" height="60"></em>Fingerprint Sensor</li><li><em class="figure"><img src="Samsung%20CA_files/feature-icon-samsung-pay-black.svg" alt="Samsung Pay" width="50" height="60"></em>Samsung Pay</li><li>5.1" (129.2mm)<br>Size (Main Display)</li><li>Dual Pixel 12.0 MP<br>Main Camera - Resolution</li></ul>	</div><div class="product-links"><button type="button" class="owners-support">product-links<span class="icon-arrow"></span></button><ul class="link-group"><li><a href="http://www.samsung.com/ca/smartphones/galaxy-s7-g930w8/SM-G930WZKAXAC/#specs" title="Specs" name="detailPageLink" link_info="/ca/smartphones/galaxy-s7-g930w8/SM-G930WZKAXAC/#specs@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/smartphones/galaxy-s7-g930w8/SM-G930WZKAXAC/">Specs</a></li><li><a href="http://www.samsung.com/ca/support/model/SM-G930WZKAXAC" title="Support" name="detailPageLink" link_info="/ca/support/model/SM-G930WZKAXAC@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/smartphones/galaxy-s7-g930w8/SM-G930WZKAXAC/">Support</a></li><li><a href="http://www.samsung.com/ca/support/model/SM-G930WZKAXAC#get-tips" title="Manuals" name="detailPageLink" link_info="/ca/support/model/SM-G930WZKAXAC#get-tips@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/smartphones/galaxy-s7-g930w8/SM-G930WZKAXAC/">Manuals</a></li><li><a href="http://www.samsung.com/ca/support/model/SM-G930WZKAXAC#commonHelp" title="Answers" name="detailPageLink" link_info="/ca/support/model/SM-G930WZKAXAC#commonHelp@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/smartphones/galaxy-s7-g930w8/SM-G930WZKAXAC/">Answers</a></li><li><a href="http://www.samsung.com/ca/smartphones/galaxy-s7-g930w8/SM-G930WZKAXAC/#related" title="Accessories" name="detailPageLink" link_info="/ca/smartphones/galaxy-s7-g930w8/SM-G930WZKAXAC/#related@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/smartphones/galaxy-s7-g930w8/SM-G930WZKAXAC/">Accessories</a></li><li><a href="http://www.samsung.com/ca/business/business-products/smartphones/smartphones/SM-G930WZKAXAC" title="For Business" name="detailPageLink" link_info="/ca/business/business-products/smartphones/smartphones/SM-G930WZKAXAC@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/smartphones/galaxy-s7-g930w8/SM-G930WZKAXAC/">For Business</a></li><li><a href="https://cybersvc2.samsungcsportal.com/ca/index?language=en" target="_blank" title="Register" name="detailPageLink" link_info="https://cybersvc2.samsungcsportal.com/ca/index?language=en@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/smartphones/galaxy-s7-g930w8/SM-G930WZKAXAC/">Register</a></li></ul></div></div></li><li class="search-result--product" id="gridProducts1" style="height: 344px;"><div class="product-img" style="height: 180px;"><a href="http://www.samsung.com/ca/smartphones/galaxy-s6-edge-g925w/" name="detailPageLink" link_info="/ca/smartphones/galaxy-s6-edge-g925w/@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/smartphones/galaxy-s6-edge-g925w/" class="product-img__link"><img src="Samsung%20CA_files/ca-galaxy-s6-edge-g925w-sm-g925wzkabmc-f-001-front-black-thu.png" alt="Front Black" width="180" height="180"></a><button type="button" class="btn-ico-zoom" onclick="javascript:showImage('ca-galaxy-s6-edge-g925w-sm-g925wzkabmc-f-001-front-black-thumb-1','Galaxy S6 edge','SM-G925WZKABMC','','0','','0','','34','84','/ca/smartphones/galaxy-s6-edge-g925w/','/ca/smartphones/galaxy-s6-edge-g925w/#reviews','','','','','','ca-galaxy-s6-edge-g925w-sm-g925wzkabmc-f-001-front-black-thumb-1');"><span>Zoom</span></button></div><div class="product-details"><div class="product-details__title" style="height: 20px;"><a href="http://www.samsung.com/ca/smartphones/galaxy-s6-edge-g925w/" name="detailPageLink" link_info="/ca/smartphones/galaxy-s6-edge-g925w/@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/smartphones/galaxy-s6-edge-g925w/">Galaxy S6 edge</a></div><div class="product-info"><div class="product-info-data"><div class="product-price-ratings"></div><div class="product-energy-label"></div><div class="family-option" style="height: 30px;"><div class="customizations color"><em class="custom-type" data-omni="color|sm-g925w8|sm-g925wzkabmc">Color</em><ul class="customizations-option"><li aria-disabled="false"><button type="button" class="selected" title="black" style="background:#000000" onclick="javascript:fmyChipchange('0','1','gridProducts1','#000000','COLOR','COLOR:#000000','grid');"><span>black</span></button></li><li aria-disabled="false"><button type="button" class="" title="gold" style="background:#e1dec4" onclick="javascript:fmyChipchange('0','1','gridProducts1','#e1dec4','COLOR','COLOR:#000000','grid');"><span>gold</span></button></li><li aria-disabled="false"><button type="button" class="" title="white" style="background:#ffffff" onclick="javascript:fmyChipchange('0','1','gridProducts1','#ffffff','COLOR','COLOR:#000000','grid');"><span>white</span></button></li></ul></div></div><a href="javascript:void(0);" class="btn-find-online js-cta-buy-etc" data-iacode="11010100" data-modelcode="SM-G925WZKABMC" data-omni-type="where to buy" data-omni="sm-g925w8|sm-g925wzkabmc">Where to Buy</a></div><ul class="product-highlights"><li><em class="figure"><img src="Samsung%20CA_files/feature-icon-edge-display-black.svg" alt="Edge Display" width="50" height="60"></em>Edge Display</li><li><em class="figure"><img src="Samsung%20CA_files/feature-icon-wireless-charging-black.svg" alt="Wireless Charging" width="50" height="60"></em>Wireless Charging</li><li>5.1" (129.2mm)<br>Size (Main Display)</li><li>CMOS 16.0 MP<br>Main Camera - Resolution</li></ul>	</div><div class="product-links"><button type="button" class="owners-support">product-links<span class="icon-arrow"></span></button><ul class="link-group"><li><a href="http://www.samsung.com/ca/smartphones/galaxy-s6-edge-g925w/#specs" title="Specs" name="detailPageLink" link_info="/ca/smartphones/galaxy-s6-edge-g925w/#specs@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/smartphones/galaxy-s6-edge-g925w/">Specs</a></li><li><a href="http://www.samsung.com/ca/support/model/SM-G925WZKABMC" title="Support" name="detailPageLink" link_info="/ca/support/model/SM-G925WZKABMC@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/smartphones/galaxy-s6-edge-g925w/">Support</a></li><li><a href="http://www.samsung.com/ca/support/model/SM-G925WZKABMC#get-tips" title="Manuals" name="detailPageLink" link_info="/ca/support/model/SM-G925WZKABMC#get-tips@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/smartphones/galaxy-s6-edge-g925w/">Manuals</a></li><li><a href="http://www.samsung.com/ca/support/model/SM-G925WZKABMC#commonHelp" title="Answers" name="detailPageLink" link_info="/ca/support/model/SM-G925WZKABMC#commonHelp@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/smartphones/galaxy-s6-edge-g925w/">Answers</a></li><li><a href="http://www.samsung.com/ca/smartphones/galaxy-s6-edge-g925w/#related" title="Accessories" name="detailPageLink" link_info="/ca/smartphones/galaxy-s6-edge-g925w/#related@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/smartphones/galaxy-s6-edge-g925w/">Accessories</a></li><li><a href="http://www.samsung.com/ca/business/business-products/smartphones/smartphones/SM-G925WZKABMC" title="For Business" name="detailPageLink" link_info="/ca/business/business-products/smartphones/smartphones/SM-G925WZKABMC@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/smartphones/galaxy-s6-edge-g925w/">For Business</a></li><li><a href="https://cybersvc2.samsungcsportal.com/ca/index?language=en" target="_blank" title="Register" name="detailPageLink" link_info="https://cybersvc2.samsungcsportal.com/ca/index?language=en@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/smartphones/galaxy-s6-edge-g925w/">Register</a></li></ul></div></div></li><li class="search-result--product" id="gridProducts2" style="height: 344px;"><div class="product-img" style="height: 180px;"><a href="http://www.samsung.com/ca/smartphones/galaxy-s7-edge-g935w8/SM-G935WZKAXAC/" name="detailPageLink" link_info="/ca/smartphones/galaxy-s7-edge-g935w8/SM-G935WZKAXAC/@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/smartphones/galaxy-s7-edge-g935w8/SM-G935WZKAXAC/" class="product-img__link"><img src="Samsung%20CA_files/ca-galaxy-s7-edge-g935w8-sm-g935wzkaxac-001-front-black-thum.png" alt="Side L Ssilver" width="180" height="180"></a><button type="button" class="btn-ico-zoom" onclick="javascript:showImage('ca-galaxy-s7-edge-g935w8-sm-g935wzkaxac-002-front-black,ca-galaxy-s7-edge-g935w8-sm-g935wzkaxac-003-back-black,ca-galaxy-s7-edge-g935w8-sm-g935wzkaxac-004-30l-black,ca-galaxy-s7-edge-g935w8-sm-g935wzkaxac-005-30r-black,ca-galaxy-s7-edge-g935w8-sm-g935wzkaxac-006-sidel-black-10059294069695,ca-galaxy-s7-edge-g935w8-sm-g935wzkaxac-007-sider-black','Galaxy S7 edge','SM-G935WZKAXAC','','1000','$1,000.00','1000','$1,000.00','40','74','/ca/smartphones/galaxy-s7-edge-g935w8/SM-G935WZKAXAC/','/ca/smartphones/galaxy-s7-edge-g935w8/SM-G935WZKAXAC/#reviews','','','','','','ca-galaxy-s7-edge-g935w8-sm-g935wzkaxac-002-front-black,ca-galaxy-s7-edge-g935w8-sm-g935wzkaxac-003-back-black,ca-galaxy-s7-edge-g935w8-sm-g935wzkaxac-004-30l-black,ca-galaxy-s7-edge-g935w8-sm-g935wzkaxac-005-30r-black,ca-galaxy-s7-edge-g935w8-sm-g935wzkaxac-006-sidel-black-10059294069695,ca-galaxy-s7-edge-g935w8-sm-g935wzkaxac-007-sider-black');"><span>Zoom</span></button></div><div class="product-details"><div class="product-details__title" style="height: 20px;"><a href="http://www.samsung.com/ca/smartphones/galaxy-s7-edge-g935w8/SM-G935WZKAXAC/" name="detailPageLink" link_info="/ca/smartphones/galaxy-s7-edge-g935w8/SM-G935WZKAXAC/@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/smartphones/galaxy-s7-edge-g935w8/SM-G935WZKAXAC/">Galaxy S7 edge</a></div><div class="product-info"><div class="product-info-data"><div class="product-price-ratings"></div><div class="product-energy-label"></div><div class="family-option" style="height: 30px;"><div class="customizations color"><em class="custom-type" data-omni="color|sm-g935w8|sm-g935wzkaxac">Color</em><ul class="customizations-option"><li aria-disabled="false"><button type="button" class="selected" title="black" style="background:#000000" onclick="javascript:fmyChipchange('0','2','gridProducts2','#000000','COLOR','COLOR:#000000','grid');"><span>black</span></button></li><li aria-disabled="false"><button type="button" class="" title="bluecoral" style="background:#9bbedc" onclick="javascript:fmyChipchange('0','2','gridProducts2','#9bbedc','COLOR','COLOR:#000000','grid');"><span>bluecoral</span></button></li><li aria-disabled="false"><button type="button" class="" title="silver" style="background:#dbdbdb" onclick="javascript:fmyChipchange('0','2','gridProducts2','#dbdbdb','COLOR','COLOR:#000000','grid');"><span>silver</span></button></li><li aria-disabled="false"><button type="button" class="" title="gold" style="background:#e1dec4" onclick="javascript:fmyChipchange('0','2','gridProducts2','#e1dec4','COLOR','COLOR:#000000','grid');"><span>gold</span></button></li></ul></div></div><a href="javascript:void(0);" class="btn-find-online js-cta-buy-etc" data-iacode="11010100" data-modelcode="SM-G935WZKAXAC" data-omni-type="where to buy" data-omni="sm-g935w8|sm-g935wzkaxac">Where to Buy</a></div><ul class="product-highlights"><li><em class="figure"><img src="Samsung%20CA_files/feature-icon-edge-display-black.svg" alt="Edge Display" width="50" height="60"></em>Edge Display</li><li><em class="figure"><img src="Samsung%20CA_files/feature-icon-fingerprint-sensor-black.svg" alt="Fingerprint Sensor" width="50" height="60"></em>Fingerprint Sensor</li><li>5.5" (139.5mm)<br>Size (Main Display)</li><li>Dual Pixel 12.0 MP<br>Main Camera - Resolution</li></ul>	</div><div class="product-links"><button type="button" class="owners-support">product-links<span class="icon-arrow"></span></button><ul class="link-group"><li><a href="http://www.samsung.com/ca/smartphones/galaxy-s7-edge-g935w8/SM-G935WZKAXAC/#specs" title="Specs" name="detailPageLink" link_info="/ca/smartphones/galaxy-s7-edge-g935w8/SM-G935WZKAXAC/#specs@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/smartphones/galaxy-s7-edge-g935w8/SM-G935WZKAXAC/">Specs</a></li><li><a href="http://www.samsung.com/ca/support/model/SM-G935WZKAXAC" title="Support" name="detailPageLink" link_info="/ca/support/model/SM-G935WZKAXAC@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/smartphones/galaxy-s7-edge-g935w8/SM-G935WZKAXAC/">Support</a></li><li><a href="http://www.samsung.com/ca/support/model/SM-G935WZKAXAC#get-tips" title="Manuals" name="detailPageLink" link_info="/ca/support/model/SM-G935WZKAXAC#get-tips@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/smartphones/galaxy-s7-edge-g935w8/SM-G935WZKAXAC/">Manuals</a></li><li><a href="http://www.samsung.com/ca/support/model/SM-G935WZKAXAC#commonHelp" title="Answers" name="detailPageLink" link_info="/ca/support/model/SM-G935WZKAXAC#commonHelp@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/smartphones/galaxy-s7-edge-g935w8/SM-G935WZKAXAC/">Answers</a></li><li><a href="http://www.samsung.com/ca/smartphones/galaxy-s7-edge-g935w8/SM-G935WZKAXAC/#related" title="Accessories" name="detailPageLink" link_info="/ca/smartphones/galaxy-s7-edge-g935w8/SM-G935WZKAXAC/#related@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/smartphones/galaxy-s7-edge-g935w8/SM-G935WZKAXAC/">Accessories</a></li><li><a href="http://www.samsung.com/ca/business/business-products/smartphones/smartphones/SM-G935WZKAXAC" title="For Business" name="detailPageLink" link_info="/ca/business/business-products/smartphones/smartphones/SM-G935WZKAXAC@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/smartphones/galaxy-s7-edge-g935w8/SM-G935WZKAXAC/">For Business</a></li><li><a href="https://cybersvc2.samsungcsportal.com/ca/index?language=en" target="_blank" title="Register" name="detailPageLink" link_info="https://cybersvc2.samsungcsportal.com/ca/index?language=en@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/smartphones/galaxy-s7-edge-g935w8/SM-G935WZKAXAC/">Register</a></li></ul></div></div></li></ul></div></div></div><div class="js-result-grid"><div class="result-group"><div class="group-header"><h2><a href="javascript:void(0);" onclick="addContentSource('category','Accessories','C20000000','21');">Accessories</a></h2><p class="result-summery"><em>21</em> Result(s) for "<em>phone business</em>"</p></div><a href="javascript:void(0);" onclick="addContentSource('category','Accessories','C20000000','21');" data-omni="view Accessories" class="view-all">View Accessories</a><div class="search-result__wrap search-result__wrap--gride"><ul class="search-result__list"><li class="search-result--product" id="gridAccessories0" style="height: 323px;"><div class="product-img" style="height: 180px;"><a href="http://www.samsung.com/ca/printer-supplies/toner-scx-d6555a/" name="detailPageLink" link_info="/ca/printer-supplies/toner-scx-d6555a/@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/printer-supplies/toner-scx-d6555a/" class="product-img__link"><img src="Samsung%20CA_files/ca-toner-scx-d6555a-scx-d6555a-see-001-front-black-thumb-1.png" alt="Front Black" width="180" height="180"></a><button type="button" class="btn-ico-zoom" onclick="javascript:showImage('ca-toner-scx-d6555a-scx-d6555a-see-001-front-black','SCX-D6555A  Black Toner (25,000 pages)','SCX-D6555A/SEE','','','','','','0','0','/ca/printer-supplies/toner-scx-d6555a/','/ca/printer-supplies/toner-scx-d6555a/#reviews','','','','','','ca-toner-scx-d6555a-scx-d6555a-see-001-front-black');"><span>Zoom</span></button></div><div class="product-details"><div class="product-details__title" style="height: 39px;"><a href="http://www.samsung.com/ca/printer-supplies/toner-scx-d6555a/" name="detailPageLink" link_info="/ca/printer-supplies/toner-scx-d6555a/@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/printer-supplies/toner-scx-d6555a/">SCX-D6555A  Black Toner (25,000 pages)</a></div><div class="product-info"><div class="product-info-data"><div class="product-price-ratings"></div><div class="product-energy-label"></div><div class="family-option"></div><a href="javascript:void(0);" class="btn-find-online js-cta-buy-etc" data-iacode="15020600" data-modelcode="SCX-D6555A/SEE" data-omni-type="where to buy" data-omni="scx-d6555a|scx-d6555a/see">Where to Buy</a></div></div><div class="product-links"><button type="button" class="owners-support">product-links<span class="icon-arrow"></span></button><ul class="link-group"><li><a href="http://www.samsung.com/ca/business/business-products/printers-multifunction/supplies-and-accessories/SCX-D6555A/SEE" title="For Business" name="detailPageLink" link_info="/ca/business/business-products/printers-multifunction/supplies-and-accessories/SCX-D6555A/SEE@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/printer-supplies/toner-scx-d6555a/">For Business</a></li><li><a href="https://cybersvc2.samsungcsportal.com/ca/index?language=en" target="_blank" title="Register" name="detailPageLink" link_info="https://cybersvc2.samsungcsportal.com/ca/index?language=en@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/printer-supplies/toner-scx-d6555a/">Register</a></li></ul></div></div></li><li class="search-result--product" id="gridAccessories1" style="height: 323px;"><div class="product-img" style="height: 180px;"><a href="http://www.samsung.com/ca/printer-supplies/toner-clp-c660b/" name="detailPageLink" link_info="/ca/printer-supplies/toner-clp-c660b/@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/printer-supplies/toner-clp-c660b/" class="product-img__link"><img src="Samsung%20CA_files/ca-toner-clp-c660b-clp-c660b-see-001-dynamic-black-thumb-1.png" alt="Dynamic black" width="180" height="180"></a><button type="button" class="btn-ico-zoom" onclick="javascript:showImage('ca-toner-clp-c660b-clp-c660b-see-001-dynamic-black,ca-toner-clp-c660b-clp-c660b-see-002-right-angle-black,ca-toner-clp-c660b-clp-c660b-see-003-dynamic-black,ca-toner-clp-c660b-clp-c660b-see-004-dynamic-black,ca-toner-clp-c660b-clp-c660b-see-005-dynamic-black','CLP-C660B  Cyan Toner (5,000 pages)','CLP-C660B/SEE','','','','','','0','0','/ca/printer-supplies/toner-clp-c660b/','/ca/printer-supplies/toner-clp-c660b/#reviews','','','','','','ca-toner-clp-c660b-clp-c660b-see-001-dynamic-black,ca-toner-clp-c660b-clp-c660b-see-002-right-angle-black,ca-toner-clp-c660b-clp-c660b-see-003-dynamic-black,ca-toner-clp-c660b-clp-c660b-see-004-dynamic-black,ca-toner-clp-c660b-clp-c660b-see-005-dynamic-black');"><span>Zoom</span></button></div><div class="product-details"><div class="product-details__title" style="height: 39px;"><a href="http://www.samsung.com/ca/printer-supplies/toner-clp-c660b/" name="detailPageLink" link_info="/ca/printer-supplies/toner-clp-c660b/@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/printer-supplies/toner-clp-c660b/">CLP-C660B  Cyan Toner (5,000 pages)</a></div><div class="product-info"><div class="product-info-data"><div class="product-price-ratings"></div><div class="product-energy-label"></div><div class="family-option"></div><a href="javascript:void(0);" class="btn-find-online js-cta-buy-etc" data-iacode="15020600" data-modelcode="CLP-C660B/SEE" data-omni-type="where to buy" data-omni="clp-c660b|clp-c660b/see">Where to Buy</a></div></div><div class="product-links"><button type="button" class="owners-support">product-links<span class="icon-arrow"></span></button><ul class="link-group"><li><a href="http://www.samsung.com/ca/business/business-products/printers-multifunction/supplies-and-accessories/CLP-C660B/SEE" title="For Business" name="detailPageLink" link_info="/ca/business/business-products/printers-multifunction/supplies-and-accessories/CLP-C660B/SEE@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/printer-supplies/toner-clp-c660b/">For Business</a></li><li><a href="https://cybersvc2.samsungcsportal.com/ca/index?language=en" target="_blank" title="Register" name="detailPageLink" link_info="https://cybersvc2.samsungcsportal.com/ca/index?language=en@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/printer-supplies/toner-clp-c660b/">Register</a></li></ul></div></div></li><li class="search-result--product" id="gridAccessories2" style="height: 323px;"><div class="product-img" style="height: 180px;"><a href="http://www.samsung.com/ca/printer-supplies/toner-clp-m660a/" name="detailPageLink" link_info="/ca/printer-supplies/toner-clp-m660a/@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/printer-supplies/toner-clp-m660a/" class="product-img__link"><img src="Samsung%20CA_files/ca-toner-clp-m660a-clp-m660a-see-504-front-thumb-1.png" alt="Front Black" width="180" height="180"></a><button type="button" class="btn-ico-zoom" onclick="javascript:showImage('ca-toner-clp-m660a-clp-m660a-see-505-front','CLP-M660A  Magenta Toner (2,000 pages)','CLP-M660A/SEE','','','','','','0','0','/ca/printer-supplies/toner-clp-m660a/','/ca/printer-supplies/toner-clp-m660a/#reviews','','','','','','ca-toner-clp-m660a-clp-m660a-see-505-front');"><span>Zoom</span></button></div><div class="product-details"><div class="product-details__title" style="height: 39px;"><a href="http://www.samsung.com/ca/printer-supplies/toner-clp-m660a/" name="detailPageLink" link_info="/ca/printer-supplies/toner-clp-m660a/@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/printer-supplies/toner-clp-m660a/">CLP-M660A  Magenta Toner (2,000 pages)</a></div><div class="product-info"><div class="product-info-data"><div class="product-price-ratings"></div><div class="product-energy-label"></div><div class="family-option"></div><a href="javascript:void(0);" class="btn-find-online js-cta-buy-etc" data-iacode="15020600" data-modelcode="CLP-M660A/SEE" data-omni-type="where to buy" data-omni="clp-m660a|clp-m660a/see">Where to Buy</a></div></div><div class="product-links"><button type="button" class="owners-support">product-links<span class="icon-arrow"></span></button><ul class="link-group"><li><a href="http://www.samsung.com/ca/business/business-products/printers-multifunction/supplies-and-accessories/CLP-M660A/SEE" title="For Business" name="detailPageLink" link_info="/ca/business/business-products/printers-multifunction/supplies-and-accessories/CLP-M660A/SEE@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/printer-supplies/toner-clp-m660a/">For Business</a></li><li><a href="https://cybersvc2.samsungcsportal.com/ca/index?language=en" target="_blank" title="Register" name="detailPageLink" link_info="https://cybersvc2.samsungcsportal.com/ca/index?language=en@@http://search5.samsung.com/click?ct=c&amp;r=10&amp;q=phone%20business&amp;site=ca&amp;url=http%3A//www.samsung.com/ca/printer-supplies/toner-clp-m660a/">Register</a></li></ul></div></div></li></ul></div></div></div><div class="js-result-grid"><div class="result-group"><div class="group-header"><h2><a href="javascript:void(0);" onclick="addContentSource('category','Support','C40000000','16');">Support</a></h2><p class="result-summery"><em>16</em> Result(s) for "<em>phone business</em>"</p></div><a href="javascript:void(0);" onclick="addContentSource('category','Support','C40000000','16');" data-omni="view Support" class="view-all">View Support</a><div class="search-result__wrap search-result__wrap--gride"><ul class="search-result__list"><li class="search-result--article" style="height: 404px;"><div class="product-img" style="height: 180px;"><a href="http://www.samsung.com/ca/support/skp/htv/5394" class="product-img__link"><img src="Samsung%20CA_files/common-search-img_search_support.jpg" alt="null" width="180" height="180"></a></div><div class="article-details"><div class="article-details__title" style="height: 39px;"><a href="http://www.samsung.com/ca/support/skp/htv/5394">ATIV <b>Smart</b> PC Overview</a></div><p class="article-serial" style="height: 16px;">Support</p><div class="article-info" style="height: 98px;"><b>...</b> help,customer,service,Microsoft,Technology,Management,Tips,System,Software,<br> Need,Information,Data,Tutorial,Office,<b>Business</b>,Microsoft Office <b>...</b>  </div></div></li><li class="search-result--article" style="height: 404px;"><div class="product-img" style="height: 180px;"><a href="http://www.samsung.com/ca/support/skp/htv/9340" class="product-img__link"><img src="Samsung%20CA_files/common-search-img_search_support.jpg" alt="null" width="180" height="180"></a></div><div class="article-details"><div class="article-details__title" style="height: 39px;"><a href="http://www.samsung.com/ca/support/skp/htv/9340">Galaxy S4 Mini - Setting Up Email - Personal and Corporate</a></div><p class="article-serial" style="height: 16px;">Support</p><div class="article-info" style="height: 98px;"><b>...</b> Method Of Infectious Software Transmission),<b>Business</b>,Training,Personal <b>...</b> I257M<br> 10001 Mobile Device 19 <b>Phone</b> &amp; Tablet 1903 <b>Smart Phones</b>. </div></div></li><li class="search-result--article" style="height: 404px;"><div class="product-img" style="height: 180px;"><a href="http://www.samsung.com/ca/support/skp/htv/9339" class="product-img__link"><img src="Samsung%20CA_files/common-search-img_search_support.jpg" alt="null" width="180" height="180"></a></div><div class="article-details"><div class="article-details__title" style="height: 39px;"><a href="http://www.samsung.com/ca/support/skp/htv/9339">Galaxy S4 Mini - Using S Voice</a></div><p class="article-serial" style="height: 16px;">Support</p><div class="article-info" style="height: 98px;"><b>...</b> Tutorial,samsung,Galaxy,Samsung Electronics (<b>Business</b> Operation),application <b>...</b><br> 10001 Mobile Device 19 <b>Phone</b> &amp; Tablet 1903 <b>Smart Phones</b>. </div></div></li></ul></div></div></div><div class="js-result-grid"><div class="result-group"><div class="group-header"><h2><a href="javascript:void(0);" onclick="addContentSource('category','News','C60000000','27');">News</a></h2><p class="result-summery"><em>27</em> Result(s) for "<em>phone business</em>"</p></div><a href="javascript:void(0);" onclick="addContentSource('category','News','C60000000','27');" data-omni="view News" class="view-all">View News</a><div class="search-result__wrap search-result__wrap--gride"><ul class="search-result__list"><li class="search-result--article" style="height: 404px;"><div class="product-img" style="height: 180px;"><a href="http://www.samsung.com/ca/aboutsamsung/samsungelectronics/businessArea/businessarea/" class="product-img__link"><img src="Samsung%20CA_files/common-search-img_search_news.jpg" alt="null" width="180" height="180"></a></div><div class="article-details"><div class="article-details__title" style="height: 39px;"><a href="http://www.samsung.com/ca/aboutsamsung/samsungelectronics/businessArea/businessarea/"><b>Business</b> Area | Samsung Electronics | About Us | Samsung <b>...</b></a></div><p class="article-serial" style="height: 16px;">News</p><div class="article-info" style="height: 98px;"><b>...</b> Visual Display <b>Business</b> Our astute strategy for the evolutionary <b>Smart</b><br> TV and premium large size TVs solidified our No. <b>...</b>  </div></div></li><li class="search-result--article" style="height: 404px;"><div class="product-img" style="height: 180px;"><a href="http://www.samsung.com/ca/aboutsamsung/samsung/history/" class="product-img__link"><img src="Samsung%20CA_files/common-search-img_search_news.jpg" alt="null" width="180" height="180"></a></div><div class="article-details"><div class="article-details__title" style="height: 39px;"><a href="http://www.samsung.com/ca/aboutsamsung/samsung/history/">History | Samsung | About Us | Samsung CA</a></div><p class="article-serial" style="height: 16px;">News</p><div class="article-info" style="height: 98px;"><b>...</b> of LED displays, and launched its LED signage <b>business</b>; <b>...</b> bestowed the Best<br> <b>Smart Phone</b> award at <b>...</b> 10M pixel camera <b>phone</b>; Samsung Electronics <b>...</b>  </div></div></li><li class="search-result--article" style="height: 404px;"><div class="product-img" style="height: 180px;"><a href="http://www.samsung.com/ca/aboutsamsung/samsung/history_02/" class="product-img__link"><img src="Samsung%20CA_files/common-search-img_search_news.jpg" alt="null" width="180" height="180"></a></div><div class="article-details"><div class="article-details__title" style="height: 39px;"><a href="http://www.samsung.com/ca/aboutsamsung/samsung/history_02/">History | Samsung | About Us | Samsung CA</a></div><p class="article-serial" style="height: 16px;">News</p><div class="article-info" style="height: 98px;"><b>...</b> Samsung Electronics sold more than 20 million cellular <b>phones</b> in the <b>...</b> Samsung<br> Electronics ranked top in mobile <b>phone</b> sales in Russia; Samsung <b>...</b>  </div></div></li></ul></div></div></div><div class="js-result-grid"><div class="result-group"><div class="group-header"><h2><a href="javascript:void(0);" onclick="addContentSource('category','Others','C70000000','37');">Others</a></h2><p class="result-summery"><em>37</em> Result(s) for "<em>phone business</em>"</p></div><a href="javascript:void(0);" onclick="addContentSource('category','Others','C70000000','37');" data-omni="view Others" class="view-all">View Others</a><div class="search-result__wrap search-result__wrap--gride"><ul class="search-result__list"><li class="search-result--article" style="height: 404px;"><div class="product-img" style="height: 180px;"><a href="http://www.samsung.com/ca/business/insights/news/samsung-printing-solutions-launches-smart-ux-center-online-event" class="product-img__link"><img src="Samsung%20CA_files/common-search-img_search_others.jpg" alt="null" width="180" height="180"></a></div><div class="article-details"><div class="article-details__title" style="height: 39px;"><a href="http://www.samsung.com/ca/business/insights/news/samsung-printing-solutions-launches-smart-ux-center-online-event">Samsung Printing Solutions Launches <b>Smart</b> UX Center <b>...</b></a></div><p class="article-serial" style="height: 16px;">Others</p><div class="article-info" style="height: 98px;">/data/gsa/bulker/download/b2bresource_content/rdbms_7440981467<br> 7888231.tmp. Solutions &amp; Services Solutions &amp; Services <b>...</b>  </div></div></li><li class="search-result--article" style="height: 404px;"><div class="product-img" style="height: 180px;"><a href="http://www.samsung.com/ca/business/insights/solution-brief/why-samsung-smart-signage" class="product-img__link"><img src="Samsung%20CA_files/common-search-img_search_others.jpg" alt="null" width="180" height="180"></a></div><div class="article-details"><div class="article-details__title" style="height: 39px;"><a href="http://www.samsung.com/ca/business/insights/solution-brief/why-samsung-smart-signage">Why Samsung <b>Smart</b> Signage?</a></div><p class="article-serial" style="height: 16px;">Others</p><div class="article-info" style="height: 98px;"><b>...</b> provider backed by 6 years of market leadership. <b>Business</b> products<br> <b>Business</b> products <b>SMART</b> Signage <b>SMART</b> Signage </div></div></li><li class="search-result--article" style="height: 404px;"><div class="product-img" style="height: 180px;"><a href="http://www.samsung.com/ca/business/insights/demo/smart-signage-tv-from-unboxing-to-installation" class="product-img__link"><img src="Samsung%20CA_files/common-search-img_search_others.jpg" alt="null" width="180" height="180"></a></div><div class="article-details"><div class="article-details__title" style="height: 39px;"><a href="http://www.samsung.com/ca/business/insights/demo/smart-signage-tv-from-unboxing-to-installation"><b>SMART</b> Signage TV - From Unboxing To Installation</a></div><p class="article-serial" style="height: 16px;">Others</p><div class="article-info" style="height: 98px;">A How-To video that walks you through the simple steps of installing <b>SMART</b><br> Signage TV <b>Business</b> products <b>Business</b> products <b>SMART</b> Signage <b>...</b>  </div></div></li></ul></div></div></div></div>
+
+			<!--/* 검색 : list view */-->
+			
+			<div id="list_result_view"></div>
+
+			<!--/* pagination */-->
+			<div class="result-pagination"></div>
+			<!--/* pagination */-->
+		</div>
+	</div>
+	<!--/* result contents */-->
+	<!--/* 검색 : no result */-->
+	<div id="no_result_view"></div>
+	<!--/* 검색 : no result */-->
+</div>
+
+<!--/* loader type1 : black */-->
+ <div class="cm-loader cm-loader-type1" style="display: none;">
+	<div class="cm-loader__spinner">
+		<div class="cm-loader__bounce cm-loader__bounce1"></div>
+		<div class="cm-loader__bounce cm-loader__bounce2"></div>
+		<div class="cm-loader__bounce cm-loader__bounce3"></div>
+		<div class="cm-loader__bounce cm-loader__bounce4"></div>
+	</div>
+</div>
+<!--/* loader type1 end */-->
+
+<!--/* zoom layerpopup */-->
+<div class="zoomin-overlay" style="display:none;">
+	<div class="zoomin-overlay__container">
+		<!--/* zoomin contents */-->
+		<!--/* [D] zoomin-overlay__container height - (height : 52px + .zoomin-overlay__footer height) */-->
+		<div class="zoomin-overlay__slides">
+			<!-- <div class="zoomin-overlay-slideshow"> -->
+			<div class="js-search-result-carousel zoomin-overlay-slideshow" id="layerpopimage"></div>
+		</div>
+		<!--/* zoomin contents */-->
+
+		<!--/* zoomin footer */-->
+		<div class="zoomin-overlay__footer">
+			<div class="product-details__title" id="newTitle"></div>
+			<div class="product-price-ratings">
+				<em class="product-price" id="newPrice"></em>
+				<p class="review-ratings" id="newRating">
+					<!--/* [D] star : width * 0.05 */-->
+					<span class="result-stars">
+						<span class="result-stars-rating" style="width: %" title="2.5 stars"> </span>
+					</span>
+					<a href="#" class="overview-review"> </a>
+				</p>
+			</div>
+			<!-- /* energy-label */ -->
+			<p class="s-energy-label" id="energyLabelTag">
+			</p>
+			<!-- /* energy-label */ -->
+		</div>
+		<!--/* zoomin footer */-->
+		<button type="button" class="btn-close" title="Close"><span>Close</span></button>
+	</div>
+</div>
+<!--/* zoom layerpopup */-->
+<!--/* Where to Buy 적용 :: S */-->
+<div class="cm-g-where-to-buy">
+
+<div class="s-layer-popup s-layer-where" style="display: none;">
+	
+</div>
+<!-- <div class="s-layer-dimmed" style="display: none;"></div> --> <!-- gnb에 있어서 그거 사용 -->
+<!-- i18n -->
+<input id="instock" value="In Stock" type="hidden">
+<input id="noneRetailer_f" value="We are sorry, but this product is currently not available from any of our retail partners." type="hidden">
+<input id="gotext" value="go" type="hidden">
+</div>
+
+<!--/* Where to Buy 적용 :: E */-->
+
+            <footer id="footer" role="contentinfo">
+                <!--googleoff: all-->
+                <div class="gb-footer">
+                    <div class="gb-footer__top">
+                        <div class="gb-footer__inner">
+                            <div class="gb-footer__container">
+                                <div class="gb-footer__btn-top"><a href="#" title="Back to top">Back to top</a></div>
+                                <div class="gb-footer__col-wrap">
+                                    <div class="gb-footer__nav-link gb-footer__col2">
+                                        <strong><a href="http://www.samsung.com/ca/info/sitemap/" target="_self" title="" data-omni="footer:sitemap">Sitemap</a></strong>
+                                        <ul class="gb-footer__col4">
+  <li class="gb-footer__item "><a href="http://www.samsung.com/ca/aboutsamsung/" target="_self" title="About Us" data-omni="footer:about us">About Us</a></li>
+  <li class="gb-footer__item gb-footer__blank"><a href="http://www.samsung.com/us/aboutsamsung/ir/newsMain.do" target="_blank" title="Investor : Open in a New Window" data-omni="footer:investor relations (ir)">Investor</a></li>
+  <li class="gb-footer__item "><a href="http://www.samsung.com/ca/news/" target="_self" title="News" data-omni="footer:news">News</a></li>
+  <li class="gb-footer__item gb-footer__blank"><a href="http://pages.samsung.com/ca/promotions/English/" target="_blank" title="Find Offers : Open in a New Window" data-omni="footer:find offers">Find Offers</a></li>
+  <li class="gb-footer__item gb-footer__blank"><a href="http://pages.samsung.com/ca/thesamsungstore/English/" target="_blank" title="Retail Locations : Open in a New Window" data-omni="footer:retail locations">Retail Locations</a></li>
+  <li class="gb-footer__item "><a href="http://www.samsung.com/ca/info/contactus/" target="_self" title="Contact Us" data-omni="footer:contact us">Contact Us</a></li>
+</ul>
+                                        <ul class="gb-footer__col4">
+                                            <li class="gb-footer__item gb-footer__blank"><a href="http://pages.samsung.com/ca/newsletteroptin/English/" target="_blank" title="Newsletter : Open in a New Window" data-omni="footer:newsletter">Newsletter</a></li>
+                                            <li class="gb-footer__item "><a href="http://www.samsung.com/ca/aboutsamsung/samsungelectronics/careers/index/" target="_self" title="Careers" data-omni="footer:Careers">Careers</a></li>
+                                            <li class="gb-footer__item "><a href="http://www.samsung.com/ca/mysamsung/main/myssMain/" target="_self" title="Samsung Account" data-omni="footer:Samsung Account">Samsung Account</a></li>
+                                            <li class="gb-footer__item "><a href="http://www.samsung.com/ca/mysamsung/product/productRegistration/" target="_self" title="Product Registration" data-omni="footer:product registration">Product Registration</a></li>
+</ul>
+                                    </div>
+                                    <div class="gb-footer__col4 s-support-link">
+                                        <strong>Need Support?</strong>
+                                        <ul class="gb-footer__depth2">
+                                            <li class="gb-footer__item gb-footer__blank">
+                                                <a title="Live Chat : Open in a New Window" href="https://sales.liveperson.net/hc/7385954/?cmd=file&amp;file=visitorWantsToChat&amp;site=7385954&amp;byherf=1&amp;SESSIONVAR%21skill=email-english" data-pop-options="{&quot;width&quot;:600, &quot;height&quot;:800}" data-omni="footer:need support_live chat" class="popWin"><span class="gb-footer__svg s-ico-chat"></span>Live Chat</a>
+                                            </li>
+                                            <li class="gb-footer__item gb-footer__blank">
+                                                <a title="Email Support : Open in a New Window" href="http://www.samsung.com/ca/support/erms1" data-pop-options="{&quot;width&quot;:600, &quot;height&quot;:800}" data-omni="footer:need support_email support" class="popWin"><span class="gb-footer__svg s-ico-email"></span>Email Support</a>
+                                            </li>
+                                            <li class="gb-footer__item">
+                                                <a title="Phone Support" href="http://www.samsung.com/ca/info/contactus/" data-omni="footer:need support_phone support"><span class="gb-footer__svg s-ico-call"></span>Phone Support</a>
+                                            </li>
+                                            <li class="gb-footer__item">
+                                                <a title="Mail Support" href="http://www.samsung.com/ca/info/contactus/" data-omni="footer:need support_mail support"><span class="gb-footer__svg s-ico-letter"></span>Mail Support</a>
+                                            </li>
+                                        </ul>
+</div>
+                                    <div class="gb-footer__col4 s-sns-link s-clear">
+                                        <div class="gb-footer__sns-list">
+                                            <strong>Stay in the loop?</strong>
+                                            <ul class="gb-footer__depth2">
+                                                <li class="gb-footer__item gb-footer__svg s-facebook">
+                                                    <a title="Facebook : Open in a New Window" data-omni="footer:facebook" href="https://www.facebook.com/SamsungCanada" target="_blank">Facebook</a>
+                                                </li>
+                                                <li class="gb-footer__item gb-footer__svg s-twitter">
+                                                    <a title="Twitter : Open in a New Window" data-omni="footer:twitter" href="https://twitter.com/samsungcanada" target="_blank">Twitter</a>
+                                                </li>
+                                                <li class="gb-footer__item gb-footer__svg s-instagram">
+                                                    <a title="Instagram : Open in a New Window" data-omni="footer:instagram" href="https://www.instagram.com/samsungcanada/" target="_blank">Instagram</a>
+                                                </li>
+                                                <li class="gb-footer__item gb-footer__svg s-youtube">
+                                                    <a title="You Tube : Open in a New Window" data-omni="footer:you tube" href="https://www.youtube.com/user/SamsungCanada" target="_blank">You Tube</a>
+                                                </li>
+                                                <li class="gb-footer__item gb-footer__svg s-emailto">
+                                                    <a title="Sign up for our newsletter : Open in a New Window" data-omni="footer:subscription / e-mail support" href="http://pages.samsung.com/ca/newsletteroptin/English/" target="_blank">Sign up for our newsletter</a>
+                                                </li>
+                                            </ul>
+</div>
+                                        <div class="gb-footer__local-logo">
+                                            <ul>
+                                                <li class="gb-footer__item"><a href="http://www.samsung.com/ca/support/essentialaccessibility/"><img src="Samsung%20CA_files/CA_EN_eSSENTIAL_Accessibility_Logo_new.png" alt="eSSENTIAL ACCESSIBILITY"></a></li>
+                                                <li class="gb-footer__item"><img src="Samsung%20CA_files/Hockey_Canada_logo_new.png" alt="Official Sponsor of Hockey Canada"></li>
+                                            </ul>
+</div>
+                                    </div>
+                                </div>
+                                <div class="gb-footer__copyright"><p class="gb-footer__text">Copyright©&nbsp;1995-2017&nbsp;SAMSUNG&nbsp;All&nbsp;Rights&nbsp;Reserved.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gb-footer__bottom">
+                        <div class="gb-footer__inner">
+                            <div class="gb-footer__container">
+                                <div class="gb-footer__bottom-list">
+                                    <ul class="gb-footer__list">
+                                        <li class="gb-footer__item"><a href="http://www.samsung.com/ca/accessibility/" title="ACCESSIBILITY HELP" data-omni="footer:bottom_ACCESSIBILITY HELP" id="accHelp">ACCESSIBILITY HELP</a></li>
+                                        <li class="gb-footer__item"><a href="http://www.samsung.com/ca/info/privacy/" title="Privacy" data-omni="footer:bottom_privacy">Privacy</a></li>
+                                        <li class="gb-footer__item"><a href="http://www.samsung.com/ca/info/legal/" title="Legal" data-omni="footer:bottom_legal">Legal</a></li>
+                                    </ul>
+                                    <div class="gb-footer__lang"><a href="http://www.samsung.com/ca/function/ipredirection/ipredirectionLocalList/" class="gb-footer__link" title="Visit your country's homepage"><img src="Samsung%20CA_files/ico_ca.gif" class="gb-footer__flag" alt=" " width="20" height="13">Canada/English</a></div>
+</div>
+                                <div class="gb-footer__legal">
+                                    <p>This website is best viewed using Internet Explorer 9, Chrome, Safari and newer browsers.</p>
+
+
+
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--googleon: all-->
+            </footer>
+            <div class="s-gotop-wrap">
+                <button class="s-btn-gotop">Go to Top</button>
+            </div>
+            
+        </div>
+        
+        <script type="text/javascript" src="Samsung%20CA_files/page.js"></script>
+<script type="text/javascript" src="Samsung%20CA_files/page-video.js"></script>
+
+
+
+<!-- PS async widget loader - place inside <head> tag --> 
+<script type="text/javascript"> try{pswtb}catch(ex){pswtb={}}if(!pswtb.loader){pswtb.loader={lsc:[],waitLoad:function(){var e= pswtb.loader;if(e.finish){for(var t=0;t<e.lsc.length;t++)e.finish(e.lsc[t].wcid);window .clearInterval(e.waitLoadTimer);e.waitLoadTimer=null}else{if(!e.waitLoadTimer) e.waitLoadTimer= window.setInterval(e.waitLoad,20)}},show:function(e){for(var t=0;t<this.lsc.length;t++)if(this .lsc[t].wcid===e.widgetConfigurationId){this.lsc[t].ops.push(e);return}var n=document .createElement("script");n.type="text/javascript";var r=e.server;n.src= (r?(r.match(/\/\//)?"":"//")+r+(r.charAt(r.length-1)==="/"?"":"/"):"//embedded.pricespider.com/") +"WidgetScript.psjs?d=al&wc="+e.widgetConfigurationId;this.lsc.push({wcid:e. widgetConfigurationId,ops:[e]});if(navigator.userAgent.match(/msie [6-7]/i)){document.write('<' +'script type="'+n.type+'" src="'+n.src.replace(/d=al&/i,"")+'"><'+"/script>");this.waitLoad(); return}var i=navigator.userAgent.match(/msie [8-9]/i);n.async=true;if(i)n.onreadystatechange= new Function("if ((/loaded|completed/i).test(this.readyState)) pswtb.loader.finish('"+e. widgetConfigurationId+"');");else n.onload=new Function("pswtb.loader.finish('"+e. widgetConfigurationId+"');");(i?document.getElementsByTagName("head")[0]:document.body) .appendChild(n)}}} </script> <!-- End of PS async widget loader -->
+<script type="text/javascript"> pswtb.loader.show({ widgetConfigurationId: '4a96fd09-09b5-4d69-a149-827916ad74bd', preload: true }); </script><script type="text/javascript" src="Samsung%20CA_files/WidgetScript.js" async=""></script>
+
+        
+        <script type="text/javascript" src="Samsung%20CA_files/page-search-ajax.js"></script>
+
+
+        <!--[if lte IE 9]> 
+		<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.3/jquery.xdomainrequest.min.js'></script> 
+		<![endif]-->
+         
+        <script type="text/javascript">_satellite.pageBottom();</script>
+		
+
+    
+
+<script type="text/javascript" src="Samsung%20CA_files/APIModules_all.js"></script><script type="text/javascript" id="ActionScript_//embeddedcloud.pricespider.com/js366/embeddedcommon.js" src="Samsung%20CA_files/embeddedcommon.js"></script><script type="text/javascript" id="ActionScript_//embeddedcloud.pricespider.com/js366/responsivecontainerv1.js" src="Samsung%20CA_files/responsivecontainerv1.js"></script></body></html>
