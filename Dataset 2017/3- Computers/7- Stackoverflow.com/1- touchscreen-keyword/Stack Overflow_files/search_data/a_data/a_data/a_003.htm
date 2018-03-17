@@ -1,0 +1,30 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script>
+    (function () {
+      window.isVisible = function(id, source) {
+        var threshold = 24;
+        var stepsNeedToBeRun = 2;
+        var responseFinished = false;
+        var stepsNum = 0;
+        var last = performance.now();
+        var step = function(now) {
+          if (stepsNum !== stepsNeedToBeRun && !responseFinished) {
+            window.requestAnimationFrame(step);
+          }
+          if (stepsNum === stepsNeedToBeRun && !responseFinished) {
+            responseFinished = true;
+            source.postMessage(JSON.stringify({
+              id: id,
+              isVisible: now - last < threshold,
+            }), '*');
+          }
+          last = now;
+          stepsNum++;
+        };
+        window.requestAnimationFrame(step);
+      }
+      window.addEventListener('message', function (e) {
+        var id = e.data;
+        window.isVisible(id, e.source);
+      });
+    })();</script></head><body></body></html>
