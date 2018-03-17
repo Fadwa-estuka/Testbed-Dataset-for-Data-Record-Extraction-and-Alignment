@@ -1,0 +1,48 @@
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and 
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2013 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      Suomi Type Foundry
+ * License URL: http://www.fontspring.com/fflicense/suomi-type
+ *
+ *
+ */
+
+@font-face {
+    font-family: 'Grumpy Black 48';
+    src: url('Grumpy_Black48-webfont.eot?3');
+    src: url('Grumpy_Black48-webfont.eot?3?#iefix') format('embedded-opentype'),
+         url('Grumpy_Black48-webfont.woff?3') format('woff'),
+         url('Grumpy_Black48-webfont.ttf?3') format('truetype'),
+         url('Grumpy_Black48-webfont.svg?3#grumpyblack48') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Grumpy Black 48';
+    src: url('Grumpy_Black48-webfont.eot?3');
+    src: url('Grumpy_Black48-webfont.eot?3?#iefix') format('embedded-opentype'),
+         url('Grumpy_Black48-webfont.woff?3') format('woff'),
+         url('Grumpy_Black48-webfont.ttf?3') format('truetype'),
+         url('Grumpy_Black48-webfont.svg?3#grumpyblack48') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+

@@ -1,0 +1,48 @@
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and 
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2014 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      Latinotype
+ * License URL: http://www.fontspring.com/fflicense/latinotype
+ *
+ *
+ */
+
+@font-face {
+    font-family: 'Arquitecta';
+    src: url('ArquitectaBook-webfont.eot?3');
+    src: url('ArquitectaBook-webfont.eot?3#iefix') format('embedded-opentype'),
+         url('ArquitectaBook-webfont.woff?3') format('woff'),
+         url('ArquitectaBook-webfont.ttf?3') format('truetype'),
+         url('ArquitectaBook-webfont.svg?3#arquitectabook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Arquitecta';
+    src: url('ArquitectaBold-webfont.eot?3');
+    src: url('ArquitectaBold-webfont.eot?3#iefix') format('embedded-opentype'),
+         url('ArquitectaBold-webfont.woff?3') format('woff'),
+         url('ArquitectaBold-webfont.ttf?3') format('truetype'),
+         url('ArquitectaBold-webfont.svg?3#arquitecta_boldbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
