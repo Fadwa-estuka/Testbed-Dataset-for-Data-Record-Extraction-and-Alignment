@@ -1,0 +1,1 @@
+Riot.DDragon.m={"n":{"item":"7.2.1","rune":"7.2.1","mastery":"7.2.1","summoner":"7.2.1","champion":"7.2.1","profileicon":"7.2.1","map":"7.2.1","language":"7.2.1"},"v":"7.2.1","l":"en_US","cdn":"http:\/\/ddragon.leagueoflegends.com\/cdn","dd":"7.2.1","lg":"7.2.1","css":"7.2.1","profileiconmax":28,"store":null};
