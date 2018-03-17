@@ -1,0 +1,37 @@
+/*color: #393939;*/
+
+.search .search-right { width: 760px; }
+.search .search-left .search-header { display: none; }
+.search .search-header { margin: 0 20px; }
+.search .search-left li a { font-size: 13px; }
+
+.search .dynamic-menu { margin-top: 4px; }
+.search .dynamic-menu li { margin-bottom: 5px; }
+.search .dynamic-menu a { background: #6D7176; display: block; line-height: 30px; overflow: hidden; white-space: nowrap; font-weight: bold; padding: 0 10px; border-radius: 2px; color: #eeeeee; }
+.search .dynamic-menu a:hover { background: #6b7f8d; }
+.search .dynamic-menu .item-active a { background: #0078A9; color: #FFFFFF; font-weight: bold;}
+
+.search .table-options,
+.search .result .meta { color: #62737E; }
+.search .result.blizzard { margin: 20px 0 0 -10px; }
+.search .result.blizzard .subcategory { background: url("../local-common/images/icons/employee.gif") 0 50% no-repeat; padding-left: 30px; }
+.search .result.blizzard .content,
+.search .result.blizzard .author { color: #086D97; }
+.search .result.blizzard { background: #E0DFDD; padding: 10px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
+.search .helpers .category span,
+.search .helpers .sort-active { color: #000; }
+.search .sublink,
+.search .result .author { color: #448400; }
+.search .sublink:hover,
+.search .result .author:hover,
+.search .result.blizzard .author:hover,
+.search .helpers .category span,
+.search .helpers .sort-active,
+.search .result .subcategory .status { color: #000; }
+.search .table-options { margin: 0 20px; }
+.search .results { border-top: 1px solid #E0DFDD; }
+
+.icon-frame { display: inline-block; overflow: hidden; padding: 1px; background-color: #000; background-position: 1px 1px; background-repeat: no-repeat; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+.icon-frame img { display: block; vertical-align: bottom; }
+.icon-frame.frame-56 { height: 56px; width: 56px; -moz-box-shadow: #000 0 0 10px; -webkit-box-shadow: #000 0 0 10px; box-shadow: #000 0 0 10px; }
+.icon-frame.frame-32 { height: 32px; width: 32px; -moz-box-shadow: #000 0 0 5px; -webkit-box-shadow: #000 0 0 5px; box-shadow: #000 0 0 5px; }
