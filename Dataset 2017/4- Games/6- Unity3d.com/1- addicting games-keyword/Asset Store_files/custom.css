@@ -1,0 +1,31 @@
+/* example of a custom style for the home page (as0) */
+/*
+.as0 { background: -webkit-gradient(linear, left top, left bottom, from(#00081a), to(#000612), color-stop(0.2, black)); color: #999; }
+#ashom0 .item, .as0 .item{ background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.05)), to(rgba(255,255,255,0.01))) no-repeat; border: 1px solid rgba(255,255,255,0.07); background-position: center top;}
+#ashom0 h1, .as0 h1 { -webkit-mask-image: none; text-shadow: none; }
+*/
+/* customize for car tutorial */
+
+#ascon10 #contentoverview .full .item{
+    border: 0px;
+}
+
+#ascon10 #contentoverview .full .item .details, #ascon10 #contentoverview .full .item .fulldescription, #ascon10 #contentoverview .full .item h2, #ascon10 .details span{
+    color: white;
+}
+
+#ascon10 #contentoverview .full .item .details a {
+    color: #efefef;
+}
+
+#aslink10, #aslink10 p, #aslink10 h1, #aslink10 h2 {
+    color: white;
+}
+
+#aslink10 a {
+    color: #efefef;
+}
+
+.btnTerms {
+	color: #5a82d8;
+}
