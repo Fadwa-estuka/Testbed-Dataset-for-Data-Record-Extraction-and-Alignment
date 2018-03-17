@@ -1,0 +1,236 @@
+		html{color:#FFFFFF; background-color:#000000;}
+		html, body{ font-family: 'Trebuchet MS', Helvetica, sans-serif; background: #404040 url(https://staticdelivery.nexusmods.com/contents/Templates/0/bg.jpg) top center no-repeat fixed; }
+		a { text-decoration: none; outline: none; color: #E3A853; cursor: pointer !important; }
+		body#downloads{ background: #404040 !important; background-image: none !important; }
+		
+		#hotfiles-container{ position: relative; width: 928px; height: 250px; border: 1px solid #000000; overflow: hidden; }
+		#ad-right-text{ border-top: 1px solid #404040; height: 18px; padding: -2px 0 0 0; font-size: 11px; margin: 0; text-align: right; }
+		#Header h2{ border-bottom: 1px solid #404040; padding-bottom: 5px; margin-bottom: 10px; }
+		#content #Header{ overflow: hidden; border-bottom: 1px solid #404040; padding-bottom: 5px; margin-bottom: 10px; font-size: 18px; font-weight: bold;}
+		
+		#userarea-myId{ font-size: 13px; padding: 15px 0 0 15px; color: #868686; }
+		.member-premium-info-question {font-size: 11px; color: #868686;}
+		
+		#top .user .item{ display: inline-block; height: 23px; color: #FFFFFF; font-size: 0.75em; font-weight: bold; text-decoration: none; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) 0 -440px no-repeat; padding-left: 12px; margin-top: 6px; }
+		#top .user .item:hover .number{ background-position: -662px -405px; color: #868686; }
+		#top .user .item .inner{ display: block; overflow: hidden; line-height: 24px; padding-right: 12px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) right -440px; }
+		#top .user input{ float: left; width: 113px; height: 19px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) -400px -185px no-repeat; border: none; color: #555555; font-size: 0.75em; margin: 4px 12px 0 0; padding: 3px 10px; }
+		#top .user .item .subnav-arrow{ float: right; width: 15px; height: 23px; background:url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) -600px -405px no-repeat; margin: 0 -4px 0 5px; }
+		#top .user .item .number{ float: right; width: 26px; height: 23px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) -636px -405px no-repeat; text-align: center; font-size: 0.9em; color: #555555; margin: 0 -4px 0 5px; }
+		#top .user .logout{ display: inline-block; color: #FFFFFF; font-size: 0.75em; text-transform: uppercase; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) -465px -227px no-repeat; padding-left: 13px; line-height: 25px; margin-top: 5px; }
+		#top .social{ float: right; color: #FFFFFF; font-size: 0.75em; line-height: 35px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) -540px -185px; padding-left: 22px; }
+		#top .social a{ display: block; float: left; width: 16px; height: 16px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) no-repeat; margin: 9px 3px 0 0; }
+
+		#subnav .subnav a:hover{ color: #FAA431; text-decoration: none; }
+		#top { position: relative; height: 115px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) 0 0 repeat-x; padding-bottom: 10px; z-index: 11; }
+
+		#top .sub-bar{ float: right; text-align: right; width: 600px; height: 37px; margin-top: 13px; font-size: 12px; padding: 0 4px 5px 19px; } 
+		#top .sub-bar .nmm, #top .sub-bar .search, #top .sub-bar .messages, #top .sub-bar .notifications, #top .sub-bar .account{ display: inline-block; height: 19px; padding: 0 16px 0 10px; border-right: 1px dotted #868686; }
+		#top .sub-bar div img{ vertical-align: top; }
+		#top .sub-bar .account{ background-color: #313131; border: 0; padding: 0 0 0 10px; } 
+		#top .sub-bar .account img{ vertical-align: -6px; } 
+
+		#top-inner
+		{
+			background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) 0 0 repeat-x;
+		}
+
+		.downarrow{ vertical-align: middle !important; }
+
+		
+		#nav .item{ display: inline-block; height: 23px; color: #FFFFFF; font-size: 0.75em; text-transform: uppercase; font-weight: bold; text-decoration: none; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) 0 -300px no-repeat; padding-left: 12px; }
+		#nav .item .inner{ display: block; overflow: hidden; line-height: 24px; padding-right: 12px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) right -300px; } 
+		#nav .item .subnav-arrow{ float: right; width: 15px; height: 23px; background:url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) -600px -300px no-repeat; margin: 0 -4px 0 5px; }
+		#nav .chat .number{ float: right; width: 26px; height: 23px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) -636px -300px no-repeat; text-align: center; font-size: 0.9em; color: #555555; margin: 0 -4px 0 5px; }
+		#nav .network{ padding: 11px 0 0 8px; margin-top: 1px; }
+		#nav .network .item{ background-position: 0 -405px; text-transform: none; font-weight: normal; }
+		#nav .network .item .inner{ background-position: right -405px; }
+		#nav .network .item:hover strong{ color: #E6E6E6; }
+		#nav .network .item:hover .inner{ color: #E6E6E6; }
+		#nav .network .subnav-arrow{ background-position: -600px -405px; }
+		#nav .network .item:hover .subnav-arrow{ background-position: -617px -405px; }
+		#nav .chat .item:hover .number{ background-position: -662px -300px; color: #868686; }
+		#nav .network .item strong{ color: #FAA431;; }
+		#footer{ background-color: #313131; }
+		#footer a.top{ position: absolute; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) -730px -147px no-repeat; top: 0px; right: 0px; padding: 0 0 0 8px; margin: 8px 0 0 0; }
+		#footer .footer-content .facebook,#footer .footer-content .twitter,#footer .footer-content .steam{ background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/icons.png) no-repeat; padding-left: 19px; }
+		
+		#footer .footer-content .facebook{ background-position: 0 -20px; }
+		#footer .footer-content .steam{ background-position: 0 -40px; }
+		#footer .footer-content .twitter{ background-position: 0 0; }
+		
+		#right-col .image-stats{ clear: both; width: 300px; height: 87px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) right -1140px no-repeat; margin-bottom: 15px; }
+		#right-col .box-header{ height: 32px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) 0 -590px no-repeat; padding: 8px 10px 0; }
+		#right-col .image-stats .actions a{ display: inline-block; width: 29px; height: 25px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/icons.png) no-repeat; margin-top: 2px; }
+		#right-col .box-header h2{ float: left; height: 22px; line-height: 24px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/icons.png) no-repeat; }
+		#logo{ float: left; display: block; width: 250px; height: 49px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) 0 -147px no-repeat; margin-top: 54px; }
+		
+		.action-buttons .tabbed-buttons a{ color: #FFFFFF; text-shadow: 1px 1px #000000; } 
+		.artdivider{ width: 1px; height: 15px; background:url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) -90px -700px no-repeat; margin: 2px 6px 0 6px; }
+		.author{ border: 1px solid #E3A853; }
+		.bug_comment {border: 1px dotted #E3A853; }
+		
+		.author-border-bottom { border-bottom: 1px solid #E3A853 !important;}
+		.author-border-left { border-left: 1px solid #E3A853 !important; }
+		.author-border-right { border-right: 1px solid #E3A853 !important;}
+		.author-border-top { border-top: 1px solid #E3A853 !important;}
+		
+		.block-list .image .image-overlay p .view{ float: left; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/icons.png) -630px -93px no-repeat; padding-left: 15px; }
+		.block-list .image .image-overlay p{ position: absolute; left: 0; bottom: 0; background: #FAA431; width: 168px; height: 25px; font-size: 11px; color: #89591A; line-height: 27px; margin-bottom: 0; padding: 0 5px; overflow: hidden; color: #000000; }
+		.block-list .image .image-overlay{ position: absolute; display: none; width: 178px; height: 106px; background: url(https://staticdelivery.nexusmods.com/contents/Images/image-hover.png); border: 1px solid #FAA431; z-index: 5; }
+		.block-list .image .stats .downloads{ float: right; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/icons.png) -760px -294px no-repeat; padding-left: 20px; padding-right:8px;}
+		.block-list .image .stats .likes{ float: right; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/icons.png) -760px -175px no-repeat; padding-left: 18px; }
+		.block-list .image .stats .views{ float: right; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/icons.png) -760px -134px no-repeat; padding: 0 10px 0 26px; }
+		.block-list .image .stats-overlay{ position: absolute; left: 0; bottom: 0; height: 25px; background: #000000; display: block; width: 180px; z-index: 2; opacity: 0.75; }
+		.border-bottom{ border-bottom: 1px solid #404040; padding-bottom: 5px; margin-bottom: 5px; overflow:hidden;}
+		.bottom-corner-s{ width: 605px; height: 10px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) 0 -635px no-repeat; margin-bottom: 15px; }
+		.bottom-corner{ width: 904px; height: 10px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) 0 -635px no-repeat; margin-bottom: 15px; }
+		.buttons .primary em{ display: inline-block; line-height: 23px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) -596px -337px no-repeat; padding-left: 12px; }
+		.buttons a span{ color: #FFFFFF; display: block; overflow: hidden; line-height: 24px; padding-right: 12px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) right -300px; }
+		.buttons a{ display: inline-block; height: 23px; color: #FFFFFF; font-size: 12px; text-transform: uppercase; font-weight: bold; text-decoration: none; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) 0 -300px; padding-left: 12px; margin: 0; cursor: pointer; }
+		.buttons a.longer { width: 200px;}
+		.category-list .category-files{ float: right; display: inline-block; width: 60px; color: #7C7C7C; padding-left: 15px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/icons.png) -380px -536px no-repeat; }
+		.category-list .category-updated{ float: right; display: inline-block; width: 152px; color: #7C7C7C; padding-left: 15px; margin-left: 15px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/icons.png) -550px -536px no-repeat; }
+		.cats_heading{ border-bottom: 1px solid #E3A853; padding-bottom: 5px; margin-bottom: 20px; overflow: auto; }
+		.cfbox { font-size:12px; float: left; width: 462px; height: 38px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) -444px -1080px no-repeat; padding: 1px 10px; }
+		.comment-list .comment-top .comment-reputation{ float: right; margin-left: 12px; border-left: 1px solid #404040; padding-left: 20px; }
+		.comment-list .comment-top{ overflow: hidden; border-bottom: 1px solid #404040; font-size: 11px; padding: 5px 10px; }
+		.comment-list div.right{ width: 549px; border-left: 1px solid #404040; padding-bottom: 1px; }
+		.comment-options a{ display: inline-block; font-size: 0.7em; line-height: 16px; margin-left: 10px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/icons.png) no-repeat; padding-left: 19px; }
+		.commentWarning{ width: 551px; padding: 5px; margin: 5px; background: #5D7B7B; color: #000000; border: 1px solid #496262; font-size: 12px; }
+		.download-list .action-log a{ display: block; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/icons.png) no-repeat; }
+		.feed-more{ margin: 15px 6px 25px 6px; border-top: 1px solid #000000; padding-top: 10px; font-size: 13px; clear:both; }
+		.feed-tabs .active a{ color: #FAA431; background-color: #292929; height: 85px; }
+		.feed-tabs .icon{ display: block; margin-bottom:-3px; width: 40px; height: 40px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/icons.png) no-repeat; margin-left: 21px; }
+		.feed-tabs li{ float: left; width: 70px; height: 80px; border: 1px solid #000000; border-right: 0; border-bottom-width: 0; border-top-left-radius: 5px; border-top-right-radius: 5px; background-color: #2E2E2E; }
+		.feedImage{ float:right; margin-left: 4px; max-height: 90px; border: 1px #000000 solid; }
+		.file-image-scroller .file-image-arrow{ position: absolute; top: 50px; display: block; width: 25px; height: 25px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) no-repeat; }
+		.file-image-scroller .file-image-container li{ float: left; width: 157px; height: 97px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) -540px -820px no-repeat; padding: 3px; margin-right: 11px; overflow: hidden; }
+		.file-image-scroller .file-image-container{ position: relative; width: 537px; height: 129px; overflow: hidden; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) 0 -819px no-repeat; margin: 0 0 0 35px; }
+		.file-image-scroller .file-next:hover{ background-position: -375px -590px; }
+		.file-image-scroller .file-next{ right: 0px; background-position: -350px -590px; }
+		.file-image-scroller .file-prev:hover{ background-position: -325px -590px; }
+		.file-image-scroller .file-prev{ left: 0px; background-position: -300px -590px; }
+		.file-stats .actions a:hover{ color:#E3A853 }
+		.file-stats{ clear: both; width: 537px; height: 120px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) left -1392px no-repeat; margin: 0 0 10px 34px; }
+		.profile-stats {background:url(https://staticdelivery.nexusmods.com/contents/Images/modmanager-bg.png) no-repeat; border: 1px solid black; height:73px; width:535px; border-radius: 6px;}
+		.file-tabs .active a{ color: #FAA431; }
+		.file-tabs .icon{ display: block; width: 40px; height: 40px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/icons.png) no-repeat; margin-left: 17px; }
+		.file-tabs li{ float: left; width: 61px; height: 92px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) -780px -820px no-repeat; }
+		.file-tabs{ overflow: hidden; border-top: 1px solid #404040; }
+		.files-filters div.files-100{ float: left; width: 588px; height: 38px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) 0 -740px no-repeat; padding: 1px 7px 1px 10px; }
+		.files-filters div.files-left{ float: left; width: 419px; height: 38px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) 0 -1080px no-repeat; padding: 1px 7px 1px 10px; }
+		.files-filters div.files-right { float: right; width: 462px; height: 38px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) -444px -1080px no-repeat; padding: 1px 10px; }
+		.files-list a.file .file-arrow{ display: block; position: absolute; top: 0; right: 10px; width: 15px; height: 50px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) -644px -540px no-repeat; }
+		.files-list a.file{ position: relative; display: block; height: 41px; line-height: 41px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) 0 -540px no-repeat; text-shadow: 1px 1px #89591A; text-decoration: none; font-weight: bold; padding: 5px 10px 4px; color: #FFFFFF; font-size: 1em; letter-spacing: -0.075em; }
+		.files-list li div.preview{ position: absolute; bottom: 33px; right: 0; font-size: 12px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/icons.png) -760px -97px no-repeat; padding: 0 15px; }
+		.files-list p.file-info .file-downloads{ float: right; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/icons.png) -760px -294px no-repeat; padding-left: 17px; }
+		.files-list p.file-info .file-endorsements{ float: right; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/icons.png) -760px -257px no-repeat; padding: 0 15px 0 16px; }
+		.files-list p.file-info .file-size{ float: right; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/icons.png) -760px -217px no-repeat; padding: 0 15px 0 20px; }
+		.files-tab-comments .comment-list div.right{ width: 838px; border-left: 1px solid #404040; padding-bottom: 1px; }
+		.files-tab-files-list li .desc{ display: block; clear: both; color: #FFFFFF; font-size: 13px; padding: 8px 10px 10px; line-height: 1.4em; border-top: 1px solid #404040; border-bottom: 1px solid #404040; }
+		.files-tab-files-list li .name{ float: left; font-size: 1.2em; font-weight: bold; padding: 0 0 8px 26px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/icons.png) 9px -459px no-repeat; }
+		.files-tab-header{ height: 50px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) 0 -540px no-repeat; padding: 0 10px; }
+		.files-tab-images .files-tab-header a .inner em{ display: inline-block; width: 29px; text-align: center; line-height: 38px; padding-left: 5px; color: #E0801C; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) -690px -969px }
+		.files-tab-images .files-tab-header a.active .inner{ background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) right -969px no-repeat; }
+		.files-tab-images .files-tab-header a.active{ background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) -730px -969px no-repeat; }
+		.files-tags a{ display: inline-block; width: 10px; height: 12px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/icons.png) no-repeat; margin: 0 0 -2px 2px; }
+		.files-tags-checked{ color: #E3A853; }
+		.filters li.divider{ background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) right -700px no-repeat; padding-right: 16px; margin-right: 8px; }
+		.filters li.save{ color: #E3A853; }
+		.form li .icon-info{ position: absolute; top: 8px; right: 5px; display: block; width: 16px; height: 16px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/icons.png) 0 -650px no-repeat; }
+		.form li p{ width: 551px; padding: 5px; margin: 5px 0 0; background: #5D7B7B; color: #000000; border: 1px solid #496262; font-size: 12px; }
+		.icon-info{ position: absolute; top: 8px; right: 5px; display: block; width: 16px; height: 16px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/icons.png) 0 -650px no-repeat; }
+		.image-container{ width: 605px; height: 250px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) 0 -1140px no-repeat; margin-bottom: 10px; }
+		.image-list .image .image-overlay p .view{ float: left; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/icons.png) -630px -93px no-repeat; padding-left: 15px; }
+		.image-list .image .image-overlay p{ position: absolute; left: 0; bottom: 0; background: #FAA431; width: 168px; height: 25px; font-size: 11px; color: #89591A; line-height: 27px; margin-bottom: 0; padding: 0 5px; overflow: hidden; color: #000000; }
+		.image-list .image .image-overlay{ position: absolute; display: none; width: 178px; height: 106px; background: url(https://staticdelivery.nexusmods.com/contents/Images/image-hover.png); border: 1px solid #FAA431; z-index: 2; }
+		.image-list .image .stats .likes{ float: right; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/icons.png) -760px -175px no-repeat; padding-left: 18px; }
+		.image-list .image .stats .views{ float: right; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/icons.png) -760px -134px no-repeat; padding: 0 10px 0 26px; }
+		.image-list .image .stats-overlay{ position: absolute; left: 0; bottom: 0; height: 25px; background: #000000; display: block; width: 180px; z-index: 2; opacity: 0.75; }
+		.images-filters{ background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) 0 -1030px no-repeat; }
+		.index-tabs a{ color: #FFFFFF; text-shadow: 1px 1px #000000; } 
+		.large-title .file-plus{ display: block; position: absolute; top: 0; right: 10px; width: 20px; height: 50px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) -608px -540px no-repeat; }
+		.large-title{ position: relative; height: 50px; line-height: 50px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) 0 -540px no-repeat; text-shadow: 1px 1px #89591A; padding: 0 10px; margin-bottom: 15px; margin-right:4px; !important;}
+		.large-title-nomargin{ position: relative; height: 50px; line-height: 50px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) 0 -540px no-repeat; text-shadow: 1px 1px #89591A; padding: 0 10px; }
+		.latestFeedImage{width: 112px; height: 72px; overflow: hidden; border: 1px solid #000000;} 
+		.mirror-list .category-files{ float: right; display: inline-block; width: 60px; color: #7C7C7C; padding-left: 15px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/icons.png) -380px -536px no-repeat; }
+		.nested_main_small{border-left: 1px solid #404040; margin-left:55px;}
+		.nested_main{border-left: 1px solid #404040; margin-left:85px;}
+		.news-filters{ background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) 0 -740px no-repeat; width: 600px; }
+		.news-list .date-comments .comments{ float: left; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) 0 -691px; padding-left: 12px; margin-right: 6px; }
+		.news-list .date-comments .divider{ float: left; width: 1px; height: 15px; background:url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) -90px -700px no-repeat; margin: 6px 6px 0 0; }
+		.news-list .date-comments{ height: 27px; line-height: 27px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) 0 -790px; font-weight: bold; color: #FFFFFF; font-size: 12px; padding: 0 12px 0 10px; }
+		.news-list .news-info{ overflow: hidden; color: #7C7C7C; font-size: 0.7em; padding: 8px 10px; border-bottom: 1px solid #404040; margin-bottom: 8px; }
+		.news-list h2{ min-height: 50px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) 0 -540px no-repeat; text-shadow: 1px 1px #000000; }
+		.pagination .page span{ display: block; line-height: 20px; padding-right: 8px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) right -650px; }
+		.pagination .page{ display: block; height: 20px; color: #6E6E6E; font-size: 0.7em; font-weight: bold; text-decoration: none; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) 0 -650px no-repeat; padding-left: 7px; }
+		.pagination .prev,.pagination .next{ display: block; width: 20px; height: 20px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) no-repeat; }
+		.pagination .prev:hover{ background-position: -150px -650px; }
+		.pagination .prev{ background-position: -130px -650px; }
+		.pagination .next:hover{ background-position: -190px -650px; }
+		.pagination .next{ background-position: -170px -650px; }
+		.pagination .active span{ background-position: right -670px; }
+		.pagination .active{ background-position: 0 -670px; color: #FAA431; }
+		.staff{ background-color: #292929; border: 1px solid #000000; padding: 5px; overflow: auto; margin: 15px; }
+		
+		.newstaff{ background-color: #292929; border: 1px solid #000000; padding: 5px; overflow: auto; margin: 15px; }
+		.newstaff > div.avatar {width:80px; padding:4px; display:inline-block; text-align:center; vertical-align:top;}
+		.newstaff > div.content {width:320px; padding:4px; display:inline-block; vertical-align:top;}
+		.newstaff > div.content > div:first-child {margin-bottom: 12px; }
+		.newstaff > div.content > div:first-child > a { font-size: 20px; font-weight: bold;} 
+		.newstaff > div.content > div > div {display: inline-block;}
+		.newstaff > div.content > div > div.ico {width: 28px;}
+		.newstaff > div.content > div > div.title {width: 72px; text-align: right; padding-right: 8px;}
+		.newstaff > div.content > div > div.cont {width: 200px;}
+		.newstaff > div.photo {width:120px; padding:4px; display:inline-block; text-align:center;}
+		.newstaff > div.photo > img {width:100px; height:100px;}
+		
+		.sub-header{ overflow: hidden; font-size: 12px; color: #7C7C7C; border-bottom: 1px solid #404040; padding: 5px 10px; }
+		.suggestionsBox{ position: relative; left: 30px; margin: 10px 0px 0px 0px; width: 200px; background-color: #212427; -moz-border-radius: 7px; -webkit-border-radius: 7px; border: 2px solid #000000; color: #FFFFFF; font-family: Helvetica; font-size: 11px; color: #FFFFFF; margin-bottom: 10px; }
+		.tipsy-inner{ padding: 5px 8px 4px 8px; background-color: #868686; color: white; max-width: 200px; text-align: center; }
+		.trackedmod-list .action-log a{text-decoration:none; display: block; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/icons.png) no-repeat; }
+		.user-area-box .box-header h2{ float: left; height: 22px; line-height: 24px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/icons.png) no-repeat; }
+		.user-area-box .box-header span a{ color: #868686; } 
+		.user-area-box .box-header{ height: 32px; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) -230px -650px no-repeat; padding: 8px 10px 0; }
+		.video-endorsements{ float: right; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/icons.png) -760px -257px no-repeat; padding: 0 15px 0 16px; }
+		.video-views{ float: right; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/icons.png) -760px -134px no-repeat; padding: 0 15px 0 26px; }
+		.video_left {width: 250px; height: 185px; border: 1px solid #000000;}
+		.video_left:hover .video_stats {background: #FAA431;}
+		.video_left:hover {border: 1px solid #FAA431;}
+		.video_likes{ float: right; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/icons.png) -760px -175px no-repeat; padding-left: 18px; }
+		.video_stats{ width: 240px; height: 25px; font-size: 12px; background: #000000; opacity:0.75; color: #AAAAAA; line-height: 27px; margin-top: -25px; padding: 0 5px; z-index: 10; overflow: hidden; }
+		.video_views{ float: right; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/icons.png) -760px -134px no-repeat; padding: 0 10px 0 26px; }
+		.warning-box p{ color: #000000 !important; } 
+		
+		div.bbc_spoiler{}
+		div.bbc_spoiler span.spoiler_title {font-weight:bold; }
+		div.bbc_spoiler_wrapper{}
+		div.bbc_spoiler_content{background:#262626;border:1px dashed #3b3b3b;padding:5px;margin:5px}
+		input.bbc_spoiler_show{ border: 1px solid black; background-color: #454545; font-size: 11px; padding: 3px; color: #E6E6E6; border-radius: 3px;}
+		
+		
+		.icon_stats{ display: block; margin-bottom:-3px; margin-left: 10px; width: 40px; height: 40px; background: url(https://staticdelivery.nexusmods.com/contents/Images/icons/templated/tabs-graph-std.png) no-repeat !important;  }
+		.file-tabs .active .tab-graph .icon_stats{ background: url(https://staticdelivery.nexusmods.com/contents/Images/icons/templated/tabs-graph-shadow-TES.png) no-repeat !important; }
+
+		.icon_bugs{ display: block; margin-bottom:-3px; margin-left: 10px; width: 40px; height: 40px; background: url(https://staticdelivery.nexusmods.com/contents/Images/icons/templated/tabs-bugs-std.png) no-repeat !important;  }
+		.file-tabs .active .tab-bugs .icon_bugs{ background: url(https://staticdelivery.nexusmods.com/contents/Images/icons/templated/tabs-bugs-shadow-TES.png) no-repeat !important; }
+		
+/* Profiles - start */
+.profile-item { clear:both; width: 600px; margin: 8px 4px 12px 4px; height: 210px; background: #191919; border: 1px solid  #191919; }
+.profile-item:hover { border: 1px solid  #FAA431; background: #191919; }
+.profile-item .item-title 		{ height:50px; margin:0; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/imagemap.png) 0 -540px no-repeat; font-weight: bold; text-shadow: 1px 1px #89591A; color: #FFFFFF;	}
+.profile-item .item-title:hover{ color: #F8E1Be; }
+.profile-item .item-title .item-title-name { margin: 10px 0 0 6px; display:inline-block; }
+.profile-item .item-title .item-title-version {margin: 10px 6px 0 6px; float: right; }
+.profile-item .item-image {margin:0; float: left; width: 185px; overflow: hidden; display:inline-block;}
+.profile-item .item-image img{ float: left; width: 185px; height: 135px; }
+.profile-item .item-description	{width:400px; display:inline-block; float:left; height:130px; padding: 5px 4px 0 6px; color: #FFFFFF; font-size: 12px; overflow:hidden; }
+.profile-item .item-stats 		{border-top: 1px solid #292929; height:25px; padding: 0 4px 0 6px; z-index: 10; overflow: hidden; line-height: 25px; color: #AAAAAA; font-size: 0.7em; }
+.profile-item .item-stats .uploaded 	{ float:left; }
+.profile-item .item-stats .downloads 	{ float: right; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/icons.png) -760px -294px no-repeat; padding-left: 25px; padding-right:10px; }
+.profile-item .item-stats .likes 		{ float: right; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/icons.png) -760px -175px no-repeat; padding-left: 25px; padding-right:10px;}
+.profile-item .item-stats .nfiles 		{ float: right; background: url(https://staticdelivery.nexusmods.com/contents/Templates/0/icons.png) -760px -217px no-repeat; padding-left: 25px; padding-right: 10px;  }
+.profile-item .item-stats .author		{ float: right; border:0 !important; padding-right: 8px;}
+
+/* Profiles - end */			
