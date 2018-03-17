@@ -1,0 +1,5307 @@
+/* *************************************
+   updated 11/2/15 10:24am by MG-NYC
+   previously 5/28/15 1:48pm by MG-NYC
+**************************************** */
+body {
+	margin: 0;
+	padding: 0;
+	min-width: 980px;
+	text-align: center;
+	font-size: 76%;
+	background: #fff;
+}
+#all {
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	width: 980px;
+	font-size: 1.05em;
+	font-family: Arial, sans-serif;
+	text-align: left;
+	color: #000;
+}
+#left, #topLeft {
+	margin: 0 20px 0 0;
+	width: 627px;
+	float: left;
+	padding: 0;
+}
+#right, #topRight {
+	margin: 0;
+	width: 332px;
+	float: left;
+}
+/* ******************************************************
+	COMMON ELEMENTS
+****************************************************** */
+.inactive {
+	display: none;
+}
+.active {
+	display: block;
+}
+a:link {
+	color: #007cb0;
+	text-decoration: none;
+}
+a:visited {
+	color: #5757a6;
+	text-decoration: none;
+}
+a:hover {
+	color: #007cb0;
+	text-decoration: underline;
+}
+a:active {
+	color: #007cb0;
+	text-decoration: none;
+}
+p {
+	margin: 0 0 12px 0;
+	padding: 0;
+}
+.spacer {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+form {
+	margin: 0;
+	padding: 0;
+}
+sup {
+	font-size: 0.85em;
+}
+.cmetag {
+	display: none;
+}
+.cmered {
+	color: #d71a1a;
+}
+.alerttag, .newstag {
+	font: bold 0.95em arial, sans-serif;
+	color: #9b1c01;
+}
+.conftag {
+	font: bold 0.95em arial, sans-serif;
+	color: #639a23;
+}
+#right .industryCallout .newstag {
+	color: #fe733c;
+}
+.featuretag {
+	font-family: arial, sans-serif;
+	font-size: 0.95em;
+	color: #222;
+	font-weight: bold;
+}
+.confsection .conftag {
+	display: none;
+}
+.morelink {
+	font-family: arial, sans-serif;
+	font-weight: bold;
+	font-size: 0.9em;
+}
+.signuplink {
+	font-size: 0.9em;
+	font-weight: normal;
+}
+.iconlink {
+	vertical-align: top;
+}
+.teaser {
+	margin: 1px 0 0 0;
+	font-size: 1.0em;
+	display: block;
+	line-height: 1.2em;
+	color: #454545;
+}
+.teaserright {
+	margin: 2px 0 3px 0;
+	font-size: 0.95em;
+}
+.byline {
+	padding: 0;
+	display: block;
+	font-family: arial, sans-serif;
+	font-size: 0.85em;
+	color: #666;
+	line-height: 1.1em;
+}
+.featimg {
+	margin: 2px 5px 0 0;
+	padding: 0;
+	width: 72px;
+	position: relative;
+	float: left;
+	clear: both;
+}
+.breadCrumb {
+	margin: 15px 0 15px 0;
+	padding: 0;
+	font-size: 0.85em;
+}
+.breadCrumb a {
+	font-weight: bold;
+}
+/* Video and Audio Icons */
+span.audio {
+	padding: 0 8px 0 8px;
+	background: url(/pi/global/icons/icon-medaudio.gif) center center no-repeat;
+}
+span.video {
+	padding: 0 8px 0 8px;
+	background: url(/pi/global/icons/icon-medvideo.gif) center center no-repeat;
+}
+span.slide {
+	padding: 0 8px 0 8px;
+	background: url(/pi/global/icons/icon-medppt.gif) center center no-repeat;
+}
+/* TOP SUB NAV */
+/*#topSubNav {
+	padding: 8px 0;
+	text-align: center;
+}
+#topSubNav ul, #topSubNav li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#topSubNavList {
+	display: inline;
+}
+#topSubNavList a {
+
+}
+#topSubNavList .navlinkstart {
+	padding: 0 12px 0 0;
+	display: inline;
+}
+#topSubNavList .navlink {
+	padding: 0 12px 0 9px;
+	display: inline;
+}
+#topSubNavList .navlinkend {
+	padding: 0 10px 0 9px;
+	display: inline;
+	background:url(/pi/global/ornaments/icon-header-rc.png) no-repeat right center;
+}
+/* ******************************************************
+	MAIN LAYOUT STYLES - LEFT
+****************************************************** */
+
+/* MULTIMEDIA bucket */
+#mediaBucket {
+	width: 625px;
+	overflow: hidden;
+	border: 1px solid #d8e3e7;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	height: 235px;
+	margin-bottom: 20px;
+	position: relative;
+}
+#mediaBucket .bucketHeader {
+	height: 1px;
+	font-size: 1px;
+	line-height: 1px;
+	clear:both;
+}
+#mediaBucket .bucketFooter {
+	height: 1px;
+	font-size: 1px;
+	line-height: 1px;
+	clear:both;
+}
+#mediaBucket ul {
+	margin: 1px;
+	padding: 8px 0 0 0;
+	list-style: none;
+    position: absolute;
+    width: 4000px;
+	height: 200px;
+	}
+#mediaBucket ul#groupA, #mediaBucket ul#groupB, #mediaBucket ul#groupC {
+	float: left;
+	}
+#mediaBucket ul li {
+	margin: 0;
+	padding: 0 0 0 13px;
+	width: 140px;
+	float: left;
+	position: relative;
+}
+#mediaBucket li .featimg {
+	margin: 0;
+	padding: 0 0 3px 0;
+	position: relative;
+	width: 140px;
+	height: 105px;
+	clear: both;
+	display: block;
+}
+.leftBucketF_welcome #mediaBucket li .featimg {
+	width:130px;
+}
+#mediaBucket ul li.confcall {
+	margin: 0;
+	padding: 0 1px 0 13px;
+	width: 292px;
+	float: left;
+	position: relative;
+}
+#mediaBucket ul li.confcall a {
+    font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+    font-size: 1.25em;
+}
+#mediaBucket ul li.confcall ul.confcall_sublist {
+	margin: 110px 0 0 0;
+	padding: 0;
+	list-style: none;
+	font-size: .95em;
+	color: #999999;
+	position: relative;
+	width: 292px;
+}
+#mediaBucket ul li.confcall ul.confcall_sublist li {
+	padding: 0;
+	margin: 0;
+	padding-bottom: 8px;
+	position: relative;
+	width: 292px;
+}
+#mediaBucket ul li.confcall ul.confcall_sublist li a {
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	font-size: 1.05em;
+}
+#mediaBucket li.confcall .featimg {
+	margin: 0;
+	padding: 0 0 3px 0;
+	position: relative;
+	clear: both;
+	width: 292px;
+	display: block;
+}
+#mediaBucket li .teaser {
+	display: none;
+}
+#mediaBucket li .byline {
+	padding: 0 0 2px 0;
+	font-style: italic;
+}
+/* default left bucket */
+.leftBucket {
+	margin: 0 0 20px 0;
+	padding: 0;
+	background: none;
+}
+.leftBucket a {
+	color: #000;
+}
+.leftBucket .bucketHeader {
+	margin: 0;
+	padding: 0;
+	background: none;
+	border-top: none;
+	width: auto;
+	background: url("/pi/global/1024/bg-header-dots.png") repeat-x bottom;
+}
+.leftBucket .bucketHeader h2 {
+	margin: 2px 0 0 0;
+	padding: 0 4px 0 0;
+	font-size: 0.95em;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #005b81;
+	background-color: #fff;
+	display: inline;
+}
+.leftBucket .subHead h3 {
+	margin: 20px 0 10px 0;
+	padding: 0 0 1px 0;
+	font-size: 1.0em;
+	text-transform: uppercase;
+	border-bottom: 1px solid #d7e3e7;
+	color: #005b81;
+}
+.leftBucket .bucketHeader .bucketHeaderText {
+	margin: 0 0 4px 0;
+	padding: 0;
+	font-size: 0.85em;
+	display: inline;
+	text-transform: none;
+	font-weight: normal;
+}
+.leftBucket .leftBucketContent {
+	padding: 11px;
+}
+.leftBucket .leftBucketL {
+	margin: 0 20px 0 0;
+	width: 300px;
+	float: left;
+}
+.leftBucket .leftBucketR {
+	width: 275px;
+	float: left;
+}
+.leftBucket ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.leftBucket li {
+	margin: 0 0 12px 0;
+	padding: 0;
+	overflow: hidden;
+}
+.leftBucket li a {
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	font-size: 1.2em;
+	line-height: 1.2em;
+}
+.leftBucket .leftBucketR li {
+    margin-bottom:10px;
+}
+.leftBucket li .byline a {
+	font-size: 0.95em;
+	font-family: arial, sans-serif;
+}
+.leftBucket li.listnormal a {
+	font-size: 1.0em;
+	font-family: arial, sans-serif;
+}
+#left .leftBucket .callout ul {
+	margin: 0;
+	padding: 0;
+}
+#left .leftBucket .callout ul li {
+	margin: 0 0 10px 0;
+	padding: 8px 10px 9px 10px;
+	border: 1px solid #c9cbca;
+	background: #f3f4f4;
+}
+.leftBucket .featimg {
+	margin: 3px 5px 0 0;
+	padding: 0;
+	width: 72px;
+	position: relative;
+	float: left;
+	clear: both;
+}
+.leftBucket .morelink {
+	padding: 2px 7px 0 0;
+	font-family: 'proxima_nova_rgregular', arial, sans-serif;
+	font-weight: normal;
+	font-size: 0.95em;
+	text-transform: uppercase;
+	background: transparent url("/pi/global/ornaments/icon-morelink-gt.png") no-repeat right center;
+	text-align: right;
+}
+@media only screen and (-webkit-min-device-pixel-ratio:2), only screen and (min-resolution:192dpi) {
+    .leftBucket .morelink {
+    	background-image: url("/pi/global/ornaments/icon-morelink-gt-@2x.png");
+    	background-size: 4px 7px;
+    }
+}
+.leftBucket .morelink img {
+	display: none;
+}
+.leftBucket .morelink a {
+	color: #007cb0;
+}
+.leftBucket .subCallout {
+	margin: 0;
+	padding: 0;
+}
+.leftBucket .bucketFooter {
+	display: none;
+}
+/* People - for Editors, Steering Committee, etc. */
+#ppl ul {
+	margin: 0;
+	padding: 0 0 10px 0;
+}
+#ppl ul li {
+	margin: 0;
+	padding: 0 0 10px 0;
+}
+#ppl ul li a {
+	font-family: arial, sans-serif;
+	font-size: 1.0em;
+}
+.pplCol {
+	margin: 0 20px 0 0;
+	width: 187px;
+	float: left;
+}
+.pplColEnd {
+	width: 187px;
+	float: left;
+}
+.pplTwoColL {
+	margin: 0 20px 0 0;
+	width: 290px;
+	float: left;
+}
+.pplTwoColR {
+	width: 290px;
+	float: left;
+}
+.pplSubtitle {
+	margin: 0 0 8px 0;
+	padding: 7px 0 5px 0;
+	font-size: 0.9em;
+	text-transform: uppercase;
+	border-top: 1px solid #c1c1c1;
+	border-bottom: 1px dashed #c1c1c1;
+	font-weight: bold;
+}
+.pplFooter {
+	margin: 0;
+	padding: 5px 0 0 0;
+	border-top: 1px solid #d8d8d8;
+	font-size: 0.95em;
+}
+.pplmorelink {
+	font-size: 0.9em;
+	text-transform: uppercase;
+}
+/* 2-split columns */
+#left .splitColL {
+	margin: 0 17px 0 0;
+	width: 305px;
+	float: left;
+}
+#left .splitColR {
+	width: 305px;
+	float: left;
+}
+#left .splitColL a.title, #left .splitColR a.title {
+	font-size: 1.2em;
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+}
+#left .splitColL .regular a.title, #left .splitColR .regular a.title {
+	font-size: 1.05em;
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+}
+#left .splitColL .leftBucket, #left .splitColR .leftBucket {
+	margin: 0 0 20px 0;
+	padding: 0;
+	background: none;
+	border: 1px solid #dcdcdc;
+}
+#left .splitColL .leftBucket .bucketHeader, #left .splitColR .leftBucket .bucketHeader {
+	margin: 11px 11px 0 11px;
+	padding: 0 10px 0 0;
+	width: auto;
+	border-top: none;
+	color: #535353;
+	background: url("/pi/global/1024/bg-header-dots.png") repeat-x bottom;
+}
+#left .splitColL .leftBucket .leftBucketContent, #left .splitColR .leftBucket .leftBucketContent {
+	padding: 11px;
+	width: 283px;
+}
+#left .splitColL .leftBucket .imgLeft, #left .splitColR .leftBucket .imgLeft {
+	width: 77px;
+	float: left;
+}
+#left .splitColL .leftBucket .textRt, #left .splitColR .leftBucket .textRt {
+	width: 206px;
+	float: left;
+}
+#left .splitColL .leftBucket .bucketFooter, #left .splitColR .leftBucket .bucketFooter {
+	width: 305px;
+	height: 4px;
+	background: url(/pi/global/1024/bg_bucket-split_btm.png) no-repeat top left;
+	font-size: 1px;
+	line-height: 1px;
+}
+/* 2-split columns with wider left (60%, 40%) */
+#left .splitColWideL {
+	margin: 0 17px 0 0;
+	width: 366px;
+	float: left;
+}
+#left .splitColNarrowR {
+	width: 244px;
+	float: left;
+}
+#left .splitColWideL .leftBucket {
+	margin: 0 0 20px 0;
+	padding: 0;
+	border: 1px solid #dcdcdc;
+	background: none;
+}
+#left .splitColNarrowR .leftBucket, #left .splitColNarrowR .leftBucketPlain {
+	margin: 0 0 20px 0;
+	padding: 0;
+	border: 1px solid #dcdcdc;
+	background: none;
+}
+#left .splitColWideL .leftBucket .bucketHeader {
+	margin: 11px 11px 0 11px;
+	padding: 0;
+	background: none;
+	border-top: none;
+	width: auto;
+	background: url("/pi/global/1024/bg-header-dots.png") repeat-x bottom;
+}
+#left .splitColNarrowR .leftBucket .bucketHeader {
+	margin: 11px 11px 0 11px;
+	padding: 0;
+	background: none;
+	border-top: none;
+	width: auto;
+	background: url("/pi/global/1024/bg-header-dots.png") repeat-x bottom;
+}
+#left .splitColNarrowR .leftBucketPlain .bucketHeader {
+	width: 244px;
+	height: 5px;
+	background: url(/pi/global/1024/bg_bucket-split_narrow_plain_top.png) no-repeat bottom left;
+	font-size: 1px;
+	line-height: 1px;
+}
+#left .splitColWideL .leftBucket .leftBucketContent {
+	padding: 11px;
+	width: 344px;
+}
+#left .splitColNarrowR .leftBucket .leftBucketContent {
+	padding: 11px;
+	width: 222px;
+}
+#left .splitColNarrowR .leftBucketPlain .leftBucketContent {
+	padding: 0 11px 11px 11px;
+	width: 222px;
+}
+#left .splitColWideL a.title, #left .splitColNarrowR a.title {
+	font-size: 1.1em;
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+}
+#left .splitColNarrowR .leftBucketPlain .leftBucketContent h3 {
+	margin: 0;
+	padding: 6px 0 4px 0;
+	text-transform: uppercase;
+	font-size: 0.95em;
+}
+#left .splitColNarrowR .leftBucket ul.journalList li { /* Journals Page */
+	margin: 0;
+	padding: 0 0 8px 0;
+}
+#left .splitColNarrowR .leftBucket ul.journalList a { /* Journals Page */
+	font-size: 0.95em;
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+}
+#left .splitColNarrowR .leftBucket ul.journalList .byline { /* Journals Page */
+	margin: 0;
+	padding: 0;
+}
+#left .splitColWideL .leftBucket .bucketFooter {
+	width: 366px;
+	height: 4px;
+	background: url(/pi/global/1024/bg_bucket-split_wide_btm.png) no-repeat top left;
+	font-size: 1px;
+	line-height: 1px;
+}
+#left .splitColNarrowR .leftBucket .bucketFooter, #left .splitColNarrowR .leftBucketPlain .bucketFooter {
+	width: 244px;
+	height: 4px;
+	background: url(/pi/global/1024/bg_bucket-split_narrow_btm.png) no-repeat top left;
+	font-size: 1px;
+	line-height: 1px;
+}
+/* top callout */
+#left .maincallout {
+	margin: 0 0 10px 0;
+	padding: 0;
+	border-top: 1px solid #094869;
+	border-bottom: 1px solid #094869;
+}
+#left .maincalloutcontent {
+	padding: 5px 0 5px 0;
+}
+/* left column sponsors */
+.leftSponsors {
+	margin: 0 0 20px 0;
+	padding: 0;
+	border: 1px solid #d7e3e7;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	-moz-box-shadow: 0 4px 4px -3px #999;
+	-webkit-box-shadow: 0 4px 4px -3px #999;
+	box-shadow: 0 4px 4px -3px #999;
+}
+.leftSponsorsHeader {
+	border: 1px solid #676767;
+	-moz-border-radius: 4px 4px 0 0;
+	-webkit-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
+	background-color: #676767;
+}
+.leftSponsorsHeader h3 {
+	margin: 0;
+	padding: 6px 0 5px 10px;
+	text-transform: uppercase;
+	font-size: 1.1em;
+	color: #fff;
+}
+.leftBoxedSponsor {
+	margin: 8px 0 0 8px;
+	padding: 14px 0 0 0;
+	font-size: 1.0em;
+	height: 36px;
+	float: left;
+}
+.leftBoxedSponsor a {
+	font-weight: bold;
+}
+.lefttBoxedSponsor a:link {
+	font-weight: bold;
+}
+.leftBoxedSponsor a:visited {
+	font-weight: bold;
+}
+.leftBoxedSponsor a:hover {
+	font-weight: bold;
+}
+.leftBoxedSponsor a:active {
+	font-weight: bold;
+}
+/* Dentistry bucket on Today */
+#dentistryBucket {
+	margin: 0 0 20px 0;
+	padding: 0;
+}
+#dentistryBucket .bucketHeader {
+	margin: 0;
+	padding: 0;
+	background: none;
+	border-top: none;
+	width: auto;
+	background: url("/pi/global/1024/bg-header-dots.png") repeat-x bottom;
+}
+#dentistryBucket .bucketHeader h2 {
+	margin: 2px 0 0 0;
+	padding: 0 4px 0 0;
+	font-size: 0.95em;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #005b81;
+	background-color: #fff;
+	display: inline;
+}
+#dentistryBucket .leftBucketContent {
+	padding: 11px 0 11px 11px;
+}
+#dentistryBucket ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#dentistryBucket ul li {
+	margin: 0;
+	padding: 0;
+	width: 154px;
+	float: left;
+	position: relative;
+}
+#dentistryBucket li .featimg {
+	margin: 0;
+	padding: 0 0 6px 0;
+	position: relative;
+	width: 140px;
+	clear: both;
+	display: block;
+}
+#dentistryBucket .title {
+	width: 140px;
+	display: block;
+}
+#dentistryBucket a.title {
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	font-size: 1.0em;
+	color: #000;
+}
+#dentistryBucket .teaser {
+	display: none;
+}
+#dentistryBucket .byline {
+	display: block;
+	width: 140px;
+}
+#dentistryBucket .morelink {
+	padding: 10px 13px 0 0;
+	font-weight: bold;
+	font-size: 0.9em;
+	text-align: right;
+	text-transform: uppercase;
+	float: right;
+}
+#dentistryBucket .morelink a {
+	color: #000;
+}
+#dentistryBucket .bucketFooter {
+	display: none;
+}
+
+/* specialties list page */
+#view_specialty.leftBucket {
+	margin: 0 0 20px 0;
+	padding: 0;
+	border: 1px solid #d3d3d3;
+	background: none;
+}
+#view_specialty.leftBucket .bucketHeader {
+	margin: 8px 10px 0 10px;
+	padding: 0;
+	color: #535353;
+	background: url("/pi/global/1024/bg-header-dots.png") repeat-x bottom;
+}
+#left #view_specialty .bucketHeader h2 {
+	margin: 0;
+	padding: 0 4px 0 0;
+	font-size: 0.95em;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #005b81;
+	background-color: #fff;
+	display: inline;
+}
+#left #view_specialty .bucketHeader table td {
+	background: #fff;
+}
+#left #view_specialty.leftBucket a {
+	font-family: 'proxima_nova_rgregular', arial, sans-serif;
+	color: #000;
+}
+#left #view_specialty.leftBucket b {
+	color: #005b81;
+}
+#view_specialty.leftBucket .bucketFooter {
+	display: none;
+}
+
+/* ******************************************************
+	MAIN LAYOUT STYLES - RIGHT
+****************************************************** */
+
+/* REFERENCE bucket */
+#referenceBucket {
+	margin: 0 0 10px 0;
+	background: #a3afa0 url(/pi/global/1024/bg_reference-bucket.png) no-repeat top left;
+}
+#referenceBucket a {
+	color: #000;
+}
+#referenceBucket .referenceBucketHeader {
+	margin: 0 0 8px 13px;
+	padding: 11px 0 0 0;
+}
+#referenceBucket .referenceBucketHeader h3 {
+	color:#466E00;
+	font-size:1.1em;
+	margin:0;
+	padding:0;
+}
+#referenceBucketContent {
+	margin: 0 0 0 5px;
+	width: 322px;
+	background: #fff url(/pi/global/1024/bg_reference-bucket_feat_btm.png) no-repeat bottom left;
+}
+#referenceBucket #referenceBucketContent .bucketHeader {
+	width: 322px;
+	height: 4px;
+	background: url(/pi/global/1024/bg_reference-bucket_feat_top.png) no-repeat top left;
+	font-size: 1px;
+	line-height: 1px;
+}
+#referenceBucket #referenceBucketContent #referenceBucketFeature {
+	margin: 6px 0 0 9px;
+	padding: 0 0 8px 0;
+}
+#referenceInput {
+	background: url(/pi/global/1024/bg_reference-bucket_feat_input.png) no-repeat left top;
+}
+#referenceBucket #referenceInputSearch {
+	margin: 6px 0 0 8px;
+	padding: 0;
+	cursor: text;
+	border: 0;
+	color: #858585;
+	font-size: 16px;
+	width: 267px;
+}
+input#referenceSubmit {
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+}
+#referenceBucketFeature .tagline {
+	margin: 3px 0 5px 5px;
+	color: #496e39;
+	font-size: 1em;
+}
+#referenceBucketFeature ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#referenceBucketFeature li {
+	margin: 0;
+	padding: 0 0 5px 0;
+}
+#referenceBucket .morelink {
+	margin: 0;
+	padding: 0 0 10px 10px;
+}
+#referenceBucket .bucketFooter {
+	height: 4px;
+	width: 332px;
+	background: url(/pi/global/1024/bg_reference-bucket_btm.png) no-repeat top left;
+	font-size: 1px;
+	line-height: 1px;
+}
+/* Medscape Education badge */
+#educationBucket {
+	margin: 0 0 20px 0;
+	border: 1px solid #d3d3d3;
+}
+#educationBucket a {
+	color: #000;
+}
+#educationBucket .educationBucketHeader {
+	margin: 0;
+	padding: 8px;
+	background: none;
+	border-top: none;
+	border-bottom: 1px solid #d3d3d3;
+	font-size: 0.85em;
+	color: #666;
+	width: auto;
+}
+#educationBucket .educationBucketHeader h3 {
+	margin: 0;
+	padding: 0 0 1px 0;
+	font-size: 1.05em;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #005b81;
+	display: block;
+}
+#educationBucketContent {
+	margin: 0 0 0 5px;
+	width: 322px;
+}
+#educationBucket #educationBucketContent .bucketHeader {
+	display: none;
+}
+#educationBucket #educationBucketContent #educationBucketFeature {
+	margin: 0;
+	padding: 8px 8px 4px 4px;
+}
+#educationBucketFeature .largeLink {
+	margin: 0;
+	font-size: 1.1em;
+}
+#educationBucketFeature ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#educationBucketFeature li {
+	margin: 0;
+	padding: 0 0 5px 0;
+}
+#educationBucketFeature li a {
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+    font-size: 0.95em;
+}
+#educationBucket .bucketFooter {
+	display: none;
+}
+/* default right bucket */
+.rightBucket {
+	margin: 0 0 20px 0;
+	padding: 0;
+	background: none;
+}
+.rightBucket a {
+	color: #000;
+}
+.rightBucket .bucketHeader {
+	margin: 0;
+	padding: 0;
+	background: none;
+	border-top: none;
+	width: auto;
+	background: url("/pi/global/1024/bg-header-dots.png") repeat-x bottom;
+}
+.rightBucket .bucketHeader h3 {
+	margin: 2px 0 0 0;
+	padding: 0 4px 0 0;
+	font-size: 0.95em;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #005b81;
+	background-color: #fff;
+	display: inline;
+}
+.rightBucket .bucketHeader .bucketHeaderText {
+	margin: 0 0 4px 0;
+	padding: 0;
+	font-size: 0.85em;
+	display: inline;
+	text-transform: none;
+	font-weight: normal;
+}
+.rightBucket .rightBucketContent {
+	padding: 11px;
+}
+.rightBucket ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.rightBucket li {
+	margin: 0 0 12px 0;
+	padding: 0;
+	overflow: hidden;
+}
+.rightBucket li a {
+	font-size: 1.1em;
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	line-height: 1.2em;
+}
+.rightBucket li .featimg {
+	margin: 2px 5px 0 0;
+	padding: 0;
+	width: 72px;
+	position: relative;
+	float: left;
+	clear: both;
+}
+.rightBucket li .teaser {
+	display: none;
+}
+.rightBucket .callout {
+	margin: 0 0 10px 0;
+	padding: 9px 10px 0 10px;
+	border: 1px solid #c9cbca;
+	background: #f3f4f4;
+}
+#right .morelinkLeft {
+	padding: 0 0 10px 12px;
+	width: 150px;
+	font-weight: bold;
+	float: left;
+}
+#right .morelinkRight {
+	padding: 0 0 10px 12px;
+	width: 150px;
+	font-weight: bold;
+	float: left;
+}
+#right .morelinkLeft a, #right .morelinkRight a {
+	color: #000;
+}
+.rightBucket .bucketFooter {
+	display: none;
+}
+/* right bucket plain */
+.rightBucketPlain {
+	margin: 0 0 20px 0;
+	padding: 0;
+	border: 1px solid #dcdcdc;
+	background-color: #f3f3f3;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmN2Y3ZjciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #ffffff 0%, #f7f7f7 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f7f7f7));
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#f7f7f7 100%);
+	background: -o-linear-gradient(top,  #ffffff 0%,#f7f7f7 100%);
+	background: -ms-linear-gradient(top,  #ffffff 0%,#f7f7f7 100%);
+	background: linear-gradient(to bottom,  #ffffff 0%,#f7f7f7 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f7f7f7',GradientType=0 );
+}
+.rightBucketPlain .bucketHeader {
+	display: none;
+}
+.rightBucketPlain .rightBucketContent {
+	padding: 6px 11px 8px 11px;
+}
+.rightBucketPlain .rightBucketContent h3 {
+	margin: 0;
+	padding: 6px 0 8px 0;
+	text-transform: uppercase;
+	font-size: 0.9em;
+	color: #005b81;
+}
+.rightBucketPlain ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.rightBucketPlain li {
+	margin: 0 0 12px 0;
+	padding: 0;
+	overflow:hidden;
+}
+.rightBucketPlain li a {
+	font-size: 1.0em;
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	color: #000;
+}
+.rightBucketPlain li .teaser {
+	display: none;
+}
+.rightBucketPlain .callout {
+	margin: 0 0 10px 0;
+	padding: 9px 10px 0 10px;
+	border: 1px solid #c9cbca;
+	background: #f3f4f4;
+}
+.rightBucketPlain .morelink {
+	font-size: 0.9em;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: right;
+}
+.rightBucketPlain .morelink a {
+	color: #000;
+}
+.rightBucketPlain .largeLink {
+	margin: 5px 0 3px 0;
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	font-size: 1.2em;
+	font-weight: normal;
+}
+.rightBucketPlain .largeLink a {
+	color: #000;
+}
+.rightBucketPlain .bucketFooter {
+	display: none;
+}
+/* Information from Industry bucket */
+#industryBucket {
+	margin: 0 0 20px 0;
+	background: #ebd7ca url(/pi/global/1024/bg_industry-bucket.png) no-repeat top left;
+}
+#industryBucket .industryBucketHeader {
+	margin: 0 0 8px 13px;
+	padding: 11px 0 0 0;
+}
+#industryBucket h3 {
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	font-size: 0.95em;
+	color: #005b81;
+}
+#industryBucketContent {
+	margin: 0 0 0 4px;
+	width: 324px;
+	background: #fff url(/pi/global/1024/bg_industry-bucket_feat_btm.png) no-repeat bottom left;
+}
+#industryBucket #industryBucketContent .bucketHeader {
+	width: 324px;
+	height: 4px;
+	background: url(/pi/global/1024/bg_industry-bucket_feat_top.png) no-repeat top left;
+	font-size: 1px;
+	line-height: 1px;
+}
+#right ul.industryCallout {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#right ul.industryCallout li {
+	margin: 0 0 15px 0;
+	padding: 6px 8px 6px 8px;
+	background: #f4e7db;
+	border: 1px solid #c9cbcb;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+#right ul.industryCallout li .byline {
+	display: inline;
+}
+#industryBucket #industryBucketContent ul {
+	margin: 7px 12px 0 12px;
+	padding: 0;
+	list-style: none;
+}
+#industryBucket #industryBucketContent li {
+	margin: 0;
+	padding: 0 0 8px 0;
+	font-size: 1.0em;
+}
+#industryBucket #industryBucketContent li a {
+	color: #000;
+	font-weight: normal;
+}
+#industryBucket #industryBucketContent .morelink {
+	margin: 0 9px 0 9px;
+	padding: 0 0 10px 0;
+	font-size: 1.05em;
+	font-weight: bold;
+	color: #000;
+}
+#industryBucket .bucketFooter {
+	height: 4px;
+	width: 332px;
+	background: url(/pi/global/1024/bg_industry-bucket_btm.png) no-repeat top left;
+	font-size: 1px;
+	line-height: 1px;
+}
+/* right column sponsors */
+.rightSponsors {
+	margin: 0 0 20px 0;
+	padding: 0;
+	border: 1px solid #dbddde;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	-moz-box-shadow: 0 5px 5px -3px #666;
+	-webkit-box-shadow: 0 5px 5px -3px #666;
+	box-shadow: 0 5px 5px -3px #666;
+}
+.rightBoxedSponsor {
+	margin: 6px;
+	padding: 4px 4px 0 4px;
+	height: 46px;
+	font-size: 11px;
+	border: 1px solid #c6d4d8;
+}
+.rightBoxedSponsor a {
+	font-weight: bold;
+}
+.rightBoxedSponsor a:link {
+	font-weight: bold;
+}
+.rightBoxedSponsor a:visited {
+	font-weight: bold;
+}
+.rightBoxedSponsor a:hover {
+	font-weight: bold;
+}
+.rightBoxedSponsor a:active {
+	font-weight: bold;
+}
+/* Social Network */
+.socialNet {
+	margin: 0 0 10px 0;
+	padding: 7px 7px 4px 7px;
+	background: #f8f8f8;
+	border: 1px solid #d8d8d8;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	font-size: 0.85em;
+}
+.socialNet a {
+	font-weight: normal;
+	color: #000;
+}
+.feeds {
+	padding: 0;
+}
+.stripelink {
+	padding: 0 12px 0 3px;
+}
+#right .socialNet .morelink {
+	margin: -13px 0 0 0;
+	text-transform: uppercase;
+	float: right;
+}
+/* right col PEOPLE */
+#right #peopleright {
+	margin: 0 0 20px 0;
+	padding: 0;
+	background: none;
+	border: 1px solid #dcdcdc;
+}
+#right #peopleright .peopletitle {
+	margin: 0;
+	padding: 8px 8px 0 8px;
+	text-transform: uppercase;
+	color: #005b81;
+	font-weight: bold;
+	font-size: 1.0em;
+	text-transform: uppercase;
+}
+#right #peopleright ul {
+	margin: 0;
+	padding: 6px 10px 0 10px;
+	list-style-type: none;
+}
+#right #peopleright li {
+	margin: 0;
+	padding: 0 0 7px 0;
+	clear: both;
+	overflow:hidden;
+}
+#right #peopleright .peopleimg {
+	padding: 2px 6px 7px 0;
+	width: 72px;
+	position: relative;
+	float: left;
+}
+#right #peopleright a {
+	font-weight: bold;
+}
+#right #people .peoplesubtitle {
+	margin: 0;
+	padding: 6px 0 8px 0;
+	font-weight: bold;
+	font-size: 1.0em;
+	text-transform: uppercase;
+}
+#right #people .peopleimg {
+	padding: 2px 6px 7px 0;
+	width: 72px;
+	position: relative;
+	float: left;
+}
+/* right col gray bucket */
+.rightPlainBucket {
+	margin: 0 0 20px 0;
+	padding: 0;
+	background: url(/pi/global/1024/bg-bucket-rt-gray.png) repeat-y top left;
+}
+.rightPlainBucket .bucketHeader {
+	padding: 7px 10px 6px 10px;
+	width: 312px;
+	background: #353e44 url(/pi/global/1024/bg-bucket-top-rt-gray.png) no-repeat top left;
+	color: #fff;
+}
+.rightPlainBucket .bucketHeader h3 {
+	margin: 0;
+	padding: 0;
+	font-size: 1.1em;
+	text-transform: uppercase;
+}
+.rightPlainBucket .bucketHeader .bucketHeaderText {
+	margin: 0 0 4px 0;
+	padding: 0;
+	font-size: 0.85em;
+	display: inline;
+	text-transform: none;
+	font-weight: normal;
+}
+.rightPlainBucket .rightBucketContent {
+	padding: 11px;
+}
+.rightPlainBucket ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.rightPlainBucket li {
+	margin: 0 0 12px 0;
+	padding: 0;
+}
+.rightPlainBucket li a {
+	font-size: 0.95em;
+	font-family: arial, sans-serif;
+}
+.rightPlainBucket li .featimg {
+	margin: 2px 5px 0 0;
+	padding: 0;
+	width: 45px;
+	position: relative;
+	float: left;
+	clear: both;
+}
+.rightPlainBucket li .teaser {
+	display: none;
+}
+.rightPlainBucket .morelink {
+	font-size: 0.95em;
+	font-weight: bold;
+}
+.rightPlainBucket .bucketFooter {
+	width: 332px;
+	height: 7px;
+	background: url(/pi/global/1024/bg-bucket-btm-rt-gray.png) no-repeat top left;
+	font-size: 1px;
+	line-height: 1px;
+}
+/* right col slider */
+#news_feature .rightBucketContent {
+	background:none;
+	padding:8px 0 2px 10px;
+	margin:0;
+	height:79px;
+}
+#news_feature.rightBucket {
+	margin: 0 0 8px 0;
+	background: transparent url(/pi/global/1024/bg-ref-feature-right-white.png) no-repeat scroll top left;
+}
+#rotator_container {
+	margin: 0;
+	padding: 0;
+	width:300px;
+	overflow:hidden;
+	position:relative;
+	height:64px;
+}
+#rotator_header {
+	margin: 0;
+	padding: 0 0 3px 0;
+	font-size: 0.9em;
+}
+#rotator_header a {
+	text-transform: uppercase;
+	color: #005b81;
+	font-weight: bold;
+}
+ul#right_rotator {
+	margin: 0;
+	padding: 0;
+	width:4000px;
+	position:absolute;
+}
+ul#right_rotator li {
+	margin: 0;
+	padding: 0;
+	float:left;
+	width:300px;
+}
+#rotatorlinks {
+	margin: 0;
+	padding: 0;
+	text-align:center;
+}
+#rotate_left {
+	background:url(/pi/global/ornaments/rotator-left.png) no-repeat top left;
+	width:25px;
+	height:31px;
+	cursor:pointer;
+	display:block;
+	float:left;
+	margin:22px 0 0 -10px;
+	position:absolute;
+	z-index:1;
+}
+#rotate_right {
+	display:block;
+	background:url(/pi/global/ornaments/rotator-rt.png) no-repeat top right;
+	width:25px;
+	cursor:pointer;
+	float:right;
+	margin-top:-36px;
+	height:31px;
+}
+#rotate_right:hover, #rotate_left:hover {
+	text-decoration:none;
+}
+#slide_num {
+	display:none;
+}
+#rotate_left.rotate_btn-dis {
+	background:url(/pi/global/ornaments/rotator-left-dis.png) no-repeat top left;
+	cursor:default;
+}
+#rotate_right.rotate_btn-dis {
+	background:url(/pi/global/ornaments/rotator-rt-dis.png) no-repeat top right;
+	cursor:default;
+}
+#news_feature .featimg {
+	width:45px;
+	border:1px solid #999;
+	padding:0;
+	margin:2px 5px 0 15px;
+}
+#news_feature a.title {
+	margin: 0;
+	padding: 0;
+	font-size:0.95em;
+	font-weight:bold;
+	font-family: arial, sans-serif;
+}
+#news_feature .teaser {
+	display:none;
+}
+#news_feature .byline {
+	display: none;
+}
+#news_feature .totalli {
+	background: #fff;
+	border: 1px solid #004869;
+	display: block;
+	float: left;
+	height: 5px;
+	margin-left: 5px;
+	width: 5px;
+	margin-top:0;
+}
+#news_feature .thisli {
+	background: #00496a;
+	width: 5px;
+	margin-top:0;
+	height:5px;
+}
+#rotator_image {
+	margin-left: 110px;
+	height:9px;
+}
+
+/* RESOURCE CENTERS */
+#rcIntro {
+	margin: 0 0 25px 0;
+	padding: 12px 15px 0 15px;
+	background: url(/pi/global/1024/bg_rc_intro.png) no-repeat top left;
+	border-bottom: 1px solid #d3d3d3;
+}
+/* #rcIntro h2 {
+	margin: 0;
+	padding: 0 0 8px 0;
+	font-family: 'proxima_nova_rgregular', arial, sans-serif;
+} */
+#cardiology .bucket#rcIntro .bucketHeader {
+	display: none;
+}
+#cardiology .bucket#rcIntro .bucketContent #titleImg {
+	margin-top: 14px;
+}
+
+/* CONFERENCES */
+#confIntro {
+	margin: 0 0 20px 0;
+	padding: 14px 15px 0 15px;
+	background: url(/pi/global/1024/bg_rc_intro.png) no-repeat top left;
+	border-bottom: 1px solid #d5e3ed;
+}
+.newsSignUp {
+	margin: 0 0 10px 0;
+	padding: 7px 7px 4px 7px;
+	border: 1px solid #d8d8d8;
+	background: #f8f8f8;
+	font-size: 0.95em;
+}
+.newsSignUp p {
+	margin: 0;
+	padding: 0;
+}
+/* STAFF-BIOS */
+#leftcol .maincolbox #ms_staff {
+	margin: 5px 0 15px 0;
+	padding: 11px;
+	border: 1px solid #dbddde;
+	-moz-box-shadow: 0 5px 5px -3px #666;
+	-webkit-box-shadow: 0 5px 5px -3px #666;
+	box-shadow: 0 5px 5px -3px #666;
+}
+#leftcol .maincolbox #ms_staff .column {
+	width: 293px;
+	float: left;
+}
+#leftcol .maincolbox #ms_staff h3 {
+	margin: 5px 0 15px 0;
+	padding: 0;
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	font-size: 1.3em;
+	line-height: 1.2em;
+	font-weight: normal;
+}
+#leftcol .maincolbox #ms_staff h4 {
+	margin: 10px 0;
+	padding: 0 0 2px 0;
+	font-size: 0.95em;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #666;
+	border-bottom: 1px solid #dbdbdb;
+}
+#leftcol .maincolbox #ms_staff h5 {
+	margin: 0;
+	padding: 3px 0 0 10px;
+	font-size: 1.0em;
+	font-weight: bold;
+}
+#leftcol .maincolbox #ms_staff ul {
+	margin: 3px 0 2px 15px;
+	padding: 0;
+	list-style: none;
+}
+#leftcol .maincolbox #ms_staff ul li {
+	margin: 0;
+	padding: 0 0 6px 0;
+}
+#leftcol .maincolbox #ms_staff ul li a {
+	font-family: arial, sans-serif;
+	font-size: 1.0em;
+	font-weight: bold;
+}
+#leftcol .maincolbox #ms_staff ul li ul {
+	margin: 3px 0 0 18px;
+	padding: 0;
+	list-style: none;
+}
+#leftcol .maincolbox #ms_staff ul li ul li {
+	margin: 0;
+	padding: 0 0 6px 0;
+	font-style: italic;
+	font-size: 0.95em;
+}
+#leftcol .maincolbox #ms_staff #memberdetails .memberinfo {
+	margin: 0;
+	padding: 0;
+	clear: both;
+}
+#leftcol .maincolbox #ms_staff #memberdetails h5 {
+	margin: 0;
+	padding: 2px 0 5px 0;
+	font-weight: normal;
+	font-size: 1.15em;
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+}
+#leftcol .maincolbox #ms_staff #memberdetails .memberimg {
+	margin: 2px 7px 0 0;
+	padding: 0 0 10px 0;
+	width: 96px;
+	position: relative;
+	float: left;
+	clear: both;
+}
+#leftcol .maincolbox #ms_staff #memberdetails p {
+	margin: 0;
+	padding: 0 0 10px 0;
+}
+#leftcol .maincolbox #ms_staff #memberdetails .linktop {
+	margin: 0;
+	padding: 5px 0 15px 0;
+	text-align: center;
+	font-size: 0.85em;
+	color: #b3b3b3;
+	clear: both;
+}
+#leftcol .maincolbox #ms_staff #memberbio h3 {
+	margin: 0;
+	padding: 0;
+	font-size: 1.25em;
+	font-weight: bold;
+	background-color: #fff;
+	border: none;
+	color: #000;
+}
+#leftcol .maincolbox #ms_staff #memberbio .memberinfo {
+	margin: 0 0 10px 0;
+	padding: 2px 0 8px 0;
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+}
+#leftcol .maincolbox #ms_staff #memberbio .memberinfo a {
+	font-weight: normal;
+}
+#leftcol .maincolbox #ms_staff #memberbio p {
+	margin: 0;
+	padding: 0 0 15px 0;
+}
+.staffcolumnleft {
+	margin-right: 20px;
+}
+/* BLOG INDEX */
+ul#blogmarketinglist {
+	list-style: square outside none;
+	padding: 4px 0 0 28px;
+}
+ul#blogmarketinglist li {
+	padding: 0 0 5px 0;
+	margin: 0;
+}
+#blogindex h3 {
+	margin: 0 0 15px 0;
+	padding: 0 0 1px 0;
+	text-transform: uppercase;
+	border-bottom: medium double #b3b3b3;
+}
+#blogindex h6 {
+	margin: 0 0 8px 0;
+	padding: 0;
+	font-size: 1.0em;
+	font-weight: bold;
+	color: #555;
+	border-bottom: 1px dashed #b3b3b3;
+}
+#blogindex ul {
+	margin: 0 0 20px 22px;
+	padding: 0;
+	list-style: square;
+	color: #b3b3b3;
+}
+#blogindex li {
+	margin: 0 0 7px 0;
+	padding: 0;
+}
+#blogindex li a {
+	font-family: arial, sans-serif;
+	font-size: 1.10em;
+	font-weight: bold;
+}
+#blogindex .teaser {
+	color: #000;
+	margin: 0;
+	padding: 0;
+	font-size: 0.95em;
+}
+/* WELCOME PAGES */
+.leftBucket .leftBucketL1_welcome {
+	margin: 0 15px 0 0;
+	width: 130px;
+	float: left;
+	border-left:1px solid #dfe5e9;
+	border-top:1px solid #dfe5e9;
+	border-right:1px solid #aabbc4;
+	border-bottom:1px solid #aabbc4;
+	padding:5px;
+}
+.leftBucket .leftBucketL1_welcome ul li {
+	margin:0 0 5px 0;
+}
+.leftBucket .leftBucketL1_welcome a {
+	font-size:.9em;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.leftBucket .leftBucketL_welcome {
+	font-size:.9em;
+	margin: 0 20px 0 0;
+	width: 210px;
+	float: left;
+	margin-bottom:15px;
+}
+.leftBucket .leftBucketR_welcome {
+	font-size:.9em;
+	margin-bottom:15px;
+	width: 215px;
+	float: left;
+}
+.leftBucket .leftBucketF_welcome {
+	font-size:.9em;
+	float: left;
+	width:440px;
+	margin-bottom:15px;
+}
+.leftBucket .leftBucketL1_welcome h3 {
+	border-bottom:3px double #C0C9BF;
+	color:#000000;
+	font-size:1em;
+	margin:0 0 8px;
+	padding:4px 0;
+	text-transform:uppercase;
+}
+.leftBucket .leftBucketL_welcome h3 {
+	border-bottom:3px double #C0C9BF;
+	color:#000000;
+	font-size:1.1em;
+	margin:0 0 8px;
+	padding:4px 0;
+	text-transform:uppercase;
+}
+.leftBucket .leftBucketR_welcome h3 {
+	border-bottom:3px double #C0C9BF;
+	color:#000000;
+	font-size:1.1em;
+	margin:0 0 8px;
+	padding:4px 0;
+	text-transform:uppercase;
+}
+.leftBucket .leftBucketF_welcome h3 {
+	border-bottom:3px double #C0C9BF;
+	color:#000000;
+	font-size:1.1em;
+	margin:0 0 8px;
+	padding:4px 0;
+	text-transform:uppercase;
+}
+.leftBucketF_welcome #mediaBucket ul {
+	margin: 0;
+	padding: 8px 0 0 0;
+	list-style: none;
+}
+.leftBucketF_welcome #mediaBucket ul li {
+	margin: 0;
+	padding: 0 0 0 13px;
+	width: 130px;
+	float: left;
+}
+.leftBucketF_welcome #mediaBucket .bucketFooter {
+	background:none;
+	width:auto;
+}
+.leftBucketF_welcome #mediaBucket {
+	background:none;
+	border-color:#DFE5E9 #AABBC4 #AABBC4 #DFE5E9;
+	border-left:1px solid #DFE5E9;
+	border-style:solid;
+	border-width:1px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+#splashlogin {
+	background:#efefef url(/pi/reference/h1bg.png) repeat-x scroll center top;
+	padding:15px 10px 0px 10px;
+	border:1px solid #e4e9ec;
+	height:60px;
+	margin-bottom:15px;
+}
+#splashlogin a {
+	display:block;
+	margin:10px 0 0 0;
+}
+#splashlogin .splashreglink {
+	float:left;
+}
+#splashlogin .splashpasswordlink {
+	float:right;
+	font-weight:bold;
+	margin-right:10px;
+}
+.splashRemember {
+	font-size:.9em;
+	margin:0 10px 0 8px;
+}
+.splashPassword {
+	margin:0 15px;
+}
+.rightBucket_ref {
+}
+/* SPECIALITIES DIRECTORY */
+#left #view_specialty ul li {
+	margin: 0;
+	padding: 0 0 5px 0;
+}
+#left #view_specialty ul li a {
+	font-family: arial, sans-serif;
+	font-size: 1.0em;
+}
+
+/* ******************************************************
+	2012 Redesign Styles
+****************************************************** */
+#news {
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	width: 980px;
+	font-size: 1.05em;
+	font-family: Arial, sans-serif;
+	text-align: left;
+	color: #000;
+}
+
+/* MULTIMEDIA bucket */
+#news #mediaBucket {
+	width: 625px;
+	overflow: hidden;
+	height: 237px;
+	margin-bottom: 20px;
+	position: relative;
+	border: 1px solid #d3d3d3;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	background: #fbfbfb;
+}
+#news #mediaBucket ul {
+	margin: 1px;
+	padding: 10px 0 0 0;
+	list-style: none;
+	position: absolute;
+	width: 4000px;
+	height: 200px;
+}
+#news #mediaBucket ul li a {
+    font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+    font-size: 1.0em;
+    line-height: 1.1em;
+    color: #000;
+}
+#news #mediaBucket ul li.confcall {
+	margin: 0;
+	padding: 0 1px 0 13px;
+	width: 292px;
+	float: left;
+	position: relative;
+}
+#news #mediaBucket ul li.confcall ul.confcall_sublist {
+	margin: 110px 0 0 0;
+	padding: 0;
+	list-style: none;
+	font-size: 1.0em;
+	color: #999999;
+	position: relative;
+	width: 292px;
+}
+#news #mediaBucket ul li.confcall ul.confcall_sublist li {
+	padding: 0;
+	margin: 0;
+	padding-bottom: 8px;
+	position: relative;
+	width: 292px;
+}
+#news #mediaBucket li.confcall .featimg {
+	margin: 0;
+	padding: 0 0 3px 0;
+	position: relative;
+	clear: both;
+	width: 292px;
+	display: block;
+}
+
+/*---------*/
+/*	LEFT   */
+/*---------*/
+#news .leftBucket {
+	margin: 0 0 20px 0;
+	padding: 0;
+	background: none;
+}
+#news .leftBucket a {
+	color: #000;
+}
+#news .leftBucket .bucketHeader {
+	margin: 0;
+	padding: 0 10px 0 0;
+	width: 615px;
+	border-top: none;
+	color: #535353;
+	background: url("/pi/global/1024/bg-header-dots.png") repeat-x bottom;
+}
+#news .leftBucket .bucketHeader h2 {
+	margin: 0;
+	padding: 0 4px 0 0;
+	font-size: 0.9em;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #005b81;
+	background-color: #fff;
+	display: inline;
+}
+#news .leftBucket .bucketHeader .bucketHeaderText {
+	margin: 0 0 4px 0;
+	padding: 0;
+	font-size: 0.95em;
+	display: inline;
+	text-transform: none;
+	font-weight: normal;
+}
+#news .leftBucket .morelink {
+	text-align: right;
+}
+#news .leftBucket .morelink a {
+	color: #000;
+}
+#news .leftBucket .bucketFooter {
+	display: none;
+}
+#news #left .leftBucket .callout ul {
+	margin: 0;
+	padding: 0;
+}
+#news #left .leftBucket .callout ul li {
+	margin: 0 0 10px 0;
+	padding: 8px 10px 9px 10px;
+	border: 1px solid #e2e2e2;
+	background: #fbfbfb;
+}
+/* 2-split columns */
+#news #left .splitColL {
+	margin: 0 20px 0 0;
+	padding: 0;
+	width: 303px;
+	float: left;
+}
+#news #left .splitColR {
+	margin: 0;
+	padding: 0;
+	width: 303px;
+	float: left;
+}
+#news #left .splitColL .leftBucket .bucketHeader, #news #left .splitColR .leftBucket .bucketHeader {
+	padding: 7px 10px 0 2px;
+	width: 283px;
+	color: #535353;
+	background: none;
+}
+#news #left .splitColL .leftBucket, #news #left .splitColR .leftBucket {
+	background: none;
+}
+
+/* People - for Editors, Steering Committee, etc. */
+#news #adBoard, #all #adBoard {
+	background: #f5f7f8;
+	border: 1px solid #d3d3d3;
+}
+#news .leftBucket#adBoard .bucketHeader, #all .leftBucket#adBoard .bucketHeader {
+	margin: 2px 0 0 0;
+	padding: 7px 0 0 0;
+	width: auto;
+	background: none;
+}
+#news .leftBucket#adBoard .bucketHeader h2, #all .leftBucket#adBoard .bucketHeader h2 {
+	margin: 0;
+	padding: 3px 10px 0 10px;
+	font-size: 1.0em;
+	font-weight: bold;
+	text-transform: uppercase;
+	color:#005b81;
+	background: none;
+}
+#news #adBoard ul li, #all #adBoard ul li {
+	padding-bottom: 5px;
+	font-size: 0.9em;
+}
+#news #adBoard ul li a, #all #adBoard ul li a {
+	font-weight: normal;
+}
+#news .pplSubtitle, #all .pplSubtitle {
+	margin: 0;
+	padding: 7px 0 5px 0;
+	font-size: 1.15em;
+	border: none;
+	border-top: 1px solid #d3d3d3;
+	color:#005b81;
+	font-weight: bold;
+	font-size: 1.0em;
+	text-transform: uppercase;
+}
+#news .pplFooter, #all .pplFooter {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+#news .pplmorelink, #all .pplmorelink {
+	text-align: right;
+	text-transform: none;
+}
+#news .pplmorelink a, #all .pplmorelink a {
+	font-size: 0.95em;
+	font-weight: normal;
+	color: #000;
+}
+
+/* collaboration */
+.leftBucket #collaboration a {
+	font-weight: normal;
+	color: #000;
+}
+
+/*----------*/
+/*	RIGHT   */
+/*----------*/
+
+/* right col slider */
+#news #news_feature.rightBucket {
+	margin: 0 0 8px 0;
+	background: #ffffff;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2ZiZmJmYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMGYyZjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #ffffff 1%, #fbfbfb 51%, #f0f2f2 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ffffff), color-stop(51%,#fbfbfb), color-stop(100%,#f0f2f2));
+	background: -webkit-linear-gradient(top, #ffffff 1%,#fbfbfb 51%,#f0f2f2 100%);
+	background: -o-linear-gradient(top, #ffffff 1%,#fbfbfb 51%,#f0f2f2 100%);
+	background: -ms-linear-gradient(top, #ffffff 1%,#fbfbfb 51%,#f0f2f2 100%);
+	background: linear-gradient(top, #ffffff 1%,#fbfbfb 51%,#f0f2f2 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f0f2f2',GradientType=0 );
+ 	border: 1px solid #e1e1e1;
+}
+#news #news_feature .rightBucketContent {
+	background:none;
+	padding:8px 0 2px 10px;
+	margin:0;
+	height:79px;
+}
+#news #news_feature.rightBucket li a {
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+    font-size: 1.05em;
+    font-weight: normal;
+}
+#news #news_feature .thisli {
+	background: #6faacb;
+}
+
+/* default right bucket */
+#news .rightBucket {
+	border: none;
+	background: none;
+}
+#news .rightBucket .bucketHeader {
+	margin: 0 0 6px 0;
+	padding: 0;
+	background: none;
+	border-top: none;
+	width: auto;
+	background: url("/pi/global/1024/bg-header-dots.png") repeat-x bottom;
+}
+#news .rightBucket .bucketHeader h3 {
+	margin: 2px 0 0 0;
+	padding: 0 4px 0 0;
+	font-size: 0.9em;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #005b81;
+	background-color: #fff;
+	display: inline;
+}
+#news .rightBucket .rightBucketContent {
+	margin: 0;
+	padding: 0 11px 11px 5px;
+	border: none;
+}
+#news .rightBucket li a {
+	font-size: 1.15em;
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	color: #000;
+}
+#news .rightBucket .morelink {
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: right;
+}
+#news .rightBucket .morelink a {
+	color: #000;
+}
+#news .rightBucket .bucketFooter {
+	display: none;
+}
+
+/* WELCOME PAGES */
+#news .leftBucket .leftBucketL1_welcome {
+	margin: 0 15px 0 -11px;
+	padding: 5px;
+	width: 130px;
+	background: #f5f7f8;
+	border: 1px solid #ededed;
+	float: left;
+}
+#news .leftBucket .leftBucketL1_welcome ul li {
+	margin:0 0 5px 0;
+	font-size: 0.95em;
+}
+#news .leftBucket .leftBucketL1_welcome a {
+	font-size:.9em;
+	font-family:Arial, Helvetica, sans-serif;
+}
+#news .leftBucket .leftBucketL_welcome {
+	margin: 0 20px 25px 0;
+	font-size: 0.9em;
+	width: 220px;
+	border-top: none;
+	background: url("/pi/global/1024/bg-header-dots.png") repeat-x 0 2px;
+	float: left;
+}
+#news .leftBucket .leftBucketR_welcome {
+	margin-bottom:25px;
+	font-size: 0.9em;
+	width: 219px;
+	border-top: none;
+	background: url("/pi/global/1024/bg-header-dots.png") repeat-x 0 2px;
+	float: left;
+}
+#news .leftBucket .leftBucketF_welcome {
+	margin: 2px 0 15px 0;
+	font-size: 0.9em;
+	width: 459px;
+	border-top: none;
+	background: url("/pi/global/1024/bg-header-dots.png") repeat-x 0 2px;
+	float: left;
+}
+#news .leftBucket .leftBucketL1_welcome h3 {
+	margin: 0 0 5px 0;
+	padding: 0;
+	font-size: 0.9em;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #005b81;
+	border: none;
+}
+#news .leftBucket b {
+	margin: 0 0 5px 0;
+	padding: 0;
+	font-size: 0.9em;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #005b81;
+}
+#news .leftBucket .leftBucketL_welcome h3, #news .leftBucket .leftBucketR_welcome h3 {
+	margin: 0;
+	padding: 0 4px 0 0;
+	font-size: 1.0em;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #005b81;
+	background-color: #fff;
+	display: inline;
+	border: none;
+}
+#news .leftBucket .leftBucketF_welcome h3 {
+	margin: 0;
+	padding: 0 4px 0 0;
+	font-size: 1.0em;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #005b81;
+	background-color: #fff;
+	display: inline;
+	border: none;
+}
+#news .leftBucketF_welcome #mediaBucket ul {
+	margin: 0;
+	padding: 8px 0 0 0;
+	list-style: none;
+}
+#news .leftBucketF_welcome #mediaBucket ul li {
+	margin: 5px 8px 0 0;
+	padding: 0 0 0 13px;
+	width: 130px;
+	font-size: 1.1em;
+	float: left;
+}
+#news .leftBucketF_welcome #mediaBucket {
+	margin: -2px 0 4px 0;
+	width: 460px;
+}
+#news .leftBucket .leftBucketL_welcome ul, #news .leftBucket .leftBucketR_welcome ul, #news .leftBucket .leftBucketF_welcome ul {
+	margin: 8px 0 0 0;
+}
+
+
+
+#all .commentcount, #news .commentcount, #news #mediaBucket ul li .commentcount, #news .rightBucket li .commentcount, .commentcount {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:.8em;
+	color:#575757;
+}
+#archives .commentcount { font-size:.9em;}
+
+
+/* ***************************** */
+/*  Medscape Today & Cardiology  */
+/* ***************************** */
+#today, #cardiology {
+	margin: 0;
+	border: 1px solid #b2b2b2;
+	border-top: none;
+}
+#today.twoCol {
+	background: url("/pi/global/ornaments/bg-main-col.png") 24% repeat-y;
+}
+#today.topFix, #cardiology.topFix {
+	border-top: 1px solid #b2b2b2;
+}
+#today #left {
+	margin: 0;
+	padding: 0;
+	width: 750px;
+	float: left;
+}
+#today #right, #cardiology #right {
+	margin: 0;
+	padding: 5px 0 0 10px;
+	width: 306px;
+	float: left;
+}
+#cardiology #right {
+	padding: 0 0 0 10px;
+}
+
+/* common bucket styles */
+#today .bucket .bucketHeader {
+	margin: 15px 12px 9px 12px;
+	padding: 0;
+	color: #535353;
+	background: url("/pi/global/1024/bg-header-dots.png") repeat-x bottom;
+}
+#cardiology .bucket .bucketHeader {
+	margin: 15px 12px 0 12px;
+	padding: 0;
+	color: #535353;
+	background: url("/pi/global/1024/bg-header-dots.png") repeat-x bottom;
+}
+#today .bucket .bucketHeader h2, #today .bucket .bucketHeader h3,
+#cardiology .bucket .bucketHeader h2, #cardiology .bucket .bucketHeader h3 {
+	margin: 0;
+	padding: 0 4px 0 0;
+	font-size: 0.95em;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #005b81;
+	background-color: #fff;
+	display: inline;
+}
+#today .bucket .bucketContent {
+	margin: 0 9px 15px 12px;
+	padding: 0;
+}
+#cardiology .bucket .bucketContent {
+	margin: 0 9px 5px 12px;
+	padding: 0;
+}
+#today .bucket ul, #cardiology .bucket ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#today .bucket ul li {
+	margin: 0 0 14px 0;
+	overflow: hidden;
+}
+#cardiology .bucket ul li {
+	margin: 0 0 15px 0;
+	overflow: hidden;
+}
+#today .bucket ol, #cardiology .bucket ol {
+	margin: 0 0 0 20px;
+	padding: 0;
+}
+#today .bucket ol li, #cardiology .bucket ol li {
+	margin: 0 0 14px 0;
+	color: #666;
+}
+#today .bucket ol a.title, #cardiology .bucket ol a.title {
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	font-size: 1.1em;
+	line-height: 1.3em;
+}
+#today .bucket a, #cardiology .bucket a {
+	color: #000;
+}
+#today .bucket .featimg, #cardiology .bucket .featimg {
+	margin: 3px 7px 0 0;
+	padding: 0;
+	width: 62px;
+	border: 1px solid #dbdbdb;
+	position: relative;
+	float: left;
+	clear: both;
+}
+#today .bucket a.title, #cardiology .bucket a.title {
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	font-size: 1.15em;
+	line-height: 1.3em;
+}
+#today .bucket .teaser, #cardiology .bucket .teaser {
+	margin: 2px 0 2px 0;
+	font-size: 0.95em;
+	display: block;
+	line-height: 1.25em;
+	color: #454545;
+}
+#today .bucket .byline, #cardiology .bucket .byline {
+	padding: 0;
+	font-family: arial, sans-serif;
+	font-size: 0.85em;
+	color: #797979;
+	line-height: 1.2em;
+	display: block;
+}
+#today .bucket .commentcount, #cardiology .bucket .commentcount {
+	margin: 2px 0 0 0;
+	font-family: arial, sans-serif;
+	font-size: 0.8em;
+	color: #797979;
+}
+#today .bucket .morelink {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+#cardiology .bucket .morelink {
+	padding: 1px 0 0 4px;
+	background-color: #fff;
+	font-weight: normal;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	float: right;
+	*margin-top: -14px; /* IE7 float bug */
+}
+#cardiology .bucket .morelink a {
+	color: #666;
+}
+#cardiology .halfBuckets {
+	background: url("/pi/global/ornaments/bg-half-buckets.png") repeat-y;
+	overflow: hidden;
+	clear: both;
+}
+#cardiology .halfBuckets .bucket {
+	width: 325px;
+	float: left;
+}
+#cardiology .halfBuckets .bucketContent {
+	margin-top: 7px;
+}
+#today .bucket .bucketFooter, #cardiology .bucket .bucketFooter {
+	display: none;
+}
+
+/* alert callout */
+#cardiology #left .callout ul li {
+    margin: 12px 9px 8px 12px;
+    padding: 5px 10px;
+    background: #f4f4f4;
+    border: 1px solid #dbdbdb;
+}
+
+/* brand alert */
+#today .bucket ul.brandAlert, #cardiology .bucket ul.brandAlert {
+	margin: 0 0 8px 0;
+	padding: 8px 4px;
+	border: 1px solid #e2e2e2;
+	background-color: #fbfbfb;
+	list-style: none;
+}
+#today .bucket ul.brandAlert .byline, #cardiology .bucket ul.brandAlert .byline {
+	font-style: italic;
+}
+
+/* header ad */
+#adtagheader.cardio {
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px 0 10px 0;
+	border: 1px solid #bfbfbf;
+	border-top: none;
+	width: 978px;
+}
+
+/* -- TOP -- */
+#today #top {
+	padding-top: 5px;
+	background: url("/pi/global/ornaments/bg-top-col.png") repeat-y;
+}
+#today #left #top .bucket {
+	border-top: none;
+}
+/* specialties */
+#today .bucket#specialties {
+	width: 164px;
+	float: left;
+}
+#today .bucket#specialties ul {
+	padding-top: 3px;
+}
+#today .bucket#specialties ul li {
+	margin: 0;
+	padding: 0 0 5px 0;
+	font-size: 0.9em;
+}
+#today .bucket#specialties ul.other {
+	margin-top: 8px;
+	padding-top: 12px;
+	border-top: 1px solid #dbdbdb;
+}
+
+/* news */
+#today .bucket#topNews {
+	width: 565px;
+	float: left;
+}
+#today .bucket#topNews .bucketContent {
+	margin: 0 9px 5px 12px;
+	padding: 0;
+}
+#today .bucket#topNews .col2 {
+	margin: 5px 0 0 0;
+	padding: 14px 0 0 0;
+	border-top: 1px solid #dbdbdb;
+	background: url("/pi/global/ornaments/bg-2-col.png") 13% 0 repeat-y;
+	display: inline-block;
+	clear: both;
+}
+/*#cardiology .bucket .col2 {
+	margin: 4px 0 0 0;
+	padding: 2px 0 0 0;
+	background: url("/pi/global/ornaments/bg-2-col-default.png") repeat-y;
+	display: inline-block;
+	clear: both;
+}
+#cardiology .bucket .split {
+	margin: 0;
+	padding: 6px 0 0 0;
+	background: url("/pi/global/ornaments/bg-2-col-split.png") repeat-y;
+	display: inline-block;
+	clear: both;
+}
+#cardiology .bucket .split ul.colLeft {
+	margin: 0 20px 0 0;
+	width: 304px;
+	float: left;
+}
+#cardiology .bucket .split ul.colRight {
+	margin: 0;
+	width: 304px;
+	float: left;
+}*/
+#today .bucket#topNews .col2.top {
+	margin: 0;
+	padding: 3px 0 0 0;
+	border: none;
+}
+#today #left .bucket#topNews .bucketL {
+	margin: 0 20px 0 0;
+	width: 262px;
+	float: left;
+}
+#today #left .bucket#topNews .bucketR {
+	margin: 0;
+	width: 262px;
+	float: left;
+}
+#today #left .bucket#bom .col2 ul li, #cardiology #left .bucket .col2 ul li {
+	margin: 0 0 20px 20px;
+	width: 304px;
+	float: left;
+}
+#today #left .bucket#bom .col2 ul li:first-child, #cardiology #left .bucket .col2 ul li:first-child {
+	margin: 0 0 20px 0;
+}
+#today .bucket#topNews li {
+	margin: 0 0 8px 0;
+}
+#today .bucket#topNews a.title {
+	font-size: 1.15em;
+	line-height: 1.3em;
+}
+#today .bucket#topNews .col2Feature,
+#today .bucket#topNews .col4Feature,
+#today .bucket#topNews .col6Feature,
+#today .bucket#topNews .col8Feature {
+	padding: 3px 0 0 0;
+}
+#cardiology .bucket#topFeature ul li {
+	margin: 12px 0 15px 0;
+	padding: 0;
+}
+#today .bucket#topNews .col2Feature a.title,
+#today .bucket#topNews .col4Feature a.title,
+#today .bucket#topNews .col6Feature a.title,
+#today .bucket#topNews .col8Feature a.title {
+	font-size: 1.8em;
+	line-height: 1.3em;
+}
+#cardiology .bucket#topFeature a.title {
+	font-size: 1.7em;
+	line-height: 1.3em;
+}
+#today .bucket#topNews .col2Feature .featimg,
+#today .bucket#topNews .col4Feature .featimg,
+#today .bucket#topNews .col6Feature .featimg,
+#today .bucket#topNews .col8Feature .featimg {
+	margin: 3px 0 0 20px;
+	padding: 0;
+	width: 222px;
+	border: 1px solid #dbdbdb;
+	position: relative;
+	float: right;
+	clear: both;
+}
+#cardiology .bucket#topFeature .featimg {
+	margin: 3px 0 0 20px;
+	padding: 0;
+	width: 142px;
+	border: 1px solid #dbdbdb;
+	position: relative;
+	float: right;
+	clear: both;
+}
+/*#cardiology .bucket#topFeature .conftag,
+#cardiology .bucket#topFeature .alerttag,
+#cardiology .bucket#topFeature .newstag {
+	margin-right: 1px;
+	font-size: 1.5em;
+	font-weight: normal;
+}*/
+/* legacy RC top feature */
+#all .bucket .col2Feature {
+	margin: 5px 0 0 0;
+	padding: 0 10px;
+}
+#all .bucket .col2Feature ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#all .bucket .col2Feature ul li {
+	margin: 0 0 15px 0;
+	overflow: hidden;
+}
+#all .bucket .col2Feature a.title {
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	font-size: 1.4em;
+	line-height: 1.3em;
+	color: #000;
+}
+#all .bucket .col2Feature .featimg {
+	margin: 3px 0 0 15px;
+	padding: 0;
+	width: 200px;
+	border: 1px solid #dbdbdb;
+	position: relative;
+	float: right;
+	clear: both;
+}
+
+/* -- LEFT -- */
+#today #left .bucket, #cardiology #left .bucket {
+	border-top: 1px solid #dbdbdb;
+}
+#today #left .bucket .bucketL {
+	margin: 0 20px 0 0;
+	width: 344px;
+	float: left;
+}
+#today #left .bucket .bucketR {
+	margin: 0;
+	width: 344px;
+	float: left;
+}
+
+/* special report */
+#today #left .bucket#specialReport .reportTitle {
+	margin: 0 0 2px 0;
+	font-size: 1.3em;
+	display: block;
+}
+#today #left .bucket#specialReport .bucketL ul li {
+	margin: 0;
+}
+#today #left .bucket#specialReport .bucketL .featimg {
+	margin: 3px 7px 0 0;
+	padding: 0;
+	width: 160px;
+	border: 1px solid #dbdbdb;
+	position: relative;
+	float: left;
+	clear: both;
+}
+#today #left .bucket#specialReport .bucketL .teaser {
+	font-size: 1.05em;
+}
+#today #left .bucket#specialReport .bucketR a.title {
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	font-size: 1.1em;
+}
+
+/* business of medicine */
+#today #left .bucket#bom .byline, #today #left .bucket#bom .commentcount {
+	display: none;
+}
+#today #left .bucket#bom ul li {
+	margin: 0;
+}
+
+/* inside medscape */
+#today #left .bucket#inside .section {
+	padding: 0 0 8px 0;
+	text-transform: uppercase;
+	font-size: 0.8em;
+}
+#today #left .bucket#inside .section a {
+	color: #007cb0;
+}
+#today #left .bucket#inside li {
+	margin: 0 0 0 20px;
+	width: 162px;
+	float: left;
+}
+#today #left .bucket#inside li:first-child {
+	margin: 0;
+}
+#today #left .bucket#inside .featimg {
+	margin: 0 0 5px 0;
+	padding: 0;
+	width: 160px;
+	border: 1px solid #dbdbdb;
+	position: relative;
+	float: left;
+	clear: both;
+}
+
+/* heartwire news */
+#cardiology #left .bucket#topFeature {
+	border-top: none;
+}
+#cardiology .bucket#topFeature .bucketHeader {
+	display: none;
+}
+#cardiology .bucket#heartwire .split ul.colRight .featimg, #cardiology .bucket#heartwire .split ul.colRight .teaser {
+	display: none;
+}
+
+/* editorial */
+#cardiology .bucket#editorial .split ul.colRight .featimg, #cardiology .bucket#editorial .split ul.colRight .teaser {
+	display: none;
+}
+
+/* carousel - cardio page & mayo clinic */
+#cardiology .bucket#columnists .bucketHeader, #cardiology .bucket#talks .bucketHeader {
+	margin: 15px 10px 4px 12px;
+}
+#cardiology .bucket#columnists .bucketContent, #cardiology .bucket#talks .bucketContent {
+	margin-bottom: 15px;
+}
+.bucket#columnists #carousel, .bucket#talks #carousel {
+	width: 628px;
+	height: 215px;
+	overflow: hidden;
+	position: relative;
+}
+.bucket#columnists ul#columnistsList, .bucket#talks ul#talksList {
+	margin: 0;
+	padding: 0;
+	width: 4000px;
+	position: absolute;
+}
+.bucket#columnists ul#columnistsList li, .bucket#talks ul#talksList li {
+	margin: 5px 20px 0 0;
+	padding: 0;
+	width: 142px;
+	border: none;
+	list-style: none;
+	float: left;
+}
+.bucket#columnists ul#columnistsList li a, .bucket#talks ul#talksList li a {
+	font-size: 1.1em;
+	line-height: 1.2em;
+}
+.bucket#columnists ul#columnistsList li .featimg, .bucket#talks ul#talksList li .featimg {
+	margin: 0 0 3px 0;
+	padding: 0;
+	width: 142px;
+	border: none;
+	position: auto;
+	float: none;
+	clear: both;
+}
+.bucket#columnists ul#columnistsList li .teaser, .bucket#columnists ul#columnistsList li .byline {
+	display: none;
+}
+.bucket#columnists #carouselState, .bucket#talks #carouselState {
+	margin: 0;
+	padding: 0;
+	height: 30px;
+	background: #dbdbdb;
+	overflow: hidden;
+}
+.bucket#columnists #rotator_image, .bucket#talks #rotator_image {
+	margin: 11px 0 0 14px;
+	padding: 0;
+	height: auto;
+	float: left;
+}
+.bucket#columnists .totalli, .bucket#talks .totalli {
+	margin: 0 2px 0 2px;
+	background: #fff;
+	width: 8px;
+	height: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	float: left;
+}
+.bucket#columnists .thisli, .bucket#talks .thisli {
+	background: #b91c00;
+	width: 8px;
+	height: 8px;
+}
+.bucket#columnists #rotator_thisli, .bucket#talks #rotator_thisli {
+	display: none;
+}
+.bucket#columnists .carouselArrows, .bucket#talks .carouselArrows {
+	margin: 0 8px 0 0;
+	display: inline-block;
+	width: 40px;
+	float: right;
+}
+.bucket#columnists #rotate_left, .bucket#talks #rotate_left {
+	margin: 6px 0 0 0;
+	background:url("/pi/global/ornaments/icon-arrow-carousel-left.png") no-repeat top left;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	z-index: 1;
+}
+.bucket#columnists #rotate_right, .bucket#talks #rotate_right {
+	margin: 6px 0 0 25px;
+	background: url("/pi/global/ornaments/icon-arrow-carousel-right.png") no-repeat top right;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+.bucket#columnists #rotate_left.rotate_btn-dis, .bucket#talks #rotate_left.rotate_btn-dis {
+	background: url("/pi/global/ornaments/icon-arrow-carousel-left.png") no-repeat top left;
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+	cursor: default;
+}
+.bucket#columnists #rotate_right.rotate_btn-dis, .bucket#talks #rotate_right.rotate_btn-dis {
+	background: url("/pi/global/ornaments/icon-arrow-carousel-right.png") no-repeat top right;
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+	cursor: default;
+}
+.bucket#talks .teaser {
+    display:none;
+}
+
+/* staff - left */
+#cardiology #left .bucket#staff .bucketHeader {
+	display: none;
+}
+#cardiology #left .bucket#staff .staffList {
+	margin: 4px 0 0 0;
+	padding: 2px 0 0 0;
+	background: url("/pi/global/ornaments/bg-2-col-default.png") repeat-y;
+}
+#cardiology #left .bucket#staff .staffList .colLeft {
+	margin: 0 20px 0 0;
+	width: 304px;
+	float: left;
+}
+#cardiology #left .bucket#staff .staffList .colRight {
+	margin: 0;
+	width: 304px;
+	float: left;
+}
+#cardiology #left .bucket#staff .bucketSubHeader {
+	margin: 8px 0 6px 0;
+}
+#cardiology #left .bucket#staff .staffList ul.splitL {
+	margin: 0 20px 0 0;
+	width: 142px;
+	float: left;
+}
+#cardiology #left .bucket#staff .staffList ul.splitR {
+	margin: 0;
+	width: 142px;
+	float: left;
+}
+
+
+/* shared bucket header styles */
+#cardiology #left .bucket#rcIntro,
+#cardiology #left .bucket#hubIntro,
+#cardiology #left .bucket#mayoIntro,
+#cardiology #left .bucket#directory {
+	border-top: none;
+}
+#cardiology .bucket#rcIntro .bucketHeader,
+#cardiology .bucket#hubIntro .bucketHeader,
+#cardiology .bucket#mayoIntro .bucketHeader {
+	margin: 11px 12px 5px 12px;
+	padding: 0;
+	color: #535353;
+	background: url("/pi/global/ornaments/bg-intro-line.png") repeat-x bottom;
+}
+#cardiology .bucket#rcIntro .bucketHeader h2,
+#cardiology .bucket#hubIntro .bucketHeader h2,
+#cardiology .bucket#mayoIntro .bucketHeader h2 {
+	margin: 0;
+	padding: 0 4px 0 0;
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	font-size: 1.6em;
+	line-height: 1.3em;
+	font-weight: normal;
+	text-transform: uppercase;
+	background-color: #fff;
+	display: inline;
+}
+#cardiology #right .bucket#staffHub .bucketHeader,
+#cardiology #right .bucket#trending .bucketHeader,
+#cardiology #right .bucket#themes .bucketHeader {
+	margin-top: 20px;
+}
+
+/* Resource Centers */
+#cardiology #left .bucket#rcIntro {
+	margin: 0;
+	padding: 0;
+	background: none;
+	border: none;
+}
+#cardiology .bucket#rcIntro #titleImg {
+	margin-bottom: 12px;
+	width: 628px;
+	height: 50px;
+}
+#cardiology #left .bucket#blogs .bucketContent ul {
+	margin-top: 10px;
+}
+#cardiology #right .bucket#blogs .bucketContent {
+	border-bottom: 0;
+}
+#cardiology #right .bucket#themes li {
+	margin: 0;
+	padding: 0 0 10px 0;
+}
+
+/* social hub */
+#cardiology .bucket#hubIntro .bucketContent {
+	margin-bottom: 15px;
+}
+#cardiology .bucket#hubIntro #titleImg {
+	width: 628px;
+	height: 100px;
+	background: url("/pi/global/ornaments/header-socialhub.png") no-repeat top left;
+}
+#cardiology .bucket#hubIntro #thoThumb {
+	margin: 15px 20px 0 0;
+	width: 143px;
+	float: left;
+}
+#cardiology .bucket#hubIntro #thoThumb .featimg {
+	margin: 3px 0 0 0;
+	padding: 0;
+	width: 143px;
+	border: none;
+	position: auto;
+	float: none;
+	clear: both;
+}
+#cardiology .bucket#hubIntro #hubLinks {
+	margin: 15px 0 0 0;
+	width: 466px;
+	font-family: 'proxima_nova_rgregular', arial, sans-serif;
+	font-size: 1.1em;
+	line-height: 1.2em;
+	float: left;
+}
+#cardiology .bucket#hubIntro #hubLinks p.email {
+	margin: 0;
+	padding: 0 0 3px 0;
+}
+#cardiology .bucket#hubIntro #hubLinks p.email a {
+	color: #797979;
+}
+#cardiology .bucket#hubIntro #hubLinks p.cta {
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	color: #797979;
+}
+#cardiology .bucket#hubIntro #hubLinks ul.listL {
+	margin: 5px 20px 0 0;
+	width: 223px;
+	float: left;
+}
+#cardiology .bucket#hubIntro #hubLinks ul.listR {
+	margin: 5px 0 0 0;
+	width: 223px;
+	float: left;
+}
+#cardiology .bucket#hubIntro #hubLinks ul li {
+	margin: 0 0 5px 0;
+	padding: 0;
+}
+#cardiology .bucket#hubIntro #hubLinks ul li a {
+	padding: 2px;
+	width: 215px;
+	height: 26px;
+	border: 1px solid #bebebe;
+	font-size: 1.15em;
+	display: block;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	background-color: #fefefe;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZlZmVmZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlMWUxZTEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #fefefe 0%, #e1e1e1 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#e1e1e1));
+	background: -webkit-linear-gradient(top,  #fefefe 0%,#e1e1e1 100%);
+	background: -o-linear-gradient(top,  #fefefe 0%,#e1e1e1 100%);
+	background: -ms-linear-gradient(top,  #fefefe 0%,#e1e1e1 100%);
+	background: linear-gradient(to bottom,  #fefefe 0%,#e1e1e1 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#e1e1e1',GradientType=0 );
+}
+#cardiology .bucket#hubIntro #hubLinks ul li a:hover {
+	text-decoration: none;
+	color: #bf2c13;
+	background-color: #e1e1e1;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2UxZTFlMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZWZlZmUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #e1e1e1 0%, #fefefe 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e1e1e1), color-stop(100%,#fefefe));
+	background: -webkit-linear-gradient(top,  #e1e1e1 0%,#fefefe 100%);
+	background: -o-linear-gradient(top,  #e1e1e1 0%,#fefefe 100%);
+	background: -ms-linear-gradient(top,  #e1e1e1 0%,#fefefe 100%);
+	background: linear-gradient(to bottom,  #e1e1e1 0%,#fefefe 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1e1e1', endColorstr='#fefefe',GradientType=0 );
+}
+#cardiology .bucket#hubIntro #hubLinks ul li span.icon {
+	margin: 0 2px 0 0;
+	width: 26px;
+	height: 26px;
+	display: inline-block;
+}
+#cardiology .bucket#hubIntro #hubLinks ul li.facebook span.icon {
+	background: url("/pi/global/ornaments/icon-facebook-color.png") no-repeat top left;
+}
+#cardiology .bucket#hubIntro #hubLinks ul li.twitter span.icon {
+	background: url("/pi/global/icons/icon-twitter-color.png") no-repeat top left;
+}
+#cardiology .bucket#hubIntro #hubLinks ul li.gplus span.icon {
+	background: url("/pi/global/ornaments/icon-googleplus-color.png") no-repeat top left;
+}
+#cardiology .bucket#hubIntro #hubLinks ul li.youtube span.icon {
+	background: url("/pi/global/ornaments/icon-youtube-color.png") no-repeat top left;
+}
+#cardiology .bucket#hubIntro #hubLinks ul li.slideshare span.icon {
+	background: url("/pi/global/ornaments/icon-slideshare-color.png") no-repeat top left;
+}
+#cardiology .bucket#hubIntro #hubLinks ul li span.text {
+	vertical-align: top;
+	line-height: 26px;
+	.vertical-align: bottom; /* IE7 hack */
+}
+#cardiology .bucket .bucketHeader h2 .lowercase {
+	text-transform: none;
+}
+#cardiology .bucket#twitter .bucketContent {
+	margin-bottom: 10px;
+	border-top: 1px solid #dbdbdb;
+	border-bottom: 1px solid #dbdbdb;
+}
+#cardiology .bucket#twitter .morelink a {
+	color: #a5a5a5;
+}
+#cardiology .bucket#twitter .morelink .icon {
+	background: url("/pi/global/icons/icon-twitter-larry-red.png") no-repeat top left;
+	width: 14px;
+	height: 10px;
+	display: inline-block;
+}
+#cardiology #left .bucket#popular ol a {
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	font-size: 1.15em;
+	line-height: 1.3em;
+}
+#cardiology .bucket#blogsHub .featimg {
+	width: 80px;
+}
+#cardiology .bucket#staffHub .bucketSubHeader {
+	margin: 0 0 6px 0;
+	padding: 0;
+}
+#cardiology .bucket#staffHub .featimg {
+	margin-top: 1px;
+}
+#cardiology .bucket#staffHub .name {
+	font-weight: bold;
+}
+
+/* Mayo Clinic */
+#cardiology .bucket#mayoIntro .bucketContent {
+	margin-bottom: 15px;
+}
+#cardiology .bucket#mayoIntro #titleImg {
+	width: 628px;
+	height: 98px;
+	background: url("/pi/partners/mayo-clinic/header-mayoclinic.jpg") no-repeat top left;
+}
+#cardiology .bucket#mayoIntro #titleImg .introText {
+	display: none;
+}
+#cardiology .bucket#roundtable .bucketContent ul {
+	margin-top: 6px;
+}
+#cardiology .bucket#roundtable .featimg {
+	margin: 3px 7px 0 0;
+	padding: 0;
+	width: 80px;
+	border: 1px solid #dbdbdb;
+	position: relative;
+	float: left;
+	clear: both;
+}
+#cardiology .bucket#grandRounds .bucketHeader, #cardiology .bucket#grandRounds .bucketFooter {
+	display: none;
+}
+#cardiology .bucket#grandRounds ul li {
+	margin: 15px 0 15px 0;
+	padding: 0;
+	width: 628px;
+	height: 90px;
+	background: url("/pi/partners/mayo-clinic/banner-mayoclinic-grandrounds.jpg") no-repeat top left;
+	background-size: 628px 90px;
+}
+#cardiology .bucket#grandRounds ul li a {
+	width: 628px;
+	height: 90px;
+	display: block;
+}
+#cardiology .bucket#grandRounds ul li a span {
+	display: none;
+}
+#cardiology .bucket#trending .video {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+#cardiology #right .bucket#trending ul a, #cardiology #right .bucket#clinicLinks ul a {
+	font-size: 1.1em;
+}
+#cardiology .bucket#trending ul.feature {
+	padding: 2px 0 0 0;
+}
+#cardiology .bucket#trending ul.feature li {
+	margin: 0;
+}
+#cardiology .bucket#trending ul.feature li:first-child {
+	margin: 0;
+	padding: 0 0 10px 0
+}
+#cardiology #right .bucket#clinicLinks .bucketContent {
+	border-bottom: none;
+}
+#cardiology #right .bucket#clinicLinks li {
+	margin: 0;
+	padding: 0 0 10px 0;
+}
+
+/* directory page */
+#cardiology #left .bucket#directory .featimg {
+	margin: 3px 7px 0 0;
+	padding: 0;
+	width: 80px;
+	border: 1px solid #dbdbdb;
+	position: relative;
+	float: left;
+	clear: both;
+}
+#cardiology .bucket#directory ul a.title {
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	font-size: 1.2em;
+	line-height: 1.2em;
+}
+
+
+/* -- RIGHT -- */
+#today #right .bucketContent, #cardiology #right .bucketContent {
+	margin: 0 0 15px 0;
+	padding: 0;
+	border-bottom: 1px solid #dbdbdb;
+}
+#today #right .bucket .bucketHeader {
+	margin: 15px 0 12px 0;
+}
+#cardiology #right .bucket .bucketHeader {
+	margin: 15px 0 6px 0;
+}
+#cardiology #right .bucket#popular .bucketHeader,
+#cardiology #right .bucket#conferences .bucketHeader,
+#cardiology #right .bucket#collaborations .bucketHeader {
+	margin: 15px 0 8px 0;
+}
+#today #right .bucket li {
+	margin: 0;
+	padding: 0 0 20px 0;
+}
+#today #right .bucket li, #cardiology #right .bucket li {
+	margin: 0;
+	padding: 0 0 15px 0;
+}
+#today .bucket ul a.title {
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	font-size: 1.15em;
+	line-height: 1.3em;
+}
+#today #right .bucket ul li.feature .featimg, #cardiology #right .bucket ul li.feature .featimg {
+	margin: 3px 8px 0 0;
+	padding: 0;
+	width: 140px;
+	border: 1px solid #dbdbdb;
+	position: relative;
+	float: left;
+	clear: both;
+}
+#today .rightAd, #cardiology .rightAd {
+	padding: 0 0 10px 0;
+}
+#today .rightAd2, #cardiology .rightAd2 {
+	margin: 0 0 15px 0;
+	padding: 0 0 15px 0;
+	text-align: center;
+	border-bottom: 1px solid #dbdbdb;
+}
+#today .rightAd2, #cardiology .rightAd2 {
+	margin: 0 0 15px 0;
+	padding: 0 0 15px 0;
+	text-align: center;
+	border-bottom: 1px solid #dbdbdb;
+}
+#today .rightAd2.solo, #cardiology .solo {
+	margin: 15px 0 15px 0;
+	padding: 0;
+	border-bottom: none;
+}
+#today #right .bucket.btm .bucketContent, #cardiology #right .bucket.btm .bucketContent {
+	border-bottom: none;
+}
+
+/* Information from Industry bucket */
+#cardiology #right #industryBucket {
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 15px;
+	margin-left: auto;
+	padding: 0 0 15px 0;
+	background: none;
+	width: 300px;
+	border-bottom: 1px solid #dbdbdb;
+}
+#cardiology #right #industryBucket .industryBucketHeader {
+	margin: 0;
+	padding: 0;
+	background: #fcfaf8 url("/pi/global/ornaments/bg-industry-bucket-header.png") no-repeat top left;
+}
+#cardiology #right #industryBucket h3 {
+	margin: 0;
+	padding: 11px 11px 7px 11px;
+	text-transform: uppercase;
+	font-size: 0.95em;
+	color: #005b81;
+}
+#cardiology #right #industryBucketContent {
+	margin: 0;
+	width: 300px;
+	background: #fff url("/pi/global/ornaments/bg-industry-bucket.png") no-repeat bottom left;
+}
+#cardiology #right #industryBucket #industryBucketContent .bucketHeader {
+	width: 300px;
+	height: 4px;
+	background: url("/pi/global/ornaments/bg-industry-bucket-feat-top.png") no-repeat top left;
+	font-size: 1px;
+	line-height: 1px;
+}
+#cardiology #right #industryBucket #industryBucketContent ul {
+	margin: 8px 14px 4px 14px;
+	padding: 0;
+	list-style: none;
+}
+#cardiology #right #industryBucket #industryBucketContent li {
+	margin: 0;
+	padding: 0 0 8px 0;
+	font-size: 1.0em;
+}
+#cardiology #right #industryBucket #industryBucketContent li a {
+	color: #000;
+	font-weight: normal;
+}
+#cardiology #right #industryBucket #industryBucketContent .morelink {
+	margin: 0 9px 0 9px;
+	padding: 0 0 10px 0;
+	font-size: 1.05em;
+	font-weight: bold;
+	color: #000;
+}
+#cardiology #right #industryBucket .morelinkLeft {
+	padding: 0 0 10px 14px;
+	width: 138px;
+	font-weight: bold;
+	font-size: 0.95em;
+	float: left;
+}
+#cardiology #right #industryBucket .morelinkRight {
+	padding: 0 0 10px 14px;
+	width: 128px;
+	font-weight: bold;
+	font-size: 0.95em;
+	float: left;
+}
+#cardiology #right #industryBucket .bucketFooter {
+	height: 4px;
+	width: 300px;
+	background: url("/pi/global/ornaments/bg-industry-bucket-btm.png") no-repeat top left;
+	font-size: 1px;
+	line-height: 1px;
+}
+
+/* social hub */
+#cardiology .bucket#hub {
+	margin: 15px 0 0 0;
+	padding: 0 0 15px 0;
+	border-bottom: 1px solid #dcdcdc;
+}
+#cardiology #socialHub {
+	background-color: #e5e5e5;
+}
+#cardiology #socialHub .logo {
+	padding: 5px;
+	width: 121px;
+	height: 30px;
+	background: url("/pi/global/ornaments/logo-social-hub-121x30.png") no-repeat 5px 5px;
+	float: left;
+}
+#cardiology #socialHub .logo a {
+	width: 121px;
+	height: 30px;
+	display: block;
+}
+#cardiology #socialHub .logo span {
+	display: none;
+}
+#cardiology #right #socialHub ul {
+	margin: 0;
+	padding: 0;
+	list-style: none inside none;
+	height: 40px;
+	float: right;
+}
+#cardiology #right #socialHub ul.networks {
+	margin: 0 7px 0 0;
+}
+#cardiology #right #socialHub ul.media {
+	margin: 0 5px 0 0;
+	border-left: 2px solid #fff;
+}
+#cardiology #right #socialHub ul li {
+	margin: 10px 0 0 5px;
+	padding: 0;
+	width: 20px;
+	display: inline;
+	float: left;
+}
+#cardiology #right #socialHub ul.media li:first-child {
+	margin: 10px 0 0 8px;
+}
+#cardiology #socialHub ul li a {
+	width: 20px;
+	height: 20px;
+	display: block;
+}
+#cardiology #socialHub ul li.facebook {
+	background: url("/pi/global/ornaments/icon-facebook-grey.png") no-repeat;
+}
+#cardiology #socialHub ul li.twitter {
+	background: url("/pi/global/icons/icon-twitter-grey.png") no-repeat;
+}
+#cardiology #socialHub ul li.gplus {
+	background: url("/pi/global/ornaments/icon-googleplus-grey.png") no-repeat;
+}
+#cardiology #socialHub ul li.linkedin {
+	background: url("/pi/global/ornaments/icon-linkedin-grey.png") no-repeat;
+}
+#cardiology #socialHub ul li.rss {
+	background: url("/pi/global/ornaments/icon-rss-grey.png") no-repeat;
+}
+#cardiology #socialHub ul li.discussion {
+    background: url("/pi/global/ornaments/icon-discussion-grey.png") no-repeat;
+}
+#cardiology #socialHub ul li.podcast {
+	background: url("/pi/global/ornaments/icon-podcast-grey.png") no-repeat;
+}
+#cardiology #socialHub ul li span {
+	display: none;
+}
+/* brand alert */
+#cardiology #right .bucket#brandAlertRight .bucketContent {
+	padding: 0 0 8px 0;
+}
+#cardiology .bucket#brandAlertRight ul.brandAlert {
+	padding: 4px 5px 5px 5px;
+}
+#cardiology .bucket#brandAlertRight ul.brandAlert li {
+	padding: 0;
+}
+/* conferences */
+#cardiology .bucket#conferences ul li {
+	padding: 0 0 15px 0;
+}
+#cardiology .bucket#conferences ul a.title {
+	font-family: arial, sans-serif;
+	font-size: 1.0em;
+	line-height: 1.2em;
+}
+/*collaborations */
+#cardiology #right .bucket#collaborations li {
+	margin: 0 0 0 20px;
+	padding: 0 0 10px 0;
+	width: 142px;
+	float: left;
+}
+#cardiology #right .bucket#collaborations li:first-child {
+	margin: 0;
+}
+#cardiology .bucket#collaborations li .featimg {
+	margin: 0 0 10px 0;
+	padding: 0;
+	width: 140px;
+}
+#cardiology .bucket#collaborations ul a.title {
+	font-size: 1.05em;
+	line-height: 1.2em;
+}
+/* staff */
+#cardiology #right .bucket#staff .bucketContent {
+	margin: 0;
+	padding: 0 0 10px 0;
+	border-bottom: none;
+}
+#cardiology .bucket .bucketSubHeader {
+	margin: 15px 0 6px 0;
+	padding: 0;
+	color: #535353;
+	background: url("/pi/global/1024/bg-header-dots.png") repeat-x bottom;
+}
+#cardiology .bucket .bucketSubHeader h4 {
+	margin: 0;
+	padding: 0 4px 0 0;
+	font-size: 0.95em;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #005b81;
+	background-color: #fff;
+	display: inline;
+}
+#cardiology #right .bucket#staff ul.splitL {
+	margin: 0 20px 0 0;
+	width: 142px;
+	float: left;
+}
+#cardiology #right .bucket#staff ul.splitR {
+	margin: 0;
+	width: 142px;
+	float: left;
+}
+#cardiology .bucket#staff ul a.title {
+	font-family: arial, sans-serif;
+	font-size: 0.95em;
+	line-height: auto;
+}
+#cardiology .bucket#staff ul li {
+	margin: 0;
+	padding: 0 0 6px 0;
+}
+#cardiology .bucket#staff .morelink {
+	padding: 0 0 15px 0;
+	background: none;
+	font-weight: normal;
+	text-transform: uppercase;
+	float: none;
+	text-align: right;
+}
+/* widget */
+#socialHubWidget {
+	margin: 15px 0;
+	padding: 5px;
+	height: 30px;
+	background: #e5e5e5 url("/pi/global/ornaments/logo-social-hub-121x30.png") no-repeat 5px 5px;
+}
+#socialHubWidget a {
+	width: 100%;
+	height: 30px;
+	display: block;
+}
+#socialHubWidget a span {
+	display: none;
+}
+
+/* -- FOOTER -- */
+/* footer leaderboard */
+#adtagfooter.today, #adtagfooter.cardio {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px 0 10px 0;
+	border: 1px solid #bfbfbf;
+	border-top: none;
+	width: 978px;
+}
+/* footer gradient */
+.todayFooter, .cardiologyFooter {
+	margin-left: auto;
+	margin-right: auto;
+	height: 20px;
+	width: 980px;
+	background: url("/pi/global/ornaments/bg-today-footer.png") repeat-x top left;
+}
+
+/*Styles for brand alert*/
+.leftBucket li.brandAlert, .bucket li.brandAlert {border: 1px solid #e2e2e2; background-color: #f7f7f7; margin: 0 -3px 0 -7px; padding: 6px; line-height: normal; }
+div.brandAlert, #news.threeCol li.brandAlert {border: 1px solid #e2e2e2; background-color: #f7f7f7; margin: 0 0 12px 0; padding: 6px; font-family: 'proxima_nova_ltsemibold'; margin-bottom: 10px; line-height: normal; }
+div.brandAlert a, li.brandAlert a { color: #000; line-height: normal; }
+div.brandAlert a:link, li.brandAlert a:link { color: #000; line-height: normal; }
+div.brandAlert a:visited, li.brandAlert a:visited { color: #000; line-height: normal; }
+div.brandAlert a:hover, li.brandAlert a:hover { color: #000; line-height: normal; }
+div.brandAlert a:active, li.brandAlert a:active { color: #000; line-height: normal; }
+#news.threeCol #right li.brandAlert {margin: 0 82px 0 0;}
+.ifithumb { float: left; }
+.ifithumb img { width: 72px; height: 55px; }
+.ifititle { float: right; margin-left: 5px; font-size: 15px; width: 183px; line-height: normal; }
+#news.threeCol .ifititle, #news.threeCol #right .ifititle { font-size: 15px; width: 180px; line-height: normal; }
+#left .leftBucketContent .leftBucketL .ifititle { margin-right: 35px; line-height: normal; }
+#left .leftBucketContent .leftBucketR .ifititle { margin-right: 10px; line-height: normal; }
+#right .ifititle { margin-right: 57px; line-height: normal; }
+/*#news.threeCol #right .ifititle { margin-right: 75px; }*/
+.ifititle .ifibyline { font-family: Arial; color: #666; display: block; font-size: 11px; font-style: italic; line-height: normal; }
+#news.threeCol #right .bucket#rightBrandAlert {background: none;}
+
+/*Right column update*/
+
+#news.threeCol #right .ifititle {float: right; margin-left: 5px;  margin-right:25px; font-size: 15px; width: 180px; line-height: normal;}
+
+/* /Styles for brand alert*/
+
+/*Styles for brand alert THO*/
+#heartwire li.brandAlert {border: 1px solid #e2e2e2; background-color: #f7f7f7; margin: 0 -3px 0 -7px; padding: 6px 6px 6px 6px; line-height: normal; font-family: 'proxima_nova_ltsemibold'; }
+#heartwire .ifithumb { float: left; }
+#heartwire .ifithumb img { width: 72px; height: 55px; }
+#heartwire .ifititle { float: right; margin-left: 5px; font-size: 15px; width: 183px; line-height: normal; }
+#heartwire .colLeft .ifititle { margin-right: 29px; line-height: normal; }
+#heartwire .colRight .ifititle { margin-right: 29px; line-height: normal; }
+#heartwire .ifititle .ifibyline { font-family: Arial; color: #666; display: block; font-size: 11px; font-style: italic; line-height: normal; }
+#cardiology #right div.brandAlert { width: 286px; }
+#cardiology #right .ifititle { margin-right: 35px; line-height: normal; width: 173px; }
+/* /Styles for brand alert THO*/
+
+
+/* *************************** */
+/*  Specialties Redesign 2014  */
+/* *************************** */
+
+/* primary layout */
+#news.twoCol, #news.threeCol {
+	margin: 10px 0;
+	border: 1px solid #ccc;
+}
+#news.twoCol {
+	background: transparent url("/pi/global/ornaments/bg-twocol.png") repeat-y;
+}
+#news.threeCol #left {
+	margin: 0;
+	padding: 0;
+	width: 162px;
+	float: left;
+}
+#news.twoCol #right {
+	margin: 15px 0;
+}
+#news.threeCol #main {
+	padding: 0;
+	width: 916px;
+	border-top: 10px solid #fff;
+	border-bottom: 10px solid #fff;
+	border-left: 1px solid #ccc;
+	background: transparent url("/pi/global/ornaments/bg-maincol.png") 24% repeat-y;
+	float: left;
+}
+#news.threeCol #main #middle, #news.threeCol #main #middle-noheadline {
+	padding: 0 10px;
+	width: 569px;
+	float: left;
+}
+#news.threeCol #main #right {
+	padding: 0 10px;
+	width: 304px;
+	float: left;
+}
+#news.threeCol #left .bucket {
+	margin: 0;
+	padding: 10px;
+}
+#news.threeCol #left .bucket .bucketFooter {
+	min-height: 1px;
+	background: transparent url("/pi/global/ornaments/border-dots.png") repeat-x bottom left;
+}
+#news.threeCol #middle .split, #news.threeCol #middle .col2, #news.threeCol #middle-noheadline .split, #news.threeCol #middle-noheadline .col2 {
+	background: transparent url("/pi/global/ornaments/bg-midcol-split.png") 15% repeat-y;
+}
+#news.threeCol #middle .bucketL, #news.threeCol #middle ul.splitL, #news.threeCol #middle-noheadline .bucketL, #news.threeCol #middle-noheadline ul.splitL {
+	padding: 0 21px 0 0;
+	width: 272px;
+	float: left;
+}
+#news.threeCol #middle .bucketR, #news.threeCol #middle ul.splitR, #news.threeCol #middle-noheadline .bucketR, #news.threeCol #middle-noheadline ul.splitR {
+	padding: 0;
+	width: 276px;
+	float: left;
+}
+#news.threeCol #middle ul.splitL, #news.threeCol #middle ul.splitR, #news.threeCol #middle-noheadline ul.splitL, #news.threeCol #middle-noheadline ul.splitR {
+	margin-bottom: 15px;
+}
+#news.threeCol #right ul.splitL, #news.threeCol #right ul.splitR {
+	width: 145px;
+	float: left;
+}
+#news.threeCol #right ul.splitL {
+	margin-right: 14px;
+}
+#news.threeCol #middle .col2 ul li, #news.threeCol #middle-noheadline .col2 ul li {
+	width: 276px;
+	float: left;
+}
+#news.threeCol #middle .col2 ul li:first-child, #news.threeCol #middle-noheadline .col2 ul li:first-child {
+	padding: 0 21px 0 0;
+	width: 272px;
+}
+
+/* common elements */
+#news .bucket {
+	margin: 0 0 10px 0;
+}
+#news.twoCol .bucket {
+	margin: 10px;
+}
+#news.threeCol #middle .bucket, #news.threeCol #middle-noheadline .bucket {
+	padding-bottom: 10px;
+	background: transparent url("/pi/global/ornaments/border-dots.png") repeat-x bottom left;
+}
+#news.threeCol #right .bucket {
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+	background: transparent url("/pi/global/ornaments/border-dots.png") repeat-x bottom left;
+}
+#news.threeCol #left .bucket.end, #news.threeCol #middle .bucket.end, #news.threeCol #middle-noheadline .bucket.end, #news.threeCol #right .bucket.end {
+	padding-bottom: 0;
+	background: none;
+}
+#news.threeCol #right .bucket.end {
+	margin-bottom: 0;
+}
+#news .bucket .bucketHeader, #news .bucket .bucketSubHeader {
+	margin: 0;
+	padding: 0 0 12px 0;
+}
+#news .bucket .bucketHeader h2, #news .bucket .bucketHeader h3 {
+	margin: 0;
+	padding: 0;
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	font-size: 1.05em;
+	line-height: 0.95em;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #005b81;
+	display: inline;
+}
+#news .bucket .bucketSubHeader h4 {
+	margin: 0;
+	padding: 0;
+	font-family: 'proxima_nova_rgregular', arial, sans-serif;
+	font-size: 0.9em;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #005b81;
+	display: inline;
+}
+#news .bucket .bucketHeader .about {
+	padding: 0 4px;
+	font-family: 'proxima_nova_ltlight', arial, sans-serif;
+	font-size: 1.05em;
+	color: #666;
+}
+#news .bucket .bucketContent {
+	margin: 0;
+	padding: 0;
+}
+#news .bucket ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#news .bucket ul li {
+	margin: 0 0 14px 0;
+	overflow: hidden;
+}
+#news .bucket ol {
+	margin: 0 0 0 20px;
+	padding: 0;
+}
+#news .bucket ol li {
+	margin: 0 0 14px 0;
+	color: #666;
+}
+#news .bucket a {
+	color: #000;
+}
+#news .bucket .featimg {
+	margin: 3px 7px 1px 0;
+	padding: 0;
+	width: 72px;
+	border: 0;
+	position: relative;
+	float: left;
+	clear: both;
+}
+#news .bucket a.title, #news .bucket ol a.title {
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	font-size: 1.15em;
+	line-height: 1.15em;
+}
+#news .bucket .teaser {
+	margin: 2px 0 4px 0;
+	font-size: 0.95em;
+	display: block;
+	line-height: 1.25em;
+	color: #454545;
+}
+#news .bucket .bylineWrapper {
+	display: block;
+}
+#news .bucket .byline {
+	padding: 0;
+	font-family: arial, sans-serif;
+	font-size: 0.85em;
+	font-style: italic;
+	color: #797979;
+	line-height: 1.2em;
+	display: block;
+}
+#news .bucket .commentcount {
+	margin: 0;
+	padding: 0;
+	font-family: arial, sans-serif;
+	font-size: 0.8em;
+	font-style: italic;
+	color: #797979;
+	display: block;
+}
+#news .bucket .bylineWrapper .byline {
+	margin: 0 5px 0 0;
+	padding: 0 5px 0 0;
+	border-right: 1px solid #797979;
+	display: inline;
+}
+#news .bucket .bylineWrapper .commentcount {
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+#news .bucket li .byline .comments {
+	margin: 0 0 0 2px;
+	padding: 0 0 0 5px;
+	border-left: 1px solid #797979;
+}
+#news .bucket .morelink {
+	padding: 2px 7px 0 0;
+	font-family: 'proxima_nova_rgregular', arial, sans-serif;
+	font-weight: normal;
+	font-size: 0.9em;
+	line-height: 0.95em;
+	text-transform: uppercase;
+	background: transparent url("/pi/global/ornaments/icon-morelink-gt.png") no-repeat right center;
+	float: right;
+	*margin-top: -14px; /* IE7 float bug */
+}
+@media only screen and (-webkit-min-device-pixel-ratio:2), only screen and (min-resolution:192dpi) {
+    #news .bucket .morelink {
+    	background-image: url("/pi/global/ornaments/icon-morelink-gt-@2x.png");
+    	background-size: 4px 7px;
+    }
+}
+#news .bucket .morelink a {
+	color: #007cb0;
+}
+#news .bucket .morelink.twoLine {
+	margin-top: -15px;
+	*margin-top: -30px; /* IE7 float bug */
+}
+#news .alerttag, #news .newstag, #news .conftag {
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	font-size: 0.8em;
+	color: #b00002;
+	text-transform: uppercase;
+}
+#news .conftag {
+	color: #639a23;
+}
+
+/* callout alert */
+#news .bucket .callout ul {
+	margin: 14px 0 6px 0;
+	padding: 0 4px;
+}
+#news .bucket .callout ul li {
+	margin: 0;
+	padding: 0 0 10px 0;
+}
+
+/* Specialty Topics + also of interest */
+#news.threeCol #left .bucket#specialtyTopics {
+	margin: 0;
+	border-bottom: 1px solid #ccc;
+}
+#news.threeCol #left .bucket#specialtyTopics li a, #news.threeCol #left .bucket#alsoOfInterest li a {
+	font-family: 'proxima_nova_rgregular', arial, sans-serif;
+	font-size: 1.05em;
+	line-height: 1.05em;
+}
+#news.threeCol #left .bucket#specialtyTopics .bucketFooter, #news.threeCol #left .bucket#alsoOfInterest .bucketFooter {
+	padding: 0 0 20px 0;
+	background: none;
+}
+#news.threeCol.businessmedicine #left .bucket#specialtyTopics {
+	border-bottom: none;
+}
+
+/* twitter */
+#news.threeCol #left .bucket#twitter {
+	margin: 0;
+	padding: 0;
+	background: #f1f8fe;
+	display: none;
+}
+#news.threeCol.cardiology #left .bucket#twitter {
+	margin: 0;
+	padding: 0;
+	background: #fcfcfc;
+}
+#news.threeCol #left .bucket#twitter .bucketHeader {
+	padding: 10px 0 9px 10px;
+	border-bottom: none;
+	border-top: 1px solid #ccc;
+}
+#news.threeCol #left .bucket#twitter .bucketFooter {
+	border-bottom: 1px solid #ccc;
+	background: none;
+}
+#news.threeCol #left .bucket#twitter .bucketHeader h3 {
+	font-family: 'proxima_nova_rgregular', arial, sans-serif;
+	font-size: 1.35em;
+	letter-spacing: -1px;
+	text-transform: none;
+	color: #999;
+}
+#news.threeCol #left .bucket#twitter .bucketHeader h3.cardio {
+	font-size: 1.15em;
+}
+#news.threeCol #left .bucket#twitter .bucketHeader h3 a {
+	color: #999;
+}
+#news.threeCol #left .bucket#twitter .bucketHeader h3 a:hover {
+	text-decoration: none;
+}
+#news.threeCol #left .bucket#twitter .bucketHeader h3 .blue {
+	color: #55acee;
+}
+#news.threeCol #left .bucket#twitter .bucketHeader h3 b.blue {
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	color: #1895cf;
+}
+#news.threeCol #left .bucket#twitter .bucketHeader h3 .red {
+	color: #991b1e;
+}
+#news.threeCol #left .bucket#twitter .bucketHeader h3 b.red {
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	color: #991b1e;
+}
+#news.threeCol #left .bucket#twitter .bucketHeader h3 img.twitterIcon {
+	margin-left: 1px;
+	width: 18px;
+	height: 15px;
+	vertical-align: top;
+}
+#news.threeCol #left .bucket#twitter .bucketHeader .tagline {
+	padding: 6px 10px 0 0;
+	font-size: 0.85em;
+	line-height: 1.1em;
+	color: #666;
+}
+#news.threeCol #left .bucket#twitter .bucketContent {
+	padding: 2px 5px 5px 5px;
+}
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li {
+	margin: 6px 0 0 0;
+	padding: 0;
+	border: 1px solid #e3e3e3;
+	background: #fff;
+}
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li:first-child {
+	margin: 0;
+}
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li ul li {
+	border: 0;
+}
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li a {
+	color: #55acee;
+}
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .articleTitle a,
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .fullName a {
+	color: #000;
+}
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .thumbnail {
+	width: 150px;
+	height: 66px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow: hidden;
+	position: relative;
+	border-bottom: 1px solid #e3e3e3;
+}
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .thumbnail img {
+	margin: auto;
+	width: 150px;
+	min-height: 66px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .thumbnail a img {
+	border: none;
+}
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .text {
+	margin: 0;
+	padding: 5px 3px 3px 3px;
+}
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .articleInfo {
+	margin: 0 0 3px 0;
+	padding: 0 3px 3px 3px;
+	border-bottom: 1px solid #d3d3d3;
+}
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .articleTitle {
+	padding: 0 0 3px 0;
+	font-size: 0.85em;
+	line-height: 1.1em;
+	font-weight: bold;
+}
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .domainName {
+	padding: 0 0 3px 0;
+	font-size: 0.85em;
+}
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .domainName a {
+	color: #0059b1;
+}
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .tweet {
+	padding: 3px;
+}
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .timestamp {
+	font-size: 0.75em;
+	color: #999;
+	float: right;
+}
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .user {
+	margin: 0 0 8px 0;
+	font-size: 0.75em;
+	overflow: hidden;
+}
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .profileImg {
+	margin: 2px 6px 0 0;
+	padding: 0;
+	width: 18px;
+	float: left;
+}
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .profileImg img {
+	width: 18px;
+}
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .profileImg a img {
+	border: none;
+}
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .fullName {
+	margin: 0 0 0 20px;
+}
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .fullName b {
+	font-weight: normal;
+}
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .userHandle {
+	margin: 0 0 0 20px;
+}
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .userHandle a {
+	color: #999;
+}
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .tweetText {
+	font-size: 0.85em;
+}
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .tweetText b {
+	font-weight: normal;
+}
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .tweetText s {
+	text-decoration: none;
+}
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .tweetText .invisible {
+	display: none;
+}
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .retweetedBy {
+	margin: 5px 0 0 0;
+	font-size: 0.85em;
+	color: #999;
+}
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .text ul.tweetActions {
+	margin: 0;
+	padding: 4px 0 0 0;
+	text-align: right;
+}
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .text ul.tweetActions li {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size: 0.8em;
+	min-height: 14px;
+	display: inline-block;
+}
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .text ul.tweetActions li a span {
+	display: none;
+}
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .text ul.tweetActions li.reply a {
+	padding: 2px 0 0 22px;
+	background-image: url("/pi/global/icons/icon-twitter-reply.png");
+	background-repeat: no-repeat;
+	background-position: 0 2px;
+	display: inline-block;
+	min-height: 14px;
+}
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .text ul.tweetActions li.reply a:hover {
+	background-image: url("/pi/global/icons/icon-twitter-reply-over.png");
+	background-repeat: no-repeat;
+	background-position: 0 2px;
+	text-decoration: none;
+}
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .text ul.tweetActions li.retweet a {
+	padding: 2px 0 0 25px;
+	background-image: url("/pi/global/icons/icon-twitter-retweet.png");
+	background-repeat: no-repeat;
+	background-position: 0 2px;
+	display: inline-block;
+	min-height: 14px;
+}
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .text ul.tweetActions li.retweet a:hover,
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .text ul.tweetActions li.retweet a.active {
+	background-image: url("/pi/global/icons/icon-twitter-retweet-over.png");
+	background-repeat: no-repeat;
+	background-position: 0 2px;
+	color: #666;
+	text-decoration: none;
+}
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .text ul.tweetActions li.favorite a {
+	padding: 2px 0 0 20px;
+	background-image: url("/pi/global/icons/icon-twitter-favorite.png");
+	background-repeat: no-repeat;
+	background-position: 0 1px;
+	display: inline-block;
+	min-height: 14px;
+}
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .text ul.tweetActions li.favorite a:hover,
+#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .text ul.tweetActions li.favorite a.active {
+	background-image: url("/pi/global/icons/icon-twitter-favorite-over.png");
+	background-repeat: no-repeat;
+	background-position: 0 1px;
+	color: #666;
+	text-decoration: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio:2), only screen and (min-resolution:192dpi) {
+	#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .text ul.tweetActions li.reply a {
+		background-image: url("/pi/global/icons/icon-twitter-reply-@2x.png");
+		background-size: 16px 11px;
+	}
+	#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .text ul.tweetActions li.reply a:hover {
+		background-image: url("/pi/global/icons/icon-twitter-reply-over-@2x.png");
+		background-size: 16px 11px;
+	}
+	#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .text ul.tweetActions li.retweet a {
+		background-image: url("/pi/global/icons/icon-twitter-retweet-@2x.png");
+		background-size: 20px 12px;
+	}
+	#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .text ul.tweetActions li.retweet a:hover,
+	#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .text ul.tweetActions li.retweet a.active {
+		background-image: url("/pi/global/icons/icon-twitter-retweet-over-@2x.png");
+		background-size: 20px 12px;
+	}
+	#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .text ul.tweetActions li.favorite a {
+		background-image: url("/pi/global/icons/icon-twitter-favorite-@2x.png");
+		background-size: 15px 14px;
+	}
+	#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .text ul.tweetActions li.favorite a:hover,
+	#news.threeCol #left .bucket#twitter .bucketContent ul.tweets li .text ul.tweetActions li.favorite a.active {
+		background-image: url("/pi/global/icons/icon-twitter-favorite-over-@2x.png");
+		background-size: 15px 14px;
+	}
+}
+#news.threeCol #left .bucket#twitter .bucketFooter .morelink {
+	margin: 4px 6px 8px 6px;
+	background-image: url("/pi/global/icons/icon-morelink-gt.png");
+	text-transform: none;
+	display: inline-block;
+	float: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio:2), only screen and (min-resolution:192dpi) {
+	#news.threeCol #left .bucket#twitter .bucketFooter .morelink {
+		background-image: url("/pi/global/icons/icon-morelink-gt-@2x.png");
+		background-size: 4px 7px;
+	}
+}
+#news.threeCol #left .bucket#twitter .bucketFooter .morelink a {
+	color: #007cb0;
+}
+#news.threeCol.cardiology #left .bucket#twitter .bucketFooter .morelink a {
+	color: #991b1e;
+}
+
+/* specialty news + top news + business of medicine */
+#news .bucket#specialtyNews .topFeature, #news .bucket#topNews .col2Feature {
+	margin-bottom: 10px;
+	border-bottom: 1px solid #e3e3d3;
+}
+#news .bucket#specialtyNews .topFeature .featimg, #news .bucket#topNews .col2Feature .featimg {
+	margin: 3px 0 0 20px;
+	padding: 0;
+	width: 286px;
+	position: relative;
+	float: right;
+	clear: both;
+}
+#news .bucket#specialtyNews .topFeature a.title, #news .bucket#topNews .col2Feature a.title {
+	font-size: 1.6em;
+	line-height: 1.1em;
+}
+#news .bucket#specialtyNews .topFeature .teaser, #news .bucket#topNews .col2Feature .teaser {
+	margin: 6px 0 4px 0;
+}
+#news .bucket#topNews .split .featimg, #news .bucket#topNews .split .teaser {
+	display: none;
+}
+#news.nurses .bucket#specialtyNews .split .bucketR .featimg, #news.nurses .bucket#specialtyNews .split .bucketR .teaser,
+#news.multispecialty .bucket#specialtyNews .split .bucketR .featimg, #news.multispecialty .bucket#specialtyNews .split .bucketR .teaser,
+#news.familymedicine .bucket#specialtyNews .split .bucketR .featimg, #news.familymedicine .bucket#specialtyNews .split .bucketR .teaser,
+#news.internalmedicine .bucket#specialtyNews .split .bucketR .featimg, #news.internalmedicine .bucket#specialtyNews .split .bucketR .teaser,
+#news.medicalstudents .bucket#specialtyNews .split .bucketR .featimg, #news.medicalstudents .bucket#specialtyNews .split .bucketR .teaser,
+#news.pharmacists .bucket#specialtyNews .split .bucketR .featimg, #news.pharmacists .bucket#specialtyNews .split .bucketR .teaser {
+	display: none;
+}
+
+
+#news .bucket#specialtyNews .bucketL li,
+#news .bucket#slideshows li,
+#news .bucket#drugsDiseases .bucketL li,
+#news .bucket#dentistry .bucketL li,
+#news .bucket#optometry .bucketL li,
+#news .bucket#busMed .bucketR li {
+	padding-top: 12px;
+	border-top: 1px solid #e2e2e2;
+}
+#news .bucket#specialtyNews .bucketL li:first-child,
+#news .bucket#slideshows li:first-child,
+#news .bucket#drugsDiseases .bucketL li:first-child,
+#news .bucket#dentistry .bucketL li:first-child,
+#news .bucket#optometry .bucketL li:first-child,
+#news .bucket#busMed .bucketR li:first-child {
+	padding-top: 0;
+	border-top: none;
+}
+#news .bucket#busMed .featimg {
+	width: 80px;
+}
+#news .bucket#busMed .bucketL .featimg {
+	display: none;
+}
+
+/* columnists - default (no carousel) */
+#news .bucket#columnists li {
+	margin: 0 0 15px 18px;
+	width: 142px;
+	float: left;
+}
+#news .bucket#columnists li:first-child {
+	margin: 0;
+}
+#news .bucket#columnists li .featimg {
+	margin: 0;
+	padding: 0 0 6px 0;
+	width: 142px;
+	display: block;
+}
+#news .bucket#columnists li a.title {
+	font-size: 1.05em;
+}
+#news .bucket#columnists .teaser, #news .bucket#columnists .byline, #news .bucket#columnists .commentcount {
+	display: none;
+}
+
+/* columnists - with carousel */
+#news .bucket#columnists #carousel {
+	width: 546px;
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+}
+#news .bucket#columnists ul#columnistsList {
+	margin: 0;
+	padding: 0;
+	width: 4000px;
+	position: absolute;
+}
+#news .bucket#columnists ul#columnistsList li {
+	margin: 0 20px 0 0;
+	padding: 0;
+	width: 169px;
+	border: none;
+	list-style: none;
+	float: left;
+}
+#news .bucket#columnists ul#columnistsList li a {
+	font-size: 1.1em;
+	line-height: 1.2em;
+}
+#news .bucket#columnists ul#columnistsList li .featimg {
+	margin: 0 0 3px 0;
+	padding: 0;
+	width: 169px;
+	border: none;
+	position: auto;
+	float: none;
+	clear: both;
+}
+#news .bucket#columnists ul#columnistsList li .teaser, #news .bucket#columnists ul#columnistsList li .byline {
+	display: none;
+}
+#news .bucket#columnists #carouselState {
+	margin: 0;
+	padding: 0;
+	height: 30px;
+	background: #dbdbdb;
+	overflow: hidden;
+}
+#news .bucket#columnists #rotator_image {
+	margin: 11px 0 0 14px;
+	padding: 0;
+	height: auto;
+	float: left;
+}
+#news .bucket#columnists .totalli {
+	margin: 0 2px 0 2px;
+	background: #fff;
+	width: 8px;
+	height: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	float: left;
+}
+#news .bucket#columnists .thisli {
+	background: #005b81;
+	width: 8px;
+	height: 8px;
+}
+#news.cardiology .bucket#columnists .thisli {
+	background: #b91c00;
+}
+#news .bucket#columnists #rotator_thisli {
+	display: none;
+}
+#news .bucket#columnists .carouselArrows {
+	margin: 0 8px 0 0;
+	display: inline-block;
+	width: 40px;
+	float: right;
+}
+#news .bucket#columnists #rotate_left {
+	margin: 6px 0 0 0;
+	background:url("/pi/global/ornaments/icon-arrow-carousel-blue-left.png") no-repeat top left;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	z-index: 1;
+}
+#news .bucket#columnists #rotate_right {
+	margin: 6px 0 0 25px;
+	background: url("/pi/global/ornaments/icon-arrow-carousel-blue-right.png") no-repeat top right;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+#news .bucket#columnists #rotate_left.rotate_btn-dis {
+	background: url("/pi/global/ornaments/icon-arrow-carousel-blue-left.png") no-repeat top left;
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+	cursor: default;
+}
+#news .bucket#columnists #rotate_right.rotate_btn-dis {
+	background: url("/pi/global/ornaments/icon-arrow-carousel-blue-right.png") no-repeat top right;
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+	cursor: default;
+}
+#news.cardiology .bucket#columnists #rotate_left {
+	background:url("/pi/global/ornaments/icon-arrow-carousel-left.png") no-repeat top left;
+}
+#news.cardiology .bucket#columnists #rotate_right {
+	background: url("/pi/global/ornaments/icon-arrow-carousel-right.png") no-repeat top right;
+}
+#news.cardiology .bucket#columnists #rotate_left.rotate_btn-dis {
+	background: url("/pi/global/ornaments/icon-arrow-carousel-left.png") no-repeat top left;
+}
+#news.cardiology .bucket#columnists #rotate_right.rotate_btn-dis {
+	background: url("/pi/global/ornaments/icon-arrow-carousel-right.png") no-repeat top right;
+}
+
+/* blogs */
+#news .bucket#blogs li a {
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	font-size: 1.15em;
+	line-height: 1.15em;
+}
+#news .bucket#blogs li .byline a {
+	font-family: arial, sans-serif;
+	font-size: 0.95em;
+	line-height: auto;
+}
+
+/* ask the experts */
+#news .bucket#experts .bucketFooter {
+	margin-bottom: 10px;
+	display: block;
+}
+
+/* Perspective */
+#news.threeCol #right .bucket#perspective {
+	padding-bottom: 0;
+	background: none;
+}
+#news.threeCol #right .bucket#perspective li:first-child {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #e2e2e2;
+}
+#news.threeCol #right .bucket#perspective li:first-child a.title {
+	font-size: 1.34em;
+}
+#news.threeCol #right .bucket#perspective li:first-child .featimg {
+	width: 140px;
+}
+#news.threeCol #right .bucket#perspective li a {
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	font-size: 1.15em;
+	line-height: 1.15em;
+}
+#news.threeCol #right .bucket#perspective li .byline a {
+	font-family: arial, sans-serif;
+	font-size: 0.95em;
+	line-height: auto;
+}
+
+/* Journal Articles */
+#news.threeCol #right .bucket#journalArticles {
+	margin: 0 0 20px 0;
+	padding-bottom: 0;
+	background: none;
+}
+
+/* Discussions from Medscape Connect */
+#news .bucket#discussionsConnect .bucketL li a {
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	font-size: 1.15em;
+	line-height: 1.15em;
+}
+#news .bucket#discussionsConnect .bucketR li {
+	margin: 0 0 8px 0;
+}
+#news .bucket#discussionsConnect .bucketR li a {
+	padding: 2px 0 0 6px;
+	font-family: 'proxima_nova_rgregular', arial, sans-serif;
+	font-weight: normal;
+	font-size: 0.9em;
+	line-height: 0.95em;
+	text-transform: uppercase;
+	background: transparent url("/pi/global/ornaments/icon-morelink-gt.png") no-repeat 0 center;
+}
+
+/* most popular news */
+#news .bucket#popular ol li a {
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	font-size: 1.05em;
+	line-height: 1.1em;
+}
+
+/* collaborations */
+#news .bucket#collaborations li {
+	margin-left: 17px;
+	float: left;
+}
+#news .bucket#collaborations li:first-child {
+	margin-left: 0;
+}
+#news .bucket#collaborations .featimg {
+	margin: 0 0 6px 0;
+	width: auto;
+	height: 68px;
+	display: block;
+	float: none;
+}
+#news .bucket#collaborations a {
+	font-family: 'proxima_nova_rgregular', arial, sans-serif;
+	font-size: 0.95em;
+	line-height: 1.05em;
+}
+
+/* editorial staff */
+#news .bucket#staff .bucketHeader {
+	display: none;
+}
+#news .bucket#staff ul {
+	margin: 0;
+	padding: 0 0 10px 0;
+}
+#news .bucket#staff ul li {
+	margin: 0;
+	padding: 0 0 10px 0;
+	line-height: 0.95em;
+}
+#news .bucket#staff li .bucketSubHeader {
+	padding: 0;
+}
+#news .bucket#staff li a {
+	font-family: 'proxima_nova_rgregular', arial, sans-serif;
+	font-size: 0.95em;
+}
+#news .bucket#staff a.title {
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+}
+#news .bucket#staff .featimg {
+	margin-top: 0;
+	border: 1px solid #e2e2e2;
+	width: 64px;
+}
+#news .bucket#staff .teaser {
+	font-size: 0.85em;
+}
+#news .bucket#staff .bucketFooter {
+	margin: -10px 0 25px 0;
+}
+
+/* industry callout */
+#news #right ul.industryCallout li {
+	margin: 0 82px 15px 0;
+	padding: 6px 9px 6px 9px;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	border: 1px solid #e2e2e2;
+	background-color: #f7f7f7;
+}
+#news #right ul.industryCallout li a {
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	font-size: 1.1em;
+	line-height: normal;
+	color: #000;
+}
+#news #right ul.industryCallout li .byline {
+	font-style: italic;
+	text-align: right;
+	display: block;
+}
+
+/* state safe use alert */
+/* #news .safeUseAlert {
+	margin: 10px 0 20px 0;
+	padding: 7px 10px 9px 10px;
+	font-size: 0.95em;
+	background-color: #fff;
+	border: 4px solid #8aa8ba;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+#news .safeUseAlert a {
+	font-size: 1.1em;
+}
+#news .safeUseAlert .byline {
+	font-size: 0.95em;
+	color: #aaa;
+} */
+
+/* Information from Industry bucket */
+#news.threeCol #right #industryBucket {
+	margin: 0 auto 15px auto;
+	padding: 0;
+	background: none;
+	background-color: #fdfcfa;
+	width: auto;
+	max-width: 300px;
+	border: 1px solid #ccc;
+}
+#news.threeCol #right #industryBucket .industryBucketHeader {
+	margin: 0;
+	padding: 0;
+	background: none;
+	background-color: #fdfcfa;
+}
+#news.threeCol #right #industryBucket h3 {
+	margin: 0;
+	padding: 9px 11px 6px 11px;
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	font-size: 1.05em;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #005b81;
+}
+#news.threeCol #right #industryBucketContent {
+	margin: 0 10px;
+	padding: 0 0 4px 0;
+	width: auto;
+	background: none;
+	background-color: #fff;
+	font-family: 'proxima_nova_rgregular', arial, sans-serif;
+	font-size: 0.95em;
+	border-bottom: 1px solid #ba9676;
+}
+#news.threeCol #right #industryBucket #industryBucketContent .bucketHeader {
+	width: auto;
+	height: 1px;
+	background: none;
+	background-color: #ba9676;
+	font-size: 1px;
+	line-height: 1px;
+}
+#news.threeCol #right #industryBucket #industryBucketContent ul {
+	margin: 8px 10px 10px 10px;
+	padding: 0;
+	list-style: none;
+}
+#news.threeCol #right #industryBucket #industryBucketContent li {
+	margin: 0;
+	padding: 0;
+	font-size: 1.05em;
+}
+#news.threeCol #right #industryBucket #industryBucketContent li a {
+	color: #000;
+	font-weight: normal;
+}
+#news.threeCol #right #industryBucket #industryBucketContent .morelink {
+	margin: 0 9px;
+	padding: 0 0 10px 0;
+	font-weight: normal;
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	font-size: 1.05em;
+	background: transparent url("/pi/global/ornaments/icon-morelink-gt.png") 0 center no-repeat;
+	color: #000;
+}
+#news.threeCol #right #industryBucket .morelinkLeft {
+	margin: 0 0 0 10px;
+	padding: 0 0 0 8px;
+	width: 132px;
+	font-weight: normal;
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	font-size: 1.05em;
+	background: transparent url("/pi/global/ornaments/icon-morelink-gt.png") no-repeat 0 center;
+	float: left;
+}
+#news.threeCol #right #industryBucket .morelinkRight {
+	padding: 0 0 0 8px;
+	width: 122px;
+	font-weight: normal;
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	font-size: 1.05em;
+	background: transparent url("/pi/global/ornaments/icon-morelink-gt.png") no-repeat 0 center;
+	float: left;
+}
+@media only screen and (-webkit-min-device-pixel-ratio:2), only screen and (min-resolution:192dpi) {
+    #news.threeCol #right #industryBucket #industryBucketContent .morelink,
+    #news.threeCol #right #industryBucket .morelinkLeft,
+    #news.threeCol #right #industryBucket .morelinkRight {
+    	background-image: url("/pi/global/ornaments/icon-morelink-gt-@2x.png");
+    	background-size: 4px 7px;
+    }
+}
+#news.threeCol #right #industryBucket #industryBucketContent .morelink img,
+#news.threeCol #right #industryBucket .morelinkLeft img,
+#news.threeCol #right #industryBucket .morelinkRight img {
+	display: none;
+}
+#news.threeCol #right #industryBucket .bucketFooter {
+	height: 8px;
+	width: auto;
+	background: none;
+	font-size: 1px;
+	line-height: 1px;
+}
+
+/* the week in cardiology callout */
+#news ul.twic li {
+	margin: 0 0 15px 0;
+	padding: 5px 7px 4px 7px;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	border: 1px solid #e2e2e2;
+	font-size: 0.9em;
+	line-height: 0.9em;
+}
+#news ul.twic li a {
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	color: #000;
+}
+#news ul.twic li .featimg {
+	margin-top: 2px;
+	width: 72px;
+}
+#news ul.twic li .byline {
+	display: none;
+}
+
+/* social network widget */
+#news.threeCol #right .socialNet {
+	/* margin: 0 0 15px 0;
+	padding: 7px 7px 4px 7px;
+	background: #f6f6f6;
+	border: 1px solid #d8d8d8;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	font-size: 0.85em; */
+	display: none;
+}
+
+/* social hub callout */
+#news.threeCol #right .bucket#hub {
+	/* margin: 0 0 15px 0;
+	padding: 0 0 15px 0;
+	border-bottom: none; */
+	display: none;
+}
+#news #socialHub {
+	background-color: #e5e5e5;
+}
+#news #socialHub .logo {
+	padding: 5px;
+	width: 121px;
+	height: 30px;
+	background: url("/pi/global/ornaments/logo-social-hub-121x30.png") no-repeat 5px 5px;
+	float: left;
+}
+#news #socialHub .logo a {
+	width: 121px;
+	height: 30px;
+	display: block;
+}
+#news #socialHub .logo span {
+	display: none;
+}
+#news #right #socialHub ul {
+	margin: 0;
+	padding: 0;
+	list-style: none inside none;
+	height: 40px;
+	float: right;
+}
+#news #right #socialHub ul.networks {
+	margin: 0 7px 0 0;
+}
+#news #right #socialHub ul.media {
+	margin: 0 5px 0 0;
+	border-left: 2px solid #fff;
+}
+#news #right #socialHub ul li {
+	margin: 10px 0 0 5px;
+	padding: 0;
+	width: 20px;
+	display: inline;
+	float: left;
+}
+#news #right #socialHub ul.media li:first-child {
+	margin: 10px 0 0 8px;
+}
+#news #socialHub ul li a {
+	width: 20px;
+	height: 20px;
+	display: block;
+}
+#news #socialHub ul li.facebook {
+	background: url("/pi/global/ornaments/icon-facebook-grey.png") no-repeat;
+}
+#news #socialHub ul li.twitter {
+	background: url("/pi/global/icons/icon-twitter-grey.png") no-repeat;
+}
+#news #socialHub ul li.gplus {
+	background: url("/pi/global/ornaments/icon-googleplus-grey.png") no-repeat;
+}
+#news #socialHub ul li.linkedin {
+	background: url("/pi/global/ornaments/icon-linkedin-grey.png") no-repeat;
+}
+#news #socialHub ul li.rss {
+	background: url("/pi/global/ornaments/icon-rss-grey.png") no-repeat;
+}
+#news #socialHub ul li.discussion {
+    background: url("/pi/global/ornaments/icon-discussion-grey.png") no-repeat;
+}
+#news #socialHub ul li.podcast {
+	background: url("/pi/global/ornaments/icon-podcast-grey.png") no-repeat;
+}
+#news #socialHub ul li span {
+	display: none;
+}
+
+/* Today page */
+#today {
+	margin-top: 15px;
+	border: 1px solid #ccc;
+}
+#today #left, #today #right {
+	margin: 0;
+	border-top: 10px solid #fff;
+	border-bottom: 10px solid #fff;
+}
+#today #top {
+	margin: 0;
+	padding-top: 0;
+}
+#today #left .bucket {
+	margin: 12px 0 0 0;
+	border-top: none;
+}
+#today .bucket .bucketHeader {
+	margin: 12px 12px 6px 12px;
+	padding: 10px 0 2px 0;
+	background: transparent url("/pi/global/ornaments/border-dots.png") repeat-x top left;
+}
+#today #right .bucket .bucketHeader {
+	margin: 15px 0 8px 0;
+}
+#today .bucket#topNews .col2 {
+	border-top: 1px solid #e4e4e4;
+}
+#today .bucket#specialties, #today .bucket#topNews {
+	margin: 0;
+}
+#today .col2, #today .bucket#specialReport .bucketContent {
+	background: transparent url("/pi/global/ornaments/bg-maincol-split.png") 10% repeat-y;
+}
+#today #left .bucket#specialReport .reportTitle {
+	margin: 0;
+	padding: 0 0 4px 0;
+	background: #fff;
+	display: block;
+}
+#today .bucket#specialties .bucketHeader, #today .bucket#topNews .bucketHeader, #today .bucket#perspective .bucketHeader {
+	margin-top: 4px;
+	padding: 0;
+	background: none;
+}
+#today .bucket .bucketHeader h2, #today .bucket .bucketHeader h3 {
+	margin: 0;
+	padding: 0;
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	font-size: 1.05em;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #005b81;
+	display: inline;
+}
+#today .bucket#topNews .col2Feature .featimg, #today .bucket#topNews .col4Feature .featimg, #today .bucket#topNews .col6Feature .featimg, #today .bucket#topNews .col8Feature .featimg {
+	width: 264px;
+	border: none;
+}
+#today #left .bucket#bom .col2 ul li {
+	margin: 0;
+	width: 342px;
+	float: left;
+}
+#today #left .bucket#bom .col2 ul li:first-child {
+	margin: 0 24px 0 0;
+	width: 340px;
+}
+#today #right {
+	padding: 0 0 0 10px;
+}
+#today #right .bucketContent {
+	border: none;
+}
+#today .bucket#specialties ul.other {
+	border: none;
+	background: transparent url("/pi/global/ornaments/border-dots.png") repeat-x top left;
+}
+#today .bucket ol a {
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	font-size: 1.1em;
+	line-height: 1.15em;
+}
+#today .bucket .bylineWrapper {
+	display: block;
+}
+#today .bucket .byline {
+	font-style: italic;
+	display: block;
+}
+#today .bucket .commentcount {
+	margin: 0;
+	padding: 0;
+	font-family: arial, sans-serif;
+	font-style: italic;
+	color: #797979;
+	display: block;
+}
+#today .bucket .bylineWrapper .byline {
+	margin: 0 3px 0 0;
+	display: inline;
+}
+#today .bucket .bylineWrapper .commentcount {
+	margin: 0;
+	padding: 0 0 0 5px;
+	border-left: 1px solid #797979;
+	font-size: 0.85em;
+	display: inline;
+}
+#today .bucket li .byline .comments {
+	margin: 0 0 0 2px;
+	padding: 0 0 0 5px;
+	border-left: 1px solid #797979;
+}
+#today .bucket .morelink {
+	padding: 1px 6px 0 0;
+	font-family: 'proxima_nova_rgregular', arial, sans-serif;
+	font-weight: normal;
+	font-size: 0.95em;
+	line-height: 0.95em;
+	text-transform: uppercase;
+	background: transparent url("/pi/global/ornaments/icon-morelink-gt.png") no-repeat right center;
+	float: right;
+	*margin-top: -14px; /* IE7 float bug */
+}
+@media only screen and (-webkit-min-device-pixel-ratio:2), only screen and (min-resolution:192dpi) {
+    #today .bucket .morelink {
+    	background-image: url("/pi/global/ornaments/icon-morelink-gt-@2x.png");
+    	background-size: 4px 7px;
+    }
+}
+#today .bucket .morelink a {
+	color: #007cb0;
+}
+#today #left .bucket#inside .section {
+	padding: 0 0 2px 0;
+}
+#today #right .bucket#perspective li:first-child {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #e2e2e2;
+}
+#today #right .bucket#perspective li:first-child a.title {
+	font-size: 1.4em;
+}
+#today #right .bucket#popular .bucketHeader {
+	margin: 6px 0 2px 0;
+	padding: 12px 0 8px 0;
+	background: transparent url("/pi/global/ornaments/border-dots.png") repeat-x top left;
+}
+
+/* Business of Medicine */
+#news #right .bomDivider {
+	margin: 15px 0;
+	min-height: 1px;
+	background: transparent url("/pi/global/ornaments/border-dots.png") no-repeat bottom;
+}
+#news .bucket#perspective .topFeature {
+	margin-bottom: 10px;
+	border-bottom: 1px solid #e3e3d3;
+}
+#news .bucket#perspective .topFeature .featimg {
+	margin: 3px 0 0 20px;
+	padding: 0;
+	width: 286px;
+	position: relative;
+	float: right;
+	clear: both;
+}
+#news .bucket#perspective .topFeature a.title {
+	font-size: 1.6em;
+	line-height: 1.1em;
+}
+#news .bucket#perspective .topFeature .teaser {
+	margin: 6px 0 4px 0;
+}
+#news .bucket#perspective .bucketL li {
+	padding-top: 12px;
+	border-top: 1px solid #e2e2e2;
+}
+#news .bucket#perspective .bucketL li:first-child {
+	padding-top: 0;
+	border-top: none;
+}
+#news.threeCol #right .bucket#blogs .teaser {
+	font-size: 0.9em;
+}
+#news.threeCol #right .bucket#bom_podcast {
+	margin: 1px 0 0 0;
+	border: 1px solid #e4e4e4;
+	background: url("/pi/global/ornaments/bg-podcast.png") no-repeat top -1px left -1px;
+	width: 300px;
+	height: 120px;
+	position: relative;
+}
+#podcastHeader {
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	font-size: 1.8em;
+	color: #07405f;
+	font-weight: auto;
+	text-shadow: none;
+}
+#news.threeCol #podcastHeader a, #news.threeCol #podcastHeader a:visited {
+	color: #07405f;
+	text-decoration: none;
+}
+#podcast_content {
+	margin: 0 65px 0 12px;
+	padding-top: 35px;
+	font-size: 0.8em;
+	color: #000;
+	font-weight:200;
+}
+#viewAllPodcasts {
+	margin: -2px 0 0 0;
+	font-size: 0.9em;
+	color: #fff;
+}
+#news.threeCol #viewAllPodcasts a {
+	padding-left: 15px;
+	color: #fff;
+	font-weight: bold;
+	background: url("/pi/global/ornaments/arrowmore-white.png") no-repeat left;
+}
+a#podcastLogoLink {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    z-index: 10;
+    background-color: white; /* IE */
+    opacity: 0; /* IE */
+    filter: alpha(opacity=1); /* IE */
+}
+#news.threeCol #right .bucket#specialtyNews {
+	padding-bottom: 0;
+	background: none;
+}
+#news.threeCol #right .bucket#specialtyNews li:first-child {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #e2e2e2;
+}
+#news.threeCol #right .bucket#specialtyNews li:first-child a.title {
+	font-size: 1.4em;
+}
+#news.threeCol #right .bucket#specialtyNews li:first-child .featimg {
+	width: 140px;
+}
+#news.threeCol #right .bucket#specialtyNews li a {
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	font-size: 1.15em;
+	line-height: 1.2em;
+}
+#news.threeCol #right .bucket#specialtyNews li .byline a {
+	font-family: arial, sans-serif;
+	font-size: 0.95em;
+	line-height: auto;
+}
+
+/* Today on Twitter */
+#news.twoCol.twitter {
+	padding: 14px 0 0 0;
+	background: transparent url("/pi/global/ornaments/bg-twitter-page.png") repeat-y top left;
+}
+#news.twoCol.cardiology.twitter {
+	padding: 14px 0 0 0;
+	background: transparent url("/pi/global/ornaments/bg-twitter-page-cardiology.png") repeat-y top left;
+}
+#news.twoCol.twitter #left {
+	margin: 0;
+	padding: 0 12px;
+	width: 628px;
+	float: left;
+}
+#news.twoCol.twitter #right {
+	margin: 0;
+	padding: 0 0 0 11px;
+	width: 304px;
+	float: left;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketHeader h2 {
+	font-family: 'proxima_nova_rgregular', arial, sans-serif;
+	font-size: 2.1em;
+	letter-spacing: -1px;
+	text-transform: none;
+	color: #999;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketHeader h2 .blue {
+	color: #55acee;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketHeader h2 b.blue {
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	color: #1895cf;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketHeader h2 .red {
+	color: #991b1e;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketHeader h2 b.red {
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	color: #991b1e;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketHeader .tagline {
+	padding: 3px 0 0 1px;
+	font-family: 'proxima_nova_rgregular', arial, sans-serif;
+	font-size: 0.95em;
+	color: #666;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent ul.tweets li {
+	width: 626px;
+	min-height: 228px;
+	border: 1px solid #ccc;
+	background: #fff;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent ul.tweets li.tweetfeederror {
+    min-height: 0;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent ul.tweets li.tweetfeederror div {
+    padding: 20px;
+    font-size: 1.2em;
+}
+#news.twoCol.twitter #left .bucket#twitter {
+	margin: 0;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent a {
+	color: #0059b1;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent .timestamp a,
+#news.twoCol.twitter #left .bucket#twitter .bucketContent .userHandle a {
+	color: #999;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent .articleTitle a,
+#news.twoCol.twitter #left .bucket#twitter .bucketContent .fullName a {
+	color: #000;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent ul.tweets li .thumbnail {
+	margin: 0 18px 0 0;
+	width: 305px;
+	height: 228px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-right: 1px solid #ccc;
+	float: left;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent ul.tweets li .thumbnail img {
+	display: inline-block;
+	vertical-align: middle;
+	width: 304px;
+	min-height: 228px;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent ul.tweets li .thumbnail a img {
+	border: none;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent .text {
+	margin: 14px 0 0 0;
+	width: 291px;
+	float: left;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent .content {
+	min-height: 174px;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent .articleInfo {
+	margin: 0 0 8px 0;
+	border-bottom: 1px solid #d3d3d3;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent .articleTitle {
+	padding: 0 0 3px 0;
+	font-size: 1.15em;
+	line-height: 1.05em;
+	font-weight: bold;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent .domainName {
+	padding: 0 0 6px 0;
+	font-size: 0.9em;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent .tweet {
+	line-height: 1.25em;
+	color: #666;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent .timestamp {
+	font-size: 1.05em;
+	float: right;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent .user {
+	margin: 0 0 6px 0;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent .profileImg {
+	margin: 0 10px 0 0;
+	padding: 0;
+	width: 18px;
+	float: left;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent .profileImg img {
+	width: 18px;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent .profileImg a img {
+	border: none;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent .fullName {
+	margin: 0 0 3px 0;
+	font-size: 1.1em;
+	display: inline-block;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent .fullName b {
+	font-weight: normal;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent .userHandle {
+	font-size: 0.9em;
+	display: inline-block;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent .tweetText b {
+	font-weight: normal;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent .tweetText s {
+	text-decoration: none;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent .tweetText .invisible {
+	display: none;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent .retweetedBy {
+	margin: 5px 0 0 0;
+	font-size: 0.9em;
+	color: #999;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent ul.tweets li .text ul.tweetActions {
+	margin: 0;
+	padding: 10px 0;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent ul.tweets li .text ul.tweetActions li {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size: 0.8em;
+	width: 94px;
+	min-height: 14px;
+	display: inline-block;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent ul.tweetActions li a {
+	color: #8899a6;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent ul.tweetActions li.reply {
+	text-align: left;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent ul.tweetActions li.reply a {
+	padding: 2px 0 0 22px;
+	background-image: url("/pi/global/icons/icon-twitter-reply.png");
+	background-repeat: no-repeat;
+	background-position: 0 2px;
+	display: inline-block;
+	min-height: 14px;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent ul.tweetActions li.reply a:hover {
+	background-image: url("/pi/global/icons/icon-twitter-reply-over.png");
+	background-repeat: no-repeat;
+	background-position: 0 2px;
+	color: #666;
+	text-decoration: none;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent ul.tweetActions li.retweet {
+	text-align: center;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent ul.tweetActions li.retweet a {
+	padding: 2px 0 0 25px;
+	background-image: url("/pi/global/icons/icon-twitter-retweet.png");
+	background-repeat: no-repeat;
+	background-position: 0 2px;
+	display: inline-block;
+	min-height: 14px;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent ul.tweetActions li.retweet a:hover,
+#news.twoCol.twitter #left .bucket#twitter .bucketContent ul.tweetActions li.retweet a.active {
+	background-image: url("/pi/global/icons/icon-twitter-retweet-over.png");
+	background-repeat: no-repeat;
+	background-position: 0 2px;
+	color: #666;
+	text-decoration: none;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent ul.tweetActions li.favorite {
+	width: 96px;
+	text-align: right;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent ul.tweetActions li.favorite a {
+	padding: 2px 0 0 20px;
+	background-image: url("/pi/global/icons/icon-twitter-favorite.png");
+	background-repeat: no-repeat;
+	background-position: 0 1px;
+	display: inline-block;
+	min-height: 14px;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketContent ul.tweetActions li.favorite a:hover,
+#news.twoCol.twitter #left .bucket#twitter .bucketContent ul.tweetActions li.favorite a.active {
+	background-image: url("/pi/global/icons/icon-twitter-favorite-over.png");
+	background-repeat: no-repeat;
+	background-position: 0 1px;
+	color: #666;
+	text-decoration: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio:2), only screen and (min-resolution:192dpi) {
+	#news.twoCol.twitter #left .bucket#twitter .bucketContent ul.tweetActions li.reply a {
+		background-image: url("/pi/global/icons/icon-twitter-reply-@2x.png");
+		background-size: 16px 11px;
+	}
+	#news.twoCol.twitter #left .bucket#twitter .bucketContent ul.tweetActions li.reply a:hover {
+		background-image: url("/pi/global/icons/icon-twitter-reply-over-@2x.png");
+		background-size: 16px 11px;
+	}
+	#news.twoCol.twitter #left .bucket#twitter .bucketContent ul.tweetActions li.retweet a {
+		background-image: url("/pi/global/icons/icon-twitter-retweet-@2x.png");
+		background-size: 20px 12px;
+	}
+	#news.twoCol.twitter #left .bucket#twitter .bucketContent ul.tweetActions li.retweet a:hover,
+	#news.twoCol.twitter #left .bucket#twitter .bucketContent ul.tweetActions li.retweet a.active {
+		background-image: url("/pi/global/icons/icon-twitter-retweet-over-@2x.png");
+		background-size: 20px 12px;
+	}
+	#news.twoCol.twitter #left .bucket#twitter .bucketContent ul.tweetActions li.favorite a {
+		background-image: url("/pi/global/icons/icon-twitter-favorite-@2x.png");
+		background-size: 15px 14px;
+	}
+	#news.twoCol.twitter #left .bucket#twitter .bucketContent ul.tweetActions li.favorite a:hover,
+	#news.twoCol.twitter #left .bucket#twitter .bucketContent ul.tweetActions li.favorite a.active {
+		background-image: url("/pi/global/icons/icon-twitter-favorite-over-@2x.png");
+		background-size: 15px 14px;
+	}
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketFooter .morelink {
+	margin: 40px 0 12px 0;
+	padding: 0;
+	font-family: 'proxima_nova_rgregular', arial, sans-serif;
+	font-size: 1.5em;
+	text-align: center;
+	text-transform: none;
+	background: none;
+	width: 100%;
+	float: none;
+	display: none;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketFooter .morelink a {
+	padding: 9px 0 8px 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background: #b2d6ef;
+	width: 100%;
+	color: #fff;
+	display: block;
+	cursor: pointer;
+}
+#news.twoCol.twitter #left .bucket#twitter .bucketFooter .morelink a:hover {
+	background: #55acee;
+	text-decoration: none;
+}
+#news.twoCol.cardiology.twitter #left .bucket#twitter .bucketFooter .morelink a {
+	background: #e1a799;
+}
+#news.twoCol.cardiology.twitter #left .bucket#twitter .bucketFooter .morelink a:hover {
+	background: #991b1e;
+}
+#news.twoCol.twitter #right .bucket {
+	margin: 0;
+}
+
+/* Today on Medscape overrides for Twitter page */
+#news.twoCol.twitter #right #topNews .featimg, #news.twoCol.twitter #right #topNews .teaser, #news.twoCol.twitter #right #topNews .bucketHeader {
+	display: none;
+}
+#news.twoCol.twitter #right #topNews .col2Feature a.title {
+	font-size: 0.9rem;
+}
+#news.twoCol.twitter #right #topNews .col2Feature {
+	border: 0;
+}
+
+.todayFeed{display:none;}
+
+/*Topic Alert Callouts*/
+a.topicAlertCallout {
+    width:225px;
+    height:70px;
+    background: url(/pi/global/ornaments/topic-alert-225x70.png);
+    background-size:225px 70px;
+    display:block;
+    text-decoration:none;
+    margin:0 auto;
+}
+
+#left .topicAlertCallout{
+    width:164px;
+    height:50px;
+    background: url(/pi/global/ornaments/topic-alert-164x50.png);
+    background-size:164px 50px;
+    display:block;
+    margin-top:20px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio:2), only screen and (min-resolution:192dpi) {
+	.topicAlertCallout {
+    	background: url(/pi/global/ornaments/topic-alert-225x70@2x.png);
+    	background-size:225px 70px;
+	}
+
+	#left .topicAlertCallout{
+    	background: url(/pi/global/ornaments/topic-alert-164x50.png);
+    	background-size:164px 50px;
+	}
+}
+
+/* Conference Callout General styles */
+.callout160x120, .callout225x160, .callout275x160, .callout300x90, .callout470x60, .callout470x180, .callout570x60, .callout570x180 {
+    margin:10px auto;
+    text-align:center;
+}
+.callout160x120 a, .callout225x160 a, .callout275x160 a, .callout300x90 a, .callout470x60 a, .callout470x180 a, .callout570x60 a, .callout570x180 a
+{
+	margin:0 auto;
+	text-decoration:none;
+	display:block;
+}
+
+.callout160x120 a {
+	width:160px;
+	height:120px;
+	background-size:160px 120px;
+}
+.callout225x160 a {
+	width: 225px;
+	height:160px;
+	background-size:225px 160px;
+}
+.callout275x160 a {
+	width: 275px;
+	height:160px;
+	background-size:275px 160px;
+}
+.callout300x90 a {
+	width: 300px;
+	height:90px;
+	background-size:300px 90px;
+
+}
+.callout470x60 a {
+	width: 470px;
+	height:60px;
+	background-size:470px 60px;
+
+}
+.callout470x180 a {
+	width: 470px;
+	height:180px;
+	background-size:470px 180px;
+
+}
+.callout570x60 a {
+	width: 570px;
+	height:60px;
+	background-size:570px 60px;
+
+}
+.callout570x180 a {
+	width: 570px;
+	height:180px;
+	background-size:570px 180px;
+}
+
+/* Homepage Resize
+------------------------------------------------- */
+#bodypadding.homestar {width:1122px;}
+
+.homestar #headerborder {
+	min-width:1122px;
+}
+.homestar #news .bucket#specialtyNews .topFeature a.title, .homestar #news .bucket#topNews .col2Feature a.title {
+font-size: 1.7em;
+line-height: 1.1em;
+}
+.homestar #news .bucket .teaser {
+line-height: 1.3em;
+}
+.homestar #news {
+	width:1080px;
+}
