@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml" class="wf-opensans-n4-active wf-opensans-n6-active wf-active" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8"><script type="text/javascript" src="search%20results_files/f246896502"></script><script src="search%20results_files/nr-1016.js"></script><script src="search%20results_files/cbgapi.loaded_2" async=""></script><script src="search%20results_files/cbgapi.loaded_1" async=""></script><script src="search%20results_files/cbgapi.loaded_0" async=""></script><script type="text/javascript" async="" src="search%20results_files/plusone.js" gapi_processed="true"></script><script id="facebook-jssdk" src="search%20results_files/sdk.js"></script><script async="" src="search%20results_files/fbevents.js"></script><script async="" src="search%20results_files/analytics.js"></script><script src="search%20results_files/webfont.js" async=""></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VgACVlJSGwsAV1dbAQU="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(15),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(c){try{i("ierr",[c,(new Date).getTime(),!0])}catch(s){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(16),c=t("ee"),s=t("loader"),f=window.onerror,u=!1,d=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),s.xhrWrappable&&t(9),u=!0)}c.on("fn-start",function(t,e,n){u&&(d+=1)}),c.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),c.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),c.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),c=t(7),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState";t("loader").features.stn=!0,t(6);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(w,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),this.bstType])}),c.on(m,function(){this.bstStart=Date.now()}),c.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(17)(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(17)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(17)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(17)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",c)}function i(t){v.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<v.length;t++)r([],v[t]);v.length&&(v=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(17)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],v=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<d;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(15),c=t(16),s=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(u,function(t,e){f[e]=o(d+e,!0,"api")}),f.addPageAction=o(d+"addPageAction",!0),f.setCurrentRouteName=o(d+"routeName",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var p=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{s.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){p[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],14:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],15:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],16:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],17:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){l([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o)}catch(a){l([a,n,r,o])}s=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){l([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function l(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o){if(!l.aborted){t&&t(n,r,o);for(var i=e(o),a=h(n),c=a.length,s=0;s<c;s++)a[s].apply(i,r);var f=u[y[n]];return f&&f.push([g,n,r,i]),i}}function p(t,e){v[t]=h(t).concat(e)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(n)}function w(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var v={},y={},g={on:p,emit:n,get:m,listeners:h,context:e,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var c="nr@context",s=t("gos"),f=t(15),u={},d={},l=e.exports=o();l.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!b++){var t=g.info=NREUM.info,e=d.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(v,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()],null,"api");var n=d.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var c=t("handle"),s=t(15),f=t("ee"),u=window,d=u.document,l="addEventListener",p="attachEvent",h=u.XMLHttpRequest,m=h&&h.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:h,REQ:u.Request,EV:u.Event,PR:u.Promise,MO:u.MutationObserver},t(12);var w=""+location,v={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},y=h&&m&&m[l]&&!/CriOS/.test(navigator.userAgent),g=e.exports={offset:a(),origin:w,features:{},xhrWrappable:y};d[l]?(d[l]("DOMContentLoaded",i,!1),u[l]("load",r,!1)):(d[p]("onreadystatechange",o),u[p]("onload",r)),c("mark",["firstbyte",a()],null,"api");var b=0},{}]},{},["loader",2,10,4,3]);</script>
+		<link rel="dns-prefetch" href="https://static.miniclipcdn.com/">
+		<link rel="dns-prefetch" href="https://static2.miniclipcdn.com/">
+		<link rel="dns-prefetch" href="https://static3.miniclipcdn.com/">
+        <link rel="dns-prefetch" href="http://config.playwire.com/">
+<link rel="dns-prefetch" href="http://cdn.intergi.com/">
+<script type="text/javascript">
+    var tyche = {isMobile: false, mode: 'tyche', config: '//config.playwire.com/1017860/v2/websites/64767/banner.json'};
+</script>
+<script id="tyche" src="search%20results_files/tyche.js" type="text/javascript"></script>
+
+		
+		<title>Games at Miniclip.com - Play Free Online Games</title>
+		<meta name="description" content="Play Free Online Games, fun games, puzzle games, action games, sports games, flash games, adventure games, multiplayer games and more">
+		<meta name="google-site-verification" content="NMuJU--WAcA9_LIhC7cW4JEtcL8wpDfpiFJKqLqoaiY">
+		<link rel="canonical" href="http://www.miniclip.com/games/search/en/">
+		<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://miniclip.com/games/search/en/http%22://www.miniclip.com/games/en/feed.xml%22">
+		<link rel="search" type="application/opensearchdescription+xml" href="http://static.miniclipcdn.com/opensearch.xml" title="Miniclip Search">
+<link href="search%20results_files/common.css" rel="stylesheet" type="text/css">
+<link href="search%20results_files/modal.css" rel="stylesheet" type="text/css">
+		<meta property="og:site_name" content="Miniclip">
+		<meta property="fb:admins" content="786690137">
+		<meta property="og:title" content="Games at Miniclip.com - Play Free Online Games">
+
+		<meta name="twitter:site" content="@miniclip">
+		<meta property="og:url" content="http://www.miniclip.com/games/search/en/">
+		<meta property="og:image" content="http://www.miniclip.com/images/bg_h1.png">
+		<meta property="og:description" content="Miniclip is the world's largest independent online games site with over 600 games. The site is updated at least twice a week...so you can get your gaming fix whenever you want it.">
+		<meta property="og:type" content="website">
+
+		<link href="https://plus.google.com/118375337016817078846/" rel="publisher">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta property="fb:app_id" content="111411968896241">
+		<meta name="msapplication-TileColor" content="#0099ff">
+		<meta name="msapplication-TileImage" content="images/msapplication-tile-image.png">
+		<meta name="application-name" content="Miniclip">
+
+		<!--[if IE]><link rel="stylesheet" type="text/css" href="//static.miniclipcdn.com/styles/css/ie.css"><![endif]-->
+		<script>
+			WebFontConfig = {google:{families:['Open+Sans:400,600:latin']}};
+			(function() {
+				var wf = document.createElement('script');
+				wf.src = '//ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+				wf.async = 'true';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(wf, s);
+			})();
+
+			var GEO_IP_CODE = 'CA';
+		</script>
+		<script>
+						var GEO_IP_CODE = 'CA';
+			var KILLSWITCH_ENABLED = ["awards","challenges","ads","ads-mpu","ads-mpu2","ads-leaderboard","ads-takeover","ads-skyscraper-left","ads-skyscraper-right","ads-video","dfp","dfp-mpu","dfp-mpu2","dfp-leaderboard","dfp-takeover","dfp-skyscraper-left","dfp-skyscraper-right","dfp-video","friend-invites","friends","leaderboards","login","notifications","npapi","offers","online-friends-backend","online-friends-ui","point_system","push-ads","random-game","search","sweepstakes","teams","tracking-manager","xplore","payments"];
+			var static_path = '//static.miniclipcdn.com/';
+		</script>
+		<script src="search%20results_files/jquery.js"></script>
+		<script>!window.jQuery && document.write(unescape('%3Cscript src="//static.miniclipcdn.com/js/jquery-1.11.1.min.js"%3E%3C/script%3E'))</script>
+<script src="search%20results_files/stats-manager.js" type="text/javascript"></script>
+<script src="search%20results_files/swfobject.js" type="text/javascript"></script>
+<script src="search%20results_files/head-core.js" type="text/javascript"></script>
+<script src="search%20results_files/takeover.js" type="text/javascript"></script>
+<script src="search%20results_files/socket.js" type="text/javascript"></script>
+<script type="text/javascript">
+	// init and send page view
+	var stats_manager = new StatsManager();
+	stats_manager.init({"ua_account_number":"UA-44159587-1","disabled_trackers":false,"pageview_data":{"dimension7":"\/games\/search\/?query=adventure","dimension9":"Canada","dimension8":"en","metric1":1,"dimension1":"Guest","dimension17":"Top Titles"},"page_prefix":""});
+			stats_manager.trackerPageview();
+	
+</script>		<script type="text/javascript">
+			var site_language = "en";
+			var site_abc = "1";
+			var site_country = "CA";
+			var site_tag_location = "S";
+		</script><!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+        document,'script','//connect.facebook.com/en_US/fbevents.js');
+
+    fbq('init', '1451566791782906');
+    fbq('track', "PageView");</script>
+<noscript>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1451566791782906&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->		<link rel="alternate" hreflang="en" href="http://miniclip.com/games/search/en/?query=adventure">
+		<link rel="alternate" hreflang="en" href="http://miniclip.com/games/search/en/?query=adventure">
+		<link rel="alternate" hreflang="de" href="http://miniclip.com/games/search/de/?query=adventure">
+		<link rel="alternate" hreflang="fr" href="http://miniclip.com/games/search/fr/?query=adventure">
+		<link rel="alternate" hreflang="es" href="http://miniclip.com/games/search/es/?query=adventure">
+		<link rel="alternate" hreflang="pt" href="http://miniclip.com/games/search/pt/?query=adventure">
+		<link rel="alternate" hreflang="it" href="http://miniclip.com/games/search/it/?query=adventure">
+		<link rel="alternate" hreflang="ko" href="http://miniclip.com/games/search/ko/?query=adventure">
+		<link rel="alternate" hreflang="ja" href="http://miniclip.com/games/search/ja/?query=adventure">
+		<link rel="alternate" hreflang="pt-br" href="http://miniclip.com/games/search/pt-br/?query=adventure">
+		<link rel="alternate" hreflang="pl" href="http://miniclip.com/games/search/pl/?query=adventure">
+		<link rel="alternate" hreflang="hu" href="http://miniclip.com/games/search/hu/?query=adventure">
+		<link rel="alternate" hreflang="ro" href="http://miniclip.com/games/search/ro/?query=adventure">
+		<link rel="alternate" hreflang="zh" href="http://miniclip.com/games/search/zh/?query=adventure">
+		<link rel="alternate" hreflang="ru" href="http://miniclip.com/games/search/ru/?query=adventure">
+		<link rel="alternate" hreflang="hi" href="http://miniclip.com/games/search/hi/?query=adventure">
+		<link rel="alternate" hreflang="sv" href="http://miniclip.com/games/search/sv/?query=adventure">
+		<link rel="alternate" hreflang="tk" href="http://miniclip.com/games/search/tk/?query=adventure">
+        <script type="text/javascript">
+            var takeover_heights = [0,90,136,170];
+            var takeover = {};
+            var mcto = {};
+        </script>
+
+        <script>var translate = {"hide":"Hide","show":"Show","full_categories_list":"Full Categories List","all_games_and_categories":"All Games and Categories","show_more_results":"Show More Results &rsaquo;","no_comments":"No comments","report":"Report","comment_like_failed":"Sorry, the comment like failed. Please try again later.","comment_reporting_failed":"Sorry, the comment reporting failed.","the_word_is_not_allowed":"The word %s is not in our list of allowed words.","remove_red_messages":"Please edit your message to remove the words highlighted in red, these are not allowed.","enter_the_link":"Enter the link url","search_free_games":"You love free games? We <strong>LOVE<\/strong> free games! All Miniclip games have a free version you can play right here on the website.","password_reset_error_email":"<strong>Oops!<\/strong> You haven't entered an email address!","password_reset_error_username":"<strong>Sorry<\/strong> - That doesn't appear to be a valid email address.","password_reset_success":"We've got your reset request. If the email address you provided exists you should be getting an email with instructions on what to do next.","confirm_focus_mode":"Switch to Focus mode to concentrate on the game. This will restart your current game. Do you want to continue?","add_to_favorites":"Add to your favorite games","remove_from_favorites":"Remove from your favorite games","comment_autocomplete_placeholder":"Start typing to get suggestions","new":"New","next":"next","prev":"previous"}</script>		<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+		<script type="text/javascript">
+			var fb_app = {
+				id: 111411968896241,
+				namespace: 'miniclipapp',
+			};
+		
+			var https_root = 'https://miniclip.com';
+			var app_env = 'production';
+			var GEO_IP_CODE = 'CA';
+
+
+			window.addEventListener('load', function () {
+				if (document.body.dataset.userId) {
+					$("iframe[src^='https://ad.doubleclick'], iframe[id^='google_ads_iframe']").each(function (i, el) {
+						if ($(el).width() > 1) {
+							var gameName = "miniclip";
+							MC.sendUserEvent('interstitial_ads', {
+								userId: document.body.dataset.userId,
+								game: gameName,
+								provider: 'google'
+							});
+						}
+					});
+				}
+			});
+
+		</script>
+
+		
+			<link rel="stylesheet" href="search%20results_files/css.css" media="all"><style type="text/css" media="screen">#flash-login-embed {visibility:hidden}</style><style>.gc-bubbleDefault{background-color:transparent !important;text-align:left;padding:0 !important;margin:0 !important;border:0 !important;table-layout:auto !important}.gc-reset{background-color:transparent !important;border:0 !important;padding:0 !important;margin:0 !important;text-align:left}.pls-bubbleTop{border-bottom:1px solid #ccc !important}.pls-topTail,.pls-vertShimLeft,.pls-contentLeft{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/border_3.gif) !important}.pls-topTail{background-repeat:repeat-x !important;background-position:bottom !important}.pls-vertShim{background-color:#fff !important;text-align:right}.tbl-grey .pls-vertShim{background-color:#f5f5f5 !important}.pls-vertShimLeft{background-repeat:repeat-y !important;background-position:right !important;height:4px}.pls-vertShimRight{height:4px}.pls-confirm-container .pls-vertShim{background-color:#fff3c2 !important}.pls-contentWrap{background-color:#fff !important;position:relative !important;vertical-align:top}.pls-contentLeft{background-repeat:repeat-y;background-position:right;vertical-align:top}.pls-dropRight{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleDropR_3.png) !important;background-repeat:repeat-y !important;vertical-align:top}.pls-vert,.pls-tailleft,.pls-dropTR .pls-dropBR,.pls-dropBL,.pls-vert img{vertical-align:top}.pls-dropBottom{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleDropB_3.png) !important;background-repeat:repeat-x !important;width:100%;vertical-align:top}.pls-topLeft{background:inherit !important;text-align:right;vertical-align:bottom}.pls-topRight{background:inherit !important;text-align:left;vertical-align:bottom}.pls-bottomLeft{background:inherit !important;text-align:right}.pls-bottomRight{background:inherit !important;text-align:left;vertical-align:top}.pls-tailtop,.pls-tailright,.pls-tailbottom,.pls-tailleft{display:none;position:relative}.pls-tailbottom,.pls-tailtop,.pls-tailright,.pls-tailleft,.pls-dropTR,.pls-dropBR,.pls-dropBL{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleSprite_3.png) !important;background-repeat:no-repeat}.tbl-grey .pls-tailbottom,.tbl-grey .pls-tailtop,.tbl-grey .pls-tailright,.tbl-grey .pls-tailleft,.tbl-grey .pls-dropTR,.tbl-grey .pls-dropBR,.tbl-grey .pls-dropBL{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleSprite-grey.png) !important}.pls-tailbottom{background-position:-23px 0}.pls-confirm-container .pls-tailbottom{background-position:-23px -10px}.pls-tailtop{background-position:-19px -20px}.pls-tailright{background-position:0 0}.pls-tailleft{background-position:-10px 0}.pls-tailtop{vertical-align:top}.gc-bubbleDefault td{line-height:0;font-size:0}.pls-topLeft img,.pls-topRight img,.pls-tailbottom{vertical-align:bottom}.pls-bottomLeft img,.bubbleDropTR,.pls-dropBottomL img,.pls-dropBottom img,.pls-dropBottomR img,.pls-bottomLeft{vertical-align:top}.pls-dropTR{background-position:0 -22px}.pls-dropBR{background-position:0 -27px}.pls-dropBL{background-position:0 -16px}.pls-spacertop,.pls-spacerright,.pls-spacerbottom,.pls-spacerleft{position:static !important}.pls-spinner{bottom:0;position:absolute;left:0;margin:auto;right:0;top:0} </style><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style></head>
+
+	<body class="ks-active-awards ks-active-challenges ks-active-ads ks-active-ads-mpu ks-active-ads-mpu2 ks-active-ads-leaderboard ks-active-ads-takeover ks-active-ads-skyscraper-left ks-active-ads-skyscraper-right ks-active-ads-video ks-active-dfp ks-active-dfp-mpu ks-active-dfp-mpu2 ks-active-dfp-leaderboard ks-active-dfp-takeover ks-active-dfp-skyscraper-left ks-active-dfp-skyscraper-right ks-active-dfp-video ks-active-friend-invites ks-active-friends ks-active-leaderboards ks-active-login ks-active-notifications ks-active-npapi ks-active-offers ks-active-online-friends-backend ks-active-online-friends-ui ks-active-point_system ks-active-push-ads ks-active-random-game ks-active-search ks-active-sweepstakes ks-active-teams ks-active-tracking-manager ks-active-xplore ks-active-payments ks-disabled-activity-feed ks-disabled-cooladata-tracking ks-disabled-online-users-per-game-backend ks-disabled-online-users-per-game-ui ks-disabled-player-search ks-disabled-one-signal control-search locale-ca lang-en browser-firefox os-windows" data-platform="miniclip" data-platformappid="111411968896241" data-facebook-app-id="111411968896241" data-language-code="en" data-env="production" data-script-version="753"><div class="drawer" id="drawer-login-signup">
+	<div class="container">
+		<form id="login-form" name="login-form" action="#" method="post">
+			<header>
+				<h2>Login to Miniclip.com</h2>
+			</header>
+
+			<label>
+				<span>Email Address				<input id="login-username" class="greedy" name="login-username" type="text">
+			</span></label>
+
+			<label>
+				<span>Password</span>
+				<input id="login-password" class="greedy" name="login-password" type="password">
+			</label>
+
+			<label>
+				<input id="login-form-submit" class="greedy positive action" name="submit" value="Login" type="submit">
+			</label>
+			<label class="col">
+				<span class="inline">Remember Me</span>
+				<input name="login-remember" id="login-remember" class="inline" value="checked" type="checkbox">
+			</label>
+
+			<label class="col">
+				<a href="http://miniclip.com/user/password-reminder/en/">Password Reminder</a>
+			</label>
+			<div id="fb-login-button"></div>
+		</form>
+
+		<div class="signup-form">
+			<header>
+				<h2>Signup <em>Free</em></h2>
+			</header>
+			<div class="flash-login">
+				<div id="flash-login-embed" style="visibility: visible;"></div>
+			</div>
+			<script type="text/javascript">
+				var flashvars = {
+					'sessid': 'a8ng0pli77959ag863t8ito1m0',
+					'loggedin': '0',
+					'cfg': 'stop',
+					'screen': 'signup'
+				};
+
+				var params = {
+					'menu': 'false',
+					'quality': 'best'
+				};
+
+				var attributes = {
+					'id': 'miniclipLoginBox460',
+					'name': 'miniclipLoginBox460'
+				};
+				var playerVersion = swfobject.getFlashPlayerVersion();
+
+				if (playerVersion.major < 0) {
+					$('#no-flash-notification').show();
+				} else {
+					swfobject.embedSWF('/players/swf/components/loginbox.swf', 'flash-login-embed', '324', '200', '9', 'false', flashvars, params, attributes);
+				}
+			</script>
+			<div id="flash-login-embed"></div>
+			<div id="no-flash-notification" class="notification error" style="display: none;">
+				You need to install <strong>Adobe Flash Player</strong> to sign up <strong></strong>. <a href="https://get.adobe.com/flashplayer/" target="_blank">Download the Flash Player now</a>.			</div>
+		</div>
+	</div>
+	<a class="button-close" href="#" rel="nofollow"><span class="screen-reader">close drawer</span></a>
+</div><div id="advert-holder"></div>
+<script type="text/javascript" src="search%20results_files/mc.js"></script>
+<script type="text/javascript" src="search%20results_files/currency.js"></script><script src="search%20results_files/miniclip.js"></script>		<script>
+			if ( 'object' == typeof( MC ) ) {
+				MC.init({
+					modules: ['Currency', 'Leaderboard', 'Challenge'],
+					app_id: 1
+				});
+			}
+		</script><script src="search%20results_files/leaderboard.js"></script><script src="search%20results_files/challenge.js"></script>
+	<header id="site-header">
+		<div class="container">
+			<h1 class="logo item">
+				<a href="http://miniclip.com/games/en/" rel="nofollow">Play Games at Miniclip.com</a>
+			</h1>
+	<form class="search-form item" action="/games/search/en/" target="_top">
+		<label>
+			<span class="screen-reader">Search for...</span>
+			<input class="search-query greedy" name="query" autocomplete="off" placeholder="Search Games" value="adventure" type="text">
+		</label>
+		<button class="search-submit" type="submit" name="submit"><span>Search</span></button>
+	</form>	<div class="login-container item">
+		<nav class="menu login-box logged-out" role="navigation">
+			<ul>
+				<li>
+					<a href="#" class="signup open-drawer" data-drawer="login-signup">Signup / Login</a>
+				</li>
+				<li>
+					<a href="#" id="third-party-fb-login" data-tip="Signup and Login With Facebook" class="tooltip facebook"><span class="screen-reader">Login With Facebook</span></a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+<a href="#" class="item language toolbox-trigger" id="language-selector" rel="nofollow" data-toolbox-type="language">
+	<img src="search%20results_files/US.png" alt="us" class="flag" width="44" height="32">
+</a>
+
+<div class="toolbox language-list toolbox-language">
+	<h2>In Your Language</h2>
+	<nav class="menu stacked">
+		<ul>
+			<li>
+				<a href="http://miniclip.com/games/search/es/?force_language" rel="nofollow">
+					<img data-src="//static.miniclipcdn.com/layout/flags/46x32/ES.png" class="flag"> Español				</a>
+			</li>
+			<li>
+				<a href="http://miniclip.com/games/search/fr/?force_language" rel="nofollow">
+					<img data-src="//static.miniclipcdn.com/layout/flags/46x32/FR.png" class="flag"> Français				</a>
+			</li>
+			<li>
+				<a href="http://miniclip.com/games/search/in/?force_language" rel="nofollow">
+					<img data-src="//static.miniclipcdn.com/layout/flags/46x32/IN.png" class="flag"> हिन्दी				</a>
+			</li>
+			<li>
+				<a href="http://miniclip.com/games/search/de/?force_language" rel="nofollow">
+					<img data-src="//static.miniclipcdn.com/layout/flags/46x32/DE.png" class="flag"> Deutsch				</a>
+			</li>
+			<li>
+				<a href="http://miniclip.com/games/search/ro/?force_language" rel="nofollow">
+					<img data-src="//static.miniclipcdn.com/layout/flags/46x32/RO.png" class="flag"> Română				</a>
+			</li>
+			<li>
+				<a href="http://miniclip.com/games/search/br/?force_language" rel="nofollow">
+					<img data-src="//static.miniclipcdn.com/layout/flags/46x32/BR.png" class="flag"> Brasil				</a>
+			</li>
+			<li>
+				<a href="http://miniclip.com/games/search/tr/?force_language" rel="nofollow">
+					<img data-src="//static.miniclipcdn.com/layout/flags/46x32/TR.png" class="flag"> Türkçe				</a>
+			</li>
+			<li>
+				<a href="http://miniclip.com/games/search/pl/?force_language" rel="nofollow">
+					<img data-src="//static.miniclipcdn.com/layout/flags/46x32/PL.png" class="flag"> Polski				</a>
+			</li>
+			<li>
+				<a href="http://miniclip.com/games/search/pt/?force_language" rel="nofollow">
+					<img data-src="//static.miniclipcdn.com/layout/flags/46x32/PT.png" class="flag"> Português				</a>
+			</li>
+			<li>
+				<a href="http://miniclip.com/games/search/ru/?force_language" rel="nofollow">
+					<img data-src="//static.miniclipcdn.com/layout/flags/46x32/RU.png" class="flag"> Русский				</a>
+			</li>
+			<li>
+				<a href="http://miniclip.com/games/search/jp/?force_language" rel="nofollow">
+					<img data-src="//static.miniclipcdn.com/layout/flags/46x32/JP.png" class="flag"> 日本語				</a>
+			</li>
+			<li>
+				<a href="http://miniclip.com/games/search/it/?force_language" rel="nofollow">
+					<img data-src="//static.miniclipcdn.com/layout/flags/46x32/IT.png" class="flag"> Italiano				</a>
+			</li>
+			<li>
+				<a href="http://miniclip.com/games/search/hu/?force_language" rel="nofollow">
+					<img data-src="//static.miniclipcdn.com/layout/flags/46x32/HU.png" class="flag"> Magyar				</a>
+			</li>
+			<li>
+				<a href="http://miniclip.com/games/search/se/?force_language" rel="nofollow">
+					<img data-src="//static.miniclipcdn.com/layout/flags/46x32/SE.png" class="flag"> Svenska				</a>
+			</li>
+			<li>
+				<a href="http://miniclip.com/games/search/kr/?force_language" rel="nofollow">
+					<img data-src="//static.miniclipcdn.com/layout/flags/46x32/KR.png" class="flag"> 한국어				</a>
+			</li>
+			<li>
+				<a href="http://miniclip.com/games/search/cs/?force_language" rel="nofollow">
+					<img data-src="//static.miniclipcdn.com/layout/flags/46x32/CS.png" class="flag"> 中文				</a>
+			</li>
+		</ul>
+	</nav>
+	<a href="http://miniclip.com/games/choose-your-language/?return_pre=/games/search&amp;return_post=" class="button small greedy">
+		More	</a>
+</div>
+<nav class="menu rich greedy main-menu" role="navigation">
+    <ul>
+		<li>
+			<a href="http://miniclip.com/games/en/#t-n-S" class="button category home" title="Miniclip Homepage">
+				<span>Miniclip Home</span>
+			</a>
+		</li>
+		<li>
+			<a href="http://miniclip.com/games/8-ball-pool-multiplayer/#t-n-S" class="link-104 link-pool catgory button">
+				Pool			</a>
+		</li>
+		<li>
+			<a href="http://miniclip.com/games/agar-io/#t-n-S" class="link-151 link-agar-io catgory button">
+				Agar.io			</a>
+		</li>
+		<li>
+			<a href="http://miniclip.com/games/tanki-online/#t-n-S" class="link-150 link-tanki-online catgory button">
+				Tanki Online			</a>
+		</li>
+		<li>
+			<a href="http://miniclip.com/games/empire/en/#t-n-S" class="game-3276 catgory button">
+				Empire			</a>
+		</li>
+		<li>
+			<a href="http://miniclip.com/games/genre-13/action/en/#t-n-S" class="cat-13 catgory button">
+				Action			</a>
+		</li>
+		<li>
+			<a href="http://miniclip.com/games/genre-3/sports/en/#t-n-S" class="cat-3 catgory button">
+				Sports			</a>
+		</li>
+		<li>
+			<a href="http://miniclip.com/games/genre-2/multiplayer/en/#t-n-S" class="cat-2 catgory button">
+				Multiplayer			</a>
+		</li>
+		<li>
+			<a href="http://miniclip.com/games/genre-1151/stunt/en/#t-n-S" class="cat-1151 catgory button">
+				Stunt			</a>
+		</li>
+		<li>
+			<a href="http://miniclip.com/games/genre-477/racing/en/#t-n-S" class="cat-477 catgory button">
+				Racing			</a>
+		</li>
+		<li>
+			<a href="http://miniclip.com/games/genre-1/puzzle/en/#t-n-S" class="cat-1 catgory button">
+				Puzzle			</a>
+		</li>
+		<li class="expendables">
+			<a href="#" rel="nofollow" class="button category more more-menu" data-target="#more-navigation">
+				<span>More Categories</span>
+			</a>
+		</li>
+	</ul>
+</nav>
+<div id="more-navigation" class="box roomy extras" style="display: none;">
+	<h2>Game Categories</h2>
+	<div class="category-list">
+		<a href="http://miniclip.com/games/genre-1301/2-player/en/#t-m-c-S" class="cat-1301" title="Play 2 Player Games">2 Player</a>
+		<a href="http://miniclip.com/games/genre-35/3d/en/#t-m-c-S" class="cat-35" title="Play 3D Games">3D</a>
+		<a href="http://miniclip.com/games/genre-1318/8-ball-pool-millionaire-marathon/en/#t-m-c-S" class="cat-1318" title="Play 8 Ball Pool Millionaire Marathon Games">8 Ball Pool Millionaire Marathon</a>
+		<a href="http://miniclip.com/games/genre-13/action/en/#t-m-c-S" class="cat-13" title="Play Action Games">Action</a>
+		<a href="http://miniclip.com/games/genre-515/adventure/en/#t-m-c-S" class="cat-515" title="Play Adventure Games">Adventure</a>
+		<a href="http://miniclip.com/games/genre-1278/alien/en/#t-m-c-S" class="cat-1278" title="Play Alien Games">Alien</a>
+		<a href="http://miniclip.com/games/genre-1001/american-football/en/#t-m-c-S" class="cat-1001" title="Play American Football Games">American Football</a>
+		<a href="http://miniclip.com/games/genre-503/android/en/#t-m-c-S" class="cat-503" title="Play Android Games">Android</a>
+		<a href="http://miniclip.com/games/genre-517/arcade/en/#t-m-c-S" class="cat-517" title="Play Arcade Games">Arcade</a>
+		<a href="http://miniclip.com/games/genre-525/award/en/#t-m-c-S" class="cat-525" title="Play Award Games">Award</a>
+		<a href="http://miniclip.com/games/genre-1305/award-series/en/#t-m-c-S" class="cat-1305" title="Play Award Series Games">Award Series</a>
+		<a href="http://miniclip.com/games/genre-1262/awesome/en/#t-m-c-S" class="cat-1262" title="Play Awesome Games">Awesome</a>
+		<a href="http://miniclip.com/games/genre-1293/basketball/en/#t-m-c-S" class="cat-1293" title="Play Basketball Games">Basketball</a>
+		<a href="http://miniclip.com/games/genre-497/buzz/en/#t-m-c-S" class="cat-497" title="Play Buzz Games">Buzz</a>
+		<a href="http://miniclip.com/games/genre-1133/card/en/#t-m-c-S" class="cat-1133" title="Play Card Games">Card</a>
+		<a href="http://miniclip.com/games/genre-1003/christmas/en/#t-m-c-S" class="cat-1003" title="Play Christmas Games">Christmas</a>
+		<a href="http://miniclip.com/games/genre-1185/credits/en/#t-m-c-S" class="cat-1185" title="Play Credits Games">Credits</a>
+		<a href="http://miniclip.com/games/genre-1268/cricket/en/#t-m-c-S" class="cat-1268" title="Play Cricket Games">Cricket</a>
+		<a href="http://miniclip.com/games/genre-1143/destruction/en/#t-m-c-S" class="cat-1143" title="Play Destruction Games">Destruction</a>
+		<a href="http://miniclip.com/games/genre-1315/dress-up/en/#t-m-c-S" class="cat-1315" title="Play Dress Up Games">Dress Up</a>
+		<a href="http://miniclip.com/games/genre-1155/extreme-sports/en/#t-m-c-S" class="cat-1155" title="Play Extreme Sports Games">Extreme Sports</a>
+		<a href="http://miniclip.com/games/genre-1309/fantasy/en/#t-m-c-S" class="cat-1309" title="Play Fantasy Games">Fantasy</a>
+		<a href="http://miniclip.com/games/genre-519/fighting/en/#t-m-c-S" class="cat-519" title="Play Fighting Games">Fighting</a>
+		<a href="http://miniclip.com/games/genre-1280/fireboy-and-watergirl/en/#t-m-c-S" class="cat-1280" title="Play Fireboy and Watergirl Games">Fireboy and Watergirl</a>
+		<a href="http://miniclip.com/games/genre-521/flying/en/#t-m-c-S" class="cat-521" title="Play Flying Games">Flying</a>
+		<a href="http://miniclip.com/games/genre-1296/football/en/#t-m-c-S" class="cat-1296" title="Play Football Games">Football</a>
+		<a href="http://miniclip.com/games/genre-488/golf/en/#t-m-c-S" class="cat-488" title="Play Golf Games">Golf</a>
+		<a href="http://miniclip.com/games/genre-490/halloween/en/#t-m-c-S" class="cat-490" title="Play Halloween Games">Halloween</a>
+		<a href="http://miniclip.com/games/genre-1238/holidays/en/#t-m-c-S" class="cat-1238" title="Play Holidays Games">Holidays</a>
+		<a href="http://miniclip.com/games/genre-1201/hot-games/en/#t-m-c-S" class="cat-1201" title="Play Hot Games Games">Hot Games</a>
+		<a href="http://miniclip.com/games/genre-1320/io-games/en/#t-m-c-S" class="cat-1320" title="Play IO Games Games">IO Games</a>
+		<a href="http://miniclip.com/games/genre-1194/iphone/en/#t-m-c-S" class="cat-1194" title="Play iPhone Games">iPhone</a>
+		<a href="http://miniclip.com/games/genre-482/kids/en/#t-m-c-S" class="cat-482" title="Play Kids Games">Kids</a>
+		<a href="http://miniclip.com/games/genre-7/latest/en/#t-m-c-S" class="cat-7" title="Play Latest Games">Latest</a>
+		<a href="http://miniclip.com/games/genre-1304/made-in-the-usa/en/#t-m-c-S" class="cat-1304" title="Play Made in the USA Games">Made in the USA</a>
+		<a href="http://miniclip.com/games/genre-1210//en/#t-m-c-S" class="cat-1210" title="Play Monster Games">Monster</a>
+		<a href="http://miniclip.com/games/genre-1157/motocross/en/#t-m-c-S" class="cat-1157" title="Play Motocross Games">Motocross</a>
+		<a href="http://miniclip.com/games/genre-26/motorsports/en/#t-m-c-S" class="cat-26" title="Play Motorsports Games">Motorsports</a>
+		<a href="http://miniclip.com/games/genre-2/multiplayer/en/#t-m-c-S" class="cat-2" title="Play Multiplayer Games">Multiplayer</a>
+		<a href="http://miniclip.com/games/genre-511/my-friends-league/en/#t-m-c-S" class="cat-511" title="Play My Friends League Games">My Friends League</a>
+		<a href="http://miniclip.com/games/genre-40/platform/en/#t-m-c-S" class="cat-40" title="Play Platform Games">Platform</a>
+		<a href="http://miniclip.com/games/genre-1299/platinum/en/#t-m-c-S" class="cat-1299" title="Play Platinum Games">Platinum</a>
+		<a href="http://miniclip.com/games/genre-14/political/en/#t-m-c-S" class="cat-14" title="Play Political Games">Political</a>
+		<a href="http://miniclip.com/games/genre-513/pool/en/#t-m-c-S" class="cat-513" title="Play Pool Games">Pool</a>
+		<a href="http://miniclip.com/games/genre-1/puzzle/en/#t-m-c-S" class="cat-1" title="Play Puzzle Games">Puzzle</a>
+		<a href="http://miniclip.com/games/genre-477/racing/en/#t-m-c-S" class="cat-477" title="Play Racing Games">Racing</a>
+		<a href="http://miniclip.com/games/genre-1209//en/#t-m-c-S" class="cat-1209" title="Play Rio 2016 Olympic Games Games">Rio 2016 Olympic Games</a>
+		<a href="http://miniclip.com/games/genre-1272/robot/en/#t-m-c-S" class="cat-1272" title="Play Robot Games">Robot</a>
+		<a href="http://miniclip.com/games/genre-5/shoot-em-up/en/#t-m-c-S" class="cat-5" title="Play Shoot 'Em Up Games">Shoot 'Em Up</a>
+		<a href="http://miniclip.com/games/genre-1307/simulation/en/#t-m-c-S" class="cat-1307" title="Play Simulation Games">Simulation</a>
+		<a href="http://miniclip.com/games/genre-18/soccer/en/#t-m-c-S" class="cat-18" title="Play Soccer Games">Soccer</a>
+		<a href="http://miniclip.com/games/genre-3/sports/en/#t-m-c-S" class="cat-3" title="Play Sports Games">Sports</a>
+		<a href="http://miniclip.com/games/genre-1244/staff-picks/en/#t-m-c-S" class="cat-1244" title="Play Staff Picks Games">Staff Picks</a>
+		<a href="http://miniclip.com/games/genre-523/strategy/en/#t-m-c-S" class="cat-523" title="Play Strategy Games">Strategy</a>
+		<a href="http://miniclip.com/games/genre-1151/stunt/en/#t-m-c-S" class="cat-1151" title="Play Stunt Games">Stunt</a>
+		<a href="http://miniclip.com/games/genre-1316/super-worlds/en/#t-m-c-S" class="cat-1316" title="Play Super Worlds Games">Super Worlds</a>
+		<a href="http://miniclip.com/games/genre-484/tennis/en/#t-m-c-S" class="cat-484" title="Play Tennis Games">Tennis</a>
+		<a href="http://miniclip.com/games/genre-1256/tips--tricks/en/#t-m-c-S" class="cat-1256" title="Play Tips &amp; Tricks Games">Tips &amp; Tricks</a>
+		<a href="http://miniclip.com/games/genre-6/top-10/en/#t-m-c-S" class="cat-6" title="Play Top 10 Games">Top 10</a>
+		<a href="http://miniclip.com/games/genre-23/top-100/en/#t-m-c-S" class="cat-23" title="Play Top 100 Games">Top 100</a>
+		<a href="http://miniclip.com/games/genre-1270/top-rated/en/#t-m-c-S" class="cat-1270" title="Play Top Rated Games">Top Rated</a>
+		<a href="http://miniclip.com/games/genre-1145/tower-defense/en/#t-m-c-S" class="cat-1145" title="Play Tower Defense Games">Tower Defense</a>
+		<a href="http://miniclip.com/games/genre-1290/videos/en/#t-m-c-S" class="cat-1290" title="Play Videos Games">Videos</a>
+		<a href="http://miniclip.com/games/genre-1317/webgl/en/#t-m-c-S" class="cat-1317" title="Play WebGL Games">WebGL</a>
+		<a href="http://miniclip.com/games/genre-432/webmaster-games/en/#t-m-c-S" class="cat-432" title="Play Webmaster Games Games">Webmaster Games</a>
+		<a href="http://miniclip.com/games/genre-1207/windows-phone/en/#t-m-c-S" class="cat-1207" title="Play Windows Phone Games">Windows Phone</a>
+		<a href="http://miniclip.com/games/genre-4/winter/en/#t-m-c-S" class="cat-4" title="Play Winter Games">Winter</a>
+		<a href="http://miniclip.com/games/genre-1292/winter-sports/en/#t-m-c-S" class="cat-1292" title="Play Winter Sports Games">Winter Sports</a>
+		<a href="http://miniclip.com/games/genre-1109/word/en/#t-m-c-S" class="cat-1109" title="Play Word Games">Word</a>
+		<a href="http://miniclip.com/games/genre-1311/xplore/en/#t-m-c-S" class="cat-1311" title="Play Xplore Games">Xplore</a>
+		<a href="http://miniclip.com/games/genre-1149/zombie/en/#t-m-c-S" class="cat-1149" title="Play Zombie Games">Zombie</a>
+	</div>
+	<nav class="menu" role="navigation">
+		<ul>
+			<li>
+				<h2>More Cool Stuff</h2>
+			</li>
+			<li>
+				<a href="http://blog.miniclip.com/" title="Miniclip Blog" class="feed">
+					Miniclip Blog				</a>
+			</li>
+			<li>
+				<a href="http://miniclip.com/games/page/en/downloadable-games/#t-m-s-S" title="Download games to play on your desktop" class="download">
+					Download Games				</a>
+			</li>
+			<li>
+				<a href="http://miniclip.com/webmasters/" title="Get Free Miniclip Games for YOUR website!" class="webmasters">
+					Free Website Games				</a>
+			</li>
+			<li>
+				<a href="http://miniclip.com/videos/en/#t-m-s-S" class="videos">
+					Video Tips and Tricks				</a>
+			</li>
+			<li>
+				<a href="https://support.miniclip.com/" class="help" rel="nofollow">
+					Help				</a>
+			</li>
+			<li>
+				<a href="http://miniclip.com/games/page/en/internet-safety/" rel="nofollow">
+					Internet Safety				</a>
+			</li>
+			<li>
+				<a href="http://miniclip.com/privacy/" rel="nofollow">
+					Privacy Policy				</a>
+			</li>
+		</ul>
+	</nav>
+	<nav class="menu" role="navigation">
+		<ul>
+			<li>
+				<h2>Connect With Miniclip</h2>
+			</li>
+			<li id="social-facebook">
+				<a href="https://www.facebook.com/miniclip" class="facebook" title="Like Miniclip on Facebook" rel="nofollow">
+					Facebook
+				</a>
+			</li>
+			<li id="social-twitter">
+				<a href="https://twitter.com/miniclip" class="twitter" title="Follow Miniclip on Twitter" rel="nofollow">
+					Twitter
+				</a>
+			</li>
+			<li id="social-google-plus">
+				<a href="https://plus.google.com/118375337016817078846/?prsrc=3" class="google" title="Miniclip on Google+" rel="nofollow">
+					Google+
+				</a>
+			</li>
+			<li id="social-youtube">
+				<a href="https://www.youtube.com/Miniclip" class="youtube" title="Watch Miniclip Videos on YouTube" rel="nofollow">
+					YouTube
+				</a>
+			</li>
+		</ul>
+	</nav>
+</div>		</div>
+	</header>
+
+	<div id="site-container">
+		<div class="container">
+<section class="primary">
+	<div class="box greedy">
+		<header class="pretty juicy">
+			<h1>Search Results</h1>
+		</header>
+	</div>
+
+	<div class="box greedy roomy">
+		<form method="GET" action="/games/search/en/" id="search-page-form">
+			<input value="adventure" name="query" id="search-query" type="text">
+			<input value="Search" class="neutral search" type="submit">
+		</form>
+	</div>
+
+	<div class="box greedy">
+		<header class="pretty">
+			<h2>Games</h2>
+		</header>
+
+		<ul class="games-list inner">
+			<li>
+				<a class="game-icon game-id-3868" href="http://miniclip.com/games/crystal-temple/en/#t-ss-S" title=""><img src="search%20results_files/FBWG4.jpg" alt="Play Crystal Temple" title="Play Crystal Temple" width="84" height="63"><span class="meta">Crystal Temple</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-2141" href="http://miniclip.com/games/adventures-of-bloo/en/#t-ss-S" title=""><img src="search%20results_files/theadventuresofbloo.jpg" alt="Play Adventures" title="Play Adventures of Bloo" width="84" height="63"><span class="meta">Adventures</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-4205" href="http://miniclip.com/games/adventure-capitalist/en/#t-ss-S" title=""><img src="search%20results_files/adventurecapitalistmoon_150x110.jpg" alt="Play Ad Capitalist" title="Play AdVenture Capitalist" width="84" height="63"><span class="meta">Ad Capitalist</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-3507" href="http://miniclip.com/games/rail-rush/en/#t-ss-S" title=""><img src="search%20results_files/railrushold.jpg" alt="Play Rail Rush" title="Play Rail Rush" width="84" height="63"><span class="meta">Rail Rush</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-2597" href="http://miniclip.com/games/commando-3/en/#t-ss-S" title=""><img src="search%20results_files/commando3v3.jpg" alt="Play Commando 3" title="Play Commando 3" width="84" height="63"><span class="meta">Commando 3</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-2048" href="http://miniclip.com/games/fancy-pants-adventure-2/en/#t-ss-S" title=""><img src="search%20results_files/FancyPantsAdventure2new.jpg" alt="Play FancyPants2" title="Play Fancy Pants 2" width="84" height="63"><span class="meta">FancyPants2</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-4394" href="http://miniclip.com/games/bear-in-super-action-adventure/en/#t-ss-S" title=""><img src="search%20results_files/Bear-in-Super_150x110.jpg" alt="Play Bear Adventure" title="Play Bear Adventure" width="84" height="63"><span class="meta">Bear Adventure</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-2165" href="http://miniclip.com/games/fancy-pants-adventure-1/en/#t-ss-S" title=""><img src="search%20results_files/FancyPantsAdventure1new.jpg" alt="Play Fancy P1" title="Play Fancy Pants 1" width="84" height="63"><span class="meta">Fancy P1</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-3672" href="http://miniclip.com/games/drakensang/en/#t-ss-S" title=""><img src="search%20results_files/drakensang_150x110_20150417.jpg" alt="Play Drakensang" title="Play Drakensang" width="84" height="63"><span class="meta">Drakensang</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-1902" href="http://miniclip.com/games/commando-2/en/#t-ss-S" title=""><img src="search%20results_files/Commando2new.jpg" alt="Play Commando2" title="Play Commando 2" width="84" height="63"><span class="meta">Commando2</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-3187" href="http://miniclip.com/games/cactus-mccoy-2/en/#t-ss-S" title=""><img src="search%20results_files/cactusmccoy2.jpg" alt="Play Cactus McC2" title="Play Cactus McCoy 2" width="84" height="63"><span class="meta">Cactus McC2</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-2585" href="http://miniclip.com/games/light-temple/en/#t-ss-S" title=""><img src="search%20results_files/lighttemple.jpg" alt="Play Light Temple" title="Play Light Temple" width="84" height="63"><span class="meta">Light Temple</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-1452" href="http://miniclip.com/games/bush-shoot-out/en/#t-ss-S" title=""><img src="search%20results_files/bushshootoutgame.jpg" alt="Play Bush Shoot" title="Play Bush Shoot-Out" width="84" height="63"><span class="meta">Bush Shoot</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-3636" href="http://miniclip.com/games/jacksmith/en/#t-ss-S" title=""><img src="search%20results_files/jacksmithv2.jpg" alt="Play Jacksmith" title="Play Jacksmith" width="84" height="63"><span class="meta">Jacksmith</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-1959" href="http://miniclip.com/games/final-ninja/en/#t-ss-S" title=""><img src="search%20results_files/FinalNinjanew.jpg" alt="Play Final Ninja" title="Play Final Ninja" width="84" height="63"><span class="meta">Final Ninja</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-3503" href="http://miniclip.com/games/minecart-madness/en/#t-ss-S" title=""><img src="search%20results_files/minecartmadnessv2.jpg" alt="Play Cart Madness" title="Play Minecart Madness" width="84" height="63"><span class="meta">Cart Madness</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-4153" href="http://miniclip.com/games/amazing-world/en/#t-ss-S" title=""><img src="search%20results_files/amazingworldhalloween.jpg" alt="Play AmazingWorld" title="Play Amazing World" width="84" height="63"><span class="meta">AmazingWorld</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-2457" href="http://miniclip.com/games/egyptian-tale/en/#t-ss-S" title=""><img src="search%20results_files/EgyptianTalenew.jpg" alt="Play Egyptian Tale" title="Play Egyptian Tale" width="84" height="63"><span class="meta">Egyptian Tale</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-4010" href="http://miniclip.com/games/lego-chima-online/en/#t-ss-S" title=""><img src="search%20results_files/WB_Chima_Outpost_150x110_30K.jpg" alt="Play LEGO Chima" title="Play LEGO Chima" width="84" height="63"><span class="meta">LEGO Chima</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-2661" href="http://miniclip.com/games/rhino-rush/en/#t-ss-S" title=""><img src="search%20results_files/RhinoRushnew.jpg" alt="Play Rhino Rush" title="Play Rhino Rush" width="84" height="63"><span class="meta">Rhino Rush</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-1812" href="http://miniclip.com/games/candy-and-clyde/en/#t-ss-S" title=""><img src="search%20results_files/candyandclyde.jpg" alt="Play Candy n Clyde" title="Play Candy and Clyde" width="84" height="63"><span class="meta">Candy n Clyde</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-3912" href="http://miniclip.com/games/lego-chima/en/#t-ss-S" title=""><img src="search%20results_files/WB_Chima_Outpost_150x110_30K.jpg" alt="Play CHIMA Online" title="Play LEGO® CHIMA™ Online" width="84" height="63"><span class="meta">CHIMA Online</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-2451" href="http://miniclip.com/games/super-robot-war/en/#t-ss-S" title=""><img src="search%20results_files/superrobotwar.jpg" alt="Play Robot War" title="Play Super Robot War" width="84" height="63"><span class="meta">Robot War</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-1411" href="http://miniclip.com/games/3-foot-ninja-ii/en/#t-ss-S" title=""><img src="search%20results_files/3footninja2.jpg" alt="Play 3FootNinja 2" title="Play 3 Foot Ninja II" width="84" height="63"><span class="meta">3FootNinja 2</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-3243" href="http://miniclip.com/games/verge/en/#t-ss-S" title=""><img src="search%20results_files/verge.jpg" alt="Play Verge" title="Play Verge" width="84" height="63"><span class="meta">Verge</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-2205" href="http://miniclip.com/games/pirate-golf/en/#t-ss-S" title=""><img src="search%20results_files/pirategolf.jpg" alt="Play Pirate Golf" title="Play Pirate Golf" width="84" height="63"><span class="meta">Pirate Golf</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-2985" href="http://miniclip.com/games/little-fins/en/#t-ss-S" title=""><img src="search%20results_files/littlefins.jpg" alt="Play Little Fins" title="Play Little Fins" width="84" height="63"><span class="meta">Little Fins</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-2727" href="http://miniclip.com/games/cactus-mccoy/en/#t-ss-S" title=""><img src="search%20results_files/cactusmccoy.jpg" alt="Play Cactus McCoy" title="Play Cactus McCoy" width="84" height="63"><span class="meta">Cactus McCoy</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-4237" href="http://miniclip.com/games/fancy-snowboarding/en/#t-ss-S" title=""><img src="search%20results_files/fancysnowboarding_150x110.jpg" alt="Play Snowboard" title="Play Fancy Snowboarding" width="84" height="63"><span class="meta">Snowboard</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-2667" href="http://miniclip.com/games/tumblestump-2/en/#t-ss-S" title=""><img src="search%20results_files/Tumblestump2new.jpg" alt="Play Tumblestump 2" title="Play Tumblestump 2" width="84" height="63"><span class="meta">Tumblestump 2</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-2697" href="http://miniclip.com/games/wizard-hult/en/#t-ss-S" title=""><img src="search%20results_files/wizardhult.jpg" alt="Play Wizard Hult" title="Play Wizard Hult" width="84" height="63"><span class="meta">Wizard Hult</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-2051" href="http://miniclip.com/games/chronotron/en/#t-ss-S" title=""><img src="search%20results_files/chronotron.jpg" alt="Play Chronotron" title="Play Chronotron" width="84" height="63"><span class="meta">Chronotron</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-2485" href="http://miniclip.com/games/canary/en/#t-ss-S" title=""><img src="search%20results_files/Canary.jpg" alt="Play Canary" title="Play Canary" width="84" height="63"><span class="meta">Canary</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-3396" href="http://miniclip.com/games/owl-spin/en/#t-ss-S" title=""><img src="search%20results_files/owlspin.jpg" alt="Play Owl Spin" title="Play Owl Spin" width="84" height="63"><span class="meta">Owl Spin</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-3786" href="http://miniclip.com/games/zombality/en/#t-ss-S" title=""><img src="search%20results_files/zombality.jpg" alt="Play Zombality" title="Play Zombality" width="84" height="63"><span class="meta">Zombality</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-3792" href="http://miniclip.com/games/barons-gate/en/#t-ss-S" title=""><img src="search%20results_files/baronsgate.jpg" alt="Play Barons Gate" title="Play Barons Gate" width="84" height="63"><span class="meta">Barons Gate</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-3818" href="http://miniclip.com/games/doctor-acorn/en/#t-ss-S" title=""><img src="search%20results_files/doctoracorn.jpg" alt="Play Dr Acorn" title="Play Doctor Acorn" width="84" height="63"><span class="meta">Dr Acorn</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-3662" href="http://miniclip.com/games/transmorpher/en/#t-ss-S" title=""><img src="search%20results_files/transmorphermedicon.jpg" alt="Play Transmorpher" title="Play Transmorpher" width="84" height="63"><span class="meta">Transmorpher</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-3640" href="http://miniclip.com/games/call-of-gods/en/#t-ss-S" title=""><img src="search%20results_files/callofgods.jpg" alt="Play Call of Gods" title="Play Call of Gods" width="84" height="63"><span class="meta">Call of Gods</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-4419" href="http://miniclip.com/games/zoo-pop/en/#t-ss-S" title=""><img src="search%20results_files/-zoopop_150x110.jpg" alt="Play Zoo Pop" title="Play Zoo Pop" width="84" height="63"><span class="meta">Zoo Pop</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-3612" href="http://miniclip.com/games/spellstorm/en/#t-ss-S" title=""><img src="search%20results_files/spellstorm.jpg" alt="Play Spellstorm" title="Play Spellstorm" width="84" height="63"><span class="meta">Spellstorm</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-4451" href="http://miniclip.com/games/tap-the-frog-doodle/en/#t-ss-S" title=""><img src="search%20results_files/TTFD_150x110.jpg" alt="Play Tap Frog Doodl" title="Play Tap the Frog Doodle" width="84" height="63"><span class="meta">Tap Frog Doodl</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-4152" href="http://miniclip.com/games/bazooki-pocalypse/en/#t-ss-S" title=""><img src="search%20results_files/Bazookipocalypse.jpg" alt="Play Bazooki-P" title="Play Bazooki-Pocalypse" width="84" height="63"><span class="meta">Bazooki-P</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-4413" href="http://miniclip.com/games/tap-the-frog/en/#t-ss-S" title=""><img src="search%20results_files/Tap-the-Frog_150x110.jpg" alt="Play Tap the Frog" title="Play Tap the Frog" width="84" height="63"><span class="meta">Tap the Frog</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-4076" href="http://miniclip.com/games/blym/en/#t-ss-S" title=""><img src="search%20results_files/BLYM.jpg" alt="Play Blym" title="Play Blym" width="84" height="63"><span class="meta">Blym</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-4130" href="http://miniclip.com/games/pyro-jump/en/#t-ss-S" title=""><img src="search%20results_files/pyro_mock2.jpg" alt="Play Pyro Jump" title="Play Pyro Jump" width="84" height="63"><span class="meta">Pyro Jump</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-4147" href="http://miniclip.com/games/vvvvvv/en/#t-ss-S" title=""><img src="search%20results_files/vvvvvv.jpg" alt="Play Vvvvvv" title="Play Vvvvvv" width="84" height="63"><span class="meta">Vvvvvv</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-3836" href="http://miniclip.com/games/once-upon-a-life/en/#t-ss-S" title=""><img src="search%20results_files/once_upon_a_life.jpg" alt="Play Once Upon" title="Play Once Upon A Life" width="84" height="63"><span class="meta">Once Upon</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-3866" href="http://miniclip.com/games/dynaboy/en/#t-ss-S" title=""><img src="search%20results_files/dyna-boy_150x110.jpg" alt="Play DynaBoy" title="Play DynaBoy" width="84" height="63"><span class="meta">DynaBoy</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-4514" href="http://miniclip.com/games/thunderbirds/en/#t-ss-S" title=""><img src="search%20results_files/Thunderbirds_150x110_20160606.jpg" alt="Play Thunderbirds" title="Play Thunderbirds Are Go: Team Rush" width="84" height="63"><span class="meta">Thunderbirds</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-3070" href="http://miniclip.com/games/shadows-of-mummies/en/#t-ss-S" title=""><img src="search%20results_files/shadowsofmummies.jpg" alt="Play Mummies" title="Play Shadows of Mummies" width="84" height="63"><span class="meta">Mummies</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-1911" href="http://miniclip.com/games/dirk-valentine/en/#t-ss-S" title=""><img src="search%20results_files/dirkvalentine.jpg" alt="Play Dirk Valen" title="Play Dirk Valentine" width="84" height="63"><span class="meta">Dirk Valen</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-1935" href="http://miniclip.com/games/deep-sea-patrol/en/#t-ss-S" title=""><img src="search%20results_files/deepseapatrol.jpg" alt="Play DeepseaPatrol" title="Play Deep Sea Patrol" width="84" height="63"><span class="meta">DeepseaPatrol</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-2231" href="http://miniclip.com/games/asgard/en/#t-ss-S" title=""><img src="search%20results_files/asgard.jpg" alt="Play Asgard" title="Play Asgard" width="84" height="63"><span class="meta">Asgard</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-2453" href="http://miniclip.com/games/lego-you-make-the-game/en/#t-ss-S" title=""><img src="search%20results_files/youmakethegame.jpg" alt="Play LEGO...Game " title="Play LEGO: Make the Game" width="84" height="63"><span class="meta">LEGO...Game </span></a>			</li>
+			<li>
+				<a class="game-icon game-id-1821" href="http://miniclip.com/games/flingo/en/#t-ss-S" title=""><img src="search%20results_files/flingo.jpg" alt="Play Flingo" title="Play Flingo" width="84" height="63"><span class="meta">Flingo</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-1760" href="http://miniclip.com/games/commando/en/#t-ss-S" title=""><img src="search%20results_files/Commandonew.jpg" alt="Play Commando" title="Play Commando" width="84" height="63"><span class="meta">Commando</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-1410" href="http://miniclip.com/games/3-foot-ninja/en/#t-ss-S" title=""><img src="search%20results_files/3footninja.jpg" alt="Play 3 Foot Ninja" title="Play 3 Foot Ninja" width="84" height="63"><span class="meta">3 Foot Ninja</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-1749" href="http://miniclip.com/games/spectral-wizard/en/#t-ss-S" title=""><img src="search%20results_files/spectralwizard.jpg" alt="Play Spectral Wizar" title="Play Spectral Wizard" width="84" height="63"><span class="meta">Spectral Wizar</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-1752" href="http://miniclip.com/games/acid-factory/en/#t-ss-S" title=""><img src="search%20results_files/AcidFactorynew.jpg" alt="Play Acid Factory" title="Play Acid Factory" width="84" height="63"><span class="meta">Acid Factory</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-2567" href="http://miniclip.com/games/turkey-run/en/#t-ss-S" title=""><img src="search%20results_files/turkeyrun.jpg" alt="Play Turkey Run" title="Play Turkey Run" width="84" height="63"><span class="meta">Turkey Run</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-2682" href="http://miniclip.com/games/slime-laboratory/en/#t-ss-S" title=""><img src="search%20results_files/slimelaboratory.jpg" alt="Play Slime Lab" title="Play Slime Laboratory" width="84" height="63"><span class="meta">Slime Lab</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-3294" href="http://miniclip.com/games/gemaica/en/#t-ss-S" title=""><img src="search%20results_files/gemaicav2.jpg" alt="Play Gemaica" title="Play Gemaica" width="84" height="63"><span class="meta">Gemaica</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-3320" href="http://miniclip.com/games/skyward-ninja/en/#t-ss-S" title=""><img src="search%20results_files/skywardninja.jpg" alt="Play Skyward N" title="Play Skyward Ninja" width="84" height="63"><span class="meta">Skyward N</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-3418" href="http://miniclip.com/games/300-miles-to-pigsland/en/#t-ss-S" title=""><img src="search%20results_files/300milestopigsland.jpg" alt="Play 300 Miles" title="Play 300 Miles to Pigsland" width="84" height="63"><span class="meta">300 Miles</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-3268" href="http://miniclip.com/games/snow-tale/en/#t-ss-S" title=""><img src="search%20results_files/snowtale.jpg" alt="Play Snow Tale" title="Play Snow Tale" width="84" height="63"><span class="meta">Snow Tale</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-3203" href="http://miniclip.com/games/nom-nation/en/#t-ss-S" title=""><img src="search%20results_files/nomnation.jpg" alt="Play Nom Nation" title="Play Nom Nation" width="84" height="63"><span class="meta">Nom Nation</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-2777" href="http://miniclip.com/games/jump-start/en/#t-ss-S" title=""><img src="search%20results_files/jumpstartv2.jpg" alt="Play Jump Start" title="Play Jump Start" width="84" height="63"><span class="meta">Jump Start</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-2889" href="http://miniclip.com/games/arcuz/en/#t-ss-S" title=""><img src="search%20results_files/arcuz.jpg" alt="Play Arcuz" title="Play Arcuz" width="84" height="63"><span class="meta">Arcuz</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-2959" href="http://miniclip.com/games/zombotron/en/#t-ss-S" title=""><img src="search%20results_files/zombotron.jpg" alt="Play Zombotron" title="Play Zombotron" width="84" height="63"><span class="meta">Zombotron</span></a>			</li>
+			<li>
+				<a class="game-icon game-id-3479" href="http://miniclip.com/games/hot-air-jr/en/#t-ss-S" title=""><img src="search%20results_files/hotairjr.jpg" alt="Play Hot Air Jr" title="Play Hot Air Jr" width="84" height="63"><span class="meta">Hot Air Jr</span></a>			</li>
+		</ul>
+	</div>
+	<div class="box greedy">
+		<header class="pretty">
+			<h2>Game Categories</h2>
+		</header>
+		<div class="inner">
+			<a href="http://miniclip.com/games/genre-515/adventure/en/" class="button cool cat-515">
+				Adventure			</a>
+		</div>
+	</div>
+</section>
+
+<section class="secondary">
+	    <section id="mpu-unit-1" class="widget box widget-mpu">
+        <div class="miniclip-internal"><div id="miniclipInternal-0" class="mc-push count-1" data-refresh="600000" data-type="filler-300x250"></div></div><div data-pw-desk="med_rect_atf" id="dfp-mpu" class="container-300x250"></div>
+        <p>
+            Advertisement            <a href="#" rel="nofollow" class="feedback">Feedback</a>
+        </p>
+    </section>
+<section class="widget box widget-category widget-category-2 widget-883">
+	<header>
+		<a class="button category greedy cat-2" href="http://miniclip.com/games/genre-2/multiplayer/en/#t-w-c-S" title="More Multiplayer Games">
+			Multiplayer		</a>
+	</header>
+
+	<ul class="games-list inner">
+		<li>
+			<a class="game-icon game-id-3227" href="http://miniclip.com/games/snowfight-io/en/#t-w-c-S" title=""><img data-src="//static3.miniclipcdn.com/content/game-icons/medium/snowfight_150x110.png" class="lazyload" src="search%20results_files/snowfight_150x110.png" alt="Play Snowfight.io" title="Play Snowfight.io" width="84" height="63"><span class="meta">Snowfight.io</span></a>		</li>
+		<li>
+			<a class="game-icon game-id-2471" href="http://miniclip.com/games/8-ball-pool-multiplayer/en/#t-w-c-S" title=""><img data-src="//static.miniclipcdn.com/content/game-icons/medium/8-Ball-Pool_26-02-2015.jpg" class="lazyload" src="search%20results_files/8-Ball-Pool_26-02-2015.jpg" alt="Play 8 Ball Pool" title="Play 8 Ball Pool" width="84" height="63"><span class="meta">8 Ball Pool</span></a>		</li>
+		<li>
+			<a class="game-icon game-id-4349" href="http://miniclip.com/games/agar-io/en/#t-w-c-S" title=""><img data-src="//static3.miniclipcdn.com/content/game-icons/medium/Agar.io_150x110_20150709.jpg" class="lazyload" src="search%20results_files/Agar.jpg" alt="Play Agar.io" title="Play Agar.io" width="84" height="63"><span class="meta">Agar.io</span></a>		</li>
+		<li>
+			<a class="game-icon game-id-3169" href="http://miniclip.com/games/tanki-online/en/#t-w-c-S" title=""><img data-src="//static3.miniclipcdn.com/content/game-icons/medium/tankionlinev3.jpg" class="lazyload" src="search%20results_files/tankionlinev3.jpg" alt="Play Tanki Online" title="Play Tanki Online" width="84" height="63"><span class="meta">Tanki Online</span></a>		</li>
+		<li>
+			<a class="game-icon game-id-3276" href="http://miniclip.com/games/empire/en/#t-w-c-S" title=""><img data-src="//static2.miniclipcdn.com/content/game-icons/medium/Empire_King_20150602_150x110.jpg" class="lazyload" src="search%20results_files/Empire_King_20150602_150x110.jpg" alt="Play Empire" title="Play Empire" width="84" height="63"><span class="meta">Empire</span></a>		</li>
+		<li>
+			<a class="game-icon game-id-2067" href="http://miniclip.com/games/ourworld/en/#t-w-c-S" title=""><img data-src="//static3.miniclipcdn.com/content/game-icons/medium/OW_Winter_2016_150X110.jpg" class="lazyload" src="search%20results_files/OW_Winter_2016_150X110.jpg" alt="Play OurWorld" title="Play OurWorld" width="84" height="63"><span class="meta">OurWorld</span></a>		</li>
+	</ul>
+
+	<footer class="overhang">
+		<a class="button fun greedy action" href="http://miniclip.com/games/genre-2/multiplayer/en/#t-w-c-S">
+			More Multiplayer		</a>
+	</footer>
+</section>
+<div class="widget box no-chrome widget-top-smartphone-games tab-wrapper widget-885" data-current-tab="appleiphone" data-cookie="top-smartphone">
+	<nav class="tab-bar greedy">
+		<ul>
+			<li><a class="button cool appleiphone selected" href="#" data-panel="appleiphone" rel="nofollow">iPhone</a></li>
+			<li><a class="button cool android" href="#" data-panel="android" rel="nofollow">Android</a></li>
+		</ul>
+	</nav>
+	<div class="inner panel panel-appleiphone" style="display: block;">
+		<ol class="games-list">
+			<li>
+				<a href="http://miniclip.com/games/archery-king" class="game-icon game-smartphone" target="_blank" title="Archery King">
+					<span class="notification blip offset hot">Hot!</span>					<img src="search%20results_files/archery_icon.png">
+					<span class="meta">Archery King</span>
+				</a>
+			</li>
+			<li>
+				<a href="http://miniclip.com/games/8-ball-pool-multiplayer" class="game-icon game-smartphone" target="_blank" title="8 Ball Pool">
+										<img src="search%20results_files/8BallPool_Icon_512x512.png">
+					<span class="meta">8 Ball Pool</span>
+				</a>
+			</li>
+			<li>
+				<a href="http://miniclip.com/games/flip-diving" class="game-icon game-smartphone" target="_blank" title="Flip Diving">
+										<img src="search%20results_files/flipdiving_512x512.png">
+					<span class="meta">Flip Diving</span>
+				</a>
+			</li>
+			<li>
+				<a href="http://miniclip.com/games/agar-io" class="game-icon game-smartphone" target="_blank" title="Agar.io">
+										<img src="search%20results_files/Agar.png">
+					<span class="meta">Agar.io</span>
+				</a>
+			</li>
+			<li>
+				<a href="http://miniclip.com/games/soccer-stars-mobile" class="game-icon game-smartphone" target="_blank" title="Soccer Stars">
+										<img src="search%20results_files/SoccerStars_Icon_512x512.png">
+					<span class="meta">Soccer Stars</span>
+				</a>
+			</li>
+			<li>
+				<a href="http://miniclip.com/games/basketball-stars" class="game-icon game-smartphone" target="_blank" title="Basketball Stars">
+										<img src="search%20results_files/BasketballStars512.png">
+					<span class="meta">Basketball Stars</span>
+				</a>
+			</li>
+		</ol>
+
+		<footer class="overhang">
+			<a class="button fun greedy action" href="http://miniclip.com/games/genre-1194/iphone/en/#t-w-c-S">
+				More iOS Games			</a>
+		</footer>
+	</div>
+	<div class="inner panel panel-android" style="display: none;">
+		<ol class="games-list">
+			<li>
+				<a href="http://miniclip.com/games/archery-king" class="game-icon game-smartphone" target="_blank" title="Archery King">
+					<span class="notification blip offset hot">Hot!</span>					<img src="search%20results_files/archery_icon.png">
+					<span class="meta">Archery King</span>
+				</a>
+			</li>
+			<li>
+				<a href="http://miniclip.com/games/8-ball-pool-multiplayer" class="game-icon game-smartphone" target="_blank" title="8 Ball Pool">
+										<img src="search%20results_files/8BallPool_Icon_512x512.png">
+					<span class="meta">8 Ball Pool</span>
+				</a>
+			</li>
+			<li>
+				<a href="http://miniclip.com/games/bowmasters" class="game-icon game-smartphone" target="_blank" title="Bowmasters">
+										<img src="search%20results_files/artwork.png">
+					<span class="meta">Bowmasters</span>
+				</a>
+			</li>
+			<li>
+				<a href="http://miniclip.com/games/flip-diving" class="game-icon game-smartphone" target="_blank" title="Flip Diving">
+										<img src="search%20results_files/flipdiving_512x512.png">
+					<span class="meta">Flip Diving</span>
+				</a>
+			</li>
+			<li>
+				<a href="http://miniclip.com/games/agar-io" class="game-icon game-smartphone" target="_blank" title="Agar.io">
+										<img src="search%20results_files/Agar.png">
+					<span class="meta">Agar.io</span>
+				</a>
+			</li>
+			<li>
+				<a href="http://miniclip.com/games/soccer-stars-mobile" class="game-icon game-smartphone" target="_blank" title="Soccer Stars">
+										<img src="search%20results_files/SoccerStars_Icon_512x512.png">
+					<span class="meta">Soccer Stars</span>
+				</a>
+			</li>
+		</ol>
+
+		<footer class="overhang">
+			<a class="button fun greedy action" href="http://miniclip.com/games/genre-503/android/en/#t-w-c-S">
+				More Android Games			</a>
+		</footer>
+	</div>
+</div>	<div class="widget box widget-push-ads hp-sidebar widget-885" data-type="hp-sidebar" data-refresh="10000">
+		<a href="http://miniclip.com/games/on-the-run/#t-p-184-4183-S" target="_self">
+			<img src="search%20results_files/OnTheRun_321x287.jpg">
+		</a>
+		<footer class="overhang">
+			<a href="http://miniclip.com/games/on-the-run/#t-p-184-4183-S" class="button hot action" target="_self">Play</a>
+		</footer>
+
+
+	</div></section>
+<!-- footer -->
+	<footer class="container box" id="site-footer">
+		<nav class="menu box alt clean">
+			<h2 class="logo">
+				<a href="http://miniclip.com/games/en/" rel="nofollow">Play Games at Miniclip.com</a>
+			</h2>
+			<ul>
+				<li><a href="http://miniclip.com/" class="home">Home</a></li>
+				<li><a href="http://miniclip.com/games/genre-1194/" class="ios">iPhone Games</a></li>
+				<li><a href="http://miniclip.com/games/genre-503/" class="android">Android Games</a></li>
+				<li><a href="http://blog.miniclip.com/" class="feed">Blog</a></li>
+				<li><a href="http://miniclip.com/webmasters/" class="webmasters">Games for Your Website</a></li>
+			</ul>
+		</nav>
+		<section>
+			<nav class="menu" role="navigation">
+				<ul>
+					<li><a href="http://corporate.miniclip.com/developers/">Submit a Game</a></li>
+					<li><a href="http://corporate.miniclip.com/advertising/" title="Want to advertise on Miniclip?">Advertisers</a></li>
+					<li><a href="http://corporate.miniclip.com/contact/" rel="nofollow" title="Get in touch with the Miniclip Team">Contact Us</a></li>
+					<li><a href="http://corporate.miniclip.com/" title="All About Miniclip.com">Corporate</a></li>
+					<li><a href="http://corporate.miniclip.com/careers/" title="Current Vacancies at Miniclip.com">Careers</a></li>
+					<li><a href="http://miniclip.com/games/page/en/internet-safety/" title="Internet Safety">Internet Safety</a></li>
+					<li><a href="http://miniclip.com/videos/">Video Tips and Tricks</a></li>
+					<li><a href="http://miniclip.com/games/en/feed.xml" rel="nofollow">RSS Game Feed</a></li>
+					<li><a href="http://miniclip.com/games/page/en/sitemap/">Sitemap</a></li>
+				</ul>
+			</nav>
+		</section>
+	<section>
+		<nav class="menu legal">
+			<ul>
+				<li>© 2001 - 2017 Miniclip SA</li>
+				<li><a href="http://miniclip.com/games/page/en/terms-and-conditions/" rel="nofollow">Terms and Conditions</a></li>
+				<li><a href="http://miniclip.com/privacy/" rel="nofollow">Privacy Policy</a></li>
+				<li><a href="http://miniclip.com/privacy/#cookies" rel="nofollow">Cookies</a></li>
+				<li><a href="https://support.miniclip.com/" rel="nofollow" class="help">Help</a></li>
+			</ul>
+		</nav>
+
+		<nav class="menu social">
+			<ul>
+				<li class="facebook-like">
+					<div class="fb-like fb_iframe_widget" data-href="https://www.facebook.com/miniclip" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=111411968896241&amp;container_width=0&amp;href=https%3A%2F%2Fwww.facebook.com%2Fminiclip&amp;layout=button_count&amp;locale=en_GB&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=100"><span style="vertical-align: bottom; width: 80px; height: 20px;"><iframe name="f80bf407941c82" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" style="border: medium none; visibility: visible; width: 80px; height: 20px;" src="search%20results_files/like.htm" class="" width="100px" height="1000px" frameborder="0"></iframe></span></div>
+				</li>
+				<li class="google-plusone">
+					<div style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent none repeat scroll 0% 0%; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 90px; height: 20px;" id="___plusone_0"><iframe ng-non-bindable="" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 90px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" id="I0_1485993880339" name="I0_1485993880339" src="search%20results_files/fastbutton.htm" data-gapiattached="true" title="+1" width="100%" frameborder="0"></iframe></div>
+				</li>
+				<li class="youtube-follow">
+					<div style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent none repeat scroll 0% 0%; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 122px; height: 24px;" id="___ytsubscribe_0"><iframe ng-non-bindable="" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 122px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 24px;" tabindex="0" vspace="0" id="I1_1485993880350" name="I1_1485993880350" src="search%20results_files/subscribe_embed.htm" data-gapiattached="true" width="100%" frameborder="0"></iframe></div>
+				</li>
+			</ul>
+		</nav>
+	</section>
+	</footer>
+</div><!--!/#container -->
+</div>
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" style="border: medium none;" src="http://staticxx.facebook.com/connect/xd_arbiter/r/Sh-3BhStODe.js?version=42#channel=f36463538596292&amp;origin=http%3A%2F%2Fminiclip.com" frameborder="0"></iframe><iframe name="fb_xdm_frame_https" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" style="border: medium none;" src="search%20results_files/Sh-3BhStODe_002.htm" frameborder="0"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+<!-- Login Dropdown -->
+
+		<!-- Push Ads -->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				do_page_tagging();
+			});
+
+							var push_ads = {"hp-single-1":[{"push_ad_id":"4253","url":"\/games\/archery-king\/","image_file":"ARK-pushad-216x287.png","token":"hp-single-1","push_ad_type_id":"181","is_tracked":"0","keep_visible":"0"},{"push_ad_id":"4177","url":"\/games\/basketball-stars\/","image_file":"Push-Ads_216x287.jpg","token":"hp-single-1","push_ad_type_id":"181","is_tracked":"0","keep_visible":"0"},{"push_ad_id":"4258","url":"\/games\/snowfight-io\/","image_file":"snowfight_216x287.jpg","token":"hp-single-1","push_ad_type_id":"181","is_tracked":"0","keep_visible":"0"},{"push_ad_id":"4227","url":"http:\/\/www.miniclip.com\/games\/agar-io\/","image_file":"Agar.io_216-287_20150709.jpg","token":"hp-single-1","push_ad_type_id":"181","is_tracked":"0","keep_visible":"0"}],"fb-banner":[{"push_ad_id":"4165","url":"https:\/\/apps.facebook.com\/agar-io\/","image_file":"Agar.io_FB_pushad_750-90.png","token":"fb-banner","push_ad_type_id":"141","is_tracked":"0","keep_visible":"1"}],"hp-sidebar":[{"push_ad_id":"4183","url":"\/games\/on-the-run\/","image_file":"OnTheRun_321x287.jpg","token":"hp-sidebar","push_ad_type_id":"184","is_tracked":"0","keep_visible":"0"},{"push_ad_id":"4163","url":"\/games\/dude-perfect-2\/","image_file":"DPpushad_321-287.jpg","token":"hp-sidebar","push_ad_type_id":"184","is_tracked":"0","keep_visible":"0"},{"push_ad_id":"4172","url":"\/games\/earn-to-die-2-exodus\/","image_file":"EarnToDie2Exodus_321x287.jpg","token":"hp-sidebar","push_ad_type_id":"184","is_tracked":"0","keep_visible":"0"}],"filler-768x90":[{"push_ad_id":"1932","url":"\/games\/8-ball-pool-multiplayer\/","image_file":"Pool-Promo-Mobile-FREE--766x88-.jpg","token":"filler-768x90","push_ad_type_id":"62","is_tracked":"0","keep_visible":"0"},{"push_ad_id":"1994","url":"\/games\/tanki-online\/","image_file":"766x88_play.jpg","token":"filler-768x90","push_ad_type_id":"62","is_tracked":"0","keep_visible":"0"},{"push_ad_id":"1940","url":"\/games\/motocross-nitro\/","image_file":"Motocross-Nitro-banner-766x88.jpg","token":"filler-768x90","push_ad_type_id":"62","is_tracked":"0","keep_visible":"0"},{"push_ad_id":"1950","url":"\/games\/mini-pets\/","image_file":"766x88.jpg","token":"filler-768x90","push_ad_type_id":"62","is_tracked":"0","keep_visible":"0"}],"homepagelarge2":[{"push_ad_id":"3917","url":"\/games\/clicker-heroes\/","image_file":"clickerheroes_218x262.jpg","token":"homepagelarge2","push_ad_type_id":"90","is_tracked":"0","keep_visible":"0"},{"push_ad_id":"3622","url":"\/games\/genre-1299\/platinum\/","image_file":"Platinum_218x262_2.jpg","token":"homepagelarge2","push_ad_type_id":"90","is_tracked":"0","keep_visible":"0"},{"push_ad_id":"3901","url":"\/games\/spurt\/","image_file":"spurt_218x262_20150223.jpg","token":"homepagelarge2","push_ad_type_id":"90","is_tracked":"0","keep_visible":"0"}],"cat-side-2":[{"push_ad_id":"3775","url":"\/games\/gladiator\/","image_file":"gladiatortruestory_321x287.jpg","token":"cat-side-2","push_ad_type_id":"188","is_tracked":"0","keep_visible":"0"},{"push_ad_id":"3772","url":"\/games\/tanki\/","image_file":"tanki_321x287.jpg","token":"cat-side-2","push_ad_type_id":"188","is_tracked":"0","keep_visible":"0"}],"push-small":[{"push_ad_id":"3911","url":"games\/clicker-heroes\/","image_file":"clickerheroes_218x78.jpg","token":"push-small","push_ad_type_id":"1","is_tracked":"0","keep_visible":"0"},{"push_ad_id":"3941","url":"\/games\/age-of-speed-underworld\/","image_file":"ageofspeed_218x78.jpg","token":"push-small","push_ad_type_id":"1","is_tracked":"0","keep_visible":"0"},{"push_ad_id":"3475","url":"\/games\/genre-1301\/2-player\/","image_file":"2player_218x78_20140908.jpg","token":"push-small","push_ad_type_id":"1","is_tracked":"0","keep_visible":"0"}],"hp-single-2":[{"push_ad_id":"4170","url":"\/games\/earn-to-die-2-exodus\/","image_file":"EarnToDie2Exodus_216x287.jpg","token":"hp-single-2","push_ad_type_id":"182","is_tracked":"0","keep_visible":"0"},{"push_ad_id":"4099","url":"\/games\/forge-of-empires","image_file":"Jan_forgeofempires_216x287.jpg","token":"hp-single-2","push_ad_type_id":"182","is_tracked":"0","keep_visible":"0"},{"push_ad_id":"3907","url":"\/games\/super-soccer-noggins\/","image_file":"SSN_216x287.jpg","token":"hp-single-2","push_ad_type_id":"182","is_tracked":"0","keep_visible":"0"},{"push_ad_id":"4051","url":"\/games\/color-switch\/","image_file":"colorswitch_216x287.jpg","token":"hp-single-2","push_ad_type_id":"182","is_tracked":"0","keep_visible":"0"},{"push_ad_id":"4095","url":"\/games\/soccer-physics\/","image_file":"soccer_physics_216x287.jpg","token":"hp-single-2","push_ad_type_id":"182","is_tracked":"0","keep_visible":"0"}],"hp-double":[{"push_ad_id":"4113","url":"\/games\/basketball-stars\/","image_file":"Push-Ads_444x287.jpg","token":"hp-double","push_ad_type_id":"183","is_tracked":"0","keep_visible":"0"},{"push_ad_id":"3765","url":"\/games\/forge-of-empires\/","image_file":"jan_forgeofempires_444x287.jpg","token":"hp-double","push_ad_type_id":"183","is_tracked":"0","keep_visible":"0"},{"push_ad_id":"4201","url":"\/games\/snowfight-io\/","image_file":"snowfight_444x287.jpg","token":"hp-double","push_ad_type_id":"183","is_tracked":"0","keep_visible":"0"},{"push_ad_id":"4276","url":"http:\/\/mxnitro.game","image_file":"mxnitro_pushad_444.jpg","token":"hp-double","push_ad_type_id":"183","is_tracked":"0","keep_visible":"0"},{"push_ad_id":"4229","url":"http:\/\/www.miniclip.com\/games\/agar-io\/","image_file":"Agar.io_MC_444x287.png","token":"hp-double","push_ad_type_id":"183","is_tracked":"0","keep_visible":"0"}],"cat-side-1":[{"push_ad_id":"3770","url":"\/games\/world-soccer-forever\/","image_file":"WorldSoccerForever_321x287.jpg","token":"cat-side-1","push_ad_type_id":"187","is_tracked":"0","keep_visible":"0"},{"push_ad_id":"4180","url":"\/games\/game-of-thrones-ascent\/","image_file":"game-of-thones-ascent_321x287.jpg","token":"cat-side-1","push_ad_type_id":"187","is_tracked":"0","keep_visible":"0"},{"push_ad_id":"4175","url":"\/games\/agar-io","image_file":"Agar.io_pushad_321-287.jpg","token":"cat-side-1","push_ad_type_id":"187","is_tracked":"0","keep_visible":"0"}],"HPLarge":[{"push_ad_id":"3634","url":"\/games\/tanki-online\/","image_file":"tanki_218x262_20140516.jpg","token":"HPLarge","push_ad_type_id":"36","is_tracked":"0","keep_visible":"0"}],"filler-300x250":[{"push_ad_id":"3692","url":"\/games\/supercar-showdown\/","image_file":"supercar_298x248_20141204.jpg","token":"filler-300x250","push_ad_type_id":"64","is_tracked":"0","keep_visible":"0"}]};
+			
+			//show signup form
+					</script>
+<script type="text/javascript" src="search%20results_files/core.js" async="true" defer="true"></script>
+<script type="text/javascript" src="search%20results_files/modal.js" async="true" defer="true"></script>
+<script type="text/javascript" src="search%20results_files/gamesearch.js" async="true" defer="true"></script>
+<script type="text/javascript" src="search%20results_files/browser-features.js"></script>    <div id="dfp-takeover" style="display: none;">
+        <script language="javascript1.1" src="search%20results_files/ADTECH.js"></script>
+    </div>
+
+<script>
+	$(function(){
+		$('.ab-test').on('click', function (){
+			var test_id = $(this).data('test');
+			var icon = $(this).data('icon');
+			statTrackerUA(test_id,'AB','Click','/binary/ab/icons/game_icons/' + test_id + '/' + icon);
+		});
+	});
+</script><script type="text/javascript">
+// called on page footer to cache estimated ads for page
+jQuery(function(){
+	
+	var data = {
+		ads : {
+			ad_728x90 : $('.container-728x90').length,
+			ad_300x250 : $('.container-300x250').length,
+			takeover : $('.takeover').length,
+			showcase : $('#showcase').length,
+		},
+		page : 'miniclip.com/games/search/en/?query=adventure'
+	}
+	
+	// post data to server to calc estimation and cache
+	// DISABLED AD TRACKER
+	// $.ajax({
+	// 	type: 'POST',
+	// 	async: true,
+	// 	dataType: 'json',
+	// 	url: '/games/ajax/adTrackingPageSet',
+	// 	data: data
+	// });
+});
+</script>
+<!-- 
+	ab = 1
+	h = prod-web-site-i-08e1b34cfe12813c5
+	q's = 1
+	c's = 2
+	w = 05
+	c = CA
+ -->
+		<div id="adsense"></div>
+		<div id="screen-overlay"></div>
+
+				
+			<div id="adsense" style="visibility: hidden;"></div>
+
+					<script type="text/javascript">
+				//adblock tracker
+				$(function(){
+					setTimeout(function() {
+						var adBlockEnabled = $('#adsense').width()==0?true:false;
+						stats_manager.trackerAdblockUser(adBlockEnabled);
+
+					}, 1000);
+				});
+
+				$(document).ready(function() {
+										if((typeof takeover !== 'undefined') && takeover != {}) {
+						do_takeover(takeover);
+					}
+										setTimeout(function() {
+						var result = BrowserFeatures.collect();
+
+						stats_manager.trackerBrowserFeatures({
+							"WebGL": (result.webgl.supported ? "Yes" : "No"),
+							"WebGL2": (result.webgl2.supported ? "Yes" : "No"),
+							"HardwareConcurrency": result.page.navigator.hardwareConcurrency,
+							"WebWorkers": (result.webworker ? "Yes" : "No"),
+							"WebSockets": (result.websocket ? "Yes" : "No"),
+							"WebAudio": (result.webAudioData ? "Yes" : "No"),
+							"RequestAnimationFrame": (result.requestAnimationFrame ? "Yes" : "No")
+						});
+					}, 1000);
+
+				});
+
+			</script>
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"f246896502","applicationID":"8036964","transactionName":"MVFRZktRWhJVAkVYVwgbcEdKRFsMGxJUUEoFXBxbV1RRGQ==","queueTime":0,"applicationTime":55,"atts":"HRZSEANLSRw=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+<iframe name="oauth2relay500622276" id="oauth2relay500622276" src="search%20results_files/postmessageRelay.htm" style="width: 1px; height: 1px; position: absolute; top: -100px;" tabindex="-1" aria-hidden="true"></iframe><div style="display: block; visibility: hidden; position: absolute; width: 106px; left: -10000px; top: -10000px;"><table dir="ltr" style="width:106px;" frame="void" rules="none" class=" gc-bubbleDefault pls-container" cellspacing="0" cellpadding="0"><tbody><tr class="gc-reset"><td class="pls-topLeft gc-reset"><img class="gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="search%20results_files/border_3.gif"></td><td class="pls-topTail gc-reset"><img class="pls-tailbottom gc-reset" style="width:15px !important; height:9px !important; max-width: 15px !important; max-height: 9px !important;" src="search%20results_files/spacer.gif"><img class="pls-spacerbottom gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="search%20results_files/spacer.gif"></td><td class="pls-topRight gc-reset"><img class="gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="search%20results_files/border_3.gif"></td></tr><tr class="gc-reset"><td class="pls-vertShimLeft gc-reset"><img class="gc-reset" style="width:1px !important; height:4px !important; max-width: 1px !important; max-height: 4px !important;" src="search%20results_files/spacer.gif"></td><td class="pls-vertShim gc-reset"><img class="gc-reset" style="width:1px !important; height:4px !important; max-width: 1px !important; max-height: 4px !important;" src="search%20results_files/spacer.gif"></td><td class="pls-vertShimRight gc-reset"><img class="pls-dropTR gc-reset" style="width:5px !important; height:4px !important; max-width: 5px !important; max-height: 4px !important;" src="search%20results_files/spacer.gif"></td></tr><tr class="gc-reset"><td class="pls-contentLeft gc-reset"><img class="pls-tailright gc-reset" style="width:9px !important; height:15px !important; max-width: 9px !important; max-height: 15px !important;" src="search%20results_files/spacer.gif"><img class="pls-spacerright gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="search%20results_files/spacer.gif"></td><td class="pls-contentWrap gc-reset"><div class="goog-bubble-content gc-reset"><iframe ng-non-bindable="" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="margin:0px;position:absolute;z-index:1;border-style:none;outline:none;width:100px;" tabindex="0" vspace="0" id="I0_1485993881133" name="I0_1485993881133" src="search%20results_files/subscribe_embed_002.htm" width="100%" frameborder="0"></iframe></div></td><td class="pls-dropRight gc-reset"><img class="pls-tailleft gc-reset" style="width:12px !important; height:19px !important; max-width: 12px !important; max-height: 19px !important;" src="search%20results_files/spacer.gif"><img class="pls-spacerleft gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="search%20results_files/spacer.gif"></td></tr><tr class="gc-reset"><td class="pls-bottomLeft gc-reset"><img class="gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="search%20results_files/border_3.gif"></td><td class="gc-reset"><table style="width:100%" class="gc-reset" cellspacing="0" cellpadding="0"><tbody><tr class="gc-reset"><td class="pls-vert gc-reset"><img class="pls-dropBL gc-reset" style="width:4px !important; height:5px !important; max-width: 4px !important; max-height: 5px !important;" src="search%20results_files/spacer.gif"></td><td class="pls-dropBottom gc-reset"><img class="pls-tailtop gc-reset" style="width:19px !important; height:13px !important; max-width: 19px !important; max-height: 13px !important;" src="search%20results_files/spacer.gif"><img class="pls-spacertop gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="search%20results_files/spacer.gif"></td></tr></tbody></table></td><td class="pls-vert gc-reset"><img class="pls-dropBR gc-reset" style="width:5px !important; height:5px !important; max-width: 5px !important; max-height: 5px !important;" src="search%20results_files/spacer.gif"></td></tr></tbody></table></div></body></html>
