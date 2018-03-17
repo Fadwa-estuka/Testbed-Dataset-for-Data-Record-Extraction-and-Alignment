@@ -1,0 +1,1773 @@
+﻿/*  Color scheme
+    #dae23f - Energy green
+    #107c10 - Primary green
+    #2b9646 - Deep green
+    #00723b - Dark green 1
+    #094b25 - Dark green 2
+    #e2e3e2 - Chill gray
+    #bdbec1 - Alloy gray
+    #636468; - Carbon gray
+    #f17922 - Live orange
+    #532e8e - Kinect purple
+    #333132 - Slate gray
+    #e7f2de - Mint green
+    #fbb040 - LIVE gold
+*/
+
+/* General browsing */
+.HeaderSummary {
+    border-bottom: solid 1px #bdbec1;
+    color: #636468;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+    .HeaderSummary p {
+        font-size: 14px;
+        margin: 0;
+        text-align: justify;
+    }
+
+    .HeaderSummary h1 {
+        margin-top: -5px;
+    }
+
+    .HeaderSummary .CallToAction {
+        margin-top: 20px;
+    }
+
+/* Product filters */
+.ProductFilters h4 {
+    margin-left: 20px;
+}
+
+.ProductFilters ol {
+    margin-left: 20px;
+}
+
+.ProductFilters .SmallDownloadType {
+    line-height: 1.4em;
+    margin-left: 0;
+}
+
+    .ProductFilters .SmallDownloadType li, .GamesLanding .SmallDownloadType li {
+        padding-left: 20px;
+    }
+
+/* Product results */
+.ProductResults {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+    .ProductResults li {
+        margin-bottom: 1em;
+        list-style-type: none;
+    }
+
+    .ProductResults h2 {
+        font-weight: bold;
+        margin-top: 0;
+        overflow: hidden;
+    }
+
+    .ProductResults h3 {
+        margin: 0;
+    }
+
+    .ProductResults .ProductPrice, .AvatarDetail .ProductPrice, #AvatarViewer .ProductPrice {
+        font-size: 30px;
+        margin: 0;
+    }
+
+#ProductTitleZone .RetailPrice {
+    margin: 20px 0 0 10px;
+}
+
+    #ProductTitleZone .RetailPrice .ProductPrice {
+        font-size: 20px;
+    }
+
+#ProductTitleZone .RetailPriceDisclaimer {
+    clear: both;
+}
+
+#LiveZone .DeliveryPriceDisclaimer {
+    clear: right;
+    float: right;
+    margin-top: -10px;
+    margin-bottom: 0;
+}
+
+ul.ProductMeta {
+    padding: 0;
+    margin: 0;
+}
+
+    ul.ProductMeta li {
+        list-style: none;
+        margin: 5px 0 0 0;
+        padding: 0;
+    }
+
+    ul.ProductMeta label {
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+
+.ProductResults .ProductMeta {
+    color: #636468;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.ProductResults .CallToAction, .AvatarDetail .CallToAction, .ProductFilters .CallToAction {
+    clear: right;
+    float: right;
+}
+
+.ProductResults .ProductBox {
+    display: inline;
+    float: left;
+    position: relative;
+}
+
+img.ProductBox {
+    border: solid 1px #E2E3E2;
+}
+
+.ProductBox img {
+    border: solid 1px #E2E3E2;
+    height: 120px;
+    width: 85px;
+    display: block;
+}
+
+.ProductActionBar {
+    color: #bdbec1;
+    clear: both;
+    float: left;
+    white-space: nowrap;
+}
+
+#GameWarning {
+    clear: both;
+    color: #FF7200;
+    display: block;
+    font-weight: bold;
+}
+
+.WorksWith {
+    clear: both;
+}
+
+.NoGamesFound {
+    clear: both;
+}
+
+/* Tiles */
+.PhoneGameTiles li {
+    position: relative;
+    border: none;
+}
+
+.PhoneGameTiles h2 {
+    clear: both;
+    height: auto;
+    margin: 0;
+    font-size: inherit;
+    padding: 0;
+    line-height: normal;
+}
+
+.GameTiles li, .ChartTiles li {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.PhoneGameTiles > p, .GameTiles > p, .ChartTiles > p {
+    margin-top: 0;
+}
+
+.ProductResults .firstgridchild {
+    clear: both;
+}
+
+.GameTiles h2, .GameAvatarTiles h2, .ChartTiles h2 {
+    line-height: 1.2em;
+    height: 3.5em;
+}
+
+.PhoneGameTiles .ProductMeta, .GameTiles .ProductMeta, .ChartTiles .ProductMeta {
+    margin: 10px 0 0 0;
+}
+
+    .PhoneGameTiles .ProductMeta label, .GameTiles .ProductMeta label, .ChartTiles label {
+        display: none;
+    }
+
+.PhoneGameTiles .ProductBox, .GameTiles .ProductBox, .ChartTiles .ProductBox {
+    margin: 0 8px 0 0;
+}
+
+.GameTiles .ChildDownloadTypeIndicators {
+    bottom: 10px;
+    left: 95px;
+    position: absolute;
+}
+
+.PhoneGameTiles .ProductBox img {
+    height: 150px;
+    width: 150px;
+    display: block;
+}
+
+.PhoneGameTiles .gamePrice {
+    margin-top: 4px;
+}
+
+.GameTiles .ProductPrices {
+    float: left;
+    margin-top: 10px;
+    width: auto;
+}
+
+.GameTiles .ProductPrice {
+    font-size: 1em;
+}
+
+.SearchTiles li, .RelatedTiles li {
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.SearchTiles .ProductBox {
+    padding-left: 10px;
+}
+
+.SearchTiles h2, .GameTiles h2, .GameAvatarTiles h2, .RelatedTiles h2, .PhoneGameTiles h2, .ChartTiles h2 {
+    font-size: 14px;
+    margin-right: 1em;
+    overflow: hidden;
+}
+
+.SearchTiles h2, .RelatedTiles h2 {
+    font-size: 15px;
+}
+
+.Rate {
+    display: block;
+    font-weight: normal;
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.SearchTiles h3 {
+    font-size: 13px;
+}
+
+.ChartTiles h3 {
+    font-size: 12px;
+}
+
+.SearchTiles .PriceArea, .RelatedTiles .PriceArea {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+}
+
+.GoldExclusive {
+    float: right;
+}
+
+.RelatedTiles .ProductDetails {
+    clear: both;
+}
+
+.RelatedTiles .ProductDescription {
+    padding-top: 20px;
+    display: none;
+}
+
+.RelatedTiles .ProductType {
+    float: left;
+}
+
+.RelatedTiles .CallToAction {
+    float: right;
+}
+
+.SearchTiles .ProductBox {
+    min-width: 120px;
+}
+
+.SearchTiles .ProductMeta, .RelatedTiles .ProductMeta {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.AvatarItemTiles li {
+    border-bottom: 1px solid #bdbec1;
+    font-size: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+}
+
+.AvatarItemTiles .AvatarProductBox img {
+    margin: 0 10px;
+    width: 128px;
+    height: 128px;
+}
+
+.AvatarItemTiles .AvatarProductBox img, .AvatarArt {
+    background-color: #e2e3e2;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e2e3e2');
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e2e3e2));
+    background: -moz-linear-gradient(top, #fff, #e2e3e2);
+}
+
+.AvatarItemTiles h2 {
+    font-size: 14px;
+    margin: 10px;
+    height: 2.8em;
+}
+
+.AvatarItemTiles p.Brand {
+    height: 2.8em;
+    overflow: hidden;
+}
+
+.AvatarItemTiles p {
+    margin: 0 10px 10px 10px;
+}
+
+.AvatarItemTiles .ProductPrice {
+    margin: 10px 10px 0 10px;
+}
+
+.AvatarItemTiles .ProductPrices .GoldPrice {
+    display: none;
+}
+
+.AvatarItemTiles .LearnMore {
+    line-height: 31px;
+    margin-bottom: 4px;
+}
+
+.AvatarItemTiles .Men, .AvatarItemTiles .Women {
+    background-image: url(images/XboxComMP_Icons_info.png);
+    background-repeat: no-repeat;
+    float: right;
+    width: 15px;
+    height: 20px;
+}
+
+.AvatarItemTiles .Men {
+    background-position: -10px -1385px;
+}
+
+.AvatarItemTiles .Women {
+    background-position: -10px -1435px;
+}
+
+.GameAvatarTiles .ProductBox {
+    display: block;
+    float: none;
+}
+
+.GameAvatarTiles .ProductBox img {
+    margin-left: 10px;
+}
+
+.GameAvatarTiles li {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.GameAvatarTiles li h2 {
+    font-size: 15px;
+    margin: 10px;
+}
+
+/* Generic domain elements */
+.FileSize {
+    text-transform: uppercase;
+    margin: 1em;
+}
+
+.AvatarArt {
+    height: 300px;
+    width: 300px;
+}
+
+.ProductActionBar a {
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+    .ProductActionBar a:first-child {
+        padding-left: 0;
+    }
+
+.ProductSharing {
+    padding-top: 20px;
+    display: none;
+}
+
+.AvatarDetail .ProductSharing {
+    padding: 0 0 20px 0;
+    display: block;
+}
+
+.ProductSharing p {
+    margin-bottom: 0;
+}
+
+/* Search/browse results */
+.SearchGrid {
+    margin-bottom: 10px;
+}
+
+    .SearchGrid > h1, .SearchGrid > h2 {
+        float: left;
+        margin: 0px;
+    }
+
+    .SearchGrid > h2 {
+        margin: 20px 0;
+    }
+
+    /* Sorting control */
+    .SearchGrid .Sort {
+        font-size: 14px;
+        float: right;
+        margin: 17px 0;
+    }
+
+div.publisherLabel + div.Sort {
+    margin: 7px 0 0 0;
+}
+
+.publisherLabel {
+    margin: 7px 0 0 0;
+    font-size: 12px;
+    float: left;
+}
+
+.SearchGrid .Sort label {
+    text-transform: uppercase;
+}
+
+.SearchGrid .Sort select {
+    color: #636468;
+}
+
+/* Results paging */
+.Paging {
+    background-color: #E2E4E5;
+    clear: both;
+    color: #636468;
+    font-size: 13px;
+    line-height: 25px;
+    margin: 0 0 20px 0;
+    overflow: hidden;
+    padding: 0 1em;
+    position: relative;
+}
+
+    .Paging .Coverage {
+        float: left;
+    }
+
+    .Paging .PageChange {
+        float: right;
+        font-weight: bold;
+        text-align: right;
+    }
+
+        .Paging .PageChange a {
+            font-weight: normal;
+        }
+
+        .Paging .PageChange .Next, .Paging .PageChange .Prev,
+        .Paging .PageChange .Next_Disabled, .Paging .PageChange .Prev_Disabled {
+            background-image: url(images/XboxComMP_PagingIcons.png);
+            background-repeat: no-repeat;
+            display: inline-block;
+            min-height: 1em;
+        }
+
+        .Paging .PageChange a.Next {
+            background-position: -7px -119px;
+            width: 6px;
+        }
+
+            .Paging .PageChange a.Next:hover, .Paging .PageChange a.Next:focus {
+                background-position: -7px -139px;
+            }
+
+        .Paging .PageChange .Next_Disabled {
+            background-position: -7px -179px;
+            width: 6px;
+        }
+
+        .Paging .PageChange a.Prev {
+            background-position: -6px -39px;
+            width: 6px;
+            padding-right: 2px;
+        }
+
+            .Paging .PageChange a.Prev:hover, .Paging .PageChange a.Prev:focus {
+                background-position: -6px -59px;
+            }
+
+        .Paging .PageChange .Prev_Disabled {
+            background-position: -6px -99px;
+            width: 6px;
+            padding-right: 2px;
+        }
+
+    .Paging .PageSize {
+        background-image: url(images/XboxComMP_PagingIcons.png);
+        background-repeat: no-repeat;
+        background-position: 5px -195px;
+        right: 50%;
+        margin: 0 -25px 0 0;
+        padding: 0 0 0 25px;
+        position: absolute;
+        top: 0;
+    }
+
+/* Icon overlays */
+.MediumDownloadType .GamerPic, .MediumDownloadType .Game, .MediumDownloadType .GameDemo, .MediumDownloadType .GameVideo,
+.MediumDownloadType .WebGame,
+.MediumDownloadType .Theme, .MediumDownloadType .GameAddon, .MediumDownloadType .AvatarItem, .MediumDownloadType .All {
+    background-image: url(images/XboxComMP_Icons_info.png);
+    background-repeat: no-repeat;
+}
+
+#LiveZone .MediumDownloadType > h2 {
+    padding-left: 30px;
+}
+
+.MediumDownloadType .All {
+    background-position: -10px -1280px;
+}
+
+.MediumDownloadType .AvatarItem {
+    background-position: -10px -1230px;
+}
+
+.MediumDownloadType .Game {
+    background-position: -10px -928px;
+}
+
+/* $TEMPORARY: web game image planned to be at: -10px -1780px*/
+.MediumDownloadType .WebGame {
+    background-position: -10px -980px; /* TEMPORARY:reusing GameDemo image */
+}
+
+.MediumDownloadType .GameDemo {
+    background-position: -10px -980px;
+}
+
+.MediumDownloadType .GameAddon {
+    background-position: -10px -1030px;
+}
+
+.MediumDownloadType .GameVideo {
+    background-position: -10px -1080px;
+}
+
+.MediumDownloadType .GamerPic {
+    background-position: -10px -1130px;
+}
+
+.MediumDownloadType .Theme {
+    background-position: -10px -1180px;
+}
+
+.SearchTiles .MediumDownloadType > h2 {
+    margin-left: -30px;
+    padding: 3px 0 3px 30px;
+}
+
+.SearchTiles .MediumDownloadType .AvatarItem {
+    background: none;
+}
+
+/* Small icon overlays */
+.SmallDownloadType .GamerPic, .SmallDownloadType .Game, .SmallDownloadType .GameDemo, .SmallDownloadType .GameAddon, .SmallDownloadType .GameVideo, .SmallDownloadType .AvatarItem, .SmallDownloadType .Theme, .SmallDownloadType .SmartGlass {
+    background-image: url(images/XboxComMP_Icons_info.png);
+    background-repeat: no-repeat;
+}
+
+.SmallDownloadType .Game {
+    background-position: -10px -80px;
+}
+
+.SmallDownloadType .GameDemo {
+    background-position: -10px -180px;
+}
+
+.SmallDownloadType .GameAddon {
+    background-position: -10px -280px;
+}
+
+.SmallDownloadType .GameVideo {
+    background-position: -10px -380px;
+}
+
+.SmallDownloadType .GamerPic {
+    background-position: -10px -480px;
+}
+
+.SmallDownloadType .Theme {
+    background-position: -10px -580px;
+}
+
+.SmallDownloadType .AvatarItem {
+    background-position: -10px -680px;
+}
+
+.SmallDownloadType .SmartGlass {
+    background-position: -10px -2777px;
+}
+
+.GameTiles .SmallDownloadType a {
+    display: block;
+    float: left;
+    height: 15px;
+    margin-right: 2px;
+    width: 15px;
+}
+
+/* Small icon disabled overlays */
+.GamerPicIconSmallDisabled, .GameIconSmallDisabled, .DemoIconSmallDisabled, .AddonIconSmallDisabled, .VideoIconSmallDisabled, .AvatarIconSmallDisabled, .AvatarIconSmallDisabled, .ThemeIconSmallDisabled, .SmartGlassIconSmallDisabled {
+    width: 15px;
+    height: 15px;
+    display: block;
+    background-image: url(Images/XboxComMP_Icons_info.png);
+    background-repeat: no-repeat;
+}
+
+.GameIconSmallDisabled {
+    background-position: -10px -30px;
+}
+
+.DemoIconSmallDisabled {
+    background-position: -10px -130px;
+}
+
+.AddonIconSmallDisabled {
+    background-position: -10px -230px;
+}
+
+.VideoIconSmallDisabled {
+    background-position: -10px -330px;
+}
+
+.GamerPicIconSmallDisabled {
+    background-position: -10px -430px;
+}
+
+.ThemeIconSmallDisabled {
+    background-position: -10px -530px;
+}
+
+.AvatarIconSmallDisabled {
+    background-position: -10px -630px;
+}
+
+.SmartGlassIconSmallDisabled {
+    background-position: -10px -2727px;
+}
+
+/* Game detail page */
+ul.ProductMetadata {
+    margin: 0;
+    padding: 0;
+}
+
+    ul.ProductMetadata li {
+        list-style: none;
+    }
+
+    ul.ProductMetadata label {
+        color: #555;
+        font-weight: normal;
+    }
+
+#ProductTitleZone {
+    font-size: 12px;
+    position: relative;
+}
+
+    #ProductTitleZone.game {
+        height: 402px;
+    }
+
+    #ProductTitleZone .ProductBox {
+        float: left;
+        margin: 0 1em 1em 0;
+        position: relative;
+    }
+
+    #ProductTitleZone .AvatarProductBox {
+        float: left;
+        margin: 0 1em .5em 0;
+    }
+
+    #ProductTitleZone #GetProduct {
+        bottom: 0;
+        left: 0;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+    }
+
+        #ProductTitleZone #GetProduct a {
+            background-image: url(Images/XboxComMP_Icons_info.png);
+            background-repeat: no-repeat;
+            padding-left: 35px;
+            padding-right: 0;
+            margin-top: 5px;
+            width: 200px;
+            white-space: normal;
+        }
+
+            #ProductTitleZone #GetProduct a .ProductPrices {
+                float: none;
+            }
+
+                #ProductTitleZone #GetProduct a .ProductPrices .GoldPrice {
+                    display: none;
+                }
+
+            #ProductTitleZone #GetProduct a.Game {
+                background-position: 0 -825px;
+            }
+
+            #ProductTitleZone #GetProduct a.GameDemo {
+                background-position: 0 -875px;
+            }
+
+            #ProductTitleZone #GetProduct a.Download {
+                background-position: 0 -780px;
+            }
+
+            #ProductTitleZone #GetProduct a.Subscription {
+                background-position: 1px -282px;
+                clear: both;
+                display: block;
+            }
+
+        #ProductTitleZone #GetProduct .MSPoints {
+            background-position: right -425px;
+        }
+
+        #ProductTitleZone #GetProduct .SilverPrice, #ProductTitleZone #GetProduct .GoldPrice {
+            color: #fff;
+        }
+
+    #ProductTitleZone .FacebookILike {
+        margin: 0;
+    }
+
+.FacebookILike {
+    border: none;
+    overflow: hidden;
+    margin-top: 8px;
+    width: 120px;
+    height: 24px;
+}
+
+a.CallToAction {
+    display: inline-block;
+}
+
+#ProductTitleZone #GetProduct .ProductPrice {
+    float: right;
+    line-height: 25px;
+    padding-right: 30px;
+}
+
+#ProductTitleRating {
+    clear: both;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+    #ProductTitleRating #ActualRating {
+        margin-bottom: 5px;
+    }
+
+    #ProductTitleRating a {
+        font-weight: normal;
+    }
+
+    #ProductTitleRating img {
+        margin: 1px;
+    }
+
+        #ProductTitleRating img.ratingLogo {
+            float: left;
+            margin: 0 10px 20px 0;
+        }
+
+    #ProductTitleRating ul#ratingDescriptors {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        line-height: 1.2em;
+    }
+
+    #ProductTitleRating ul#ratingDisclaimers {
+        clear: both;
+        list-style-type: none;
+        margin: .5em 0 0 0;
+        padding: 0;
+    }
+
+#LiveZone {
+    clear: both;
+}
+
+    #LiveZone.Smaller > .SearchGrid {
+        padding-top: 20px;
+    }
+
+    #LiveZone .ProductFilters {
+        background-image: url(Images/xbox_live_240x35.jpg);
+        background-repeat: no-repeat;
+        padding-top: 58px;
+        margin-top: 13px;
+    }
+
+        #LiveZone .ProductFilters > h4 {
+            display: none;
+        }
+
+/* Related icons */
+.RelatedIcon {
+    padding: 0 10px 10px 0;
+    float: left;
+}
+
+.RelatedGamerPicIcon, .RelatedGameIcon, .RelatedGameDemoIcon, .RelatedGameAddonIcon, .RelatedGameVideoIcon, .RelatedAvatarItemIcon, .RelatedThemeIcon, .RelatedSmartGlassIcon {
+    width: 130px;
+    height: 130px;
+    display: block;
+    background-image: url(Images/RelatedIconsImageSheet.png);
+    background-repeat: no-repeat;
+}
+
+.RelatedGamerPicIcon {
+    background-position: -10px -570px;
+}
+
+.RelatedGameIcon {
+    background-position: -10px -10px;
+}
+
+.RelatedGameDemoIcon {
+    background-position: -10px -150px;
+}
+
+.RelatedGameAddonIcon {
+    background-position: -10px -290px;
+}
+
+.RelatedGameVideoIcon {
+    background-position: -10px -430px;
+}
+
+.RelatedAvatarItemIcon {
+    background-position: -10px -850px;
+}
+
+.RelatedSmartGlassIcon {
+    background-position: -10px -990px;
+}
+
+.RelatedThemeIcon {
+    background-position: -10px -710px;
+}
+
+/* User ratings */
+.UserRatingStarStrip {
+    display: block;
+    font-size: 11px;
+    margin-bottom: 7px;
+}
+
+.GameTiles .UserRatingStarStrip {
+    margin: 0;
+}
+
+.UserRatingStarStrip p {
+    font-size: 13px;
+    margin: 0;
+}
+
+.UserRatingStarStrip, #RatingDescription {
+    color: #636468;
+}
+
+.Star {
+    background-image: url(Images/XboxComMP_Icons_info.png);
+    float: left;
+    height: 17px;
+    width: 17px;
+}
+
+.Star0 {
+    background-position: -10px -1482px;
+}
+
+.Star1 {
+    background-position: -10px -1532px;
+}
+
+.Star2 {
+    background-position: -10px -1582px;
+}
+
+.Star3 {
+    background-position: -10px -1632px;
+}
+
+.Star4 {
+    background-position: -10px -1682px;
+}
+
+.UserRatingStarStrip .StarOff {
+    background-position: -10px -1732px;
+}
+
+.UserRating {
+    float: left;
+    height: 14px;
+    width: 90px;
+}
+
+#RatingMessage {
+    margin: 0;
+}
+
+/* Pricing */
+.ProductPrices {
+    clear: right;
+    float: right;
+    margin-bottom: 10px;
+    text-align: right;
+    width: 100%;
+    position: relative;
+}
+
+.ProductPrice {
+    text-transform: uppercase;
+}
+
+.ProductPrices > .ProductPrice {
+    display: block;
+}
+
+.GameTiles .ProductPrice {
+    display: inline;
+    margin-right: 0.5em;
+}
+
+.GoldPrice {
+    color: #fbb040;
+}
+
+.SilverPrice {
+    clear: both;
+}
+
+.ProductPrices .Purchased {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.GameTiles .MSPoints {
+    background-position: 25px -227px;
+}
+
+.CallToAction .MSPoints {
+    background-image: url(Images/Shell_Icons.png);
+    background-position: right -468px;
+    background-repeat: no-repeat;
+    padding-right: 30px;
+}
+
+.GoldExclusive, .GoldExclusive:visited {
+    color: #fbb040;
+    font-weight: bold;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-size: 0.85em;
+}
+
+    .GoldExclusive:hover, .GoldExclusive:focus, .GoldExclusive:active {
+        color: #636468;
+    }
+
+/* How to purchase */
+.HowToPurchase,
+.HowToDownload {
+    clear: both;
+    overflow: hidden;
+    width: 215px;
+}
+
+    .HowToDownload img {
+        margin-top: 10px;
+    }
+
+    .HowToPurchase img {
+        margin-top: 30px;
+    }
+
+/* Avatar detail page */
+.AvatarDetail {
+    color: #636468;
+    font-size: 14px;
+}
+
+.AvatarArt {
+    margin-bottom: 15px;
+}
+
+.lastgridchild #AvatarViewer {
+    margin-left: 5px;
+}
+
+/* Avatar browsing */
+#AvatarTabs .ProductFilters {
+    padding-top: 20px;
+}
+
+#AvatarSidebars h2 {
+    border-bottom: solid 1px #848589;
+    line-height: 1em;
+    padding-bottom: 20px;
+    margin: 0 0 0 25px;
+}
+
+#AvatarSidebars ul, #AvatarSidebars ol {
+    color: #636468;
+    font-size: 13px;
+    margin: 20px 0 30px 25px;
+}
+
+#AvatarSidebars ul {
+    list-style-type: none;
+    margin: 20px 0 30px 25px;
+    padding: 0;
+}
+
+#AvatarSidebars ol {
+    padding-left: 2em;
+}
+
+#AvatarSidebars li {
+    margin-bottom: 5px;
+}
+
+    #AvatarSidebars li a {
+        display: block;
+    }
+
+/* Avatar viewer */
+.AvatarContainer {
+    position: relative;
+}
+
+.AvatarCanvas {
+    height: 500px;
+    width: 310px;
+    touch-action: none;
+    cursor: pointer;
+}
+
+.LoadingAvatarContainer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: white;
+    display: none;
+}
+
+.LoadingAvatar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.controlIconGroup {
+    background-color: #848589;
+    padding: 3px;
+}
+
+.controlIconWrapper {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-left: 2px;
+}
+
+.controlIcon:hover {
+    margin-top: -30px;
+}
+
+.AvatarSLObject {
+    height: 500px;
+    width: 310px;
+}
+
+.Tabs #AvatarViewer {
+    display: none;
+    clear: left;
+    position: fixed;
+}
+
+#AvatarViewer {
+    top: 250px;
+    width: 310px;
+    background-color: White;
+}
+
+    #AvatarViewer .ProductPrice {
+        float: right;
+        width: 3em;
+        text-align: right;
+    }
+
+    #AvatarViewer .AvatarProduct {
+        float: left;
+    }
+
+    #AvatarViewer #DisabledBox {
+        background-color: #333132;
+        color: #fff;
+        border: solid 1px #333132;
+        width: 280px;
+        padding: 10px;
+    }
+
+        #AvatarViewer #DisabledBox a {
+            display: block;
+        }
+
+    #AvatarViewer h4 {
+        color: #fff;
+        padding: 5px;
+        padding-bottom: 0px;
+    }
+
+    #AvatarViewer .AvatarArt {
+        border: solid 1px #848589;
+        width: 300px;
+        height: 400px;
+    }
+
+.NoAvatarImage {
+    width: 100%;
+    height: 100%;
+    background-image: url(Images/DiscoWyatt.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+#TryOnDescription {
+    border: solid 1px #bdbec1;
+    clear: both;
+    color: #333132;
+    margin: 5px 0;
+    overflow: auto;
+    padding: 5px;
+}
+
+/* Promotions */
+.PromotionBanner {
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 183px;
+    width: 955px;
+}
+
+/*Avatar Lifestyle page*/
+.BrandResult ol {
+    padding-left: 0;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.BrandLogo {
+    border: solid 1px #BDBEC1;
+}
+
+.BrandResult .BrandName {
+    height: 2.8em;
+    margin: 20px 5px;
+    overflow: hidden;
+}
+
+.BrandResult img {
+    cursor: pointer;
+}
+
+.SubBrands {
+    display: none;
+}
+
+.BrandResult li {
+    border-bottom: 1px solid #E2E3E2;
+    padding: 20px 0 0 0;
+}
+
+#Expando {
+    position: absolute;
+    display: block;
+    background-color: Black;
+    width: 637px;
+    display: none;
+    z-index: 500;
+    padding-bottom: 15px;
+    padding-top: 20px;
+}
+
+    #Expando img {
+        float: left;
+        padding-right: 6px;
+        padding-bottom: 5px;
+    }
+
+    #Expando .CloseIcon {
+        float: right;
+        background-image: url(Images/XboxComMP_Icons.png);
+        background-repeat: no-repeat;
+        background-position: -10px -380px;
+        width: 16px;
+        height: 16px;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    #Expando .ExpandoHeader {
+        margin-bottom: 10px;
+    }
+
+    #Expando .ExpandoBrandName {
+        color: White;
+        margin-left: 20px;
+        margin-top: 0;
+    }
+
+    #Expando .SubBrandImages {
+        clear: both;
+        margin: 0 20px 20px 20px;
+    }
+
+.Collections {
+    float: left;
+    background-image: url(images/XboxComMP_Icons_info.png);
+    background-repeat: no-repeat;
+    background-position: -10px -2380px;
+    width: 26px;
+    height: 26px;
+    margin-top: 15px;
+}
+
+    .Collections:hover {
+        background-position: -10px -2430px;
+    }
+
+    .Collections:active {
+        background-position: -10px -2480px;
+    }
+
+/* Avatar style pages */
+.Banner a {
+    width: 315px;
+    height: 165px;
+    margin-right: 3px;
+    float: left;
+    overflow: hidden;
+}
+
+    .Banner a:last-child {
+        margin-right: 0px;
+    }
+
+/* GamesLanding */
+.GamesLanding #Departments h2 > a {
+    font-weight: normal;
+}
+
+.GamesLanding #Departments ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4em;
+}
+
+.GamesLanding.Xbox ol {
+    line-height: 1.4em;
+    padding: 0px 0px 0px 2em;
+}
+
+.GamesLanding #OfferStartDate ol {
+    list-style-type: square;
+    margin: 0;
+    padding: 0 0 0 1.5em;
+}
+
+.GamesLanding .Tabs {
+    margin-top: 10px;
+}
+
+.GamesLanding .Section {
+    border-bottom: solid 1px #bdbec1;
+    padding-bottom: 20px;
+}
+
+.GamesLanding .Featured {
+    font-size: 13px;
+}
+
+    .GamesLanding .Featured h1 {
+        margin: 20px 0 0 0;
+    }
+
+.GamesLanding.Xbox .Featured h1 {
+    color: #f17922;
+}
+
+.GamesLanding .ToutN h4 {
+    text-transform: none;
+    margin-bottom: 5px;
+}
+
+.GamesLanding .Chart a {
+    display: block;
+    font-weight: normal;
+}
+
+.GamesLanding.Xbox .Chart h2 {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.GamesLanding .Banner5 > div {
+    float: left;
+    width: 187px;
+    margin-right: 5px;
+}
+
+    .GamesLanding .Banner5 > div.lastgridchild {
+        margin-right: 0;
+    }
+
+.GamesLanding.All h3 {
+    height: 28px;
+    margin: 0;
+}
+
+.GamesLanding.All .SeeMore {
+    text-align: right;
+}
+
+.GamesLandingTiles img {
+    width: 150px;
+}
+
+.GamesLandingTiles a {
+    display: block;
+    margin-top: 5px;
+    font-weight: normal;
+}
+
+/* Tabs */
+.Tabs > a {
+    background-color: #848589;
+    color: #fff;
+    font-size: 12px;
+    line-height: 25px;
+    text-align: center;
+}
+
+    .Tabs > a.Selected {
+        background-color: #107c10;
+    }
+
+.Tabs > .Disabled {
+    background-color: #e2e3e2;
+    line-height: 25px;
+}
+
+.Featured .Loading {
+    background-image: url(Images/loading_50x50.gif);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height: 100px;
+    padding: 20px;
+}
+
+.WideStage {
+    border-bottom: solid 1px #bdbec1;
+    color: #636468;
+    padding: 20px 0;
+}
+
+    .WideStage > div img {
+        float: right;
+    }
+
+.Banner5 {
+    padding-top: 20px;
+}
+
+.Banner4 > div {
+    margin-top: 20px;
+}
+
+    .Banner4 > div > a {
+        background-color: #000;
+        display: block;
+        height: 235px;
+    }
+
+        .Banner4 > div > a > img {
+            display: block;
+            margin: auto;
+            padding-top: 25px;
+            opacity: 0.5;
+        }
+
+        .Banner4 > div > a:hover > img {
+            opacity: 0.8;
+            zoom: 115%;
+            padding-top: 7px;
+        }
+
+
+.phoneAppBuyButton {
+    width: 200px;
+    margin-top: 8px;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.PhoneGameProductImage {
+    border: solid 1px #E2E3E2;
+    height: 200px;
+    width: 200px;
+}
+
+.phoneGames .gameImages {
+    margin-bottom: 20px;
+}
+
+.phoneGames #gameDescription {
+    /*scrollbar and alignment with image*/
+    padding-top: 12px;
+    margin-right: 40px;
+    white-space: pre-wrap;
+}
+
+.endviewer {
+    clear: both;
+}
+
+.imageRotateIcon {
+    position: absolute;
+    right: 0;
+    z-index: 9000;
+}
+
+#fullPhoneScreens {
+    display: none;
+    width: 640px;
+    height: 533px;
+    position: relative;
+    background-color: #000;
+}
+
+    #fullPhoneScreens.rotated {
+        width: 533px;
+        height: 370px;
+        margin-left: 60px;
+    }
+
+        #fullPhoneScreens.rotated #MediaControls div.spacer {
+            width: 190px;
+        }
+
+    #fullPhoneScreens #MediaControls div.spacer {
+        width: 300px;
+    }
+
+.fullScreensViewer {
+    width: 640px;
+    height: 533px;
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    background-color: #111;
+    bottom: 0px;
+}
+
+    .fullScreensViewer.rotated {
+        width: 533px;
+        height: 320px;
+    }
+
+    .fullScreensViewer img {
+        position: absolute;
+    }
+
+.phoneImageThumbs {
+    height: 187px;
+    width: 630px;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+    .phoneImageThumbs .hscroll {
+        height: 166px;
+    }
+
+.slideshowThumb {
+    display: inline;
+}
+
+#MediaControl .Banner {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+}
+
+#MediaControl .TabPage.image img {
+    width: 715px;
+}
+
+.SmartGlass #MediaControl .TabPage.image {
+    text-align: center;
+}
+
+    .SmartGlass #MediaControl .TabPage.image img {
+        width: auto;
+        height: 401px;
+    }
+
+#MediaControl #overview1 p {
+    height: 210px;
+    margin-top: 135px;
+    overflow: hidden;
+}
+
+#MediaControl #overview2 ul#ProductPublishing li {
+    margin-bottom: .3em;
+}
+
+#MediaControl #overview2 .capabilities ul {
+    list-style-type: square;
+    margin: 0;
+    padding: 0 0 0 20px;
+}
+
+#MediaControl #overview2 .capabilities {
+    float: left;
+    margin: 15px 0 0 0;
+    width: 50%;
+}
+
+#MediaControl #minimumRequirements {
+    clear: left;
+    width: 100% !important;
+}
+
+#BodyContent .FullLoading {
+    background-image: url(images/loading_100x100_light.gif);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    /* for IE */
+    filter: alpha(opacity=60);
+    /* CSS3 standard */
+    opacity: 0.6;
+}
+
+    #BodyContent .FullLoading span {
+        margin: 100% 0 0 0;
+        display: block;
+        visibility: hidden;
+        width: 1px;
+        height: 1px;
+    }
+
+#WelcomePopup {
+    width: 735px;
+    height: 550px;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.regSmall {
+    font-size: small;
+    vertical-align: top;
+}
+
+.ui-dialog-titlebar {
+    height: 20px;
+}
+
+a.closeDialog {
+    display: block;
+    position: absolute;
+    right: 22px;
+    top: 22px;
+    background-color: transparent;
+    background-image: url(images/XboxCom_InfoIcons.png);
+    background-repeat: no-repeat;
+    background-position: -10px -2330px;
+    border: 0;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.GameTiles img.ProductBox {
+    height: 120px;
+}
+
+.LandingSection {
+    clear: both;
+    border-bottom: solid 1px #bdbec1;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+#MarketingTout h1 {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+}
+
+#MarketingTout a {
+    font-weight: normal;
+}
+
+#MarketingTout p {
+    padding: 0;
+    margin: 0;
+}
+
+.dealInfo {
+    float: right;
+}
+
+    .dealInfo .gameTitle {
+        font-size: 18px;
+    }
+
+    .dealInfo .CallToAction {
+        float: right;
+    }
+
+.ToutTile img {
+    border: solid 1px #E2E3E2;
+    width: 85px;
+    display: block;
+    margin-right: 5px;
+    float: left;
+}
+
+/* modal dialog overrides (purchase) */
+div.ui-dialog-purchase,
+div.ui-dialog-purchase div.ui-dialog-titlebar,
+div.ui-dialog-purchase div.ui-dialog-content {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+    div.ui-dialog-purchase div.ui-dialog-titlebar {
+        height: 0px;
+        position: absolute;
+        width: 100%;
+        z-index: 1004;
+    }
+
+        div.ui-dialog-purchase div.ui-dialog-titlebar span {
+            display: none;
+        }
+
+    div.ui-dialog-purchase a.ui-dialog-titlebar-close {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        display: block;
+        background: url(images/Modal_Icons_15x15.png) no-repeat 0px 0px;
+        width: 15px;
+        height: 15px;
+    }
+
+        div.ui-dialog-purchase a.ui-dialog-titlebar-close:hover {
+            background: url(images/Modal_Icons_15x15.png) no-repeat 0px -34px;
+        }
+
+    div.ui-dialog-purchase div.ui-dialog-content,
+    div.ui-dialog-purchase iframe#purchaseIFrame {
+        width: 100%;
+        height: 660px;
+    }
+
+    div.ui-dialog-purchase,
+    div.ui-dialog-purchase div.ui-dialog-content {
+        background: #FFF url(images/loading.gif) no-repeat center center;
+    }
+
+        div.ui-dialog-purchase iframe#purchaseIFrame {
+            z-index: 1003;
+        }
+
+.ui-widget-overlay {
+    background-color: #BDBEC1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)"; /* ie 7 */
+    opacity: .6; /* standard: ff gt 1.5, opera, safari */
+    -ms-filter: "alpha(opacity=60)"; /* ie 8 */
+    filter: alpha(opacity=60); /* ie lt 7 */
+    -khtml-opacity: .6; /* safari 1.x */
+    -moz-opacity: .6; /* ff lt 1.5, netscape */
+}
+
+.SmartGlassFree {
+    clear: right;
+    float: right;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 25px;
+}
