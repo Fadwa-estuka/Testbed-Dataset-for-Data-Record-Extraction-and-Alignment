@@ -1,0 +1,10 @@
+illuminate/database,[READ ONLY] Subtree split of the Illuminate Database component (see laravel/framework) ,PHP,945,267,Updated a day ago
+chef-cookbooks/database,Development repository for Chef database cookbook ,Ruby ,189,303,Updated 14 days ago
+kohana/database,"A Kohana module for database interactions, building queries, and prepared statements ",PHP,166,137,"Updated on Jul 25, 2016"
+classicdb/database,"Classic DB is a content database for CMaNGOS Classic: world, NPCs, objects, quests and so on. ",Shell ,74,68,"Updated on Dec 13, 2016"
+nette/database,Nette Database layer,PHP,83,60,Updated 2 days ago
+blazegraph/database,Blazegraph High Performance Graph Database,Java ,157,35,Updated 8 days ago
+TBC-DB/Database,World of Warcraft 2.4.3 Content Database for CMaNGOS The Burning Crusades ,Batchfile ,19,72,"Updated on Aug 14, 2016"
+salebab/database,"PHP/MySQL database wrapper, extends PDO and PDOStatement",PHP,75,26,"Updated on Oct 7, 2014"
+bosnadev/database,"An extended PostgreSQL driver for Laravel 5 with support for some aditional PostgreSQL data types: hstore, uuid, jsonb. ",PHP,41,21,Updated 14 days ago
+mangosthree/database,"The Mangos THREE world database contains creatures, NPCs, Quests, Items/objects & gossip information to populate the … ",Batchfile ,11,29,Updated 8 days ago
