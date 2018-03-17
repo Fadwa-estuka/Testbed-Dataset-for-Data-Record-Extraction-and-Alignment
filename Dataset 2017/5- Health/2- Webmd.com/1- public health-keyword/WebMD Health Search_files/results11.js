@@ -1,0 +1,2 @@
+/*! webmd/search - v0.2.0 - 2015-03-30 */
+!function(a){"use strict";a("html").addClass("search"),"pets"===webmd.url.getParam("searchtype")&&a("html").addClass("searchtype-pets");var b=["ahg","msc","ma","rd","rn","lcsw","pt","mba","md","med","mph","ms","pa-c","phd","do","faan","face","ba","ed.c","lpa","pa"],c=a.trim(webmd.url.getParam("query").toLowerCase());a.inArray(c,b)>-1&&a("head").append('<style type="text/css">.petslink { display: none; }</style>')}(jQuery);

@@ -1,0 +1,55 @@
+/* hiding login and register links */
+#healthehome_rdr {
+ padding-top: 20px !important;
+}
+.bottom_header .login_rdr {
+ display: none !important;
+}
+
+/* hiding this div temporarily until it's removed from search application - arhea, 6.5.09 */
+.topFTCorners_fmt { 
+ display: none; 
+}
+/* moving health solutions and html footer over 8px since it doesn't get the 8px left margin applied to ContentPane23 at the module level -arhea, 6.5.09 */
+#sp_ft_rdr, #non_sp_ft_rdr {
+ margin-left: 8px;
+}
+
+/* GM Logo in Webmd Sponsores Section */
+.specialsSponsors.gm { display: block; }
+.specialsSponsors.gm .roundedBoxMiddle_fmt ul.sponsors li {
+	background: none;
+	clear: both;
+	padding: 0;
+	width: 250px;
+}	
+.specialsSponsors.gm .roundedBoxMiddle_fmt ul.sponsors li a { cursor: pointer; }
+.specialsSponsors.gm .roundedBoxMiddle_fmt ul.sponsors li img {
+	float: left;
+	padding-right: 10px;
+}
+
+/* Zantac Logo in Webmd Sponsors Section */
+.specialsSponsors.zt { display: block; }
+.specialsSponsors.zt .roundedBoxMiddle_fmt ul.sponsors li {
+	background: none;
+	clear: both;
+	padding: 0;
+	width: 270px;
+}	
+.specialsSponsors.zt .roundedBoxMiddle_fmt ul.sponsors li a { cursor: pointer; }
+.specialsSponsors.zt .roundedBoxMiddle_fmt ul.sponsors li img {
+	float: left;
+	padding-right: 9px;
+}
+.specialsSponsors.zt .roundedBoxMiddle_fmt ul.sponsors span {
+	margin-left:72px;
+}
+
+/* Hide the pets results link */
+.petslink {
+  display: none;
+}
+
+
+

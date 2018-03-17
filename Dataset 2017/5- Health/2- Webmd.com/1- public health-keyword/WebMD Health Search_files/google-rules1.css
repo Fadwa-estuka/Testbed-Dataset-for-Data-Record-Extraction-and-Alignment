@@ -1,0 +1,18 @@
+#adContainer1 {
+background:url(../images/yahoo_sprite_rules.gif) 0 0 no-repeat;
+float:left;
+font-size:1%;
+height:5px;
+margin:0 0 -2px 0;
+margin-bottom:15px;
+padding:0;
+width:634px;
+}
+#adContainer2 {
+background:url(../images/yahoo_sprite_rules.gif) 0 -5px no-repeat;
+float:left;
+font-size:1%;
+height:5px;
+margin-bottom:15px;
+width:634px;
+}
