@@ -1,0 +1,3 @@
+window.advBidxc.ybncaresponse({
+"356136642" : {bl:[{bidder_id: 4, ext_placement_code: "544325350", no_bid: true, logging_pixels: [], og_bid: 0.0, bidderInfoBean: {responseTime: 11, dataCenter: "east", serverId: "RTB-nv-s-4-2", category: [], matchString: ""}, fb: false, uid: "", sub_bidder_id: "3", publisher_id: "8CU12LGKP", nbc: 3, at: "O", mnet_id: "356136642", size: "728x90"}]},
+"656615527" : {bl:[{bidder_id: 4, ext_placement_code: "463247757", no_bid: true, logging_pixels: [], og_bid: 0.0, bidderInfoBean: {responseTime: 27, dataCenter: "east", serverId: "RTB-nv-s-4-2", category: [], matchString: ""}, fb: false, uid: "", sub_bidder_id: "3", publisher_id: "8CU12LGKP", nbc: 3, at: "O", mnet_id: "656615527", size: "300x250"}]}})

@@ -1,0 +1,102 @@
+/* repo: SFE2.0/HEAD@65a1308 - Package Version: 0.2.0 - 2017-01-12 05:32 pm - User:  */
+/*lhd*/
+.lhd-module {
+	border-top: solid 0.063em #edeceb !important;
+	border: solid 0.063em #edeceb;
+	text-align: center;
+	padding: 0 !important;
+	display: none;
+}
+
+.lhd-logo {
+	margin-top: 0.938em;
+	width: 4.188em;
+}
+
+.lhd-header {
+	font-size: 1.5em;
+}
+
+.lhd-module .module-content {
+	background-color: #faf8f7;
+	padding-top: 0.938em;
+}
+
+.lhd-physician-picture {
+	margin-left: 1.188em;
+	position: relative;
+	top: 0.5em;
+}
+
+.lhd-location-icon {
+	border-radius: 50%;
+	font-size: 1.063em;
+	border: 0.188em solid black;
+	padding: 0.688em;
+}
+
+.lhd-location-icon:before {
+	content: '\e910';
+	color: #000;
+	font-family: icons;
+	font-weight: 100;
+	font-size: 1.4em;
+	position: relative;
+	top: 5px;
+}
+
+.physicians-in-container {
+	margin-top: 1.25em;
+}
+
+.physicians-in-header {
+	font-size: 1.188em;
+	font-weight: bold;
+	color: #333132;
+}
+
+.physicians-in, .physician-location {
+	font-size: 0.875em;
+	font-weight: 300;
+	color: #333132;
+}
+
+.lhd-physician-container {
+	border-top: solid 0.188em #dbdad9;
+	border-bottom: solid 0.188em #dbdad9;
+	margin-top: 0.875em;
+	max-width: 12.5em;
+	margin: auto;
+	margin-top: 0.938em;
+}
+
+.physician-list {
+	border: 0;
+}
+
+.physician-list li {
+	padding-right: 0 !important;
+}
+
+.physician-list li a {
+	text-decoration: none !important;
+}
+
+.physician-title {
+	font-size: 1em;
+	font-weight: 900;
+	color: #1782c0
+}
+
+.physician-button {
+	margin-top: 1.25em;
+	margin-bottom: 1.25em;
+	width: 13.875em;
+	height: 2.5em;
+	font-size: 0.875em;
+	font-weight: 500;
+	line-height: 1;
+	color: #ffffff;
+	background-color: #1b88bf;
+	box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.2), 0 0 0.125em 0 rgba(0, 0, 0, 0.1);
+}
