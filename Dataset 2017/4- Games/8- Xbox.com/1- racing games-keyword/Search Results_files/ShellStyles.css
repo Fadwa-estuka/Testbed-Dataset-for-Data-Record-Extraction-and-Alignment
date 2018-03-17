@@ -1,0 +1,1275 @@
+﻿div#BodyHeader
+{
+    min-height: 100px;
+    z-index: 10;
+}
+
+body div#BodyHeader a
+{
+    font-weight: normal;
+}
+
+body div#BodyHeader a:hover
+{
+    text-decoration: none;
+}
+
+body div#BodyHeader div#ShellHeaderContent
+{
+    position: relative;
+    z-index: 20;
+    text-align: left;
+}
+
+/***********************************************
+    Top Banner & Search Bar
+************************************************/
+
+body div#BodyHeader div#ShellLinkArea div.Links a,
+body div#BodyHeader div#ShellLinkArea div.Links a:visited,
+body div#BodyHeader div#ShellLinkArea div.Links a:link
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #636468;
+}
+
+body div#BodyHeader div#ShellLinkArea div.Links a:hover
+{
+    color: #2B9646;
+}
+
+body div#BodyHeader div#ShellLinkArea div.Links span#MobileVersionLinkArea
+{
+    display: none;
+}
+
+/***********************************************
+    Me Bar General Styles
+************************************************/
+
+div#ShellHeaderContent div#ShellMeBarArea
+{
+    position: relative;
+    height: 85px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+div#ShellHeaderContent div#ShellMeBarArea a,
+div#ShellHeaderContent div#ShellMeBarArea a:visited
+{
+    color: #107c10; /* Primary Green */
+}
+
+div#ShellHeaderContent div#ShellMeBarArea a:hover
+{
+    color: #2B9646;
+}
+
+div#ShellHeaderContent div#ShellMeBarArea div#HeadShotBox
+{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 70px;
+    height: 80px;
+}
+
+div#ShellHeaderContent div#ShellMeBarArea div#ShellMeBar
+{
+    position: absolute;
+    top: 0px;
+    right: 84px;
+    height: 80px;
+    width: 700px;
+    font-family: 'Segoe UI' , Arial, Sans-Serif;
+}
+
+.ja-JP div#ShellHeaderContent div#ShellMeBarArea div#ShellMeBar
+{
+    font-family: Meiryo, 'Segoe UI' , Arial, Sans-Serif;
+}
+
+.ko-KR div#ShellHeaderContent div#ShellMeBarArea div#ShellMeBar
+{
+    font-family: Gulim, 'Segoe UI' , Arial, Sans-Serif;
+}
+
+div#ShellHeaderContent div#ShellMeBarArea div#ShellLogo
+{
+    position: absolute;
+    left: 10px;
+    top: 21px;
+    height: 40px;
+    width: 130px;
+    background-image: url(../images/logo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+div#ShellHeaderContent div#ShellMeBarArea div.GamerStatArea
+{
+    position: absolute;
+    bottom: 39px;
+    right: 0px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #BDBEC1; /*Alloy Grey*/
+    width: 100%;
+}
+
+div#ShellHeaderContent div#ShellMeBarArea div.LinkArea
+{
+    position: absolute;
+    top: 44px;
+    text-align: right;
+    right: 0px;
+    font-size: 12px;
+    color: #BDBEC1; /*Alloy Grey*/
+    width: 100%;
+}
+
+/***********************************************
+    Signed Out Experience
+************************************************/
+
+div#ShellHeaderContent div#ShellMeBarArea div#HeadShotBox.SignedOut
+{
+    background-image: url(../images/headbox-signedout.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+div#ShellHeaderContent div#ShellMeBarArea div#ShellMeBar.SignedOut div.LinkArea a
+{
+    font-size: 12px;
+}
+
+div#ShellHeaderContent div#ShellMeBarArea div#ShellMeBar.SignedOut div.GamerStatArea div.WelcomeText
+{
+    float: right;
+    padding-right: 104px;
+    padding-top: 1px;
+    height: 20px;
+    background-image: url(../images/xboxlive.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    font-weight: bold;
+    color: #636468;
+}
+
+/***********************************************
+    Signed In Experience
+************************************************/
+
+div#ShellHeaderContent div#ShellMeBarArea div#HeadShotBox.SignedIn div.avatarHeadshot
+{
+    width: 70px;
+    height: 80px;
+    background-position: right center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+div#ShellMeBar.SignedIn div.GamerStatArea h1.gamertag
+{
+    color: #F17922; /* Live Orange */
+    font-weight: normal;
+    float: right;
+    margin: 0px;
+    margin-left: 30px;
+    font-size: 18px;
+}
+
+div#ShellMeBar.SignedIn div.GamerStatArea h1.gamertag a,
+div#ShellMeBar.SignedIn div.GamerStatArea h1.gamertag a:visited
+{
+    color: #F17922 !important; /* Live Orange */
+}
+
+div#ShellMeBar.SignedIn div.GamerStatArea h1.gamertag a:hover
+{
+    color: #EE9933 !important; /* Live Hover Orange */
+}
+
+div#ShellMeBar.SignedIn div.GamerStatArea div.Stats
+{
+    padding-top: 5px;
+}
+
+div#ShellMeBar.SignedIn div.GamerStatArea div.gamerscore
+{
+    float: right;
+    height: 18px;
+    margin-left: 20px;
+    padding-left: 20px;
+    background-image: url(../images/Shell_Icons.png);
+    background-position: -10px -79px;
+    background-repeat: no-repeat;
+}
+
+div#ShellMeBar.SignedIn div.GamerStatArea div.notifications
+{
+    float: right;
+    height: 18px;
+    margin-left: 20px;
+    padding-left: 19px;
+    background-image: url(../images/Shell_Icons.png);
+    background-position: -10px -178px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+/* Quick fix to hide the notifications icon in the MeBar for Madrid.
+ * Please update/remove this CSS as appropriate once notifications are back. */
+#notifications
+{
+    display: none;
+}
+
+div#ShellMeBar.SignedIn div.GamerStatArea div.messages
+{
+    float: right;
+    height: 18px;
+    margin-left: 20px;
+    padding-left: 24px;
+    background-image: url(../images/Shell_Icons.png);
+    background-position: -10px -127px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+div#ShellHeaderContent div#ShellMeBarArea div#ShellMeBar.SignedIn div.LinkArea span
+{
+    padding: 0px;
+}
+
+.pointsDisabled #ShellHeaderContent #points
+{
+    display: none;
+}
+
+div#ShellHeaderContent div#ShellMeBarArea div#ShellMeBar.SignedIn div.LinkArea span.points
+{
+    position: relative;
+    padding-right: 18px;
+}
+
+div#ShellHeaderContent div#ShellMeBarArea div#ShellMeBar.SignedIn div.LinkArea span.pointsIcon
+{
+    position: absolute;
+    top: 2px;
+    right: 0px;
+    background-image: url(../images/Shell_Icons.png);
+    background-position: -10px -230px;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 12px;
+}
+
+div#ShellHeaderContent div#ShellMeBarArea div#ShellMeBar.SignedOut div.LinkArea span.spread,
+div#ShellHeaderContent div#ShellMeBarArea div#ShellMeBar.SignedIn div.LinkArea span.spread
+{
+    background-image: url(../images/glyph-pipe.png);
+    background-position: 7px center;
+    padding-left: 15px;
+    background-repeat: no-repeat;
+}
+
+div#ShellHeaderContent div#ShellMeBarArea div#ShellMeBar.SignedIn div.LinkArea span.nowrap
+{
+    white-space: nowrap;
+}
+
+
+/***********************************************
+    Navigation Bar
+************************************************/
+
+div#ShellHeaderContent div#ShellNavigationBar
+{
+    font-size: 13px;
+    font-family: 'Segoe UI' , Arial, Sans-Serif;
+    background-color: #107c10; /*Primary Green*/
+    overflow: auto;
+    zoom: 1; /* IE6 */
+    z-index: 30;
+    text-align: left;
+    background: -webkit-gradient(linear, left top, left bottom, from(#75B943), to(#56A02B)); /* Safari 4+, Chrome */
+    background: -webkit-linear-gradient(top, #75B943, #56A02B); /* Chrome 10+, Safari 5.1+ */
+    background: -moz-linear-gradient(top, #75B943, #56A02B); /* FF3.6+ */
+    background: -ms-linear-gradient(top, #75B943, #56A02B); /* IE10 */
+    background: -o-linear-gradient(top, #75B943, #56A02B); /* Opera */
+    background: linear-gradient(top, #75B943, #56A02B); /* W3C */ 
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#75B943, endColorstr=#56A02B)"; /*IE8-9*/
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr="#75B943", endColorstr="#56A02B", GradientType=0); /* IE6-7 */ 
+    overflow: auto; /* Give "layout" for IE6-7 filters to work */
+}
+
+.ja-JP div#ShellHeaderContent div#ShellNavigationBar
+{
+    font-size: 14px;
+    font-family: Meiryo, 'Segoe UI' , Arial, Sans-Serif;
+}
+
+.ko-KR div#ShellHeaderContent div#ShellNavigationBar
+{
+    font-size: 14px;
+    font-family: Gulim, 'Segoe UI' , Arial, Sans-Serif;
+}
+
+div#ShellHeaderContent div#ShellNavigationBar > div
+{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+div#ShellHeaderContent div#ShellNavigationBar a.CalloutNavigation,
+div#ShellHeaderContent div#ShellNavigationBar a.CalloutNavigation:visited
+{
+    background-color: #532E8E; /*Natal Purple*/
+    display: block;
+    float: right;
+    line-height: 40px;
+    text-align: center;
+    width: 237px;
+    color: #FFFFFF;
+}
+div#ShellHeaderContent div#ShellNavigationBar a.CalloutNavigation:hover
+{
+    color: #BB99CC;
+}
+
+div#ShellHeaderContent div#ShellNavigationBar ul.NavigationElements
+{
+    display: block;
+    margin: 0;
+    padding: 0;
+    line-height: 40px;
+    overflow: hidden;
+}
+
+div#ShellNavigationBar ul.NavigationElements li
+{
+    float: left;
+    list-style: none;
+    margin-right: 2px;
+}
+
+div#ShellNavigationBar ul.NavigationElements li a
+{
+    display: block;
+    padding: 0px 20px;
+    color: #FFFFFF;
+    white-space: nowrap;
+}
+
+div#ShellNavigationBar ul.NavigationElements li a:hover
+{
+    color: #DAE23F;
+}
+
+div#ShellNavigationBar ul.NavigationElements li:hover ul
+{
+    visibility: visible;
+}
+
+div#ShellNavigationBar ul.NavigationElements li.selected > a
+{
+    background-color: #1F6D34;
+    background: -webkit-gradient(linear, left top, left bottom, from(#2B9646), to(#1F6D34)); /* Safari 4+, Chrome */
+    background: -webkit-linear-gradient(top, #2B9646, #1F6D34); /* Chrome 10+, Safari 5.1+ */
+    background: -moz-linear-gradient(top, #2B9646, #1F6D34); /* FF3.6+ */
+    background: -ms-linear-gradient(top, #2B9646, #1F6D34); /* IE10 */
+    background: -o-linear-gradient(top, #2B9646, #1F6D34); /* Opera */
+    background: linear-gradient(top, #2B9646, #1F6D34); /* W3C */ 
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#2B9646FF, endColorstr=#1F6D34FF)"; /*IE8-9*/
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr="#2B9646", endColorstr="#1F6D34", GradientType=0); /* IE6-7 */ 
+    overflow: auto; /* Give "layout" for IE6-7 filters to work */
+}
+
+div#ShellNavigationBar ul.NavigationElements li ul
+{
+    margin: 0;
+    position: absolute;
+    z-index: 200;
+    visibility: hidden;
+    font-size: 12px;
+    background: url(../images/menu_shadow.png) #2b9646 no-repeat;
+    min-width: 150px;
+    padding: 10px 0;
+}
+
+div#ShellNavigationBar ul.NavigationElements li ul li
+{
+    float: none;
+    display: inline;
+    background-color: transparent;
+    line-height: 0;
+    margin: 0;
+}
+
+div#ShellNavigationBar ul.NavigationElements li ul li a
+{
+    width: auto;
+    background-color: transparent;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    line-height: 26px;
+}
+
+div#ShellNavigationBar ul.NavigationElements li ul li a:hover
+{
+    color: #DAE23F;
+}
+
+div#ShellNavigationBar ul.NavigationElements .Highlighted
+{
+    background-color: #1F6D34;
+    color: #DAE23F;
+    background: -webkit-gradient(linear, left top, left bottom, from(#2B9646), to(#1F6D34)); /* Safari 4+, Chrome */
+    background: -webkit-linear-gradient(top, #2B9646, #1F6D34); /* Chrome 10+, Safari 5.1+ */
+    background: -moz-linear-gradient(top, #2B9646, #1F6D34); /* FF3.6+ */
+    background: -ms-linear-gradient(top, #2B9646, #1F6D34); /* IE10 */
+    background: -o-linear-gradient(top, #2B9646, #1F6D34); /* Opera */
+    background: linear-gradient(top, #2B9646, #1F6D34); /* W3C */ 
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#2B9646FF, endColorstr=#1F6D34FF)"; /*IE8-9*/
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr="#2B9646", endColorstr="#1F6D34", GradientType=0); /* IE6-7 */ 
+    overflow: auto; /* Give "layout" for IE6-7 filters to work */
+}
+
+/***********************************************
+    Search Area and Context Menu
+************************************************/
+
+body div#BodyHeader div#ShellNavigationBar div.SearchArea
+{
+    display: block;
+    float: right;
+    margin-top: 7px;
+    margin-bottom: 8px;
+}
+
+body div#BodyHeader div#ShellNavigationBar div.SearchArea input[type=button]
+{
+    border: 0px;
+    margin: 0px;
+    height: 25px;
+    width: 25px;
+    padding: 0px;
+    background-image: url(../images/search/looking_glass.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    float: left;
+    min-width: 0;
+    background-color: #2CA243;
+}
+
+body div#BodyHeader div#ShellNavigationBar div.SearchArea input.TextBox
+{
+    margin: 0px;
+    width: 160px;
+    float: left;
+    color: #333132; /* Slate gray */
+    font-size: 12px;
+    font-family: 'Segoe UI' , Arial, Sans-Serif;
+    height: 25px;
+    line-height: 25px;
+    border: 0px;
+    padding: 0px;
+    padding-left: 5px;
+}
+
+.ja-JP body div#BodyHeader div#ShellNavigationBar div.SearchArea input.TextBox
+{
+    font-size: 14px;
+    font-family: Meiryo, 'Segoe UI' , Arial, Sans-Serif;
+}
+
+.ko-KR body div#BodyHeader div#ShellNavigationBar div.SearchArea input.TextBox
+{
+    font-size: 14px;
+    font-family: Gulim, 'Segoe UI' , Arial, Sans-Serif;
+}
+
+body div#BodyHeader div#ShellNavigationBar div.SearchArea input.WatermarkColor
+{
+    color: #2B9646;
+}
+
+#ShellScopeDropDown
+{
+    border: 1px #107c10 solid;
+    width: 188px;
+    padding: 0px;
+    background-color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+#ShellScopeDropDown img
+{
+    float: left;
+    left: -6px;
+    position: relative;
+    width: 11px;
+}
+
+#ShellScopeDropDown ul
+{
+    float: left;
+    list-style-type: none;
+    margin: 0;
+}
+
+#ShellScopeDropDown #ShellAutocompleteCategories
+{
+    padding: 12px 10px 12px 10px;
+    font: bold 11px/15px 'Segoe UI';
+    border-right: 1px #e5e5e5 solid;
+    text-align: right;
+}
+
+#ShellScopeDropDown #ShellAutocompleteText
+{
+    padding: 12px 10px 12px 0px;
+}
+
+#ShellScopeDropDown #ShellAutocompleteText li
+{
+    font: 12px/15px 'Segoe UI';
+    color: #636468;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: normal;
+    text-overflow: ellipsis;
+}
+
+#ShellScopeDropDown #ShellAutocompleteText .ShellFocusedAutocompleteText
+{
+    font: 12px/15px 'Segoe UI';
+    color: #107c10;
+}
+
+#ShellScopeDropDown ul li
+{
+    margin: 5px 0px;
+    clear: none;
+    float: none;
+}
+
+#ShellScopeDropDown .ui-menu-item a
+{
+    line-height: normal;
+    padding: 0px;
+    text-decoration: none;
+    font: bold 11px/15px 'Segoe UI';
+    color: #333132;
+}
+
+#ShellScopeDropDown .ui-menu-item a:hover
+{
+    color: #2b9646;
+}
+
+#ShellScopeDropDown #ui-active-menuitem
+{
+    color: #2b9646;
+    margin: 0;
+}
+
+/***********************************************
+    Breadcrumbs
+************************************************/
+
+div#BodyHeader div#ShellHeaderContent div#ShellBreadcrumbs
+{
+    text-align: left;
+    font-size: 12px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+}
+
+div#BodyHeader div#ShellHeaderContent div#BreadcrumbsPlaceholder
+{
+    margin: 0;
+    padding: 0;
+    height: 15px;
+}
+
+/***********************************************
+    Body
+************************************************/
+
+.bodyWithMetroHero, body.metro
+{
+    background: #FFFFFF url("../images/hero_bg.jpg") repeat-x scroll top center;
+}
+
+div#BodyContent
+{
+    zoom: 1;
+    min-height: 600px;
+}
+
+/***********************************************
+    Footer
+************************************************/
+body div#BodyFooter
+{
+    clear: both;
+    margin-top: 40px;
+    width:100%;
+}
+
+body div#BodyFooter div#ShellFooterContent
+{
+    font-size: 14px;
+    color: #bdbec1;
+    min-height: 140px;
+    text-align:center;
+    background-color:#333333;
+    min-width: 995px;
+}
+
+.ja-JP div#BodyFooter div#ShellFooterContent
+{
+    font-size: 14px;
+    font-family: Meiryo, 'Segoe UI' , Arial, Sans-Serif;
+}
+
+.ko-KR div#BodyFooter div#ShellFooterContent
+{
+    font-size: 14px;
+    font-family: Gulim, 'Segoe UI' , Arial, Sans-Serif;
+}
+
+body div#BodyFooter div#ShellFooterContent a
+{
+    color: #bdbec1;
+    font-weight: normal;
+}
+
+body div#BodyFooter div#ShellFooterContent div.PrimaryContent
+{
+    font-size: 12px;
+    padding: 20px 0 10px 0;
+    overflow: auto;
+    margin:0 auto;
+    width:955px;
+}
+
+body div#BodyFooter div#ShellFooterContent div.PrimaryContent div#ShellFooterNavigation
+{
+    float: left;
+    font-size: 14px;
+    margin-right:14px;
+    margin-top:10px;
+}
+
+body div#BodyFooter div#ShellFooterContent div.PrimaryContent div#ShellRightContentArea
+{
+    width: 237px;
+    float: right;
+    text-align: right;
+}
+
+
+body div#BodyFooter div#ShellFooterContent div.PrimaryContent div#ShellLeftContentArea
+{
+    max-height: 40px;
+    overflow: hidden;
+    float:left;
+    clear:left;
+    margin:0px;
+}
+
+body div#BodyFooter div#ShellFooterContent div.SecondaryContent
+{
+    border-top: 1px solid #bdbec1;
+    font-size: 12px;
+    padding: 10px 0;
+    overflow: auto;
+    width:955px;
+    margin:0 auto;
+    font-size: 12px;
+}
+
+body div#BodyFooter div#ShellFooterContent div.SecondaryContent div#ShellFooterSecondaryNavigation div.FuncLinkArea a
+{
+    font-weight: bold;
+    margin-right: 10px;
+    background: url(../images/glyph-pipe.png) no-repeat center right;
+}
+
+body div#BodyFooter div#ShellFooterContent div.SecondaryContent div#LogoAndCopyright
+{
+    float: right;
+}
+
+body div#BodyFooter div#ShellFooterContent div.SecondaryContent div#LogoAndCopyright div#CopyrightLogo
+{
+    background-image: url(../images/microsoft.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    height: 19px;
+    width: 100px;
+}
+
+body div#BodyFooter div#ShellFooterContent div.SecondaryContent div#LogoAndCopyright div#CopyrightText
+{
+    font-size: 11px;
+    text-align: right;
+}
+
+body div#BodyFooter div#ShellFooterContent div.PrimaryContent div#ShellFooterNavigation a,
+body div#BodyFooter div#ShellFooterContent div.SecondaryContent div#ShellFooterSecondaryNavigation a
+{
+    white-space: nowrap;
+    display: block;
+    float: left;
+    padding-right: 10px;
+    padding-bottom:2px;
+}
+
+body div#BodyFooter div#ShellFooterContent div.PrimaryContent div#ShellFooterNavigation a.spread,
+body div#BodyFooter div#ShellFooterContent div.SecondaryContent div#ShellFooterSecondaryNavigation a.spread
+{
+    background-image: url(../images/glyph-pipe.png);
+    background-position: 0px center;
+    padding-left: 10px;
+    background-repeat: no-repeat;
+}
+
+.ShellFooterSocial
+{
+    margin-top:10px;
+    float: left;
+}
+
+.ShellFooterSocial .spread
+{
+    padding-left: 14px;
+}
+
+.ShellFooterSocial iframe[src*="www.facebook.com/plugins"]
+{
+    padding-left: 0px;
+    width: 90px;
+}
+
+/*fixes for Facebook button lang behavior*/
+.ShellFooterSocial iframe[src*="www.facebook.com/plugins"][data-locale*="hu"],
+.ShellFooterSocial iframe[src*="www.facebook.com/plugins"][data-locale*="fr"],
+.ShellFooterSocial iframe[src*="www.facebook.com/plugins"][data-locale*="nb"],
+.ShellFooterSocial iframe[src*="www.facebook.com/plugins"][data-locale*="he"] 
+{
+    width: 110px;
+}
+
+.ShellFooterSocial iframe[src*="www.facebook.com/plugins"][data-locale*="de"],
+.ShellFooterSocial iframe[src*="www.facebook.com/plugins"][data-locale*="zh"],
+.ShellFooterSocial iframe[src*="www.facebook.com/plugins"][data-locale*="ja"],
+.ShellFooterSocial iframe[src*="www.facebook.com/plugins"][data-locale*="ko"],
+.ShellFooterSocial iframe[src*="www.facebook.com/plugins"][data-locale*="cs"],
+.ShellFooterSocial iframe[src*="www.facebook.com/plugins"][data-locale*="el"],
+.ShellFooterSocial iframe[src*="www.facebook.com/plugins"][data-locale*="it"],
+.ShellFooterSocial iframe[src*="www.facebook.com/plugins"][data-locale*="nl"]
+{
+   width: 135px; 
+}
+
+.ShellFooterSocial iframe[src*="www.facebook.com/plugins"][data-locale*="es"],
+.ShellFooterSocial iframe[src*="www.facebook.com/plugins"][data-locale*="da"],
+.ShellFooterSocial iframe[src*="www.facebook.com/plugins"][data-locale*="ru"],
+.ShellFooterSocial iframe[src*="www.facebook.com/plugins"][data-locale*="pl"],
+.ShellFooterSocial iframe[src*="www.facebook.com/plugins"][data-locale*="sk"],
+.ShellFooterSocial iframe[src*="www.facebook.com/plugins"][data-locale*="pt"],
+.ShellFooterSocial iframe[src*="www.facebook.com/plugins"][data-locale*="fi"]
+{
+    width: 155px; 
+}
+
+#twitterFollow {
+    border: none;
+    overflow: hidden;
+    width: 240px;
+    height: 21px;
+}
+
+/***********************************************
+    Social More link
+************************************************/
+#ShellFooterSocial .FooterSocialMore
+{
+    padding: 0px;
+    vertical-align: top;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 21px;
+}
+
+#ShellFooterSocial .FooterSocialMore:after
+{
+    content: ">";
+    display: inline-block;
+    padding: 0px 8px 0px 5px;
+    vertical-align: top;
+}
+
+/***********************************************
+    Social More dialog
+************************************************/
+div.ui-dialog-socialmore
+{
+    font-family: 'Segoe UI' , Arial, Sans-Serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+div.ui-dialog-socialmore div.ui-dialog-titlebar
+{
+    background-color: #333333;
+    height: 42px;
+    width: 431px;
+    padding: 0px;
+}
+
+div.ui-dialog-socialmore a.ui-dialog-titlebar-close
+{
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    display: block;
+    background: url(../images/xboxcom_icons.png) no-repeat -10px -130px;
+    width: 26px;
+    height: 26px;
+}
+
+div.ui-dialog-socialmore a.ui-dialog-titlebar-close:hover
+{
+    background: url(../images/xboxcom_icons.png) no-repeat -50px -130px;
+}
+
+#FooterSocialMoreDialog
+{
+    display: none;
+    background-color: #fdfdfd;
+    padding: 31px 0px 40px 0px;
+}
+
+#FooterSocialMoreDialog .footerSocialMoreColumn
+{
+    margin-left: 52px;
+    margin-right: 55px;
+}
+
+#FooterSocialMoreDialog ul
+{
+    list-style: none;
+    padding: 0px;
+}
+
+#FooterSocialMoreDialog .footerSocialMoreTitle
+{
+    background: url(../images/socialmoretitle.png) no-repeat;
+    height: 49px;
+    padding: 0px 0px 0px 49px;
+    margin-bottom: 2px;
+    font-size: 18px;
+    line-height: 49px;
+}
+
+.footerSocialMoreRow
+{
+    background: url(../images/socialmoretitle.png) no-repeat 0px -50px;
+    height: 51px;
+    line-height: 50px;
+    position: relative;
+    font-size: 16px;
+    text-align: left;
+    padding: 0px 0px 0px 100px;
+    cursor: pointer;
+}
+
+.footerSocialMoreIcon
+{
+    height: 30px;
+    width: 30px;
+    left: 62px;
+    top: 11px;
+    display: inline-block;
+    position: absolute;
+}
+
+.footerSocialMoreRow .iconFacebook
+{
+    background: url(../images/SocialMoreTitle.png) no-repeat 0px -120px;
+}
+
+.footerSocialMoreRow .iconTwitter
+{
+    background: url(../images/SocialMoreTitle.png) no-repeat -40px -120px;
+}
+
+.footerSocialMoreRow .iconOtherXbox
+{
+    background: url(../images/SocialMoreTitle.png) no-repeat -80px -120px;
+}
+
+.footerSocialMoreRow .iconYoutube
+{
+    background: url(../images/SocialMoreTitle.png) no-repeat -120px -120px;
+}
+
+.footerSocialMoreRow .iconMail
+{
+    background: url(../images/SocialMoreTitle.png) no-repeat -160px -120px;
+}
+
+/***********************************************
+    End of Social More dialog
+************************************************/
+
+.MarketplacePopupPurchase
+{
+    width: 100%;
+    height: 783px; /* 765 (min-height) + 2 border + 2*8: automatic body FF top/bottom margin (IE uses 15) */
+}
+
+.NotFound ul
+{
+    list-style-type: square;
+}
+
+.CustomErrorTitle
+{
+    padding-bottom: 20px;
+    border-bottom: solid 1px #848589;
+    width: 695px;
+}
+
+/***********************************************
+    Video Player Error Screen
+************************************************/
+div#videoPlayerErrorScreen
+{
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    padding: 0px;
+    font-family: Arial,Sans-Serif;
+    color: #FFFFFF;
+    font-size: 16px;
+    display: table;
+}
+
+#videoPlayerErrorScreen .verticalAlign
+{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#videoPlayerErrorScreen .horizontalAlign
+{
+    width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#videoPlayerErrorScreen #videoPlayerErrorScreenTitle
+{
+    font-family: 'Segoe UI' , Arial, Sans-Serif;
+    font-size: 20px;
+    line-height: 20%;
+    margin-top: 8px;
+    text-transform: uppercase;
+}
+
+/***********************************************
+     Music Player
+************************************************/
+.MusicPlay,
+.MusicPlaylist,
+.MusicAlbum
+{
+    display: inline-block;
+    cursor: pointer;
+    border: 0;
+    margin-right: 10px;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    background: url(/Content/Images/ico_inpage_musicplayer_sprite.png) transparent 0px 0px no-repeat;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.MusicPlay:hover,
+.MusicPlay:focus,
+.MusicPlaylist:hover,
+.MusicPlaylist:focus,
+.MusicAlbum:hover,
+.MusicAlbum:focus
+{
+    background-position: -25px 0px;
+}
+
+.MusicPlay.playing
+{
+    background-position: 0px -25px;
+}
+
+.MusicPlay.playing:hover
+{
+    background-position: -25px -25px;
+}
+
+.MusicPlay.HasStreamAndZunePass
+{
+    background-position: 0px -50px;
+}
+
+.MusicPlay.HasStreamAndZunePass:hover
+{
+    background-position: -25px -50px;
+}
+
+.MusicPlay.loading,
+.MusicPlaylist.loading,
+.MusicAlbum.loading,
+.MusicSmartDJ.loading,
+.MusicAdd.loading
+{
+    cursor: default;
+    background: url(/Content/Images/loading_icon_25x25.gif) transparent 0px 0px no-repeat;
+}
+
+.MusicUnavailable
+{
+    display: inline-block;
+    border: 0;
+    margin-right: 10px;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    background: url(/Content/Images/musicplayer_inpage_track_unavailable.png) transparent 0px 0px no-repeat;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.MusicAdd
+{
+    display: inline-block;
+    cursor: pointer;
+    border: 0;
+    margin-right: 10px;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    background: url(/Content/Images/ico_inpage_musicplayer_sprite.png) transparent 0px -75px no-repeat;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.MusicAdd:hover
+{
+    background-position: -25px -75px;
+}
+
+.MusicAdd.playing
+{
+    cursor: default;
+    background: url(/Content/Images/ico_inpage_equalizer_animation.gif) transparent 0px 0px no-repeat;
+}
+
+.MusicButtons,
+.MusicAlbumButtons
+{
+    min-width: 70px;
+}
+
+.MusicSmartDJ
+{
+    display: inline-block;
+    cursor: pointer;
+    border: 0;
+    margin-right: 10px;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    background: url(/Content/Images/ico_inpage_musicplayer_smart_dj.png) transparent 0px 0px no-repeat;
+    overflow: hidden;
+}
+
+.MusicSmartDJ:hover,
+.MusicSmartDJ:focus
+{
+    background-position: -25px 0px;
+}
+
+.MusicPlay.loading:hover,
+.MusicPlaylist.loading:hover,
+.MusicAlbum.loading:hover,
+.MusicSmartDJ.loading:hover,
+.MusicAdd.loading:hover,
+.MusicPlay.loading:focus,
+.MusicPlaylist.loading:focus,
+.MusicAlbum.loading:focus,
+.MusicSmartDJ.loading:focus,
+.MusicAdd.loading:focus
+{
+    cursor: default;
+    background: url(/Content/Images/loading_icon_25x25.gif) transparent 0px 0px no-repeat;
+}
+
+/* AlbumPlay styles are used by the MusicPlayerAlbumComboButtonWithLabels */
+.AlbumPlayOptions,
+.PlaylistPlayOptions
+{
+    font-size: 10px;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.AlbumPlayOptions span.MusicPlayLabel,
+.PlaylistPlayOptions span.MusicPlayLabel
+{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: auto;
+}
+
+.AlbumPlayOptions a.MusicAlbum,
+.AlbumPlayOptions a.MusicAdd,
+.AlbumPlayOptions a.MusicSmartDJ,
+.PlaylistPlayOptions a.MusicPlaylist
+{
+    vertical-align: middle;
+}
+
+#InPageMusicPlayerHost
+{
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    top: 0px;
+    left: 0px;
+}
+
+#InPageMusicPlayerDialog
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    padding: 10px 20px 10px 10px;
+    font-family: 'Segoe UI' , Arial, Sans-Serif;
+    font-size: 10pt;
+    line-height: 20pt;
+    color: white;
+    z-index: 100;
+    max-width: 280px;
+    text-transform: none;
+    font-weight: normal;
+}
+
+#InPageMusicPlayerDialog .CloseButton
+{
+    position: absolute;
+    height: 17px;
+    width: 17px;
+    top: 3px;
+    right: 3px;
+    background: url(/Content/Images/musicplayer_inpage_dialog_close.png) transparent 0px 0px no-repeat;
+    cursor: pointer;
+}
+
+#InPageMusicPlayerDialog .CloseButton:hover
+{
+    background-position: -17px 0px;
+}
+
+#InPageMusicPlayerDialog .NormalLink
+{
+    font-weight: normal;
+}
+
+#InPageMusicPlayerDialog .SmallLink
+{
+    font-weight: normal;
+    font-size: 9pt;
+}
+
+#InPageMusicPlayerDialog .TitleText
+{
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+#InPageMusicPlayerDialog .Button
+{
+    font-size: 8pt;
+    font-weight: bold;
+    background-color: #107c10;
+    padding: 3px 10px;
+    display: inline;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#InPageMusicPlayerDialog .Button:hover
+{
+    background-color: #2CA243;
+}
+
+#InPageMusicPlayerDialog .SilverlightIcon
+{
+    background: url(/Content/Images/musicplayer_inpage_silverlight_logo.png) transparent 0px 0px no-repeat;
+    height: 40px;
+    width: 134px;
+}
+
+#InPageMusicPlayerDialogDownArrow
+{
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    top: 0px;
+    left: 0px;
+    border-top: 10px solid black;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    z-index: 100;
+}
+
+#InPageMusicPlayerDialogRightArrow
+{
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    top: 0px;
+    left: 0px;
+    border-left: 10px solid black;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    z-index: 100;
+}
+
+#InPageMusicPlayerDialogLeftArrow
+{
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    top: 0px;
+    left: 0px;
+    border-right: 10px solid black;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    z-index: 100;
+}
