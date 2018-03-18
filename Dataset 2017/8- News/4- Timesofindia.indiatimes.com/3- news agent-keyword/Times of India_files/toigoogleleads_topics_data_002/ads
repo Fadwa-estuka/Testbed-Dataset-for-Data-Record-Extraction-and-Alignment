@@ -1,0 +1,64 @@
+{
+
+var google_ads = new Array();
+var google_ad;
+var google_radlinks = new Array();
+var google_radlink;
+var google_info = new Object();
+google_ad = {}; 
+google_ad.n = 1; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = ""; 
+google_ad.url = "https://www.googleadservices.com/pagead/aclk?sa=L&amp;ai=CKx95j5qWWPHvMsOEBf6HnfgDso_2kgfasYvVoQKhz7rA6AcQASD5TygCYP2I8YDIA6ABiMze_QPIAQGoAwGqBJoBT9BMyEW3oqMb2fWXhpRVn8hH2yJIX9aS0VhzbmXXSuNl47F_Cam68YwI_VyyCUTHcYOmGyOwyXtAssyuBg-EYvsSCfYLBDv1dmy0c3cmGwq5uP77TNdQ6yjns_z1y_ZXm3PEuIT_ArmWHd5u2oYAa031O3god57Ztffl2oxL-U1byMc-d472csEJ1uSXJO_OgnpYfSdIhRxTFogGAYAH4LOhAqgHpr4b2AcB0ggFCIBhEAHYEww&amp;num=1&amp;cid=CAASEuRofMF3Za5mEzuDouyGDlWVvg&amp;sig=AOD64_2ur6Jd-XRucrpIlXtEU8mYwXVxqQ&amp;client=ca-undefined&amp;adurl=http://governmentjob.ca.myjobhelper.com/signup%3Fprodid%3D41986"; 
+google_ad.visible_url = "governmentjob.ca.myjobhelper.com"; 
+google_ad.p_creative_view_url = "";
+google_ad.p_engaged_view_url = "";
+google_ad.p_videoplaytime_25_url = "";
+google_ad.p_videoplaytime_50_url = "";
+google_ad.p_videoplaytime_75_url = "";
+google_ad.p_videoplaytime_100_url = "";
+google_ad.log_info = "BbaWMj5qWWPHvMsOEBf6HnfgDANqxi9WhAgAAEAE4AcgBAdIIBQiAYRABwhMMGIjM3v0DGKqQlL0D";
+google_ad.activeview_cid = "CAASFeRofMF3Za5mEzuDouyGDlWVvkXY8Q";
+google_ad.activeview_js_immediate_enabled = "true";
+google_ad.activeview_metadata = "la=0&";
+google_ad.line1 = "Government (Hiring)"; 
+google_ad.line2 = "Earn $20-$30 per hour."; 
+google_ad.line3 = "No Experience Required."; 
+google_ad.regionname = ""; 
+google_ads[0] = google_ad; 
+google_ad = {}; 
+google_ad.n = 2; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = ""; 
+google_ad.url = "https://www.googleadservices.com/pagead/aclk?sa=L&amp;ai=CVo29j5qWWPHvMsOEBf6HnfgDs9-a60eG-7_-6QKuAhACIPlPKAJg_YjxgMgDoAGqkJS9A8gBAakC1xQPR-_AqT6oAwGqBJoBT9BM20i3oaMb2fWXhpRVn8hH2yJIX9aS0VhzbmXXSuNl47F_Cam68YwI_VyyCUTHcYOmGyOwyXtAssyuBg-EYvsSCfYLBDv1dmy0c3cmGwq5uP77TNdQ6yjns_z18_VS03M72hyEIrjd55gOwYd5QxnyPXnAdCLZtffV24xP-U1ricc2d462MsUBw-FJvyqNgntBwFRDZRsQKIgGAYAHvu_rQqgHpr4b2AcB0ggFCIBhEAE&amp;num=2&amp;cid=CAASEuRofMF3Za5mEzuDouyGDlWVvg&amp;sig=AOD64_1n4XQxBTBShWmuMHwTk5mML1HGCw&amp;client=ca-undefined&amp;adurl=http://demandforjobs.com/tracker/display.php%3Fc1%3D97080076630%26c2%3D%26c3%3Dtimesofindia.indiatimes.com%26c4%3D%252Fnews%252Flocal%2520news%26c5%3Dd%26lp%3Dhttp://mypowercareer.com"; 
+google_ad.visible_url = "mypowercareer.com"; 
+google_ad.p_creative_view_url = "";
+google_ad.p_engaged_view_url = "";
+google_ad.p_videoplaytime_25_url = "";
+google_ad.p_videoplaytime_50_url = "";
+google_ad.p_videoplaytime_75_url = "";
+google_ad.p_videoplaytime_100_url = "";
+google_ad.log_info = "BbaWMj5qWWPHvMsOEBf6HnfgDANqxi9WhAgAAEAE4AcgBAdIIBQiAYRABwhMMGIjM3v0DGKqQlL0D";
+google_ad.activeview_cid = "CAASFeRofMF3Za5mEzuDouyGDlWVvkXY8Q";
+google_ad.activeview_js_immediate_enabled = "true";
+google_ad.activeview_metadata = "la=0&";
+google_ad.line1 = "($45/hr) Jobs - Hiring"; 
+google_ad.line2 = "Join The Booming Industry"; 
+google_ad.line3 = "No Experience Needed"; 
+google_ad.regionname = ""; 
+google_ads[1] = google_ad; 
+google_info.feedback_url = "https://www.google.com/url?ct\x3dabg\x26q\x3dhttps://www.google.com/adsense/support/bin/request.py%3Fcontact%3Dabg_afc%26url%3Dhttp://timesofindia.indiatimes.com/topic/News-Agent%26gl%3DCA%26hl%3Den%26client%3Dca-undefined%26hideleadgen%3D1%26ai0%3DCKx95j5qWWPHvMsOEBf6HnfgDso_2kgfasYvVoQKhz7rA6AcQASD5TygCYP2I8YDIA6ABiMze_QPIAQGoAwGqBJoBT9BMyEW3oqMb2fWXhpRVn8hH2yJIX9aS0VhzbmXXSuNl47F_Cam68YwI_VyyCUTHcYOmGyOwyXtAssyuBg-EYvsSCfYLBDv1dmy0c3cmGwq5uP77TNdQ6yjns_z1y_ZXm3PEuIT_ArmWHd5u2oYAa031O3god57Ztffl2oxL-U1byMc-d472csEJ1uSXJO_OgnpYfSdIhRxTFogGAYAH4LOhAqgHpr4b2AcB0ggFCIBhEAHYEww%26ai1%3DCVo29j5qWWPHvMsOEBf6HnfgDs9-a60eG-7_-6QKuAhACIPlPKAJg_YjxgMgDoAGqkJS9A8gBAakC1xQPR-_AqT6oAwGqBJoBT9BM20i3oaMb2fWXhpRVn8hH2yJIX9aS0VhzbmXXSuNl47F_Cam68YwI_VyyCUTHcYOmGyOwyXtAssyuBg-EYvsSCfYLBDv1dmy0c3cmGwq5uP77TNdQ6yjns_z18_VS03M72hyEIrjd55gOwYd5QxnyPXnAdCLZtffV24xP-U1ricc2d462MsUBw-FJvyqNgntBwFRDZRsQKIgGAYAHvu_rQqgHpr4b2AcB0ggFCIBhEAE\x26usg\x3dAFQjCNFCxwzOMmxfHlkX9UHYUflc1OF-AQ";
+var google_attribution_text = "AdChoices";
+var google_is_rtl = false;
+if (window.google_ad_request_done) {
+if (window.google_before_ad_request_done) {
+google_before_ad_request_done();
+}
+google_ad_request_done(google_ads);
+}
+if (window.google_radlink_request_done) {
+google_radlink_request_done(google_radlinks);
+}
+}
