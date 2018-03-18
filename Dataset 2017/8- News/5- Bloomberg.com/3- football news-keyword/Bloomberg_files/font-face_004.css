@@ -1,0 +1,77 @@
+
+@font-face {
+    font-family: 'AvenirNext-Demi';
+    
+    src: url('https://assets.bwbx.io/font-service/fonts/AvenirNext-Demi-07326ffcf3.eot');
+    src: local('?'),
+         url('https://assets.bwbx.io/font-service/fonts/AvenirNext-Demi-bb2b2e9964.woff2') format('woff2'),
+         url('https://assets.bwbx.io/font-service/fonts/AvenirNext-Demi-80d6dec71d.woff') format('woff'),
+         url('https://assets.bwbx.io/font-service/fonts/AvenirNext-Demi-896ccbff79.svg') format('svg'),
+         url('https://assets.bwbx.io/font-service/fonts/AvenirNext-Demi-c55bd4ef45.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NHaasGroteskTXPro-55Rg';
+    
+    src: url('https://assets.bwbx.io/font-service/fonts/NHaasGroteskTXPro-55Rg-33be4a64a9.eot');
+    src: local('?'),
+         url('https://assets.bwbx.io/font-service/fonts/NHaasGroteskTXPro-55Rg-657e4b2cd7.woff2') format('woff2'),
+         url('https://assets.bwbx.io/font-service/fonts/NHaasGroteskTXPro-55Rg-339621f4e6.woff') format('woff'),
+         url('https://assets.bwbx.io/font-service/fonts/NHaasGroteskTXPro-55Rg-c744a47189.svg') format('svg'),
+         url('https://assets.bwbx.io/font-service/fonts/NHaasGroteskTXPro-55Rg-555249d5a7.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NHaasGroteskTXPro-56It';
+    
+    src: url('https://assets.bwbx.io/font-service/fonts/NHaasGroteskTXPro-56It-62dd81002a.eot');
+    src: local('?'),
+         url('https://assets.bwbx.io/font-service/fonts/NHaasGroteskTXPro-56It-85572824f7.woff2') format('woff2'),
+         url('https://assets.bwbx.io/font-service/fonts/NHaasGroteskTXPro-56It-c1639c88ca.woff') format('woff'),
+         url('https://assets.bwbx.io/font-service/fonts/NHaasGroteskTXPro-56It-c4edd7f87a.svg') format('svg'),
+         url('https://assets.bwbx.io/font-service/fonts/NHaasGroteskTXPro-56It-7fb1929da3.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NHaasGroteskTXPro-75Bd';
+    
+    src: url('https://assets.bwbx.io/font-service/fonts/NHaasGroteskTXPro-75Bd-b7a726082f.eot');
+    src: local('?'),
+         url('https://assets.bwbx.io/font-service/fonts/NHaasGroteskTXPro-75Bd-01d5424d48.woff2') format('woff2'),
+         url('https://assets.bwbx.io/font-service/fonts/NHaasGroteskTXPro-75Bd-ca3bb2a159.woff') format('woff'),
+         url('https://assets.bwbx.io/font-service/fonts/NHaasGroteskTXPro-75Bd-73114f815b.svg') format('svg'),
+         url('https://assets.bwbx.io/font-service/fonts/NHaasGroteskTXPro-75Bd-f1aaf2410c.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NHaasGroteskDSPro-75Bd';
+    
+    src: url('https://assets.bwbx.io/font-service/fonts/NHaasGroteskDSPro-75Bd-318c53f519.eot');
+    src: local('?'),
+         url('https://assets.bwbx.io/font-service/fonts/NHaasGroteskDSPro-75Bd-0144ea7e8f.woff2') format('woff2'),
+         url('https://assets.bwbx.io/font-service/fonts/NHaasGroteskDSPro-75Bd-a03ae47c23.woff') format('woff'),
+         url('https://assets.bwbx.io/font-service/fonts/NHaasGroteskDSPro-75Bd-6a9967fe0d.svg') format('svg'),
+         url('https://assets.bwbx.io/font-service/fonts/NHaasGroteskDSPro-75Bd-4a63d1980d.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NHaasGroteskDSPro-95Blk';
+    
+    src: url('https://assets.bwbx.io/font-service/fonts/NHaasGroteskDSPro-95Blk-a6735db27c.eot');
+    src: local('?'),
+         url('https://assets.bwbx.io/font-service/fonts/NHaasGroteskDSPro-95Blk-c5938e89c6.woff2') format('woff2'),
+         url('https://assets.bwbx.io/font-service/fonts/NHaasGroteskDSPro-95Blk-8ea906f99d.woff') format('woff'),
+         url('https://assets.bwbx.io/font-service/fonts/NHaasGroteskDSPro-95Blk-3320fa6e3a.svg') format('svg'),
+         url('https://assets.bwbx.io/font-service/fonts/NHaasGroteskDSPro-95Blk-30a98026bd.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Bloomberg';
+    
+    src: url('https://assets.bwbx.io/font-service/fonts/Bloomberg-ecb725f361.eot');
+    src: local('?'),
+         url('https://assets.bwbx.io/font-service/fonts/Bloomberg-813e0de4d7.woff2') format('woff2'),
+         url('https://assets.bwbx.io/font-service/fonts/Bloomberg-a0ee9c9c73.woff') format('woff'),
+         url('https://assets.bwbx.io/font-service/fonts/Bloomberg-c1ffd9b2c9.svg') format('svg'),
+         url('https://assets.bwbx.io/font-service/fonts/Bloomberg-d61748d2e7.ttf') format('truetype');
+}

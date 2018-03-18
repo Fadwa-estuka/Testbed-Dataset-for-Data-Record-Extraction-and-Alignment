@@ -1,0 +1,59 @@
+
+@font-face {
+    font-family: 'AvenirNext-Regular';
+    
+    src: url('https://assets.bwbx.io/font-service/fonts/AvenirNext-Regular-bfcab206b9.eot');
+    src: local('?'),
+         url('https://assets.bwbx.io/font-service/fonts/AvenirNext-Regular-c581cf2eb7.woff2') format('woff2'),
+         url('https://assets.bwbx.io/font-service/fonts/AvenirNext-Regular-bb2c0bebff.woff') format('woff'),
+         url('https://assets.bwbx.io/font-service/fonts/AvenirNext-Regular-ddfabb3b0c.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'TiemposTextWeb-Regular';
+    
+    src: url('https://assets.bwbx.io/font-service/fonts/TiemposTextWeb-Regular-d1a13989fe.eot');
+    src: local('?'),
+         url('https://assets.bwbx.io/font-service/fonts/TiemposTextWeb-Regular-0c712f870b.woff2') format('woff2'),
+         url('https://assets.bwbx.io/font-service/fonts/TiemposTextWeb-Regular-ce6578caa5.woff') format('woff'),
+         url('https://assets.bwbx.io/font-service/fonts/TiemposTextWeb-Regular-564ae670c4.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'TiemposTextWeb-RegularItalic';
+    
+    src: url('https://assets.bwbx.io/font-service/fonts/TiemposTextWeb-RegularItalic-61ef11cb84.eot');
+    src: local('?'),
+         url('https://assets.bwbx.io/font-service/fonts/TiemposTextWeb-RegularItalic-91232ccd19.woff2') format('woff2'),
+         url('https://assets.bwbx.io/font-service/fonts/TiemposTextWeb-RegularItalic-9e71cd6b62.woff') format('woff'),
+         url('https://assets.bwbx.io/font-service/fonts/TiemposTextWeb-RegularItalic-86dd520b81.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'TiemposHeadlineWeb-Bold';
+    
+    src: url('https://assets.bwbx.io/font-service/fonts/TiemposHeadlineWeb-Bold-05b4c6f7da.eot');
+    src: local('?'),
+         url('https://assets.bwbx.io/font-service/fonts/TiemposHeadlineWeb-Bold-785dd86801.woff2') format('woff2'),
+         url('https://assets.bwbx.io/font-service/fonts/TiemposHeadlineWeb-Bold-1ad7e9391b.woff') format('woff'),
+         url('https://assets.bwbx.io/font-service/fonts/TiemposHeadlineWeb-Bold-7789a6022c.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'TiemposTextWeb-Semibold';
+    
+    src: url('https://assets.bwbx.io/font-service/fonts/TiemposTextWeb-Semibold-f61d7b7fe1.eot');
+    src: local('?'),
+         url('https://assets.bwbx.io/font-service/fonts/TiemposTextWeb-Semibold-f58e21b2ec.woff2') format('woff2'),
+         url('https://assets.bwbx.io/font-service/fonts/TiemposTextWeb-Semibold-9d56c0eef1.woff') format('woff'),
+         url('https://assets.bwbx.io/font-service/fonts/TiemposTextWeb-Semibold-4d2044a5b2.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'MetricWeb-Semibold';
+    
+    src: url('https://assets.bwbx.io/font-service/fonts/MetricWeb-Semibold-dbda55f8df.eot');
+    src: local('?'),
+         url('https://assets.bwbx.io/font-service/fonts/MetricWeb-Semibold-000ce010e7.woff2') format('woff2'),
+         url('https://assets.bwbx.io/font-service/fonts/MetricWeb-Semibold-ae1582e9cc.woff') format('woff');
+}
