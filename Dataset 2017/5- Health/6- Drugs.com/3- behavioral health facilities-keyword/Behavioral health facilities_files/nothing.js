@@ -1,0 +1,1 @@
+document.cookie="nothing_cookie=1; path=/";
