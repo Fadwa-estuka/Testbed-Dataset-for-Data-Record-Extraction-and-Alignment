@@ -1,0 +1,2 @@
+var MFP=function(f,c,b){var e={s4:function(){return Math.floor(65536*(1+Math.random())).toString(16).substring(1)},getId:function(){var a=this.s4;return a()+a()+"-"+a()+"-"+a()+"-"+a()+"-"+a()+a()+a()}};b.setTestCookie=function(){var a=c.cookie("mobile_seo_test_guid"),b=window.location.search.match(/force_mobile_optimized/)?!0:!1,d=e.getId();b&&(d="force_mobile_optimized");(c.isEmptyObject(a)||b)&&c.cookie("mobile_seo_test_guid",d,{path:"/",expires:30})};c(document).ready(function(){b.setTestCookie()});
+return b}(window,jQuery,MFP||{});
