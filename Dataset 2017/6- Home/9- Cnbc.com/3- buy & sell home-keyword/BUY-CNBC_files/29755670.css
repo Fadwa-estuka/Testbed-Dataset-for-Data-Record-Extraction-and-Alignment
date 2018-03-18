@@ -1,0 +1,372 @@
+.IBLL_HCF{font-size:16px; line-height:18px; color:#424858; }
+div.IBLL_B ul.ll_bullet li.nobullet a.IBLL_HCF {font-size:16px; line-height: 18px; margin-bottom:8px !important; display:block}
+
+div.MILL_BI a{color:#558300}
+div.MILL_BI a:hover{text-decoration:underline;color:#C34C28}
+div.MILL_BI a:visited{text-decoration:none;color:#558300}
+div.MILL_BI a:visited:hover{text-decoration:underline;color:#C34C28}
+div.MILL_BI{padding:0 5px 5px 5px}
+
+div.MQLL_BI a{color:#2D648A}
+div.MQLL_BI a:hover{text-decoration:underline;color:#C34C28}
+div.MQLL_BI a:visited{text-decoration:none;color:#2D648A}
+div.MQLL_BI a:visited:hover{text-decoration:underline;color:#C34C28}
+div.MQLL_BI{padding:0 15px 5px 15px;width:93% !important}
+
+.MOLL_B a{color:#2D648A !important}
+.MOLL_B a:hover{text-decoration:underline;color:#C34C28 !important}
+.MOLL_B a:visited{text-decoration:none;color:#2D648A !important}
+.MOLL_B a:visited:hover{text-decoration:underline;color:#C34C28 !important}
+.MOLL_BI{font-size:12px;color:#000}
+div.MOLL_BI{margin:0;padding:0 5px 0 5px}
+
+.MCNP_H{border:solid 1px #CCD6DB;border-bottom:none;background-image:url(http://media.cnbc.com/i/CNBC/Sections/Home/__COVER/__COMPONENTS_HP/Images/R9_mc_head_bg.gif);background-repeat:none;height:20px;padding:0 5px 0 5px}
+.MCNP_H a{color:#424858}
+.MCNP_H a:hover{text-decoration:none;color:#C34C28}
+.MCNP_H a:visited{text-decoration:none;color:#424858}
+.MCNP_H a:visited:hover{text-decoration:none;color:#C34C28}
+.MCNP_HI{padding:0}
+.MCNP_HC{font-size:11px;color:#424858;padding:0}
+h1.MCNP_HC{font-size:11px;color:#424858;padding:0}
+h2.MCNP_HC{font-size:11px;color:#424858}
+.MCNP_HCF{font-size:11px;color:#424858;padding:0}
+.MCNP_B{border:solid 1px #CCD6DB;border-top:none}
+.MCNP_BI{padding:10px}
+div.MCNP_BI{margin:0;padding:0}
+
+.w970{width:970px;background-color:#fff}
+.blac{font-family:arial}
+
+.CNBC_boxH{border:solid 1px #CCD6DB;border-bottom:none;background-image:url(http://media.cnbc.com/i/CNBC/Sections/Home/__COVER/__COMPONENTS_HP/Images/R9_mc_head_bg.gif);background-repeat:none;background-repeat:height:20px;padding:0 5px 0 5px}
+.CNBC_boxH a{text-decoration:none;color:#424858}
+.CNBC_boxH a:hover{text-decoration:none;color:#C34C28}
+.CNBC_boxH a:visited{text-decoration:none;color:#424858}
+.CNBC_boxH a:visited:hover{text-decoration:none;color:#C34C28}
+.CNBC_boxHI{padding:0}
+.CNBC_boxHC{font-size:11;color:#424858;padding:0}
+h1.CNBC_boxHC{font-size:11;color:#424858;padding:0}
+h2.CNBC_boxHC{font-weight:bold;font-size:11;color:#424858;padding:0}
+.CNBC_boxHC a{font-size:11px;text-decoration:none;color:#424858}
+.CNBC_boxHC a:hover{font-size:11px;text-decoration:none;color:#C34C28}
+.CNBC_boxHC a:visited{font-size:11px;text-decoration:none;color:#424858}
+.CNBC_boxHC a:visited:hover{font-size:11px;text-decoration:none;color:#C34C28}
+div.CNBC_boxHC table{font-family:Arial,Helvetica,sans-serif;font-size:11px;color:#424858;text-decoration:none}
+
+.CNBC_boxB{border:solid 1px #CCD6DB;border-top:none}
+.CNBC_boxB a{color:#2D648A;text-decoration:none}
+.CNBC_boxB a:hover{color:#C34C28;text-decoration:underline}
+.CNBC_boxB a:visited{color:#2D648A;text-decoration:none}
+.CNBC_boxB a:visited:hover{color:#C34C28;text-decoration:underline}
+.CNBC_boxBI{font-size:11;color:#000000;padding:5px 10px 5px 10px;margin:0}
+div#moreTopStories div.CNBC_box div.CNBC_boxB{padding:10px}
+
+div.PNBLL_BI a{color:#2D648A}
+div.PNBLL_BI a:hover{text-decoration:underline;color:#C34C28}
+div.PNBLL_BI a:visited{text-decoration:none;color:#2D648A}
+div.PNBLL_BI a:visited:hover{text-decoration:underline;color:#C34C28}
+div.PNBLL_BI{padding-top:5px;}
+.PNBLL_B ul.ll_bullet li.nobullet{margin-top:0;margin-bottom:10px;_margin-bottom:5px}
+
+.DLMC_H{height:20px}
+.DLMC_H a{color:#414956}
+.DLMC_H a:hover{text-decoration:none}
+.DLMC_H a:visited{text-decoration:none;color:#414956}
+.DLMC_H a:visited:hover{text-decoration:none}
+.DLMC_HI{padding:0}
+.DLMC_HC{font-size:11px;color:#414956;padding:0}
+h1.DLMC_HC{font-size:11px;color:#414956;padding:0}
+.DLMC_HCF{font-size:24;color:#FFF;padding:0}
+.DLMC_B{}
+div.DLMC_B ul.ll_bullet li.nobullet a.DLMC_HCF{font-size:22px;margin-bottom:10px !important; display:block;}
+.DLMC_B a{color:#2D648A}
+.DLMC_B a:hover{text-decoration:underline !important;color:#C34C28}
+.DLMC_B a:visited{text-decoration:none;color:#2D648A}
+.DLMC_B a:visited:hover{text-decoration:underline !important;color:#C34C28}
+.DLMC_BI{font-size:11px;color:#004276;padding:0}
+div.DLMC_BI{margin:0;padding:0}
+.DLMC_BI a{color:#2D648A !important}
+.DLMC_BI a:hover{text-decoration:none;color:#C34C28 !important}
+.DLMC_BI a:visited{text-decoration:none;color:#2D648A !important}
+.DLMC_BI a:visited:hover{text-decoration:none;color:#C34C28 !important}
+.DLMC_B ul.ll_bullet li.featSecondary{margin-top:0;margin-bottom:5px}
+
+.Dot_CNBC_boxH{border:0;background-image:none;height:20px}
+.Dot_CNBC_boxH a{color:#2D648A}
+.Dot_CNBC_boxH a:hover{text-decoration:none;color:#C34C28}
+.Dot_CNBC_boxH a:visited{text-decoration:none;color:#2D648A}
+.Dot_CNBC_boxH a:visited:hover{text-decoration:none;color:#C34C28}
+.Dot_CNBC_boxHI{padding:0}
+.Dot_CNBC_boxHC{font-size:11;color:#414956;padding:0}
+h1.Dot_CNBC_boxHC{font-size:11;color:#424858;padding:0}
+h2.Dot_CNBC_boxHC{font-weight:bold;font-size:11;color:#424858;padding:0}
+.Dot_CNBC_boxHC a{text-decoration:none;color:#424858}
+.Dot_CNBC_boxHC a:hover{text-decoration:none;color:#C34C28}
+.Dot_CNBC_boxHC a:visited{text-decoration:none;color:#424858}
+.Dot_CNBC_boxHC a:visited:hover{text-decoration:none;color:#C34C28}
+.Dot_CNBC_boxHC div div.padL{padding-left:0}
+.Dot_CNBC_boxHC div div.padR{padding-right:0}
+.Dot_CNBC_boxB{border:0;background-image:none}
+.Dot_CNBC_boxB a{color:#2D648A;text-decoration:none}
+.Dot_CNBC_boxB a:hover{color:#C34C28;text-decoration:underline}
+.Dot_CNBC_boxB a:visited{color:#2D648A;text-decoration:none}
+.Dot_CNBC_boxB a:visited:hover{color:#C34C28;text-decoration:underline}
+.Dot_CNBC_boxBI{font-size:12px;line-height:12px;font-family:Arial,Helvetica,sans-serif;margin:0;padding:0 0 5px 0 !important}
+div#MasConId_ID0EBAAADAAFA26720313{margin-bottom:0 !important}
+
+div.PALL_BI{background:url(http://media.cnbc.com/i/CNBC/Sections/Home/__COVER/__COMPONENTS_HP/Programming_Alert/Program_Alert_Cap.gif);background-position:top left;background-repeat:no-repeat;width:960px;height:38px;padding-left:155px;padding-top:5px;_padding-top:7px;color:#FFF;font-weight:bold;font-size:14px;overflow:hidden;margin-bottom:0;_margin-bottom:5px}
+div.PALL_BI a{color:#FFF;text-decoration:none}
+div.PALL_BI a:hover{color:#FFF}
+div.PALL_B ul.ll_bullet li.featSecondary{margin-top:2px !important;margin-bottom:0 !important}
+div.PALL_B ul.ll_bullet li.featSecondary span.cf12{color:#FFF}
+
+.dotlinespacer{margin-top:15px;margin-bottom:10px}
+div.box div.boxH{background-color:#FFF !important}
+div.boxHC{font-size:12px;font-weight:bold;text-transform:none !important;padding:0 0 5px 0 !important;color:#424858 !important}
+div.boxH div.boxHC div.padL{padding-left:0 !important}
+.boxB{background-color:#FFF !important;border:none !important}
+div.boxBI{margin:0 !important}
+div.boxBI table a{font-size:12px !important;font-weight:bold !important;color:#2D648A !important;text-decoration:none !important}
+div.boxBI table a:hover{color:#C34C28 !important;font-weight:bold !important;text-decoration:underline !important}
+div.boxBI table a:visited{color:#2D648A !important;font-weight:bold !important;text-decoration:none !important}
+div.boxBI table a:visited:hover{color:#C34C28 !important;font-weight:bold !important;text-decoration:underline !important}
+div.boxBI table tbody tr td table tbody tr td table tbody tr td div.clr div.padR div.clr{margin-bottom:10px !important}
+
+.FSMC_H{background:url(http://media.cnbc.com/i/CNBC/Sections/Home/__COVER/__COMPONENTS_HP/Images/R9_mc_head_bg.gif);background-position:bottom left;background-repeat:repeat-x;border:solid 1px #CCD6DB;border-bottom:none;height:20px;padding:0 0 0 5px}
+.FSMC_H a{color:#8c775c}
+.FSMC_H a:hover{text-decoration:underline;color:#8c775c}
+.FSMC_H a:visited{text-decoration:none;color:#8c775c}
+.FSMC_H a:visited:hover{text-decoration:underline;color:#8c775c}
+.FSMC_HI{padding:0}
+.FSMC_HC{font-family:Arial,Helvetica,sans-serif;font-size:11px;color:#424858;padding:0}
+h1.FSMC_HC{font-size:11px;color:#424858;padding:0}
+h2.FSMC_HC{font-size:11px;color:#424858;padding:0;margin-right:10px}
+.FSMC_HC a{font-size:11px;font-weight:normal;text-decoration:none;color:#424858}
+.FSMC_HC a:hover{font-size:11px;font-weight:normal;text-decoration:none;color:#C34C28}
+.FSMC_HC a:visited{font-size:11px;font-weight:normal;text-decoration:none;color:#424858}
+.FSMC_HC a:visited:hover{font-size:11px;font-weight:normal;text-decoration:none;color:#C34C28}
+div.FSMC_HC table{font-family:Arial,Helvetica,sans-serif;font-size:11px;color:#424858;text-decoration:none}
+.FSMC_HCF{font-size:12px;color:#424858;padding:0}
+.FSMC_B{border:solid 1px #CCD6DB;border-top:none;padding:10px 0 15px 0}
+.FSMC_B a{font-size:12px;color:#2D648A}
+.FSMC_B a:hover{font-size:12px;text-decoration:underline;color:#C34C28}
+.FSMC_B a:visited{font-size:12px;text-decoration:none;color:#2D648A}
+.FSMC_B a:visited:hover{font-size:12px;text-decoration:underline;color:#C34C28}
+.FSMC_BI{font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#bebebe;float:left;width:958px;_width:100%}
+div.FSMC_BI{margin:0;padding:10px 0 15px 0;_padding:10px 0 15px 10px}
+div.FSMC_ div.FSMC_B div div.CNBCFlimStrip{margin:0 0 0 10px !important;_margin:0 8px 0 0 !important}
+div.FL_BI ul.FL_ART li.FL_ART_LI{margin-bottom:5px !important}
+
+div.CNBCFlimStrip span.FL_SPAN a{font-size:11px;color:#2D648A;padding-left:2px}
+div.CNBCFlimStrip span.FL_SPAN a:hover{font-size:11px;text-decoration:underline;color:#C34C28;padding-left:2px}
+div.CNBCFlimStrip span.FL_SPAN a:visited{font-size:11px;text-decoration:none;color:#2D648A;padding-left:2px}
+div.CNBCFlimStrip span.FL_SPAN a:visited:hover{font-size:11px;text-decoration:underline;color:#C34C28;padding-left:2px}
+div.CNBCFlimStrip span.cnbc_moreLinks_tab_item {background:transparent url(http://media.cnbc.com/i/CNBC/CNBC_Images/flexi/assets/bullet_grey.gif) no-repeat scroll 0 5px;}
+
+div#CNBCFilmstrip2 .FS2MC_H{background:url(http://media.cnbc.com/i/CNBC/Sections/Home/__COVER/__COMPONENTS_HP/Images/R9_mc_head_bg.gif);background-position:bottom left;background-repeat:repeat-x;border:solid 1px #CCD6DB;border-bottom:none;height:20px;padding:0 0 0 5px}
+div#CNBCFilmstrip2 .FS2MC_H a{color:#8c775c}
+div#CNBCFilmstrip2 .FS2MC_H a:hover{text-decoration:underline;color:#8c775c}
+div#CNBCFilmstrip2 .FS2MC_H a:visited{text-decoration:none;color:#8c775c}
+div#CNBCFilmstrip2 .FS2MC_H a:visited:hover{text-decoration:underline;color:#8c775c}
+div#CNBCFilmstrip2 .FS2MC_HI{padding:0}
+div#CNBCFilmstrip2 .FS2MC_HC{font-family:Arial,Helvetica,sans-serif;font-size:11px;color:#424858;padding:0}
+div#CNBCFilmstrip2 h1.FS2MC_HC{font-size:11px;color:#424858;padding:0}
+div#CNBCFilmstrip2 h2.FS2MC_HC{font-size:11px;color:#424858;padding:0;margin-right:10px}
+div#CNBCFilmstrip2 .FS2MC_HC a{font-size:11px;font-weight:normal;text-decoration:none;color:#424858}
+div#CNBCFilmstrip2 .FS2MC_HC a:hover{font-size:11px;font-weight:normal;text-decoration:none;color:#C34C28}
+div#CNBCFilmstrip2 .FS2MC_HC a:visited{font-size:11px;font-weight:normal;text-decoration:none;color:#424858}
+div#CNBCFilmstrip2 .FS2MC_HC a:visited:hover{font-size:11px;font-weight:normal;text-decoration:none;color:#C34C28}
+div#CNBCFilmstrip2 div.FS2MC_HC table{font-family:Arial,Helvetica,sans-serif;font-size:11px;color:#424858;text-decoration:none}
+div#CNBCFilmstrip2 .FS2MC_HCF{font-size:12px;color:#424858;padding:0}
+div#CNBCFilmstrip2 .FS2MC_B{border:solid 1px #CCD6DB;border-top:none;padding:10px 0 15px 0}
+div#CNBCFilmstrip2 .FS2MC_B a{font-size:14px;color:#2D648A}
+div#CNBCFilmstrip2 .FS2MC_B a:hover{font-size:14px;text-decoration:underline;color:#C34C28}
+div#CNBCFilmstrip2 .FS2MC_B a:visited{font-size:14px;text-decoration:none;color:#2D648A}
+div#CNBCFilmstrip2 .FS2MC_B a:visited:hover{font-size:14px;text-decoration:underline;color:#C34C28}
+div#CNBCFilmstrip2 .FS2MC_BI{font-family:Arial,Helvetica,sans-serif;font-size:11px;color:#000000;float:left;width:958px;_width:100%;}
+div#CNBCFilmstrip2 div.FS2MC_BI{margin:0;padding:10px 0 15px 0;_padding:10px 0 15px 0;}
+div#CNBCFilmstrip2 div.FS2MC_ div.FS2MC_B div div.CNBCFlimStrip{margin:0 0 0 17px !important;_margin:0 7px 0 9px !important}
+div#CNBCFilmstrip2 div.FL_BI ul.FL_ART li.FL_ART_LI{margin-bottom:5px !important}
+div#CNBCFilmstrip2 div.FL_BI ul.FL_TITLE li.FL_TAG_LI span.FL_TITLE_LI {line-height:17px;}
+div#CNBCFilmstrip2 div.FL_BI ul.FL_DESP li{line-height:14px;}
+div#CNBCFilmstrip2 div.CNBCFlimStrip span.FL_SPAN a{font-size:11px;color:#2D648A;padding-left:2px}
+div#CNBCFilmstrip2 div.CNBCFlimStrip span.FL_SPAN a:hover{font-size:11px;text-decoration:underline;color:#C34C28;padding-left:2px}
+div#CNBCFilmstrip2 div.CNBCFlimStrip span.FL_SPAN a:visited{font-size:11px;text-decoration:none;color:#2D648A;padding-left:2px}
+div#CNBCFilmstrip2 div.CNBCFlimStrip span.FL_SPAN a:visited:hover{font-size:11px;text-decoration:underline;color:#C34C28;padding-left:2px}
+div#CNBCFilmstrip2 div.CNBCFlimStrip span.cnbc_moreLinks_tab_item {background:transparent url(http://media.cnbc.com/i/CNBC/CNBC_Images/flexi/assets/bullet_grey.gif) no-repeat scroll 0 5px;}
+div#CNBCFilmstrip2 div.CNBCFlimStrip div.FL_DIV div.FL_BI ul.FL_ART {width:140px;}
+div#CNBCFilmstrip2 div.CNBCFlimStrip div.FL_DIV div.FL_BI ul.FL_TITLE {width:140px; margin-bottom:3px;}
+div#CNBCFilmstrip2 div.CNBCFlimStrip div.FL_DIV div.FL_BI ul.FL_DESP {width:140px;}
+div#CNBCFilmstrip2 div.CNBCFlimStrip div.FL_DIV div.FL_BI ul.FL_TAG {width:140px;}
+
+.NATMC_H{border:0;background-image:none;height:20px}
+.NATMC_H a{color:#2D648A}
+.NATMC_H a:hover{text-decoration:none;color:#C34C28}
+.NATMC_H a:visited{text-decoration:none;color:#2D648A}
+.NATMC_H a:visited:hover{text-decoration:none;color:#C34C28}
+.NATMC_HI{padding:0}
+.NATMC_HC{font-size:11;color:#414956;padding:0}
+h2.NATMC_HC{font-size:11;color:#414956;padding:0}
+.NATMC_HC div div.padL{padding-left:0}
+.NATMC_HC div div.padR{padding-right:0}
+.NATMC_HCF{font-size:24px;line-height:24px;color:#FFF;padding:0}
+.NATMC_B{border:0}
+.NATMC_B a{color:#2D648A;text-decoration:none}
+.NATMC_B a:hover{color:#C34C28;text-decoration:underline}
+.NATMC_B a:visited{color:#2D648A;text-decoration:none}
+.NATMC_B a:visited:hover{color:#C34C28;text-decoration:underline}
+.NATMC_BI{font-size:12px;line-height:12px;font-family:Arial,Helvetica,sans-serif;margin:0;padding:5px 0 10px 0 !important}
+div.NATMC_B ul.ll_bullet li.nobullet table{padding-bottom:10px !important}
+
+li.ll_bullet{background:transparent url(http://media.cnbc.com/i/CNBC/CNBC_Images/flexi/assets/bullet_grey.gif) no-repeat scroll 0 5px;/* width:100%;*/margin-top:0;padding-left:8px;margin-bottom:5px}
+ul.featDefRelated li.ll_bullet{margin-bottom:3px}
+
+div#cnbcMCBody_ID0E4RAE26720313 div.Dot_CNBC_boxB ul.ll_bullet li.featSecondary table tbody tr td a img.Dot_CNBC_boxIMG{margin-bottom:0 !important}
+
+div#NewsAnalysisByTopic h2.CNBC_boxHC{margin-right:10px}
+div#NewsAnalysisByTopic div.CNBC_boxB{float:left !important}
+
+div#NATopicAsSeenOnCNBCTVMC div.NATMC_BI div#cnbcMCBody_ID0EXIBI29388498 div div div div div{padding-top:2px !important;_padding-top:1px !important}
+div#NATopicAsSeenOnCNBCTVMC div.NATMC_BI div#cnbcMCBody_ID0EXIBI29388498 div div div div div.h18{height:20px !important}
+
+div#CNBCPrimetimeMC div.CNBC_boxBI{padding:10px 10px 20px 10px !important;float:left}
+div#CNBCPrimetimeMC div.CNBC_boxHC div.padL{padding-left:0 !important}
+div#CNBCPrimetimeMC div.CNBC_boxB div.boxBI table table table div.cf11 a{font-size:11px !important;font-weight:normal!important;color:#2D648A !important;text-decoration:none !important}
+div#CNBCPrimetimeMC div.CNBC_boxB div.boxBI table table table div.cf11 a:hover{color:#C34C28 !important;font-weight:normal!important;text-decoration:underline !important}
+div#CNBCPrimetimeMC div.CNBC_boxB div.boxBI table table table div.cf11 a:visited{color:#2D648A !important;font-weight:normal !important;text-decoration:none !important}
+div#CNBCPrimetimeMC div.CNBC_boxB div.boxBI table table table div.cf11 a:visited:hover{color:#C34C28 !important;font-weight:normal !important;text-decoration:underline !important}
+
+div#moreTopStoriesMC div.CNBC_boxBI{_width:350px !important;padding:10px 10px 20px 10px !important}
+div#MoreTopNewEditorsMC div.Dot_CNBC_boxB ul.ll_bullet li.nobullet{margin-bottom:10px}
+
+div#marketsMC div.MCNP_B{padding:10px 0 0 0}
+div#marketsMC div#BloggingontheMarketsMC div.Dot_CNBC_boxBI{padding-top:0 !important}
+div#marketsMC div#StatsandToolsMC div.Dot_CNBC_boxBI{padding-top:0 !important}
+div#marketsMC div#CurrenciesMC div.Dot_CNBC_boxHC div.padL{padding-left:10px}
+.bluefont a{color:#2D648A !important;text-decoration:none}
+.bluefont a:hover{color:#C34C28 !important;text-decoration:none}
+.bluefont a:visited{color:#2D648A !important;text-decoration:none}
+.bluefont a:visited:hover{color:#C34C28 !important;text-decoration:none}
+
+div#MasConId_ID0EYIAE19746131 li.ll_bullet{margin-bottom:0 !important}
+div#topNews div.PNBLL_BI {padding-left: 5px !important; padding-right:5px !important;}
+
+div#MasConId_ID0EEEAE23809340 ul.ll_bullet li.featSecondary{margin-bottom:3px !important}
+div#MasConId_ID0EEEAE23809340{margin-top:5px !important}
+div#MrktOverviewMC div div.MCNP_B div div div div div div span div.padB{padding-bottom:0px}
+
+ul.ll_bullet li p.featDefRelated{margin-bottom:5px !important}
+
+div#MasConId_ID0EUQAE29729361 img.Dot_CNBC_boxIMG{padding-bottom:0px !important}
+div#MasConId_ID0EUQAE29729361 img.mB5{margin-bottom:0px !important}
+
+div.BNLL_BI{background:url(http://media.cnbc.com/i/CNBC/Sections/Home/__COVER/__COMPONENTS_HP/BreakingNews/_app/breakingnews_cap2.gif) !important;background-position:top left !important;background-repeat:no-repeat !important;width:960px !important;height:38px !important;padding-left:155px !important;padding-top:5px !important;_padding-top:7px !important;color:#FFF !important;font-weight:bold !important;font-size:14px !important;overflow:hidden !important;margin-bottom:0 !important;_margin-bottom:5px !important}
+div.BNLL_BI a{color:#FFFFF !important;text-decoration:none !important}
+div.BNLL_BI a:hover{color:#FFF !important}
+div.BNLL_B ul.ll_bullet li.featSecondary{margin-top:2px !important;margin-bottom:0 !important}
+div.BNLL_B ul.ll_bullet li.featSecondary span.cf12{color:#FFF !important}
+
+div#marketsMC div.MCNP_B{border-bottom:none !important}
+div#moreTopStoriesMC div.CNBC_boxB{border-bottom:none !important}
+div#CNBCPrimetimeMC div.CNBC_boxBI{}
+div#BreakingNewsPromoMC div.CNBC_boxBI{border-bottom:none !important}
+div#CNBCTVPromoPlayer div.MCNP_B{border-bottom:none !important}
+
+/* US News Front */
+div#USTopNewsAnalysisMC div.PNBLL_BI {padding-left:0; padding-right:0;}
+div#USTopNewsAnalysisMC a.PNBLL_HCF {font-size:22px; margin-bottom:10px; display:block;}
+
+/* Asia News Front */
+div#AsiaTopNewsAnalysisMC div.PNBLL_BI {padding-left:0; padding-right:0;}
+div#AsiaTopNewsAnalysisMC a.PNBLL_HCF {font-size:22px; margin-bottom:10px; display:block;}
+
+/* Europe News Front */
+div#EuropeTopNewsAnalysisMC div.PNBLL_BI {padding-left:0; padding-right:0;}
+div#EuropeTopNewsAnalysisMC a.PNBLL_HCF {font-size:22px; margin-bottom:10px; display:block;}
+
+/* Economy Front */
+div#EconTopNewsAnalysisMC div.PNBLL_BI {padding-left:0; padding-right:0;}
+div#EconTopNewsAnalysisMC a.PNBLL_HCF {font-size:22px; margin-bottom:10px; display:block;}
+
+/* Energy Front */
+div#EnergyTopNewsAnalysisMC div.PNBLL_BI {padding-left:0; padding-right:0;}
+div#EnergyTopNewsAnalysisMC a.PNBLL_HCF {font-size:22px; margin-bottom:10px; display:block;}
+
+/* Green Front */
+div#GreenTopNewsAnalysisMC div.PNBLL_BI {padding-left:0; padding-right:0;}
+div#GreenTopNewsAnalysisMC a.PNBLL_HCF {font-size:22px; margin-bottom:10px; display:block;}
+
+/* Technology Front */
+div#TechTopNewsAnalysisMC div.PNBLL_BI {padding-left:0; padding-right:0;}
+div#TechTopNewsAnalysisMC a.PNBLL_HCF {font-size:22px; margin-bottom:10px; display:block;}
+
+/* Markets Front */
+div#MjrMrktIndexes div.CNBC_boxBI {padding:5px;}
+
+/* CNBC Explains */
+div#ExplainsMC div.NATMC_B div.boxBI table div.cf14 {padding:10px 0 5px 0 !important; _padding:0 0 5px 0 !important;}
+div#ExplainsMC div.NATMC_B div.boxBI table div.cf14 a {font-size:12px !important; font-weight: bold !important;}
+div#ExplainsMC div.NATMC_B div.boxBI table div.clr {line-height:15px !important;}
+div#ExplainsMC div.NATMC_B div.boxBI table a {font-size:11px !important; font-weight: normal !important; line-height:18px !important;}
+
+/* Homepage Refresh 11 Enterprise for nobox and NAT2MC */
+
+.CNBC_noboxH{border:0; background: none; height:20px;padding:0 5px 0 5px}
+.CNBC_noboxH a{text-decoration:none;color:#424858}
+.CNBC_noboxH a:hover{text-decoration:none;color:#C34C28}
+.CNBC_noboxH a:visited{text-decoration:none;color:#424858}
+.CNBC_noboxH a:visited:hover{text-decoration:none;color:#C34C28}
+.CNBC_noboxHI{padding:0}
+.CNBC_noboxHC{font-size:11; line-height: 14; color:#424858;padding:0}
+.CNBC_noboxHC a{font-size:11px; line-height: 14px; text-decoration:none;color:#424858}
+.CNBC_noboxHC a:hover{font-size:11px;text-decoration:none;color:#C34C28}
+.CNBC_noboxHC a:visited{font-size:11px;text-decoration:none;color:#424858}
+.CNBC_noboxHC a:visited:hover{font-size:11px;text-decoration:none;color:#C34C28}
+h1.CNBC_noboxHC{font-size:16; line-height: 20; color:#424858;padding:0}
+h2.CNBC_noboxHC{font-weight:bold;font-size:16; line-height: 20; color:#424858;padding:3px 0px 0px 0px}
+
+h2.CNBC_noboxHC a{font-size:16px; line-height: 20px; text-decoration:none;color:#424858}
+h2.CNBC_noboxHC a:hover{font-size:16px;text-decoration:none;color:#C34C28}
+h2.CNBC_noboxHC a:visited{font-size:16px;text-decoration:none;color:#424858}
+h2.CNBC_noboxHC a:visited:hover{font-size:16px;text-decoration:none;color:#C34C28}
+
+div.CNBC_noboxHC table{font-family:Arial,Helvetica,sans-serif;font-size:11px;color:#424858;text-decoration:none}
+
+.CNBC_noboxB{border:0}
+.CNBC_noboxB a{color:#2D648A;text-decoration:none}
+.CNBC_noboxB a:hover{color:#C34C28;text-decoration:underline}
+.CNBC_noboxB a:visited{color:#2D648A;text-decoration:none}
+.CNBC_noboxB a:visited:hover{color:#C34C28;text-decoration:underline}
+.CNBC_noboxBI{font-size:11;color:#000000;padding:5px 10px 5px 10px;margin:0}
+div#moreTopStories div.CNBC_box div.CNBC_noboxB{padding:10px}
+
+
+.NAT2MC_H{border:0;background-image:none;height:22px}
+.NAT2MC_H a{color:#2D648A}
+.NAT2MC_H a:hover{text-decoration:none;color:#C34C28}
+.NAT2MC_H a:visited{text-decoration:none;color:#2D648A}
+.NAT2MC_H a:visited:hover{text-decoration:none;color:#C34C28}
+.NAT2MC_HI{padding:0}
+.NAT2MC_HC{font-size:11; color:#414956;padding:0}
+h2.NAT2MC_HC{font-size:11; color:#414956;padding:0}
+.NAT2MC_HC div div.padL{padding-left:0}
+.NAT2MC_HC div div.padR{padding-right:0}
+.NAT2MC_HC a{font-size:11px; text-decoration:none; color:#414956}
+.NAT2MC_HC a:hover{font-size:11px; text-decoration:none; color:#C34C28}
+.NAT2MC_HC a:visited{font-size:11px; text-decoration:none; color:#414956}
+.NAT2MC_HC a:visited:hover{font-size:11px; text-decoration:none; color:#C34C28}
+.NAT2MC_HCF{font-size:24px;line-height:24px;color:#FFF;padding:0}
+.NAT2MC_B{border:0}
+.NAT2MC_B a{font-size:14px; line-height:16px; color:#2D648A;text-decoration:none}
+.NAT2MC_B a:hover{font-size:14px; line-height:16px; color:#C34C28;text-decoration:underline}
+.NAT2MC_B a:visited{font-size:14px; line-height:16px; color:#2D648A;text-decoration:none}
+.NAT2MC_B a:visited:hover{font-size:14px; line-height:16px; color:#C34C28;text-decoration:underline}
+.NAT2MC_BI{font-size:12px;line-height:12px;font-family:Arial,Helvetica,sans-serif;margin:0;padding:5px 0 10px 0 !important}
+div.NAT2MC_B ul.ll_bullet li.nobullet table{padding-bottom:10px !important}
+
+div.NAT2MC_B li.ll_bullet{background:none; padding-left:0px; margin-bottom:5px}
+div.NAT2MC_B ul.featDefRelated li.ll_bullet{margin-bottom:3px}
+
+div.NAT2MC_B ul.ll_bullet a.cf11 { font-size: 12px; line-height: 14px; font-weight:bold; color: #2d648a;}
+div.NAT2MC_B ul.ll_bullet a:hover.cf11 {font-size:12px; line-height:14px; color:#C34C28;text-decoration:underline}
+div.NAT2MC_B ul.ll_bullet a:visited.cf11 {font-size:12px; line-height:14px; color:#2D648A;text-decoration:none}
+div.NAT2MC_B ul.ll_bullet a:visited:hover.cf11 {font-size:12px; line-height:14px; color:#C34C28;text-decoration:underline}
