@@ -1,0 +1,64 @@
+{
+
+var google_ads = new Array();
+var google_ad;
+var google_radlinks = new Array();
+var google_radlink;
+var google_info = new Object();
+google_ad = {}; 
+google_ad.n = 1; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = ""; 
+google_ad.url = "https://www.googleadservices.com/pagead/aclk?sa=L&amp;ai=CLzODipSWWMa7O4fFBbPtuKgLvIXFk0iFlvPWxATV06HpARABIO6VpxIoAmD9iPGAyAOgAc-4tswDyAEBqQKG1uhI7_dPPqgDAaoEmwFP0F8kKcjpET5XdnMAaRTJulS5ZQKdetpp5DOEYggKG80Jm8hjaUmHPxWBQwPdpeCgxQ0EFeq19KNNKo_rgLwpxqbUlrDZUUZLiX9pOAHy989UaZVTw-98BCowtUwXZir2C6rpJaJr-PgJAWwS5FINw4j5CPvSktYdoaGCTJLbZ5Ry1-IV4OnK0wZZLjqEbxPK9iPnxoEVeuhpvYgGAYAHmcfJM6gHpr4b2AcB0ggFCIBhEAHYEww&amp;num=1&amp;cid=CAASEuRowj_u5JTlFp6b_KhMPKZGwA&amp;sig=AOD64_0CRnZj4paA3KaueoG_Ydj_7W-b9w&amp;client=ca-toi_site_js&amp;adurl=https://www.smartowner.com/so/ad/bangalore-realestate.htm%3Fs%3Dgo_text%26amp%3Butm_source%3Ddisplaytext%26amp%3Butm_medium%3Dnative%26amp%3Butm_campaign%3Dprk-go"; 
+google_ad.visible_url = "smartowner.com"; 
+google_ad.p_creative_view_url = "";
+google_ad.p_engaged_view_url = "";
+google_ad.p_videoplaytime_25_url = "";
+google_ad.p_videoplaytime_50_url = "";
+google_ad.p_videoplaytime_75_url = "";
+google_ad.p_videoplaytime_100_url = "";
+google_ad.log_info = "BuP0BipSWWMa7O4fFBbPtuKgLAIWW89bEBAAAEAE4AcgBAdIIBQiAYRABwhMeChAYxrCX5QIiCAgDEAEYASAAGM-4tswDGIjM3v0D";
+google_ad.activeview_cid = "CAASFeRowj_u5JTlFp6b_KhMPKZGwPz7QA";
+google_ad.activeview_js_immediate_enabled = "true";
+google_ad.activeview_metadata = "la=0&";
+google_ad.line1 = "Real estate deal for NRIs"; 
+google_ad.line2 = "Lock in 54% profit. Pre-vetted property. Escrow account, safe transactions."; 
+google_ad.line3 = ""; 
+google_ad.regionname = ""; 
+google_ads[0] = google_ad; 
+google_ad = {}; 
+google_ad.n = 2; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = ""; 
+google_ad.url = "https://www.googleadservices.com/pagead/aclk?sa=L&amp;ai=C0pO2ipSWWMa7O4fFBbPtuKgLso_2kgfasYvVoQKhz7rA6AcQAiDulacSKAJg_YjxgMgDoAGIzN79A8gBAagDAaoEnQFP0A8n1MDzKAblxWlvdBDBrEiwagWXd9ImozSObwAfBskBjZUuZUsw5CLfXwPZ7_WgnhAAHfyp_axKIILjz_suzKvcg63dWVAWxHNrelrp6NZeJfd7wuJ2Di07_S88dC59iqlo56GjMvMAqRW1ojJ06_HRE_rJk4Ia6KZ3T5LfkpO31dIUFeo_kAYR2zExbFfKEiWOULabJOwKu-90iAYBgAfgs6ECqAemvhvYBwHSCAUIgGEQAdgTDA&amp;num=2&amp;cid=CAASEuRowj_u5JTlFp6b_KhMPKZGwA&amp;sig=AOD64_2PsV6CoREHREzv12X9mUVrapKLLQ&amp;client=ca-toi_site_js&amp;adurl=http://governmentjob.ca.myjobhelper.com/signup%3Fprodid%3D41986"; 
+google_ad.visible_url = "governmentjob.ca.myjobhelper.com"; 
+google_ad.p_creative_view_url = "";
+google_ad.p_engaged_view_url = "";
+google_ad.p_videoplaytime_25_url = "";
+google_ad.p_videoplaytime_50_url = "";
+google_ad.p_videoplaytime_75_url = "";
+google_ad.p_videoplaytime_100_url = "";
+google_ad.log_info = "BuP0BipSWWMa7O4fFBbPtuKgLAIWW89bEBAAAEAE4AcgBAdIIBQiAYRABwhMeChAYxrCX5QIiCAgDEAEYASAAGM-4tswDGIjM3v0D";
+google_ad.activeview_cid = "CAASFeRowj_u5JTlFp6b_KhMPKZGwPz7QA";
+google_ad.activeview_js_immediate_enabled = "true";
+google_ad.activeview_metadata = "la=0&";
+google_ad.line1 = "Government (Hiring)"; 
+google_ad.line2 = "Earn $20-$30 per hour."; 
+google_ad.line3 = "No Experience Required."; 
+google_ad.regionname = ""; 
+google_ads[1] = google_ad; 
+google_info.feedback_url = "https://www.google.com/url?ct\x3dabg\x26q\x3dhttps://www.google.com/adsense/support/bin/request.py%3Fcontact%3Dabg_afc%26url%3Dhttp://timesofindia.indiatimes.com/topic/Medicine-News%26gl%3DCA%26hl%3Den%26client%3Dca-toi_site_js%26hideleadgen%3D1%26ai0%3DCLzODipSWWMa7O4fFBbPtuKgLvIXFk0iFlvPWxATV06HpARABIO6VpxIoAmD9iPGAyAOgAc-4tswDyAEBqQKG1uhI7_dPPqgDAaoEmwFP0F8kKcjpET5XdnMAaRTJulS5ZQKdetpp5DOEYggKG80Jm8hjaUmHPxWBQwPdpeCgxQ0EFeq19KNNKo_rgLwpxqbUlrDZUUZLiX9pOAHy989UaZVTw-98BCowtUwXZir2C6rpJaJr-PgJAWwS5FINw4j5CPvSktYdoaGCTJLbZ5Ry1-IV4OnK0wZZLjqEbxPK9iPnxoEVeuhpvYgGAYAHmcfJM6gHpr4b2AcB0ggFCIBhEAHYEww%26ai1%3DC0pO2ipSWWMa7O4fFBbPtuKgLso_2kgfasYvVoQKhz7rA6AcQAiDulacSKAJg_YjxgMgDoAGIzN79A8gBAagDAaoEnQFP0A8n1MDzKAblxWlvdBDBrEiwagWXd9ImozSObwAfBskBjZUuZUsw5CLfXwPZ7_WgnhAAHfyp_axKIILjz_suzKvcg63dWVAWxHNrelrp6NZeJfd7wuJ2Di07_S88dC59iqlo56GjMvMAqRW1ojJ06_HRE_rJk4Ia6KZ3T5LfkpO31dIUFeo_kAYR2zExbFfKEiWOULabJOwKu-90iAYBgAfgs6ECqAemvhvYBwHSCAUIgGEQAdgTDA\x26usg\x3dAFQjCNEecHJR5E21hgmKgBJl7l6z64rvaQ";
+var google_attribution_text = "AdChoices";
+var google_is_rtl = false;
+if (window.google_ad_request_done) {
+if (window.google_before_ad_request_done) {
+google_before_ad_request_done();
+}
+google_ad_request_done(google_ads);
+}
+if (window.google_radlink_request_done) {
+google_radlink_request_done(google_radlinks);
+}
+}

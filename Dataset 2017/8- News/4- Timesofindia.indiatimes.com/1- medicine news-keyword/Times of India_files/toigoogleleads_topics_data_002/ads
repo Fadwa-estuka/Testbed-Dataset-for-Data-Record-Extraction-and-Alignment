@@ -1,0 +1,64 @@
+{
+
+var google_ads = new Array();
+var google_ad;
+var google_radlinks = new Array();
+var google_radlink;
+var google_info = new Object();
+google_ad = {}; 
+google_ad.n = 1; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = ""; 
+google_ad.url = "https://www.googleadservices.com/pagead/aclk?sa=L&amp;ai=CdNZSipSWWPG8O8TiBeqtn5APso_2kgfasYvVoQKhz7rA6AcQASD5TygCYP2I8YDIA6ABiMze_QPIAQGoAwGqBJ0BT9CMm8DrvQijg3l5LbUXkky6Jo-WDW00dkCs5YP6FbLh3XHK4nTH-3ufSWj0kthIf_tubGCDzQIQYTReBCKkroca5i4zJN2YpliU8RTc8UrfmJs9G6CH-Os-qbpNfEglZ8GDUvEjJLssN-8OWXjd62axu-LjQ9PurOGGrm4o2OVFLJdctlyikcxtGfjzgrVibbCr4vgxNBPUoTxR7ogGAYAH4LOhAqgHpr4b2AcB0ggFCIBhEAHYEww&amp;num=1&amp;cid=CAASEuRo20BUQD_UaqbZpaBhT9d39g&amp;sig=AOD64_0TT65EaVer52oNJyvNPSBh-32OyA&amp;client=ca-undefined&amp;adurl=http://governmentjob.ca.myjobhelper.com/signup%3Fprodid%3D41986"; 
+google_ad.visible_url = "governmentjob.ca.myjobhelper.com"; 
+google_ad.p_creative_view_url = "";
+google_ad.p_engaged_view_url = "";
+google_ad.p_videoplaytime_25_url = "";
+google_ad.p_videoplaytime_50_url = "";
+google_ad.p_videoplaytime_75_url = "";
+google_ad.p_videoplaytime_100_url = "";
+google_ad.log_info = "Boxe4ipSWWPG8O8TiBeqtn5APANqxi9WhAgAAEAE4AcgBAdIIBQiAYRABwhMMGIjM3v0DGLLrzu8D";
+google_ad.activeview_cid = "CAASFeRo20BUQD_UaqbZpaBhT9d39lNZcA";
+google_ad.activeview_js_immediate_enabled = "true";
+google_ad.activeview_metadata = "ud=1&la=0&";
+google_ad.line1 = "Government (Hiring)"; 
+google_ad.line2 = "Earn $20-$30 per hour."; 
+google_ad.line3 = "No Experience Required."; 
+google_ad.regionname = ""; 
+google_ads[0] = google_ad; 
+google_ad = {}; 
+google_ad.n = 2; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "https://www.googleadservices.com/pagead/aclk?sa=L&amp;ai=CwsO4ipSWWPG8O8TiBeqtn5APkv60-EeukazJkwPAjbcBEAIg-U8oAmD9iPGAyAOgAbLrzu8DyAEBqQLXFA9H78CpPqgDAaoEmgFP0Izx5eu-CKODeXkttReSTLomj5YNbTR2QKzlg_oVsuHdccridMf7e59JaPSS2Eh_-25sYIPNAhBhNF4EIqSuhxrmLjMk3ZimWJTxFNzxSt-Ymz0boIf46z6puk18SCVnwYNS8SMsu7tlILZg1S8ojSNjCAizbQJaXoJbbSwt5nHYlGxCX6Ikz2Ws-7t3siKNsgORSaRoqlRAiAYBgAe2lLEQqAemvhvYBwHSCAUIgGEQAQ&amp;num=2&amp;cid=CAASEuRo20BUQD_UaqbZpaBhT9d39g&amp;sig=AOD64_23nEYf-gv4oPI2pJxYe3xwF9xdrQ&amp;client=ca-undefined&amp;adurl=http://clickserve.dartsearch.net/link/click%3F%26%26ds_e_adid%3D108167732182%26ds_e_matchtype%3Dcontent%26ds_e_device%3Dc%26ds_e_network%3Dd%26%26ds_url_v%3D2%26ds_dest_url%3Dhttp://www.reevescollege.ca/%3Fadkey%3D000508"; 
+google_ad.visible_url = "reevescollege.ca/Legal"; 
+google_ad.p_creative_view_url = "";
+google_ad.p_engaged_view_url = "";
+google_ad.p_videoplaytime_25_url = "";
+google_ad.p_videoplaytime_50_url = "";
+google_ad.p_videoplaytime_75_url = "";
+google_ad.p_videoplaytime_100_url = "";
+google_ad.log_info = "Boxe4ipSWWPG8O8TiBeqtn5APANqxi9WhAgAAEAE4AcgBAdIIBQiAYRABwhMMGIjM3v0DGLLrzu8D";
+google_ad.activeview_cid = "CAASFeRo20BUQD_UaqbZpaBhT9d39lNZcA";
+google_ad.activeview_js_immediate_enabled = "true";
+google_ad.activeview_metadata = "ud=1&la=0&";
+google_ad.line1 = "Legal Assistant Training"; 
+google_ad.line2 = "Earn a Paralegal or Legal Admin"; 
+google_ad.line3 = "Asst Diploma in AB. Get Info Today!"; 
+google_ad.regionname = ""; 
+google_ads[1] = google_ad; 
+google_info.feedback_url = "https://www.google.com/url?ct\x3dabg\x26q\x3dhttps://www.google.com/adsense/support/bin/request.py%3Fcontact%3Dabg_afc%26url%3Dhttp://timesofindia.indiatimes.com/topic/Medicine-News%26gl%3DCA%26hl%3Den%26client%3Dca-undefined%26hideleadgen%3D1%26ai0%3DCdNZSipSWWPG8O8TiBeqtn5APso_2kgfasYvVoQKhz7rA6AcQASD5TygCYP2I8YDIA6ABiMze_QPIAQGoAwGqBJ0BT9CMm8DrvQijg3l5LbUXkky6Jo-WDW00dkCs5YP6FbLh3XHK4nTH-3ufSWj0kthIf_tubGCDzQIQYTReBCKkroca5i4zJN2YpliU8RTc8UrfmJs9G6CH-Os-qbpNfEglZ8GDUvEjJLssN-8OWXjd62axu-LjQ9PurOGGrm4o2OVFLJdctlyikcxtGfjzgrVibbCr4vgxNBPUoTxR7ogGAYAH4LOhAqgHpr4b2AcB0ggFCIBhEAHYEww%26ai1%3DCwsO4ipSWWPG8O8TiBeqtn5APkv60-EeukazJkwPAjbcBEAIg-U8oAmD9iPGAyAOgAbLrzu8DyAEBqQLXFA9H78CpPqgDAaoEmgFP0Izx5eu-CKODeXkttReSTLomj5YNbTR2QKzlg_oVsuHdccridMf7e59JaPSS2Eh_-25sYIPNAhBhNF4EIqSuhxrmLjMk3ZimWJTxFNzxSt-Ymz0boIf46z6puk18SCVnwYNS8SMsu7tlILZg1S8ojSNjCAizbQJaXoJbbSwt5nHYlGxCX6Ikz2Ws-7t3siKNsgORSaRoqlRAiAYBgAe2lLEQqAemvhvYBwHSCAUIgGEQAQ\x26usg\x3dAFQjCNEBOi1kDWyfxiZM8JzCnZ1HvIyjVQ";
+var google_attribution_text = "AdChoices";
+var google_is_rtl = false;
+if (window.google_ad_request_done) {
+if (window.google_before_ad_request_done) {
+google_before_ad_request_done();
+}
+google_ad_request_done(google_ads);
+}
+if (window.google_radlink_request_done) {
+google_radlink_request_done(google_radlinks);
+}
+}

@@ -1,0 +1,1 @@
+crtg_content = ''; (function(){document.cookie = 'crtg_rta=' + escape(crtg_content) + '; path=/; expires=Tue, 07 Mar 2017 02:57:13 GMT; domain=indiatimes.com';})();
