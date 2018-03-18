@@ -1,0 +1,232 @@
+@charset 'UTF-8';
+/*
+ * jQuery File Upload UI Plugin CSS 6.3
+ * https://github.com/blueimp/jQuery-File-Upload
+ *
+ * Copyright 2010, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+
+li.uploadPreview {position:relative;cursor:move;background-color:white;float:left;line-height:normal;overflow:hidden;width: 120px;height: 185px;box-shadow: 0px 0px 10px black;border-radius: 5px;padding: 5px;margin: 10px;}
+li.downloadPreview {position:relative;cursor:move;background-color:white;float:left;line-height:normal;overflow:hidden;width: 120px;height: 120px;box-shadow: 0px 0px 10px black;border-radius: 5px;padding: 5px;margin: 10px;}
+li.uploadPreview div {display: inline-block;}
+li.uploadPreview div.cancel {display: block;position: absolute;right: 4px;bottom: 15px;width: 25px;height: 15px;}
+li.uploadPreview div.cancel button.btn {width:25px;height:25px;}
+li.uploadPreview div.cancel button.btn i {margin-left:-5px;}
+li.uploadPreview canvas {margin: 1px;display: block;}
+li.uploadPreview img  {max-width: 120px;max-height: 120px;margin: 1px auto;display: block;}
+li.uploadPreview div.preview { -webkit-transition: all 300ms ease-in-out; -moz-transition: all 300ms ease-in-out; -o-transition: all 300ms ease-in-out; -ms-transition: all 300ms ease-in-out; display: table-cell; vertical-align: middle; width: 122px; height: 122px;}
+li.uploadPreview div.text {width: 72px;font-size: 10px;overflow: hidden;margin-top: 3px;height: 60px;}
+li.uploadPreview div.text span {display: block;overflow: hidden;width:500px;}
+li.uploadPreview div.progress {margin-top: 5px;}
+
+.previewButtonTray {
+    position: absolute;
+    width: 124px;
+    height: 30px;
+    top: 167px;
+    left: 5px;
+}
+
+.fileinput-button {
+    position: relative;
+    overflow: hidden;
+    float: right;
+    margin-right: 4px;
+}
+.fileinput-button input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    border: solid transparent;
+    border-width: 0 0 100px 200px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -moz-transform: translate(-300px, 0) scale(4);
+    direction: ltr;
+    cursor: pointer;
+}
+.fileupload-buttonbar .btn,
+.fileupload-buttonbar .toggle {
+    margin-bottom: 5px;
+}
+.files .progress {
+    width: 120px;
+    height: 8px;
+    margin-bottom: 0px;
+    vertical-align: middle;
+}
+.progress-animated .bar {
+    background: url(../img/progressbar.gif) !important;
+    filter: none;
+}
+.fileupload-loading {
+    position: absolute;
+    left: 50%;
+    width: 128px;
+    height: 128px;
+    background: url(../img/loading.gif) center no-repeat;
+    display: none;
+}
+.fileupload-processing .fileupload-loading {
+    display: block;
+}
+
+/* Fix for IE 6: */
+*html .fileinput-button {
+    line-height: 22px;
+    margin: 1px -3px 0 0;
+}
+
+/* Fix for IE 7: */
+*+html .fileinput-button {
+    margin: 1px 0 0 0;
+}
+
+@media (max-width: 480px) {
+    .files .btn span {
+        display: none;
+    }
+    .files .preview * {
+        width: 40px;
+    }
+    .files .name * {
+        width: 80px;
+        display: inline-block;
+        word-wrap: break-word;
+    }
+    .files .progress {
+        width: 20px;
+    }
+    .files .delete {
+        width: 60px;
+    }
+}
+
+
+/* Modal Uploader previews */
+div.modal-body ul.files {
+    margin-bottom: 0px;
+    height: 380px;
+}
+div.modal-body li.modalUploadPreview {
+    position: relative;
+    display: block;
+    width: 100%;
+    /*background-color: #EEE;*/
+    margin-right: 5px;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+div.modal-body  div.preview {
+    line-height: 0px;
+    font-size: 76px;
+    vertical-align: middle;
+    position: relative;
+    width: 80px;
+    text-align: center;
+    height: 80px;
+    vertical-align: middle;
+    background-color: whitesmoke;
+    border: 1px solid #CCC;
+    margin-left: 10px;
+
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+}
+div.modal-body div.text {
+    position: relative;
+    left: 0;
+    width: 246px;
+    top: 0px;
+    overflow: visible;
+    margin-top: 10px;
+}
+div.modal-body span.fileName {
+    display: inline-block;
+    font-weight: bold;
+    width: 190px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+div.modal-body span.fileSize {
+    position: relative;
+    display: inline-block;
+    left: 0px;
+    top: 0px;
+    font-size: 10px;
+}
+div.modal-body  div.progress {
+    position: absolute;
+    vertical-align: middle;
+    left: 0px;
+    top: 52px;
+}
+div.modal-body li.modalUploadPreview img {
+    max-height: 80px;
+    max-width: 80px;
+    position: relative;
+    display: inline;
+    vertical-align: middle;
+    text-align: center;
+}
+div.modal-body li.modalUploadPreview span.title {
+    display: inline-block;
+    color: #000000;
+}
+div.modal-footer div.fileupload-progress {
+    width: 220px;
+    position: absolute;
+}
+div.modal-body div.modalPreviewButtonTray {
+    position: absolute;
+}
+div.modal-body div.uploadTable {
+    width: 520px;
+}
+
+div.modal-body div.cancel {
+    position: absolute;
+    right: 10px;
+    top: 31px;
+}
+div.modal-body div.btn_rightRotate {
+    position: absolute;
+    top: 31px;
+    left: 103px;
+    padding: 0px;
+}
+div.modal-body .files .progress {
+    width: 246px;
+}
+div.modal-body li.modalUploadPreview.complete {
+    background-color: rgb(175, 223, 184);
+}
+div.modal-body li.modalUploadPreview.error {
+    background-color: rgb(230, 92, 92);
+}
+div.modal-body li.modalUploadPreview.error div.statusText {
+    color: white;
+}
+div.preview_statsSection {
+    display: block;
+    width: 270px;
+    height: 100%;
+    left: 160px;
+    position: absolute;
+    top: 0px;
+    margin-top: 10px;
+}
+div.preview_statsSection div.statusText {
+    color: #777;
+    font-size: 12px;
+    top: 5px;
+    position: relative;
+}
