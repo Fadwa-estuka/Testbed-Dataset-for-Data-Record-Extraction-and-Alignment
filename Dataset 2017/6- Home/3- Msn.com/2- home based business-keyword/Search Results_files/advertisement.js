@@ -1,0 +1,1 @@
+﻿window.adsEnabled = true;
