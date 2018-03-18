@@ -1,0 +1,2 @@
+function IBPartner(){this.Go='240738';this.Xid='';this.Ida='';this.Pid='216';this.Id1='';}
+(function(){try{var s=window.document.createElement('script');s.setAttribute('type','text/javascript');s.setAttribute('src','//ibeu2.mookie1.com/ibiview.js?go=240738&xid=&pid=216&ida=&id1=');(window.document.getElementsByTagName('body')[0]||window.document.getElementsByTagName('head')[0]).appendChild(s);}catch(e){}})();

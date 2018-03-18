@@ -1,0 +1,27 @@
+<html>
+<head><title>Store Cookieless RTB Data</title></head>
+<body>
+<script type="text/javascript">
+  var BI_LS_KEY = 'OX_BI';
+  try {
+    var browserId = localStorage.getItem(BI_LS_KEY),
+        BI_QS = 'bi',
+        urlPrefix = 'https://us-u.openx.net',
+        path = '/w/1.0/sd',
+        qa = 'id=537073062&val=1994883531801983677&r=https%3A%2F%2Fpixel.rubiconproject.com%2Ftap.php%3Fv%3D13490%26nid%3D2596%26put%3D1994883531801983677%26expires%3D30%26next%3Dhttps%253A%252F%252Fcm.g.doubleclick.net%252Fpixel%253Fgoogle_nid%253Drfi%2526google_cm%253D%2526google_sc%253D%2526google_hm%253DMTk5NDg4MzUzMTgwMTk4MzY3Nw%253D%253D%2526forward%253Dhttps%25253A%25252F%25252Fsimage2.pubmatic.com%25252FAdServer%25252FPug%25253Fvcode%25253Dbz0yJnR5cGU9MSZjb2RlPTI3MzkmdGw9MTU3NjgwMA%25253D%25253D%252526piggybackCookie%25253D1994883531801983677%252526r%25253Dhttps%2525253A%2525252F%2525252Fsecure.adnxs.com%2525252Fpxj%2525253Fbidder%2525253D18%25252526seg%2525253D378601%25252526action%2525253Dsetuids%25252528%252525271994883531801983677%25252527%2525252C%252525271CAESEPyQW9XSbTNxrLt70bs_lrk%25252527%25252529%2525253B%25252526redir%2525253Dhttps%252525253A%252525252F%252525252Fdsum-sec.casalemedia.com%252525252Frum%252525253Fcm_dsp_id%252525253D57%2525252526external_user_id%252525253D1994883531801983677%2525252526forward%252525253D',
+        urlList = [ urlPrefix, path ];
+
+    if ( qa ) {
+      urlList = urlList.concat([ '?', qa ]);
+      if ( browserId ){
+        urlList =  urlList.concat([ '&', BI_QS, '=', browserId ]);
+      }
+      var url = urlList.join('');
+      (new Image()).src = url;
+    }
+  } catch(err) {
+    // fail to trigger cookieless sd request
+  }
+</script>
+</body>
+</html>
