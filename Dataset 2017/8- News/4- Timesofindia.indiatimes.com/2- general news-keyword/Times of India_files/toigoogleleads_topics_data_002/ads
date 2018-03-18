@@ -1,0 +1,64 @@
+{
+
+var google_ads = new Array();
+var google_ad;
+var google_radlinks = new Array();
+var google_radlink;
+var google_info = new Object();
+google_ad = {}; 
+google_ad.n = 1; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "https://www.googleadservices.com/pagead/aclk?sa=L&amp;ai=CToAymZiWWOrKB9n4vAKKzquABp-e88RHn4La9egEwI23ARABIPlPKAJg_YjxgMgDoAHB8ZifA8gBAakC1xQPR-_AqT6oAwGqBJcBT9CloI0o9hmrYBYDh7yUSt38mW4y5DsCg97K_RKPGPoJ9FHOMtenogUX8ikXdvEg1L-B-9rRsr4ER8R5faeUQezKOQzuUuaBp21p8NhqNgmyei_xX-hIPfcNPiSkqZhQnbH7lktctrY3Y7J5iPI5tbvVddLvkZh0P4f8YeLDBdqldfS5VanO276hR84wocoLu4j33n6tIYgGAYAHp47nYKgHpr4b2AcB0ggFCIBhEAHYEww&amp;num=1&amp;cid=CAASEuRoxaQ_Cwzo-W1V-1P7YBtSIA&amp;sig=AOD64_17CjHFbZCpvF-p1GEpZjIGULAW7A&amp;client=ca-undefined&amp;adurl=http://digigasms.com/2014/12/30/how-todays-high-school-student-can-get-their-diploma-online/%3Futm_source%3Dgoogle%26utm_campaign%3DRT-education3%26adgroup%3Dcanada%26utm_term%3D%26utm_content%3Dbaseline%26utm_medium%3Dcontent%26url%3Dhttp://digigasms.com"; 
+google_ad.visible_url = "digigasms.com"; 
+google_ad.p_creative_view_url = "";
+google_ad.p_engaged_view_url = "";
+google_ad.p_videoplaytime_25_url = "";
+google_ad.p_videoplaytime_50_url = "";
+google_ad.p_videoplaytime_75_url = "";
+google_ad.p_videoplaytime_100_url = "";
+google_ad.log_info = "B8-IxmZiWWOrKB9n4vAKKzquABgCfgtr16AQAABABOAHIAQHSCAUIgGEQAcITDBjB8ZifAxjijOP2Aw";
+google_ad.activeview_cid = "CAASFeRoxaQ_Cwzo-W1V-1P7YBtSIIk51A";
+google_ad.activeview_js_immediate_enabled = "true";
+google_ad.activeview_metadata = "la=0&";
+google_ad.line1 = "Free High School Diploma"; 
+google_ad.line2 = "Discover How To Get Your Diploma Today For Free! Sign Up \x26amp; Start The Course."; 
+google_ad.line3 = ""; 
+google_ad.regionname = ""; 
+google_ads[0] = google_ad; 
+google_ad = {}; 
+google_ad.n = 2; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = ""; 
+google_ad.url = "https://www.googleadservices.com/pagead/aclk?sa=L&amp;ai=CVPh0mZiWWOrKB9n4vAKKzquABs_u_MRHiqrJ36IEz4C-6jwQAiD5TygCYP2I8YDIA6AB4ozj9gPIAQGoAwGqBJ8BT9CFhIoo9RmrYBYDh7yUSt38mW4y5DsCg97K_RKPGPoJ9FHOMtenogUX8ikXdvEg1L-B-9rRsr4ER8R5faeUQezKOQzuUuaBp21p8NhqNgmyei_xX-hIPfcNPiSkqZhQnbGzlqFLfyv2ibcgoaTpnPLVdf_AjJiHPW_7KOUGB9qlgPNMFpnHLr0URMpwQcQaJk2WOnnOJnPtvsw1XlipiAYBgAeG85wJqAemvhvYBwHSCAUIgGEQAdgTDA&amp;num=2&amp;cid=CAASEuRoxaQ_Cwzo-W1V-1P7YBtSIA&amp;sig=AOD64_0t7Ryh_9MNQP6bk4t1hxmSussDVQ&amp;client=ca-undefined&amp;adurl=http://www.grammarly.com/%3Fq%3Dgrammar%26utm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3Dsdc%26utm_content%3D155533404645%26utm_term%3D%26matchtype%3D%26placement%3Dtimesofindia.indiatimes.com%26network%3Dd"; 
+google_ad.visible_url = "www.grammarly.com"; 
+google_ad.p_creative_view_url = "";
+google_ad.p_engaged_view_url = "";
+google_ad.p_videoplaytime_25_url = "";
+google_ad.p_videoplaytime_50_url = "";
+google_ad.p_videoplaytime_75_url = "";
+google_ad.p_videoplaytime_100_url = "";
+google_ad.log_info = "B8-IxmZiWWOrKB9n4vAKKzquABgCfgtr16AQAABABOAHIAQHSCAUIgGEQAcITDBjB8ZifAxjijOP2Aw";
+google_ad.activeview_cid = "CAASFeRoxaQ_Cwzo-W1V-1P7YBtSIIk51A";
+google_ad.activeview_js_immediate_enabled = "true";
+google_ad.activeview_metadata = "la=0&";
+google_ad.line1 = "Grammar \x26amp; Spelling Check"; 
+google_ad.line2 = "Correct Grammar Errors and Enhance Your Writing. Try Now!"; 
+google_ad.line3 = ""; 
+google_ad.regionname = ""; 
+google_ads[1] = google_ad; 
+google_info.feedback_url = "https://www.google.com/url?ct\x3dabg\x26q\x3dhttps://www.google.com/adsense/support/bin/request.py%3Fcontact%3Dabg_afc%26url%3Dhttp://timesofindia.indiatimes.com/topic/General-News%26gl%3DCA%26hl%3Den%26client%3Dca-undefined%26hideleadgen%3D1%26ai0%3DCToAymZiWWOrKB9n4vAKKzquABp-e88RHn4La9egEwI23ARABIPlPKAJg_YjxgMgDoAHB8ZifA8gBAakC1xQPR-_AqT6oAwGqBJcBT9CloI0o9hmrYBYDh7yUSt38mW4y5DsCg97K_RKPGPoJ9FHOMtenogUX8ikXdvEg1L-B-9rRsr4ER8R5faeUQezKOQzuUuaBp21p8NhqNgmyei_xX-hIPfcNPiSkqZhQnbH7lktctrY3Y7J5iPI5tbvVddLvkZh0P4f8YeLDBdqldfS5VanO276hR84wocoLu4j33n6tIYgGAYAHp47nYKgHpr4b2AcB0ggFCIBhEAHYEww%26ai1%3DCVPh0mZiWWOrKB9n4vAKKzquABs_u_MRHiqrJ36IEz4C-6jwQAiD5TygCYP2I8YDIA6AB4ozj9gPIAQGoAwGqBJ8BT9CFhIoo9RmrYBYDh7yUSt38mW4y5DsCg97K_RKPGPoJ9FHOMtenogUX8ikXdvEg1L-B-9rRsr4ER8R5faeUQezKOQzuUuaBp21p8NhqNgmyei_xX-hIPfcNPiSkqZhQnbGzlqFLfyv2ibcgoaTpnPLVdf_AjJiHPW_7KOUGB9qlgPNMFpnHLr0URMpwQcQaJk2WOnnOJnPtvsw1XlipiAYBgAeG85wJqAemvhvYBwHSCAUIgGEQAdgTDA\x26usg\x3dAFQjCNFE24zsAxTMJJm9xaBXvG48HpgYag";
+var google_attribution_text = "AdChoices";
+var google_is_rtl = false;
+if (window.google_ad_request_done) {
+if (window.google_before_ad_request_done) {
+google_before_ad_request_done();
+}
+google_ad_request_done(google_ads);
+}
+if (window.google_radlink_request_done) {
+google_radlink_request_done(google_radlinks);
+}
+}

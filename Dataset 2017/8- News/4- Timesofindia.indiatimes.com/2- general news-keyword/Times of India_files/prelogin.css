@@ -1,0 +1,215 @@
+.container_tpwid02 div,
+.container_tpwid02 span,
+.container_tpwid02 applet,
+.container_tpwid02 object,
+.container_tpwid02 iframe,
+.container_tpwid02 h1,
+.container_tpwid02 h2,
+.container_tpwid02 h3,
+.container_tpwid02 h4,
+.container_tpwid02 h5,
+.container_tpwid02 h6,
+.container_tpwid02 p,
+.container_tpwid02 blockquote,
+.container_tpwid02 pre,
+.container_tpwid02 a,
+.container_tpwid02 abbr,
+.container_tpwid02 acronym,
+.container_tpwid02 address,
+.container_tpwid02 big,
+.container_tpwid02 cite,
+.container_tpwid02 code,
+.container_tpwid02 del,
+.container_tpwid02 dfn,
+.container_tpwid02 em,
+.container_tpwid02 img,
+.container_tpwid02 ins,
+.container_tpwid02 kbd,
+.container_tpwid02 q,
+.container_tpwid02 s,
+.container_tpwid02 samp,
+.container_tpwid02 small,
+.container_tpwid02 strike,
+.container_tpwid02 strong,
+.container_tpwid02 sub,
+.container_tpwid02 sup,
+.container_tpwid02 tt,
+.container_tpwid02 var,
+.container_tpwid02 b,
+.container_tpwid02 u,
+.container_tpwid02 i,
+.container_tpwid02 center,
+.container_tpwid02 dl,
+.container_tpwid02 dt,
+.container_tpwid02 dd, .container_tpwid02 ol,
+.container_tpwid02 ul, .container_tpwid02 li,
+.container_tpwid02 fieldset, .container_tpwid02 form, .container_tpwid02 label, .container_tpwid02 legend,
+.container_tpwid02 table, .container_tpwid02 caption, .container_tpwid02 tbody, .container_tpwid02 tfoot, .container_tpwid02 thead, .container_tpwid02 tr, .container_tpwid02 th, .container_tpwid02 td, .container_tpwid02 article, .container_tpwid02 aside, .container_tpwid02 canvas, .container_tpwid02 details, .container_tpwid02 embed, .container_tpwid02 figure, .container_tpwid02 figcaption, .container_tpwid02 footer, .container_tpwid02 header, .container_tpwid02 hgroup,.container_tpwid02  menu, .container_tpwid02 nav, .container_tpwid02 output, .container_tpwid02 ruby, .container_tpwid02 section, .container_tpwid02 summary, .container_tpwid02 time, .container_tpwid02 mark, .container_tpwid02 audio, .container_tpwid02 video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+}
+.container_tpwid02 article, .container_tpwid02 aside, .container_tpwid02 details, .container_tpwid02 figcaption, .container_tpwid02 figure, .container_tpwid02 footer, .container_tpwid02 header, .container_tpwid02 hgroup, .container_tpwid02 menu, .container_tpwid02 nav, .container_tpwid02 section {display: block;}
+.container_tpwid02 body {line-height: 1;}
+.container_tpwid02 ol, .container_tpwid02 ul {list-style: none;}
+.container_tpwid02 blockquote, .container_tpwid02 q {quotes: none;}
+.container_tpwid02 blockquote:before, .container_tpwid02 blockquote:after, .container_tpwid02 q:before, .container_tpwid02 q:after {content: '';content: none;}
+.container_tpwid02 table {border-collapse: collapse;	border-spacing: 0;}
+.container_tpwid02 * {outline:none;}
+.container_tpwid02 strong {font-weight:bold;}
+.container_tpwid02 i, em {font-style:italic;}
+.container_tpwid02 .left {float:left;}
+.container_tpwid02 .right {float:right;}
+.container_tpwid02 .alignleft {text-align:left;}
+.container_tpwid02 .alignright {text-align:right;}
+.container_tpwid02 .aligncenter {text-align:center;}
+.container_tpwid02 .clear {clear:both;line-height:1px;height:1px;}
+.container_tpwid02 input, .container_tpwid02 textarea {font-family:Arial, Helvetica, sans-serif;}
+.container_tpwid02 textarea {overflow:auto;}
+.container_tpwid02 a {color:#3e3e3e;text-decoration:none;}
+.container_tpwid02 a:hover, .container_tpwid02 a.hover {color:#333;}
+.container_tpwid02 address {font-style:normal;}
+.container_tpwid02 img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+}
+.container_tpwid02 p {line-height:20px; padding-bottom:10px;}
+.container_tpwid02 .Source_Sans {font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;}
+.container_tpwid02 .loginbx .loginbell.arrow_up
+.container_tpwid02 .container {width:314px; position:fixed; bottom:120px; left:50%; }
+.container_tpwid02 .loginbx {background:#3f3f3f; position:fixed; bottom:0px; right:200px; height:50px;width:314px; margin-bottom:0px; color:#3e3e3e;z-index: 9999;}
+.container_tpwid02 .loginbx .loginclose {background:#0c10a2; width:27px; height:27px; line-height:27px; position:absolute; right:0; bottom:100%; color:#fff; font-size:12px; font-weight:bold; text-align:center;}
+.container_tpwid02 .loginbx .loginlogo {width:176px; text-align:center; padding-top:18px; float:left;}
+.container_tpwid02 .loginbx .loginlogo a{vertical-align: baseline;}
+.container_tpwid02 .loginbx .logintxt {width:45px; padding:5px; height:38px; float:left;}
+.container_tpwid02 .loginbx .logintxt span {display:block; background:url(../../images/icon_file.png) no-repeat center 4px; padding-top:10px; font-size:14px; color:#df9809; text-align:center; font-weight:700; line-height:22px; padding-bottom:10px;}
+.container_tpwid02 .loginbx .loginbell {width:40px; float:left;height:35px; padding-right:7px; margin:6px 0 6px 5px;}
+.container_tpwid02 .loginbx .loginbell a {background:url(../../images/bell.png) no-repeat center center; display:block; line-height:40px; text-indent:-99999px;}
+.container_tpwid02 .loginbx .loginbell.arrow_up {background:url(../../images/arrow_up.png) no-repeat 42px 16px;}
+.container_tpwid02 .loginbx .loginbell.arrow_down {background:url(../../images/arrow_down.png) no-repeat 42px 20px;}
+.container_tpwid02 .loginbx.open .loginbell a {background:url(../../images/bell_active.png) no-repeat center center;}
+.container_tpwid02 .loginsave .loginsaveclose {position:absolute; right:14px; top:10px; color:#fff; font-size:12px; font-weight:bold;}
+.container_tpwid02 .loginbx.open .loginsave{display:block;}
+.container_tpwid02 .loginsave {text-align:center; color:#fff; background:#19b698; width:295px; border-radius:5px; padding:15px 0 12px 0; position:absolute;box-shadow: 0px 1px 2px rgba(0,0,0,.3); right:12px; bottom:110%; display:none; z-index:9999;}
+.container_tpwid02 .loginsave:after {
+    top: 100%;
+    right: 28px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(25, 182, 152, 0);
+    border-top-color: #19b698;
+    border-width: 18px;
+    margin-left: -18px;
+}
+.container_tpwid02 .loginsave a{color:#fff;}
+.container_tpwid02 .loginsave span {font-size:18px; text-transform:uppercase; display:block;}
+.container_tpwid02 .loginsave .coinbox{display:block; height:70px; width:100px; padding:22px 22px; text-align:center;
+    background:url(../../images/img_coin20.png) no-repeat center center; margin:0px auto;}
+.container_tpwid02 .loginsave .coinbox span{display:block; margin-top:13px; font:2em Tahoma, Geneva, sans-serif; font-weight:700; color:#F4A522; position:relative;font-size: 30px;line-height: 40px}
+.container_tpwid02 .loginsave span.first {padding-top:8px}
+.loginsave p a {text-decoration:underline;}
+.container_tpwid02 .loginsave h6 {font-size:14px; line-height:20px; font-weight:700;text-transform:uppercase;cursor: pointer;}
+#popupBadges li {display:inline-block; padding:14px 12px;}
+#popupBadges li small {display:block;font-size:14px; line-height:20px;}
+.container_tpwid02 .loginsave .btn {background:#ffb300; color:#333; display:block; line-height:62px; position:relative; font-size:20px; text-transform:uppercase; padding:0 23px; margin:0 -23px;}
+.container_tpwid02 .loginsave .btn:after {position:absolute; left:0;border-color:#9c6f04 transparent transparent transparent; border-width:23px 0 23px 23px; border-style:solid; width:0; height:0; content:''; top:100%;}
+.container_tpwid02 .loginsave .btn:before {position:absolute; right:0;border-color: transparent transparent #9c6f04 transparent; border-width:23px 23px 23px 0; border-style:solid; width:0; height:0; content:''; bottom:100%;}
+.container_tpwid02 .loginuser {}
+.container_tpwid02 .loginuser {background:#0c10a2; position:relative; height:33px;width:314px; margin-bottom:50px;}
+.container_tpwid02 .loginuser .imgb,
+.container_tpwid02 .loginuser .imgb img { float:left;}
+.container_tpwid02 .loginuser .imgb span {display:block; font-size:14px; line-height:33px; padding:0 8px; font-weight:700; color:#ffb300;float:left; text-transform:uppercase; }
+.container_tpwid02 .loginuser small {display:block; font-size:12px; line-height:33px; padding:0 10px;  color:#fff;float:left;}
+.container_tpwid02 .loginuser .loginbell {width:33px; float:left;height:33px; padding-right:7px; margin:0 12px 0 0; float:right; padding-right:19px;}
+.container_tpwid02 .loginuser .loginbell a {background:url(../../images/bell.png) no-repeat center center; display:block; height:33px; }
+.container_tpwid02 .loginuser .loginbell a em {background:#e20909; border:solid 2px #fff; border-radius:3000px; color:#fff; text-align:center; font-size:12px; width:17px; height:17px; line-height:17px; display:block; font-style:normal; float:right; margin-top:4px; margin-right:-3px;}
+.container_tpwid02 .loginuser .loginbell.arrow_up {background:url(../../images/arrow_down.png) no-repeat right 14px;}
+.container_tpwid02 .loginuser.hover span{background:#19b698;color:#000}
+.container_tpwid02 .loginuser.hover .loginbell a em {display:none;}
+.container_tpwid02 .loginuser.hover .loginbell.arrow_up {background:url(../../images/arrow_up.png) no-repeat right 14px;}
+.container_tpwid02 .loginuser.hover .loginnav {display:block;}
+.container_tpwid02 .loginuser.open .loginnotif{ display:block;}
+.container_tpwid02 .loginuser.open .loginbell a {background:url(../../images/bell_active.png) no-repeat center center;}
+.container_tpwid02 .loginnav {background:#19b698; position:absolute; left:0; right:0; top:100%; display:none;}
+.container_tpwid02 .loginnav li:first-child {border-top:none;}
+.container_tpwid02 .loginnav li {display:block; font-size:14px; border-top:solid 1px #47c5ad; font-weight:700; text-transform:uppercase;}
+.container_tpwid02 .loginnav li a {padding:10px 16px; line-height:20px; display:block; color:#fff;}
+.container_tpwid02 .loginnav li a em {background:#e20909; border:solid 2px #fff; border-radius:3000px; color:#fff; text-align:center; font-size:12px; width:17px; height:17px; line-height:17px; display:block; font-style:normal; float:right;}
+.container_tpwid02 .loginnotif {background:#f0f0f0; width:300px; border-radius:5px;position:absolute; border:solid 1px #e3e3e3; right:0px; top:40px; display:none;}
+.container_tpwid02 .loginnotif:after {
+    bottom: 100%;
+    right: 36px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(25, 182, 152, 0);
+    border-bottom-color: #19b698;
+    border-width: 10px;
+    margin-left: -10px;
+}
+.container_tpwid02 .loginnotif h2 {background:#19b698; color:#fff; padding:0 12px; line-height:44px;font-weight:700;border-radius:5px 5px 0 0;font-size:18px; margin-bottom:8px;}
+.container_tpwid02 .loginnotif h2 em {float:right; font-style:normal;}
+.container_tpwid02 .loginnotif .btn {background:#19b698; color:#fff;line-height:44px; text-align:center; font-weight:700; display:block; margin-top:20px;border-radius:0 0 5px 5px; font-size:18px;}
+.container_tpwid02 .loginnotif .blue {color:#0070ff;} .container_tpwid02 .loginnotif .red {color:#e50000;}
+.container_tpwid02 .loginnotif .line,
+.container_tpwid02 .loginnotif .summery,
+.container_tpwid02 .loginnotif .inline { padding:8px; background:#fff;}
+.container_tpwid02 .loginnotif .summery {padding-bottom:35px;}
+.container_tpwid02 .loginnotif .inline {border:solid 2px #e6e6e6; margin-left:10px; margin-top:-30px;}
+.container_tpwid02 .loginnotif .line span {font-size:14px; display:block; padding-top:8px;}
+.container_tpwid02 .loginnotif li img {margin-right:10px;}
+.container_tpwid02 .loginnotif .time {font-size:12px; color:#767676;}
+.container_tpwid02 .loginnotif p {font-size:12px; line-height:14px; padding:6px 0;}
+.container_tpwid02 .loginnotif h4 {font-size:14px; line-height:14px; font-weight:700;}
+.container_tpwid02 .loginnotif h5 {font-size:12px; line-height:13px; }
+.container_tpwid02 .loginnotif li {display:block; padding:4px 10px;}
+.container_tpwid02 .loginnotif li small {display:block;font-size:12px; line-height:20px;  }
+.container_tpwid02 .icon_img{background:url(../../images/icon_logo2.png) no-repeat center center; display:block; height:25px; width:42px; margin:0px auto}
+.container_tpwid02 .hinditext{font-family:Arial, Helvetica, sans-serif !important; font-weight:normal !important}
+.container_tpwid02 .hfont32{font-size:32px !important;}
+.container_tpwid02 .hfont23{font-size:22px !important;}
+.container_tpwid02 .hfont22{font-size:22px !important; line-height:30px !important;}
+.container_tpwid02 .hfont16{font-size:16px !important; line-height:22px !important;}
+.notif::after{
+    right:51px !important;
+}
+.ads::after{
+    right:3px !important;
+}
+.adsContainer a{
+    position: absolute;
+    top: 3px;
+}
+.container_tpwid02 .sliderpop2 {position:relative; padding:20px 20px 0 20px; margin:4px 0; min-height:180px;}
+.container_tpwid02 .sliderpop2 li {width:255px !important; float: left;}
+.container_tpwid02 .sliderpop2 .bx-controls-direction a {position:absolute; top:50%; margin-top:-12px;width:13px; height:24px; display:block; line-height:24px;background:url(../../images/sprite_arrow.png) no-repeat;text-indent:-99999px; }
+.container_tpwid02 .sliderpop2 .bx-controls-direction .bx-prev { left:9px; background-position:0 0;}
+.container_tpwid02 .sliderpop2 .bx-controls-direction .bx-next { right:9px; background-position:right 0;}
+.container_tpwid02 .sliderpop2 .bx-controls-direction .bx-prev:hover {background-position:0  -24px;}
+.container_tpwid02 .sliderpop2 .bx-controls-direction .bx-next:hover {background-position:right -24px;}
+.container_tpwid02 .sliderpop2 .bx-pager {display:block;}
+.container_tpwid02 .sliderpop2 .panel {height:140px;}
+.container_tpwid02 .sliderpop2 .bx-viewport{min-height:160px !important}
+.container_tpwid02 .sliderpop2 .bx-pager {text-align: center;font-size: .85em;font-family: Arial;font-weight: bold;color: #75ebd4;padding-top: 0px;}
+.container_tpwid02 .sliderpop2 .bx-pager .bx-pager-item,
+.container_tpwid02 .sliderpop2 .bx-controls-auto .bx-controls-auto-item {display: inline-block; *zoom: 1; *display: inline;}
+.container_tpwid02 .sliderpop2 .bx-pager.bx-default-pager a {background: #666;text-indent: -9999px;display: block;width: 8px;   height: 8px; margin: 0 5px; outline: 0; -moz-border-radius: 5px;-webkit-border-radius: 5px; border-radius: 5px;}
+.container_tpwid02 .sliderpop2 .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.container_tpwid02 .sliderpop2 .bx-wrapper .bx-pager.bx-default-pager a.active {background: #fff;}
+.container_tpwid02 .loginsave .btnC {display:block; padding: 6px 10px;font-size: 14px;line-height: 18px; margin:0 0px; border-top:solid 4px #14927a}
+.container_tpwid02 .loginbx .adsContainer a {background: rgba(0, 0, 0, 0) url("../../images/offer.png") no-repeat scroll center center; display: block;width:45px; height:45px; line-height: 40px; text-indent: -99999px;}
+.container_tpwid02 .loginbx.adsOpen .adsContainer a {background:url(../../images/offer_active.png) no-repeat center center;}
+.container_tpwid02 .loginbx.adsOpen .loginsave{display:block;}
+.container_tpwid02 .loginbx .adsContainer {width:45px; float:left;height:49px; padding-right:7px; margin:0 0 6px 0;}
