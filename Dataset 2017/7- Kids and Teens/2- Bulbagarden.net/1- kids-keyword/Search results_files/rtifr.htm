@@ -1,0 +1,32 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"></head><body leftmargin="0" topmargin="0" style="background-color:transparent; width: 100%; text-align: center;" marginwidth="0" marginheight="0">
+<div><img src="rtifr_data/usersync.gif" width="1" height="1"><img src="rtifr_data/lc.gif" width="1" height="1"><img src="rtifr_data/a.gif" width="1" height="1"><script>
+function processTargusData(json)
+{
+   if (json != null) {
+       if (json.targus != null) {
+            u = "";
+            v = "map";
+            if (json.targus.sk != null && json.targus.sk != "") {
+                u += "/tp=TARG/tpid=" + json.targus.sk;
+            }
+            if (json.targus.age != null && json.targus.age != "") {
+                u += "/genp=" + (new Date().getFullYear() - json.targus.age);
+                v = "5";
+            }
+            if (json.targus.gender != null && json.targus.gender != "") {
+                u += "/genp=gender%20-%20" + json.targus.gender;
+                v = "5";
+            }
+            if (u != "") {
+              var img = new Image();
+              img.src = "http://bcp.crwdcntrl.net/" + v + "/c=368" + u;
+              document.body.appendChild(img);
+            }
+        }
+   }
+}
+</script>
+<script src="rtifr_data/g.json"></script><img src="rtifr_data/p111.gif" class="tbjwqoeliudcwmrncibf" width="1" height="1"><img src="rtifr_data/p.gif" width="1" height="1"><img src="rtifr_data/cms.gif" width="1" height="1"><img src="rtifr_data/a_002.gif" width="1" height="1"><img src="rtifr_data/usc.gif" class="tbjwqoeliudcwmrncibf" width="1" height="1"><img src="rtifr_data/sync.gif" style="display:none" width="1" border="0" height="1"><iframe src="rtifr_data/px.htm" scrolling="no" width="0" height="0" frameborder="0"></iframe></div><img src="rtifr_data/tpid164771002266000748380.gif">
+
+</body></html>
