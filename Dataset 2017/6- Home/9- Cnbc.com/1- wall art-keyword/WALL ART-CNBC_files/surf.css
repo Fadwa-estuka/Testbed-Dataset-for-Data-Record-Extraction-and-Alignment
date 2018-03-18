@@ -1,0 +1,62 @@
+/**
+ * surf.css
+ * Base CSS styling for page modals
+ */
+
+#surf-xdm {
+	z-index: 10001;
+}
+
+.raas-page-cover {
+	background: #222;
+	opacity: 0.7;
+	filter: alpha(opacity = 70);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 10000;
+	-moz-opacity:0.7;
+	display: block;
+}
+	
+	
+	
+.raas-container {
+	display: none;
+	z-index: 10009;
+	position: absolute;
+	margin: 0px auto;
+	left: 25%;
+	top: 0;
+}
+
+
+.raas-container.open {
+	display: block;
+}
+
+	
+	.raas-container iframe {
+		width: 100%;
+		height: 100%;
+	}
+	
+/*
+ * Patch to allow open iframe and have the popup chrome hosted in the site
+ */
+#raas {
+	position: absolute;
+	margin-left: 50%;
+	border: solid 4px #333;
+	background: #fff;
+}
+
+#raas.layout_1 {
+	left: -320px; /* half of the popup window width */
+}
+
+#raas.layout_2 {
+	left: -240px; /* half of the popup window width */
+}
