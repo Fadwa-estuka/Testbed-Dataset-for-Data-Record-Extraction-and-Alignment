@@ -1,0 +1,1 @@
+window.parent.googletag.impl.pubads.setCookieInfo({"_cookies_":[{"_value_":"ID=71a4d1b87e456e44:T=1486246652:S=ALNI_MZJEXchlhXpyYobMFhzGVmewaYZoQ","_expires_":1549318652,"_path_":"/","_domain_":"britannica.com"}]});
