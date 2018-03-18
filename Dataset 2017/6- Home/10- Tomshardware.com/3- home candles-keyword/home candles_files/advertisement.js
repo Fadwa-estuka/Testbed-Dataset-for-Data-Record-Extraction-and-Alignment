@@ -1,0 +1,1 @@
+var a=document.createElement("div");a.id="adblockMarker";a.innerHTML="Advertisement";document.body.appendChild(a);
