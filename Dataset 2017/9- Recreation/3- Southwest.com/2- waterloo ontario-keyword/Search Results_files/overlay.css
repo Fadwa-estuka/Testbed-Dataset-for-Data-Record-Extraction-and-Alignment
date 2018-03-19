@@ -1,0 +1,24 @@
+.overlay{float:left;outline:0;position:absolute;top:0;-webkit-user-select:none;-moz-user-select:-moz-none;-ms-user-select:none;user-select:none;visibility:hidden;z-index:1001}
+.calendar-selector-no-instructions{top:70px}
+.overlay--info{padding:20px}
+.overlay--container{background-color:#FFF;border:1px solid #CCC;border-radius:2px;box-shadow:0 0 5px #8f8f8f;position:absolute}
+.overlay--container .overlay--title{color:#111b40}
+.overlay--content{width:440px}
+.overlay--modal-container{background-color:#FFF;border:1px solid #CCC;border-radius:2px;position:absolute}
+.overlay .overlay--close{background-color:#FFF;border:0;color:#636363;cursor:pointer;font-size:12px;margin:0;padding:0;position:absolute;right:15px;text-align:center;top:15px;z-index:2}
+.ie8 .overlay--close{-ms-filter:inherit}
+.overlay .overlay--close:focus,.overlay .overlay--close:hover{border-color:#111b40;color:#111b40;text-decoration:none}
+@-moz-document url-prefix(){.overlay .overlay--close:focus,.overlay .overlay--close:hover{outline:1px dotted #636363}
+}
+.overlay--close-link{background:#FFF url(../images/close-icon.png) no-repeat;height:24px;position:absolute;right:3px;top:3px;width:24px}
+.overlay--pointer{position:absolute;z-index:102}
+.overlay--pointer-above{border-left:16px solid transparent;border-right:16px solid transparent;border-top:16px solid #CCC;bottom:0}
+.overlay--pointer-below{border-bottom:16px solid #CCC;border-left:16px solid transparent;border-right:16px solid transparent;top:0}
+.overlay--pointer-left{border-bottom:16px solid transparent;border-left:16px solid #CCC;border-top:16px solid transparent;right:0}
+.overlay--pointer-right{border-bottom:16px solid transparent;border-right:16px solid #CCC;border-top:16px solid transparent;left:0}
+.overlay--pointer-inner-above{border-left:16px solid transparent;border-right:16px solid transparent;border-top:16px solid #FFF;bottom:1px;left:-16px;position:absolute}
+.overlay--pointer-inner-below{border-bottom:16px solid #FFF;border-left:16px solid transparent;border-right:16px solid transparent;left:-16px;position:absolute;top:1px}
+.overlay--pointer-inner-left{border-bottom:16px solid transparent;border-left:16px solid #FFF;border-top:16px solid transparent;position:absolute;right:1px;top:-16px}
+.overlay--pointer-inner-right{border-bottom:16px solid transparent;border-right:16px solid #FFF;border-top:16px solid transparent;left:1px;position:absolute;top:-16px}
+.overlay--modal-background{background-color:#000;cursor:pointer;height:100%;left:0;-ms-filter:"alpha(opacity=80)";opacity:.8;position:fixed;top:0;width:100%;z-index:1000}
+.no-touch .overlay--modal-background{cursor:default}

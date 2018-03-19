@@ -1,0 +1,46 @@
+#swa_page_header.swa_page_header{float:left;margin-top:0;width:350px}
+#right_nav{margin-top:12px}
+#swa_page_header .swa-page-title{font-size:18px;letter-spacing:-1px;margin:16px 0}
+#swa_module_searchCustomerService.swa_module_searchCustomerService{background:#feffff;background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZlZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZWVmZjYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);background:-moz-linear-gradient(top,#feffff 0,#eeeff6 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#feffff),color-stop(100%,#eeeff6));background:-webkit-linear-gradient(top,#feffff 0,#eeeff6 100%);background:-o-linear-gradient(top,#feffff 0,#eeeff6 100%);background:-ms-linear-gradient(top,#feffff 0,#eeeff6 100%);background:linear-gradient(to bottom,#feffff 0,#eeeff6 100%);border:1px solid #dcdce1;border-radius:initial;-moz-border-radius:initial;-webkit-border-radius:initial;box-shadow:initial;-moz-box-shadow:initial;-webkit-box-shadow:initial;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FEFFFF',endColorstr='#EEEFF6',GradientType=0);float:left;padding:10px;width:380px}
+.searchCustomerServiceKeywords_container.search-field--wrapper{float:left;margin:5px 0 0;padding:0}
+#searchCustomerService .button{float:left;margin:5px 0 0 15px;width:90px}
+#swa_module_searchCustomerService #searchCustomerServiceKeywords.searchCustomerServiceKeywords{border:1px solid #c8cbdb;color:initial;margin-right:0;margin-top:3px;padding:0;width:256px}
+.swa_layout_main{float:left;margin-top:12px;padding:16px 0 0 12px;width:538px}
+.search_results_policiesFaq_heading{border-bottom:2px solid #ddd;border-top:2px solid #ddd;height:30px;padding:5px 0}
+.search-wide-title{border-top:2px solid #ddd;border-bottom:2px solid #ddd;height:30px;padding:5px 0;width:545px}
+#search_info{border:0;color:#666;float:left;font-size:14px;line-height:16px;margin:7px 0 0;padding:0 0 5px 5px}
+.search-link{display:block;font:bold 13px Arial,Helvetica,sans-serif;padding:12px 0;width:170px}
+.search-link-not-last-separator{background:transparent url(/images/gsa/swa_searchResults_lineDotted.gif) repeat-x scroll center bottom;display:block;font:bold 13px Arial,Helvetica,sans-serif;padding:12px 0;width:170px}
+#page .search_result_links{margin:12px 0 6px}
+#page .search_result_links,#page .search_result_snippet{padding:0}
+.search_results_policiesFaq_content{padding-bottom:20px}
+.search_results_policiesFaq_content ul{list-style:none;margin:0;padding:0 0 0 12px}
+.search_results_policiesFaq_content li{background:url(/assets/images/framework/content/modules/arrow_related_information_link.png) no-repeat right center;display:block;float:left;list-style:none;margin:0;padding:0;width:95%}
+.search_results_policiesFaq_content li a{background:transparent url(/assets/images/giftCards/separators/dotted_grayOverBlue_1_2.gif) repeat-x left top}
+.search_results_policiesFaq_content li:first-child a{background:0}
+.search_result_links a{float:left;font-size:12px;font-weight:bold;margin-bottom:6px;width:538px}
+.search_result_container_links{color:#0e774a;margin:5px 0;padding-bottom:6px}
+p.recommended .search_result_url{color:#333;margin-left:10px}
+.search-result-not-last{border-bottom:1px dotted #ddd}
+.search_result{color:#000;margin-top:5px;padding-bottom:0;padding-top:5px}
+#search_results .search_result_snippet{font-size:11px;font-weight:bold;width:525px}
+#search_results .search_result_related{margin-left:25px}
+.search_navigation{float:right;margin-top:8px}
+.search_navigation ul{list-style:none;padding:0;margin:0}
+.search_navigation li{float:left;padding:0 2px}
+.keymatch_result{width:545px}
+.keymatch_text.search_result{background:transparent none;border:1px solid #ddd;float:left;padding:0;margin:12px 0 0 0;width:545px}
+.title_menu_left{margin:5px 0 0;padding:0 0 5px 5px}
+.title_menu_left_no_results{font:bold 34px/48px Helvetica,Arial,Sans-serif;letter-spacing:-2px;margin:0;padding:0}
+.ad_top_bottom{background-color:#f6f6ff;border:1px solid #d1d9fe;margin:8px 4px;padding:7px 0;text-align:center;width:192px}
+#oopsSuccesses{margin-bottom:0}
+.swa_page_header h1{letter-spacing:normal}
+#wide_title{display:none}
+.ad_skyscraper{background-color:#f6f6ff;border:1px solid #d1d9fe;margin:12px 8px 0;padding:7px 0;text-align:center;width:172px}
+.search_results_searchTitle{color:#666;font-weight:normal}
+.search-info--results-found{font-weight:bold}
+.zero-results--aww-nuts{color:#000;font:bold 22px Helvetica,Arial,Sans-serif;letter-spacing:-1px;margin-top:10px}
+.zero-results--aww-nuts-description{color:#333;font:11px Verdana,Tahoma,sans-serif;margin:6px 0 10px}
+#search_go_button.search_go_button{background-image:initial;float:right;height:auto;width:initial}
+.search_results_policiesFaq_heading_no_results{border:0}
+.swa_clearer{clear:both}

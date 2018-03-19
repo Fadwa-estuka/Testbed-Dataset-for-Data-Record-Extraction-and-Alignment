@@ -1,0 +1,82 @@
+
+.keymatch_text {
+	/*background-color:#ABCDF8;*/
+	/*margin:20px;*/
+	margin-left: 10px;
+	padding:15px 10px 10px 0;
+	background: url(/images/recommended_search_result.png) no-repeat top left;
+	color: black;
+}
+
+#search_info {
+	font-size: 14px;
+	line-height: 16px;
+	margin: 10px 0 10px 0;
+	padding: 0 0 10px 15px;
+	border-bottom: 2px solid #e5e5e5;
+}
+
+.search_show_omitted_results {
+	font-style:italic;
+}
+
+.search_result {
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+	border-top: 1px dotted #e5e5e5;
+	margin-top: 10px;
+	color: black;
+}
+
+blockquote.g .search_result{
+	padding: 0;
+	/*margin: 10px 0 0 10px;*/
+	background: url(/images/related_search_result.png) no-repeat top left;
+	border-top: 1px solid #fea82b;
+}
+
+blockquote.g {
+	margin: 0 0 0 40px;
+}
+
+.synonyms {
+	font-weight: bold;
+}
+
+.search_result_links {
+	font-size: large;
+	display: block;
+}
+
+.search_navigation_current_page {
+	font-weight:bold;
+}
+
+.search_navigation_prev_link, .search_navigation_next_link {
+	font-weight:bold;
+}
+
+.keymatch_link {
+	font-size: large;
+	padding: 0 0 10px 0;
+	display: block;
+}
+#search_main #wide_title{
+	padding: 0;
+}
+.search_result_snippet{
+	margin: 0;
+	padding: 0;
+}
+#search_results .line_number{
+	color: #cccccc;
+	font-size: 25px;
+	line-height: 23px;
+	width: 30px;
+	padding-top: 20px;
+	text-align: right;
+}
+.search_time{
+	display: none;
+}

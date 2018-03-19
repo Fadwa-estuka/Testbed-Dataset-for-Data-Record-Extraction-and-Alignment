@@ -1,0 +1,25 @@
+OX_9106834447({
+  "ads":{
+    "medium":"w",
+    "record_tmpl":"https://ox-d.southwest.com/{medium}/1.0/{rtype}?ts={txn_state}",
+    "oxt": 3.279,
+    "adunits" : [
+      {
+        "auid":"146601",
+        "chain":[
+          {
+            "is_fallback":0,
+            "ad_id":"538425064",
+            "width":"180",
+            "height":"150",
+            "html":"<a href=\"https://creditcards.chase.com/a1/southwest/50KPlus?CELL=6PMR\" target=\"_blank\"  aria-label=\"Earn 50,000 points - Learn More\" aria-describedby=\"a11y-message-header--third-party-site\"><img src=\"https://www.southwest.com/assets/images/ads/chaseEN_50k_180x150_openX.png\" alt=\"Earn 50,000 points - Learn More\" /></a>",
+            "target":"_blank",
+            "ts":"1fHJpZD05OTY1ODg1Ny1iMWU3LTQ4YWMtYTY4OS1iMzFiOTJkMmNjYWR8cnQ9MTQ4ODMyODcxM3xhdWlkPTE0NjYwMXxhdW09RE1JRC5XRUJ8YXVwZj1kaXNwbGF5fHNzaWQ9MTQ4OTV8c2lkPTIxODM2fHB1Yj0yMzMzNHxwYz1VU0R8cmFpZD05M2Q5OTk4YS05NGMxLTQwMjAtODUxNC0wZThhZmY4ZmFlYTh8cnM9MXxhaWQ9NTM4NDI1MDY0fHQ9NHxhcz0xODB4MTUwfGxpZD0xMDEwOTQzfG9pZD0yNzY3MDV8cD03MDAwfHByPTcwMDB8YXRiPTcwMDB8YWR2PTI3NzA1fGFjPVVTRHxwbT1QUklDSU5HLkNQTXxibT1CVVlJTkcuR1VBUkFOVEVFRFNIQVJFT0ZWT0lDRXx1cj1rb29MRm5HdjRu",
+            "type":"html",
+            "ad_url":"<a href=\"https://creditcards.chase.com/a1/southwest/50KPlus?CELL=6PMR\" target=\"_blank\"  aria-label=\"Earn 50,000 points - Learn More\" aria-describedby=\"a11y-message-header--third-party-site\"><img src=\"https://www.southwest.com/assets/images/ads/chaseEN_50k_180x150_openX.png\" alt=\"Earn 50,000 points - Learn More\" /></a>"
+          }
+        ]
+      }
+    ]
+  }
+});
