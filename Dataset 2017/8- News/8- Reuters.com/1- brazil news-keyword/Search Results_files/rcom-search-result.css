@@ -1,0 +1,794 @@
+.search-result .grid4 {
+	margin-left: 32px;
+    width: 300px;
+}
+.search-result .sectionContent a{
+	color: #006e97;
+}
+.search-large-box{
+	margin: 24px 0;
+}
+.search-result h1.search-txt{
+	color: #666666;
+	font-size: 3.2em;
+	font-weight: normal;
+	margin-bottom: 24px;
+}
+.search-result h1.search-txt .search-keyword{
+	font-weight: bold;
+}
+
+.search-tabs{
+    font-size: 1.8em;
+	margin-bottom: 25px;
+}
+.search-tabs li{
+	margin-right: 48px;
+}
+.search-result .search-tabs li a{
+	color: #000;
+	display: inline-block;
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+.search-tabs li.current a,
+.search-tabs li a:hover{
+	border-bottom: 2px solid #ff8000;
+    text-decoration: none;
+}
+
+.search-header-sort {
+	border-bottom: 1px solid #c2c2c2;
+	color: #666666;
+	font-size: 1.2em;
+	padding: 5px 0;
+}
+
+.search-header-sort .search-options {
+    float: right;
+}
+
+.search-sort-option,
+.search-date-range-option {
+	float: left;
+}
+
+.search-sort-option {
+	margin-right: 50px;
+}
+
+.sort-selector,
+.date-range-selector {
+	border: none;
+	cursor: pointer;
+	font-weight: bold;
+	margin-left: 5px;
+}
+
+.search-large-form{
+	margin: 24px 0;
+}
+.search-large-form form{
+	position: relative;
+}
+.search-button{
+	background: url("http://s2.reutersmedia.net/resources_v2/images/rcom-sprite.png") no-repeat scroll -180px -276px;
+	border: none;
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	height: 26px;
+	width: 26px;
+}
+.search-large-form .search-field-input{
+	border: 1px solid #999;
+	border-radius: 4px;
+	box-sizing: border-box;
+	color: #333;
+	font-size: 1.6em;
+	height: 34px;
+	padding: 6px 12px 6px 14px;
+	outline: none;
+	width: 100%;
+}
+
+.search-result-indiv{
+	border-top: 1px solid #ccc;
+	padding: 10px 56px 10px 0;
+	clear: both;
+}
+.search-result-list .module + .search-result-indiv{
+	border-top: none;
+}
+.search-result-media{
+	background-color: #f7f7f7;
+    display: inline-block;
+    margin: 0 7px 0 0;
+    text-align: center;
+    max-width: 116px;
+}
+.search-result-media img{
+	vertical-align: bottom;
+}
+.search-result-content {
+    display: inline-block;
+    vertical-align: top;
+    width: 585px;
+}
+.search-result-media ~ .search-result-content {
+    width: 460px;
+}
+.search-result-content .search-result-title{
+	font-size: 1.4em;
+	font-weight: bold;
+	line-height: 1.428em;
+}
+.search-result-content .search-result-excerpt{
+	color: #666666;
+	font-size: 1.4em;
+	line-height: 20px;
+	margin-bottom: 5px;
+}
+.search-result-content .search-result-timestamp{
+	color: #999999;
+	font-size: 1.2em;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.search-result-more-txt.search-result-no-more {
+	cursor: default;
+	color: #666666;
+	text-transform: uppercase;
+}
+
+.search-result-more-txt,
+.search-result-top {
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	color: #006e97;
+	cursor: pointer;
+	float: left;
+	height: 40px;
+	margin: 32px 0;
+}
+.search-result-more-txt{
+	cursor: pointer;
+	font-weight: 300;
+	font-size: 1.6em;
+	height: 12px;
+	padding: 14px 0;
+	text-align: center;
+	text-transform: uppercase;
+	width: 580px;
+}
+.search-result-top{
+	height: 40px;
+	margin-left: 21px;
+	width: 42px;
+}
+.search-result-top a{
+	background: url("http://s2.reutersmedia.net/resources_v2/images/rcom-sprite.png") no-repeat -144px -503px;
+	display: inline-block;
+	height: 15px;
+	padding: 14px 7px;
+	width: 28px;
+}
+.search-stock, .search-section {
+    border-bottom: 1px solid #ccc;
+    margin: 16px 0 0;
+    padding: 0 0 16px;
+}
+.search-stock-ticker, .search-section{
+	display: inline-block;
+	font-size: 1.8em;
+	width: 100%;
+}
+.search-stock-ticker a, .search-section a{
+	color: #006e97;
+}
+.search-stock-quote{
+	color: #666666;
+	font-size: 1.6em;
+}
+.search-stock-exchange{
+	color: #666666;
+	font-size: 1.6em;
+	margin-top: 5px;
+}
+.search-module-video {
+	border-bottom: 1px solid #ccc;
+	display: inline-block;
+	padding: 10px 0;
+	width: 100%;
+}
+.search-result-indiv + .module{
+	border-top: 1px solid #ccc;
+}
+.search-module-video-more{
+	margin-bottom: 5px;
+	text-align: right;
+}
+.search-module-video-more a{
+	box-sizing: border-box;
+	color: #333;
+	text-transform: uppercase;
+}
+.search-module-video-content{
+	margin-bottom: 6px;
+}
+.search-module-video-item{
+	display: inline-block;
+	cursor: pointer;
+	float: left;
+	margin-left: 10px;
+}
+.search-module-video-item:first-child{
+	margin-left: 0;
+}
+
+/* Picture Search Result */
+
+.picture-results,
+.video-results,
+.video-results-module {
+	margin-top: 20px;
+}
+
+.picture-results-row {
+	padding-bottom: 7px;
+	border-bottom: 1px solid #c1c1c1;
+	margin-bottom: 20px;
+}
+
+.picture-results-row:last-child {
+	border: none;
+	margin-bottom: 0;
+}
+
+.picture-result-image{
+	background: #e7e7e7;
+	height: 104px;
+	line-height: 104px; /* Vertical Align Image */
+	text-align: center;
+	margin-bottom: 5px;
+	width: 145px;
+}
+.picture-result-image img{
+	max-height: 104px;
+	vertical-align: middle;
+}
+
+.picture-result {
+	width: 145px;
+}
+
+.picture-result {
+	position: relative;
+	height: 148px;
+	margin: 0;
+	float: left;
+}
+
+.picture-result:hover {
+	cursor: pointer;
+}
+
+.picture-result + .picture-result {
+	margin-left: 21px;
+}
+
+.picture-result img,
+.picture-result .caption:hover {
+	cursor: pointer;
+}
+
+.picture-result .caption {
+	margin-top: 2px;
+	font-size: 1.2em; /* 12px */
+	line-height: 1.1667; /* 14px */
+	color: #666;
+}
+
+.picture-result .picture-overlay,
+.slideshow-result .slideshow-overlay,
+.video-result .video-thumb-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	width: 145px;
+	height: 104px;
+	background: rgba(0, 0, 0, .25);
+}
+
+.picture-result:hover .picture-overlay,
+.slideshow-picture-result:hover .slideshow-result .slideshow-overlay {
+	display: block;
+}
+
+/* Slide Show Result */
+.slideshow-result {
+	position: relative;
+	display: block;
+}
+
+.slideshow-result-row {
+	margin-bottom: 1px;
+}
+
+.slideshow-result-row:last-child {
+	margin-bottom: 0;
+}
+
+.slideshow-result img {
+	width: 72px;
+	height: 51px;
+	float: left;
+}
+
+.slideshow-result img + img {
+	margin-left: 1px;
+}
+
+.slideshow-result .slideshow-overlay {
+	height: 103px;
+}
+
+.slideshow-result + .caption {
+	margin-top: 4px;
+}
+
+.slideshow-result + .caption a {
+	color: #666;
+}
+
+.slideshow-result + .caption .caption-arrow {
+	position: relative;
+	display: inline-block;
+	top: 2px;
+	margin-left: 2px;
+	font-size: 20px;
+	line-height: .5833;
+}
+
+.slideshow-picture-result:hover .slideshow-result + .caption .caption-arrow {
+	color: #ff8000;
+}
+
+/* Video Search Result */
+
+.video-result {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #c1c1c1;
+	margin: 0 0 20px;
+}
+
+.video-result:last-child {
+	border: none;
+	margin-bottom: 0;
+}
+
+.video-result .thumb,
+.video-result .thumb img,
+.video-result .video-thumb-overlay {
+	display: block;
+	width: 317px;
+	height: 177px;
+}
+.video-result .thumb img{
+	background: #cecece;
+}
+
+.video-result .thumb {
+	position: relative;
+	margin-right: 20px;
+	float: left;
+}
+
+.video-result .video-thumb-overlay {
+	display: none;
+}
+
+.video-result:hover .video-thumb-overlay {
+	display: block;
+}
+
+.video-result .ico-video-lrg {
+	position: absolute;
+	top: 58px;
+	left: 158px;
+	z-index: 2;
+	display: block;
+}
+
+.video-result .description {
+	margin-left: 338px;
+}
+
+.video-result .title {
+	font-weight: normal;
+	font-size: 1.4em; /* 14px */
+	line-height: 1.4286em; /* 20px */
+}
+
+.video-result .title a {
+	color: #006e97;
+}
+
+.video-result .title b,
+.video-result .title strong {
+	font-weight: bold;
+}
+
+.video-result .caption {
+	font-size: 1.2em; /* 12px */
+	line-height: 1.5; /* 18px */
+}
+
+.video-result-meta {
+	line-height: 1.8; /* 18px */
+	color: #666;
+	text-transform: uppercase;
+}
+
+/* Preview Container */
+
+.preview-container {
+	position: relative;
+	height: 450px;
+	padding: 30px 62px 46px;
+	border: 1px solid #c1c1c1;
+	border-top: 2px solid #ff8000;
+	margin: -21px 0 20px;
+}
+
+.search-module-video .preview-container {
+	height: 170px;
+	margin: 7px 0 20px;
+	padding: 40px;
+}
+
+.preview-container .preview {
+	margin: 0;
+}
+.preview-container .preview img{
+	max-height: 400px;
+	width: auto;
+}
+.preview-container .preview.portrait-preview img{
+	max-height: 455px;
+	width: auto;
+}
+
+.preview-container .portrait-preview {
+	position: relative;
+}
+
+.preview-container .thumb,
+.preview-container .thumb img {
+	display: block;
+	width: 520px;
+}
+
+.preview-container .portrait-preview .thumb,
+.preview-container .portrait-preview .thumb img,
+.search-module-video .preview-container .thumb {
+	width: 300px;
+}
+
+.search-module-video .preview-container .thumb,
+.search-module-video .preview-container .thumb img {
+	display: inline-block;
+	vertical-align: top;
+	width: inherit;
+}
+.search-module-video .preview-container a.thumb:hover{
+	position: static;
+	top: auto;
+}
+
+.preview-container .preview-caption {
+	margin: 16px 0;
+	font-size: 1.2em;
+	line-height: 1.5; /* 18px */
+	color: #666;
+}
+
+.preview-container .portrait-preview .preview-caption {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 203px;
+	margin: 0;
+}
+
+.search-module-video .preview-container .preview-content{
+	display: inline-block;
+	margin-left: 20px;
+	width: 240px;
+}
+
+.search-module-video .preview-container .preview-content h3.preview-title{
+	font-size: 1.4em;
+	font-weight: normal;
+	margin-bottom: 5px;
+}
+
+.search-module-video .preview-container .preview-content p{
+	color: #666666;
+	font-size: 1.2em;
+	font-weight: normal;
+	margin-bottom: 5px;
+}
+
+.search-module-video .preview-container .preview-content h5.preview-date{
+	color: #999;
+	font-size: 1.2em;
+	font-weight: normal;
+	margin-bottom: 5px;
+}
+.preview-picture-full{
+	margin: 5px 0 0 0;
+	font-size: 1.2em;
+	line-height: 1.4em;
+}
+.preview-container .portrait-preview .preview-picture-full{
+	bottom: 0;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    width: 203px;
+}
+
+.preview-container-close {
+	position: absolute;
+	top: -1px;
+	right: -1px;
+	padding: 5px 8px;
+	border: 1px solid #c1c1c1;
+	border-top: none;
+	border-right: none;
+	font-size: 1.3em;
+	cursor: pointer;
+}
+
+.preview-container-arrow {
+	display: none;
+	position: absolute;
+	bottom: -7px;
+	left: 50%;
+	z-index: 1;
+	border-top: 0;
+	border-bottom: 0;
+	background: #fff;
+}
+
+.active-result .preview-container-arrow {
+	display: block;
+}
+
+.preview-container-arrow:after,
+.preview-container-arrow:before {
+	content: " ";
+	position: absolute;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: solid transparent;
+	pointer-events: none;
+}
+
+.preview-container-arrow:after {
+	border-top-color: #fff;
+	border-width: 8px;
+	margin-left: -8px;
+}
+
+.preview-container-arrow:before {
+	border-top-color: #ff8000;
+	border-width: 11px;
+	margin-left: -11px;
+}
+
+/* Video Module Search Result */
+.video-results-module {
+	background: #cecece;
+	position: relative;
+	margin: 0;
+	float: left;
+	height: 65px;
+	width: 116px;
+	overflow: hidden;
+}
+.video-results-module:hover{
+	cursor: pointer;
+}
+.video-results-module + .video-results-module {
+	margin-left: 16px;
+}
+
+/* Video Overlay */
+.video-results-module.active-result .overlay-container{
+	background: rgba(0, 0, 0, 0.25);
+	height: 65px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.ico-video-sm {
+	background: url("http://s3.reutersmedia.net/resources_v2/images/ico-player-sm.png") no-repeat;
+	display: inline-block;
+	height: 45px;
+	width: 45px;
+}
+.video-results-module .ico-video-sm {
+	position: absolute;
+	top: 12px;
+	left: 35px;
+	opacity: .90;
+}
+.video-results-module.active-result .ico-video-sm {
+	opacity: 1;
+}
+.ico-video-lrg {
+	background: url("http://s2.reutersmedia.net/resources_v2/images/ico-player-lrg.png") no-repeat;
+	display: inline-block;
+    height: 61px;
+    width: 61px;
+}
+.search-module-video .preview .ico-video-lrg {
+	position: absolute;
+	top: 95px;
+	left: 160px;
+}
+.video-results .ico-video-lrg {
+	position: absolute;
+	top: 60px;
+	left: 130px;
+}
+
+/* Search Table Data */
+.search-companies-count{
+	color: #666666;
+	font-size: 1.2em;
+	margin: 0 0 8px 0;
+}
+
+.search-table-data {
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	color: #333;
+	cursor: pointer;
+	font-size: 1.2em;
+	margin-bottom: 32px;
+	text-transform: uppercase;
+	text-align: left;
+}
+.search-table-data th{
+	cursor: default;
+	text-align: left;
+	text-transform: none;
+}
+.search-table-data th,
+.search-table-data td{
+	padding: 12px;
+}
+.search-table-data th,
+.search-table-data td{
+    border-top: 1px solid #ccc;
+}
+.search-table-data tr:hover td{
+	background: #bfbfbf;
+}
+.search-table-data th:first-child{
+	width: 250px;
+}
+
+.search-video-preview{
+	border: 1px solid #c1c1c1;
+	display: none;
+	padding: 40px;
+	position: relative;
+}
+.search-video-preview-image{
+	display: inline-block;
+}
+.search-video-preview-content{
+	margin: 0 0 0 20px;
+	width: 218px;
+}
+.search-video-preview-image,
+.search-video-preview-content{
+	float: left;
+}
+.search-video-preview-title{
+	color: #006e97;
+	font-size: 1.4em;
+	margin-bottom: 8px;
+}
+.search-video-preview-txt,
+.search-video-preview-timestamp{
+	font-size: 1.2em;
+	margin-bottom: 5px;
+}
+.search-video-preview-timestamp{
+	color: #999;
+}
+.search-video-preview-close{
+	border: 1px solid #c1c1c1;
+	display: inline-block;
+	font-size: 1.3em;
+	padding: 5px;
+	position: absolute;
+	top: -1px;
+	right: -1px;
+	cursor: pointer;
+}
+
+.no-result{
+	margin: 20px 0;
+}
+.no-result h2{
+	color: #666666;
+	font-size: 2.8em;
+	font-weight: normal;
+	margin: 0 0 20px 0;
+}
+.no-result h4,
+.no-result li{
+	font-size: 1.4em;
+}
+.no-result h4{
+	border-bottom: 1px solid #666666;
+	color: #666666;
+	padding: 0 0 10px;
+	margin: 0 0 10px;
+}
+.no-result ul{
+	margin: 0;
+	padding: 0;
+}
+.no-result li{
+	color: #666666;
+	list-style: none;
+	line-height: 1.3em;
+}
+
+/* Arrows */
+.search-arrow-left,
+.search-arrow-right{
+	background: url("http://s2.reutersmedia.net/resources_v2/images/rcom-sprite.png") no-repeat;
+	cursor: pointer;
+	display: inline-block;
+	padding: 15px;
+	height: 28px;
+	width: 16px;
+	position: absolute;
+	top: 45%;
+}
+.search-arrow-left{
+	background-position: 15px -933px;
+	left: 0;
+}
+.search-arrow-right{
+	background-position: -17px -905px;
+	right: 0;
+}
+.search-arrow-left:hover{
+	background-position: -17px -961px;
+}
+.search-arrow-right:hover{
+	background-position: -49px -933px;
+}
+
+/* BETACN */
+.BETACN .column1 .gridPanel.grid8,
+.BETACN .column1 .gridPanel.grid8 .columnLeft .laundry-list.grid4{
+	margin-left: 0;
+}
+.BETACN .column1 .gridPanel.grid8 #splitColumn .linebreak{
+	clear: both;
+}

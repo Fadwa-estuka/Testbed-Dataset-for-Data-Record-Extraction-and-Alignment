@@ -1,0 +1,88 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script src="osd.js"></script><script src="news_data_005/expansion_embed.js"></script><script>var inDapIF=true; console.log('Under Res[renderInDFP] : '+document.domain);var gparam = {"CampaignId":1601131090011927, "AdCallId":"RGVBdms3dXY0OEJmSldnPQ"};</script><script src="news_data_005/gpt.js">
+/// Static code.. No need to make changes... Just function declaration..
+if ( inDapIF === true){
+	googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+	  function resizeIframe(){
+	  try{
+	    var topIframes=top.document.getElementsByTagName('IFRAME');
+	    for(var i=0;i<topIframes.length;i++){
+	      if(topIframes[i].contentWindow==self){
+		topIframes[i].style.height= event.size[1] + 'px';  
+		topIframes[i].style.width= event.size[0] + 'px';         
+	      }
+	    }
+	  }catch(e){
+	     
+	  }
+	}
+	resizeIframe();  
+	});
+}
+function replaceSpecialChars(str){
+	str = str.trim();
+	str = str.replace(/ /g,'-');
+	str = str.replace(/[&!#()]/g,'-');
+	return str;
+}
+function getParameterByName(name) {
+    name = name.replace(/[[]/, '[').replace(/[]]/, ']');
+    var regex = new RegExp('[?&]' + name + '=([^&#]*)'),
+	    results = regex.exec(location.search);
+    return results === null ? '' : decodeURIComponent(results[1].replace('+', ' '));
+}
+var cp_gatest = '';
+cp_gatest = getParameterByName('gatest');
+/// End--- Static code.. No need to make changes... Just function declaration..
+//Fetching macro variables...
+var cp_pos_s1 = 'mpu,bb1', s2 = '/4735792/us.reuters/search', placementid = '1601131090011927', cp_story_channel_s3 = '';
+cp_pos_s1 = replaceSpecialChars(cp_pos_s1); cp_story_channel_s3 = replaceSpecialChars(cp_story_channel_s3); 
+//Declaring variables based on sent from first script
+var cp_arenas='', cp_site_name = '', cp_pp0='', cp_pp1='';
+//Actual logic of generating variables..
+var aduint_arr = [];
+aduint_arr = s2.split('/');
+if ( aduint_arr.length > 3 )
+	cp_site_name = aduint_arr[3].trim();
+else if ( aduint_arr[2] !== undefined )
+	cp_site_name = aduint_arr[2].trim();
+else if ( aduint_arr[1] !== undefined )
+	cp_site_name = aduint_arr[1].trim();
+else
+	cp_site_name = aduint_arr[0].trim();
+cp_site_name = replaceSpecialChars(cp_site_name);
+cp_pp0 = cp_site_name;
+cp_arenas = cp_site_name;
+if ( typeof (aduint_arr[4]) !== 'undefined' ){
+	cp_pp1 = replaceSpecialChars(aduint_arr[4]);
+	cp_site_name += '/'+cp_pp1; 
+	cp_arenas += ','+cp_pp1;
+}
+if ( cp_site_name != null && cp_site_name.trim() != '' ){
+	cp_site_name = cp_site_name.replace(/:/g,'/');
+	cp_site_name = '/'+cp_site_name;
+}
+if ( cp_story_channel_s3 != '' ){
+	cp_arenas += ','+cp_story_channel_s3;
+}
+var cp_sizes=[];
+if ( inDapIF === true)
+	cp_sizes = [[300,1050], [300,600], [300,250]];
+else
+	cp_sizes = [[300,250]];
+googletag.pubads().definePassback( '/58/tgam.reuters' + cp_site_name, cp_sizes )
+.setTargeting('ptf', 'j') 
+.setTargeting('asite', 'reuters')
+.setTargeting('loc', 'sec')
+.setTargeting('arena', cp_arenas)
+.setTargeting('url', '/search/news')
+.setTargeting('pos', cp_pos_s1)
+.setTargeting('pp0', cp_pp0)
+.setTargeting('pp1', cp_pp1)
+.setTargeting('gatest', cp_gatest)
+.setTargeting('cpid', placementid)
+.setTargeting('gbpa', '0.00')
+.setTargeting('gbpb', '0.00')
+.setTargeting('gbpc', '0.00')
+.display()
+</script><script id="gpt-impl-0.40875990351755465" src="pubads_impl_108.js"></script><link rel="prefetch" href="http://tpc.googlesyndication.com/safeframe/1-0-5/html/container.html?n=1"><script type="text/javascript" src="news_data_005/ads" id="sae-script-1"></script></head><body><div id="google_ads_iframe_/58/tgam.reuters/search_1__container__" style="display: inline-block; width: 300px; height: 600px;"><iframe style="border: 0px none; vertical-align: bottom;" src="news_data_005/container.htm" id="google_ads_iframe_/58/tgam.reuters/search_1" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" data-is-safeframe="true" width="300" height="600" frameborder="0"></iframe></div></body></html>
