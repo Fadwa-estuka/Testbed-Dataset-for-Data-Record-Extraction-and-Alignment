@@ -1,0 +1,16 @@
+var mboxCurrent = mboxFactories.get('default').get('target-global-mbox',0);mboxCurrent.setOffer(new mboxOfferAjax(''));mboxCurrent.getOffer().setOnLoad(function() {
+/*mboxHighlight+ (1of2) v1 ==> Response Plugin*/
+window.ttMETA = window.ttMETA||[];
+window.ttMETA.push({
+    'mbox': 'target-global-mbox',
+    'campaign': '',
+    'experience': '',
+    'offer': ''
+});
+/*Target Context Data for Integrations */
+window.targetCtx=window.targetCtx||'',tval=',:';
+if(!~window.targetCtx.indexOf(tval)&&tval!=',:'){
+window.targetCtx+=tval;
+if(window.targetCtx.charAt(0)==','){window.targetCtx=window.targetCtx.substr(1)}
+}
+});mboxCurrent.loaded();mboxFactories.get('default').get('target-global-mbox',0).cancelTimeout();mboxFactories.get('default').get('target-global-mbox',0).setOffer(new mboxOfferDefault()).show();
