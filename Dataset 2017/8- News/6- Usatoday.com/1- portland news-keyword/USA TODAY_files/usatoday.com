@@ -1,0 +1,1 @@
+PARSELY.pInit({"apikey":"usatoday.com","settings":{"debug":false,"widget":false,"tracker":true},"customizations":null,"track_ip_addresses":true,"bundle":"/code/ptrack-v0.7.0-engaged-time.js","track_third_party_cookies":true,"uuid":"131fca69-2c36-4d93-95b3-5e0be2424749","network_uuid":"2f3dd2e7-c28b-4aa8-b433-175383526140","apikey_uuid":"131fca69-2c36-4d93-95b3-5e0be2424749"});
