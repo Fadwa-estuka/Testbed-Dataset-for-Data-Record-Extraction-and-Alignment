@@ -1,0 +1,16 @@
+drawBreakingNews(
+                
+                {
+    				"label": "The first 100 days",
+    				"type": "happening",
+    				"url": "http://live.reuters.com/Event/Politics",
+    				"headline": "U.S. expects to resume refugee admissions on Monday",
+                    "overwriteHeadlineForMobile": "",
+                    "enableMobilePushNotification": false,
+    				"actionCall": ""
+    			}
+                
+                );
+                drawBreakingNews({});
+drawBreakingNews({});
+
