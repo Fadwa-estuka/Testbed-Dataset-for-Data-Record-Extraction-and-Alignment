@@ -1,0 +1,148 @@
+html, html body, div.wrap, div#content, html>body div#content {height:auto; min-height:0;}
+
+.aolSponsoredLinks {background:#fefdf1; border:1px solid #eaead6; padding:10px; margin-bottom:1.5em;}
+.aolSponsoredLinks .aolTitle {color:#999; font:10px arial, sans-serif; text-transform:uppercase;}
+.aolSponsoredLinks dt {font:bold 14px arial, sans-serif;}
+.aolSponsoredLinks dt a {color:#c00; display:block;}
+.aolSponsoredLinks dd {padding:0; margin:0 0 0.5em 0; font:12px arial, sans-serif;}
+.aolSponsoredLinks dd a {color:#333; display:block; text-decoration:none;}
+.aolSponsoredLinks dd a:hover {color:#333 !important;}
+.aolSponsoredLinks dd .url {text-decoration:underline; margin-right:3px;}
+.webResults {font:11px arial, sans-serif; color:#666;}
+.webResults a {text-decoration:none; color:#c00; font-weight:bold;}
+.webResults a:hover {text-decoration:underline;}
+
+#logoTimeSrch {float:left; margin-top:45px;}
+#logoCnnSrch {float:left; margin-top:45px;}
+#topBanner {float:right; width:728px; height:90px;}
+
+div.hr {border-top:1px solid #ccc; clear:both;}
+div.hr hr {display:none;}
+
+.ltColSrch {width:600px; float:left; margin-left:15px; margin-bottom:50px;}
+.rtColSrch {width:336px; float:right; margin-right:15px;}
+
+.searchTop {margin:15px;}
+.searchTop label, .searchBot label {font:1.7em "arial black", arial, sans-serif; margin-right:10px; vertical-align:top; letter-spacing:-0.5px;}
+.searchTop input, .searchBot input {vertical-align:middle;}
+.searchTop input.query, .searchBot input.query {width:400px; height:27px; padding:0 2px; font:19px arial, sans-serif; color:#c00; border:1px solid #ccc; border-color:#999 #ccc #eee #ccc;}
+.searchBot input.query {width:300px;}
+
+.refineDate {padding:10px 0; background:#f5f5f5; border:1px solid #ccc; border-left:none;}
+.refineDate .hd {width:190px; float:left;}
+.refineDate h2 {margin:0; padding:0 10px 1px 0; font:1.5em "arial black", arial, sans-serif; letter-spacing:-0.5px; color:#c00;}
+.refineDate form {margin:0; padding:0 10px 0 2px; width:385px; float:left;}
+.refineDate fieldset {border:none; display:inline; margin:0 8px 0 0; padding:0;}
+.refineDate input.submit {background:#c00; border:none; margin:0; padding:1px; color:white; vertical-align:top; cursor:pointer;}
+.refineDate div.links {color:#999; font-size:0.9em; margin:7px 0 0 0;}
+.refineDate div.links a {color:#c00; margin:0 5px 0 0; padding:0;}
+.refineDate .note {color:#999; font-size:0.9em; font-style:italic;}
+.refineDate .legend {color:#666;}
+
+.rtSrchMod {width:287px; border:1px solid #ccc; padding:10px; position:relative;}
+.rtSrchMod a {color:#c00;}
+.rtSrchMod h2 {margin:-0.2em 0 0 0; padding:0 0 5px 0; font:1.5em "arial black", arial, sans-serif; letter-spacing:-0.5px; color:#c00;}
+.rtSrchMod a.more {position:absolute; top:1em; right:10px; width:40%; text-align:right;}
+
+.mod-related ul {color:#c00;list-style-position:inside;list-style-type:none;margin:0; padding:0 5px 0.7em 5px; overflow:hidden; _zoom:1;}
+.mod-related ul li {text-align:left; width:120px; *zoom:1; padding:0 0 0 10px; background:transparent url('http://img.timeinc.net/time/rd/trunk/www/web/feds/i/li.png') left center no-repeat; float:left; _display:inline; margin-left:6px;}
+.mod-related ul li a {color:#000;}
+
+.rtSrchMod2 {background:url('http://img.timeinc.net/time/rd/trunk/www/web/feds/i/bg_mod.png') bottom left no-repeat; padding-bottom:1px;}
+
+.modCol {border-top:1px solid #e5e5e5; width:139px; float:right; background-color:#fff; margin-right:1px; _display:inline;}
+.modCol.first {float:left; width:118px; margin-left:1px; _display:inline;}
+.modCol .img {border-bottom:4px solid #fff;}
+
+.mod-covers .modCol {padding:10px 15px; width:107px;}
+.mod-covers .date {padding:0 0 4px 0;}
+.mod-covers ul {padding:0; margin:0; list-style:none; font-size:0.9em;}
+
+.mod-photo .modCol {padding:10px 16px; width:105px; font-size:0.9em;}
+.mod-photo .modCol .img {text-align:center;}
+.mod-photo .dek {padding:0 0 2px 0;}
+
+.mod-video .modCol {padding:10px 9px 10px 10px; width:118px; font-size:0.9em; _padding:8px;}
+.mod-video .date {padding:2px 0;}
+.mod-video .img {position:relative;}
+.mod-video .img img.video {position:absolute; top:0; left:0;}
+.mod-video .play {background:url('http://img.timeinc.net/time/rd/trunk/www/web/feds/i/icon_vid-arrow.gif') left center no-repeat; padding-left:16px;}
+
+.mod-graphics .modCol {padding:6px; width:125px; font-size:0.9em;}
+.mod-graphics table.img {padding:0; margin:0 0 4px 0; background:#e5e5e5; border:none;}
+.mod-graphics table.img td {padding:0; margin:0; width:125px; height:125px; text-align:center; vertical-align:middle;}
+.mod-video .dek {padding:0 0 2px 0;}
+
+.refineCol {float:left; width:169px; border-right:1px solid #ccc;}
+.refineCol a {color:#c00; cursor:pointer;}
+.refineCol h2 {margin:0; padding:5px 0 0 0; font:1.5em "arial black", arial, sans-serif; letter-spacing:-0.5px; color:#c00;}
+.refineCol ul {list-style:none; font-weight:bold; margin:0; padding:0;}
+.refineCol ul li {margin:0; padding:10px 0 0 0;}
+.refineCol ul ul {list-style:none; font-weight:normal; border-bottom:1px solid #ccc; color:#999; padding:2px 0 10px 0; margin:0;}
+.refineCol ul ul li {padding:0 0 0 10px; background:url('http://img.timeinc.net/time/rd/trunk/www/web/feds/i/li.png') left center no-repeat;}
+.refineCol li.seeAll {background:none; padding-left:0;}
+.refineCol a.more {background:url('http://img.timeinc.net/time/rd/trunk/www/web/feds/i/moreless.gif') left center no-repeat; padding-left:12px;}
+.refineCol a.less {background-position:-400px center;}
+
+.resultsCol {float:right; width:410px;}
+
+.pagi, .sortBy {padding:10px 0;}
+.pagi a, .sortBy a {color:#c00;}
+.pagi .count {floaT:left; width:40%; color:#666;}
+.pagi .pages {floaT:right; width:58%; text-align:right; color:#999;}
+.pagi .pages a, .sortBy a {margin-left:5px;}
+.pagi .pages span, .sortBy span {font-weight:bold; color:black; margin-left:5px;}
+.sortBy b {margin-left:5px; color:#999;}
+
+.resultsCol .tout {margin-bottom:1.5em; overflow:hidden; _zoom:1;}
+.resultsCol .tout a {color:#c00;}
+.resultsCol .tout h3 {font-size:1.2em; font-weight:bold;}
+.resultsCol .tout h4 {font-size:1.2em; font-weight:normal; color:#666;}
+.resultsCol .tout .img {float:right; margin:10px 0 10px 3px;}
+.resultsCol .tout .byline {font-size:0.9em; margin:4px 0 0 0; color:#333;}
+.resultsCol .tout .date {color:#999; margin-left:5px;}
+.resultsCol .tout .info {font-size:0.9em; margin:4px 0 0 0; color:#999;}
+.resultsCol .tout .text {margin:4px 0 0 0;}
+
+.resultsCol .videoTout h3 {background:url('http://img.timeinc.net/time/rd/trunk/www/web/feds/i/icon_vid-arrow.gif') left center no-repeat; padding-left:16px;}
+.resultsCol .videoTout .img {position:relative;}
+.resultsCol .videoTout .img .video {position:absolute; top:0; left:0;}
+
+.refinements {margin:10px 15px; font-size:1.3em;}
+.refinements span {color:#999; padding:0 3px;}
+.refinements ul {list-style:none; margin:0; padding:0;}
+.refinements ul li {display:inline;}
+
+.authorsCol {float:left; width:195px; color:#999; margin:1em 8px 50px 0;}
+.authorsCol a {color:#c00;}
+.authorsCol h2 {margin:0 0 5px 0;}
+.authorsCol ul {list-style:none; margin:0 0 2em 0; padding:0;}
+h1.refineBy {display:none;}
+
+.covertout {width:107px; float:left; margin-right:25px; margin-bottom:2em;}
+.covertout .img {margin-bottom:4px}
+.covertout .date {padding:0 0 4px 0;}
+.covertout ul {padding:0; margin:0; list-style:none; font-size:0.9em; color:#c00;}
+.covertout li a {color:#c00;}
+
+.noResults {margin:1em 0 2em 0;}
+.noResults a {color:#c00;}
+.noResults .didYouMean {font-size:1.4em; color:#333;}
+.noResults .didYouMean a {font-weight:bold;}
+.noResults h1 {font-size:1.2em; color:#666;}
+.noResults ul {margin:0.8em 0 0 1.3em; padding:0;}
+.noResults li {margin:0 0 0.5em 0; padding:0;}
+.noResults li a {text-decoration:underline;}
+
+.oops {padding:15px 15px 50px 15px;}
+.oops a {color:#c00;}
+.oops h1 {border-bottom:1px solid #ccc; margin-bottom:0.8em; font:2em "arial black", arial, sans-serif; letter-spacing:-0.5px;}
+.oops h2 {font:bold 1.8em arial, sans-serif; margin-bottom:5px;}
+.oops h3 {font:bold 1.1em arial, sans-serif; color:#c00;}
+.oops p {font:1.1em georgia, serif;}
+.oops input.query {width:400px;}
+
+/* Topic Header for Search Results */
+.topic-header {width:410px; overflow:hidden; _zoom:1; margin-bottom:15px; border-top:1px solid #e0e0e0;}
+.topic-header h2 {font:normal 20px/24px 'arial black',arial,sans-serif; letter-spacing:-.05em; border-bottom:1px solid #e0e0e0; padding:10px 0;}
+.topic-header h2 a:link, .topic-header h2 a:visited, .topic-header h2 a:hover, .topic-header h2 a:active .topic-header h2 a:focus {color:#c00;}
