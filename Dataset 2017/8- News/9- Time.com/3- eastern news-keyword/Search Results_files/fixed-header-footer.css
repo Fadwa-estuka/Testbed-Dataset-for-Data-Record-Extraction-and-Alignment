@@ -1,0 +1,1187 @@
+/* clearfix (now called group, via http://css-tricks.com/snippets/css/clear-fix/) */
+.group:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+.wrap-new {
+padding: 0
+}
+* html .group {
+  zoom: 1;
+}
+
+/* IE6 */
+*:first-child + html .group {
+  zoom: 1;
+}
+
+/* Utility Classes */
+.hidden-accessible {
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+.constrain,
+.sec-content,
+.contentMain,
+#content {
+  max-width: 998px;
+  margin: 0 auto;
+  position: relative;
+}
+.constrain {
+width: 998px;
+}
+#photos .contentMain {
+width: 998px;
+}
+#photos #content {
+width: 998px;
+margin: auto;
+}
+.mobile-version {
+  display: none;
+}
+
+.ad-placeholder {
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+/* @end site global */
+/* @group Site Header ----------------------------------- */
+#site-header {
+  position: relative;
+  z-index: 100;
+  font-size: 3em;
+}
+#site-header .constrain {
+  padding-bottom: 1px;
+  border-bottom: solid 2px #000;
+}
+#site-header a {
+  text-decoration: none;
+}
+.section #site-header .site-title {
+  padding: 0;
+  margin: 0 auto;
+  *margin-left: 210px;
+  position: absolute;
+  top: 38px;
+  height: 1em;
+  left: 0;
+  right: 0;
+  text-align: center;
+  line-height: 1em;
+  font-family: "franklin-gothic-urw", Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  letter-spacing: -0.03em;
+  float:left;
+  width:575px;
+}
+/* All access div */
+#allAccess {
+margin: 0;
+padding: 0;
+background: black none;
+height: 25px;
+overflow: hidden;
+min-width: 998px;
+width: 100%;
+}
+
+#allAccess p {
+text-align: right;
+font: .85em/25px helvetica, arial, sans-serif;
+color: #fff;
+text-align: center;
+margin: 0 auto;
+position: relative;
+}
+#allAccess p em {
+color: #C00;
+}
+
+#allAccess p a {
+position: absolute;
+color: #fff;
+font-size: .9em;
+top: 2px;
+background: transparent none;
+}
+#allAccess p a:hover {
+text-decoration: underline;
+}
+
+.no-subpxspacing .section #site-header .site-title {
+  letter-spacing: -1px;
+}
+
+/* Masthead */
+#logo {
+  position: absolute;
+  left: 50%;
+  margin: 0 0 0 0;
+  padding: 0;
+}
+#logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-indent: 100%;
+  overflow: hidden;
+  background: url(http://img.timeinc.net/time/assets/images/time-logo.png) no-repeat;
+}
+.home #logo {
+  top: 23px;
+  margin-left: -71px;
+  width: 143px;
+  height: 43px;
+}
+.section #logo {
+  width: 95px;
+  height: 29px;
+  margin-left: -49px;
+  top: 12px;
+}
+.section #logo a {
+  background-position: 0 -149px;
+}
+
+/* Header Featured Section */
+#featured {
+  position: absolute;
+  left: 102px;
+  top: 13px;
+  right: 60%;
+  height: auto;
+  font-size: 0.75em;
+  line-height: 1.4em;
+}
+#featured h2 {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  padding: 0 10px 0 0;
+  margin: 0;
+  color: #ed1c2e;
+  font-size: 1em;
+  font-weight: bold;
+}
+#featured ul {
+  list-style: none;
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+#featured li {
+  display: inline;
+  height: 0.8em;
+  color: #d6d6d6;
+  margin-right: 3px;
+}
+#featured a {
+  color: #666;
+  margin-right: 3px;
+}
+#featured a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.header-ad {
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 97px;
+  height: 70px;
+}
+
+/* Category Navigation */
+#category-nav {
+  font-weight: bold;
+  font: bold 13px/1em arial, sans-serif;
+  position: absolute;
+  left: 110px;
+  top: 67px;
+  height: auto;
+}
+#category-nav ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+}
+#category-nav li {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin: 0;
+  padding: 0;
+  height: 0.9em;
+  border-left: solid 1px #d6d6d6;
+  padding-left: 8px;
+  margin-left: 4px;
+}
+#category-nav li:first-child {
+  margin-left: 0;
+  padding-left: 0;
+  border-left: none;
+}
+#category-nav li a {
+  position: relative;
+  top: -0.2em;
+  color: #ed1c2e;
+}
+#category-nav li a:hover {
+  color: black;
+}
+#category-nav li a.current {
+  color: black;
+}
+
+/* Social Links and Apps */
+#social-apps, #social-apps ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#social-apps {
+  float: left;
+  position: absolute;
+  top: 12px;
+  right: 7px;
+  z-index: 30;
+  font: 16px/1em arial, sans-serif;
+}
+#social-apps a {
+  color: #7a7a7a;
+}
+#social-apps a:hover {
+  color: black;
+}
+#social-apps > li {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  height: 26px;
+  line-height: 26px;
+  font-size: 0.9375em;
+  vertical-align: top;
+}
+
+.social-links {
+  margin-right: 4px;
+  position: relative;
+  top: -1px;
+  /* Layout tweaks to match comp */
+  /* Sprite layout */
+}
+.social-links > a {
+  display: none;
+}
+.social-links li {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 26px;
+  height: 26px;
+  margin: 0 2px;
+}
+.social-links li a {
+  width: 28px;
+  height: 26px;
+  display: block;
+  text-indent: 28px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-image: url(http://img.timeinc.net/time/assets/images/social-icon-sprite.png);
+  opacity: 0.5;
+  -moz-opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.social-links li a:hover {
+  opacity: 1.0;
+  -moz-opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+.social-links .twitter {
+  margin: 0 5px 0 0;
+}
+.social-links .tumblr {
+  margin: 0 2px 0 -3px;
+}
+.social-links .rss {
+  margin: 0 0 0 -3px;
+}
+.social-links .facebook a {
+  background-position: 2px -1px;
+}
+.social-links .twitter a {
+  background-position: -28px -1px;
+}
+.social-links .googleplus a {
+  background-position: -56px -1px;
+}
+.social-links .tumblr a {
+  background-position: -84px -1px;
+}
+.social-links .rss a {
+  background-position: -112px -1px;
+}
+
+/* Site Navigation */
+#site-nav {
+  margin-top: 85px;
+  border-top: solid 1px #b7b7b7;
+  border-bottom: solid 1px #494949;
+  z-index: 25;
+}
+#site-nav h3 {
+  background: #fff;
+  padding: 0 6px 0 7px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0;
+  /* At this visual size, items are shown, and drop down isn't needed */
+  display: none;
+  font-family: "franklin-gothic-urw", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  cursor: pointer;
+}
+#site-nav h2 .icon {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  height: 16px;
+  width: 8px;
+  background: url(http://img.timeinc.net/time/assets/images/social-icon-sprite.png) -151px -33px no-repeat;
+  overflow: hidden;
+  text-indent: 100%;
+  margin-left: 5px;
+  vertical-align: middle;
+  top: -1px;
+  position: relative;
+}
+.lt-ie8 #site-nav h2 .icon {
+  top: 1px;
+}
+#site-nav.is-open h2 .icon {
+  width: 18px;
+  margin-left: -2px;
+  margin-right: -3px;
+  background-position: -145px -63px;
+}
+
+.primary-links {
+  padding: 6px 0 6px;
+  margin: 0;
+  text-align: center;
+  height: 15px;
+  display: table;
+  width: 100%;
+}
+.lt-ie8 .primary-links {
+  display: block;
+  white-space: nowrap;
+}
+.primary-links li {
+  height: 15px;
+  line-height: 15px;
+  position: relative;
+  border-left: solid 1px #d4d4d4;
+  margin-left: -1px;
+  display: table-cell;
+  *display: inline;
+  *zoom: 1;
+}
+.lt-ie8 .primary-links li {
+  display: inline;
+  zoom: 1;
+}
+.lt-ie8 .primary-links li:hover, .lt-ie8 .primary-links li.current {
+  z-index: 10;
+}
+.primary-links li:first-child {
+  border-left: none;
+  margin-left: 0;
+}
+.primary-links .link-13 ~ li {
+  display: none;
+}
+.primary-links a {
+  white-space: nowrap;
+  font-family: "franklin-gothic-urw", Helvetica, Arial, sans-serif;
+  display: block;
+  font-weight: 900;
+  text-transform: capitalize;
+  color: #000;
+  padding: 0 5px;
+  height: 27px;
+  line-height: 27px;
+  margin: -6px 0 -8px 0;
+  text-align: center;
+}
+.lt-ie8 .primary-links a {
+  padding: 0 8px;
+  display: inline-block;
+  padding: 0 5px;
+}
+.primary-links a:hover,
+.primary-links .current a {
+  background-color: #ed1c2e;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+  padding: 0 6px;
+  margin-left: -1px;
+  margin-right: -1px;
+}
+.lt-ie8 .primary-links a:hover,
+.lt-ie8 .primary-links .current a {
+  padding: 0 4px!important;
+  margin-left: 0;
+  margin-right: 0;
+}
+.primary-links li.link-1 a:hover,
+.primary-links li.link-1.current a {
+  margin-left: 0;
+  padding-left: 5px;
+}
+.lt-ie8 .primary-links li.link-1 a:hover, .lt-ie8
+.primary-links li.link-1.current a {
+  padding-left: 11px;
+}
+.primary-links li.link-13 a:hover,
+.primary-links li.link-13.current a {
+  margin-right: 0;
+  padding-right: 5px;
+}
+.lt-ie8 .primary-links li.link-13 a:hover, .lt-ie8
+.primary-links li.link-13.current a {
+  padding-right: 8px;
+}
+
+
+
+.secondary-links {
+  border-top: solid 1px #ddd;
+  font-size: 12px;
+  font-family: helvetica, arial, sans-serif;
+  margin: -1px 0 0 0;
+  padding: 9px 0 4px 0;
+  height: 1em;
+  line-height: 1em;
+}
+.secondary-links li {
+  display: inline;
+  margin: 0 10px 0 6px;
+}
+.secondary-links a {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  padding: 0 5px 0 5px;
+  font-weight: bold;
+  color: #333333;
+}
+.secondary-links .current a,
+.secondary-links a:hover {
+  color: #ed1c2e;
+}
+
+/* Site Search */
+#site-search {
+  position: absolute;
+  float: left;
+  right: 2px;
+  top: 44px;
+  width: 237px;
+  z-index: 5;
+  font-family: arial, sans-serif;
+  font-size: 16px;
+}
+#site-search .ad {
+  position: absolute;
+  top: 1px;
+  left: -114px;
+}
+#site-search form {
+  position: absolute;
+  right: 0;
+  width: 234px;
+  height: 31px;
+  border: solid 1px #c7c7c7;
+  background-color: #f5f5f5;
+  background-image: url(http://img.timeinc.net/time/assets/images/social-icon-sprite.png);
+  background-repeat: no-repeat;
+  background-position: -137px 1px;
+  -webkit-background-clip: border;
+  -moz-background-clip: border;
+  background-clip: border-box;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  -webkit-box-shadow: inset #bbbbbb 1px 1px 1px;
+  -moz-box-shadow: inset #bbbbbb 1px 1px 1px;
+  box-shadow: inset #bbbbbb 1px 1px 1px;
+}
+#site-search div.fieldgroup {
+  background: #f5f5f5;
+  position: absolute;
+  left: 33px;
+  top: 3px;
+  bottom: 2px;
+  right: 44px;
+}
+#site-search label {
+  position: absolute;
+  left: 1px;
+  top: 0;
+  bottom: 1px;
+  right: 0;
+  padding: 6px 0;
+  color: #7a7a7a;
+  background-color: #f5f5f5;
+  z-index: 10;
+  font-size: 0.875em;
+  line-height: 1;
+  display: block;
+}
+#site-search input[type=text] {
+  outline: none;
+  border: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+  z-index: 20;
+  font-size: 0.875em;
+  padding: 6px 0;
+}
+#site-search input[type=submit],
+#site-search .search-link a {
+  background-color: #ed1c2e;
+  border: none;
+  height: 26px;
+  line-height: 26px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  border-radius: 13px;
+  padding: 0 10px;
+  color: #fff;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  bottom: 3px;
+  font-size: 16px;
+  margin: auto 0;
+}
+.lt-ie8 #site-search input[type=submit] {
+width: 50px;
+}
+.lt-ie8 #site-search input[type=text] {
+top: -3px;
+}
+#site-search .search-link a {
+  display: none;
+  position: relative;
+  right: 2px;
+  top: 7px;
+  width: 20px;
+  overflow: hidden;
+  text-indent: 150%;
+  background-image: url(http://img.timeinc.net/time/assets/images/social-icon-sprite.png);
+  background-repeat: no-repeat;
+  background-position: -190px -1px;
+}
+
+.no-js .overlay-label label {
+  display: none;
+}
+
+/* @end Site Header */
+/* @group .site-footer styles -------------------- */
+/* general */
+#site-footer {
+  padding-top: 20px;
+  clear: both;
+}
+
+/* footer header */
+.footer-header {
+  overflow: hidden;
+  border-bottom: 1px solid white;
+}
+
+.time-apps {
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  width: 80%;
+}
+.time-apps li {
+  *float: left;
+  margin-left: 3%;
+}
+.time-apps li:first-child {
+  margin-left: 0;
+}
+.time-apps li .app:hover,
+.time-apps li .app:focus {
+  opacity: 0.8;
+}
+.time-apps .app {
+  color: #333333;
+  font-weight: bold;
+  font-size: 0.75em;
+  text-decoration: none;
+  overflow: hidden;
+}
+.time-apps .app .icon {
+  display: block;
+  float: left;
+  height: 48px;
+  background: url(http://img.timeinc.net/time/assets/images/ftr-app-icons.png) no-repeat 0px 100%;
+}
+.time-apps .app .app-name {
+  margin-top: 30px;
+  float: left;
+}
+
+.ipad .app .icon {
+  width: 69px;
+  background-position: 0px 100%;
+}
+.iphone .app .icon {
+  width: 58px;
+  background-position: -112px 100%;
+}
+.android .app .icon {
+  width: 57px;
+  background-position: -224px 100%;
+}
+.blackberry .app .icon {
+  width: 54px;
+  background-position: -341px 100%;
+}
+.time-tv .app .icon {
+  width: 71px;
+  background-position: -469px 100%;
+}
+.populist .app .icon {
+  width: 70px;
+  background-position: -602px 100%;
+}
+.the-page .app .icon {
+  width: 64px;
+  background-position: -728px 100%;
+}
+.bada .app .icon {
+  width: 60px;
+  background-position: -855px 100%;
+}
+
+/* footer ad */
+.footer-ad {
+  float: right;
+  margin-top: 2px;
+}
+
+/* footer body */
+.footer-body {
+  background: #ed1c2e;
+  padding: 17px 17px 7px;
+  color: #fff;
+  font-family: arial, helvetica, sans-serif;
+}
+.footer-body a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* article categories */
+.footer-nav {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #f2616d;
+  text-align: center;
+}
+.footer-nav .nav-link {
+  display: table-cell;
+  display: inline-block;
+  width: 100%;
+}
+.footer-nav .nav-link:hover, .footer-nav .nav-link:focus {
+  text-decoration: underline;
+}
+.lt-ie8 .footer-nav .nav-link {
+  width: auto;
+  padding: 0 8px;
+}
+.footer-nav li:first-child + li {
+  border-left: none;
+}
+
+.nav-categories {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 15px;
+  /*	letter-spacing: -.1px; having issues here where;;
+  (which is too large and makes the text unreadable) */
+  display: table;
+  *display: block;
+  *overflow: visible;
+  width: 100%;
+  text-align: center;
+  padding: 0 0 14px;
+}
+.nav-categories .home-link {
+  display: none;
+}
+.nav-categories li {
+  display: table-cell;
+  *display: block;
+  *float: left;
+  *zoom: 1;
+  height: 12px;
+  line-height: 1em;
+  *line-height: 100%;
+  border-left: 1px solid #f2616d;
+}
+/* footer links */
+.footer-links {
+  border-bottom: 5px solid #f2616d;
+  padding-bottom: 11px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.adtl-links {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  font: 12px/1em arial, sans-serif;
+  max-width: 760px;
+}
+.adtl-links li {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  border-left: 1px solid #f2616d;
+  margin-bottom: 10px;
+}
+.adtl-links li:first-child {
+  border-left: none;
+}
+.adtl-links li.item-8 {
+  border-left: none;
+}
+.adtl-links li a {
+  padding: 0 6px 0 6px;
+}
+
+/* footer branding */
+#site-footer .branding {
+  overflow: hidden;
+}
+
+.branding .time-logo {
+  float: left;
+}
+.branding .right {
+  float: right;
+  width: 290px;
+}
+.branding .right h4 {
+  float: left;
+  font: 14px/1em arial, sans-serif;
+  margin: 5px 10px;
+  color: #f9cacc;
+}
+.branding a:hover img {
+  opacity: 0.8;
+}
+
+.right .cnn-money-logo {
+  margin-left: 20px;
+}
+.right .cnn-logo {
+  margin-left: 10px;
+  position: relative;
+}
+
+/* Video */
+body.section-video {
+  background-color: black;
+}
+.section-video #video {
+margin: auto;
+}
+.section-video #logo a {
+  background-image: url(http://img.timeinc.net/time/assets/images/time-logo-white.png);
+}
+.section-video #site-header h1 a {
+  color: #b8b6b7;
+}
+.section-video #site-nav {
+  border-top-color: #474848;
+  border-bottom-color: #9e9e9e;
+}
+.section-video .primary-links li {
+  border-left-color: #2b2b2b;
+}
+.section-video .primary-links li a {
+  color: #bbbbbb;
+}
+.section-video .primary-links li a:hover {
+  background-color: #fff;
+  color: #000;
+}
+.section-video #category-nav li {
+  border-left-color: #393939;
+}
+.section-video #category-nav li a {
+  color: #8f8f8f;
+}
+.section-video #category-nav li a:hover, .section-video #category-nav li a.current {
+  color: white;
+}
+.section-video #social-apps > li:first-child {
+  border-color: #393939;
+}
+.section-video #social-apps a:hover {
+  color: white;
+}
+.section-video #site-header .constrain {
+  border-bottom-color: #9e9e9e;
+}
+.section-video #site-nav h2 .icon, .section-video .social-links li a {
+  background-image: url(http://img.timeinc.net/time/assets/images/social-icon-sprite-white.png);
+}
+.section-video #site-search input[type="submit"] {
+  background-color: #908e8f;
+}
+.section-video .footer-header {
+  border-bottom-color: #000;
+}
+.section-video .footer-body {
+  background-color: #000;
+}
+.section-video .footer-links, .section-video .footer-nav {
+  border-color: #4d4d4d;
+}
+.section-video .nav-categories li,
+.section-video .adtl-links li {
+  border-color: #525252;
+}
+.section-video .branding .right h4 {
+  color: #adadad;
+}
+
+.section-video .rtCol .ad1,
+.section-video .rtCol #mostPopular {
+	margin: 0 0 40px;
+}
+
+
+#site-header,
+#site-footer {
+  font-size: 129.87012987%;
+}
+
+body {
+  background-color: #fff;
+}
+
+.section-video .wrap, .section-video #content {
+  background-color: #000;
+}
+
+#site-nav .primary-links {
+  font-size: 16px;
+}
+
+.app .app-name {
+  display: inline-block;
+  padding: 0 25px 0 0;
+  *padding: 0 10px 0 0;
+  font: bold 11px/1em  arial, sans-serif;
+}
+
+.time-apps li {
+  margin-left: 2%;
+}
+
+#site-search label {
+  display: none;
+}
+
+#section-ad {
+clear: both;
+ padding: 10px 0;
+}
+.section-video #banner-ad {
+background: transparent none;
+}
+#banner-ad {
+background: #f1f1f1;
+text-align: center;
+padding: 10px 0;
+}
+/* search page */
+.searchTop {
+padding: 15px 0;
+border-top: 2px solid #ccc;
+}
+
+.search-page .wrap {
+ width: 100%;
+}
+.search-page .wrap #site-header > div.constrain {
+ width: 998px;
+ 
+}
+
+/* fix for search field */
+
+.overlay-label {
+overflow: hidden;
+}
+
+.lt-ie9 #site-search input[type="text"] {
+overflow: hidden;
+line-height: 26px;
+height: 26px;
+display: block;
+padding: 0;
+}
+
+.lt-ie8 #site-search input[type="text"] {
+line-height: 32px;
+height: 32px;
+}
+
+/* Photos landing page */
+#photos {
+width: 100%;
+}
+
+#specialsChannel {
+width: 100%;
+}
+#specialsChannel #content{
+width: 998px;
+}
+#specialsChannel #banner-ad{
+margin-bottom: 1em;
+}
+
+#specialsChannel .rtCol > div {
+margin: 0 0 40px;
+}
+
+#photos #promos > div {
+margin: 0 0 40px;
+}
+
+/* popular content */
+
+.tabsMod {
+margin: 1em 0;
+padding: 0;
+border: 0;
+width: 300px;
+}
+.tabsMod h3 {
+display: none;
+}
+.tabsMod .tabgroup-tab {
+  background: #dedede;
+  font-size: 0.8125em;
+  text-transform: none;
+  letter-spacing: 0;
+  font-family: Helvetica,Arial,sans-serif;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 0 4px -1px 0;
+  z-index: 99;
+  position: relative;
+  width: 100px;
+}
+.tabsMod .tabsWrap {
+overflow: hidden;
+position: relative;
+top: 1px;
+}
+.tabsWrap > div {
+  overflow: hidden;
+  padding: 0;
+  margin: 0 0 -1px 0;
+  list-style: none;
+  position: relative;
+  z-index: 10;
+  float: left;
+}
+
+.tabsMod .ad88 {
+  float: right;
+}
+
+#photos .ad88 {
+float: right;
+}
+#specialsChannel .rtCol .ad88 {margin:0;}
+
+.tabsMod .rLinks {
+display: none;
+}
+
+.tabsMod .tabsWrap > div a {
+  border: 1px solid #dedede;
+  border-bottom: 1px solid #fff;
+  background: #fff none;
+  padding: 10px 0;
+  text-align: center;
+  display: block;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  width: 100px;
+}
+.tabsMod .tabsWrap > div.off a {
+  display: block;
+  background: #DEDEDE none;
+  border-bottom: 1px solid #DEDEDE;
+}
+
+.tabsMod #tab8 {
+	margin-right: 5px;
+}
+.tabsMod .tabsWrap > div a:hover {
+color: #000;
+text-decoration: underline;
+}
+.tabsMod ol {
+clear: both;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0 0;
+  padding: 18px;
+  z-index: 1;
+  border: 1px solid #dedede;
+}
+.tabsMod ol.off {
+display: none;
+}
+.lt-ie8 .tabsMod ol {
+  list-style-position: inside;
+}
+.tabsMod ol li {
+  border-top: 1px solid #ebebeb;
+  padding: 12px 0 12px 30px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 300;
+  color: #333;
+  list-style-type: none;
+}
+.tabsMod ol li:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+.lt-ie8 .tabsMod ol li {
+  text-indent: -15px;
+}
+.tabsMod ol > li {
+  counter-increment: customlistcounter;
+  font-family: Helvetica,Arial,sans-serif;
+}
+.tabsMod ol > li:before {
+  content: counter(customlistcounter) " ";
+  font-weight: bold;
+  font-size: 1.75em;
+  float: left;
+  /* prevents line height of pseudo element from disrupting line height of actual content */
+  width: 30px;
+  display: inline-block;
+  margin-left: -30px;
+  margin-top: 2px;
+}
+.lt-ie9 .tabsMod ol > li:before {
+  margin-left: -35px;
+}
+.tabsMod ol:first-child {
+  counter-reset: customlistcounter;
+}
+.lt-ie8 .tabsMod ol li {
+  list-style-type: decimal;
+  /* for IE6 and IE7 */
+}
+
+/* Topic page */
+.topic .wrap {
+width: 100%;
+}
+
+/* Search page */
+.rtColSrch .sep {
+display: none;
+}
+
+.rtColSrch .rtSrchMod {
+margin: 0 0 40px;
+}
+
+.rtColSrch .ad300 {
+margin: 0 0 40px;
+}
+body {
+overflow: visible;
+}
+#specialsChannel {
+width: 100%;
+position: static;
+overflow: visible;
+
+}
+.section #content {
+position: static;
+}
+
+#specials #sectionheading h2 {
+	font-family: "franklin-gothic-urw", Helvetica, Arial, sans-serif;
+	font-size: 32px;
+	line-height: 1em;
+	margin: 8px 0;
+	letter-spacing: -.03em;
+	color: #333333;
+}
+	
+.no-subpxspacing #sectionheading h2 {
+	letter-spacing:-1px;
+}
