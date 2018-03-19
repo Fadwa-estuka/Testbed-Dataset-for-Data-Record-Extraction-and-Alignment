@@ -1,0 +1,6 @@
+//tealium universal tag - utag.3008 ut4.0.201611021424, Copyright 2016 Tealium.com Inc. All Rights Reserved.
+try{(function(id,loader,u){u=utag.o[loader].sender[id]={};u.ev={'view':1};u.initialized=false;u.data={};u.data.pid="usatoday.com";u.map={"section":"_section"};u.extend=[function(a,b){if(b["contenttype"]==="video"||b["contenttype"]==="video-playlist"){return false;}
+if((/^subscribe|^account/i).test(document.location.host)){return false;}
+if(b["assetid"]||jQuery('#main article.post').attr('id')){return true;}else{return false;}}];u.send=function(a,b){if(u.ev[a]||typeof u.ev.all!="undefined"){for(c=0;c<u.extend.length;c++){try{d=u.extend[c](a,b);if(d==false)return}catch(e){}};var c,d,e,f;for(d in utag.loader.GV(u.map)){if(typeof b[d]!="undefined"&&b[d]!=""){e=u.map[d].split(",");for(f=0;f<e.length;f++){u.data[e[f]]=b[d];}}}
+u.base_url="//curiyo.com/js/addcuriyo.js?pid="+u.data.pid;if(!u.initialized){u.initialized=true;u.s=document.getElementsByTagName("script")[0];u.scr=document.createElement("script");u.scr.type="text/javascript";u.scr.src=u.base_url;u.s.parentNode.insertBefore(u.scr,u.s);}else{khJQuery.fn.kh.relink();}}}
+utag.o[loader].loader.LOAD(id);})('3008','gci.usat');}catch(e){}

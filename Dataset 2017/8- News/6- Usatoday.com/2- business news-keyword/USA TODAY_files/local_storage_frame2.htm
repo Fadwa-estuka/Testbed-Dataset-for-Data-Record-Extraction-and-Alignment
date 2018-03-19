@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+		<script>
+			function clearCookie(c_name){
+				var c_value = '; expires=Thu, 01 Jan 1970 00:00:01 GMT';
+				document.cookie =  (c_name + "=" + c_value + ";path=/;");
+			}
+
+			function setCookie(c_name, value){
+				var exdate = new Date();
+				exdate.setDate(exdate.getDate() + 365);
+				var c_value= value + "; expires=" + exdate.toUTCString();
+				document.cookie =  (c_name + "=" + c_value + ";path=/;");
+			}
+
+			function getCookie(c_name){
+				var i,x,y,ARRcookies=document.cookie.split(";");
+				for (i=0;i<ARRcookies.length;i++){
+					x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+					y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+					x=x.replace(/^\s+|\s+$/g,"");
+					if (x==c_name){
+						return (y);
+					}
+				}
+			}
+
+			function addEvent( obj, type, fn ) {
+	       		if (obj.addEventListener)
+			    	obj.addEventListener(type, fn, false);
+			    else if (obj.attachEvent) 
+			    	obj.attachEvent('on' + type, function(){ fn.apply(obj, new Array(window.event)); });
+			}
+
+			function receiveMyMessage(callback) {
+				addEvent(window, 'message', callback);
+			}
+
+			function postMyMessage(message){
+				parent.postMessage(message, '*');
+			}
+
+			function makePostMessage(message_type){
+				var cookie = localStorage.getItem(bounceCookieName);
+				return cookie?encodeURIComponent(cookie):'';
+			}
+
+			
+			if(parent != window) {//this only runs in iframe
+				//safari block third party test
+				
+				var client_id = location.hash.replace('#','');
+				var bounceCookieName = 'bounceClientVisit' + client_id;
+				var epCookieName = 'epid' + client_id;
+				var test_name = 'test';
+				var test_value = 'test';
+
+				var test_passed = true;
+
+				setCookie(test_name, test_value);
+
+				if(getCookie(test_name) != test_value){
+					test_passed = false;
+				} else {
+					clearCookie(test_name);
+				}
+				//end of safari block third party test
+				//chrome block third party test
+				try {
+					localStorage.setItem(test_name, test_value);
+					localStorage.removeItem(test_name);
+				}catch(e){
+					test_passed = false;
+				}
+
+				if(test_passed){
+					
+					//listen to storage change from other tabs
+					addEvent(window, 'storage', function(data){
+						postMyMessage(makePostMessage());
+					}, false);
+
+					//send current cookie on page load
+					postMyMessage(makePostMessage());
+
+					//update cookie
+					receiveMyMessage(function(message){
+						if(message && message.data){
+							var messageData = decodeURIComponent(message.data);
+							if(messageData.indexOf('getEpCookieValue') > -1){
+								var epCookieValue = getCookie(epCookieName);
+								if(epCookieValue) {
+									postMyMessage('epCookieValue=' + epCookieValue);
+								}
+							} else if(messageData.indexOf('"vid":')>-1&&messageData.indexOf('"vpv":')>-1){
+								localStorage.setItem(bounceCookieName, messageData);
+							}
+						}
+					});
+				}else{
+					postMyMessage('third_party_cookies_disabled');
+				}
+			}
+		</script>
+	</head>
+	<body>
+	
+
+</body></html>
