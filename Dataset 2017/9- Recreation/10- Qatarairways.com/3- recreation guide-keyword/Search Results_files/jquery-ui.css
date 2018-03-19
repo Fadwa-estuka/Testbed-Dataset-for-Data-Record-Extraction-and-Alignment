@@ -1,0 +1,175 @@
+
+/* Autocomplete
+----------------------------------*/
+.ui-autocomplete { position: absolute; cursor: default; }	
+.ui-autocomplete-loading { background: white url('images/ui-anim_basic_16x16.gif') right center no-repeat; }
+
+/* workarounds */
+* html .ui-autocomplete { width:1px; } /* without this, the menu expands to 100% in IE6 */
+
+/* Menu
+----------------------------------*/
+.ui-autocomplete {
+max-height: 180px;
+overflow-y: auto;
+width:220px;
+/* prevent horizontal scrollbar */
+overflow-x: hidden;
+-moz-border-radius: 0px !important; -webkit-border-radius: 0px !important; border-radius: 0px  !important;
+padding-left: 0px;
+border: 1px solid black;
+}
+
+/* IE 6 doesn't support max-height
+* we use height instead, but this forces the menu to always be this tall
+*/
+* html .ui-autocomplete {
+height: 180px;
+width:220px;
+}
+.ui-menu {
+	list-style:none;
+	padding: 0px;
+	margin: 0;
+	display:block;
+}
+.ui-menu .ui-menu {
+	margin-top: -3px;
+}
+.ui-menu .ui-menu-item {
+	margin:0;
+	padding: 0;
+	/* width: 100%; */
+	
+}
+.ac_results ul {
+	width: 100%;
+	list-style-position: outside;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+li.ui-menu-item {
+	margin: 0px;
+	padding: 2px 5px;
+	cursor: default;
+	display: block;
+	font: menu;
+	font-size: 14px;
+	line-height: 16px;
+	overflow: hidden;
+}
+
+li.ui-menu-item:nth-child(odd){background:#eeeeee;}
+li.ui-menu-item:nth-child(even){background:#ffffff;} 
+
+.ui-menu .ui-menu-item a {
+	text-decoration:none;
+	display:block;
+	padding:.2em .4em;
+	line-height:1.5;
+	-moz-border-radius: 0px !important; -webkit-border-radius: 0px !important; border-radius: 0px  !important;
+}
+ .ui-menu .ui-menu-item a.ui-state-hover,
+.ui-menu .ui-menu-item a.ui-state-active {
+	margin: 0px;
+	background-color: #6C1D4C;
+    color: #FFFFFF;
+	padding:.2em .4em;
+	line-height:1.5;
+	border: none !important;
+}
+.ac_results {
+	padding: 0px;
+	border: 1px solid black;
+	background-color: white;
+	overflow: hidden;
+	z-index: 99999;
+}
+
+.ac_results ul {
+	width: 100%;
+	list-style-position: outside;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.ac_results li {
+	margin: 0px;
+	padding: 2px 5px;
+	cursor: default;
+	display: block;
+	font: menu;
+	font-size: 10px;
+	line-height: 16px;
+	overflow: hidden;
+}
+
+.ac_odd {
+	background-color: #eee;
+}
+
+.ac_over {
+	background-color: #6C1D4C;
+	color: white;
+}
+
+.p {cursor: pointer;}
+.acfb-input{
+	border:medium none;
+	margin:0pt;
+	outline-color:-moz-use-text-color;
+	outline-style:none;
+	outline-width:0pt;
+	padding:3px 0pt 2px;
+	width:200px;
+	height:20px;
+	background: none repeat scroll 0 0 #F3F3ED;
+}
+
+ul.acfb-holder { 
+	margin  : 0; 
+	border  : 1px solid #C3C3C3; 
+	height  : 25px !important; 
+	height  : 1%; 
+	overflow: hidden; 
+	font    : 11px;
+	width:205px;
+	background: none repeat scroll 0 0 #F3F3ED
+}
+ul.acfb-holder li { 
+	float   : left; 
+	margin  : 0 5px 4px 0; 
+	list-style-type: none; 
+}
+ul.acfb-holder li.acfb-data { 
+	border-radius         : 6px; 
+	-moz-border-radius    : 6px; 
+	-webkit-border-radius : 6px; 
+	border     : 1px solid #C3C3C3; 
+	padding    : 1px 5px 2px; 
+	background : #C3C3C3; 
+	margin:2px;
+	max-width: 189px;
+	height : 17px;
+	overflow : hidden;
+	direction:ltr;
+}
+
+li.acfb-data span {
+   color: #301E29;
+    font-size: 13px;
+    font-weight: normal;
+	
+
+	word-wrap: break-word;
+	max-width: 176px; 
+	float: left;
+
+}
+
+li.acfb-data img {
+   padding-top : 5px;
+   margin-left : 5px;
+}

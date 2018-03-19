@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html dir="ltr"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="icon" href="https://www.google.com/favicon.ico" type="image/x-icon">
+<link href="cse_data/css.css" rel="stylesheet">
+<title>Google Custom Search</title>
+<script async="" src="cse_data/async-ads.js"></script><script type="text/javascript" src="cse_data/jsapi"></script>
+<script type="text/javascript">
+google.load('search', '1', {});
+function searchLoaded() {
+var options = {};
+options['adoptions'] = {'cseGoogleHosting': 'iframe'};
+var customSearchControl = new google.search.CustomSearchControl(
+"001386561677912454871:vqo-otufzbo"
+, options);
+customSearchControl.setRefinementStyle("link");
+customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+customSearchControl.setMoreAds();
+var options = new google.search.DrawOptions();
+options.setSearchFormRoot('cse-search-form');
+customSearchControl.draw('cse', options);
+historyManagement(customSearchControl);
+}
+function historyManagement(customSearchControl) {
+if (customSearchControl.startHistoryManagement(init)) {
+customSearchControl.setLinkTarget(
+google.search.Search.LINK_TARGET_TOP);
+}
+}
+function init(customSearchControl) {
+var num = customSearchControl.getWebSearcher().getNumResultsPerPage();
+customSearchControl.execute("recreation guide");
+}
+google.setOnLoadCallback(searchLoaded, true);
+</script><script src="cse_data/a" type="text/javascript"></script><link href="cse_data/defaulten.css" type="text/css" rel="stylesheet"><script src="cse_data/defaulten.js" type="text/javascript"></script>
+<link rel="stylesheet" href="cse_data/default.css" type="text/css">
+<style type="text/css">
+.gsc-control-cse {
+font-family: Arial, sans-serif;
+border-color: #336699;
+background-color: #FFFFFF;
+}
+.gsc-control-cse .gsc-table-result {
+font-family: Arial, sans-serif;
+}
+input.gsc-input {
+border-color: #D9D9D9;
+}
+input.gsc-search-button {
+border-color: #666666;
+background-color: #CECECE;
+}
+.gsc-tabHeader.gsc-tabhInactive {
+border-color: #E9E9E9;
+background-color: #E9E9E9;
+}
+.gsc-tabHeader.gsc-tabhActive {
+border-top-color: #FF9900;
+border-left-color: #E9E9E9;
+border-right-color: #E9E9E9;
+background-color: #FFFFFF;
+}
+.gsc-tabsArea {
+border-color: #E9E9E9;
+}
+.gsc-webResult.gsc-result,
+.gsc-results .gsc-imageResult {
+border-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gsc-webResult.gsc-result:hover,
+.gsc-imageResult:hover {
+border-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gsc-webResult.gsc-result.gsc-promotion:hover {
+border-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gs-webResult.gs-result a.gs-title:link,
+.gs-webResult.gs-result a.gs-title:link b,
+.gs-imageResult a.gs-title:link,
+.gs-imageResult a.gs-title:link b {
+color: #660000;
+}
+.gs-webResult.gs-result a.gs-title:visited,
+.gs-webResult.gs-result a.gs-title:visited b,
+.gs-imageResult a.gs-title:visited,
+.gs-imageResult a.gs-title:visited b {
+color: #333366;
+}
+.gs-webResult.gs-result a.gs-title:hover,
+.gs-webResult.gs-result a.gs-title:hover b,
+.gs-imageResult a.gs-title:hover,
+.gs-imageResult a.gs-title:hover b {
+color: #0000CC;
+}
+.gs-webResult.gs-result a.gs-title:active,
+.gs-webResult.gs-result a.gs-title:active b,
+.gs-imageResult a.gs-title:active,
+.gs-imageResult a.gs-title:active b {
+color: #0000CC;
+}
+.gsc-cursor-page {
+color: #660000;
+}
+a.gsc-trailing-more-results:link {
+color: #660000;
+}
+.gs-webResult .gs-snippet,
+.gs-imageResult .gs-snippet,
+.gs-fileFormatType {
+color: #000000;
+}
+.gs-webResult div.gs-visibleUrl,
+.gs-imageResult div.gs-visibleUrl {
+color: #777777;
+}
+.gs-webResult div.gs-visibleUrl-short {
+color: #777777;
+}
+.gs-webResult div.gs-visibleUrl-short {
+display: none;
+}
+.gs-webResult div.gs-visibleUrl-long {
+display: block;
+}
+.gs-promotion div.gs-visibleUrl-short {
+display: none;
+}
+.gs-promotion div.gs-visibleUrl-long {
+display: block;
+}
+.gsc-cursor-box {
+border-color: #FFFFFF;
+}
+.gsc-results .gsc-cursor-box .gsc-cursor-page {
+border-color: #E9E9E9;
+background-color: #FFFFFF;
+color: #660000;
+}
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+border-color: #FF9900;
+background-color: #FFFFFF;
+color: #333366;
+}
+.gsc-webResult.gsc-result.gsc-promotion {
+border-color: #336699;
+background-color: #FFFFFF;
+}
+.gsc-completion-title {
+color: #660000;
+}
+.gsc-completion-snippet {
+color: #000000;
+}
+.gs-promotion a.gs-title:link,
+.gs-promotion a.gs-title:link *,
+.gs-promotion .gs-snippet a:link {
+color: #0000CC;
+}
+.gs-promotion a.gs-title:visited,
+.gs-promotion a.gs-title:visited *,
+.gs-promotion .gs-snippet a:visited {
+color: #0000CC;
+}
+.gs-promotion a.gs-title:hover,
+.gs-promotion a.gs-title:hover *,
+.gs-promotion .gs-snippet a:hover {
+color: #0000CC;
+}
+.gs-promotion a.gs-title:active,
+.gs-promotion a.gs-title:active *,
+.gs-promotion .gs-snippet a:active {
+color: #0000CC;
+}
+.gs-promotion .gs-snippet,
+.gs-promotion .gs-title .gs-promotion-title-right,
+.gs-promotion .gs-title .gs-promotion-title-right * {
+color: #000000;
+}
+.gs-promotion .gs-visibleUrl,
+.gs-promotion .gs-visibleUrl-short {
+color: #008000;
+}</style>
+<style type="text/css">
+html {
+overflow: hidden;
+}
+body {
+background-color: #FFFFFF;
+color: #000000;
+font-family: arial, sans-serif;
+}
+#cse-header {
+width: 800px;
+overflow: auto;
+padding: 10px 4px;
+}
+#cse-logo {
+float: left;
+border: none;
+direction: ltr;
+}
+#cse-logo-target {
+color: #000000;
+text-decoration: none;
+}
+#cse-search-form {
+width: 22em;
+float: left;
+padding-left: 16px;
+}
+#cse {
+width: 100%;
+}
+#cse-footer {
+clear: both;
+font-size: 82%;
+text-align: center;
+padding: 16px;
+}
+.gsc-control-cse {
+padding: 0;
+border: none;
+}
+.gsc-branding {
+display: none;
+}
+.gsc-adBlock {
+padding-bottom: 10px;
+}
+.gs-webResult {
+width: 42em;
+padding: 2px 0;
+}
+.gsc-result .gs-title {
+height: 1.25em;
+}
+.gs-title, .gs-promotion a {
+font-weight: normal;
+}
+.gsc-results .gsc-cursor-box {
+text-align: center;
+width: 99%;
+margin-left: auto;
+margin-right: auto;
+}
+.gsc-webResult,
+.gsc-imageResult-classic,
+.gsc-imageResult-column {
+margin-bottom: 10px;
+padding: 0;
+}
+.gs-webResult div.gs-visibleUrl-short {
+display: none;
+}
+.gs-webResult div.gs-visibleUrl-long {
+display: block;
+}
+.gsc-clear-button {
+display: none;
+}
+.lockup-logo,
+.lockup-text {
+display: inline-block;
+}
+.lockup-logo {
+width: 74px;
+height: 24px;
+background-image:
+url(//www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_74x24dp.png);
+background-size: 74px 24px;
+}
+.lockup-text {
+font-family: 'Product Sans', Arial, Helvetica, sans-serif;
+font-size: 22.1px;
+text-rendering: optimizeLegibility;
+position: relative;
+top: -6px;
+left: -5px;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+.lockup-brand {
+opacity: 0.54;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+.lockup-logo {
+background-image:
+url(//www.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_74x24dp.png);
+}
+.lockup-text {
+font-size: 21.3px;
+left: -7px;
+}
+}
+</style>
+<style type="text/css">.gscb_a{display:inline-block;font:27px/13px arial,sans-serif}.gsst_a .gscb_a{color:#a1b9ed;cursor:pointer}.gsst_a:hover .gscb_a,.gsst_a:focus .gscb_a{color:#36c}.gsst_a{display:inline-block}.gsst_a{cursor:pointer;padding:0 4px}.gsst_a:hover{text-decoration:none!important}.gsst_b{font-size:16px;padding:0 2px;position:relative;user-select:none;-moz-user-select:none;white-space:nowrap}.gsst_e{opacity:0.55;}.gsst_a:hover .gsst_e,.gsst_a:focus .gsst_e{opacity:0.72;}.gsst_a:active .gsst_e{opacity:1;}.gsst_f{background:white;text-align:left}.gsst_g{background-color:white;border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-moz-box-shadow:0 2px 4px rgba(0,0,0,0.2);margin:-1px -3px;padding:0 6px}.gsst_h{background-color:white;height:1px;margin-bottom:-1px;position:relative;top:-1px}.gsib_a{width:100%;padding:4px 6px 0}.gsib_a,.gsib_b{vertical-align:top}.gssb_c{border:0;position:absolute;z-index:989}.gssb_e{border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-moz-box-shadow:0 2px 4px rgba(0,0,0,0.2);cursor:default}.gssb_f{visibility:hidden;white-space:nowrap}.gssb_k{border:0;display:block;position:absolute;top:0;z-index:988}.gsdd_a{border:none!important}.gsq_a{padding:0}.gscsep_a{display:none}.gssb_a{padding:0 7px}.gssb_a,.gssb_a td{white-space:nowrap;overflow:hidden;line-height:22px}#gssb_b{font-size:11px;color:#36c;text-decoration:none}#gssb_b:hover{font-size:11px;color:#36c;text-decoration:underline}.gssb_g{text-align:center;padding:8px 0 7px;position:relative}.gssb_h{font-size:15px;height:28px;margin:0.2em}.gssb_i{background:#eee}.gss_ifl{visibility:hidden;padding-left:5px}.gssb_i .gss_ifl{visibility:visible}a.gssb_j{font-size:13px;color:#36c;text-decoration:none;line-height:100%}a.gssb_j:hover{text-decoration:underline}.gssb_l{height:1px;background-color:#e5e5e5}.gssb_m{color:#000;background:#fff}.gsfe_a{border:1px solid #b9b9b9;border-top-color:#a0a0a0;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);}.gsfe_b{border:1px solid #4d90fe;outline:none;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);}.gssb_a{padding:0 7px}.gssb_e{border:0}.gssb_l{margin:5px 0}.gssb_c .gsc-completion-container{position:static}.gssb_c{z-index:5000}.gsc-completion-container table{background:transparent;font-size:inherit;font-family:inherit}.gssb_c > tbody > tr,.gssb_c > tbody > tr > td,.gssb_d,.gssb_d > tbody > tr,.gssb_d > tbody > tr > td,.gssb_e,.gssb_e > tbody > tr,.gssb_e > tbody > tr > td{padding:0;margin:0;border:0}.gssb_a table,.gssb_a table tr,.gssb_a table tr td{padding:0;margin:0;border:0}</style></head>
+<body>
+<noscript>
+<h3>Google Custom Search requires JavaScript</h3>
+<p>JavaScript is either disabled or not supported by your browser.
+To use Custom Search, either:</p>
+<ol>
+<li>enable JavaScript by changing your browser options and reloading this page.</li>
+<li>or, use our <a href="/cse?cx=001386561677912454871:vqo-otufzbo&cof=FORID:11&q=recreation+guide&ad=n9&num=10&rurl=http://www.qatarairways.com/ca/en/search-results.page%3Fcx%3D001386561677912454871:vqo-otufzbo%26cof%3DFORID:11%26q%3Drecreation%2520guide&siteurl=http://www.qatarairways.com/ca/en/search-results.page%3Fcx%3D001386561677912454871:vqo-otufzbo%26cof%3DFORID:11%26q%3Darizona%2520recreation&nojs=1">legacy HTML version</a>.
+Some features may be missing from this version.</li>
+</ol>
+</noscript>
+<div id="cse-hosted">
+<div id="cse-search-form" style="display:none" dir="ltr"><form class="gsc-search-box" accept-charset="utf-8"><table class="gsc-search-box" cellspacing="0" cellpadding="0"><tbody><tr><td class="gsc-input"><input autocomplete="off" size="10" class=" gsc-input" name="search" title="search" id="gsc-i-id1" dir="ltr" spellcheck="false" style="outline: medium none; background: rgb(255, 255, 255) none repeat scroll 0% 0%;" value="recreation guide" type="text"><input name="bgresponse" id="bgresponse" type="hidden"></td><td class="gsc-search-button"><input value="Search" class="gsc-search-button" title="search" type="button"></td><td class="gsc-clear-button"><div class="gsc-clear-button" title="clear results">&nbsp;</div></td></tr></tbody></table><table class="gsc-branding" cellspacing="0" cellpadding="0"><tbody><tr><td class="gsc-branding-user-defined"></td><td class="gsc-branding-text"><div class="gsc-branding-text">powered by</div></td><td class="gsc-branding-img"><img src="cse_data/small-logo.png" class="gsc-branding-img"></td></tr></tbody></table></form></div>
+<div id="cse-body">
+<div id="cse"><div class="gsc-control-cse gsc-control-cse-en"><div class="gsc-control-wrapper-cse" dir="ltr"><div class="gsc-results-wrapper-nooverlay gsc-results-wrapper-visible"><div class="gsc-tabsAreaInvisible"><div class="gsc-tabHeader gsc-inline-block gsc-tabhActive">Qatar Airways On-site Search</div><span class="gs-spacer"> </span></div><div class="gsc-refinementsAreaInvisible"></div><div class="gsc-above-wrapper-area"><table class="gsc-above-wrapper-area-container" cellspacing="0" cellpadding="0"><tbody><tr><td class="gsc-result-info-container"><div class="gsc-result-info" id="resInfo-0">About 22 results (0.25 seconds)</div></td></tr></tbody></table></div><div class="gsc-adBlockNoHeight" style="height: 0px;"></div><div class="gsc-wrapper"><div class="gsc-adBlockNoHeight" style="height: 0px; font-weight: normal; text-align: center;"><iframe marginwidth="0" marginheight="0" allowtransparency="true" scrolling="no" style="visibility: hidden; height: 0px;" name="{&quot;name&quot;:&quot;master-1&quot;,&quot;master-1&quot;:{&quot;linkTarget&quot;:&quot;_top&quot;,&quot;lines&quot;:3,&quot;fontSizeTitle&quot;:&quot;16px&quot;,&quot;fontSizeDescription&quot;:&quot;13px&quot;,&quot;fontSizeDomainLink&quot;:&quot;13px&quot;,&quot;position&quot;:&quot;top&quot;,&quot;cseGoogleHosting&quot;:&quot;iframe&quot;,&quot;adIconLocation&quot;:&quot;ad-left&quot;,&quot;type&quot;:&quot;ads&quot;,&quot;hl&quot;:&quot;en&quot;,&quot;columns&quot;:1,&quot;horizontalAlignment&quot;:&quot;left&quot;,&quot;resultsPageQueryParam&quot;:&quot;query&quot;}}" id="master-1" src="https://cse.google.com/cse_v2/ads?q=recreation%20guide&amp;r=m&amp;cx=001386561677912454871%3Avqo-otufzbo&amp;fexp=20606%2C7000810&amp;client=google-coop&amp;hl=en&amp;type=0&amp;oe=UTF-8&amp;ie=UTF-8&amp;format=p4&amp;ad=p4&amp;nocache=6191486427652389&amp;num=0&amp;output=uds_ads_only&amp;source=gcsc&amp;v=3&amp;adext=as1%2Csr1&amp;bsl=10&amp;u_his=43&amp;u_tz=-480&amp;dt=1486427652390&amp;u_w=1440&amp;u_h=900&amp;biw=-12245933&amp;bih=-12245933&amp;isw=600&amp;ish=1050&amp;psw=600&amp;psh=0&amp;frm=2&amp;uio=uv3st16sd13sv13lhsl1sr1-&amp;jsv=78810&amp;rurl=https%3A%2F%2Fcse.google.com%2Fcse%3Fcx%3D001386561677912454871%3Avqo-otufzbo%26cof%3DFORID%3A11%26q%3Drecreation%2520guide%26ad%3Dn9%26num%3D10%26rurl%3Dhttp%253A%252F%252Fwww.qatarairways.com%252Fca%252Fen%252Fsearch-results.page%253Fcx%253D001386561677912454871%253Avqo-otufzbo%2526cof%253DFORID%253A11%2526q%253Drecreation%252520guide%26siteurl%3Dhttp%253A%252F%252Fwww.qatarairways.com%252Fca%252Fen%252Fsearch-results.page%253Fcx%253D001386561677912454871%253Avqo-otufzbo%2526cof%253DFORID%253A11%2526q%253Darizona%252520recreation%23gsc.tab%3D0%26gsc.q%3Drecreation%2520guide%26gsc.page%3D1&amp;referer=http%3A%2F%2Fwww.qatarairways.com%2Fca%2Fen%2Fsearch-results.page%3Fcx%3D001386561677912454871%3Avqo-otufzbo%26cof%3DFORID%3A11%26q%3Drecreation%2520guide#master-1" width="100%" frameborder="0"></iframe></div><div class="gsc-resultsbox-visible"><div class="gsc-resultsRoot gsc-tabData gsc-tabdActive"><table class="gsc-resultsHeader" cellspacing="0" cellpadding="0"><tbody><tr><td class="gsc-twiddleRegionCell gsc-twiddle-opened"><div class="gsc-twiddle"><div class="gsc-title">Web</div></div><div class="gsc-stats">(10)</div><div class="gsc-results-selector gsc-all-results-active"><div class="gsc-result-selector gsc-one-result" title="show one result">&nbsp;</div><div class="gsc-result-selector gsc-more-results" title="show more results">&nbsp;</div><div class="gsc-result-selector gsc-all-results" title="show all results">&nbsp;</div></div></td><td class="gsc-configLabelCell"></td></tr></tbody></table><div class="gsc-results gsc-webResult" style="display: block;"><div class="gsc-webResult gsc-result"><div class="gs-webResult gs-result"><div class="gsc-thumbnail-inside"><div class="gs-title"><a class="gs-title" href="https://discoverqatar.qatarairways.com/qa-en/holiday/zekreet-tour-/-west-coast-tour-7f5dc4050e973b5def9d4a0377f7255c/overview" target="_top" dir="ltr" data-cturl="https://www.google.com/url?q=https://discoverqatar.qatarairways.com/qa-en/holiday/zekreet-tour-/-west-coast-tour-7f5dc4050e973b5def9d4a0377f7255c/overview&amp;sa=U&amp;ved=0ahUKEwij8qiN0fzRAhXk34MKHRPmCEIQFggEMAA&amp;client=internal-uds-cse&amp;usg=AFQjCNELjAPGvbAlAYmVg_ZMcHMAIMnZPA" data-ctorig="https://discoverqatar.qatarairways.com/qa-en/holiday/zekreet-tour-/-west-coast-tour-7f5dc4050e973b5def9d4a0377f7255c/overview">Zekreet Tour / West Coast Tour - Overview</a></div></div><div class="gsc-url-top"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">discoverqatar.qatarairways.com</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">https://discoverqatar.qatarairways.com/qa-en/...coast.../overview</div></div><table class="gsc-table-result"><tbody><tr><td class="gsc-table-cell-thumbnail gsc-thumbnail" style="display:none"></td><td onclick="if (this.className == 'gsc-table-cell-snippet-close gsc-collapsable') { this.className = 'gsc-table-cell-snippet-open gsc-collapsable'; } else if (this.className == 'gsc-table-cell-snippet-open gsc-collapsable') { this.className = 'gsc-table-cell-snippet-close gsc-collapsable'; };" class="gsc-table-cell-snippet-close"><div class="gs-title gsc-table-cell-thumbnail gsc-thumbnail-left"><a class="gs-title" href="https://discoverqatar.qatarairways.com/qa-en/holiday/zekreet-tour-/-west-coast-tour-7f5dc4050e973b5def9d4a0377f7255c/overview" target="_top" dir="ltr" data-cturl="https://www.google.com/url?q=https://discoverqatar.qatarairways.com/qa-en/holiday/zekreet-tour-/-west-coast-tour-7f5dc4050e973b5def9d4a0377f7255c/overview&amp;sa=U&amp;ved=0ahUKEwij8qiN0fzRAhXk34MKHRPmCEIQFggEMAA&amp;client=internal-uds-cse&amp;usg=AFQjCNELjAPGvbAlAYmVg_ZMcHMAIMnZPA" data-ctorig="https://discoverqatar.qatarairways.com/qa-en/holiday/zekreet-tour-/-west-coast-tour-7f5dc4050e973b5def9d4a0377f7255c/overview">Zekreet Tour / West Coast Tour - Overview</a></div><div><span></span></div><div class="gs-bidi-start-align gs-snippet" dir="ltr">The film city is a contemporary <b>recreation</b> of an antique Arabic village nestled 
+behind a ... English Speaking Tour <b>Guide</b>; The duration is 4hours including pick 
+up&nbsp;...</div><div class="gsc-url-bottom"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">discoverqatar.qatarairways.com</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">https://discoverqatar.qatarairways.com/qa-en/...coast.../overview</div></div><div class="gs-richsnippet-box" style="display: none;"></div><div class="gs-per-result-labels" url="https://discoverqatar.qatarairways.com/qa-en/holiday/zekreet-tour-/-west-coast-tour-7f5dc4050e973b5def9d4a0377f7255c/overview"></div></td></tr></tbody></table></div><div class="gs-watermark"><a href="http://code.google.com/apis/ajaxsearch/faq.html" class="gs-watermark" target="_blank">clipped from Google - 2/2017</a></div></div><div class="gsc-expansionArea"><div class="gsc-webResult gsc-result"><div class="gs-webResult gs-result"><div class="gsc-thumbnail-inside"><div class="gs-title"><a class="gs-title" href="http://www.qatarairways.com/us/en/sponsorship.page" target="_top" dir="ltr" data-cturl="https://www.google.com/url?q=http://www.qatarairways.com/us/en/sponsorship.page&amp;sa=U&amp;ved=0ahUKEwij8qiN0fzRAhXk34MKHRPmCEIQFggGMAE&amp;client=internal-uds-cse&amp;usg=AFQjCNErExDtO30-mwObmKEIAmHTNeEeRg" data-ctorig="http://www.qatarairways.com/us/en/sponsorship.page">Sponsorship | Qatar Airways</a></div></div><div class="gsc-url-top"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">www.qatarairways.com</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">www.qatarairways.com/us/en/sponsorship.page</div></div><table class="gsc-table-result"><tbody><tr><td class="gsc-table-cell-thumbnail gsc-thumbnail" style="display:none"></td><td onclick="if (this.className == 'gsc-table-cell-snippet-close gsc-collapsable') { this.className = 'gsc-table-cell-snippet-open gsc-collapsable'; } else if (this.className == 'gsc-table-cell-snippet-open gsc-collapsable') { this.className = 'gsc-table-cell-snippet-close gsc-collapsable'; };" class="gsc-table-cell-snippet-close"><div class="gs-title gsc-table-cell-thumbnail gsc-thumbnail-left"><a class="gs-title" href="http://www.qatarairways.com/us/en/sponsorship.page" target="_top" dir="ltr" data-cturl="https://www.google.com/url?q=http://www.qatarairways.com/us/en/sponsorship.page&amp;sa=U&amp;ved=0ahUKEwij8qiN0fzRAhXk34MKHRPmCEIQFggGMAE&amp;client=internal-uds-cse&amp;usg=AFQjCNErExDtO30-mwObmKEIAmHTNeEeRg" data-ctorig="http://www.qatarairways.com/us/en/sponsorship.page">Sponsorship | Qatar Airways</a></div><div><span></span></div><div class="gs-bidi-start-align gs-snippet" dir="ltr">Qatar Airways proudly supports a range of exciting international and local 
+initiatives dedicated to enriching our global community. An essential part of our&nbsp;...</div><div class="gsc-url-bottom"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">www.qatarairways.com</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">www.qatarairways.com/us/en/sponsorship.page</div></div><div class="gs-richsnippet-box" style="display: none;"></div><div class="gs-per-result-labels" url="http://www.qatarairways.com/us/en/sponsorship.page"></div></td></tr></tbody></table></div><div class="gs-watermark"><a href="http://code.google.com/apis/ajaxsearch/faq.html" class="gs-watermark" target="_blank">clipped from Google - 2/2017</a></div></div><div class="gsc-webResult gsc-result"><div class="gs-webResult gs-result"><div class="gsc-thumbnail-inside"><div class="gs-title"><a class="gs-title" href="http://www.qatarairways.com/global/en/destinations/flights-from-doha-to-miami.page" target="_top" dir="ltr" data-cturl="https://www.google.com/url?q=http://www.qatarairways.com/global/en/destinations/flights-from-doha-to-miami.page&amp;sa=U&amp;ved=0ahUKEwij8qiN0fzRAhXk34MKHRPmCEIQFggIMAI&amp;client=internal-uds-cse&amp;usg=AFQjCNEyo51pjm2FGDNjau8UivWiRtqnCg" data-ctorig="http://www.qatarairways.com/global/en/destinations/flights-from-doha-to-miami.page">Book a Flight from Doha to Miami | Qatar Airways</a></div></div><div class="gsc-url-top"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">www.qatarairways.com</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">www.qatarairways.com/global/en/.../flights-from-doha-to-miami.page</div></div><table class="gsc-table-result"><tbody><tr><td class="gsc-table-cell-thumbnail gsc-thumbnail" style="display:none"></td><td onclick="if (this.className == 'gsc-table-cell-snippet-close gsc-collapsable') { this.className = 'gsc-table-cell-snippet-open gsc-collapsable'; } else if (this.className == 'gsc-table-cell-snippet-open gsc-collapsable') { this.className = 'gsc-table-cell-snippet-close gsc-collapsable'; };" class="gsc-table-cell-snippet-close"><div class="gs-title gsc-table-cell-thumbnail gsc-thumbnail-left"><a class="gs-title" href="http://www.qatarairways.com/global/en/destinations/flights-from-doha-to-miami.page" target="_top" dir="ltr" data-cturl="https://www.google.com/url?q=http://www.qatarairways.com/global/en/destinations/flights-from-doha-to-miami.page&amp;sa=U&amp;ved=0ahUKEwij8qiN0fzRAhXk34MKHRPmCEIQFggIMAI&amp;client=internal-uds-cse&amp;usg=AFQjCNEyo51pjm2FGDNjau8UivWiRtqnCg" data-ctorig="http://www.qatarairways.com/global/en/destinations/flights-from-doha-to-miami.page">Book a Flight from Doha to Miami | Qatar Airways</a></div><div><span></span></div><div class="gs-bidi-start-align gs-snippet" dir="ltr">Doha to Miami route <b>guide</b> ... If you want to get out and about then the Oleta River 
+State <b>Recreation</b> Park is the ... More Information: Read our Doha Travel <b>Guide</b>.</div><div class="gsc-url-bottom"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">www.qatarairways.com</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">www.qatarairways.com/global/en/.../flights-from-doha-to-miami.page</div></div><div class="gs-richsnippet-box" style="display: none;"></div><div class="gs-per-result-labels" url="http://www.qatarairways.com/global/en/destinations/flights-from-doha-to-miami.page"></div></td></tr></tbody></table></div><div class="gs-watermark"><a href="http://code.google.com/apis/ajaxsearch/faq.html" class="gs-watermark" target="_blank">clipped from Google - 2/2017</a></div></div><div class="gsc-webResult gsc-result"><div class="gs-webResult gs-result"><div class="gsc-thumbnail-inside"><div class="gs-title"><a class="gs-title" href="http://www.qatarairways.com/us/en/destinations/flights-from-philadelphia-to-colombo.page" target="_top" dir="ltr" data-cturl="https://www.google.com/url?q=http://www.qatarairways.com/us/en/destinations/flights-from-philadelphia-to-colombo.page&amp;sa=U&amp;ved=0ahUKEwij8qiN0fzRAhXk34MKHRPmCEIQFggKMAM&amp;client=internal-uds-cse&amp;usg=AFQjCNGIPn_iUjZUZReQCJNIqIuK9EUiRA" data-ctorig="http://www.qatarairways.com/us/en/destinations/flights-from-philadelphia-to-colombo.page">Book a Flight from Philadelphia to Colombo | Qatar Airways</a></div></div><div class="gsc-url-top"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">www.qatarairways.com</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">www.qatarairways.com/.../flights-from-philadelphia-to-colombo.page</div></div><table class="gsc-table-result"><tbody><tr><td class="gsc-table-cell-thumbnail gsc-thumbnail" style="display:none"></td><td onclick="if (this.className == 'gsc-table-cell-snippet-close gsc-collapsable') { this.className = 'gsc-table-cell-snippet-open gsc-collapsable'; } else if (this.className == 'gsc-table-cell-snippet-open gsc-collapsable') { this.className = 'gsc-table-cell-snippet-close gsc-collapsable'; };" class="gsc-table-cell-snippet-close"><div class="gs-title gsc-table-cell-thumbnail gsc-thumbnail-left"><a class="gs-title" href="http://www.qatarairways.com/us/en/destinations/flights-from-philadelphia-to-colombo.page" target="_top" dir="ltr" data-cturl="https://www.google.com/url?q=http://www.qatarairways.com/us/en/destinations/flights-from-philadelphia-to-colombo.page&amp;sa=U&amp;ved=0ahUKEwij8qiN0fzRAhXk34MKHRPmCEIQFggKMAM&amp;client=internal-uds-cse&amp;usg=AFQjCNGIPn_iUjZUZReQCJNIqIuK9EUiRA" data-ctorig="http://www.qatarairways.com/us/en/destinations/flights-from-philadelphia-to-colombo.page">Book a Flight from Philadelphia to Colombo | Qatar Airways</a></div><div><span></span></div><div class="gs-bidi-start-align gs-snippet" dir="ltr">... and at the same time have easy access to some magnificent beaches for 
+<b>recreation</b> and relaxation. ... More Information: Read our Philadelphia Travel 
+<b>Guide</b></div><div class="gsc-url-bottom"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">www.qatarairways.com</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">www.qatarairways.com/.../flights-from-philadelphia-to-colombo.page</div></div><div class="gs-richsnippet-box" style="display: none;"></div><div class="gs-per-result-labels" url="http://www.qatarairways.com/us/en/destinations/flights-from-philadelphia-to-colombo.page"></div></td></tr></tbody></table></div><div class="gs-watermark"><a href="http://code.google.com/apis/ajaxsearch/faq.html" class="gs-watermark" target="_blank">clipped from Google - 2/2017</a></div></div><div class="gsc-webResult gsc-result"><div class="gs-webResult gs-result"><div class="gsc-thumbnail-inside"><div class="gs-title"><a class="gs-title" href="https://discoverqatar.qatarairways.com/qa-en/contact/" target="_top" dir="ltr" data-cturl="https://www.google.com/url?q=https://discoverqatar.qatarairways.com/qa-en/contact/&amp;sa=U&amp;ved=0ahUKEwij8qiN0fzRAhXk34MKHRPmCEIQFggMMAQ&amp;client=internal-uds-cse&amp;usg=AFQjCNENB4-IiJOA8ivdh5KQ3zxx-PeSLQ" data-ctorig="https://discoverqatar.qatarairways.com/qa-en/contact/">Contact Us | Discover Qatar</a></div></div><div class="gsc-url-top"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">discoverqatar.qatarairways.com</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">https://discoverqatar.qatarairways.com/qa-en/contact/</div></div><table class="gsc-table-result"><tbody><tr><td class="gsc-table-cell-thumbnail gsc-thumbnail" style="display:none"></td><td onclick="if (this.className == 'gsc-table-cell-snippet-close gsc-collapsable') { this.className = 'gsc-table-cell-snippet-open gsc-collapsable'; } else if (this.className == 'gsc-table-cell-snippet-open gsc-collapsable') { this.className = 'gsc-table-cell-snippet-close gsc-collapsable'; };" class="gsc-table-cell-snippet-close"><div class="gs-title gsc-table-cell-thumbnail gsc-thumbnail-left"><a class="gs-title" href="https://discoverqatar.qatarairways.com/qa-en/contact/" target="_top" dir="ltr" data-cturl="https://www.google.com/url?q=https://discoverqatar.qatarairways.com/qa-en/contact/&amp;sa=U&amp;ved=0ahUKEwij8qiN0fzRAhXk34MKHRPmCEIQFggMMAQ&amp;client=internal-uds-cse&amp;usg=AFQjCNENB4-IiJOA8ivdh5KQ3zxx-PeSLQ" data-ctorig="https://discoverqatar.qatarairways.com/qa-en/contact/">Contact Us | Discover Qatar</a></div><div><span></span></div><div class="gs-bidi-start-align gs-snippet" dir="ltr">Contact Discover Qatar. Have a query? Tell us how Discover Qatar can assist 
+you or help to plan your stopover and activities in Qatar.</div><div class="gsc-url-bottom"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">discoverqatar.qatarairways.com</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">https://discoverqatar.qatarairways.com/qa-en/contact/</div></div><div class="gs-richsnippet-box" style="display: none;"></div><div class="gs-per-result-labels" url="https://discoverqatar.qatarairways.com/qa-en/contact/"></div></td></tr></tbody></table></div><div class="gs-watermark"><a href="http://code.google.com/apis/ajaxsearch/faq.html" class="gs-watermark" target="_blank">clipped from Google - 2/2017</a></div></div><div class="gsc-webResult gsc-result"><div class="gs-webResult gs-result"><div class="gsc-thumbnail-inside"><div class="gs-title"><a class="gs-title" href="https://discoverqatar.qatarairways.com/" target="_top" dir="ltr" data-cturl="https://www.google.com/url?q=https://discoverqatar.qatarairways.com/&amp;sa=U&amp;ved=0ahUKEwij8qiN0fzRAhXk34MKHRPmCEIQFggOMAU&amp;client=internal-uds-cse&amp;usg=AFQjCNHY1gSvGv_ziA9szjJLATjs4GAR_Q" data-ctorig="https://discoverqatar.qatarairways.com/">Discover Qatar :: Book hotels, transport, tours and excursion in Qatar</a></div></div><div class="gsc-url-top"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">discoverqatar.qatarairways.com</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">https://discoverqatar.qatarairways.com/</div></div><table class="gsc-table-result"><tbody><tr><td class="gsc-table-cell-thumbnail gsc-thumbnail" style="display:none"></td><td onclick="if (this.className == 'gsc-table-cell-snippet-close gsc-collapsable') { this.className = 'gsc-table-cell-snippet-open gsc-collapsable'; } else if (this.className == 'gsc-table-cell-snippet-open gsc-collapsable') { this.className = 'gsc-table-cell-snippet-close gsc-collapsable'; };" class="gsc-table-cell-snippet-close"><div class="gs-title gsc-table-cell-thumbnail gsc-thumbnail-left"><a class="gs-title" href="https://discoverqatar.qatarairways.com/" target="_top" dir="ltr" data-cturl="https://www.google.com/url?q=https://discoverqatar.qatarairways.com/&amp;sa=U&amp;ved=0ahUKEwij8qiN0fzRAhXk34MKHRPmCEIQFggOMAU&amp;client=internal-uds-cse&amp;usg=AFQjCNHY1gSvGv_ziA9szjJLATjs4GAR_Q" data-ctorig="https://discoverqatar.qatarairways.com/">Discover Qatar :: Book hotels, transport, tours and excursion in Qatar</a></div><div><span></span></div><div class="gs-bidi-start-align gs-snippet" dir="ltr">Discover Qatar (DQ) is a Destination Management Company (DMC) under Qatar 
+Airways Holidays to facilitate the development of Qatar as a tourist destination.</div><div class="gsc-url-bottom"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">discoverqatar.qatarairways.com</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">https://discoverqatar.qatarairways.com/</div></div><div class="gs-richsnippet-box" style="display: none;"></div><div class="gs-per-result-labels" url="https://discoverqatar.qatarairways.com/"></div></td></tr></tbody></table></div><div class="gs-watermark"><a href="http://code.google.com/apis/ajaxsearch/faq.html" class="gs-watermark" target="_blank">clipped from Google - 2/2017</a></div></div><div class="gsc-webResult gsc-result"><div class="gs-webResult gs-result"><div class="gsc-thumbnail-inside"><div class="gs-title"><a class="gs-title" href="https://discoverqatar.qatarairways.com/qa-en/holiday/arabian-night-safari-76fef22a087fd0e62f923356e8d6c16e/overview" target="_top" dir="ltr" data-cturl="https://www.google.com/url?q=https://discoverqatar.qatarairways.com/qa-en/holiday/arabian-night-safari-76fef22a087fd0e62f923356e8d6c16e/overview&amp;sa=U&amp;ved=0ahUKEwij8qiN0fzRAhXk34MKHRPmCEIQFggQMAY&amp;client=internal-uds-cse&amp;usg=AFQjCNE5uDBfDpZjyW114LI24ukAqBQC9g" data-ctorig="https://discoverqatar.qatarairways.com/qa-en/holiday/arabian-night-safari-76fef22a087fd0e62f923356e8d6c16e/overview">Arabian Night Safari - Overview</a></div></div><div class="gsc-url-top"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">discoverqatar.qatarairways.com</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">https://discoverqatar.qatarairways.com/qa-en/holiday/.../overview</div></div><table class="gsc-table-result"><tbody><tr><td class="gsc-table-cell-thumbnail gsc-thumbnail" style="display:none"></td><td onclick="if (this.className == 'gsc-table-cell-snippet-close gsc-collapsable') { this.className = 'gsc-table-cell-snippet-open gsc-collapsable'; } else if (this.className == 'gsc-table-cell-snippet-open gsc-collapsable') { this.className = 'gsc-table-cell-snippet-close gsc-collapsable'; };" class="gsc-table-cell-snippet-close"><div class="gs-title gsc-table-cell-thumbnail gsc-thumbnail-left"><a class="gs-title" href="https://discoverqatar.qatarairways.com/qa-en/holiday/arabian-night-safari-76fef22a087fd0e62f923356e8d6c16e/overview" target="_top" dir="ltr" data-cturl="https://www.google.com/url?q=https://discoverqatar.qatarairways.com/qa-en/holiday/arabian-night-safari-76fef22a087fd0e62f923356e8d6c16e/overview&amp;sa=U&amp;ved=0ahUKEwij8qiN0fzRAhXk34MKHRPmCEIQFggQMAY&amp;client=internal-uds-cse&amp;usg=AFQjCNE5uDBfDpZjyW114LI24ukAqBQC9g" data-ctorig="https://discoverqatar.qatarairways.com/qa-en/holiday/arabian-night-safari-76fef22a087fd0e62f923356e8d6c16e/overview">Arabian Night Safari - Overview</a></div><div><span></span></div><div class="gs-bidi-start-align gs-snippet" dir="ltr">English-speaking tour <b>guide</b>. Other languages can be arranged for a supplement. 
+Overnight desert camp with dinner and breakfast. Refreshments: Soft drinks&nbsp;...</div><div class="gsc-url-bottom"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">discoverqatar.qatarairways.com</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">https://discoverqatar.qatarairways.com/qa-en/holiday/.../overview</div></div><div class="gs-richsnippet-box" style="display: none;"></div><div class="gs-per-result-labels" url="https://discoverqatar.qatarairways.com/qa-en/holiday/arabian-night-safari-76fef22a087fd0e62f923356e8d6c16e/overview"></div></td></tr></tbody></table></div><div class="gs-watermark"><a href="http://code.google.com/apis/ajaxsearch/faq.html" class="gs-watermark" target="_blank">clipped from Google - 2/2017</a></div></div><div class="gsc-webResult gsc-result"><div class="gs-webResult gs-result"><div class="gsc-thumbnail-inside"><div class="gs-title"><a class="gs-title" href="http://www.qatarairways.com/global/en/destinations/flights-from-jeddah-to-miami.page" target="_top" dir="ltr" data-cturl="https://www.google.com/url?q=http://www.qatarairways.com/global/en/destinations/flights-from-jeddah-to-miami.page&amp;sa=U&amp;ved=0ahUKEwij8qiN0fzRAhXk34MKHRPmCEIQFggSMAc&amp;client=internal-uds-cse&amp;usg=AFQjCNGmfLV2bAqBZXYNdxyvSzJ-y2nR-Q" data-ctorig="http://www.qatarairways.com/global/en/destinations/flights-from-jeddah-to-miami.page">Book a Flight from Jeddah to Miami | Qatar Airways</a></div></div><div class="gsc-url-top"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">www.qatarairways.com</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">www.qatarairways.com/global/.../flights-from-jeddah-to-miami.page</div></div><table class="gsc-table-result"><tbody><tr><td class="gsc-table-cell-thumbnail gsc-thumbnail" style="display:none"></td><td onclick="if (this.className == 'gsc-table-cell-snippet-close gsc-collapsable') { this.className = 'gsc-table-cell-snippet-open gsc-collapsable'; } else if (this.className == 'gsc-table-cell-snippet-open gsc-collapsable') { this.className = 'gsc-table-cell-snippet-close gsc-collapsable'; };" class="gsc-table-cell-snippet-close"><div class="gs-title gsc-table-cell-thumbnail gsc-thumbnail-left"><a class="gs-title" href="http://www.qatarairways.com/global/en/destinations/flights-from-jeddah-to-miami.page" target="_top" dir="ltr" data-cturl="https://www.google.com/url?q=http://www.qatarairways.com/global/en/destinations/flights-from-jeddah-to-miami.page&amp;sa=U&amp;ved=0ahUKEwij8qiN0fzRAhXk34MKHRPmCEIQFggSMAc&amp;client=internal-uds-cse&amp;usg=AFQjCNGmfLV2bAqBZXYNdxyvSzJ-y2nR-Q" data-ctorig="http://www.qatarairways.com/global/en/destinations/flights-from-jeddah-to-miami.page">Book a Flight from Jeddah to Miami | Qatar Airways</a></div><div><span></span></div><div class="gs-bidi-start-align gs-snippet" dir="ltr">If you want to get out and about then the Oleta River State <b>Recreation</b> Park is the 
+largest urban park in ... More Information: Read our Jeddah Travel <b>Guide</b>.</div><div class="gsc-url-bottom"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">www.qatarairways.com</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">www.qatarairways.com/global/.../flights-from-jeddah-to-miami.page</div></div><div class="gs-richsnippet-box" style="display: none;"></div><div class="gs-per-result-labels" url="http://www.qatarairways.com/global/en/destinations/flights-from-jeddah-to-miami.page"></div></td></tr></tbody></table></div><div class="gs-watermark"><a href="http://code.google.com/apis/ajaxsearch/faq.html" class="gs-watermark" target="_blank">clipped from Google - 2/2017</a></div></div><div class="gsc-webResult gsc-result"><div class="gs-webResult gs-result"><div class="gsc-thumbnail-inside"><div class="gs-title"><a class="gs-title" href="http://www.qatarairways.com/sg/en/destinations/flights-from-singapore-to-miami.page" target="_top" dir="ltr" data-cturl="https://www.google.com/url?q=http://www.qatarairways.com/sg/en/destinations/flights-from-singapore-to-miami.page&amp;sa=U&amp;ved=0ahUKEwij8qiN0fzRAhXk34MKHRPmCEIQFggUMAg&amp;client=internal-uds-cse&amp;usg=AFQjCNHTvSXIHAypdzs1Cn_7dvePi97bwA" data-ctorig="http://www.qatarairways.com/sg/en/destinations/flights-from-singapore-to-miami.page">Book a Flight from Singapore to Miami | Qatar Airways</a></div></div><div class="gsc-url-top"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">www.qatarairways.com</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">www.qatarairways.com/.../flights-from-singapore-to-miami.page</div></div><table class="gsc-table-result"><tbody><tr><td class="gsc-table-cell-thumbnail gsc-thumbnail" style="display:none"></td><td onclick="if (this.className == 'gsc-table-cell-snippet-close gsc-collapsable') { this.className = 'gsc-table-cell-snippet-open gsc-collapsable'; } else if (this.className == 'gsc-table-cell-snippet-open gsc-collapsable') { this.className = 'gsc-table-cell-snippet-close gsc-collapsable'; };" class="gsc-table-cell-snippet-close"><div class="gs-title gsc-table-cell-thumbnail gsc-thumbnail-left"><a class="gs-title" href="http://www.qatarairways.com/sg/en/destinations/flights-from-singapore-to-miami.page" target="_top" dir="ltr" data-cturl="https://www.google.com/url?q=http://www.qatarairways.com/sg/en/destinations/flights-from-singapore-to-miami.page&amp;sa=U&amp;ved=0ahUKEwij8qiN0fzRAhXk34MKHRPmCEIQFggUMAg&amp;client=internal-uds-cse&amp;usg=AFQjCNHTvSXIHAypdzs1Cn_7dvePi97bwA" data-ctorig="http://www.qatarairways.com/sg/en/destinations/flights-from-singapore-to-miami.page">Book a Flight from Singapore to Miami | Qatar Airways</a></div><div><span></span></div><div class="gs-bidi-start-align gs-snippet" dir="ltr">If you want to get out and about then the Oleta River State <b>Recreation</b> Park is the 
+largest urban park in ... More Information: Read our Singapore Travel <b>Guide</b>.</div><div class="gsc-url-bottom"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">www.qatarairways.com</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">www.qatarairways.com/.../flights-from-singapore-to-miami.page</div></div><div class="gs-richsnippet-box" style="display: none;"></div><div class="gs-per-result-labels" url="http://www.qatarairways.com/sg/en/destinations/flights-from-singapore-to-miami.page"></div></td></tr></tbody></table></div><div class="gs-watermark"><a href="http://code.google.com/apis/ajaxsearch/faq.html" class="gs-watermark" target="_blank">clipped from Google - 2/2017</a></div></div><div class="gsc-webResult gsc-result"><div class="gs-webResult gs-result"><div class="gsc-thumbnail-inside"><div class="gs-title"><a class="gs-title" href="http://www.qatarairways.com/fr/fr/contact-us.page" target="_top" dir="ltr" data-cturl="https://www.google.com/url?q=http://www.qatarairways.com/fr/fr/contact-us.page&amp;sa=U&amp;ved=0ahUKEwij8qiN0fzRAhXk34MKHRPmCEIQFggWMAk&amp;client=internal-uds-cse&amp;usg=AFQjCNFxSmLLaV2X7OYeM-CAWdA32BryuQ" data-ctorig="http://www.qatarairways.com/fr/fr/contact-us.page">Nous contacter | Qatar Airways</a></div></div><div class="gsc-url-top"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">www.qatarairways.com</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">www.qatarairways.com/fr/fr/contact-us.page</div></div><table class="gsc-table-result"><tbody><tr><td class="gsc-table-cell-thumbnail gsc-thumbnail" style="display:none"></td><td onclick="if (this.className == 'gsc-table-cell-snippet-close gsc-collapsable') { this.className = 'gsc-table-cell-snippet-open gsc-collapsable'; } else if (this.className == 'gsc-table-cell-snippet-open gsc-collapsable') { this.className = 'gsc-table-cell-snippet-close gsc-collapsable'; };" class="gsc-table-cell-snippet-close"><div class="gs-title gsc-table-cell-thumbnail gsc-thumbnail-left"><a class="gs-title" href="http://www.qatarairways.com/fr/fr/contact-us.page" target="_top" dir="ltr" data-cturl="https://www.google.com/url?q=http://www.qatarairways.com/fr/fr/contact-us.page&amp;sa=U&amp;ved=0ahUKEwij8qiN0fzRAhXk34MKHRPmCEIQFggWMAk&amp;client=internal-uds-cse&amp;usg=AFQjCNFxSmLLaV2X7OYeM-CAWdA32BryuQ" data-ctorig="http://www.qatarairways.com/fr/fr/contact-us.page">Nous contacter | Qatar Airways</a></div><div><span></span></div><div class="gs-bidi-start-align gs-snippet" dir="ltr">Puis-je voyager avec un chien <b>guide</b> ? Quel service pour handicapé est offert par 
+Qatar Airways ? J'accompagne un nourrisson. Est-ce que j'obtiendrais un&nbsp;...</div><div class="gsc-url-bottom"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">www.qatarairways.com</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">www.qatarairways.com/fr/fr/contact-us.page</div></div><div class="gs-richsnippet-box" style="display: none;"></div><div class="gs-per-result-labels" url="http://www.qatarairways.com/fr/fr/contact-us.page"></div></td></tr></tbody></table></div><div class="gs-watermark"><a href="http://code.google.com/apis/ajaxsearch/faq.html" class="gs-watermark" target="_blank">clipped from Google - 2/2017</a></div></div><div class="gsc-adBlockNoHeight" style="height: 0px;"></div><div class="gsc-cursor-box gs-bidi-start-align" dir="ltr"><div class="gsc-cursor"><div class="gsc-cursor-page gsc-cursor-current-page" tabindex="0">1</div><div class="gsc-cursor-page" tabindex="0">2</div><div class="gsc-cursor-page" tabindex="0">3</div></div></div></div><div class="gcsc-branding"><table class="gcsc-branding" cellspacing="0" cellpadding="0"><tbody><tr><td class="gcsc-branding-text"><div class="gcsc-branding-text">powered by</div></td><td class="gcsc-branding-img-noclear"><a href="http://cse.google.com/cse/?hl=en" target="_BLANK" class="gcsc-branding-clickable"><img src="cse_data/small-logo.png" class="gcsc-branding-img-noclear"></a></td><td class="gcsc-branding-text gcsc-branding-text-name"><div class="gcsc-branding-text gcsc-branding-text-name">Custom Search</div></td></tr></tbody></table></div></div></div></div></div></div></div></div></div>
+</div>
+</div>
+
+
+<table style="width: 100%; display: none; top: -1px; left: 0px; position: absolute;" class="gstl_50 gssb_c" cellspacing="0" cellpadding="0"><tbody><tr><td class="gssb_f"></td><td class="gssb_e" style="width: 100%;"></td></tr></tbody></table> <div style="display:none"> <span id="private_ratings"> <span class="gsc-snippet-metadata"> <span data-if="Vars.ratingstars"> <span class="gsc-rating-bar"> <span data-attr="{style:'width:' + (Vars.ratingstars * 20) + '%'}"></span> </span> <span data-if="Vars.ratingcount"> <span data-body="' ' + Vars.ratingcount"></span> <span> reviews</span> </span> </span> <span data-if="Vars.totaltime"> <span data-if="Vars.ratingstars &amp;&amp; Vars.ratingcount"> - </span> <span data-body="Vars.totaltime"></span> </span> <span data-if="Vars.calories"> <span data-if="Vars.ratingstars &amp;&amp; Vars.ratingcount || Vars.totaltime"> - </span> <span data-body="Vars.calories"></span> <span> cal</span> </span> <span data-if="Vars.pricerange"> <span data-if="Vars.ratingstars &amp;&amp; Vars.ratingcount || Vars.totaltime || Vars.calories"> - </span> <span> Price range: </span> <span data-body="Vars.pricerange"></span> </span> <span data-if="Vars.reviewer" class="gsc-reviewer"> <span data-body="' ' + Vars.reviewer"></span> </span> </span> </span> <span id="private_hproduct"> <span class="gsc-snippet-metadata"> <span data-if="Vars.availability">Availability: <span data-body="Vars.availability"></span>.</span> <span data-if="Vars.availability &amp;&amp; Vars.price">&nbsp;</span> <span data-if="Vars.price"> Price: <span data-body="Vars.price"></span>.</span> </span> </span> <span id="private_hreview_icon"> <span data-if="google.search.richsnippets.hreviewNonEmpty(Vars.hreview)"> <span class="gsc-zippy"></span> </span> </span> <span id="private_hreview_content"> <span data-if="google.search.richsnippets.hreviewNonEmpty(Vars.hreview)" class="gsc-preview-reviews"> <ul> <span data-foreach="Vars.hreview" data-attr="0"> <li data-if="(Cur.description || Cur.summary) &amp;&amp; Index == 0" class="gsc-review-agregate-first-line"> <span data-if="Cur.description" data-body="Cur.description"></span> <span data-elif="Cur.summary" data-body="Cur.summary"></span> </li> <li data-elif="(Cur.description || Cur.summary) &amp;&amp; Index &lt; 10" data-attr="{'class': Index % 2 == 0 ? 'gsc-review-agregate-even-lines' : 'gsc-review-agregate-odd-lines'}"> <span data-if="Cur.description" data-body="Cur.description"></span> <span data-elif="Cur.summary" data-body="Cur.summary"></span> </li> </span> </ul> </span> </span> <span id="private_hrecipe"> <span data-if="Vars.author" class="gsc-author"> <span data-body="' ' + Vars.author"></span> </span> </span> <span id="private_recipe"> <span data-attr="0" data-body="render('private_ratings',google.search.richsnippets.merge(richSnippet.recipe))"> </span> <span data-if="Vars.richSnippet.hrecipe &amp;&amp; Vars.richSnippet.hrecipe.author &amp;&amp; !Vars.richSnippet.recipe.reviewer" data-attr="0" data-body="render('private_hrecipe',richSnippet.hrecipe)"> </span> </span> <span id="private_person"> <span data-vars="{vcard:google.search.richsnippets.merge(Vars.richSnippet.vcard)}"> <span data-if="Vars.richSnippet.vcard &amp;&amp; vcard.adr"> <span data-if="vcard.adr" class="gs-location"> <span data-body="' ' + vcard.adr"> </span> </span> </span> <span data-elif="Vars.richSnippet.person"> <span data-if="person.role" class="gsc-role"> <span data-attr="0" data-body="' ' + person.role"> </span> </span> <span data-if="person.org" class="gsc-org"> <span data-body="' @' + person.org"> </span> </span> <span data-if="person.location" class="gsc-location"> <span data-if="person.org || person.role || Vars.richSnippet.review"> - </span> <span data-body="' ' + person.location"> </span> </span> </span> <span data-if="Vars.richSnippet.vcard &amp;&amp; vcard.tel" class="gsc-tel"> <span data-if="(person &amp;&amp; (person.org || person.role || Vars.richSnippet.review || person.location)) || (Vars.richSnippet.vcard &amp;&amp; vcard.adr) "> - </span> <span data-body="' Tel: ' + vcard.tel"> </span> </span> </span> </span> <span id="private_metadata" class="gsc-snippet-metadata"> <span data-vars="{person:google.search.richsnippets.merge(Vars.richSnippet.person), product:google.search.richsnippets.merge(Vars.richSnippet.hproduct)}"> <span data-if="Vars.richSnippet.recipe" data-attr="0" data-body="render('private_recipe', Vars)"> </span> <span data-elif="Vars.richSnippet.review" data-attr="0" data-body="render('private_ratings',google.search.richsnippets.merge(richSnippet.review))"> </span> <span data-if="Vars.richSnippet.hproduct &amp;&amp; (product.availability || product.price)" data-attr="0" data-body="render('private_hproduct', product)"> </span> <span data-elif="Vars.richSnippet.person || Vars.richSnippet.vcard" data-attr="0" data-body="render('private_person', Vars)"> </span> </span> </span> <div id="base_facets"> <div class="gsc-context-box" data-facetgroup="title"> </div> </div> <div id="base_facetGroupEntry"> <div> <div class="gsc-facet-label gsc-col" style="display:inline-block;"> <a data-attr="{'data-refinementLabel': label, 'label-with-op': label_with_op}" data-body="html(anchor)"></a> </div> <div class="gsc-facet-result gsc-col" data-body="html(width + '%')" style="display:inline-block;"> </div> <div data-attr="{'class': index == 'first' ? 'gsc-chart gsc-top gsc-col' : index == 'last' ? 'gsc-chart gsc-bottom gsc-col' : index == 'sizeone' ? 'gsc-chart gsc-bottom gsc-col gsc-top' : 'gsc-chart gsc-col'}" style="display:inline-block;"> <div class="" data-attr="{style:'width:' + width + '%'}"></div> </div> </div> </div> <div id="base_webResult"> <div class="gs-webResult gs-result" data-vars="{longUrl:function() { var i = unescapedUrl.indexOf(visibleUrl); return i &lt; 1 ? visibleUrl : unescapedUrl.substring(i);}}"> <div class="gsc-thumbnail-inside"> <div class="gs-title"> <a class="gs-title" data-attr="{href:unescapedUrl,target:target,dir:bidiHtmlDir(title)}" data-body="html(title)"> </a> </div> </div> <div class="gsc-url-top"> <div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" data-body="visibleUrl" data-attr="{dir:bidiTextDir(visibleUrl)}"> </div> <div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" data-body="Vars.formattedUrl ? html(Vars.formattedUrl) : longUrl()" data-attr="{dir: Vars.formattedUrl ? bidiHtmlDir(Vars.formattedUrl) : bidiTextDir(longUrl()), style:'word-break:break-all;'}"> </div> </div> <table class="gsc-table-result"> <tbody> <tr> <td class="gsc-table-cell-thumbnail gsc-thumbnail" style="display:none"> <div data-if="Vars.richSnippet" data-attr="0" data-body="render('thumbnail',richSnippet,{url:unescapedUrl,target:target})"> </div> </td> <td data-attr="{'class': 'gsc-table-cell-snippet-close' + ((google.search.CurrentLocale == 'en' &amp;&amp; Vars.richSnippet &amp;&amp; Vars.richSnippet.hreview &amp;&amp; google.search.richsnippets.hreviewNonEmpty(Vars.richSnippet.hreview)) ? ' gsc-collapsable' : '')}" onclick="if (this.className == 'gsc-table-cell-snippet-close gsc-collapsable') { this.className = 'gsc-table-cell-snippet-open gsc-collapsable'; } else if (this.className == 'gsc-table-cell-snippet-open gsc-collapsable') { this.className = 'gsc-table-cell-snippet-close gsc-collapsable'; };"> <span data-if="google.search.CurrentLocale == 'en' &amp;&amp; Vars.richSnippet &amp;&amp; Vars.richSnippet.hreview" data-attr="0" data-body="render('private_hreview_icon',richSnippet)"> </span> <div class="gs-title gsc-table-cell-thumbnail gsc-thumbnail-left"> <a class="gs-title" data-attr="{href:unescapedUrl,target:target,dir:bidiHtmlDir(title)}" data-body="html(title)"> </a> </div> <div class="gs-fileFormat" data-if="Vars.fileFormat"> <span class="gs-fileFormat" data-body="localizedMessages['file-format'] + ' '"></span> <span class="gs-fileFormatType" data-body="Vars.fileFormat"></span> </div> <div data-if="google.search.CurrentLocale == 'en' &amp;&amp; Vars.richSnippet"> <span data-attr="0" data-body="render('private_metadata', Vars)"> </span> </div> <div class="gs-bidi-start-align gs-snippet" data-body="html(content)" data-attr="{dir:bidiHtmlDir(content)}"> </div> <div class="gsc-url-bottom"> <div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" data-body="visibleUrl" data-attr="{dir:bidiTextDir(visibleUrl)}"> </div> <div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" data-body="Vars.formattedUrl ? html(Vars.formattedUrl) : longUrl()" data-attr="{dir: Vars.formattedUrl ? bidiHtmlDir(Vars.formattedUrl) : bidiTextDir(longUrl()), style:'word-break:break-all;'}"> </div> </div> <div class="gs-richsnippet-box" style="display: none;"> </div> <span data-if="google.search.CurrentLocale == 'en' &amp;&amp; Vars.richSnippet &amp;&amp; Vars.richSnippet.hreview" data-attr="0" data-body="render('private_hreview_content',richSnippet)"> </span> <div class="gs-per-result-labels" data-attr="{url:unescapedUrl}"> <span data-body="localizedMessages['labeled']" data-if="!Vars.isLabelUrl &amp;&amp; Vars.perResultLabels"></span> <a class="gs-label gs-add-label" data-if="Vars.isLabelUrl" data-body="localizedMessages['add-label']"></a> <div data-foreach="Vars.perResultLabels" data-attr="0" data-if="Vars.perResultLabels"> <a class="gs-label" data-attr="{'data-refinementLabel': Cur['label'], 'label-with-op': Cur['label_with_op'], 'dir' : bidiTextDir(Cur.anchor)}" data-body="Cur.anchor"></a> <span data-body="bidiTextMarkAfter(Cur.anchor)"></span> </div> </div> </td> </tr> </tbody> </table> </div> </div> <div id="base_imageResult_image"><a data-attr="{ 'href':originalContextUrl, 'target':target, 'class':imageClass }"><img data-attr="{ 'src':tbUrl, 'title':titleNoFormatting, 'class':imageClass }"></a></div> <div id="base_imageResult_text"><div class="gs-title gs-ellipsis"><a class="gs-title" data-attr="{ href:originalContextUrl, target:target, dir:bidiHtmlDir(title) }" data-body="html(title)"></a></div><div class="gs-visibleUrl gs-bidi-start-align gs-ellipsis gsc-url-top" data-attr="{title:visibleUrl, dir:bidiTextDir(visibleUrl)}" data-body="visibleUrl"></div><div class="gs-snippet gs-bidi-start-align gs-ellipsis" data-attr="{title:contentNoFormatting, dir:bidiHtmlDir(content)}" data-body="html(content)"></div><div class="gs-size gs-ellipsis" data-body="width + ' × ' + height"></div><div class="gs-visibleUrl gs-bidi-start-align gs-ellipsis gsc-url-bottom" data-attr="{title:visibleUrl, dir:bidiTextDir(visibleUrl)}" data-body="visibleUrl"></div></div> <div id="base_imageResult_content"><div data-body="render('base_imageResult_image', Vars)" class="gs-image-box"></div><div data-body="render('base_imageResult_text', Vars)" class="gs-text-box"></div></div> <div id="base_imageResult_classic"><div class="gs-result gs-imageResult gs-imageResult-classic" data-body="render('base_imageResult_content', Vars, { imageClass: 'gs-image gs-image-scalable' })"></div></div> <div id="base_imageResult_column"><div class="gs-result gs-imageResult gs-imageResult-column" data-body="render('base_imageResult_content', Vars, { imageClass: 'gs-image gs-image-scalable' })"></div></div> <div id="base_imageResult_popup"><div class="gs-result gs-imageResult gs-imageResult-popup" onmouseover="google.search.ImageSearch.showPopup(this)" onmouseout="google.search.ImageSearch.hidePopup(this)"><div class="gs-image-thumbnail-box"><div data-body="render('base_imageResult_image', Vars, { imageClass: 'gs-image gs-image-scalable' })" class="gs-image-box"></div></div><div data-body="render('base_imageResult_content', Vars, { imageClass: 'gs-image' })" class="gs-image-popup-box"></div></div></div> <div id="base_thumbnail"> <div data-attr="0" data-vars="{tn:(Vars.cseThumbnail &amp;&amp; cseThumbnail.src) ? cseThumbnail : ( (Vars.thumbnail &amp;&amp; thumbnail.src) ? thumbnail : {src:Vars.document &amp;&amp; document.thumbnailUrl})}"> <div data-if="tn.src"> <a class="gs-image" data-attr="{href:url,target:target}"> <img data-if="!tn.width || !tn.height || tn.width &gt;= tn.height * 7 / 5" class="gs-image" data-attr="{src:tn.src}" onload="if (this.parentNode &amp;&amp; this.parentNode.parentNode &amp;&amp; this.parentNode.parentNode.parentNode) { this.parentNode.parentNode.parentNode.style.display = ''; this.parentNode.parentNode.className = 'gs-image-box gs-web-image-box gs-web-image-box-landscape'; } "> <img data-elif="true" class="gs-image" data-attr="{src:tn.src}" onload="if (this.parentNode &amp;&amp; this.parentNode.parentNode &amp;&amp; this.parentNode.parentNode.parentNode) { this.parentNode.parentNode.parentNode.style.display = ''; this.parentNode.parentNode.className = 'gs-image-box gs-web-image-box gs-web-image-box-portrait'; } "> </a> </div> </div> </div> <div id="base_action"> <div data-foreach="Vars.action" data-attr="0"> <div data-attr="{'class': 'gs-action ' + Cur['class']}" data-if="Cur.url &amp;&amp; Cur.label"> <a class="gs-action" data-attr="{href:Cur.url,target:target,dir:bidiTextDir(Cur.label)}" data-body="Cur.label"></a> </div> </div> </div> </div> </body></html>
