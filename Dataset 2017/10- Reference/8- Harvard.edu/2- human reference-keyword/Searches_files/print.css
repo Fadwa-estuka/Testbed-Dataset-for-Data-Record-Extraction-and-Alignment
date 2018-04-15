@@ -1,0 +1,14 @@
+/* CSS Document */
+
+p.edit_content_shortcuts,
+.harvard-heading__link,
+.fixed-side-col
+{ display: none; }
+
+..grid-fixed-side { padding-left: 0; }
+
+.header-base--has-photo {
+	background-image: none;
+  min-height: 0; 
+  height: 0 !important;
+}

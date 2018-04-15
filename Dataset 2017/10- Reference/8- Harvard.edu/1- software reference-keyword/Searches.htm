@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js ie-8"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="2no-js no-jss" dir="ltr" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" lang="en"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+ 
+ <script type="text/javascript" src="Searches_files/2a855aba50"></script><script src="Searches_files/nr-998.js"></script><script async="" src="Searches_files/async-ads.js"></script><script async="" src="Searches_files/fbevents.js"></script><script type="text/javascript" async="" src="Searches_files/analytics.js"></script><script type="text/javascript" async="" src="Searches_files/cse.js"></script><script async="" src="Searches_files/gtm.js"></script><script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script> 
+ 
+ 
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TK7H6Z');</script>
+ 
+<meta charset="utf-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+ 
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+ 
+<link href="Searches_files/fonts.css" rel="stylesheet"><link rel="shortcut icon" type="image/ico" href="http://www.harvard.edu/sites/all/themes/hedu2015/assets/img/favicon.ico">
+<meta name="apple-mobile-web-app-capable" content="yes">
+ 
+<link rel="apple-touch-icon-precomposed" href="http://www.harvard.edu/sites/all/themes/hedu2015/assets/img/apple-touch-icon-144x144.png">
+ 
+ 
+<meta name="msapplication-TileImage" content="/sites/all/themes/hedu2015/assets/img/apple-touch-icon-144x144.png">
+<meta name="msapplication-TileColor" content="#222222">
+<title>Searches | Harvard University</title>
+<meta name="robots" content="index,follow,NOODP">
+<meta name="description" content="Harvard University is devoted to excellence in teaching, learning, and research, and to developing leaders in many disciplines who make a difference globally. Harvard University is made up of 11 principal academic units.">
+<meta name="keywords" content="Harvard University, College, Education, Innovation, Teaching, Learning">
+<meta property="fb:admins" content="593072576,599799799,662979311,613602264">
+<meta property="fb:page_id" content="105930651606">
+<meta property="fb:app_id" content="135898969862440">
+<meta property="twitter:account_id" content="1491443782">
+<meta name="twitter:site" content="@harvard">
+<meta name="twitter:creator" content="@harvard">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:site_name" content="Harvard University">
+<meta property="og:type" content="university">
+<meta property="og:title" content="Searches | Harvard University">
+<meta property="og:url" content="http://www.harvard.edu/searches?searchtext=software%20reference">
+<meta property="og:description" content="Harvard University is devoted to excellence in teaching, learning, and research, and to developing leaders in many disciplines who make a difference globally. Harvard University is made up of 11 principal academic units.">
+<meta property="og:image" content="">
+ 
+<link rel="stylesheet" href="Searches_files/harvard.css">
+ 
+<link href="Searches_files/print.css" rel="stylesheet" media="print" type="text/css">
+<script async="true">
+      var fontCSS = '/sites/all/themes/hedu2015/assets/css/fonts.min.css';
+
+      (function() {
+        var wf = document.createElement('link');
+        wf.href = fontCSS;
+        wf.rel = 'stylesheet';
+
+        var s = document.getElementsByTagName('link')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+    </script>
+<noscript>
+<link href="/sites/all/themes/hedu2015/assets/css/fonts.min.css" rel="stylesheet">
+</noscript>
+<!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <link href="/sites/all/themes/hedu2015/assets/css/ie.min.css" rel="stylesheet">
+    <![endif]-->
+<script src="Searches_files/jsapi" type="text/javascript"></script><link type="text/css" href="Searches_files/defaulten.css" rel="stylesheet"><link type="text/css" href="Searches_files/default.css" rel="stylesheet"><script type="text/javascript" src="Searches_files/defaulten.js"></script><style type="text/css">
+.gsc-control-cse {
+font-family: Arial, sans-serif;
+border-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gsc-control-cse .gsc-table-result {
+font-family: Arial, sans-serif;
+}
+input.gsc-input {
+border-color: #D9D9D9;
+}
+input.gsc-search-button {
+border-color: #666666;
+background-color: #CECECE;
+}
+.gsc-tabHeader.gsc-tabhInactive {
+border-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gsc-tabHeader.gsc-tabhActive {
+border-top-color: #99283C;
+border-left-color: #FFFFFF;
+border-right-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gsc-tabsArea {
+border-color: #FFFFFF;
+}
+.gsc-webResult.gsc-result,
+.gsc-results .gsc-imageResult {
+border-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gsc-webResult.gsc-result:hover,
+.gsc-imageResult:hover {
+border-color: #FFFFFF;
+background-color: #F5F5F5;
+}
+.gsc-webResult.gsc-result.gsc-promotion:hover {
+border-color: #FFFFFF;
+background-color: #F5F5F5;
+}
+.gs-webResult.gs-result a.gs-title:link,
+.gs-webResult.gs-result a.gs-title:link b,
+.gs-imageResult a.gs-title:link,
+.gs-imageResult a.gs-title:link b {
+color: #3B7AB8;
+}
+.gs-webResult.gs-result a.gs-title:visited,
+.gs-webResult.gs-result a.gs-title:visited b,
+.gs-imageResult a.gs-title:visited,
+.gs-imageResult a.gs-title:visited b {
+color: #3B7AB8;
+}
+.gs-webResult.gs-result a.gs-title:hover,
+.gs-webResult.gs-result a.gs-title:hover b,
+.gs-imageResult a.gs-title:hover,
+.gs-imageResult a.gs-title:hover b {
+color: #444444;
+}
+.gs-webResult.gs-result a.gs-title:active,
+.gs-webResult.gs-result a.gs-title:active b,
+.gs-imageResult a.gs-title:active,
+.gs-imageResult a.gs-title:active b {
+color: #3B7AB8;
+}
+.gsc-cursor-page {
+color: #3B7AB8;
+}
+a.gsc-trailing-more-results:link {
+color: #3B7AB8;
+}
+.gs-webResult .gs-snippet,
+.gs-imageResult .gs-snippet,
+.gs-fileFormatType {
+color: #444444;
+}
+.gs-webResult div.gs-visibleUrl,
+.gs-imageResult div.gs-visibleUrl {
+color: #999999;
+}
+.gs-webResult div.gs-visibleUrl-short {
+color: #999999;
+}
+.gs-webResult div.gs-visibleUrl-short {
+display: none;
+}
+.gs-webResult div.gs-visibleUrl-long {
+display: block;
+}
+.gs-promotion div.gs-visibleUrl-short {
+display: none;
+}
+.gs-promotion div.gs-visibleUrl-long {
+display: block;
+}
+.gsc-cursor-box {
+border-color: #FFFFFF;
+}
+.gsc-results .gsc-cursor-box .gsc-cursor-page {
+border-color: #FFFFFF;
+background-color: #FFFFFF;
+color: #3B7AB8;
+}
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+border-color: #99283C;
+background-color: #FFFFFF;
+color: #3B7AB8;
+}
+.gsc-webResult.gsc-result.gsc-promotion {
+border-color: #FFFFFF;
+background-color: #F4EDCA;
+}
+.gsc-completion-title {
+color: #3B7AB8;
+}
+.gsc-completion-snippet {
+color: #444444;
+}
+.gs-promotion a.gs-title:link,
+.gs-promotion a.gs-title:link *,
+.gs-promotion .gs-snippet a:link {
+color: #3B7AB8;
+}
+.gs-promotion a.gs-title:visited,
+.gs-promotion a.gs-title:visited *,
+.gs-promotion .gs-snippet a:visited {
+color: #3B7AB8;
+}
+.gs-promotion a.gs-title:hover,
+.gs-promotion a.gs-title:hover *,
+.gs-promotion .gs-snippet a:hover {
+color: #444444;
+}
+.gs-promotion a.gs-title:active,
+.gs-promotion a.gs-title:active *,
+.gs-promotion .gs-snippet a:active {
+color: #3B7AB8;
+}
+.gs-promotion .gs-snippet,
+.gs-promotion .gs-title .gs-promotion-title-right,
+.gs-promotion .gs-title .gs-promotion-title-right * {
+color: #444444;
+}
+.gs-promotion .gs-visibleUrl,
+.gs-promotion .gs-visibleUrl-short {
+color: #999999;
+}</style><style type="text/css">.gscb_a{display:inline-block;font:27px/13px arial,sans-serif}.gsst_a .gscb_a{color:#a1b9ed;cursor:pointer}.gsst_a:hover .gscb_a,.gsst_a:focus .gscb_a{color:#36c}.gsst_a{display:inline-block}.gsst_a{cursor:pointer;padding:0 4px}.gsst_a:hover{text-decoration:none!important}.gsst_b{font-size:16px;padding:0 2px;position:relative;user-select:none;-moz-user-select:none;white-space:nowrap}.gsst_e{opacity:0.55;}.gsst_a:hover .gsst_e,.gsst_a:focus .gsst_e{opacity:0.72;}.gsst_a:active .gsst_e{opacity:1;}.gsst_f{background:white;text-align:left}.gsst_g{background-color:white;border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-moz-box-shadow:0 2px 4px rgba(0,0,0,0.2);margin:-1px -3px;padding:0 6px}.gsst_h{background-color:white;height:1px;margin-bottom:-1px;position:relative;top:-1px}.gsib_a{width:100%;padding:4px 6px 0}.gsib_a,.gsib_b{vertical-align:top}.gssb_c{border:0;position:absolute;z-index:989}.gssb_e{border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-moz-box-shadow:0 2px 4px rgba(0,0,0,0.2);cursor:default}.gssb_f{visibility:hidden;white-space:nowrap}.gssb_k{border:0;display:block;position:absolute;top:0;z-index:988}.gsdd_a{border:none!important}.gsq_a{padding:0}.gscsep_a{display:none}.gssb_a{padding:0 7px}.gssb_a,.gssb_a td{white-space:nowrap;overflow:hidden;line-height:22px}#gssb_b{font-size:11px;color:#36c;text-decoration:none}#gssb_b:hover{font-size:11px;color:#36c;text-decoration:underline}.gssb_g{text-align:center;padding:8px 0 7px;position:relative}.gssb_h{font-size:15px;height:28px;margin:0.2em}.gssb_i{background:#eee}.gss_ifl{visibility:hidden;padding-left:5px}.gssb_i .gss_ifl{visibility:visible}a.gssb_j{font-size:13px;color:#36c;text-decoration:none;line-height:100%}a.gssb_j:hover{text-decoration:underline}.gssb_l{height:1px;background-color:#e5e5e5}.gssb_m{color:#000;background:#fff}.gsfe_a{border:1px solid #b9b9b9;border-top-color:#a0a0a0;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);}.gsfe_b{border:1px solid #4d90fe;outline:none;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);}.gssb_a{padding:0 7px}.gssb_e{border:0}.gssb_l{margin:5px 0}.gssb_c .gsc-completion-container{position:static}.gssb_c{z-index:5000}.gsc-completion-container table{background:transparent;font-size:inherit;font-family:inherit}.gssb_c > tbody > tr,.gssb_c > tbody > tr > td,.gssb_d,.gssb_d > tbody > tr,.gssb_d > tbody > tr > td,.gssb_e,.gssb_e > tbody > tr,.gssb_e > tbody > tr > td{padding:0;margin:0;border:0}.gssb_a table,.gssb_a table tr,.gssb_a table tr td{padding:0;margin:0;border:0}</style></head>
+<body id="body" class="">
+ 
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TK7H6Z" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+ 
+<div id="page" class="page in-view">
+ 
+<ul class="jump-links">
+<li>
+<a href="#mainArea" id="jumpToMain">
+Jump to main content
+</a>
+</li>
+<li>
+<a href="#searchArea" id="jumpToSearch">
+Jump to search
+</a>
+</li>
+<li>
+<a href="#footerArea">
+Jump to the footer
+</a>
+</li>
+</ul>
+ 
+<header role="banner" id="headerArea" class="header-base ">
+ 
+<h1 class="harvard-heading">
+<a href="http://www.harvard.edu/" class="harvard-heading__link">
+<span class="is-visually-hidden">
+Harvard University
+</span>
+</a>
+</h1>
+ 
+<a href="#siteNavigation" class="btn--menu" id="btn_menu" data-state="off" data-id="nav" aria-label="Reveal Navigation" role="button" aria-controls="siteNavigation" aria-expanded="false">
+<span class="btn--menu__icon"></span>
+Menu
+</a>
+<nav role="navigation" class="main-nav" id="siteNavigation">
+<div class="nav-drawer">
+<div class="nav-group nav-group--consistent">
+<ul class="clearfix">
+<li class="nav-left-half">
+<ul role="presentation" class="clearfix">
+<li class="has-drop-nav">
+<a href="http://www.harvard.edu/about-harvard" class="">
+About
+<span class="lg-nav-txt">
+Harvard
+</span>
+</a>
+<ul class="list--drop-nav">
+<li class="first"><a href="http://www.harvard.edu/about-harvard/harvard-glance" class="first">Harvard at a Glance</a></li>
+<li class=""><a href="http://www.harvard.edu/president" class="">Harvard's President</a></li>
+<li class=""><a href="http://www.harvard.edu/about-harvard/harvards-president-leadership" class="">Harvard's Leadership</a></li>
+<li class=""><a href="http://www.harvard.edu/about-harvard/academic-experience" class="">Academic Experience</a></li>
+<li class=""><a href="http://www.harvard.edu/about-harvard/administrative-offices" class="">Administrative Offices</a></li>
+<li class=""><a href="http://www.harvard.edu/about-harvard/directories" class="">Directories</a></li>
+<li class=""><a href="http://community.harvard.edu/" class="">Harvard in the Community</a></li>
+<li class=""><a href="http://news.harvard.edu/gazette/" class="">News</a></li>
+</ul>
+</li>
+<li class="has-drop-nav">
+<a href="http://www.harvard.edu/admissions-aid">
+Admissions
+<span class="lg-nav-txt">
+&amp; Aid
+</span>
+</a>
+<ul class="list--drop-nav">
+<li class="first"><a href="http://www.harvard.edu/admissions-aid#titletop" class="first">Undergraduate</a></li>
+<li class=""><a href="http://www.harvard.edu/admissions-aid#grad" class="">Graduate &amp; Professional Schools</a></li>
+<li class=""><a href="http://www.harvard.edu/admissions-aid#continue" class="">Continuing Education</a></li>
+<li class="last"><a href="http://www.harvard.edu/admissions-aid#summer" class="last">Summer Programs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="nav-right-half">
+<ul role="presentation" class="clearfix">
+<li class="has-drop-nav">
+<a href="http://www.harvard.edu/schools">
+Schools
+</a>
+<ul class="list--drop-nav">
+<li class="first"><a href="http://www.hbs.edu/" class="first">Business</a></li>
+<li class=""><a href="http://college.harvard.edu/" class="">College</a></li>
+<li class=""><a href="http://www.dce.harvard.edu/" class="">Continuing Education</a></li>
+<li class=""><a href="http://www.hsdm.harvard.edu/" class="">Dental</a></li>
+<li class=""><a href="http://www.gsd.harvard.edu/" class="">Design</a></li>
+<li class=""><a href="http://www.hds.harvard.edu/" class="">Divinity</a></li>
+<li class=""><a href="http://www.gse.harvard.edu/" class="">Education</a></li>
+<li class=""><a href="http://seas.harvard.edu/" class="">Engineering</a></li>
+<li class=""><a href="http://www.fas.harvard.edu/" class="">Faculty of Arts &amp; Sciences</a></li>
+<li class=""><a href="http://www.hks.harvard.edu/" class="">Government</a></li>
+<li class=""><a href="http://www.gsas.harvard.edu/" class="">Graduate School</a></li>
+<li class=""><a href="http://www.law.harvard.edu/index.html" class="">Law</a></li>
+<li class=""><a href="http://hms.harvard.edu/" class="">Medical</a></li>
+<li class=""><a href="http://www.hsph.harvard.edu/" class="">Public Health</a></li>
+<li class="last"><a href="http://www.radcliffe.edu/" class="last">Radcliffe Institute</a></li>
+</ul>
+</li>
+<li class="has-drop-nav">
+<a href="http://www.harvard.edu/on-campus">
+On Campus
+</a>
+<ul class="list--drop-nav">
+<li class="first"><a href="http://www.harvard.edu/on-campus/arts-and-humanities" class="first">Arts and Humanities</a></li>
+<li class=""><a href="http://www.gocrimson.com/" class="">Athletics</a></li>
+<li class=""><a href="http://www.harvard.edu/on-campus/commencement" class="">Commencement</a></li>
+<li class=""><a href="http://hr.harvard.edu/jobs/" class="">Employment</a></li>
+<li class=""><a href="http://www.harvard.edu/events" class="">Events</a></li>
+<li class=""><a href="http://harvardx.harvard.edu/" class="">HarvardX</a></li>
+<li class=""><a href="http://library.harvard.edu/" class="">Library</a></li>
+<li class=""><a href="http://www.harvard.edu/on-campus/museums" class="">Museums</a></li>
+<li class=""><a href="http://www.harvard.edu/on-campus/research" class="">Research</a></li>
+<li class="last"><a href="http://www.harvard.edu/on-campus/visit-harvard" class="last">Visit Harvard</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="nav-group nav-group--callouts">
+<ul class="clearfix">
+<li class="nav-left-half">
+<ul role="presentation" class="clearfix">
+<li>
+<a href="http://news.harvard.edu/gazette/">
+Gazette News
+</a>
+</li>
+<li>
+<a href="http://www.harvard.edu/events">
+Events
+</a>
+</li>
+</ul>
+</li>
+<li class="nav-right-half">
+<ul role="presentation" class="clearfix">
+<li>
+<a href="http://campaign.harvard.edu/" class="">
+Harvard Campaign
+</a>
+</li>
+<li>
+<a href="http://alumni.harvard.edu/givenow">
+Give
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="list-clean">
+<ul class="nav-group nav-group--top-bar">
+<li class="first"><a href="http://www.harvard.edu/faculty" class="first">Faculty</a></li>
+<li class=""><a href="http://www.harvard.edu/staff" class="">Staff</a></li>
+<li class=""><a href="http://www.harvard.edu/students" class="">Students</a></li>
+<li class=""><a href="http://alumni.harvard.edu/" class="">Alumni</a></li>
+<li class=""><a href="http://www.harvard.edu/parents" class="">Parents</a></li>
+<li class=""><a href="http://www.harvard.edu/on-campus/visit-harvard" class="">Visitors</a></li>
+<li class="last"><a href="http://www.harvard.edu/media-relations" class="last">Media</a></li>
+</ul>
+</div>
+</div>  
+</nav>
+<form role="search" id="searchArea" class="search-area" method="get" action="/searches/">
+<label for="siteSearch">
+<span class="is-visually-hidden">
+Search:
+</span>
+</label>
+<input name="searchtext" id="searchSite" class="input-search" aria-label="search" placeholder="What can we help you find?" type="search">
+<button type="button" class="btn--mobile-site-search">
+<span class="is-visually-hidden">
+Open Search
+</span>
+</button>
+</form>
+</header>
+   
+<main role="main" id="mainArea" class="main-base">
+ 
+<header class="main-base__header">
+<div class="wrapper wrapper--1-down">
+<div id="breadcrumb-padding"></div>
+<h1 id="current_page_title">
+Search
+</h1>
+</div>
+</header>
+<article role="article" class="wrapper wrapper--2-down search-results">
+<div id="___gcse_0" dir="ltr"><form class="gsc-search-box" accept-charset="utf-8"><table class="gsc-search-box" cellspacing="0" cellpadding="0"><tbody><tr><td class="gsc-input"><input autocomplete="off" size="10" class=" gsc-input" name="search" title="search" id="gsc-i-id1" dir="ltr" spellcheck="false" style="outline: medium none; background: rgb(255, 255, 255) none repeat scroll 0% 0%;" value="software reference" type="text"><input name="bgresponse" id="bgresponse" type="hidden"></td><td class="gsc-search-button"><input value="Search" class="gsc-search-button" title="search" type="button"></td><td class="gsc-clear-button"><div class="gsc-clear-button" title="clear results">&nbsp;</div></td></tr></tbody></table><table class="gsc-branding" cellspacing="0" cellpadding="0"><tbody><tr><td class="gsc-branding-user-defined"></td><td class="gsc-branding-text"><div class="gsc-branding-text">powered by</div></td><td class="gsc-branding-img"><img src="Searches_files/small-logo.png" class="gsc-branding-img"></td></tr></tbody></table></form></div>
+<h2 class="results-h2">Search Results</h2>
+<div class="section">
+<div id="google-cse-results" style="width:100%">
+<noscript>
+<a href="http://www.google.com/cse?q=software%20reference&amp;cx=006776768860476326824%3An4rl30fjc-e&amp;cof=FORID%3A11">View the results at Google</a>, or enable JavaScript to view them here. </noscript>
+<div id="___gcse_1"><div class="gsc-control-cse gsc-control-cse-en"><div class="gsc-control-wrapper-cse" dir="ltr"><div class="gsc-results-wrapper-nooverlay gsc-results-wrapper-visible"><div class="gsc-tabsAreaInvisible"><div class="gsc-tabHeader gsc-inline-block gsc-tabhActive">Harvard Search Engine</div><span class="gs-spacer"> </span></div><div class="gsc-tabsArea"><div class=""><div class="gsc-tabHeader gsc-inline-block gsc-tabhActive">All</div><span class="gs-spacer"> </span><div tabindex="0" class=" gsc-tabHeader gsc-tabhInactive gsc-inline-block">Harvard Gazette</div><span class="gs-spacer"> </span></div></div><div class="gsc-above-wrapper-area"><table class="gsc-above-wrapper-area-container" cellspacing="0" cellpadding="0"><tbody><tr><td class="gsc-result-info-container"><div class="gsc-result-info" id="resInfo-0">About 50,900 results (0.19 seconds)</div></td></tr></tbody></table></div><div class="gsc-adBlockNoHeight" style="height: 0px;"></div><div class="gsc-wrapper"><div class="gsc-adBlockNoHeight" style="height: 0px; font-weight: normal; text-align: center;"><iframe marginwidth="0" marginheight="0" allowtransparency="true" scrolling="no" style="visibility: hidden; height: 0px;" name="{&quot;name&quot;:&quot;master-1&quot;,&quot;master-1&quot;:{&quot;linkTarget&quot;:&quot;_top&quot;,&quot;lines&quot;:3,&quot;fontSizeTitle&quot;:&quot;16px&quot;,&quot;fontSizeDescription&quot;:&quot;13px&quot;,&quot;fontSizeDomainLink&quot;:&quot;13px&quot;,&quot;position&quot;:&quot;top&quot;,&quot;cseGoogleHosting&quot;:&quot;partner&quot;,&quot;adIconLocation&quot;:&quot;ad-left&quot;,&quot;type&quot;:&quot;ads&quot;,&quot;hl&quot;:&quot;en&quot;,&quot;columns&quot;:1,&quot;horizontalAlignment&quot;:&quot;left&quot;,&quot;resultsPageQueryParam&quot;:&quot;query&quot;}}" id="master-1" src="https://cse.google.com/cse_v2/ads?q=software%20reference&amp;adpage=1&amp;r=m&amp;cx=006776768860476326824%3An4rl30fjc-e&amp;fexp=20606%2C7000810&amp;client=google-coop&amp;hl=en&amp;type=0&amp;oe=UTF-8&amp;ie=UTF-8&amp;format=p4&amp;ad=p4&amp;nocache=3891486458705379&amp;num=0&amp;output=uds_ads_only&amp;source=gcsc&amp;v=3&amp;adext=as1%2Csr1&amp;bsl=10&amp;u_his=2&amp;u_tz=-420&amp;dt=1486458705380&amp;u_w=1536&amp;u_h=864&amp;biw=1250&amp;bih=650&amp;psw=1250&amp;psh=1000&amp;frm=0&amp;uio=uv3vp1st16sd13sv13lhsl1sr1-&amp;jsv=78810&amp;rurl=http%3A%2F%2Fwww.harvard.edu%2Fsearches%3Fsearchtext%3Dsoftware%2520reference%23gsc.tab%3D0%26gsc.q%3Dsoftware%2520reference%26gsc.page%3D1&amp;referer=http%3A%2F%2Fwww.harvard.edu%2F#master-1" width="100%" frameborder="0"></iframe></div><div class="gsc-resultsbox-visible"><div class="gsc-resultsRoot gsc-tabData gsc-tabdActive"><table class="gsc-resultsHeader" cellspacing="0" cellpadding="0"><tbody><tr><td class="gsc-twiddleRegionCell gsc-twiddle-opened"><div class="gsc-twiddle"><div class="gsc-title">Web</div></div><div class="gsc-stats">(10)</div><div class="gsc-results-selector gsc-all-results-active"><div class="gsc-result-selector gsc-one-result" title="show one result">&nbsp;</div><div class="gsc-result-selector gsc-more-results" title="show more results">&nbsp;</div><div class="gsc-result-selector gsc-all-results" title="show all results">&nbsp;</div></div></td><td class="gsc-configLabelCell"></td></tr></tbody></table><div class="gsc-results gsc-webResult" style="display: block;"><div class="gsc-webResult gsc-result"><div class="gs-webResult gs-result"><div class="gsc-thumbnail-inside"><div class="gs-title"><a class="gs-title" href="https://reich.hms.harvard.edu/software" target="_parent" dir="ltr" data-cturl="https://www.google.com/url?q=https://reich.hms.harvard.edu/software&amp;sa=U&amp;ved=0ahUKEwjg-aXd0f3RAhUC2IMKHTfeDlsQFggEMAA&amp;client=internal-uds-cse&amp;usg=AFQjCNFBXJri0k9LqpOCKbgDjyZjlrxWdQ" data-ctorig="https://reich.hms.harvard.edu/software"><b>Software</b> | Reich Laboratory</a></div></div><div class="gsc-url-top"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">reich.hms.harvard.edu</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">https://reich.hms.harvard.edu/<b>software</b></div></div><table class="gsc-table-result"><tbody><tr><td class="gsc-table-cell-thumbnail gsc-thumbnail" style="display:none"></td><td onclick="if (this.className == 'gsc-table-cell-snippet-close gsc-collapsable') { this.className = 'gsc-table-cell-snippet-open gsc-collapsable'; } else if (this.className == 'gsc-table-cell-snippet-open gsc-collapsable') { this.className = 'gsc-table-cell-snippet-close gsc-collapsable'; };" class="gsc-table-cell-snippet-close"><div class="gs-title gsc-table-cell-thumbnail gsc-thumbnail-left"><a class="gs-title" href="https://reich.hms.harvard.edu/software" target="_parent" dir="ltr" data-cturl="https://www.google.com/url?q=https://reich.hms.harvard.edu/software&amp;sa=U&amp;ved=0ahUKEwjg-aXd0f3RAhUC2IMKHTfeDlsQFggEMAA&amp;client=internal-uds-cse&amp;usg=AFQjCNFBXJri0k9LqpOCKbgDjyZjlrxWdQ" data-ctorig="https://reich.hms.harvard.edu/software"><b>Software</b> | Reich Laboratory</a></div><div><span></span></div><div class="gs-bidi-start-align gs-snippet" dir="ltr">Please visit here to download for Reich lab softwares in GitHub. cTools cTools (
+Mallick et al. 2016) provides <b>software</b> tools for accessing Simons Genomic&nbsp;...</div><div class="gsc-url-bottom"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">reich.hms.harvard.edu</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">https://reich.hms.harvard.edu/<b>software</b></div></div><div class="gs-richsnippet-box" style="display: none;"></div><div class="gs-per-result-labels" url="https://reich.hms.harvard.edu/software"></div></td></tr></tbody></table></div><div class="gs-watermark"><a href="http://code.google.com/apis/ajaxsearch/faq.html" class="gs-watermark" target="_blank">clipped from Google - 2/2017</a></div></div><div class="gsc-expansionArea"><div class="gsc-webResult gsc-result"><div class="gs-webResult gs-result"><div class="gsc-thumbnail-inside"><div class="gs-title"><a class="gs-title" href="https://www.broadinstitute.org/gsea" target="_parent" dir="ltr" data-cturl="https://www.google.com/url?q=https://www.broadinstitute.org/gsea&amp;sa=U&amp;ved=0ahUKEwjg-aXd0f3RAhUC2IMKHTfeDlsQFggGMAE&amp;client=internal-uds-cse&amp;usg=AFQjCNGJnDjb53YM-WezvtKlmsbk1P92QA" data-ctorig="https://www.broadinstitute.org/gsea">GSEA</a></div></div><div class="gsc-url-top"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">www.broadinstitute.org</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">https://www.broadinstitute.org/gsea</div></div><table class="gsc-table-result"><tbody><tr><td class="gsc-table-cell-thumbnail gsc-thumbnail" style="display:none"></td><td onclick="if (this.className == 'gsc-table-cell-snippet-close gsc-collapsable') { this.className = 'gsc-table-cell-snippet-open gsc-collapsable'; } else if (this.className == 'gsc-table-cell-snippet-open gsc-collapsable') { this.className = 'gsc-table-cell-snippet-close gsc-collapsable'; };" class="gsc-table-cell-snippet-close"><div class="gs-title gsc-table-cell-thumbnail gsc-thumbnail-left"><a class="gs-title" href="https://www.broadinstitute.org/gsea" target="_parent" dir="ltr" data-cturl="https://www.google.com/url?q=https://www.broadinstitute.org/gsea&amp;sa=U&amp;ved=0ahUKEwjg-aXd0f3RAhUC2IMKHTfeDlsQFggGMAE&amp;client=internal-uds-cse&amp;usg=AFQjCNGJnDjb53YM-WezvtKlmsbk1P92QA" data-ctorig="https://www.broadinstitute.org/gsea">GSEA</a></div><div><span></span></div><div class="gs-bidi-start-align gs-snippet" dir="ltr">Download the GSEA <b>software</b> and additional resources to analyze, annotate and 
+... To cite your use of the GSEA <b>software</b>, please <b>reference</b> Subramanian,&nbsp;...</div><div class="gsc-url-bottom"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">www.broadinstitute.org</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">https://www.broadinstitute.org/gsea</div></div><div class="gs-richsnippet-box" style="display: none;"></div><div class="gs-per-result-labels" url="https://www.broadinstitute.org/gsea"></div></td></tr></tbody></table></div><div class="gs-watermark"><a href="http://code.google.com/apis/ajaxsearch/faq.html" class="gs-watermark" target="_blank">clipped from Google - 2/2017</a></div></div><div class="gsc-webResult gsc-result"><div class="gs-webResult gs-result"><div class="gsc-thumbnail-inside"><div class="gs-title"><a class="gs-title" href="http://pngu.mgh.harvard.edu/%7Epurcell/plink/" target="_parent" dir="ltr" data-cturl="https://www.google.com/url?q=http://pngu.mgh.harvard.edu/~purcell/plink/&amp;sa=U&amp;ved=0ahUKEwjg-aXd0f3RAhUC2IMKHTfeDlsQFggJMAI&amp;client=internal-uds-cse&amp;usg=AFQjCNFWYFyLFTQQQn81i6IaIweBy4Ozqg" data-ctorig="http://pngu.mgh.harvard.edu/~purcell/plink/">PLINK: Whole genome data analysis toolset</a></div></div><div class="gsc-url-top"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">pngu.mgh.harvard.edu</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">pngu.mgh.harvard.edu/~purcell/plink/</div></div><table class="gsc-table-result"><tbody><tr><td class="gsc-table-cell-thumbnail gsc-thumbnail" style="display:none"></td><td onclick="if (this.className == 'gsc-table-cell-snippet-close gsc-collapsable') { this.className = 'gsc-table-cell-snippet-open gsc-collapsable'; } else if (this.className == 'gsc-table-cell-snippet-open gsc-collapsable') { this.className = 'gsc-table-cell-snippet-close gsc-collapsable'; };" class="gsc-table-cell-snippet-close"><div class="gs-title gsc-table-cell-thumbnail gsc-thumbnail-left"><a class="gs-title" href="http://pngu.mgh.harvard.edu/%7Epurcell/plink/" target="_parent" dir="ltr" data-cturl="https://www.google.com/url?q=http://pngu.mgh.harvard.edu/~purcell/plink/&amp;sa=U&amp;ved=0ahUKEwjg-aXd0f3RAhUC2IMKHTfeDlsQFggJMAI&amp;client=internal-uds-cse&amp;usg=AFQjCNFWYFyLFTQQQn81i6IaIweBy4Ozqg" data-ctorig="http://pngu.mgh.harvard.edu/~purcell/plink/">PLINK: Whole genome data analysis toolset</a></div><div class="gs-bidi-start-align gs-snippet" dir="ltr">Nov 5, 2016 <b>...</b> ... methods to study single SNP associations in their local haplotypic context; 
+Imputation heuristic, to test untyped SNPs given a <b>reference</b> panel&nbsp;...</div><div class="gsc-url-bottom"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">pngu.mgh.harvard.edu</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">pngu.mgh.harvard.edu/~purcell/plink/</div></div><div class="gs-richsnippet-box" style="display: none;"></div><div class="gs-per-result-labels" url="http://pngu.mgh.harvard.edu/~purcell/plink/"></div></td></tr></tbody></table></div><div class="gs-watermark"><a href="http://code.google.com/apis/ajaxsearch/faq.html" class="gs-watermark" target="_blank">clipped from Google - 2/2017</a></div></div><div class="gsc-webResult gsc-result"><div class="gs-webResult gs-result"><div class="gsc-thumbnail-inside"><div class="gs-title"><a class="gs-title" href="https://dash.harvard.edu/handle/1/15035045" target="_parent" dir="ltr" data-cturl="https://www.google.com/url?q=https://dash.harvard.edu/handle/1/15035045&amp;sa=U&amp;ved=0ahUKEwjg-aXd0f3RAhUC2IMKHTfeDlsQFggLMAM&amp;client=internal-uds-cse&amp;usg=AFQjCNEwwwxWt6CvLnrI40zqtJP3Or1nGQ" data-ctorig="https://dash.harvard.edu/handle/1/15035045"><b>Reference</b> Gene Validation for RT-qPCR, a Note on Different ...</a></div></div><div class="gsc-url-top"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">dash.harvard.edu</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">https://dash.harvard.edu/handle/1/15035045</div></div><table class="gsc-table-result"><tbody><tr><td class="gsc-table-cell-thumbnail gsc-thumbnail" style="display:none"></td><td onclick="if (this.className == 'gsc-table-cell-snippet-close gsc-collapsable') { this.className = 'gsc-table-cell-snippet-open gsc-collapsable'; } else if (this.className == 'gsc-table-cell-snippet-open gsc-collapsable') { this.className = 'gsc-table-cell-snippet-close gsc-collapsable'; };" class="gsc-table-cell-snippet-close"><div class="gs-title gsc-table-cell-thumbnail gsc-thumbnail-left"><a class="gs-title" href="https://dash.harvard.edu/handle/1/15035045" target="_parent" dir="ltr" data-cturl="https://www.google.com/url?q=https://dash.harvard.edu/handle/1/15035045&amp;sa=U&amp;ved=0ahUKEwjg-aXd0f3RAhUC2IMKHTfeDlsQFggLMAM&amp;client=internal-uds-cse&amp;usg=AFQjCNEwwwxWt6CvLnrI40zqtJP3Or1nGQ" data-ctorig="https://dash.harvard.edu/handle/1/15035045"><b>Reference</b> Gene Validation for RT-qPCR, a Note on Different ...</a></div><div><span></span></div><div class="gs-bidi-start-align gs-snippet" dir="ltr">Title: <b>Reference</b> Gene Validation for RT-qPCR, a Note on Different Available 
+<b>Software</b> Packages. Author: De Spiegelaere, Ward; Dern-Wieloch, Jutta; Weigel,
+&nbsp;...</div><div class="gsc-url-bottom"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">dash.harvard.edu</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">https://dash.harvard.edu/handle/1/15035045</div></div><div class="gs-richsnippet-box" style="display: none;"></div><div class="gs-per-result-labels" url="https://dash.harvard.edu/handle/1/15035045"></div></td></tr></tbody></table></div><div class="gs-watermark"><a href="http://code.google.com/apis/ajaxsearch/faq.html" class="gs-watermark" target="_blank">clipped from Google - 2/2017</a></div></div><div class="gsc-webResult gsc-result"><div class="gs-webResult gs-result"><div class="gsc-thumbnail-inside"><div class="gs-title"><a class="gs-title" href="https://hms.harvard.edu/paperpile-reference-manager" target="_parent" dir="ltr" data-cturl="https://www.google.com/url?q=https://hms.harvard.edu/paperpile-reference-manager&amp;sa=U&amp;ved=0ahUKEwjg-aXd0f3RAhUC2IMKHTfeDlsQFggOMAQ&amp;client=internal-uds-cse&amp;usg=AFQjCNHEb5a-eV396xOqS6Tut13ciuPLJQ" data-ctorig="https://hms.harvard.edu/paperpile-reference-manager">PaperPile <b>Reference</b> Manager | HMS</a></div></div><div class="gsc-url-top"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">hms.harvard.edu</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">https://hms.harvard.edu/paperpile-<b>reference</b>-manager</div></div><table class="gsc-table-result"><tbody><tr><td class="gsc-table-cell-thumbnail gsc-thumbnail" style="display:none"></td><td onclick="if (this.className == 'gsc-table-cell-snippet-close gsc-collapsable') { this.className = 'gsc-table-cell-snippet-open gsc-collapsable'; } else if (this.className == 'gsc-table-cell-snippet-open gsc-collapsable') { this.className = 'gsc-table-cell-snippet-close gsc-collapsable'; };" class="gsc-table-cell-snippet-close"><div class="gs-title gsc-table-cell-thumbnail gsc-thumbnail-left"><a class="gs-title" href="https://hms.harvard.edu/paperpile-reference-manager" target="_parent" dir="ltr" data-cturl="https://www.google.com/url?q=https://hms.harvard.edu/paperpile-reference-manager&amp;sa=U&amp;ved=0ahUKEwjg-aXd0f3RAhUC2IMKHTfeDlsQFggOMAQ&amp;client=internal-uds-cse&amp;usg=AFQjCNHEb5a-eV396xOqS6Tut13ciuPLJQ" data-ctorig="https://hms.harvard.edu/paperpile-reference-manager">PaperPile <b>Reference</b> Manager | HMS</a></div><div><span></span></div><div class="gs-bidi-start-align gs-snippet" dir="ltr">Feb 4, 2016 <b>...</b> Paperpile <b>Reference</b> Manager <b>Software</b> is now available for FREE to anyone 
+with an HMS/HSDM email address. Additional information and&nbsp;...</div><div class="gsc-url-bottom"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">hms.harvard.edu</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">https://hms.harvard.edu/paperpile-<b>reference</b>-manager</div></div><div class="gs-richsnippet-box" style="display: none;"></div><div class="gs-per-result-labels" url="https://hms.harvard.edu/paperpile-reference-manager"></div></td></tr></tbody></table></div><div class="gs-watermark"><a href="http://code.google.com/apis/ajaxsearch/faq.html" class="gs-watermark" target="_blank">clipped from Google - 2/2017</a></div></div><div class="gsc-webResult gsc-result"><div class="gs-webResult gs-result"><div class="gsc-thumbnail-inside"><div class="gs-title"><a class="gs-title" href="http://adsabs.harvard.edu/abs/1996A%26AS..117..393B" target="_parent" dir="ltr" data-cturl="https://www.google.com/url?q=http://adsabs.harvard.edu/abs/1996A%2526AS..117..393B&amp;sa=U&amp;ved=0ahUKEwjg-aXd0f3RAhUC2IMKHTfeDlsQFggQMAU&amp;client=internal-uds-cse&amp;usg=AFQjCNHmiHsnM2O5120eHpa8kXtvM9sSVw" data-ctorig="http://adsabs.harvard.edu/abs/1996A%26AS..117..393B">SExtractor: <b>Software</b> for source extraction.</a></div></div><div class="gsc-url-top"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">adsabs.harvard.edu</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">adsabs.harvard.edu/abs/1996A%26AS..117..393B</div></div><table class="gsc-table-result"><tbody><tr><td class="gsc-table-cell-thumbnail gsc-thumbnail" style="display:none"></td><td onclick="if (this.className == 'gsc-table-cell-snippet-close gsc-collapsable') { this.className = 'gsc-table-cell-snippet-open gsc-collapsable'; } else if (this.className == 'gsc-table-cell-snippet-open gsc-collapsable') { this.className = 'gsc-table-cell-snippet-close gsc-collapsable'; };" class="gsc-table-cell-snippet-close"><div class="gs-title gsc-table-cell-thumbnail gsc-thumbnail-left"><a class="gs-title" href="http://adsabs.harvard.edu/abs/1996A%26AS..117..393B" target="_parent" dir="ltr" data-cturl="https://www.google.com/url?q=http://adsabs.harvard.edu/abs/1996A%2526AS..117..393B&amp;sa=U&amp;ved=0ahUKEwjg-aXd0f3RAhUC2IMKHTfeDlsQFggQMAU&amp;client=internal-uds-cse&amp;usg=AFQjCNHmiHsnM2O5120eHpa8kXtvM9sSVw" data-ctorig="http://adsabs.harvard.edu/abs/1996A%26AS..117..393B">SExtractor: <b>Software</b> for source extraction.</a></div><div><span></span></div><div class="gs-bidi-start-align gs-snippet" dir="ltr">SExtractor: <b>Software</b> for source extraction. ... We present the automated 
+techniques we have developed for new <b>software</b> that optimally detects, ... 
+<b>Reference</b> 0</div><div class="gsc-url-bottom"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">adsabs.harvard.edu</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">adsabs.harvard.edu/abs/1996A%26AS..117..393B</div></div><div class="gs-richsnippet-box" style="display: none;"></div><div class="gs-per-result-labels" url="http://adsabs.harvard.edu/abs/1996A%26AS..117..393B"></div></td></tr></tbody></table></div><div class="gs-watermark"><a href="http://code.google.com/apis/ajaxsearch/faq.html" class="gs-watermark" target="_blank">clipped from Google - 2/2017</a></div></div><div class="gsc-webResult gsc-result"><div class="gs-webResult gs-result"><div class="gsc-thumbnail-inside"><div class="gs-title"><a class="gs-title" href="https://www.hsph.harvard.edu/xlin/software.html" target="_parent" dir="ltr" data-cturl="https://www.google.com/url?q=https://www.hsph.harvard.edu/xlin/software.html&amp;sa=U&amp;ved=0ahUKEwjg-aXd0f3RAhUC2IMKHTfeDlsQFggSMAY&amp;client=internal-uds-cse&amp;usg=AFQjCNGRaG6ytLwHCm5bL5jU0-WZ_PFLSg" data-ctorig="https://www.hsph.harvard.edu/xlin/software.html">Xihong Lin's Group @ Harvard School of Public Health</a></div></div><div class="gsc-url-top"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">www.hsph.harvard.edu</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">https://www.hsph.harvard.edu/xlin/<b>software</b>.html</div></div><table class="gsc-table-result"><tbody><tr><td class="gsc-table-cell-thumbnail gsc-thumbnail" style="display:none"></td><td onclick="if (this.className == 'gsc-table-cell-snippet-close gsc-collapsable') { this.className = 'gsc-table-cell-snippet-open gsc-collapsable'; } else if (this.className == 'gsc-table-cell-snippet-open gsc-collapsable') { this.className = 'gsc-table-cell-snippet-close gsc-collapsable'; };" class="gsc-table-cell-snippet-close"><div class="gs-title gsc-table-cell-thumbnail gsc-thumbnail-left"><a class="gs-title" href="https://www.hsph.harvard.edu/xlin/software.html" target="_parent" dir="ltr" data-cturl="https://www.google.com/url?q=https://www.hsph.harvard.edu/xlin/software.html&amp;sa=U&amp;ved=0ahUKEwjg-aXd0f3RAhUC2IMKHTfeDlsQFggSMAY&amp;client=internal-uds-cse&amp;usg=AFQjCNGRaG6ytLwHCm5bL5jU0-WZ_PFLSg" data-ctorig="https://www.hsph.harvard.edu/xlin/software.html">Xihong Lin's Group @ Harvard School of Public Health</a></div><div class="gs-bidi-start-align gs-snippet" dir="ltr"><b>Software</b> download , manual download . <b>References</b>: Lin X, Cai T, Wu M, Zhou Q, 
+Liu G, Christiani D and Lin X. 2011. Survival Kernel Machine SNP-set Analysis&nbsp;...</div><div class="gsc-url-bottom"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">www.hsph.harvard.edu</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">https://www.hsph.harvard.edu/xlin/<b>software</b>.html</div></div><div class="gs-richsnippet-box" style="display: none;"></div><div class="gs-per-result-labels" url="https://www.hsph.harvard.edu/xlin/software.html"></div></td></tr></tbody></table></div><div class="gs-watermark"><a href="http://code.google.com/apis/ajaxsearch/faq.html" class="gs-watermark" target="_blank">clipped from Google - 2/2017</a></div></div><div class="gsc-webResult gsc-result"><div class="gs-webResult gs-result"><div class="gsc-thumbnail-inside"><div class="gs-title"><a class="gs-title" href="http://adsabs.harvard.edu/abs/2015ESASP.732E..40B" target="_parent" dir="ltr" data-cturl="https://www.google.com/url?q=http://adsabs.harvard.edu/abs/2015ESASP.732E..40B&amp;sa=U&amp;ved=0ahUKEwjg-aXd0f3RAhUC2IMKHTfeDlsQFggUMAc&amp;client=internal-uds-cse&amp;usg=AFQjCNEpwEhpbyZs3deYaF_cekc8GVpBnA" data-ctorig="http://adsabs.harvard.edu/abs/2015ESASP.732E..40B">On-Board <b>Software Reference</b> Architecture for Payloads</a></div></div><div class="gsc-url-top"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">adsabs.harvard.edu</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">adsabs.harvard.edu/abs/2015ESASP.732E..40B</div></div><table class="gsc-table-result"><tbody><tr><td class="gsc-table-cell-thumbnail gsc-thumbnail" style="display:none"></td><td onclick="if (this.className == 'gsc-table-cell-snippet-close gsc-collapsable') { this.className = 'gsc-table-cell-snippet-open gsc-collapsable'; } else if (this.className == 'gsc-table-cell-snippet-open gsc-collapsable') { this.className = 'gsc-table-cell-snippet-close gsc-collapsable'; };" class="gsc-table-cell-snippet-close"><div class="gs-title gsc-table-cell-thumbnail gsc-thumbnail-left"><a class="gs-title" href="http://adsabs.harvard.edu/abs/2015ESASP.732E..40B" target="_parent" dir="ltr" data-cturl="https://www.google.com/url?q=http://adsabs.harvard.edu/abs/2015ESASP.732E..40B&amp;sa=U&amp;ved=0ahUKEwjg-aXd0f3RAhUC2IMKHTfeDlsQFggUMAc&amp;client=internal-uds-cse&amp;usg=AFQjCNEpwEhpbyZs3deYaF_cekc8GVpBnA" data-ctorig="http://adsabs.harvard.edu/abs/2015ESASP.732E..40B">On-Board <b>Software Reference</b> Architecture for Payloads</a></div><div><span></span></div><div class="gs-bidi-start-align gs-snippet" dir="ltr">Title: On-Board <b>Software Reference</b> Architecture for Payloads. Authors: Bos, 
+Victor; Trcka, Adam. Affiliation: AA(Space Systems Finland (SSF)), AB(Evolving&nbsp;...</div><div class="gsc-url-bottom"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">adsabs.harvard.edu</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">adsabs.harvard.edu/abs/2015ESASP.732E..40B</div></div><div class="gs-richsnippet-box" style="display: none;"></div><div class="gs-per-result-labels" url="http://adsabs.harvard.edu/abs/2015ESASP.732E..40B"></div></td></tr></tbody></table></div><div class="gs-watermark"><a href="http://code.google.com/apis/ajaxsearch/faq.html" class="gs-watermark" target="_blank">clipped from Google - 2/2017</a></div></div><div class="gsc-webResult gsc-result"><div class="gs-webResult gs-result"><div class="gsc-thumbnail-inside"><div class="gs-title"><a class="gs-title" href="http://guides.library.harvard.edu/cite" target="_parent" dir="ltr" data-cturl="https://www.google.com/url?q=http://guides.library.harvard.edu/cite&amp;sa=U&amp;ved=0ahUKEwjg-aXd0f3RAhUC2IMKHTfeDlsQFggXMAg&amp;client=internal-uds-cse&amp;usg=AFQjCNEHTaCzDFzPIL5KR43mI290Bp3FgQ" data-ctorig="http://guides.library.harvard.edu/cite">Research Management and Citation Tools at Harvard</a></div></div><div class="gsc-url-top"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">guides.library.harvard.edu</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">guides.library.harvard.edu/cite</div></div><table class="gsc-table-result"><tbody><tr><td class="gsc-table-cell-thumbnail gsc-thumbnail" style="display:none"></td><td onclick="if (this.className == 'gsc-table-cell-snippet-close gsc-collapsable') { this.className = 'gsc-table-cell-snippet-open gsc-collapsable'; } else if (this.className == 'gsc-table-cell-snippet-open gsc-collapsable') { this.className = 'gsc-table-cell-snippet-close gsc-collapsable'; };" class="gsc-table-cell-snippet-close"><div class="gs-title gsc-table-cell-thumbnail gsc-thumbnail-left"><a class="gs-title" href="http://guides.library.harvard.edu/cite" target="_parent" dir="ltr" data-cturl="https://www.google.com/url?q=http://guides.library.harvard.edu/cite&amp;sa=U&amp;ved=0ahUKEwjg-aXd0f3RAhUC2IMKHTfeDlsQFggXMAg&amp;client=internal-uds-cse&amp;usg=AFQjCNEHTaCzDFzPIL5KR43mI290Bp3FgQ" data-ctorig="http://guides.library.harvard.edu/cite">Research Management and Citation Tools at Harvard</a></div><div><span></span></div><div class="gs-bidi-start-align gs-snippet" dir="ltr">Jan 31, 2017 <b>...</b> What is citation <b>software</b>? Citation and research management tools help you 
+organize your research and keep track of your <b>references</b>.</div><div class="gsc-url-bottom"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">guides.library.harvard.edu</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">guides.library.harvard.edu/cite</div></div><div class="gs-richsnippet-box" style="display: none;"></div><div class="gs-per-result-labels" url="http://guides.library.harvard.edu/cite"></div></td></tr></tbody></table></div><div class="gs-watermark"><a href="http://code.google.com/apis/ajaxsearch/faq.html" class="gs-watermark" target="_blank">clipped from Google - 2/2017</a></div></div><div class="gsc-webResult gsc-result"><div class="gs-webResult gs-result"><div class="gsc-thumbnail-inside"><div class="gs-title"><a class="gs-title" href="http://adsabs.harvard.edu/abs/2015ExA....39..259K" target="_parent" dir="ltr" data-cturl="https://www.google.com/url?q=http://adsabs.harvard.edu/abs/2015ExA....39..259K&amp;sa=U&amp;ved=0ahUKEwjg-aXd0f3RAhUC2IMKHTfeDlsQFggZMAk&amp;client=internal-uds-cse&amp;usg=AFQjCNFDHCnUudQU2PltsEOYtwozSPGQFw" data-ctorig="http://adsabs.harvard.edu/abs/2015ExA....39..259K">The SFXC <b>software</b> correlator for very long baseline interferometry ...</a></div></div><div class="gsc-url-top"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">adsabs.harvard.edu</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">adsabs.harvard.edu/abs/2015ExA....39..259K</div></div><table class="gsc-table-result"><tbody><tr><td class="gsc-table-cell-thumbnail gsc-thumbnail" style="display:none"></td><td onclick="if (this.className == 'gsc-table-cell-snippet-close gsc-collapsable') { this.className = 'gsc-table-cell-snippet-open gsc-collapsable'; } else if (this.className == 'gsc-table-cell-snippet-open gsc-collapsable') { this.className = 'gsc-table-cell-snippet-close gsc-collapsable'; };" class="gsc-table-cell-snippet-close"><div class="gs-title gsc-table-cell-thumbnail gsc-thumbnail-left"><a class="gs-title" href="http://adsabs.harvard.edu/abs/2015ExA....39..259K" target="_parent" dir="ltr" data-cturl="https://www.google.com/url?q=http://adsabs.harvard.edu/abs/2015ExA....39..259K&amp;sa=U&amp;ved=0ahUKEwjg-aXd0f3RAhUC2IMKHTfeDlsQFggZMAk&amp;client=internal-uds-cse&amp;usg=AFQjCNFDHCnUudQU2PltsEOYtwozSPGQFw" data-ctorig="http://adsabs.harvard.edu/abs/2015ExA....39..259K">The SFXC <b>software</b> correlator for very long baseline interferometry ...</a></div><div><span></span></div><div class="gs-bidi-start-align gs-snippet" dir="ltr">The SFXC <b>software</b> correlator for very long baseline interferometry: algorithms 
+and ... Keywords: VLBI, Radio astronomy, <b>Software</b> correlation ... <b>Reference</b> 0</div><div class="gsc-url-bottom"><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">adsabs.harvard.edu</div><div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" dir="ltr" style="word-break:break-all;">adsabs.harvard.edu/abs/2015ExA....39..259K</div></div><div class="gs-richsnippet-box" style="display: none;"></div><div class="gs-per-result-labels" url="http://adsabs.harvard.edu/abs/2015ExA....39..259K"></div></td></tr></tbody></table></div><div class="gs-watermark"><a href="http://code.google.com/apis/ajaxsearch/faq.html" class="gs-watermark" target="_blank">clipped from Google - 2/2017</a></div></div><div class="gsc-adBlockNoHeight" style="height: 0px;"></div><div class="gsc-cursor-box gs-bidi-start-align" dir="ltr"><div class="gsc-cursor"><div class="gsc-cursor-page gsc-cursor-current-page" tabindex="0">1</div><div class="gsc-cursor-page" tabindex="0">2</div><div class="gsc-cursor-page" tabindex="0">3</div><div class="gsc-cursor-page" tabindex="0">4</div><div class="gsc-cursor-page" tabindex="0">5</div><div class="gsc-cursor-page" tabindex="0">6</div><div class="gsc-cursor-page" tabindex="0">7</div><div class="gsc-cursor-page" tabindex="0">8</div><div class="gsc-cursor-page" tabindex="0">9</div><div class="gsc-cursor-page" tabindex="0">10</div></div></div></div><div class="gcsc-branding"><table class="gcsc-branding" cellspacing="0" cellpadding="0"><tbody><tr><td class="gcsc-branding-text"><div class="gcsc-branding-text">powered by</div></td><td class="gcsc-branding-img-noclear"><a href="http://cse.google.com/cse/?hl=en" target="_BLANK" class="gcsc-branding-clickable"><img src="Searches_files/small-logo.png" class="gcsc-branding-img-noclear"></a></td><td class="gcsc-branding-text gcsc-branding-text-name"><div class="gcsc-branding-text gcsc-branding-text-name">Custom Search</div></td></tr></tbody></table></div></div></div><div class="gsc-resultsRoot gsc-tabData gsc-tabdInactive"><table class="gsc-resultsHeader" cellspacing="0" cellpadding="0"><tbody><tr><td class="gsc-twiddleRegionCell"><div class="gsc-twiddle"><div class="gsc-title">Harvard Gazette</div></div><div class="gsc-stats"></div><div class="gsc-results-selector gsc-all-results-active"><div class="gsc-result-selector gsc-one-result" title="show one result">&nbsp;</div><div class="gsc-result-selector gsc-more-results" title="show more results">&nbsp;</div><div class="gsc-result-selector gsc-all-results" title="show all results">&nbsp;</div></div></td><td class="gsc-configLabelCell"></td></tr></tbody></table><div><div class="gsc-expansionArea"></div></div></div></div></div></div></div></div></div>
+</div>
+<script>
+  (function() {
+    var cx = '006776768860476326824:n4rl30fjc-e';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+</div></article>
+</main>
+ 
+ 
+<footer role="contentinfo" id="footerArea" class="footer-base">
+<div class="wrapper wrapper--1-down content-area">
+ 
+<a href="#page" class="jump-to-nav jump-to-nav--hidden">
+Jump to Top
+</a>
+<div class="grid grid--footer">
+<div class="w-20 w-33--m">
+<h1 class="footer__heading txt-h5">
+Website
+</h1>
+<ul ul_attributes="nav-group nav-group--top-bar" display_stickynav="yes" class="list-clean"><li class="menu-449 first"><a href="http://www.accessibility.harvard.edu/" title="Accessibility@0">Accessibility</a></li>
+<li class="menu-683 last"><a href="http://www.harvard.edu/sitemap" title="Sitemap@0">Sitemap</a></li>
+</ul> </div>
+<div class="w-20 w-33--m">
+<h2 class="footer__heading txt-h5">
+Get in Touch
+</h2>
+<ul ul_attributes="nav-group nav-group--top-bar" display_stickynav="yes" class="list-clean"><li class="menu-660 first"><a href="http://www.harvard.edu/contact-harvard" title="Contact@2">Contact Harvard</a></li>
+<li class="menu-2078"><a href="http://www.harvard.edu/about-harvard/maps-directions" title="">Maps &amp; Directions</a></li>
+<li class="menu-2383"><a href="http://hr.harvard.edu/jobs" title="">Jobs</a></li>
+<li class="menu-2384 last"><a href="http://www.harvard.edu/about-harvard/social-media-and-newsletter-directory" title="">Social Media</a></li>
+</ul> </div>
+<div class="w-20 w-33--m">
+<h3 class="footer__heading txt-h5">
+Security &amp; Brand
+</h3>
+<ul ul_attributes="nav-group nav-group--top-bar" display_stickynav="yes" class="list-clean"><li class="menu-448 first"><a href="http://www.harvard.edu/privacy-statement" title="Privacy@0">Privacy Statement</a></li>
+<li class="menu-447"><a href="http://www.harvard.edu/copyright-issue" title="Infringement@0">Report Copyright Infringement</a></li>
+<li class="menu-861"><a href="http://www.harvard.edu/security-issue" title="Report Security Issue">Report Security Issue</a></li>
+<li class="menu-446 last"><a href="http://trademark.harvard.edu/pages/trademark-notice" title="TrademarkNotice@0">Trademark Notice</a></li>
+</ul> </div>
+<div class="w-footer-last">
+<h4 class="footer__heading txt-h5 is-visually-hidden">
+Social Media &amp; other Application Links
+</h4>
+<ul class="list-social-links list-clean">
+<li>
+<a href="http://facebook.com/harvard" class="social-link social-link--facebook">
+<span class="is-visually-hidden">
+Facebook
+</span>
+</a>
+</li>
+<li>
+<a href="http://twitter.com/harvard" class="social-link social-link--twitter">
+<span class="is-visually-hidden">
+Twitter
+</span>
+</a>
+</li>
+<li>
+<a href="http://www.instagram.com/harvard" class="social-link social-link--instagram">
+<span class="is-visually-hidden">
+Instagram
+</span>
+</a>
+</li>
+<li>
+<a href="http://youtube.com/harvard" class="social-link social-link--youtube">
+<span class="is-visually-hidden">
+YouTube
+</span>
+</a>
+</li>
+<li>
+<a href="https://soundcloud.com/harvard" class="social-link social-link--soundcloud">
+<span class="is-visually-hidden">
+SoundCloud
+</span>
+</a>
+</li>
+<li>
+<a href="http://plus.google.com/+harvard" class="social-link social-link--google-plus">
+<span class="is-visually-hidden">
+Google Plus
+</span>
+</a>
+</li>
+<li>
+<a href="https://www.linkedin.com/edu/school?id=18483" class="social-link social-link--linkedin">
+<span class="is-visually-hidden">
+LinkedIn
+</span>
+</a>
+</li>
+<li>
+<a href="http://www.harvard.edu/itunes" class="social-link social-link--itunes">
+<span class="is-visually-hidden">
+iTunes
+</span>
+</a>
+</li>
+</ul>
+<p class="w-60 other-apps">
+<a href="http://www.harvard.edu/all-harvard-mobile">
+Harvard Apps
+</a>
+</p>
+</div>
+</div>  
+<p class="footer__outro">
+© 2017 The President and Fellows of Harvard College
+</p>
+</div>
+</footer>
+ 
+</div>  
+ 
+<script src="Searches_files/jquery-1.js"></script>
+<script src="Searches_files/script.js"></script>
+ 
+<script src="Searches_files/ResizeSensor.js"></script>
+<script src="Searches_files/ElementQueries.js"></script>
+<script src="Searches_files/slick.js"></script>
+<script>
+$('.grid--3a.carousel').slick( {
+    dots: false,
+    infinite: false,
+    arrows: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+$('.grid--full.carousel').slick( {
+    dots: false,
+    infinite: false,
+    arrows: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+		autoplay: true,
+  	autoplaySpeed: 4000,
+  });
+$('.grid--full-w-view.carousel .view .view-content').slick( {
+    dots: false,
+    infinite: false,
+    arrows: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+		autoplay: true,
+  	autoplaySpeed: 4000,
+  });
+</script>
+ 
+<script type="text/javascript">
+		var _sf_async_config={uid:2327,domain:"harvard.edu"};
+		(function(){
+		  function loadChartbeat() {
+			window._sf_endpt=(new Date()).getTime();
+			var e = document.createElement('script');
+			e.setAttribute('language', 'javascript');
+			e.setAttribute('type', 'text/javascript');
+			e.setAttribute('src',
+			   (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+			   "js/chartbeat.js");
+			document.body.appendChild(e);
+		  }
+		  var oldonload = window.onload;
+		  window.onload = (typeof window.onload != 'function') ?
+			 loadChartbeat : function() { oldonload(); loadChartbeat(); };
+		})();
+		
+		</script>
+ 
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"2a855aba50","applicationID":"23265856","transactionName":"MlVbYBBXXkJQAUAIWgsfeFcWX19fHgpRBUA6Q1xVEFVYVEI=","queueTime":0,"applicationTime":82,"atts":"HhJYFlhNTUw=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+
+<script type="text/javascript" id="" src="Searches_files/api.js"></script>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","116026588849778");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=116026588849778&amp;ev=PageView&amp;noscript=1"></noscript>
+
+
+<script type="text/javascript" id="">(function(){try{var q=function(b){var a,c,k,l,m,e,f,g="SoundCloud",d=SC.Widget(b);d.bind(SC.Widget.Events.READY,function(){d.getCurrentSound(function(a){f=a.title});d.bind(SC.Widget.Events.PLAY,function(){a="Play";h(g,a,f)});d.bind(SC.Widget.Events.PAUSE,function(b){c=Math.round(100*b.relativePosition);100!==c&&(a="Pause",h(g,a,f))});d.bind(SC.Widget.Events.PLAY_PROGRESS,function(b){e=!1;c=Math.round(100*b.relativePosition);25!==c||k||(a="25%",e=k=!0);50!==c||l||(a="50%",e=l=!0);75!==c||m||(a="75%",
+e=m=!0);e&&h(g,a,f)});d.bind(SC.Widget.Events.FINISH,function(){a="100%";k=l=m=!1;h(g,a,f)})})},h=function(b,a,c){window.dataLayer.push({event:"scEvent",eventCategory:b,eventAction:a,eventLabel:c})},b,n,p=document.querySelectorAll('iframe[src*\x3d"api.soundcloud.com"]');b=0;for(n=p.length;b<n;b+=1)q(p[b])}catch(r){console.log("Error with SoundCloud API: "+r.message)}})();</script><table style="width: 741px; display: none; top: 367px; position: absolute; left: 329px;" class="gstl_50 gssb_c" cellspacing="0" cellpadding="0"><tbody><tr><td class="gssb_f"></td><td class="gssb_e" style="width: 100%;"></td></tr></tbody></table> <div style="display:none"> <span id="private_ratings"> <span class="gsc-snippet-metadata"> <span data-if="Vars.ratingstars"> <span class="gsc-rating-bar"> <span data-attr="{style:'width:' + (Vars.ratingstars * 20) + '%'}"></span> </span> <span data-if="Vars.ratingcount"> <span data-body="' ' + Vars.ratingcount"></span> <span> reviews</span> </span> </span> <span data-if="Vars.totaltime"> <span data-if="Vars.ratingstars &amp;&amp; Vars.ratingcount"> - </span> <span data-body="Vars.totaltime"></span> </span> <span data-if="Vars.calories"> <span data-if="Vars.ratingstars &amp;&amp; Vars.ratingcount || Vars.totaltime"> - </span> <span data-body="Vars.calories"></span> <span> cal</span> </span> <span data-if="Vars.pricerange"> <span data-if="Vars.ratingstars &amp;&amp; Vars.ratingcount || Vars.totaltime || Vars.calories"> - </span> <span> Price range: </span> <span data-body="Vars.pricerange"></span> </span> <span data-if="Vars.reviewer" class="gsc-reviewer"> <span data-body="' ' + Vars.reviewer"></span> </span> </span> </span> <span id="private_hproduct"> <span class="gsc-snippet-metadata"> <span data-if="Vars.availability">Availability: <span data-body="Vars.availability"></span>.</span> <span data-if="Vars.availability &amp;&amp; Vars.price">&nbsp;</span> <span data-if="Vars.price"> Price: <span data-body="Vars.price"></span>.</span> </span> </span> <span id="private_hreview_icon"> <span data-if="google.search.richsnippets.hreviewNonEmpty(Vars.hreview)"> <span class="gsc-zippy"></span> </span> </span> <span id="private_hreview_content"> <span data-if="google.search.richsnippets.hreviewNonEmpty(Vars.hreview)" class="gsc-preview-reviews"> <ul> <span data-foreach="Vars.hreview" data-attr="0"> <li data-if="(Cur.description || Cur.summary) &amp;&amp; Index == 0" class="gsc-review-agregate-first-line"> <span data-if="Cur.description" data-body="Cur.description"></span> <span data-elif="Cur.summary" data-body="Cur.summary"></span> </li> <li data-elif="(Cur.description || Cur.summary) &amp;&amp; Index &lt; 10" data-attr="{'class': Index % 2 == 0 ? 'gsc-review-agregate-even-lines' : 'gsc-review-agregate-odd-lines'}"> <span data-if="Cur.description" data-body="Cur.description"></span> <span data-elif="Cur.summary" data-body="Cur.summary"></span> </li> </span> </ul> </span> </span> <span id="private_hrecipe"> <span data-if="Vars.author" class="gsc-author"> <span data-body="' ' + Vars.author"></span> </span> </span> <span id="private_recipe"> <span data-attr="0" data-body="render('private_ratings',google.search.richsnippets.merge(richSnippet.recipe))"> </span> <span data-if="Vars.richSnippet.hrecipe &amp;&amp; Vars.richSnippet.hrecipe.author &amp;&amp; !Vars.richSnippet.recipe.reviewer" data-attr="0" data-body="render('private_hrecipe',richSnippet.hrecipe)"> </span> </span> <span id="private_person"> <span data-vars="{vcard:google.search.richsnippets.merge(Vars.richSnippet.vcard)}"> <span data-if="Vars.richSnippet.vcard &amp;&amp; vcard.adr"> <span data-if="vcard.adr" class="gs-location"> <span data-body="' ' + vcard.adr"> </span> </span> </span> <span data-elif="Vars.richSnippet.person"> <span data-if="person.role" class="gsc-role"> <span data-attr="0" data-body="' ' + person.role"> </span> </span> <span data-if="person.org" class="gsc-org"> <span data-body="' @' + person.org"> </span> </span> <span data-if="person.location" class="gsc-location"> <span data-if="person.org || person.role || Vars.richSnippet.review"> - </span> <span data-body="' ' + person.location"> </span> </span> </span> <span data-if="Vars.richSnippet.vcard &amp;&amp; vcard.tel" class="gsc-tel"> <span data-if="(person &amp;&amp; (person.org || person.role || Vars.richSnippet.review || person.location)) || (Vars.richSnippet.vcard &amp;&amp; vcard.adr) "> - </span> <span data-body="' Tel: ' + vcard.tel"> </span> </span> </span> </span> <span id="private_metadata" class="gsc-snippet-metadata"> <span data-vars="{person:google.search.richsnippets.merge(Vars.richSnippet.person), product:google.search.richsnippets.merge(Vars.richSnippet.hproduct)}"> <span data-if="Vars.richSnippet.recipe" data-attr="0" data-body="render('private_recipe', Vars)"> </span> <span data-elif="Vars.richSnippet.review" data-attr="0" data-body="render('private_ratings',google.search.richsnippets.merge(richSnippet.review))"> </span> <span data-if="Vars.richSnippet.hproduct &amp;&amp; (product.availability || product.price)" data-attr="0" data-body="render('private_hproduct', product)"> </span> <span data-elif="Vars.richSnippet.person || Vars.richSnippet.vcard" data-attr="0" data-body="render('private_person', Vars)"> </span> </span> </span> <div id="base_facets"> <div class="gsc-context-box" data-facetgroup="title"> </div> </div> <div id="base_facetGroupEntry"> <div> <div class="gsc-facet-label gsc-col" style="display:inline-block;"> <a data-attr="{'data-refinementLabel': label, 'label-with-op': label_with_op}" data-body="html(anchor)"></a> </div> <div class="gsc-facet-result gsc-col" data-body="html(width + '%')" style="display:inline-block;"> </div> <div data-attr="{'class': index == 'first' ? 'gsc-chart gsc-top gsc-col' : index == 'last' ? 'gsc-chart gsc-bottom gsc-col' : index == 'sizeone' ? 'gsc-chart gsc-bottom gsc-col gsc-top' : 'gsc-chart gsc-col'}" style="display:inline-block;"> <div class="" data-attr="{style:'width:' + width + '%'}"></div> </div> </div> </div> <div id="base_webResult"> <div class="gs-webResult gs-result" data-vars="{longUrl:function() { var i = unescapedUrl.indexOf(visibleUrl); return i &lt; 1 ? visibleUrl : unescapedUrl.substring(i);}}"> <div class="gsc-thumbnail-inside"> <div class="gs-title"> <a class="gs-title" data-attr="{href:unescapedUrl,target:target,dir:bidiHtmlDir(title)}" data-body="html(title)"> </a> </div> </div> <div class="gsc-url-top"> <div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" data-body="visibleUrl" data-attr="{dir:bidiTextDir(visibleUrl)}"> </div> <div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" data-body="Vars.formattedUrl ? html(Vars.formattedUrl) : longUrl()" data-attr="{dir: Vars.formattedUrl ? bidiHtmlDir(Vars.formattedUrl) : bidiTextDir(longUrl()), style:'word-break:break-all;'}"> </div> </div> <table class="gsc-table-result"> <tbody> <tr> <td class="gsc-table-cell-thumbnail gsc-thumbnail" style="display:none"> <div data-if="Vars.richSnippet" data-attr="0" data-body="render('thumbnail',richSnippet,{url:unescapedUrl,target:target})"> </div> </td> <td data-attr="{'class': 'gsc-table-cell-snippet-close' + ((google.search.CurrentLocale == 'en' &amp;&amp; Vars.richSnippet &amp;&amp; Vars.richSnippet.hreview &amp;&amp; google.search.richsnippets.hreviewNonEmpty(Vars.richSnippet.hreview)) ? ' gsc-collapsable' : '')}" onclick="if (this.className == 'gsc-table-cell-snippet-close gsc-collapsable') { this.className = 'gsc-table-cell-snippet-open gsc-collapsable'; } else if (this.className == 'gsc-table-cell-snippet-open gsc-collapsable') { this.className = 'gsc-table-cell-snippet-close gsc-collapsable'; };"> <span data-if="google.search.CurrentLocale == 'en' &amp;&amp; Vars.richSnippet &amp;&amp; Vars.richSnippet.hreview" data-attr="0" data-body="render('private_hreview_icon',richSnippet)"> </span> <div class="gs-title gsc-table-cell-thumbnail gsc-thumbnail-left"> <a class="gs-title" data-attr="{href:unescapedUrl,target:target,dir:bidiHtmlDir(title)}" data-body="html(title)"> </a> </div> <div class="gs-fileFormat" data-if="Vars.fileFormat"> <span class="gs-fileFormat" data-body="localizedMessages['file-format'] + ' '"></span> <span class="gs-fileFormatType" data-body="Vars.fileFormat"></span> </div> <div data-if="google.search.CurrentLocale == 'en' &amp;&amp; Vars.richSnippet"> <span data-attr="0" data-body="render('private_metadata', Vars)"> </span> </div> <div class="gs-bidi-start-align gs-snippet" data-body="html(content)" data-attr="{dir:bidiHtmlDir(content)}"> </div> <div class="gsc-url-bottom"> <div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" data-body="visibleUrl" data-attr="{dir:bidiTextDir(visibleUrl)}"> </div> <div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" data-body="Vars.formattedUrl ? html(Vars.formattedUrl) : longUrl()" data-attr="{dir: Vars.formattedUrl ? bidiHtmlDir(Vars.formattedUrl) : bidiTextDir(longUrl()), style:'word-break:break-all;'}"> </div> </div> <div class="gs-richsnippet-box" style="display: none;"> </div> <span data-if="google.search.CurrentLocale == 'en' &amp;&amp; Vars.richSnippet &amp;&amp; Vars.richSnippet.hreview" data-attr="0" data-body="render('private_hreview_content',richSnippet)"> </span> <div class="gs-per-result-labels" data-attr="{url:unescapedUrl}"> <span data-body="localizedMessages['labeled']" data-if="!Vars.isLabelUrl &amp;&amp; Vars.perResultLabels"></span> <a class="gs-label gs-add-label" data-if="Vars.isLabelUrl" data-body="localizedMessages['add-label']"></a> <div data-foreach="Vars.perResultLabels" data-attr="0" data-if="Vars.perResultLabels"> <a class="gs-label" data-attr="{'data-refinementLabel': Cur['label'], 'label-with-op': Cur['label_with_op'], 'dir' : bidiTextDir(Cur.anchor)}" data-body="Cur.anchor"></a> <span data-body="bidiTextMarkAfter(Cur.anchor)"></span> </div> </div> </td> </tr> </tbody> </table> </div> </div> <div id="base_imageResult_image"><a data-attr="{ 'href':originalContextUrl, 'target':target, 'class':imageClass }"><img data-attr="{ 'src':tbUrl, 'title':titleNoFormatting, 'class':imageClass }"></a></div> <div id="base_imageResult_text"><div class="gs-title gs-ellipsis"><a class="gs-title" data-attr="{ href:originalContextUrl, target:target, dir:bidiHtmlDir(title) }" data-body="html(title)"></a></div><div class="gs-visibleUrl gs-bidi-start-align gs-ellipsis gsc-url-top" data-attr="{title:visibleUrl, dir:bidiTextDir(visibleUrl)}" data-body="visibleUrl"></div><div class="gs-snippet gs-bidi-start-align gs-ellipsis" data-attr="{title:contentNoFormatting, dir:bidiHtmlDir(content)}" data-body="html(content)"></div><div class="gs-size gs-ellipsis" data-body="width + ' × ' + height"></div><div class="gs-visibleUrl gs-bidi-start-align gs-ellipsis gsc-url-bottom" data-attr="{title:visibleUrl, dir:bidiTextDir(visibleUrl)}" data-body="visibleUrl"></div></div> <div id="base_imageResult_content"><div data-body="render('base_imageResult_image', Vars)" class="gs-image-box"></div><div data-body="render('base_imageResult_text', Vars)" class="gs-text-box"></div></div> <div id="base_imageResult_classic"><div class="gs-result gs-imageResult gs-imageResult-classic" data-body="render('base_imageResult_content', Vars, { imageClass: 'gs-image gs-image-scalable' })"></div></div> <div id="base_imageResult_column"><div class="gs-result gs-imageResult gs-imageResult-column" data-body="render('base_imageResult_content', Vars, { imageClass: 'gs-image gs-image-scalable' })"></div></div> <div id="base_imageResult_popup"><div class="gs-result gs-imageResult gs-imageResult-popup" onmouseover="google.search.ImageSearch.showPopup(this)" onmouseout="google.search.ImageSearch.hidePopup(this)"><div class="gs-image-thumbnail-box"><div data-body="render('base_imageResult_image', Vars, { imageClass: 'gs-image gs-image-scalable' })" class="gs-image-box"></div></div><div data-body="render('base_imageResult_content', Vars, { imageClass: 'gs-image' })" class="gs-image-popup-box"></div></div></div> <div id="base_thumbnail"> <div data-attr="0" data-vars="{tn:(Vars.cseThumbnail &amp;&amp; cseThumbnail.src) ? cseThumbnail : ( (Vars.thumbnail &amp;&amp; thumbnail.src) ? thumbnail : {src:Vars.document &amp;&amp; document.thumbnailUrl})}"> <div data-if="tn.src"> <a class="gs-image" data-attr="{href:url,target:target}"> <img data-if="!tn.width || !tn.height || tn.width &gt;= tn.height * 7 / 5" class="gs-image" data-attr="{src:tn.src}" onload="if (this.parentNode &amp;&amp; this.parentNode.parentNode &amp;&amp; this.parentNode.parentNode.parentNode) { this.parentNode.parentNode.parentNode.style.display = ''; this.parentNode.parentNode.className = 'gs-image-box gs-web-image-box gs-web-image-box-landscape'; } "> <img data-elif="true" class="gs-image" data-attr="{src:tn.src}" onload="if (this.parentNode &amp;&amp; this.parentNode.parentNode &amp;&amp; this.parentNode.parentNode.parentNode) { this.parentNode.parentNode.parentNode.style.display = ''; this.parentNode.parentNode.className = 'gs-image-box gs-web-image-box gs-web-image-box-portrait'; } "> </a> </div> </div> </div> <div id="base_action"> <div data-foreach="Vars.action" data-attr="0"> <div data-attr="{'class': 'gs-action ' + Cur['class']}" data-if="Cur.url &amp;&amp; Cur.label"> <a class="gs-action" data-attr="{href:Cur.url,target:target,dir:bidiTextDir(Cur.label)}" data-body="Cur.label"></a> </div> </div> </div> </div> </body></html>
