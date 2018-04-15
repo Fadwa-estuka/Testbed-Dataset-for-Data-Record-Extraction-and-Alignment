@@ -1,0 +1,1756 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en"><head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="PRAGMA" content="NO-CACHE">
+<meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+<meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+<link type="text/css" href="Search%20Results_files/blitzer_jquery-ui.css" rel="stylesheet">
+<script src="Search%20Results_files/jquery.js" type="text/javascript"></script>
+<script src="Search%20Results_files/jquery-ui.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="Search%20Results_files/ses-all.css">
+<link rel="stylesheet" type="text/css" href="Search%20Results_files/advresult83.css">
+<link rel="stylesheet" type="text/css" href="Search%20Results_files/ses-all.css">
+<link rel="stylesheet" type="text/css" href="Search%20Results_files/search-core.css">
+<link rel="stylesheet" type="text/css" href="Search%20Results_files/search.css">
+<script type="text/javascript" src="Search%20Results_files/yahoo-dom-event.js"></script>
+<script type="text/javascript" src="Search%20Results_files/bubbling-min.js"></script>
+<script type="text/javascript" src="Search%20Results_files/ses.js"></script>
+<!-- Advanced result configuration CSS -->
+<link rel="stylesheet" type="text/css" href="Search%20Results_files/advresult83.css">
+<!-- For search.oracle.com for the welcome line we need to use a file from www.oracle.com -->
+<!-- The file is managed by Marketing (contact Vasantha) -->
+<script type="text/javascript" src="Search%20Results_files/oraclelib.js"></script>
+<title>Oracle Site Search - Secure Enterprise Search
+- networks
+</title>
+</head>
+<body class="yui-skin-sam sidebar-left"><iframe id="_yuiResizeMonitor" title="Text Resize Monitor" style="position: absolute; visibility: visible; background-color: transparent; border-width: 0px; width: 2em; height: 2em; left: 0px; top: -28px;"></iframe>
+<div id="doc3" class="sidebar-left yui-t2 ses-t210">
+<div id="hd">
+<div style="clear:both;">
+<!-- Header Links -->
+<div class="toplinks">
+<a style="color:black;" href="https://search.oracle.com/search/formlogin.uix?p_url=search&amp;return_url=http%3A%2F%2Fsearch.oracle.com%3A80%2Fsearch%2Fsearch%3Fsearch.timezone%3D480%26search_startnum%3D%26search_endnum%3D%26num%3D10%26search_dupid%3D%26exttimeout%3Dfalse%26actProfId%3D0%26q%3Dnetworks%26sw%3Dt%26search_p_main_operator%3Dall%26search_p_atname%3D%26adn%3D%26search_p_op%3Dequals%26search_p_val%3D%26search_p_atname%3D%26adn%3D%26search_p_op%3Dequals%26search_p_val%3D%26group%3D">Sign In</a>
+</div>
+</div>
+<a name="skip_link"></a>
+<script type="text/javascript">
+jQuery.noConflict();
+jQuery(document).ready(function($){
+$("form#searchForm input[type=text]").focus();
+$("form#searchForm input#q").autocomplete({
+source: function( request, response ) {
+var formGroup = document.searchForm.group.value
+var sg_name = formGroup == null ? '' : formGroup;
+$.ajax({
+url: "AutoSuggestQuery",
+dataType: "json",
+data: {
+key: request.term,
+lang: "en",
+sg: "All"
+},
+success: function( data ) {
+response( $.map( data.suggests, function( item ) {
+return {
+label: item,
+value: item
+}
+}));
+}
+});
+},
+minLength: 2,
+autoFocus: false,
+select: function(event, ui) {
+$("form#searchForm input#q").val(ui.item.value);
+$("form#searchForm").submit();
+}
+});
+});
+</script>
+<script type="text/javascript">
+// function toggleAttributeFilters(groupBoxes)
+// Delete attr filter rows in case search includes groups other than
+// OpenWorld and JavaOne since filters only apply to these sources
+function toggleAttributeFilters(groupBoxes) {
+var showFilters = true;
+var newContainsAll = false;
+var oldContainsAll = false;
+var selGroupCount = 0;
+var newGroupsString = "";
+if (groupBoxes[0]) {
+for (var i=0; i<groupBoxes.length; i++) {
+if (groupBoxes[i].checked) {
+selGroupValue = groupBoxes[i].value;
+if (selGroupValue == "All") {
+newContainsAll = true;
+}
+selGroupCount++;
+}
+}
+var oldGroupsString = document.forms["selGroupsForm"].elements["listOldSelection"].value;
+var oldGroupsArr = oldGroupsString.split(", ");
+for (x in oldGroupsArr)
+{
+if (oldGroupsArr[x] == "All")
+{
+oldContainsAll = true;
+}
+}
+if ((newContainsAll == true) && (selGroupCount > 1)) {
+if (oldContainsAll == true) {
+// Uncheck "All". Something other than "All" was just checked
+for (var i=0; i<groupBoxes.length; i++) {
+if ((groupBoxes[i].checked) && (groupBoxes[i].value == "All")) {
+groupBoxes[i].checked = false;
+}
+}
+} else {
+// Uncheck everything other than "All" since "All" was just checked
+for (var i=0; i<groupBoxes.length; i++) {
+if ((groupBoxes[i].checked) && (groupBoxes[i].value != "All")) {
+groupBoxes[i].checked = false;
+}
+}
+}
+}
+selGroupCount = 0;
+for (var i=0; i<groupBoxes.length; i++) {
+if (groupBoxes[i].checked) {
+selGroupValue = groupBoxes[i].value;
+if (selGroupValue != "Java.com") {
+showFilters = false;
+}
+if (selGroupCount == 0) {
+newGroupsString = selGroupValue;
+} else {
+newGroupsString = newGroupsString + ", " + selGroupValue;
+}
+selGroupCount++;
+}
+}
+document.forms["selGroupsForm"].elements["listOldSelection"].value = newGroupsString;
+}
+//to do: attr filters
+//if new list has only JavaOne and Openworld then show the attr filters
+// If we can't show filters ...
+if (showFilters == false) {
+checkAttributeFilters();
+}
+}
+function checkForm(thisForm) {
+var selGroupCount = 0;
+var showFilters = true;
+var groupBoxes = document.searchForm.group;
+/* If no source groups are selected, select "All" */
+/* See if we need to remove attribute filters */
+for (var i=0; i<groupBoxes.length; i++) {
+if (groupBoxes[i].checked) {
+selGroupValue = groupBoxes[i].value;
+if (selGroupValue != "Java.com") {
+showFilters = false;
+}
+if(thisForm.name != 'searchForm')
+{
+addGroups(groupBoxes[i].value);
+}
+selGroupCount++;
+}
+}
+if (selGroupCount == 0) {
+for (var i=0; i<groupBoxes.length; i++) {
+if (groupBoxes[i].value == "All") {
+groupBoxes[i].checked = true;
+}
+}
+}
+if (showFilters == false) {
+checkAttributeFilters();
+}
+thisForm.submit();
+}
+function addGroups(selGroupValue)
+{
+new_element = document.createElement("input");
+new_element.setAttribute("type","hidden");
+new_element.setAttribute("name", "group");
+new_element.setAttribute("id", "");
+new_element.setAttribute("value", selGroupValue);
+document.forms['searchForm_bottom'].appendChild(new_element);
+}
+//addGroup() closed
+function checkAttributeFilters() {
+var numFilters = ses.InlineAdvancedView.countValidAttrFilters();
+if( numFilters > 0 ) {
+var lastRow = ses.InlineAdvancedView.getLastRowEl();
+if( lastRow ) {
+var lastRowId = parseInt( lastRow.getAttribute("rowNum"), 10 );
+for (var i=lastRowId; i>0; i--) {
+ses.InlineAdvancedView.removeAdvSearchAttr(i);
+}
+}
+}
+if( ses.InlineAdvancedView.isInlineAdvSearchPanelVisible() ) {
+ses.InlineAdvancedView.toggleInlineAdvSearch();
+}
+}
+function callCheckForm(e,thisForm) {
+var code;
+if (!e) {
+var e = window.event;
+}
+if (e.keyCode) {
+code = e.keyCode;
+}
+else if (e.which)
+{
+code = e.which;
+}
+//alert('keyCode ' + e.keyCode);
+if (e.keyCode == 13) {
+checkForm(thisForm);
+}
+}
+</script>
+<div style="clear: both;">
+<form id="searchForm" name="searchForm" method="GET" action="search">
+<noscript>This product requires use of a browser that supports JavaScript. It must be run with scripting enabled.</noscript>
+<input name="search.timezone" id="searchForm.timezone" value="480" type="hidden">
+<script type="text/javascript">
+document.getElementById("searchForm.timezone").value = new Date().getTimezoneOffset();
+</script>
+<input name="search_startnum" value="" type="hidden">
+<input name="search_endnum" value="" type="hidden">
+<input name="num" value="10" type="hidden">
+<input name="search_dupid" value="" type="hidden">
+<input name="exttimeout" value="false" type="hidden">
+<input name="actProfId" value="0" type="hidden">
+<input name="vis" id="searchForm.vis" value="" disabled="disabled" type="hidden">
+<script type="text/javascript">
+YAHOO.util.Event.onAvailable( "searchForm.vis", function() {
+document.getElementById("searchForm.vis").value = "";
+document.getElementById("searchForm.vis").disabled = true;
+});
+</script>
+<table summary="Searchbox" cellspacing="0" cellpadding="0" align="left">
+<tbody><tr>
+<td headers="" rowspan="2"><a href="http://www.oracle.com/"><img src="Search%20Results_files/ora_logo_small.gif"></a>&nbsp;</td>
+<td headers="" colspan="2" class="sources" align="left">
+</td>
+</tr>
+<tr>
+<td headers="" colspan="2" nowrap="nowrap" align="left">
+<div class="qbLinkSpacer">
+&nbsp;
+</div>
+<input id="q" name="q" style="background: url('assets/skins/external/images/searchbox.png') no-repeat;" value="networks" title="Search" onkeyup="callCheckForm(event,searchForm)" autocomplete="off" autocorrect="off" autocapitalize="off" class="ui-autocomplete-input" role="textbox" aria-autocomplete="list" aria-haspopup="true" type="text">
+<a href="javascript:checkForm(document.searchForm),document.searchForm.submit()"><img src="Search%20Results_files/searchmag.png" alt="Search" style="vertical-align:top; padding: 3px 0 0 0; margin:0; position:relative; left:-5px;" height="29px"></a>
+<script type="text/javascript">
+function toggleWithinGroups()
+{
+var popupEl = $('checkedGroupsPopup');
+if (popupEl.style.display == "none")
+{
+popupEl.style.display = "";
+}
+else
+{
+popupEl.style.display = "none";
+}
+}
+</script>
+<span style="position: relative; zoom: 1;"><span style="display: none;" id="checkedGroupsPopup"><div class="bd">
+<a href="#" onclick="this.blur(); toggleWithinGroups(); return false;" title="Close"><img src="Search%20Results_files/close12_1.gif" alt="Close" width="12" border="0" align="right" height="12"></a> <div id="groupCheckboxes">
+</div>
+<input name="sw" value="t" type="hidden">
+</div>
+<!--[if lte IE 6.5]><iframe src="javascript:false;"></iframe><![endif]-->
+</span></span>
+&nbsp;
+<div id="browseOverlay" class="overlay yui-module yui-overlay anchored-overlay yui-overlay-hidden" style="z-index: 1000; visibility: hidden;"><div class="bord">
+<div class="hd">
+<div class="popupLinkTR"><a href="#" title="Close" class="ses_toggleBrowseOverlay" onclick="this.blur();"><img src="Search%20Results_files/close12_1_002.gif" alt="Close" width="12" border="0" height="12"></a></div>
+<div class="popupTitle">Browse</div>
+</div>
+<div class="bd" id="browseTreeArea">
+<div id="divBrowseTree" class="treemenu"><div class="ygtvitem" id="ygtv0"><div class="ygtvchildren" id="ygtvc0" style="display:none;"></div></div></div>
+<div id="divBrowseStatus">Loading ...</div>
+</div>
+</div>
+<!--[if lte IE 6.5]><iframe src="javascript:false;"></iframe><![endif]-->
+</div>
+</td>
+</tr>
+<tr>
+<td headers="" colspan="3" nowrap="nowrap">
+<!-- Inline Attribute Filters -->
+<div id="divInlineAdvSearch" class="ses-iaf-hidden">
+<!-- Attribute Selection -->
+<div class="iafContent"> <!-- border-top: 0; -->
+<table class="iafLayout">
+<tbody><tr>
+<td class="iafMainOpCell">
+<!-- Main operator: All / Any -->
+<div class="mainOpLabel">
+Match
+</div>
+<div class="mainOpChoices">
+<span class="mainOpChoice"><input checked="checked" name="search_p_main_operator" value="all" id="matchAll" type="radio"><label for="matchAll">All</label></span>
+<span class="mainOpChoice"><input name="search_p_main_operator" value="any" id="matchAny" type="radio"><label for="matchAny">Any</label></span>
+</div>
+</td>
+<td class="iafAttrsCell">
+<div id="divAttrTable" class="qbPanel">
+<table id="advSearchAttrTable" class="iaf-table" summary="Attribute Filters" border="0">
+<tbody><tr class="iaf-row iaf-header-row">
+<th class="hiddenLabel" id="h11"></th>
+<th id="h1" align="left"><span class="mainfont">Attribute Name</span></th>
+<th class="hiddenLabel" id="h22"></th>
+<th id="h2" align="left"><span class="mainfont">Operator</span></th>
+<th class="hiddenLabel" id="h33"></th>
+<th id="h3" align="left"><span class="mainfont">Value</span></th>
+<th class="hiddenLabel" id="h44"></th>
+<th id="h4" align="left"></th>
+<th class="hiddenLabel" id="h55"></th>
+<th id="h5" align="left"></th>
+</tr>
+<!-- Attribute row 1 -->
+<tr id="advSearchAttr_row1" class="iaf-row iaf-filter-row" rownum="1">
+<td class="hiddenLabel"></td>
+<td headers="h1" class="attr-name-cell" nowrap="nowrap">
+<input disabled="disabled" id="attrIdInput_1" name="search_p_at" value="-1" type="hidden">
+<input id="attrNameInput_1" name="search_p_atname" value="" type="hidden">
+<div class="attr-name-ac-wrapper">
+<div id="attrNameAutoComplete_1" class="mainfont attr-name-ac-container yui-ac" style="z-index: 999;">
+<input name="adn" id="attrDisplayNameInput_1" class="attr-name-ac-input yui-ac-input" size="10" maxlength="100" autocomplete="off" type="text">
+<div id="attrNameACContainer_1" class="yui-ac-container">
+<div class="yui-ac-content" style="display: none;"><div class="yui-ac-hd" style="display: none;"></div><div class="yui-ac-bd"><ul><li style="display: none;"></li><li style="display: none;"></li><li style="display: none;"></li><li style="display: none;"></li><li style="display: none;"></li><li style="display: none;"></li><li style="display: none;"></li><li style="display: none;"></li><li style="display: none;"></li><li style="display: none;"></li></ul></div><div class="yui-ac-ft" style="display: none;"></div></div></div>
+</div>
+</div>
+</td>
+<td class="hiddenLabel"></td>
+<td headers="h2" class="oper-cell" nowrap="nowrap">
+<span class="mainfont">
+<select name="search_p_op" size="1" id="search_p_op:1">
+<option value="equals" selected="selected">Equals</option>
+<option value="lessthan">Less than</option>
+<option value="lessthanequals">Less than equals</option>
+<option value="greaterthan">Greater than</option>
+<option value="greaterthanequals">Greater than equals</option>
+</select>
+</span>
+</td>
+<td class="hiddenLabel"></td>
+<td headers="h3" class="attr-val-cell" nowrap="nowrap">
+<span class="mainfont">
+<input name="search_p_val" id="attrValueInput_1" size="20" maxlength="100" type="text">
+</span>
+</td>
+<td headers="h4" class="remove-attr-cell" nowrap="nowrap">
+<a href="#" id="removeAttrLink_1" class="remove-attr-link" title="Remove filter" onclick="this.blur(); ses.InlineAdvancedView.removeAdvSearchAttr(1); return false;"><img src="Search%20Results_files/hide_filter.gif" alt="Remove filter"></a>
+</td>
+<td headers="h5" class="add-attr-cell" nowrap="nowrap">
+<a href="#" id="addAttrLink_1" class="add-attr-link" title="Add additional filter" onclick="this.blur(); ses.InlineAdvancedView.addAdvSearchAttr(1); return false;" style=" visibility: hidden;"><img src="Search%20Results_files/expand_group.gif" alt="Add additional filter"></a>
+</td>
+</tr>
+<!-- Attribute row 2 -->
+<tr id="advSearchAttr_row2" class="iaf-row iaf-filter-row" rownum="2">
+<td class="hiddenLabel"></td>
+<td headers="h1" class="attr-name-cell" nowrap="nowrap">
+<input disabled="disabled" id="attrIdInput_2" name="search_p_at" value="-1" type="hidden">
+<input id="attrNameInput_2" name="search_p_atname" value="" type="hidden">
+<div class="attr-name-ac-wrapper">
+<div id="attrNameAutoComplete_2" class="mainfont attr-name-ac-container yui-ac" style="z-index: 998;">
+<input name="adn" id="attrDisplayNameInput_2" class="attr-name-ac-input yui-ac-input" size="10" maxlength="100" autocomplete="off" type="text">
+<div id="attrNameACContainer_2" class="yui-ac-container">
+<div class="yui-ac-content" style="display: none;"><div class="yui-ac-hd" style="display: none;"></div><div class="yui-ac-bd"><ul><li style="display: none;"></li><li style="display: none;"></li><li style="display: none;"></li><li style="display: none;"></li><li style="display: none;"></li><li style="display: none;"></li><li style="display: none;"></li><li style="display: none;"></li><li style="display: none;"></li><li style="display: none;"></li></ul></div><div class="yui-ac-ft" style="display: none;"></div></div></div>
+</div>
+</div>
+</td>
+<td class="hiddenLabel"></td>
+<td headers="h2" class="oper-cell" nowrap="nowrap">
+<span class="mainfont">
+<select name="search_p_op" size="1" id="search_p_op:2">
+<option value="equals" selected="selected">Equals</option>
+<option value="lessthan">Less than</option>
+<option value="lessthanequals">Less than equals</option>
+<option value="greaterthan">Greater than</option>
+<option value="greaterthanequals">Greater than equals</option>
+</select>
+</span>
+</td>
+<td class="hiddenLabel"></td>
+<td headers="h3" class="attr-val-cell" nowrap="nowrap">
+<span class="mainfont">
+<input name="search_p_val" id="attrValueInput_2" size="20" maxlength="100" type="text">
+</span>
+</td>
+<td headers="h4" class="remove-attr-cell" nowrap="nowrap">
+<a href="#" id="removeAttrLink_2" class="remove-attr-link" title="Remove filter" onclick="this.blur(); ses.InlineAdvancedView.removeAdvSearchAttr(2); return false;"><img src="Search%20Results_files/hide_filter.gif" alt="Remove filter"></a>
+</td>
+<td headers="h5" class="add-attr-cell" nowrap="nowrap">
+<a href="#" id="addAttrLink_2" class="add-attr-link" title="Add additional filter" onclick="this.blur(); ses.InlineAdvancedView.addAdvSearchAttr(2); return false;" style=""><img src="Search%20Results_files/expand_group.gif" alt="Add additional filter"></a>
+</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+<input name="group" value="" type="hidden"></form>
+<script type="text/javascript">
+function initSearchFormOnload() {
+document.forms["searchForm"].elements["q"].disabled = false;
+document.forms["searchForm"].elements["q"].focus();
+}
+YAHOO.util.Event.onDOMReady(initSearchFormOnload);
+</script>
+</div>
+<script type="text/javascript">
+function searchDuplicateLink(startnum, endnum, dup_id)
+{
+document.searchForm.search_startnum.value = startnum;
+document.searchForm.search_endnum.value = endnum;
+document.searchForm.search_dupid.value = dup_id;
+document.searchForm.submit();
+}
+</script>
+<div style="clear:both;"><img src="Search%20Results_files/t.gif" alt="" width="1" border="0" height="1"></div>
+<div class="ses-skin-tabview">
+<div id="sugg-info-container" class="yui-navset ses-sugginfo-hidden yui-navset-top">
+<ul class="yui-nav"></ul><div class="yui-content"></div></div>
+</div>
+<!-- search.oracle.com - Added break for additional line -->
+<div>
+<div style="text-align: left; padding-top: 5px; padding-bottom: 5px; margin-left: -25px; background: url('assets/skins/external/images/headdiv.png') repeat-x;">
+</div>
+</div>
+<div class="facet-nav-bar">
+<div id="facetNavContainer" style="padding-top:5px">
+</div>
+</div>
+</div>
+<div id="bd">
+<div id="yui-main">
+<div class="yui-b">
+<div id="divShowSidebar" style="visibility: hidden;"><a href="#" class="ses_toggleSidebar" onclick="this.blur();" title="Show Result Clusters"><img src="Search%20Results_files/show_sidebar.png" alt="Show Result Clusters"></a></div>
+<br class="clearboth">
+<span id="hitReport" style="color:#666666; size:12px;">Results 1 - 10 of about 9914 matches for <span class="estimatedHitCount">networks</span>.</span>
+<a href="https://search.oracle.com/search/feed?q=networks&amp;num=20&amp;output=rss&amp;search.timezone=480&amp;sw=t&amp;nodeid=&amp;fid=-1&amp;search_p_main_operator=all" target="_blank"><img src="Search%20Results_files/feed-icon-14x14.png" alt="RSS Feed" border="0" align="absmiddle"></a>
+<div id="divResults" class="ses-results-list">
+<div id="res86063059_" class="divResultHit" ses_docid="86063059" ses_fedid="" ses_score="91">
+<table xmlns:xslutil="http://www.oracle.com/XSL/Transform/java/oracle.search.util.XSLUtil" xmlns:locale="http://www.oracle.com/XSL/Transform/java/java.util.Locale" xmlns:timezone="http://www.oracle.com/XSL/Transform/java/java.util.TimeZone" xmlns:dateformat="http://www.oracle.com/XSL/Transform/java/java.text.DateFormat" xmlns:resourcebundle="http://www.oracle.com/XSL/Transform/java/oracle.search.query.app.QueryAppResBunWrapper" border="0">
+<tbody><tr>
+<td><span class="iconpad"><img src="Search%20Results_files/pdffile_qualifier.png" alt="PDF">
+</span><span class="title">
+<!--UCM sitemap - OTN - 86063059 - - www.oracle.com - www.oracle.com/technetwork/database/database-technologies/timesten/overview/pulse-networks-1-db-snapshot-1366566.pdf--><a href="http://www.oracle.com/technetwork/database/database-technologies/timesten/overview/pulse-networks-1-db-snapshot-1366566.pdf" target="_blank">Oracle Database 11g - Snapshot - Pulse <b>Networks</b>
+</a>
+</span>
+</td>
+</tr>
+</tbody></table><table cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td><span class="snippet">Customer&nbsp;Snapshot&nbsp; Him Pulse <b>Networks</b> Ontario, Canada www.pulsenetworks <b>...</b> Employees: More than 500 Pulse <b>Networks</b> Leverages Embedded Database ...</span><br><span class="lastModified"><span class="lastModified">www.oracle.com/technetwork/database/database-tech...n/overview/pulse-networks-1-db-snapshot-1366566.pdf</span><span class="contentLength"> - 112 KB</span>
+</span>
+</td>
+</tr>
+</tbody></table>
+
+</div>
+<div id="res86084610_" class="divResultHit" ses_docid="86084610" ses_fedid="" ses_score="90">
+<table xmlns:xslutil="http://www.oracle.com/XSL/Transform/java/oracle.search.util.XSLUtil" xmlns:locale="http://www.oracle.com/XSL/Transform/java/java.util.Locale" xmlns:timezone="http://www.oracle.com/XSL/Transform/java/java.util.TimeZone" xmlns:dateformat="http://www.oracle.com/XSL/Transform/java/java.text.DateFormat" xmlns:resourcebundle="http://www.oracle.com/XSL/Transform/java/oracle.search.query.app.QueryAppResBunWrapper" border="0">
+<tbody><tr>
+<td><span class="iconpad"><img src="Search%20Results_files/pdffile_qualifier.png" alt="PDF">
+</span><span class="title">
+<!--UCM sitemap - OCOM - 86084610 - - www.oracle.com - www.oracle.com/us/industries/communications/thinking-networks-revolution-wp-2100655.pdf--><a href="http://www.oracle.com/us/industries/communications/thinking-networks-revolution-wp-2100655.pdf" target="_blank">The Thinking <b>Networks</b> Revolution: A Call to Action for Digital Lifestyle Providers - Whitepaper | Oracle</a>
+</span>
+</td>
+</tr>
+</tbody></table><table cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td><span class="snippet">White Paper September 2013 The Thinking <b>Networks</b> Revolution: A “Digital Lifestyle <b>...</b> Providers The Thinking <b>Networks</b> Revolution: A “Digital ...</span><br><span class="lastModified"><span class="lastModified">www.oracle.com/us/industries/communications/thinking-networks-revolution-wp-2100655.pdf</span><span class="contentLength"> - 600 KB</span>
+</span>
+</td>
+</tr>
+</tbody></table>
+
+</div>
+<div id="res67917182_" class="divResultHit" ses_docid="67917182" ses_fedid="" ses_score="89">
+<table xmlns:xslutil="http://www.oracle.com/XSL/Transform/java/oracle.search.util.XSLUtil" xmlns:locale="http://www.oracle.com/XSL/Transform/java/java.util.Locale" xmlns:timezone="http://www.oracle.com/XSL/Transform/java/java.util.TimeZone" xmlns:dateformat="http://www.oracle.com/XSL/Transform/java/java.text.DateFormat" xmlns:resourcebundle="http://www.oracle.com/XSL/Transform/java/oracle.search.query.app.QueryAppResBunWrapper" border="0">
+<tbody><tr>
+<td><span class="title">
+<!--Documentation - ST - 67917182 - - docs.oracle.com - docs.oracle.com/cd/E53394_01/html/E54775/networks-4.html--><a href="https://docs.oracle.com/cd/E53394_01/html/E54775/networks-4.html" target="_blank"><b>networks</b> - man pages section 4: File Formats</a>
+</span>
+</td>
+</tr>
+</tbody></table><table cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td><span class="description"><b>networks</b> - <b>network</b> name database The <b>networks</b> file is a local source of information regarding the <b>networks</b> which comprise the Internet. The <b>networks</b> file can be used... ...</span><br><span class="lastModified"><span class="lastModified">docs.oracle.com/cd/E53394_01/html/E54775/networks-4.html</span><span class="contentLength"> - 37 KB</span><span class="lastModified"> - Tue, 22 Nov 2016 16:51:35 GMT</span>
+</span>
+</td>
+</tr>
+</tbody></table>
+
+</div>
+<div id="res48508596_" class="divResultHit" ses_docid="48508596" ses_fedid="" ses_score="89">
+<table xmlns:xslutil="http://www.oracle.com/XSL/Transform/java/oracle.search.util.XSLUtil" xmlns:locale="http://www.oracle.com/XSL/Transform/java/java.util.Locale" xmlns:timezone="http://www.oracle.com/XSL/Transform/java/java.util.TimeZone" xmlns:dateformat="http://www.oracle.com/XSL/Transform/java/java.text.DateFormat" xmlns:resourcebundle="http://www.oracle.com/XSL/Transform/java/oracle.search.query.app.QueryAppResBunWrapper" border="0">
+<tbody><tr>
+<td><span class="title">
+<!--Documentation - ST - 48508596 - - docs.oracle.com - https://docs.oracle.com/cd/E36784_01/html/E36882/networks-4.html--><a href="https://docs.oracle.com/cd/E36784_01/html/E36882/networks-4.html" target="_blank"><b>networks</b> - man pages section 4: File Formats</a>
+</span>
+</td>
+</tr>
+</tbody></table><table cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td><span class="description">The <b>networks</b> file is a local source of information regarding the <b>networks</b> which comprise the Internet. The <b>networks</b> file can be used in conjunction with, or instead... ...</span><br><span class="lastModified"><span class="lastModified">https://docs.oracle.com/cd/E36784_01/html/E36882/networks-4.html</span><span class="contentLength"> - 37 KB</span><span class="lastModified"> - Mon, 17 Nov 2014 16:02:40 GMT</span>
+</span>
+</td>
+</tr>
+</tbody></table>
+
+</div>
+<div id="res40308212_" class="divResultHit" ses_docid="40308212" ses_fedid="" ses_score="89">
+<table xmlns:xslutil="http://www.oracle.com/XSL/Transform/java/oracle.search.util.XSLUtil" xmlns:locale="http://www.oracle.com/XSL/Transform/java/java.util.Locale" xmlns:timezone="http://www.oracle.com/XSL/Transform/java/java.util.TimeZone" xmlns:dateformat="http://www.oracle.com/XSL/Transform/java/java.text.DateFormat" xmlns:resourcebundle="http://www.oracle.com/XSL/Transform/java/oracle.search.query.app.QueryAppResBunWrapper" border="0">
+<tbody><tr>
+<td><span class="title">
+<!--Documentation - ST - 40308212 - - docs.oracle.com - docs.oracle.com/cd/E36784_01/html/E36882/networks-4.html--><a href="https://docs.oracle.com/cd/E36784_01/html/E36882/networks-4.html" target="_blank"><b>networks</b> - man pages section 4: File Formats</a>
+</span>
+</td>
+</tr>
+</tbody></table><table cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td><span class="description">The <b>networks</b> file is a local source of information regarding the <b>networks</b> which comprise the Internet. The <b>networks</b> file can be used in conjunction with, or instead... ...</span><br><span class="lastModified"><span class="lastModified">docs.oracle.com/cd/E36784_01/html/E36882/networks-4.html</span><span class="contentLength"> - 37 KB</span><span class="lastModified"> - Mon, 17 Nov 2014 16:02:40 GMT</span>
+</span>
+</td>
+</tr>
+</tbody></table>
+
+</div>
+<div id="res86252842_" class="divResultHit" ses_docid="86252842" ses_fedid="" ses_score="89">
+<table xmlns:xslutil="http://www.oracle.com/XSL/Transform/java/oracle.search.util.XSLUtil" xmlns:locale="http://www.oracle.com/XSL/Transform/java/java.util.Locale" xmlns:timezone="http://www.oracle.com/XSL/Transform/java/java.util.TimeZone" xmlns:dateformat="http://www.oracle.com/XSL/Transform/java/java.text.DateFormat" xmlns:resourcebundle="http://www.oracle.com/XSL/Transform/java/oracle.search.query.app.QueryAppResBunWrapper" border="0">
+<tbody><tr>
+<td><span class="title">
+<!--Documentation - ST - 86252842 - - docs.oracle.com - https://docs.oracle.com/database/122/CWLIN/about-oracle-flex-asm-clusters-networks.htm--><a href="https://docs.oracle.com/database/122/CWLIN/about-oracle-flex-asm-clusters-networks.htm" target="_blank">About Oracle Flex ASM Clusters <b>Networks</b>
+</a>
+</span>
+</td>
+</tr>
+</tbody></table><table cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td><span class="description">Starting with Oracle Grid Infrastructure 
+12c Release 1 (12.1), as part of an Oracle Flex Cluster installation, 
+Oracle ASM is configured within Oracle Grid Infrastructure to provide 
+storage services. ...</span><br><span class="lastModified"><span class="lastModified">https://docs.oracle.com/database/122/CWLIN/about-oracle-flex-asm-clusters-networks.htm</span><span class="contentLength"> - 13 KB</span><span class="lastModified"> - Wed, 16 Nov 2016 12:58:36 GMT</span>
+</span>
+</td>
+</tr>
+</tbody></table>
+
+</div>
+<div id="res86247083_" class="divResultHit" ses_docid="86247083" ses_fedid="" ses_score="89">
+<table xmlns:xslutil="http://www.oracle.com/XSL/Transform/java/oracle.search.util.XSLUtil" xmlns:locale="http://www.oracle.com/XSL/Transform/java/java.util.Locale" xmlns:timezone="http://www.oracle.com/XSL/Transform/java/java.util.TimeZone" xmlns:dateformat="http://www.oracle.com/XSL/Transform/java/java.text.DateFormat" xmlns:resourcebundle="http://www.oracle.com/XSL/Transform/java/oracle.search.query.app.QueryAppResBunWrapper" border="0">
+<tbody><tr>
+<td><span class="title">
+<!--Documentation - ST - 86247083 - - docs.oracle.com - https://docs.oracle.com/database/122/REFRN/LISTENER_NETWORKS.htm--><a href="https://docs.oracle.com/database/122/REFRN/LISTENER_NETWORKS.htm" target="_blank">LISTENER_<b>NETWORKS</b>
+</a>
+</span>
+</td>
+</tr>
+</tbody></table><table cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td><span class="snippet">content 163/2822 1.157 LISTENER_<b>NETWORKS</b> Property Description Parameter <b>...</b> String Syntax LISTENER_<b>NETWORKS</b> = '((NAME=<b>network</b>_name) (LOCAL_LISTENER ...</span><br><span class="lastModified"><span class="lastModified">https://docs.oracle.com/database/122/REFRN/LISTENER_NETWORKS.htm</span><span class="contentLength"> - 10 KB</span><span class="lastModified"> - Fri, 09 Dec 2016 22:26:05 GMT</span>
+</span>
+</td>
+</tr>
+</tbody></table>
+
+</div>
+<div id="res86067414_" class="divResultHit" ses_docid="86067414" ses_fedid="" ses_score="89">
+<table xmlns:xslutil="http://www.oracle.com/XSL/Transform/java/oracle.search.util.XSLUtil" xmlns:locale="http://www.oracle.com/XSL/Transform/java/java.util.Locale" xmlns:timezone="http://www.oracle.com/XSL/Transform/java/java.util.TimeZone" xmlns:dateformat="http://www.oracle.com/XSL/Transform/java/java.text.DateFormat" xmlns:resourcebundle="http://www.oracle.com/XSL/Transform/java/oracle.search.query.app.QueryAppResBunWrapper" border="0">
+<tbody><tr>
+<td><span class="title">
+<!--UCM sitemap - OTN - 86067414 - - www.oracle.com - www.oracle.com/technetwork/articles/java/nbneural-317387.html--><a href="http://www.oracle.com/technetwork/articles/java/nbneural-317387.html" target="_blank">Neural <b>Networks</b> on the NetBeans Platform</a>
+</span>
+</td>
+</tr>
+</tbody></table><table cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td><span class="description">OTN Tech Article: Neural <b>Networks</b> on the NetBeans Platform ...</span><br><span class="lastModified"><span class="lastModified">www.oracle.com/technetwork/articles/java/nbneural-317387.html</span><span class="contentLength"> - 64 KB</span>
+</span>
+</td>
+</tr>
+</tbody></table>
+
+</div>
+<div id="res70503079_" class="divResultHit" ses_docid="70503079" ses_fedid="" ses_score="88">
+<table xmlns:xslutil="http://www.oracle.com/XSL/Transform/java/oracle.search.util.XSLUtil" xmlns:locale="http://www.oracle.com/XSL/Transform/java/java.util.Locale" xmlns:timezone="http://www.oracle.com/XSL/Transform/java/java.util.TimeZone" xmlns:dateformat="http://www.oracle.com/XSL/Transform/java/java.text.DateFormat" xmlns:resourcebundle="http://www.oracle.com/XSL/Transform/java/oracle.search.query.app.QueryAppResBunWrapper" border="0">
+<tbody><tr>
+<td><span class="title">
+<!--Documentation - ST - 70503079 - - docs.oracle.com - docs.oracle.com/cd/E59957_01/doc.123/e59970/GUID-1BC18CA6-1916-4181-B628-5CA029760580.htm--><a href="https://docs.oracle.com/cd/E59957_01/doc.123/e59970/GUID-1BC18CA6-1916-4181-B628-5CA029760580.htm" target="_blank">Configure <b>Networks</b>
+</a>
+</span>
+</td>
+</tr>
+</tbody></table><table cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td><span class="description">Overview of <b>networks</b> in Oracle Enterprise Manager Ops Center. ...</span><br><span class="lastModified"><span class="lastModified">docs.oracle.com/cd/E59957_01/doc.123/e59970/GUID-1BC18CA6-1916-4181-B628-5CA029760580.htm</span><span class="contentLength"> - 99 KB</span><span class="lastModified"> - Thu, 14 Jul 2016 08:52:10 GMT</span>
+</span>
+</td>
+</tr>
+</tbody></table>
+
+</div>
+<div id="res82618179_" class="divResultHit" ses_docid="82618179" ses_fedid="" ses_score="88">
+<table xmlns:xslutil="http://www.oracle.com/XSL/Transform/java/oracle.search.util.XSLUtil" xmlns:locale="http://www.oracle.com/XSL/Transform/java/java.util.Locale" xmlns:timezone="http://www.oracle.com/XSL/Transform/java/java.util.TimeZone" xmlns:dateformat="http://www.oracle.com/XSL/Transform/java/java.text.DateFormat" xmlns:resourcebundle="http://www.oracle.com/XSL/Transform/java/oracle.search.query.app.QueryAppResBunWrapper" border="0">
+<tbody><tr>
+<td><span class="title">
+<!--Documentation - Apps - 82618179 - - docs.oracle.com - https://docs.oracle.com/cd/E59957_01/doc.123/e59970/GUID-1BC18CA6-1916-4181-B628-5CA029760580.htm--><a href="https://docs.oracle.com/cd/E59957_01/doc.123/e59970/GUID-1BC18CA6-1916-4181-B628-5CA029760580.htm" target="_blank">Configure <b>Networks</b>
+</a>
+</span>
+</td>
+</tr>
+</tbody></table><table cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td><span class="description">Overview of <b>networks</b> in Oracle Enterprise Manager Ops Center. ...</span><br><span class="lastModified"><span class="lastModified">https://docs.oracle.com/cd/E59957_01/doc.123/e59970/GUID-1BC18CA6-1916-4181-B628-5CA029760580.htm</span><span class="contentLength"> - 99 KB</span><span class="lastModified"> - Thu, 14 Jul 2016 08:52:10 GMT</span>
+</span>
+</td>
+</tr>
+</tbody></table>
+
+</div>
+</div>
+</div>
+</div>
+<div id="sidebar" class="yui-b" style="">
+<div id="divCluster" class="sidebarContent" style="border: none;">
+<div class="filterTitle" id="filterTitle"></div>
+<div id="divClusterTree" class="treemenu clusterTrees" style="display: block;"><ul><li class="leftNavSrcGrp"><a href="javascript:searchTabFunc('All');">All</a></li><li class="leftNavSrcGrp"><a href="javascript:searchTabFunc('Blogs');">Blogs</a></li><li class="leftNavSrcGrp"><a href="javascript:searchTabFunc('Corporate%20Site');">Corporate Site</a></li><li class="leftNavSrcGrp"><a href="javascript:searchTabFunc('Discussion%20Forums');">Discussion Forums</a></li><li class="leftNavSrcGrp"><a href="javascript:searchTabFunc('Documentation');">Documentation</a></li><li class="leftNavSrcGrp"><a href="javascript:searchTabFunc('Events');">Events</a></li><li class="leftNavSrcGrp"><a href="javascript:searchTabFunc('Java.com');">Java.com</a></li><li class="leftNavSrcGrp"><a href="javascript:searchTabFunc('JavaOne');">JavaOne</a></li><li class="leftNavSrcGrp"><a href="javascript:searchTabFunc('MySQL');">MySQL</a></li><li class="leftNavSrcGrp"><a href="javascript:searchTabFunc('Oracle%20OpenWorld');">Oracle OpenWorld</a></li><li class="leftNavSrcGrp"><a href="javascript:searchTabFunc('PartnerNetwork');">PartnerNetwork</a></li><li class="leftNavSrcGrp"><a href="javascript:searchTabFunc('Store');">Store</a></li><li class="leftNavSrcGrp"><a href="javascript:searchTabFunc('Technology%20Network');">Technology Network</a></li><li class="leftNavSrcGrp"><a href="javascript:searchTabFunc('Training');">Training</a></li><li class="leftNavSrcGrp"><a href="javascript:searchTabFunc('Videos');">Videos</a></li><li class="leftNavSrcGrp"><a href="javascript:searchTabFunc('bugs.java.com');">bugs.java.com</a></li></ul></div>
+</div>
+</div>
+</div> <div id="ft">
+<!-- Pagination Links -->
+<script type="text/javascript">
+function searchPageLink(startnum, endnum)
+{
+document.forms["searchForm"].elements["search_startnum"].value = startnum;
+document.forms["searchForm"].elements["search_endnum"].value = endnum;
+document.forms["searchForm"].submit();
+//add the current facet path to the submit form
+var facetPathsStr = ORACLE.ses.SearchView.pageVariable('facetPaths');
+facetPathsStr = decodeURIComponent(facetPathsStr).replace(/\+/g, ' ');
+facetPaths = ORACLE.ses.util.arrayFromJSON(facetPathsStr);
+if (facetPaths != null) {
+for (var i = 0; i < facetPaths.length; i++) {
+var inputObj = ORACLE.ses.FacetView.getFacetPathInput(formObj, facetPaths[i]);
+if (inputObj == null) {
+inputObj = document.createElement("INPUT");
+inputObj.type = "hidden";
+inputObj.name = "fp";
+formObj.appendChild(inputObj);
+}
+inputObj.value = facetPaths[i];
+}
+}
+formObj.submit();
+}
+function paginateLocal(key, startnum, endnum)
+{
+// if paginate() returns true, we're done.. client-side operation.
+if( ORACLE.ses.ResultsView.paginate( key, startnum, endnum ) )
+return;
+// else, submit the form to get page of results from server
+searchPageLink(startnum, endnum);
+}
+</script>
+<div id="divPageLinks" class="pageLinks ses-paginator-manypages"><span class="pageLinksHeader">Results page</span><span class="selectedLink">1</span> <span class="pageLink"><a href="javascript:paginateLocal(0,11,20);">2</a></span> <span class="pageLink"><a href="javascript:paginateLocal(0,21,30);">3</a></span> <span class="pageLink"><a href="javascript:paginateLocal(0,31,40);">4</a></span> <span class="pageLink"><a href="javascript:paginateLocal(0,41,50);">5</a></span> <span class="pageLink"><a href="javascript:paginateLocal(0,51,60);">6</a></span> <span class="pageLink"><a href="javascript:paginateLocal(0,61,70);">7</a></span> <span class="pageLink"><a href="javascript:paginateLocal(0,71,80);">8</a></span> <span class="pageLink"><a href="javascript:paginateLocal(0,81,90);">9</a></span> <span class="pageLink"><a href="javascript:paginateLocal(0,91,100);">10</a></span> <span class="pageLink"> ... </span><span class="pageTextLink"><a href="javascript:paginateLocal(0,11,20);">Next</a></span></div>
+<br>
+<!-- Footer Links -->
+<!-- Bottom Line -->
+<!-- Style added for search.oracle.com -->
+<style type="text/css">
+/*! U06 */
+#u06{margin:5px auto 20px;clear:both;border-top:7px solid #dcdcdc}
+#u06:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0}
+#u06 a{font-family:arial,helvetica,sans-serif !important;font-size:10px !important;line-height:16px !important}
+#u06 hr {display:none}
+#u06 h3{text-indent:-2000px;background:url("assets/skins/external/images/u06-sprite.png") -20px 0 no-repeat;width:338px;height:15px;margin:9px 0 0 0}
+#u06 h3 a{display:block}
+#u06 a,#u06 a:link,#u06 a:visited{color:#000;text-decoration:none}
+#u06 a:hover,#u06 a:active{color:#E80B0B;text-decoration:none}
+#u06 ul.scl-icons{margin-top:7px}
+#u06 ul.scl-icons li{margin-left:4px;*margin-left:3px}
+#u06 ul.u06-links{margin:6px 0 0 -4px;padding:0;float:left}
+#u06 ul.u06-links li{margin:0;padding:1px 4px 0 4px;*padding:1px 3px 0 3px;float:left;background:url("assets/skins/external/images/u06-sprite.png") 100% -17px no-repeat}
+#u06 ul.u06-links li.u06-mobile{position:relative;padding-left:23px}
+#u06 ul.u06-links li.u06-mobile span{display:block;float:left;position:absolute;top:-8px;left:5px;height:31px;width:17px;background:url("assets/skins/external/images/u06-sprite.png") 0 0 no-repeat}
+/*! GENERIC - SOCIAL ICONS */
+.scl-icons{float:left}
+.scl-icons li{float:left;margin:0 0 0 6px}
+.scl-icons li a{width:16px;height:16px;background:url("assets/skins/external/images/social-icons.png") 0 0 no-repeat;outline:0;-moz-outline:0;display:block;overflow:hidden;text-indent:-4000px}
+.scl-icons li.scl-youtube a{background-position:-124px 0px}
+.scl-icons li.scl-youtube a:hover{background-position:-144px 0px}
+.scl-icons li.scl-facebook a{background-position:-164px 0px}
+.scl-icons li.scl-facebook a:hover{background-position:-184px 0px}
+.scl-icons li.scl-linkedin a{background-position:-204px 0px}
+.scl-icons li.scl-linkedin a:hover{background-position:-224px 0px}
+.scl-icons li.scl-twitter a{background-position:-244px 0px}
+.scl-icons li.scl-twitter a:hover{background-position:-264px 0px}
+.scl-icons li.scl-feed a{background-position:-284px 0px}
+.scl-icons li.scl-feed a:hover{background-position:-304px 0px}
+.scl-icons li.scl-mix a{background-position:-84px 0px}
+.scl-icons li.scl-mix a:hover{background-position:-104px 0px}
+.scl-icons li.scl-googleplus a{background-position: -44px 0px}
+.scl-icons li.scl-googleplus a:hover{background-position:-64px 0px}
+.scl-icons li.scl-blog a{background-position: -4px 0px}
+.scl-icons li.scl-blog a:hover{background-position:-24px 0px}
+.scl-icons li.scl-delicious a{background-position:-324px 0px}
+.scl-icons li.scl-delicious a:hover{background-position:-344px 0px}
+.scl-icons li.scl-youku a{background-position:-44px 0px;background-image:url("assets/skins/external/images/social-icons-alt.png");background-repeat:no-repeat;}
+.scl-icons li.scl-youku a:hover{background-position:-64px 0px}
+.scl-icons li.scl-weibo a{background-position:-4px 0px;background-image:url("assets/skins/external/images/social-icons-alt.png");background-repeat:no-repeat;}
+.scl-icons li.scl-weibo a:hover{background-position:-24px 0px}
+.scl-icons-large li { float:left; margin:0 6px 0 0 }
+.scl-icons-large li a { width:22px; height:22px; background:url('/assets/i/social-icons-large.png') 0 0 no-repeat; outline:0; -moz-outline:0; display:block; overflow:hidden; text-indent:-4000px }
+.scl-icons-large li.scl-twitter a { background-position:-425px 0px }
+.scl-icons-large li.scl-twitter a:hover { background-position:-400px -30px }
+.scl-icons-large li.scl-blog a { background-position:-375px -60px }
+.scl-icons-large li.scl-blog a:hover { background-position:-350px -90px }
+.scl-icons-large li.scl-linkedin a { background-position:-325px -120px }
+.scl-icons-large li.scl-linkedin a:hover { background-position:-300px -150px }
+</style>
+<!--footer for search.oracle.com -->
+<div id="u06">
+<hr>
+<h3><a href="http://www.oracle.com/us/corporate/index.html">Integrated Cloud Applications &amp; Platform Services</a></h3>
+<div style="width: 974px;">
+<ul class="u06-links">
+<li><a onclick="navTrack('ocom','en','footer','subscribe');" href="http://www.oracle.com/us/syndication/subscribe/index.html">Subscribe</a></li>
+<li><a onclick="navTrack('ocom','en','footer','about oracle');" href="http://www.oracle.com/us/corporate/index.html">About Oracle</a> </li>
+<li><a onclick="navTrack('ocom','en','footer','careers');" href="http://www.oracle.com/us/corporate/careers/index.html">Careers</a> </li>
+<li><a onclick="navTrack('ocom','en','footer','contact us');" href="http://www.oracle.com/us/corporate/contact/index.html">Contact Us</a> </li>
+<li><a onclick="navTrack('ocom','en','footer','site maps');" href="http://www.oracle.com/us/sitemaps/index.html">Site Maps</a> </li>
+<li><a onclick="navTrack('ocom','en','footer','legal notices');" href="http://www.oracle.com/us/legal/index.html">Legal Notices</a> </li>
+<li><a onclick="navTrack('ocom','en','footer','terms of use');" href="http://www.oracle.com/us/legal/terms/index.html">Terms of Use</a> </li>
+<li><a onclick="navTrack('ocom','en','footer','privacy rights');" href="http://www.oracle.com/us/legal/privacy/index.html">Your Privacy Rights</a></li>
+<li><div id="teconsent" style="padding-top:3px;" consent="null"><script type="text/javascript" src="Search%20Results_files/notice" id="truste_0.6538206014621682"></script><script async="async" type="text/javascript" crossorigin="" src="Search%20Results_files/get.js"></script><a id="icon-id04325179146276974" tabindex="0" role="button"><img style="border: none; cursor:pointer;" onerror="truste.eu.icon.make()" src="Search%20Results_files/get.png" alt="Cookie Preference"></a></div></li>
+<li class="u06-mobile"><a onclick="navTrack('ocom','en','footer','oracle mobile');" href="http://www.oracle.com/us/corporate/mobile-application-171155.html"><span>&nbsp;</span> Oracle Mobile</a></li>
+</ul>
+<ul class="scl-icons">
+<li class="scl-facebook"><a href="http://www.oracle.com/us/social-media/facebook/index.html" title="Oracle on Facebook">Facebook</a></li>
+<li class="scl-linkedin"><a href="http://www.oracle.com/us/social-media/linkedin/index.html" title="Oracle on LinkedIn">LinkedIn</a></li>
+<li class="scl-twitter"><a href="http://www.oracle.com/us/social-media/twitter/index.html" title="Follow Oracle on Twitter">Twitter</a></li>
+<li class="scl-googleplus"><a href="https://plus.google.com/u/0/115607918987921226255" title="Follow Oracle on Google+">Google+</a></li>
+<li class="scl-youtube"><a href="http://www.youtube.com/oracle/" title="Watch Oracle on YouTube">YouTube</a></li>
+<li class="scl-feed"><a href="http://www.oracle.com/us/syndication/feeds/index.html" title="Oracle RSS Feeds">Oracle RSS Feed</a></li>
+</ul>
+</div>
+</div>
+<script type="text/javascript">var pageName_addition="Default Query";</script>
+</div> <div style="display: none;">
+<div id="baseurl" class="pagevariable">/search</div>
+<div id="groups" class="pagevariable"></div>
+<div id="encGroups" class="pagevariable"></div>
+<div id="attrnames" class="pagevariable">[{"NAME": "address", "DISPNAME": "address", "TYPE": "STRING", "ID": 211}
+, {"NAME": "Applications", "DISPNAME": "Applications", "TYPE": "STRING", "ID": 100}
+, {"NAME": "Audience", "DISPNAME": "Audience", "TYPE": "STRING", "ID": 101}
+, {"NAME": "Author", "DISPNAME": "Author", "TYPE": "STRING", "ID": 3}
+, {"NAME": "Category ID", "DISPNAME": "Category ID", "TYPE": "NUMBER", "ID": 106}
+, {"NAME": "Category", "DISPNAME": "Category", "TYPE": "STRING", "ID": 102}
+, {"NAME": "Category URL", "DISPNAME": "Category URL", "TYPE": "STRING", "ID": 104}
+, {"NAME": "city", "DISPNAME": "city", "TYPE": "STRING", "ID": 250}
+, {"NAME": "Collection Id", "DISPNAME": "Collection Id", "TYPE": "NUMBER", "ID": 105}
+, {"NAME": "Comment", "DISPNAME": "Comment", "TYPE": "STRING", "ID": 107}
+, {"NAME": "Commission", "DISPNAME": "Commission", "TYPE": "STRING", "ID": 108}
+, {"NAME": "Company", "DISPNAME": "Company", "TYPE": "STRING", "ID": 109}
+, {"NAME": "composite address", "DISPNAME": "composite address", "TYPE": "STRING", "ID": 253}
+, {"NAME": "Computer_name", "DISPNAME": "Computer_name", "TYPE": "STRING", "ID": 110}
+, {"NAME": "Conditions", "DISPNAME": "Conditions", "TYPE": "STRING", "ID": 112}
+, {"NAME": "Condition", "DISPNAME": "Condition", "TYPE": "STRING", "ID": 111}
+, {"NAME": "ConnectionDefinition", "DISPNAME": "ConnectionDefinition", "TYPE": "STRING", "ID": 114}
+, {"NAME": "ConnectionName", "DISPNAME": "ConnectionName", "TYPE": "STRING", "ID": 115}
+, {"NAME": "Connection", "DISPNAME": "Connection", "TYPE": "STRING", "ID": 113}
+, {"NAME": "ConnectionType", "DISPNAME": "ConnectionType", "TYPE": "STRING", "ID": 116}
+, {"NAME": "ContactFirstName", "DISPNAME": "ContactFirstName", "TYPE": "STRING", "ID": 117}
+, {"NAME": "ContactLastName", "DISPNAME": "ContactLastName", "TYPE": "STRING", "ID": 118}
+, {"NAME": "Content Category", "DISPNAME": "Content Category", "TYPE": "STRING", "ID": 120}
+, {"NAME": "Content", "DISPNAME": "Content", "TYPE": "STRING", "ID": 119}
+, {"NAME": "Context_variable", "DISPNAME": "Context_variable", "TYPE": "STRING", "ID": 121}
+, {"NAME": "ContractDetail", "DISPNAME": "ContractDetail", "TYPE": "STRING", "ID": 122}
+, {"NAME": "Country-Code", "DISPNAME": "Country-Code", "TYPE": "STRING", "ID": 124}
+, {"NAME": "Country", "DISPNAME": "Country", "TYPE": "STRING", "ID": 123}
+, {"NAME": "County", "DISPNAME": "County", "TYPE": "STRING", "ID": 125}
+, {"NAME": "Create Date", "DISPNAME": "Create Date", "TYPE": "DATE", "ID": 126}
+, {"NAME": "Created Date", "DISPNAME": "Created Date", "TYPE": "DATE", "ID": 127}
+, {"NAME": "Ctrl-Q", "DISPNAME": "Ctrl-Q", "TYPE": "STRING", "ID": 129}
+, {"NAME": "Ctrl", "DISPNAME": "Ctrl", "TYPE": "STRING", "ID": 128}
+, {"NAME": "CubeMaxPopulatedCells", "DISPNAME": "CubeMaxPopulatedCells", "TYPE": "STRING", "ID": 130}
+, {"NAME": "CubeMaxRecords", "DISPNAME": "CubeMaxRecords", "TYPE": "STRING", "ID": 131}
+, {"NAME": "Customer Name", "DISPNAME": "Customer Name", "TYPE": "STRING", "ID": 132}
+, {"NAME": "DAC", "DISPNAME": "DAC", "TYPE": "STRING", "ID": 133}
+, {"NAME": "Database Startup", "DISPNAME": "Database Startup", "TYPE": "STRING", "ID": 174}
+, {"NAME": "Database", "DISPNAME": "Database", "TYPE": "STRING", "ID": 173}
+, {"NAME": "DATALENGTH", "DISPNAME": "DATALENGTH", "TYPE": "STRING", "ID": 134}
+, {"NAME": "DATATYPE", "DISPNAME": "DATATYPE", "TYPE": "STRING", "ID": 135}
+, {"NAME": "DataURL", "DISPNAME": "DataURL", "TYPE": "STRING", "ID": 172}
+, {"NAME": "DAY_OF_REPORT", "DISPNAME": "DAY_OF_REPORT", "TYPE": "STRING", "ID": 136}
+, {"NAME": "DAY_RUN", "DISPNAME": "DAY_RUN", "TYPE": "STRING", "ID": 137}
+, {"NAME": "DB_DATE", "DISPNAME": "DB_DATE", "TYPE": "STRING", "ID": 140}
+, {"NAME": "DB_HOME", "DISPNAME": "DB_HOME", "TYPE": "STRING", "ID": 141}
+, {"NAME": "DB_HOST", "DISPNAME": "DB_HOST", "TYPE": "STRING", "ID": 142}
+, {"NAME": "DB_LINK", "DISPNAME": "DB_LINK", "TYPE": "STRING", "ID": 143}
+, {"NAME": "DB_Password", "DISPNAME": "DB_Password", "TYPE": "STRING", "ID": 145}
+, {"NAME": "DB_PORT", "DISPNAME": "DB_PORT", "TYPE": "STRING", "ID": 144}
+, {"NAME": "DB_SID", "DISPNAME": "DB_SID", "TYPE": "STRING", "ID": 146}
+, {"NAME": "DBconnection", "DISPNAME": "DBconnection", "TYPE": "STRING", "ID": 147}
+, {"NAME": "DB NAME", "DISPNAME": "DB NAME", "TYPE": "STRING", "ID": 138}
+, {"NAME": "DBStatusModel", "DISPNAME": "DBStatusModel", "TYPE": "STRING", "ID": 139}
+, {"NAME": "DC", "DISPNAME": "DC", "TYPE": "STRING", "ID": 148}
+, {"NAME": "DEBUG_SWITCHES", "DISPNAME": "DEBUG_SWITCHES", "TYPE": "STRING", "ID": 149}
+, {"NAME": "DENSITY", "DISPNAME": "DENSITY", "TYPE": "STRING", "ID": 150}
+, {"NAME": "DEPARTMENT_NAME", "DISPNAME": "DEPARTMENT_NAME", "TYPE": "STRING", "ID": 151}
+, {"NAME": "Depth", "DISPNAME": "Depth", "TYPE": "STRING", "ID": 175}
+, {"NAME": "DEPTNO", "DISPNAME": "DEPTNO", "TYPE": "STRING", "ID": 153}
+, {"NAME": "DEPT", "DISPNAME": "DEPT", "TYPE": "STRING", "ID": 152}
+, {"NAME": "Description", "DISPNAME": "Description", "TYPE": "STRING", "ID": 4}
+, {"NAME": "DIRECT", "DISPNAME": "DIRECT", "TYPE": "STRING", "ID": 155}
+, {"NAME": "DIR", "DISPNAME": "DIR", "TYPE": "STRING", "ID": 154}
+, {"NAME": "DLL_name", "DISPNAME": "DLL_name", "TYPE": "STRING", "ID": 156}
+, {"NAME": "DOC_REVISION", "DISPNAME": "DOC_REVISION", "TYPE": "STRING", "ID": 163}
+, {"NAME": "DOCDATE", "DISPNAME": "DOCDATE", "TYPE": "STRING", "ID": 157}
+, {"NAME": "DOCID", "DISPNAME": "DOCID", "TYPE": "STRING", "ID": 158}
+, {"NAME": "DOCNUM", "DISPNAME": "DOCNUM", "TYPE": "STRING", "ID": 159}
+, {"NAME": "DOCREL", "DISPNAME": "DOCREL", "TYPE": "STRING", "ID": 160}
+, {"NAME": "DOCS_ZIPFILE_LIST", "DISPNAME": "DOCS_ZIPFILE_LIST", "TYPE": "STRING", "ID": 161}
+, {"NAME": "DOCTYPE", "DISPNAME": "DOCTYPE", "TYPE": "STRING", "ID": 162}
+, {"NAME": "Document Id", "DISPNAME": "Document Id", "TYPE": "STRING", "ID": 176}
+, {"NAME": "DocumentName", "DISPNAME": "DocumentName", "TYPE": "STRING", "ID": 178}
+, {"NAME": "Document Type", "DISPNAME": "Document Type", "TYPE": "STRING", "ID": 177}
+, {"NAME": "DOH", "DISPNAME": "DOH", "TYPE": "STRING", "ID": 164}
+, {"NAME": "DSN Name", "DISPNAME": "DSN Name", "TYPE": "STRING", "ID": 167}
+, {"NAME": "DSN", "DISPNAME": "DSN", "TYPE": "STRING", "ID": 166}
+, {"NAME": "DS", "DISPNAME": "DS", "TYPE": "STRING", "ID": 165}
+, {"NAME": "DTM0101", "DISPNAME": "DTM0101", "TYPE": "STRING", "ID": 168}
+, {"NAME": "DTM0102", "DISPNAME": "DTM0102", "TYPE": "STRING", "ID": 169}
+, {"NAME": "DTM0103", "DISPNAME": "DTM0103", "TYPE": "STRING", "ID": 170}
+, {"NAME": "DYNAMIC SELECT GOES HERE", "DISPNAME": "DYNAMIC SELECT GOES HERE", "TYPE": "STRING", "ID": 171}
+, {"NAME": "end date", "DISPNAME": "end date", "TYPE": "DATE", "ID": 238}
+, {"NAME": "event category", "DISPNAME": "event category", "TYPE": "STRING", "ID": 233}
+, {"NAME": "event id", "DISPNAME": "event id", "TYPE": "NUMBER", "ID": 230}
+, {"NAME": "EventID", "DISPNAME": "EventID", "TYPE": "STRING", "ID": 179}
+, {"NAME": "event name", "DISPNAME": "event name", "TYPE": "STRING", "ID": 235}
+, {"NAME": "event status", "DISPNAME": "event status", "TYPE": "STRING", "ID": 232}
+, {"NAME": "event title label", "DISPNAME": "event title label", "TYPE": "STRING", "ID": 254}
+, {"NAME": "event type", "DISPNAME": "event type", "TYPE": "STRING", "ID": 239}
+, {"NAME": "FolderPath", "DISPNAME": "FolderPath", "TYPE": "STRING", "ID": 180}
+, {"NAME": "FormID", "DISPNAME": "FormID", "TYPE": "STRING", "ID": 181}
+, {"NAME": "Forum ID", "DISPNAME": "Forum ID", "TYPE": "STRING", "ID": 183}
+, {"NAME": "Forum URL", "DISPNAME": "Forum URL", "TYPE": "STRING", "ID": 182}
+, {"NAME": "Headline1", "DISPNAME": "Headline1", "TYPE": "STRING", "ID": 13}
+, {"NAME": "Headline2", "DISPNAME": "Headline2", "TYPE": "STRING", "ID": 14}
+, {"NAME": "Headline3", "DISPNAME": "Headline3", "TYPE": "STRING", "ID": 25}
+, {"NAME": "Host", "DISPNAME": "Host", "TYPE": "STRING", "ID": 8}
+, {"NAME": "Id Number", "DISPNAME": "Id Number", "TYPE": "STRING", "ID": 184}
+, {"NAME": "Industry", "DISPNAME": "Industry", "TYPE": "STRING", "ID": 186}
+, {"NAME": "key_id", "DISPNAME": "key_id", "TYPE": "STRING", "ID": 255}
+, {"NAME": "KEY", "DISPNAME": "KEY", "TYPE": "STRING", "ID": 187}
+, {"NAME": "Keywords", "DISPNAME": "Keywords", "TYPE": "STRING", "ID": 18}
+, {"NAME": "language custom", "DISPNAME": "language custom", "TYPE": "STRING", "ID": 236}
+, {"NAME": "Language", "DISPNAME": "Language", "TYPE": "STRING", "ID": 7}
+, {"NAME": "LastModifiedDate", "DISPNAME": "LastModifiedDate", "TYPE": "DATE", "ID": 9}
+, {"NAME": "LastUpdateDate", "DISPNAME": "LastUpdateDate", "TYPE": "STRING", "ID": 221}
+, {"NAME": "Mimetype", "DISPNAME": "Mimetype", "TYPE": "STRING", "ID": 6}
+, {"NAME": "Number of Replies", "DISPNAME": "Number of Replies", "TYPE": "NUMBER", "ID": 185}
+, {"NAME": "Oracle9LAS Home", "DISPNAME": "Oracle9LAS Home", "TYPE": "STRING", "ID": 188}
+, {"NAME": "partner event", "DISPNAME": "partner event", "TYPE": "STRING", "ID": 231}
+, {"NAME": "partner name", "DISPNAME": "partner name", "TYPE": "STRING", "ID": 244}
+, {"NAME": "partner type", "DISPNAME": "partner type", "TYPE": "STRING", "ID": 245}
+, {"NAME": "Permalink", "DISPNAME": "Permalink", "TYPE": "STRING", "ID": 189}
+, {"NAME": "postal code", "DISPNAME": "postal code", "TYPE": "STRING", "ID": 251}
+, {"NAME": "ProductServices", "DISPNAME": "ProductServices", "TYPE": "STRING", "ID": 191}
+, {"NAME": "Product", "DISPNAME": "Product", "TYPE": "STRING", "ID": 190}
+, {"NAME": "Reference Text", "DISPNAME": "Reference Text", "TYPE": "STRING", "ID": 15}
+, {"NAME": "Region", "DISPNAME": "Region", "TYPE": "STRING", "ID": 192}
+, {"NAME": "registration required", "DISPNAME": "registration required", "TYPE": "STRING", "ID": 252}
+, {"NAME": "searchable", "DISPNAME": "searchable", "TYPE": "STRING", "ID": 234}
+, {"NAME": "Services", "DISPNAME": "Services", "TYPE": "STRING", "ID": 222}
+, {"NAME": "SiteURLPageName", "DISPNAME": "SiteURLPageName", "TYPE": "STRING", "ID": 193}
+, {"NAME": "start date", "DISPNAME": "start date", "TYPE": "DATE", "ID": 237}
+, {"NAME": "state", "DISPNAME": "state", "TYPE": "STRING", "ID": 243}
+, {"NAME": "Status", "DISPNAME": "Status", "TYPE": "STRING", "ID": 194}
+, {"NAME": "SubCategory", "DISPNAME": "SubCategory", "TYPE": "STRING", "ID": 195}
+, {"NAME": "Subject", "DISPNAME": "Subject", "TYPE": "STRING", "ID": 5}
+, {"NAME": "summary", "DISPNAME": "summary", "TYPE": "STRING", "ID": 220}
+, {"NAME": "Synopsis", "DISPNAME": "Synopsis", "TYPE": "STRING", "ID": 196}
+, {"NAME": "Tags", "DISPNAME": "Tags", "TYPE": "STRING", "ID": 197}
+, {"NAME": "target area", "DISPNAME": "target area", "TYPE": "STRING", "ID": 242}
+, {"NAME": "target country", "DISPNAME": "target country", "TYPE": "STRING", "ID": 241}
+, {"NAME": "target region", "DISPNAME": "target region", "TYPE": "STRING", "ID": 240}
+, {"NAME": "Technologies", "DISPNAME": "Technologies", "TYPE": "STRING", "ID": 198}
+, {"NAME": "Technology", "DISPNAME": "Technology", "TYPE": "STRING", "ID": 199}
+, {"NAME": "Thread ID", "DISPNAME": "Thread ID", "TYPE": "NUMBER", "ID": 202}
+, {"NAME": "Thread Last Modified Date", "DISPNAME": "Thread Last Modified Date", "TYPE": "STRING", "ID": 203}
+, {"NAME": "Thread", "DISPNAME": "Thread", "TYPE": "STRING", "ID": 200}
+, {"NAME": "Thread URL", "DISPNAME": "Thread URL", "TYPE": "STRING", "ID": 204}
+, {"NAME": "Title", "DISPNAME": "Title", "TYPE": "STRING", "ID": 2}
+, {"NAME": "Type", "DISPNAME": "Type", "TYPE": "STRING", "ID": 205}
+, {"NAME": "URI", "DISPNAME": "URI", "TYPE": "STRING", "ID": 206}
+, {"NAME": "Urldepth", "DISPNAME": "Urldepth", "TYPE": "STRING", "ID": 19}
+, {"NAME": "URL Item", "DISPNAME": "URL Item", "TYPE": "STRING", "ID": 256}
+, {"NAME": "Url", "DISPNAME": "Url", "TYPE": "STRING", "ID": 16}
+, {"NAME": "Weblogroot", "DISPNAME": "Weblogroot", "TYPE": "STRING", "ID": 208}
+, {"NAME": "Weblog", "DISPNAME": "Weblog", "TYPE": "STRING", "ID": 207}
+, {"NAME": "WebsiteSection", "DISPNAME": "WebsiteSection", "TYPE": "STRING", "ID": 209}
+, {"NAME": "Websites", "DISPNAME": "Websites", "TYPE": "STRING", "ID": 210}
+, {"NAME": "xCorporate", "DISPNAME": "xCorporate", "TYPE": "STRING", "ID": 279}
+, {"NAME": "xOrganization", "DISPNAME": "xOrganization", "TYPE": "STRING", "ID": 278}
+, {"NAME": "xPerson", "DISPNAME": "xPerson", "TYPE": "STRING", "ID": 258}
+, {"NAME": "xURLItem", "DISPNAME": "xURLItem", "TYPE": "STRING", "ID": 257}]</div>
+<div id="routingParams" class="pagevariable"></div>
+<div id="debug" class="pagevariable">false</div>
+<div id="defaulttopn" class="pagevariable">100</div>
+<div id="maxtopn" class="pagevariable">300</div>
+<div id="searcherror" class="pagevariable">false</div>
+<div id="isSearchErr" class="pagevariable">false</div>
+<div id="noresults" class="pagevariable">false</div>
+<div id="prefetchBrowseGroups" class="pagevariable">false</div>
+<div id="maxNumResults" class="pagevariable">200</div>
+<div id="secureVisibility" class="pagevariable"></div>
+<div id="query" class="pagevariable">networks</div>
+<div id="encQuery" class="pagevariable">networks</div>
+<div id="displayQuery" class="pagevariable">networks</div>
+<div id="encPrefQuery" class="pagevariable"></div>
+<div id="simDocs" class="pagevariable"></div>
+<div id="startnum" class="pagevariable">1</div>
+<div id="endnum" class="pagevariable">10</div>
+<div id="hitsPerPage" class="pagevariable">10</div>
+<div id="swnode" class="pagevariable">{"nodeid":null,"fid":"-1"}</div>
+<div id="dupid" class="pagevariable">0</div>
+<div id="desktop" class="pagevariable">&lt;%-- For GDfE results --%&gt;<!--tro2--></div>
+<div id="qid" class="pagevariable">124602429</div>
+<div id="enableRemoveResult" class="pagevariable">false</div>
+<div id="extraReqParams" class="pagevariable">search_p_main_operator=all</div>
+<div id="autoLoadTopNResults" class="pagevariable">true</div>
+<div id="clusterMoreLimit" class="pagevariable">5</div>
+<div id="showEmptyClusters" class="pagevariable">true</div>
+<div id="facetEnabled" class="pagevariable">false</div>
+<div id="facetPaths" class="pagevariable">%5B%5D</div>
+<div id="initNumOfVisibleFacets" class="pagevariable">4</div>
+<div id="initNumOfVisFacetVal" class="pagevariable">%5B%5D</div>
+<div id="hardSortAttr" class="pagevariable"></div>
+<div id="hardSortOrder" class="pagevariable"></div>
+</div>
+</div>
+<script type="text/javascript" src="Search%20Results_files/ses-all.js"></script>
+<script type="text/javascript">
+function setGroupDescr()
+{
+if (groupList == null || groupList.length == 0) return;
+var table = document.getElementById("groupDetailTable");
+//remove all the previous contents
+for (var i = table.rows.length - 1; i >= 0; i--) {
+table.deleteRow(i);
+}
+//convert the groupList into a 2D array
+var gnList2 = new Array();
+var descrList2 = new Array();
+var gName2Temp = new Array();
+for (var i = 0; i < groupList.length; i++) {
+if (i % 2 == 0 && gName2Temp.length > 0) {
+gnList2.push(gName2Temp);
+gName2Temp = new Array();
+}
+else {
+//do nothing
+}
+gName2Temp.push(groupList[i]);
+}
+//take care of the last entry
+if (gName2Temp.length > 0) {
+gnList2.push(gName2Temp);
+}
+for (var i = 0; i < gnList2.length; i++) {
+var row = table.insertRow(table.rows.length);
+var cell0 = row.insertCell(0);
+setGroupNameCell(cell0, gnList2[i][0].name, gnList2[i][0].display);
+var cell1 = row.insertCell(1);
+if (gnList2[i][1] != null) {
+setGroupNameCell(cell1,
+gnList2[i][1].name,
+gnList2[i][1].display);
+}
+else {
+cell1.innerHTML = "&nbsp;";
+}
+var descrRow = table.insertRow(table.rows.length);
+var descrCell0 = descrRow.insertCell(0);
+setGroupDescrCell(descrCell0, descrList2[i][0]);
+var descrCell1 = descrRow.insertCell(1);
+if (descrList2[i][1] != null) {
+setGroupDescrCell(descrCell1, descrList2[i][1]);
+}
+else {
+descrCell1.innerHTML = "&nbsp;";
+}
+}
+}
+function setGroupNameCell(cell, groupName, displayName) {
+var displayStr = "<a href=\"javascript:searchTabFunc('" +
+groupName + "');\">" + displayName +
+"</a>";
+cell.innerHTML = displayStr;
+cell.style.textAlign = "left";
+cell.style.padding = "5px 2px 2px 5px";
+cell.style.fontWeight = "bold";
+cell.style.width = "300px";
+}
+function setGroupDescrCell (cell, descr) {
+cell.innerHTML = descr;
+cell.style.padding = "2px 2px 2px 10px";
+cell.style.textAlign = "left";
+cell.style.verticalAlign = "top";
+cell.style.width = "300px";
+}
+var ulStyle = "border-width:1px 0px 0px 0px; border-style:solid; border-color:rgb(180,180,180); padding-top:5px";
+function onReady() {
+document.forms["searchForm"].elements["q"].disabled = false;
+document.forms["searchForm"].elements["q"].focus();
+ORACLE.ses.fire('beforeBoot');
+var SV = ORACLE.ses.SearchView,
+Util = ORACLE.ses.util;
+//
+// initialize components
+//
+// SES connection factory
+sesConnFactory = new ORACLE.ses.util.SESConnectionFactory({
+baseurl: SV.pageVariable('baseurl'),
+routingParams: Util.arrayFromJSON(SV.pageVariable('routingParams'))
+});
+// create an overlay window for Browse Tree
+var brsOverlay = new ORACLE.ses.AnchoredOverlay( "browseOverlay" );
+brsOverlay.setAnchor( "popupAnchor", "tr", "br" );
+brsOverlay.render();
+SV.registerBehavior( "ses_toggleBrowseOverlay", function() {
+brsOverlay.toggleVisibility();
+} );
+// search view
+sesSV = new ORACLE.ses.SearchView({
+searchFormName: 'searchForm'
+});
+var resultsEncQuery = SV.pageVariable('encPrefQuery');
+if( resultsEncQuery == '' )
+resultsEncQuery = SV.pageVariable('encQuery');
+// results view
+sesRV = new ORACLE.ses.ResultsView( sesConnFactory, {
+searchView: sesSV,
+loadingImg: 'loadingIcon',
+resultsListContainer: 'divResults',
+query: SV.pageVariable('query'),
+encQuery: resultsEncQuery,
+displayQuery: SV.pageVariable('displayQuery'),
+queryId: SV.pageVariable('qid'),
+sourceGroups: Util.arrayFromJSON(SV.pageVariable('encGroups')),
+searchWithinInfo: Util.objFromJSON(SV.pageVariable('swnode')),
+secureVisibility: SV.pageVariable('secureVisibility'),
+simDocHandling: SV.pageVariable('simDocs'),
+extraReqParams: SV.pageVariable('extraReqParams'),
+enableRemoveResult: ("true" == SV.pageVariable('enableRemoveResult')),
+autoLoadTopNResults: ("true" == SV.pageVariable('autoLoadTopNResults','true')),
+extendedTimeout: ("true" == SV.pageVariable('extendedTimeout','false')),
+startNum: SV.pageVariable('startnum'),
+endNum: SV.pageVariable('endnum'),
+pageSize: parseInt(SV.pageVariable('hitsPerPage')),
+maxNumResults: parseInt(SV.pageVariable('maxNumResults')),
+defaultTopN: parseInt(SV.pageVariable('defaulttopn')),
+maxEmailThreadDocs: parseInt(SV.pageVariable('maxEmailThreadDocs')),
+maxTopN: parseInt(SV.pageVariable('maxtopn'))
+});
+sesRV.set('paginatorContainers', 'divPageLinks');
+sesRV.set('groupSortContextMsgEl', 'groupSortContextMsg');
+sesRV.set('hitReportEl', 'hitReport');
+sesRV.set('groupingEl', 'divGroup');
+sesRV.set('sortingEl', 'divSort');
+sesRV.set('taggingEnabled', false);
+if ("true" == SV.pageVariable('searcherror'))
+sesRV.set('isSearchErr', true);
+else if ("true" == SV.pageVariable('noresults'))
+sesRV.set('isNoResults', true);
+// cluster view
+//sesCV = new ORACLE.ses.ClusterView( 'divClusterTree', {
+// displayEmptyTrees: ("true" == SV.pageVariable('showEmptyClusters','true')),
+// moreLimit: parseInt(SV.pageVariable('clusterMoreLimit'))
+// });
+//sesCV.set('removeFilterId', 'navRemoveFilter');
+//repace the cluster view with the customized
+//contents that the user would implement by himself
+var divClusterTree = document.getElementById("divClusterTree");
+if (divClusterTree) {
+divClusterTree.innerHTML = "Customize Me";
+customizeSideBar();
+}
+// inline attribute filters
+sesIAF = new ORACLE.ses.InlineAdvancedView( "divInlineAdvSearch", "attrnames" );
+/* === helper methods === */
+var arrIndexOf = function(arr, item) {
+for (var i=0, len=arr.length; i<len; ++i) {
+if (arr[i] === item) return i;
+}
+return -1;
+};
+var filterAttrs = function(attrArr, exclArr) {
+var arr = [];
+for (var i=0, len=attrArr.length; i<len; ++i) {
+if (arrIndexOf(exclArr, attrArr[i].NAME.toLowerCase()) == -1)
+arr.push(attrArr[i])
+}
+return arr;
+};
+/* === list of (lowercase) attribute names to suppress === */
+var suppressAttrs = [
+"additionalattribute",
+"c_rptno",
+"collectionid",
+"ddocaccount",
+"data_source",
+"dayofweek",
+"ddocauthor",
+"ddocname",
+"ddoctitle",
+"ddoctype",
+"did",
+"dindate",
+"doriginalname",
+"doutdate",
+/* "dreleasedate", */
+"drevlabel",
+"dsecuritygroup",
+"groupname",
+"handle",
+"headline1",
+"headline2",
+"headline3",
+"key",
+"person_image",
+"perspectives",
+"reference text",
+"scehostname",
+"searchimage",
+"tag",
+"username",
+"urldepth",
+"wwsbr_category_",
+"wwsbr_charset_",
+"wwsbr_itemtype_",
+"wwsbr_mime_type_",
+"wwsbr_name_",
+"wwsbr_publishdate_",
+"wwsbr_subtype_",
+"wwsbr_updatedate_",
+"wwsbr_updator_",
+"wwsbr_version_number_"
+];
+// do the filtering
+ORACLE.ses.InlineAdvancedView._attrNamesArr =
+filterAttrs(ORACLE.ses.InlineAdvancedView._attrNamesArr, suppressAttrs);
+// suggested content
+sesSCV = new ORACLE.ses.SuggestedContentView( 'sugg-info-container', sesConnFactory, {
+encQuery: SV.pageVariable('encQuery'),
+secureVisibility: SV.pageVariable('secureVisibility')
+});
+YAHOO.lang.later( 0, sesSCV, 'getSuggestedContent');
+// browse view for browse tree
+sesBV = new ORACLE.ses.BrowseView( "divBrowseTree", sesConnFactory, {
+statusEl: 'divBrowseStatus',
+secureVisibility: SV.pageVariable('secureVisibility'),
+prefetchBrowseGroups: ("true" == SV.pageVariable('prefetchBrowseGroups'))
+});
+ORACLE.ses.fire('beforeWirePhase');
+//
+// wire components together
+//
+sesBV.get('model').subscribe('browseUpdate', sesSV.onBrowseUpdate, sesSV, true);
+sesBV.get('model').subscribe('browseUpdate', sesIAF.onBrowseUpdate,sesIAF,true);
+sesBV.get('model').subscribe('browseOff', sesSV.onBrowseOff, sesSV, true);
+sesBV.get('model').subscribe('browseOff', sesIAF.onBrowseOff, sesIAF,true);
+sesBV.subscribe('allDocsClick', sesSV.onAllDocsClick, sesSV, true);
+sesSV.subscribe('clearBrowse', sesBV.onClearBrowseClick, sesBV, true);
+sesSV.subscribe('clearBrowse', function() {
+sesIAF.onBrowseUpdate(sesBV.get('model'));
+});
+brsOverlay.showEvent.subscribe(sesBV.onShow, sesBV, true);
+//sesRV.get('model').subscribe('newResults', sesCV.renderCluster, sesCV, true);
+ORACLE.ses.fire('beforeRenderPhase');
+// render!
+sesRV.render();
+sesBV.render();
+setDebugParam();
+setGroupParam();
+ORACLE.ses.fire('bootDone');
+};
+/**
+* function to replace the original size bar tree structure
+* for demo only.
+*/
+function customizeSideBar()
+{
+//remove the status bar
+clearSideBar();
+//create the group area
+setGroupArea();
+//update the current custom filter value array
+//setCustomFilterValues();
+//create the correponding 2nd level condition
+//setCategories();
+//set the side bar to be visible all the time
+var sidebarDiv = $("sidebar");
+if (sidebarDiv.style.display == "none") {
+sesSV.toggleSidebar();
+}
+};
+/**
+* function to remove the contents in the side bar
+*/
+function clearSideBar()
+{
+var statusDiv = document.getElementById("divSidebarStatus");
+if (statusDiv) {
+statusDiv.style.display = "none";
+}
+var divClusterTree = document.getElementById("divClusterTree");
+if (divClusterTree) {
+divClusterTree.style.display = "block";
+}
+var filterTitle = document.getElementById("filterTitle");
+if (filterTitle) filterTitle.innerHTML = "";
+//var hitReportSpan = document.getElementById("hitReport");
+//if (hitReportSpan) hitReportSpan.innerHTML = "&nbsp;";
+};
+/**
+* function to populate the group area in the side bar
+*/
+function setGroupArea()
+{
+var groupNames = [
+"All"
+,"Blogs"
+,"Corporate Site"
+,"Discussion Forums"
+,"Documentation"
+,"Events"
+,"EventsRSS"
+,"Java.com"
+,"JavaOne"
+,"MySQL"
+,"Oracle OpenWorld"
+,"PartnerNetwork"
+,"Store"
+,"Technology Network"
+,"Training"
+,"Videos"
+,"bugs.java.com"
+,"testme"
+];
+//get curent group id or name
+var grpstr = ORACLE.ses.SearchView.pageVariable("groups");
+var selectedGroups = [];
+if (grpstr != "") {
+selectedGroups = YAHOO.lang.JSON.parse(decodeURIComponent(grpstr));
+}
+var html = ""
+html += "<ul>";
+for(var i=0; i<groupNames.length; i++)
+{
+if(groupNames[i] == "testme" || groupNames[i] == "EventsRSS" || groupNames[i] == "Webtech Marketing")
+continue;
+var sel = false;
+for(var j=0; j<selectedGroups.length; j++)
+{
+if(selectedGroups[j] == groupNames[i])
+{ sel = true;
+break;
+}
+}
+if(sel)
+{
+html += "<li class=\"leftNavSrcGrp\" style=\"font-weight:bold; color:#FF0000;\">" + groupNames[i] + "</li>";
+}
+else
+{
+html += "<li class=\"leftNavSrcGrp\"><a href=\"javascript:searchTabFunc('" + groupNames[i] + "');\">" + groupNames[i] + "</a></li>";
+}
+}
+html += "</ul>";
+var divClusterTree = document.getElementById("divClusterTree");
+if (divClusterTree) divClusterTree.innerHTML = html;
+};
+/**
+* function to populate the category or attribute area
+* in the side bar
+*/
+function setCategories()
+{
+//create a container to hold the hard coded categories
+var catDivObj = document.createElement("div");
+catDivObj.id = "sideBarCustCatDiv";
+var sidebarDiv = document.getElementById("divCluster");
+sidebarDiv.appendChild(catDivObj);
+//set the contents based on the selected group
+//get curent group id or name
+var grpstr = ORACLE.ses.SearchView.pageVariable("groups");
+var selectedGroups = [];
+if (grpstr != "") {
+selectedGroups = YAHOO.lang.JSON.parse(decodeURIComponent(grpstr));
+}
+var selGroup = "";
+if (selectedGroups.length > 0) {
+selGroup = selectedGroups[0];
+}
+var catHTML = "";
+if (selGroup == "Bugs") {
+catHTML = getBugHTML();
+}
+else if (selGroup == "MyOracle") {
+catHTML = getSiteHTML();
+}
+else if (selGroup == "Dev") {
+catHTML = getDevHTML();
+}
+else {
+catHTML = getTimeHTML();
+}
+catDivObj.innerHTML = catHTML;
+};
+/**
+*
+*/
+function setCustomFilterValues()
+{
+var customFilterValStr = getQueryParamValue("customFilterValues");
+if(customFilterValStr == null || customFilterValStr == "")
+{ return;
+}
+var formObj = document.searchForm;
+var cfvInput = formObj.customFilterValues;
+if(cfvInput == null)
+{ addHiddenInput("customFilterValues", customFilterValStr, formObj);
+}
+else
+{ cfvInput.value = customFilterValStr;
+}
+};
+/**
+*
+*/
+function getTimeHTML()
+{
+var types = ["Any Time", "Past Week", "Past Month", "Past Year", "Past Three Years"];
+var html = getListBlock(types, "searchByDate", 9, "date", "date");
+return html;
+};
+/**
+*
+*/
+function getSiteHTML()
+{
+var prodTypes = ["Any Site", "Alliances & Channels", "Cloud Services", "Customer Services", "Finance & Administration",
+"Global Business Units", "Human Resources", "Industries Business Unit", "Information Technology", "Japan", "Legal",
+"Marketing", "Oracle University", "Oracle R&D Centers", "Product Development", "Real Estate & Facilities",
+"Sales and Consulting", "Security"];
+var html = getListBlock(prodTypes, "searchByMyOracleSite", 1, "MyOracle", "Website");
+html += getTimeHTML();
+return html;
+};
+/**
+*
+*/
+function getBugHTML()
+{
+var prodTypes = ["Any Product", "RDBMS", "PLSQL", "Oracle Text", "SES"];
+var statusTypes = ["Any Status", "Open", "Closed"];
+var html = "<br /><b>Products: </b><br />" + getListBlock(prodTypes, "searchByBugProd", 1, "bug", "product");
+html += "<br /><b>Status: </b><br />" + getListBlock(statusTypes, "searchByBugStatus", 2, "bug", "status");
+html += getTimeHTML();
+return html;
+};
+/**
+*
+*/
+function getDevHTML()
+{
+var devTypes = ["All Products", "RDBMS", "SES"];
+var html = "<br /><b>FS for Product</b><br />";
+html += getListBlock(devTypes, "searchByDevFS", 1, "dev", "product");
+html += getTimeHTML();
+return html;
+};
+/**
+*
+*/
+function getListBlock(typeList, funcName, attributeIndex, sourceGroupName, filterName)
+{
+if(typeList == null)
+return "";
+var filterArrayStr = getQueryParamValue("customFilterValues");
+filterArrayStr = decodeURIComponent(filterArrayStr).replace(/\+/g, " ");
+var filterArray = filterArrayStr.split(":");
+var selType = "";
+for(var i = 0; i < filterArray.length; i++)
+{
+var fv = filterArray[i].split(",");
+if(fv[0] == sourceGroupName && fv[1] == filterName)
+{ selType = fv[2];
+}
+}
+if(selType == "")
+selType = typeList[0];
+//maybe it is from different category..
+var found = false;
+for(var i = 0; i < typeList.length; i++)
+{
+if(typeList[i] == selType)
+{ found = true;
+break;
+}
+}
+if(!found)
+selType = typeList[0];
+var html = "<ul style=\"" + ulStyle + "\">";
+for(var i = 0; i< typeList.length; i++)
+{
+if(selType == typeList[i])
+{
+html += "<li style=\"font-weight:bold\">" + typeList[i] + "</li>";
+}
+else
+{
+html += "<li><a href=\"javascript:" + funcName + "(" + attributeIndex + ", '" +
+typeList[i] + "');\">" + typeList[i] + "</a></li>";
+}
+}
+html += "</ul>";
+return html;
+};
+/**
+*
+*/
+function searchByDate(attrIndex, type)
+{
+var startDate = new Date();
+var startOp = "greaterthanequals";
+var attrName = "LastModifiedDate";
+var formObj = document.searchForm;
+if (type == 'Past Week') {
+startDate.setTime(new Date().getTime() - 7*24*60*60*1000);
+}
+else if (type == 'Past Month') {
+startDate.setTime(new Date().getTime() - 30*24*60*60*1000);
+}
+else if (type == 'Past Year') {
+startDate.setTime(new Date().getTime() - 365*24*60*60*1000);
+}
+else if (type == 'Past Three Years') {
+startDate.setTime(new Date().getTime() - 3*365*24*60*60*1000);
+}
+else // "Any Time" catch-all
+{
+removeFilter(attrName);
+updateCustomFilterValues("date", "date", type, formObj);
+formObj.submit();
+return;
+}
+var pStartValue = dateToString(startDate);
+setupSearchForm(attrIndex, attrName, startOp, pStartValue);
+updateCustomFilterValues("date", "date", type, formObj);
+formObj.submit();
+};
+/**
+* not been used
+*/
+function searchByAuthor(attrIndex, type)
+{
+var formObj = document.searchForm;
+var attrName = "Author";
+if (type == "Any Author") {
+removeFilter(attrName);
+}
+else {
+setupSearchForm(attrIndex, attrName, "contains", type);
+}
+addHiddenInput("customFilterValue", type, formObj);
+formObj.submit();
+};
+function searchByMyOracleSite(attrIndex, type)
+{
+var formObj = document.searchForm;
+var attrName = "FolderPath";
+var typeId = null;
+if(type == "Any Site")
+{ removeFilter(attrName);
+}
+else if(type == "Alliances & Channels")
+{ typeId = "/site/anc/";
+}
+else if(type == "Cloud Services")
+{ typeId = "/site/cloud/";
+}
+if (typeId != null) {
+setupSearchForm(attrIndex, attrName, "contains", typeId);
+}
+updateCustomFilterValues("MyOracle", "Website", type, formObj);
+formObj.submit();
+};
+function searchByBugProd(attrIndex, type)
+{
+var formObj = document.searchForm;
+var attrName = "product";
+var typeId = -1;
+if (type == "Any Product") {
+removeFilter(attrName);
+}
+else if (type == "RDBMS") {
+typeId = "5";
+}
+else if (type == "PLSQL") {
+typeId = "11";
+}
+else if (type == "Oracle Text") {
+typeId = "211";
+}
+else if (type == "SES") {
+typeId = "1737";
+}
+if (typeId > 0) {
+setupSearchForm(attrIndex, attrName, "contains", typeId);
+}
+updateCustomFilterValues("bug", "product", type, formObj);
+formObj.submit();
+};
+/**
+*
+*/
+function searchByBugStatus(attrIndex, type)
+{
+var formObj = document.searchForm;
+var attrName = "bug status num";
+if (type == "Any Status") {
+removeFilter(attrName);
+}
+else if (type == "Open") {
+setupSearchForm(attrIndex, attrName, "equals", "11");
+}
+else if (type == "Closed") {
+setupSearchForm(attrIndex, attrName, "greaterthanequals", "70");
+}
+updateCustomFilterValues("bug", "status", type, formObj);
+formObj.submit();
+};
+/**
+* function to update the form's hidden variables and then submit to the server
+*/
+function setupSearchForm (attrId, attrName, operator, attrValue)
+{
+var formObj = document.searchForm;
+removeFilter(attrName);
+//add new filters according to the passed in parameter
+//addHiddenInput("search_p_at", attrId, formObj);
+addHiddenInput("adn", attrName, formObj);
+addHiddenInput("search_p_atname", attrName, formObj);
+addHiddenInput("search_p_op", operator, formObj);
+addHiddenInput("search_p_val", attrValue, formObj);
+//add an empty entry
+addHiddenInput("adn", "", formObj);
+addHiddenInput("search_p_atname", "", formObj);
+addHiddenInput("search_p_op", "equals", formObj);
+addHiddenInput("search_p_val", "", formObj);
+};
+/**
+*
+*/
+function removeFilter(attrName) {
+var formObj = document.searchForm;
+//remove all the entries related the passed in attrId
+var seqIndexList = new Array();
+var attrNameInput = formObj['search_p_atname'];
+if (attrNameInput) {
+if (attrNameInput.length) {
+for (var i = 0; i < attrNameInput.length; i++) {
+if (attrNameInput[i].value == attrName || attrNameInput[i].value == "") {
+var id = attrNameInput[i].id.split("_")[1];
+seqIndexList.push(id);
+}
+}
+}
+else { //only one attrIDInput is found in the form
+if (attrNameInput.value == attrName || attrNameInput.value == "") {
+var id = attrNameInput.id.split("_")[1];
+seqIndexList.push(id);
+}
+}
+}
+//remove all the potential conflict filters and empty inputs
+for (var i = 0; i < seqIndexList.length; i++) {
+//name=search_p_at, id=attrIdInput_x
+var tempID = "attrIdInput_" + seqIndexList[i];
+removeInput(tempID);
+//attribute name=search_p_atname, id=attrNameInput_x
+tempID = "attrNameInput_" + seqIndexList[i];
+removeInput(tempID);
+//attribute display name name=adn, id=attrDisplayNameInput_x
+tempID = "attrDisplayNameInput_" + seqIndexList[i];
+removeInput(tempID);
+//operator name=search_p_op, id=search_p_op:x
+tempID = "search_p_op:" + seqIndexList[i];
+removeInput(tempID);
+//filter value name=search_p_value id=attrValueInput_x
+tempID = "attrValueInput_" + seqIndexList[i];
+removeInput(tempID);
+}
+}
+/**
+*
+*/
+function removeInput(inputID) {
+var tempInputObj = document.getElementById(inputID);
+if (tempInputObj == null) {
+return;
+}
+tempInputObj.parentNode.removeChild(tempInputObj);
+tempInputObj = null;
+}
+/**
+*
+*/
+function updateCustomFilterValues(sourceGroupName, filterName, filterValue, formObj)
+{
+var currValue = "";
+var hiddenInput = formObj.customFilterValues;
+if (hiddenInput == null)
+{
+var valArray = [sourceGroupName, filterName, filterValue];
+currValue = valArray.join(",");
+addHiddenInput("customFilterValues", currValue, formObj);
+}
+else
+{
+var currValue = decodeURIComponent(hiddenInput.value).replace(/\+/g, ' ');
+var filterArray = currValue.split(":");
+var foundPrevious = false;
+for (var i = 0;i < filterArray.length; i++)
+{
+var filterValArray = filterArray[i].split(",");
+if (filterValArray[0] == sourceGroupName &&
+filterValArray[1] == filterName) {
+filterValArray[2] = filterValue;
+filterArray[i] = filterValArray.join(",");
+foundPrevious = true;
+break;
+}
+}
+if (!foundPrevious)
+{
+var filterValArray = [sourceGroupName, filterName, filterValue];
+var filterValStr = filterValArray.join(",");
+filterArray.push(filterValStr);
+}
+currValue = filterArray.join(":");
+hiddenInput.value = currValue;
+}
+};
+/**
+*
+*/
+function addHiddenInput(name, value, formObj) {
+var hiddenInput = document.createElement("input");
+hiddenInput.type = "hidden";
+hiddenInput.name = name;
+hiddenInput.value = value;
+formObj.appendChild(hiddenInput);
+};
+/**
+*
+*/
+function getQueryParamValue(paramKey) {
+var searchStr = window.location.search.substring(1);
+var pairs = searchStr.split("&");
+for (var i = 0; i < pairs.length; i++) {
+var p = pairs[i].split("=");
+if (p.length < 2) continue;
+if (p[0] == paramKey) {
+p[1] = decodeURIComponent(p[1]).replace(/\+/g, ' ');
+return p[1];
+}
+}
+return "";
+};
+/**
+* convert the date object to a string in the format
+* MM/DD/YYYY
+*
+* @param dateValue a Javascript Date object
+*/
+function dateToString(dateValue) {
+var dd = dateValue.getDate();
+var mm = dateValue.getMonth() + 1;
+var yyyy = dateValue.getFullYear();
+return mm + "/" + dd + "/" + yyyy;
+};
+/**
+* function that replace the original searchTabFunc()
+*/
+function searchTabFunc(sgName)
+{
+var formObj = document.searchForm;
+if (formObj.group == null) {
+addHiddenInput("group", sgName, formObj);
+}
+else {
+formObj.group.value = sgName;
+}
+document.searchForm.submit();
+};
+function setGroupParam() {
+var groupValue = getQueryParamValue("group");
+var formObj = document.searchForm;
+if (formObj.group == null) {
+addHiddenInput("group", groupValue, formObj);
+}
+else {
+formObj.group.value = groupValue;
+}
+}
+/**
+* support function for diagnostics to have sticky debug argument
+*/
+function setDebugParam() {
+var debugValue = getQueryParamValue("debug");
+if (debugValue == "") return;
+var formObj = document.searchForm;
+if (formObj.debug == null) {
+addHiddenInput("debug", debugValue, formObj);
+}
+else {
+formObj.debug.value = debugValue;
+}
+};
+//check if the groupList is loaded by query.ftl
+if ((typeof groupList) != 'undefined') {
+setGroupDescr();
+}
+YAHOO.util.Event.onDOMReady( onReady );
+</script>
+<script type="text/javascript">var pageName_addition="Results";</script>
+<script type="text/javascript" src="Search%20Results_files/s_site_catalyst.js"></script>
+<script type="text/javascript" src="Search%20Results_files/s_code_search.js"></script>
+<script type="text/javascript" src="Search%20Results_files/s_code.js"></script>
+<script type="text/javascript">var s_code=s.t();if(s_code) s_code;</script>
+
+
+
+
+<ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" role="listbox" aria-activedescendant="ui-active-menuitem" style="z-index: 1; top: 0px; left: 0px; display: none;"></ul></body></html>

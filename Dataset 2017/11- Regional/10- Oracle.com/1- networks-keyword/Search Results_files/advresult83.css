@@ -1,0 +1,152 @@
+.title 
+{
+   font-family:arial,helvetica,sans-serif;
+}
+.title a:link
+{   text-decoration:underline;
+    color:#1F4F82;
+}
+.title a:visited
+{   text-decoration:underline;
+    color:#66757c;
+}
+.snippet 
+{
+   font-family:arial,helvetica,sans-serif;
+   color:#000;
+   font-size: -1;
+}
+.infosourceGroup 
+{
+    color:#666;
+    font-weight: bold;
+}
+.infosourcePath
+{
+    color:#666;
+    padding-left: 50px;
+}
+.author
+{
+    font-family: arial,helvetica,sans-serif;
+    font-size: 10pt;
+    font-style: normal;
+    font-weight: normal;
+    color:#000;
+}
+.contentLength
+{
+    font-family: arial,helvetica,sans-serif;
+    font-size: 10pt;
+    font-style: normal;
+    font-weight: normal;
+    color:#666;
+}
+.lastModified
+{
+    font-family: arial,helvetica,sans-serif;
+    font-size: 10pt;
+    font-style: normal;
+    font-weight: normal;
+    color:#666;
+}
+.displayUrl
+{
+    font-family: arial,helvetica,sans-serif;
+    font-size: 10pt;
+    font-style: normal;
+    font-weight: normal;
+    color:#666);
+}
+.cacheUrl
+{  
+    color:#666;
+}
+.linksUrl
+{
+    color:#666;
+}
+.browseLink:link
+{
+    color:#666;
+}
+
+.rollup_title
+{
+   color:#1F4F82;
+   text-decoration: underline;
+}
+    
+.rollup_title:hover
+{
+   text-decoration: underline;
+}
+
+.rollup_teaser
+{
+   margin-top: 5px;
+   margin-left: 20px;
+   margin-bottom: 0px;
+}
+      
+.rollup_teaser li 
+{
+   overflow: hidden;
+   list-style: none;
+   padding: 0;
+   border: 0px solid black;  
+   margin-top: 10px;
+   margin-left: 0px;
+   margin-bottom: 0px;	 
+}
+
+.rollup_teaser a:visited
+{   text-decoration:underline;
+    color:#66757c;
+}
+
+.rollup_description
+{
+   margin-top: 0px; 
+   margin-bottom: 0px;
+   line-height: 130%;
+}
+
+.similarDocsLink
+{   font-size: 100%; display: none;
+}
+
+.ui-menu .ui-menu-item a.ui-state-hover,
+.ui-menu .ui-menu-item a.ui-state-active
+{
+  background: #DCDCDC;
+  margin: -1px;
+}
+
+.ui-autocomplete
+{
+  -moz-box-shadow: #CCCCCC 0 3px 7px 3px;
+  -webkit-box-shadow: #CCCCCC 0 3px 7px 3px;
+  box-shadow: #CCCCCC 0 3px 7px 3px;
+  font-weight:normal;
+  text-align:left;
+}
+
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+  border-top-right-radius:0px;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+  border-top-left-radius:0px;
+}
+.ui-widget-content {
+  background-color:#FFFFFF;
+  background-position:50% 50%;
+  background-repeat:repeat no-repeat;
+  border:1px solid #d5d5d5;
+  color:#333333;
+}
+
+.ui-widget-content a:hover
+{
+  color: #1F4F82;
+}

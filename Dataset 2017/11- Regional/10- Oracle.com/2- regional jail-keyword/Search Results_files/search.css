@@ -1,0 +1,997 @@
+/*-----------------------------------------------------------------------------
+ Copyright (c) 2008, 2009, Oracle and/or its affiliates. All rights reserved. 
+
+  Style Sheet - Default Skin for Secure Enterprise Search Query Application
+
+-----------------------------------------------------------------------------*/
+
+.bannerTop
+{
+  clear: both;
+  padding: 25px;
+}
+
+.toplinks
+{
+  float: right;
+  line-height: 1.7;
+  text-align: right;
+}
+
+.toplinks:link
+{
+  color:black;
+}
+
+.profList
+{
+    float: left;
+    font-size: 8pt;
+}
+
+.actProf
+{
+    font-weight: bold;
+}
+
+ul.navLinks
+{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navLinks li
+{
+  padding-left: 0.6em;
+}
+
+.navLinks li.first
+{
+  padding-left: 0;
+}
+
+.navLinks li a
+{
+  padding: 0;
+}
+
+.toplinks ul.navLinks,
+.iafFooter ul.navLinks
+{
+  float: right;
+}
+
+.toplinks .navLinks li,
+.iafFooter .navLinks li
+{
+  float: left;
+}
+
+.footerlinks .navLinks li
+{
+  display: inline;
+  padding-left: 0;
+}
+
+.loggedOnUser
+{
+  color: black;
+  font-weight: bold;
+}
+
+a.no-visited-link:link,
+a.no-visited-link:hover,
+a.no-visited-link:visited
+{
+  color: #0000CC;
+}
+
+.progressMessage
+{
+  font-weight: bold;
+}
+
+.groupHeader
+{
+  font-weight: bold;
+  border: 1px solid #AAA;
+  background-color: #F6F6F6;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 2px 8px 2px 8px;
+  cursor: pointer;
+}
+
+.dym
+{
+  color: #666666;
+  font-style: normal;
+}
+
+.filterTitle
+{
+  padding-top: 10px;
+  font-weight: bold;
+  background-color: #F6F6F6;
+}
+
+.sidebarContent .filterTitle
+{
+  padding-top: 0px;
+  background-color: #FFF;
+  margin-bottom: 5px;
+}
+
+.filter
+{
+  color: #888888;
+  height: 10em;
+  overflow: auto;
+}
+
+.collapseArrows
+{
+  width: 16px;
+  float: right;
+  border: 1px solid #555;
+  font-weight: bolder;
+  font-size: 10px;
+  padding: 2px;
+  padding-left: 4px;
+  margin-top: 5px;
+  background-color: #C6C6C6;
+}
+
+.collapseArrows:hover
+{
+  background-color: #A6A6A6;
+  cursor: pointer;
+}
+
+
+/* =Suggested links and content
+-----------------------------------------------------------------------------*/
+
+#sugg-info-container
+{
+    background-color: #F4F4F4;
+    overflow: hidden;
+    padding: 0 0 10px;
+}
+
+.ses-sugginfo-hidden
+{
+    display: none;
+}
+
+.ses-skin-tabview
+{
+    margin-left: -25px !important;
+}
+
+.ses-skin-tabview .yui-navset ul.yui-nav 
+{
+    border: none !important;
+}
+
+.yui-content
+{
+  border:none !important;
+  height: 55px;
+}
+
+.sugg-links-content
+{
+    background-color: #FFFFFF;
+    padding: 0;
+	border: 0;
+}
+
+.slinkTitle
+{
+  padding-top: 2px;
+  color: gray;
+  font-weight: bold;
+  background-color: #F6F6F6;
+}
+
+.slink
+{
+    float: left;
+    margin-bottom: 0;
+    padding-left: 128px;
+    padding-top: 10px;
+    font-size: 12pt;
+}
+
+.slinkUrl
+{
+    color: #777777;
+    font-size: 10pt;
+    display: block;
+}
+
+#divSuggestedLinks
+{
+  text-align: left;
+  padding: 7px;
+  background-color: #fff;
+}
+
+div.suggestions
+{
+  border: 1px solid black;
+  position: absolute;   
+}
+
+div.suggestions div
+{
+  cursor: default;
+  padding: 0px 3px;
+}
+
+div.suggestions div.current
+{
+  background-color: #3366cc;
+  color: white;
+}
+
+/* =Pagination links
+-----------------------------------------------------------------------------*/
+
+.ses-paginator-singlepage
+{
+  display: none;
+}
+
+.ses-paginator-manypages
+{
+  display: block;
+}
+
+/* Pagination links */
+.pageLinks
+{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 25px;
+    text-align: left;
+    padding-left: 245px;
+}
+
+.pageLinks .pageLinksHeader
+{
+  margin-right: 15px;
+}
+
+.pageLinks .pageTextLink
+{
+  margin-right: 5px;
+}
+
+.pageLinks .pageTextLink a:link
+{
+  color: black;
+}
+
+.pageLinks .pageLink
+{
+  font-family: arial,sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  margin-right: 5px;
+}
+
+.pageLinks .pageLink a:link
+{
+  color: black;
+}
+
+.pageLinks .selectedLink
+{
+  font-family: arial,sans-serif;
+  font-size: 14px;
+  color:#FF0000;
+  margin-right: 5px;
+}
+
+/* UX - Changed line-height, margin, heigh, background  */
+#divBottomQuerybox
+{
+	text-align: center;
+	line-height:70px;
+	margin: 13px 0px 23px 0px;
+	height: 70px;
+	background:url("search_bg.gif") repeat-x;
+}
+
+#divFooterLinks
+{
+  text-align: center;
+}
+
+.copyright
+{
+  margin: 10px;
+  font-size: 8pt;
+  text-align: center;
+}
+
+#dgToggle
+{
+  visibility: hidden;
+  float: left;
+  width: 26%;
+  text-align: left;
+  padding-left: 5px;
+  font-size: smaller;
+}
+
+#divGroupTabs
+{
+  line-height: 1.5;
+  margin-left: 10px;
+}
+
+/* SOC 11.1.2.2 upgrade - add moreLink */
+#moreLink a:link {color: #000; text-decoration: underline; font-weight: bold; }     /* unvisited link */
+#moreLink a:visited {color: #000; text-decoration: underline; font-weight: bold; }  /* visited link */
+#moreLink a:hover {color: #FF0000; text-decoration: underline; font-weight: bold; }   /* mouse over link */
+#moreLink a:active {color: #FF0000; text-decoration: none; font-weight: bold; }   /* selected link */
+
+
+/* 11.1.2.2 SOC - UX - Changed link colors  */
+#divGroupTabs a:link {color: #000; text-decoration: underline; font-weight: normal; }     /* unvisited link */
+#divGroupTabs a:visited {color: #000; text-decoration: underline; font-weight: normal; }  /* visited link */
+#divGroupTabs a:hover {color: #FF0000; text-decoration: underline; font-weight: normal; }   /* mouse over link */
+#divGroupTabs a:active {color: #FF0000; text-decoration: none; font-weight: normal; }   /* selected link */
+
+a#moreSGLink:link {color: #000; text-decoration: underline; font-weight: bold; }
+a#moreSGLink:visited {color: #000; text-decoration: underline; font-weight: bold; }
+a#moreSGLink:hover {color: #FF0000; text-decoration: underline; font-weight: bold; }
+a#moreSGLink:active {color: #FF0000; text-decoration: none; font-weight: bold; }
+
+#divMoreSources
+{
+  position: absolute;
+  text-align: left;
+  background: #FFF;
+  margin: -.5ex 2ex;
+  width: 20ex;
+  line-height: 2.5;
+  z-index: 1000;
+  overflow: hidden;
+}
+#divMoreSources .bd
+{
+  border:solid 1px #aaa;
+  padding:.7ex;
+  padding-bottom:1.2ex;
+}
+#divMoreSources iframe
+{
+  display:none;/*sorry for IE5*/
+  display/**/:block;/*sorry for IE5*/
+  position:absolute;/*must have*/
+  top:0;/*must have*/
+  left:0;/*must have*/
+  z-index:-1;/*must have*/
+  filter:mask();/*must have*/
+  width:3000px;/*must have for any big value*/
+  height:3000px;/*must have for any big value*/;
+}
+
+.dgSelected
+{
+  font-weight: bold;
+}
+
+#divMoreSources .sgLink, #divMoreSources .dgSelected
+{
+  line-height: 1.8;
+  margin-bottom: 5px;
+}
+/* 11.1.2.2 SOC - UX - Changed link colors  */
+#divMoreSources a:link {color: #000; text-decoration: underline; font-weight: normal; }     /* unvisited link */
+#divMoreSources a:visited {color: #000; text-decoration: underline; font-weight: normal; }  /* visited link */
+#divMoreSources a:hover {color: #FF0000; text-decoration: underline; font-weight: normal; }   /* mouse over link */
+#divMoreSources a:active {color: #FF0000; text-decoration: none; font-weight: normal; }   /* selected link */
+
+#popupAnchor
+{
+  visibility: hidden;
+  position: relative;
+  top: 3px;
+  left: 20px;
+}
+
+#browseOverlay
+{
+  width: 60ex;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.anchored-overlay .bord
+{
+  border: solid 1px #aaa;
+  padding: 0.7ex;
+  background-color: #FFF;
+}
+
+.popupTitle
+{
+  padding: 5px 0px 3px 5px;
+  font-weight: bold;
+  background-color: #F6F6F6;
+}
+.popupLinkTR
+{
+  width: 50px;
+  float: right;
+  text-align: right;
+  font-size: 85%;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+#divBrowseTree
+{
+  margin-top: 10px;
+  margin-right: .9em;
+  margin-left: .9em;
+  margin-bottom: .9em;
+  display: none;
+}
+
+#browseTreeArea
+{
+  height: expression( this.scrollHeight > 400 ? "400px" : "auto" );
+  max-height: 400px;
+  overflow: auto;
+  width: expression( this.scrollWidth > parseInt(document.getElementById('browseOverlay').clientWidth)-12 ? parseInt(document.getElementById('browseOverlay').clientWidth)-12 + "px" : "auto" );
+}
+
+#divBrowseStatus
+{
+  margin: 15px auto;
+  text-align: center;
+  font-size: 107%;
+  color: #aaa;
+  font-weight: bold;
+}
+
+.groupsLoadingErr a,
+.groupsLoadingErr a:link,
+.groupsLoadingErr a:visited,
+.groupsLoadingErr a:hover
+{
+  color: #000;
+}
+
+.sgCheck
+{
+  margin-right: 4px;
+}
+
+#divSearchWithin
+{
+  line-height: 1.5;
+}
+
+#divSwitchToSG
+{
+  line-height: 1.5;
+  margin-left: 65px;
+}
+
+#divSwitchToSG a:link {color: black; text-decoration: underline; font-weight: normal; }     /* unvisited link */
+#divSwitchToSG a:visited {color: black; text-decoration: underline; font-weight: normal; }  /* visited link */
+#divSwitchToSG a:hover {color: #ff0000; text-decoration: underline; font-weight: normal; }   /* mouse over link */
+#divSwitchToSG a:active {color: black; text-decoration: none; font-weight: normal; }   /* selected link */
+
+
+#altKeywords
+{
+  clear: both;
+  text-align: left;
+  padding: 10px 0px 10px 0px;
+  color: #666666;
+}
+
+.blue
+{
+  color:#1F4F82;
+  text-decoration:underline;
+}
+
+#divSuggestedContent
+{
+  clear: both;
+  text-align: left;
+  padding: 10px 0px 10px 0px;
+}
+
+.suggestedContentLogin
+{
+  padding: 8px 21px;
+  line-height: 1.5;
+  background-color: #eee;
+}
+
+.qbPanel
+{
+}
+
+.qbPanel td
+{
+  padding: 3px;
+}
+
+
+/* =Grouping and sorting controls
+-----------------------------------------------------------------------------*/
+
+.resListControlBar
+{
+  margin-bottom: 10px;
+}
+
+.sidebar-left .resListControlBar
+{
+  float: right;
+}
+
+.sidebar-right .resListControlBar
+{
+  float: left;
+}
+
+.resListControlBar .controlBarItem
+{
+  float: left;
+  margin-left: 10px;
+  height: 1.5em;
+}
+
+.resListControlBar .statusIcon
+{
+  position: relative;
+  left: 4px;
+  line-height: 1.5em;
+}
+
+.resListControlBar .contextMsgItem
+{
+  margin-left: 8px;
+  margin-right: 2px;
+}
+
+.resListControlBar img.sortBtn
+{
+  padding-left: 5px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+
+.resListControlBar img.loadingIcon
+{
+  padding-right: 5px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+  width: 16px;
+  height: 16px;
+}
+
+.resListControlBar img.loadTopNBtn
+{
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+.groupSortLabelInactive
+{
+  color: #999;
+}
+
+.onNResults
+{
+  font-size: 93%;
+  color: #888888;
+  font-style: italic;
+  line-height: 1.5em;
+  position: relative;
+  top: 1px;
+}
+
+.onNResults a:link,
+.onNResults a:hover,
+.onNResults a:visited
+{
+  color: #000;
+}
+
+
+/* =Context bar (breadcrumbs, hit stats)
+-----------------------------------------------------------------------------*/
+
+.headerBar
+{
+  background-color: #DCDCDC;
+}
+/* UX - Changed color  */
+.contextBar
+{
+  background-color: #DCDCDC;
+}
+
+.breadcrumbs
+{
+  font-weight: bold;
+}
+
+.estimatedHitCount
+{
+  font-weight: bold;
+}
+
+.crawlInfo
+{
+  font-weight: normal;
+  font-size: 93%;
+}
+
+
+/* =Sidebar
+-----------------------------------------------------------------------------*/
+
+.sidebarContent
+{
+    height: 100%;
+    margin-top: 5px;
+    overflow: hidden;
+    padding: 5px 5px 5px 0;
+    text-align: left;
+    width: 95%;
+    size: 12px;
+    color: #333333;
+}
+
+.sidebar-left .ses-t210 .yui-b
+{
+    float: left;
+    width: 215px;
+}
+
+.sidebar-left .ses-t210 #yui-main .yui-b
+{
+    margin-left: 245px;
+}
+
+.sidebar-left .sidebarContent
+{
+  border-right: 1px solid #AAA;
+}
+
+.sidebar-right .sidebarContent
+{
+  border-left: 1px solid #AAA;
+}
+
+.clusterTrees
+{
+  overflow: auto;
+  padding-right: 1px;
+}
+
+.divClusterNode
+{
+  margin-left: 15px;
+  text-indent: -15px;
+}
+
+.sidebarStatusBox
+{
+  margin: 30px 0px;
+  text-align: center;
+  font-size: 107%;
+  color: #aaa;
+  font-weight: bold;
+}
+
+.sidebarStatusBox a
+{
+  font-size: 93%;
+  font-weight: normal;
+}
+
+.sidebarStatusBox a:link,
+.sidebarStatusBox a:hover,
+.sidebarStatusBox a:visited
+{
+  color: #000;
+}
+
+#navRemoveFilter
+{
+  text-align: right;
+  font-size: 85%;
+  margin-top: 4px; margin-right: 5px;
+  visibility: hidden;
+}
+#navRemoveFilter a:link, #navRemoveFilter a:visited
+{
+  text-decoration: none;
+  color: #666;
+}
+
+.divErrorMsg
+{
+  margin: 10px auto 35px;
+  text-align: center;
+  background-color: #eee;
+  border: 2px solid #ccc;
+  padding: 15px 10px;
+  width: 60%;
+}
+
+.poweredBy
+{
+  color: gray;
+  font-weight: bold;
+}
+
+.opaque
+{
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+
+
+.leftNav
+{
+  font-family: tahoma, sans-serif;
+  margin-bottom: 5px;
+  margin-left: 6px;
+  line-height: 1em;
+}
+.leftNavTitle
+{
+  font-family: tahoma, sans-serif; margin-top: 10px;
+  margin-bottom: 6px; color: #c60; font-weight: bold; line-height: 1em;
+}
+.hr-leftbrowse
+{
+  border-top-width: 1px;	border-right-width: 1px;	border-bottom-width: 1px; border-left-width: 1px;
+  border-top-style: dashed; border-right-style: none; border-bottom-style: none; border-left-style: none; 
+  border-top-color: #999999; border-right-color: #999999; border-bottom-color: #999999; border-left-color: #999999;
+  margin-top: 10px; margin-right: 5px; margin-bottom: 0px; margin-left: 5px;
+}
+/* UX - Changed color  */
+.leftNav a:link, .leftNav a:visited, .amabot_left .amabot_widget a:link, .amabot_left .amabot_widget a:visited
+{
+  text-decoration: none; 
+  font-family: tahoma, sans-serif;
+  color: #666;
+}
+/* UX - Changed color  */
+.leftNav a:hover,  .amabot_left .amabot_widget a:hover
+{
+  color: #000;
+  text-decoration: underline;
+}
+.leftNav img
+{
+  position: relative;
+  top: 4px;
+}
+.navShowTree
+{
+  text-align: right;
+  font-size: 85%;
+  margin-top: 4px; margin-right: 5px;
+}
+/* UX - Changed color  */
+.navShowTree a:link, .navShowTree a:visited
+{
+  text-decoration: none;
+  color: #666;
+}
+.navHide
+{
+  float: right;
+  text-align: right;
+  font-size: 85%;
+  margin-right: 5px;
+}
+/* UX - Changed color  */
+.navHide a:link, .navHide a:visited
+{
+  text-decoration: none;
+  color: #666;
+}
+
+.sidebar-left #divShowSidebar
+{
+  float: left;
+  width: 17px;
+  position: relative;
+  top: 8px;
+  left: -10px;
+}
+
+.sidebar-right #divShowSidebar
+{
+  float: right;
+  width: 17px;
+  position: relative;
+  top: 8px;
+  left: 10px;
+}
+
+
+/* color themes */
+
+
+.labelfont { font-family:arial,sans-serif; font-size: 10pt; font-style: normal; font-weight: bold; color: #000000; }
+.mainfont {font-family: Arial, sans-serif; font-size: 12px; color: #000000; text-decoration:none; font-weight:400; line-height:15px; }
+.fontGroup { font-family: arial,sans-serif; font-size: 11pt; font-style: normal; font-weight: bold; color: #000000; }
+.hiddenLabel {position:absolute;top:-999px;left:0px;}
+
+
+/* =Attribute filter AutoComplete
+-----------------------------------------------------------------------------*/
+
+.yui-skin-sam .yui-ac-content li .sub-content
+{
+  color: #777777;
+}
+
+.yui-skin-sam .yui-ac-content li.yui-ac-highlight .sub-content
+{
+  color: #cccccc;
+}
+
+/* UX - Changed link color and hover */
+.yui-skin-sam .yui-ac-content .ac-result .ac-side
+{
+  float: right;
+}
+
+.yui-skin-sam .yui-ac-content .ac-result .ac-query
+{
+  font-weight: bold;
+}
+
+.yui-ac-content .ac-result
+{
+  *width: 92%;
+}
+
+
+/* =Inline attribute filters
+-----------------------------------------------------------------------------*/
+
+.ses-iaf-hidden
+{
+  display: none;
+}
+
+#advSearchLink:link,
+#advSearchLink:visited
+{
+  color: #000;
+}
+
+#advSearchLink:hover,
+{
+  color: #FF0000;
+}
+
+.iaf-link-expanded
+{
+  background-color: #efefef;
+}
+
+.iaf-link-has-filters
+{
+  font-weight: bold;
+}
+
+.iafContent
+{
+  border: 2px solid #efefef;
+  border-top: 2px solid #dddddd;
+  border-bottom: 2px solid #dddddd;
+}
+
+.iafFooter
+{
+  background-color: #efefef;
+  font-size: 80%;
+}
+
+table.iafLayout
+{
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+  border: 0;
+}
+
+.iafMainOpCell
+{
+  width: 120px;
+  padding: 7px 1px 6px 12px;
+  background-color: #ffffff;
+  border-right: 2px solid #efefef;
+  vertical-align: top;
+}
+
+.iafMainOpCell .mainOpLabel
+{
+  font-weight: bold;
+}
+
+.iafMainOpCell .mainOpChoices
+{
+  margin-top: 8px;
+  white-space: normal;
+}
+
+.iafMainOpCell .mainOpChoice
+{
+  white-space: nowrap;
+}
+
+.iafAttrsCell
+{
+  width: auto;
+  padding: 7px 12px;
+  background-color: #ffffff;
+  border: 0;
+  vertical-align: top;
+}
+
+.iaf-filter-row .attr-name-cell
+{
+  vertical-align: top;
+}
+
+.iaf-filter-row .attr-name-ac-wrapper
+{
+  width: 12.5em;
+}
+
+.iaf-filter-row .attr-name-ac-container
+{
+  margin: 3px;
+  width: 12em;
+}
+
+.iaf-filter-row .attr-name-ac-input
+{
+  margin: 0;
+}
+
+.iaf-filter-row .remove-attr-link img
+{
+  border: 0;
+  padding-left: 8px;
+}
+
+.iaf-filter-row .add-attr-link img
+{
+  border: 0;
+  padding-left: 6px;
+}
+
+.yui-skin-sam .yui-ac-container
+{
+  width: 200px;
+}

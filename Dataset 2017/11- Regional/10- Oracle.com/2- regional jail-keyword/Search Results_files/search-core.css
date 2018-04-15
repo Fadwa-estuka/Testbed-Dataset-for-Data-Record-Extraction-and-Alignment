@@ -1,0 +1,370 @@
+/*-----------------------------------------------------------------------------
+ Copyright (c) 2008, 2010, Oracle and/or its affiliates. All rights reserved. 
+
+  Style Sheet - Core styles for Secure Enterprise Search Query Application
+
+-----------------------------------------------------------------------------*/
+
+body
+{
+  font-family: arial,sans-serif;
+  font-size: 10pt;
+  text-align: center;
+  margin-top: 25px;
+  background: #ffffff;
+}
+
+#doc3 
+{
+  margin: auto 25px;
+}
+
+input
+{
+  margin: 3px;
+}
+
+.label
+{
+ cursor: pointer;
+} 
+
+#bd
+{
+  clear: both;
+}
+
+.clearboth
+{
+  clear: both;
+}
+
+#q 
+{
+    border: medium none;
+    font-size: 12pt;
+    font-weight: normal;
+    height: 29px;
+    margin-left: 86px;
+    margin-bottom: 15px;
+    margin-right: 0;
+    padding-right:0;
+    padding-left: 8px;
+    width: 254px;
+    outline: medium none;
+}
+
+.pagevariable
+{
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+
+.splashPage #q
+{
+  width: 31em;
+  border: 1px solid #777777;
+  margin-left: 0px;
+}
+
+.qbLinkSpacer
+{
+  font-size: 1px;
+  height: 7px;
+}
+
+.fancyTabs .qbLinkSpacer
+{
+  font-size: 2px;
+  height: 15px;
+}
+
+.groupsLoadingErr
+{
+  margin: 0 auto;
+  width: 65%;
+  white-space: normal;
+}
+
+.anchored-overlay
+{
+  position: absolute;
+  background: #FFF;
+  overflow: hidden;
+  z-index: 1000;
+}
+.anchored-overlay iframe
+{
+  display:none;/*sorry for IE5*/
+  display/**/:block;/*sorry for IE5*/
+  position:absolute;/*must have*/
+  top:0;/*must have*/
+  left:0;/*must have*/
+  z-index:-1;/*must have*/
+  filter:mask();/*must have*/
+  width:3000px;/*must have for any big value*/
+  height:3000px;/*must have for any big value*/;
+}
+
+
+/* =Context bar region KARRI - Added additonal padding
+-----------------------------------------------------------------------------*/
+
+.contextBar
+{
+  clear: both;
+  text-align: right;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.contextBar .left
+{
+  float: left;
+  text-align: left;
+  margin-left: 10px;
+  margin-right: 15px;
+}
+
+.contextBar .right
+{
+  text-align: right;
+  margin-right: 10px;
+}
+
+
+/* =Results List
+-----------------------------------------------------------------------------*/
+
+#divResults
+{
+    margin-left: 0;
+    margin-top: 20px;
+    text-align: left;
+    width: 90%;
+}
+
+.removeResult
+{
+  float: right;
+  text-align: right;
+}
+
+.removeResult img.loadingIcon
+{
+  visibility: hidden;
+}
+
+.removeResultLink img
+{
+  align: right;
+  vertical-align: top;
+}
+
+.divResultHit
+{   margin-top: 0px;
+    margin-bottom: 32px;
+}
+
+/* =Attribute filter AutoComplete
+-----------------------------------------------------------------------------*/
+
+#advSearchAttrTable .yui-ac-container .yui-ac-content
+{
+  max-height: 17em;
+  overflow: auto;
+  overflow-x: hidden;
+  _height: 17em; /* ie6 */
+}
+
+
+/* =Inline attribute filters KARRI chnaged margin right 6px-0px
+-----------------------------------------------------------------------------*/
+
+#advSearchLink
+{
+  margin-left: 15px;
+}
+
+#advSearchLink.tabCollapsed
+{
+  padding: 0px 0px 0px 0px;
+}
+
+#advSearchLink.tabExpanded
+{
+  padding: 2px 5px 6px;
+}
+
+#advSearchLinkArrow
+{
+  padding: 0 2px 1px;
+}
+
+td.operCell
+{
+  width: 10.77em; /* non-IE */
+  *width:10.5em;
+}
+
+.iafContent
+{
+  margin-top: 0;
+  margin-left: 100px;
+}
+
+.iafFooter
+{
+  padding: 5px 12px;
+  text-align: right;
+  margin-left: 100px;
+}
+
+.splashPage .iafContent,
+.splashPage .iafFooter
+{
+  margin-right: 100px;
+}
+
+
+/* =Tagging
+-----------------------------------------------------------------------------*/
+
+.tagContainer
+{
+  overflow: hidden;
+  display: none;
+  
+}
+
+.tagContainer a.removeTag:link a.removeTagCross:link
+{
+  color: #000000; 
+  text-decoration: none;   
+}
+
+.listAllTagsDiv
+{
+  margin-top: 4px;
+}
+
+.oneTag
+{
+  padding-right: 0px;
+  background-color: #DEE5F2;
+  font-family: verdana,arial,sans-serif; 
+  margin-right: 6px;
+  margin-bottom: 3px;
+  width: auto;
+  font-size: 11px;
+  margin-right: 7px;
+  white-space: nowrap;
+  float: left;
+  
+}
+
+.shortTagDiv
+{
+  color: #545454;
+}
+
+.oneTagSpan
+{
+  background-color: #FFFFFF;
+  color: #FFFFFF;
+  width: 10px;
+
+}
+
+.hintSpan
+{
+  font-size: 16px;
+  color: #93DB70;
+  font-weight: bold;
+}
+
+.promptDiv
+{
+  overflow: hidden;
+}
+
+.tagInstruction
+{
+  font-size:9.5px;
+  color: #545454;
+}
+
+.manageDiv
+{
+  overflow: hidden;
+  width: 100%;
+}
+
+a.removeTagCross
+{
+  font-size:11px;
+  display: inline-block;
+  padding: 2px;
+  padding-left: 2px;
+}
+
+.tagNameNoOwner
+{
+  font-size:11px;
+  display: inline-block;
+  padding: 2px;
+}
+
+.tagName 
+{ 
+  font-size:11px;
+  display: inline-block;
+  padding: 2px;
+  padding-right: 2px;
+  border-right-style: solid;
+  border-right-width:1px;
+  border-right-color:#000;
+}
+
+.tagErrorMsg
+{
+  font-weight:bold;
+}
+
+.tagHeading
+{
+  font-weight:bold;
+}
+
+/*a.removeTagCross:hover {background-color: rgb(100, 100, 100); color:#FF0000; text-decoration: none;}*/
+/*a.removeTagCross:hover {background-color: #00008B; color:#FFFFFF; text-decoration: none;}*/
+a.removeTagCross:link {color: #000000; text-decoration: none; }
+a.removeTagCross:hover {background-color: #00008B; color:#FFFFFF; text-decoration: none;}
+/*a.removeTag_cross:visited {color: #000000; text-decoration: none; }*/
+/*a.removeTag_cross:active {color: #000000; text-decoration: none; }*/
+
+.leftNavSrcGrp
+{
+    font-size: 12px;
+    line-height: 28px;
+}
+
+.leftNavSrcGrp a:link
+{
+    color: #333333;
+    text-decoration: none;
+}
+
+.leftNavSrcGrp a:hover 
+{  text-decoration:underline;
+}
+
+.content_link
+{  color:#1F4F82;
+   text-decoration: none;
+}
+    
+.content_link:hover
+{  text-decoration: underline;
+}
