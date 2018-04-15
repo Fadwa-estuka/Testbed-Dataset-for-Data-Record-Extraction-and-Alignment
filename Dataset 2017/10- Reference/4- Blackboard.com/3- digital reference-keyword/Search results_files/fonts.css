@@ -1,0 +1,11 @@
+
+@font-face {
+font-family: MetaSerifBook;
+src: url("~/css/Font/MetaSerifWeb-Book.woff") format('woff')
+}
+
+@font-face {
+font-family: MetaSerifBold;
+src: url("~/css/Font/MetaSerifWeb-Bold.woff") format('woff')
+}
+
