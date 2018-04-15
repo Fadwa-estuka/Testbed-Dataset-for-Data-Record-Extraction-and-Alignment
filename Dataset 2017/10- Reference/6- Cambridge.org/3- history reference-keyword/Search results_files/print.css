@@ -1,0 +1,4 @@
+body.news-listing>h1:first-child{display:none}@media print{ul#nav,.wrapHeader,.addThisButtons,.searchWrapper,.button,#cart_button,.bookDetailsWrap span>img,.productInspection>span,.browseRelated,.wrapFooter,.wrapLowerFooter,dl.tabs,.product-details>.four.columns.rightBorder,.product-details .tabs-content a.arrow,.crumbsBarDeep,.bookCover>a,ul.tabs-content li#descriptionTab>div>h3>a{display:none!important}
+body.news-listing>h1:first-child{display:block!important;font-size:100%;font-weight:normal}.product-details>.eight.columns{width:100%}a[href^="http://"]:after,a[href^="https://"]:after,.bookPeople>a:after,.otherFormats>a:after{content:""!important}
+.bookDetailsWrap>a[href^="http://"]:after,.bookDetailsWrap>a[href^="https://"]:after,.bookDetailsWrap>.bookPeople>a:after,.bookDetailsWrap>.otherFormats>a:after{content:normal!important}ul.tabs-content li#authorsTab>h2{display:block;clear:both}
+}
