@@ -1,0 +1,1237 @@
+
+.CesSearch {
+    font-family: Arial;
+    font-size: 10pt;
+}
+.CesSearch a {
+    color: #4d4d4f;
+    text-decoration: none;
+}
+.CesSearch a:link {
+    color: #4d4d4f;
+    text-decoration: none;
+}
+.CesSearch a:active {
+    background: none;
+}
+.CesSearch a:visited {
+}
+.CesSearch a:hover {
+    color: #4d4d4f;
+    text-decoration: underline;
+}
+div.CesSearch input, .CesSearch input {
+    color: black;
+    font-family: Arial;
+    font-size: 10pt;
+}
+.CesSearch select {
+    font-family: Arial;
+    font-size: 10pt;
+}
+.CesSearch textarea {
+    font-family: Arial;
+    font-size: 10pt;
+}
+.FeedbackPanel {
+    font-family: Tahoma;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid silver;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px #DDDDDD;
+    font-size: 11pt;
+    font-weight: bold;
+    color: dimgray;
+    background: -moz-linear-gradient(top, #ffffff, #fde0c7);
+}
+.NonFocusComment {
+    font-style: italic;
+    color: Gray;
+}
+.CesTopMenu {
+    font-size: 9pt;
+    border-bottom: 2px solid #888888;
+    background: -moz-linear-gradient(top, #666666, #222222);
+    width: 100%;
+}
+.CesInterfaceLink {
+    color: White !important;
+    display: inline-block;
+    padding: 5px 10px 4px 10px;
+    zoom: 1;
+}
+.CesInterfaceLink a {
+    color: White !important;
+}
+.CesInterfaceLink:hover {
+    background-color: #666666;
+}
+.CesInterfaceLink:hover a {
+    text-decoration: underline;
+}
+.CesActiveInterfaceLink {
+    color: White !important;
+    display: inline-block;
+    padding: 5px 10px 4px 10px;
+    background: -moz-linear-gradient(top, #888888, #555555);
+    zoom: 1;
+}
+.CesActiveInterfaceLink a {
+    color: Lavender;
+}
+.CesActiveInterfaceLink:hover a {
+    color: Lavender;
+    text-decoration: none;
+}
+.CesInterfacesDropDown {
+    border: 1px solid black;
+    background-color: #404040;
+}
+.CesSearchContextualDropDownMenuWithIcon {
+    color: White;
+    font-size: 9pt;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-family: Arial, 'Trebuchet MS', Tahoma, Helvetica;
+    cursor: default;
+    padding: 2px;
+    border: 1px solid black;
+    background-color: rgb(64, 64, 64);
+    text-align: left;
+}
+.CesSearchContextualDropDownMenuWithIcon .CesSeparator {
+    white-space: nowrap;
+    font-weight: bold;
+}
+.CesSearchContextualDropDownMenuWithIcon .CesSeparatorLine {
+    height: 1px;
+    border-bottom: 1px solid black;
+    font-size: 1px;
+}
+.CesSearchContextualDropDownMenuWithIcon .CesCommandSelected {
+    background-color: rgb(102, 102, 102);
+    border: 1px solid transparent;
+}
+.CesSearchContextualDropDownMenuWithIcon .CesCommand {
+}
+.CesInitialPanel {
+    background: -moz-linear-gradient(top, #f5f5f5, #ffffff);
+    width: 100%;
+}
+.CesSearchPanel {
+}
+.CesSearchPanelSpacer {
+    padding: 6px 10px 5px 10px;
+    min-height: 50px;
+}
+.CesQueryBox {
+    width: 480px;
+    height: 31px;
+    border: none;
+    background: transparent;
+    float: left;
+}
+.CesQueryBox input {
+    font-size: 12pt !important;
+    font-weight: normal;
+    padding: 5px;
+    height: 20px;
+    width: 449px;
+}
+.CesQueryBox:hover, .CesQueryBox:focus {
+}
+.CesQueryBoxLinks {
+    font-size: 8pt;
+    margin-top: 2px;
+}
+.CesQueryBoxLinks a:link, .CesQueryBoxLinks a:visited {
+    color: #333333 !important;
+}
+.CesSearchPanelLinks {
+    font-size: 9pt;
+}
+.CesSearchPanelLinks a:link {
+    color: #333333 !important;
+}
+.CesInlineSection {
+    border-top: 1px solid silver;
+    margin: 5px 0px 5px 0px;
+    padding-top: 5px;
+}
+.CesInlineSection input, .CesInlineSection select {
+    margin-bottom: 2px;
+}
+.CesInlineSectionTitle {
+    float: left;
+    font-weight: bold;
+}
+.CesInlineSectionBody {
+    padding-left: 180px;
+}
+.CesInlineSectionDescription {
+    color: #000;
+    margin-bottom: 15px;
+}
+.CesLeftToolbar {
+    padding-right: 9px;
+    padding-top: 2px;
+    margin-right: 20px;
+}
+.CesRightToolbar {
+    padding-left: 9px;
+    padding-top: 2px;
+}
+.CesFacet {
+    font-family: Arial, sans-serif;
+    margin: 6px 3px 5px 3px;
+    border: 1px solid #C0C0C0;
+    overflow: hidden;
+    border-radius: 3px;
+    width: 210px;
+    color: #404048;
+}
+.CesDisabled {
+    color: gray;
+}
+.CesFacetBackground {
+    background-color: #ebebeb;
+}
+.CesFacetBackground_WithSelections {
+    background-color: #ebebeb;
+}
+.CesFacetHeader {
+    font-family: Arial, sans-serif;
+    font-size: 11pt;
+    padding: 6px 5px 3px 5px;
+    color: #000;
+    border-bottom: 1px solid #fff;
+    margin: auto;
+    text-transform: uppercase;
+    width: 85%;
+}
+.CesFacetHeaderLeft {
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    vertical-align: top;
+    display: none;
+}
+.CesFacetHeaderCenter {
+    text-align: left;
+    padding-left: 7px;
+}
+.CesFacetHeaderRight {
+    width: 1%;
+    vertical-align: top;
+}
+.CesFacetHeaderCollapsed {
+    font-family: Arial, sans-serif;
+    font-size: 11pt;
+    padding: 6px 5px 3px 5px;
+}
+.CesFacetHeaderIcon {
+    vertical-align: top;
+}
+.CesFacetHeaderLabel {
+    vertical-align: middle;
+    font-weight: bold;
+    color: #39465D;
+}
+.CesFacetHeaderEraser {
+    cursor: pointer;
+    margin-right: 3px;
+}
+.CesFacetHeaderSelMode {
+    cursor: pointer;
+    margin-right: 5px;
+}
+.CesFacetHeader .CesFacetHeaderCollapseExpand {
+    width: 16px;
+    height: 16px;
+    background-image: url(/Coveo/Anonymous/?k=er&n=_SI.Facets.aspect_expanded_x16.png&t=0&m=1922450014);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.CesFacetHeaderCollapsed .CesFacetHeaderCollapseExpand {
+    width: 16px;
+    height: 16px;
+    background-image: url(/Coveo/Anonymous/?k=er&n=_SI.Facets.aspect_collapsed_x16.png&t=0&m=1922450014);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.CesFacetBody {
+    font-size: 9pt;
+    padding-bottom: 2px;
+    border-top: 1px solid #ccc;
+    padding-top: 5px;
+    margin: auto;
+    width: 90%;
+}
+.CesRelatedResultFacetBody {
+    padding: 0 6px 2px 6px;
+}
+.CesFacetBodyCollapsed {
+    font-size: 9pt;
+    padding-bottom: 2px;
+}
+.CesFacetBody a:link {
+    padding: 2px;
+    color: #171717;
+}
+.CesRelatedResultFacetBody a {
+    padding: 0px;
+    color: #0000A0;
+}
+.CesRelatedResultFacetBody a:hover {
+    color: red;
+}
+.CesFacetItemList {
+    padding-top: 2px;
+    padding-bottom: 3px;
+}
+.CesFacetItemListEmpty {
+}
+.CesFacetAndModeSelectedSepLine {
+    margin: 2px 5px 0px 5px;
+    border-top: solid 1px #C0C0C0;
+    padding: 3px 0px 2px 5px;
+    color: #666666;
+    font-size: 8pt;
+}
+.CesFacetAndModeRemovedSepLine {
+    margin: 1px 5px 1px 5px;
+    border-top: solid 1px #C0C0C0;
+}
+.CesFacetBody .CesFacetSearchBoxFrame {
+    background-color: white;
+    border: solid 1px #C0C0C0;
+    padding-left: 2px;
+    padding-right: 2px;
+    height: 20px;
+    margin: 0px 5px 0px 5px;
+    vertical-align: middle;
+}
+.CesFacetBodyCollapsed .CesFacetSearchBoxFrame {
+    display: none;
+}
+.CesFacetSearchBoxImg {
+    padding: 1px 6px 1px 2px;
+}
+input[type="text"].CesFacetSearchBoxInput, .CesFacetSearchBoxInput {
+    font-family: Arial, sans-serif;
+    font-size: 8pt;
+    color: #333333;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    margin: 0px;
+}
+.CesFacetSearchBoxInput:focus {
+    outline: none;
+}
+.CesFacetSearchBoxClearLink {
+    padding-left: 3px;
+}
+.CesFacetSearchBoxFrame input {
+    font-size: 9pt;
+}
+input[type="text"].CesFacetSearchBoxInputNonFocus, .CesFacetSearchBoxInputNonFocus {
+    color: silver;
+}
+.CesFacetSearchResults {
+    border: 1px solid #C0C0C0;
+    background-color: #FFFFFF;
+    text-align: left;
+    box-shadow: 0px 0px 4px 1px #E6E6E6;
+    border-radius: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: -6px;
+}
+.CesFacetLineIcon {
+    float: left;
+    margin-right: 3px;
+}
+.CesFacetLineIconEmpty {
+    float: left;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin-right: 2px;
+}
+.CesFacetNormalLine {
+    padding: 2px 7px 2px 7px;
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.CesFacetLineCheckBox {
+    float: left;
+    display: inline-block;
+    margin-top: 1px;
+    margin-right: 7px;
+    width: 12px;
+    height: 12px;
+    background-repeat: no-repeat;
+}
+.CesFacetLineText {
+    float: left;
+    white-space: nowrap;
+}
+.CesFacetLineEllipsis {
+    float: left;
+}
+.CesFacetLineCount {
+    font-size: 8pt;
+    margin-left: 4px;
+}
+.CesFacetLineRemoveBox {
+    float: right;
+    width: 12px;
+    height: 12px;
+    margin-top: 1px;
+    background-repeat: no-repeat;
+}
+.CesFacetNormalLine_NotChecked {
+}
+.CesFacetNormalLine_NotChecked .CesFacetLineCheckBox {
+    background-image: url(/Coveo/Anonymous/?k=er&n=_SI.Facets.item_normal_x12.png&t=0&m=1922450014);
+}
+.CesFacetNormalLine_NotChecked .CesFacetLineText {
+    color: #1F1F1F;
+}
+.CesFacetNormalLine_NotChecked .CesFacetLineEllipsis {
+    color: #1F1F1F;
+}
+.CesFacetNormalLine_NotChecked .CesFacetLineCount {
+    color: #336699;
+}
+.CesFacetNormalLine_NotChecked .CesFacetLineRemoveBox {
+}
+.CesFacetNormalLine_NotChecked_Hovered {
+    background-color: #D7EBFF;
+    cursor: pointer;
+}
+.CesFacetNormalLine_NotChecked_Hovered .CesFacetLineCheckBox {
+    background-image: url(/Coveo/Anonymous/?k=er&n=_SI.Facets.item_hover_x12.png&t=0&m=1922450014);
+}
+.CesFacetNormalLine_NotChecked_Hovered .CesFacetLineText {
+    color: #052C7D;
+}
+.CesFacetNormalLine_NotChecked_Hovered .CesFacetLineEllipsis {
+    color: #052C7D;
+}
+.CesFacetNormalLine_NotChecked_Hovered .CesFacetLineCount {
+    color: #336699;
+}
+.CesFacetNormalLine_NotChecked_Hovered .CesFacetLineRemoveBox {
+    background-image: url(/Coveo/Anonymous/?k=er&n=_SI.Facets.item_exclude_normal_x12.png&t=0&m=1922450014);
+}
+.CesFacetNormalLine_NotChecked_RemoveHovered {
+    background-color: #D7EBFF;
+    cursor: pointer;
+}
+.CesFacetNormalLine_NotChecked_RemoveHovered .CesFacetLineCheckBox {
+    background-image: url(/Coveo/Anonymous/?k=er&n=_SI.Facets.item_disabled_x12.png&t=0&m=1922450014);
+}
+.CesFacetNormalLine_NotChecked_RemoveHovered .CesFacetLineText {
+    color: #666666;
+}
+.CesFacetNormalLine_NotChecked_RemoveHovered .CesFacetLineEllipsis {
+    color: #666666;
+}
+.CesFacetNormalLine_NotChecked_RemoveHovered .CesFacetLineCount {
+    color: #666666;
+}
+.CesFacetNormalLine_NotChecked_RemoveHovered .CesFacetLineRemoveBox {
+    background-image: url(/Coveo/Anonymous/?k=er&n=_SI.Facets.item_exclude_hover_x12.png&t=0&m=1922450014);
+}
+.CesFacetNormalLine_Checked {
+}
+.CesFacetNormalLine_Checked .CesFacetLineCheckBox {
+    background-image: url(/Coveo/Anonymous/?k=er&n=_SI.Facets.item_selected_x12.png&t=0&m=1922450014);
+}
+.CesFacetNormalLine_Checked .CesFacetLineText {
+    color: #052C7D;
+    font-weight: bold;
+}
+.CesFacetNormalLine_Checked .CesFacetLineEllipsis {
+    color: #052C7D;
+    font-weight: bold;
+}
+.CesFacetNormalLine_Checked .CesFacetLineCount {
+    color: #336699;
+}
+.CesFacetNormalLine_Checked .CesFacetLineRemoveBox {
+}
+.CesFacetNormalLine_Checked_Hovered {
+    background-color: #D7EBFF;
+    cursor: pointer;
+}
+.CesFacetNormalLine_Checked_Hovered .CesFacetLineCheckBox {
+    background-image: url(/Coveo/Anonymous/?k=er&n=_SI.Facets.item_selectedhover_x12.png&t=0&m=1922450014);
+}
+.CesFacetNormalLine_Checked_Hovered .CesFacetLineText {
+    color: #052C7D;
+    font-weight: bold;
+}
+.CesFacetNormalLine_Checked_Hovered .CesFacetLineEllipsis {
+    color: #052C7D;
+    font-weight: bold;
+}
+.CesFacetNormalLine_Checked_Hovered .CesFacetLineCount {
+    color: #336699;
+}
+.CesFacetNormalLine_Checked_Hovered .CesFacetLineRemoveBox {
+    background-image: url(/Coveo/Anonymous/?k=er&n=_SI.Facets.item_exclude_normal_x12.png&t=0&m=1922450014);
+}
+.CesFacetNormalLine_Checked_RemoveHovered {
+    background-color: #D7EBFF;
+    cursor: pointer;
+}
+.CesFacetNormalLine_Checked_RemoveHovered .CesFacetLineCheckBox {
+    background-image: url(/Coveo/Anonymous/?k=er&n=_SI.Facets.item_disabled_x12.png&t=0&m=1922450014);
+}
+.CesFacetNormalLine_Checked_RemoveHovered .CesFacetLineText {
+    color: #666666;
+}
+.CesFacetNormalLine_Checked_RemoveHovered .CesFacetLineEllipsis {
+    color: #666666;
+}
+.CesFacetNormalLine_Checked_RemoveHovered .CesFacetLineCount {
+    color: #666666;
+}
+.CesFacetNormalLine_Checked_RemoveHovered .CesFacetLineRemoveBox {
+    background-image: url(/Coveo/Anonymous/?k=er&n=_SI.Facets.item_exclude_hover_x12.png&t=0&m=1922450014);
+}
+.CesFacetLineZero {
+    color: gray;
+}
+.CesFacetLineSideCaption {
+    display: inline-block;
+    font-size: 7pt;
+    padding-top: 1px;
+    margin-left: 6px;
+    margin-right: 3px;
+    float: right;
+}
+.CesFacetLineSubCaption {
+    font-size: 7pt;
+    text-align: right;
+    display: block;
+    float: right;
+    clear: both;
+    margin-right: 15px;
+    white-space: normal;
+}
+.CesFacetLineSubCaption span {
+    white-space: nowrap;
+}
+.CesFacetRemovedLine {
+    padding: 2px 7px 2px 7px;
+    vertical-align: middle;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.CesFacetRemovedLine .CesFacetLineCheckBox {
+    background-image: url(/Coveo/Anonymous/?k=er&n=_SI.Facets.item_disabled_x12.png&t=0&m=1922450014);
+}
+.CesFacetRemovedLine .CesFacetLineText {
+    color: #666666;
+    text-decoration: line-through;
+}
+.CesFacetRemovedLine .CesFacetLineEllipsis {
+    color: #666666;
+    text-decoration: line-through;
+}
+.CesFacetRemovedLine .CesFacetLineCount {
+    color: #666666;
+}
+.CesFacetRemovedLine .CesFacetLineRemoveBox {
+}
+.CesFacetRemovedLine_Hovered {
+    background-color: #D7EBFF;
+    cursor: pointer;
+}
+.CesFacetRemovedLine_Hovered .CesFacetLineCheckBox {
+    background-image: url(/Coveo/Anonymous/?k=er&n=_SI.Facets.item_normal_x12.png&t=0&m=1922450014);
+}
+.CesFacetRemovedLine_Hovered .CesFacetLineText {
+    color: #666666;
+    text-decoration: line-through;
+}
+.CesFacetRemovedLine_Hovered .CesFacetLineEllipsis {
+    color: #666666;
+    text-decoration: line-through;
+}
+.CesFacetRemovedLine_Hovered .CesFacetLineCount {
+    color: #666666;
+}
+.CesFacetRemovedLine_Hovered .CesFacetLineRemoveBox {
+}
+.CesFacetRemovedLine_RemoveHovered {
+    background-color: #D7EBFF;
+    cursor: pointer;
+}
+.CesFacetRemovedLine_RemoveHovered .CesFacetLineCheckBox {
+    background-image: url(/Coveo/Anonymous/?k=er&n=_SI.Facets.item_normal_x12.png&t=0&m=1922450014);
+}
+.CesFacetRemovedLine_RemoveHovered .CesFacetLineText {
+    color: #666666;
+    text-decoration: line-through;
+}
+.CesFacetRemovedLine_RemoveHovered .CesFacetLineEllipsis {
+    color: #666666;
+    text-decoration: line-through;
+}
+.CesFacetRemovedLine_RemoveHovered .CesFacetLineCount {
+    color: #666666;
+}
+.CesFacetRemovedLine_RemoveHovered .CesFacetLineRemoveBox {
+}
+.CesFacetSearchLine {
+    padding: 3px 9px 3px 11px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.CesFacetSearchLine .CesFacetLineText {
+    color: #1F1F1F;
+}
+.CesFacetSearchLine .CesFacetLineCount {
+    color: #336699;
+}
+.CesFacetSearchLine .CesFacetLineRemoveBox {
+    margin-left: 2px;
+}
+.CesFacetSelectAllSearchLine {
+    font-weight: bold;
+}
+.CesFacetSearchLine_Hovered {
+    background-color: #D7EBFF;
+    cursor: pointer;
+}
+.CesFacetSearchLine_Hovered .CesFacetLineText {
+    color: #052C7D;
+}
+.CesFacetSearchLine_Hovered .CesFacetLineCount {
+    color: #336699;
+}
+.CesFacetSearchLine_Hovered .CesFacetLineRemoveBox {
+    margin-left: 2px;
+    background-image: url(/Coveo/Anonymous/?k=er&n=_SI.Facets.item_exclude_normal_x12.png&t=0&m=1922450014);
+}
+.CesFacetSearchLine_RemoveHovered {
+    background-color: #D7EBFF;
+    cursor: pointer;
+}
+.CesFacetSearchLine_RemoveHovered .CesFacetLineText {
+    color: #666666;
+}
+.CesFacetSearchLine_RemoveHovered .CesFacetLineCount {
+    color: #666666;
+}
+.CesFacetSearchLine_RemoveHovered .CesFacetLineRemoveBox {
+    margin-left: 2px;
+    background-image: url(/Coveo/Anonymous/?k=er&n=_SI.Facets.item_exclude_hover_x12.png&t=0&m=1922450014);
+}
+.CesDisabled .CesFacetHeaderLabel {
+    color: Gray;
+}
+.CesDisabled .CesFacetLineText {
+    color: Gray;
+}
+.CesDisabled .CesFacetLineEllipsis {
+    color: Gray;
+}
+.CesDisabled .CesFacetLineCount {
+    color: Gray;
+}
+.CesFacetSearchLineMore {
+    text-align: center;
+}
+.CesFacetSearchLineMore .CesFacetLineCount {
+}
+.CesFacetSearchHighlight {
+    background-color: #FFCC99;
+}
+.CesFacetFooter {
+    font-size: 8pt;
+    text-align: center;
+    padding: 2px 3px 3px 3px;
+}
+.CesFacetFooterCollapsed {
+    display: none;
+}
+.CesFacetFooter a {
+    color: #1F1F1F !important;
+}
+.CesLegacyBasicFacet {
+    margin-top: 10px;
+}
+.CesLegacyNormalFacet {
+    width: 210px;
+    font-family: Arial, sans-serif;
+    margin: 6px 3px 5px 3px;
+    padding-bottom: 4px;
+    border: 1px solid #C0C0C0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 1px #E6E6E6;
+    background-color: #FAFAFA;
+    overflow: hidden;
+    color: #404048;
+}
+.CesTreeNormalFacet {
+    width: 210px;
+    font-family: Arial, sans-serif;
+    margin: 6px 3px 5px 3px;
+    padding-bottom: 2px;
+    border: 1px solid #C0C0C0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 1px #E6E6E6;
+    background-color: #FAFAFA;
+    overflow: hidden;
+    color: #404048;
+}
+.CesLegacyDropDownFacet {
+    font-family: Tahoma;
+    font-size: 8pt;
+    margin-left: 5px;
+    padding: 3px;
+    border-left: 1px solid #C0C0C0;
+    border-bottom: 1px solid #C0C0C0;
+    border-right: 1px solid #C0C0C0;
+    border-bottom-right-radius: 4px;
+    box-shadow: 1px 1px 2px #DDDDDD;
+    background-color: #FAFAFA;
+}
+.CesLegacyFacetPopup {
+    font-family: Tahoma;
+    font-size: 8pt;
+    padding: 3px;
+    border-left: 1px solid #C0C0C0;
+    border-bottom: 1px solid #C0C0C0;
+    border-right: 1px solid #C0C0C0;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 1px 1px 2px #DDDDDD;
+    background-color: #F5F5F5;
+}
+.CesLegacyFacetEmpty {
+    color: Gray;
+}
+.CesLegacyFacetTitle {
+    color: #39465D;
+    font-weight: bold;
+    font-size: 11pt;
+    text-align: left;
+    vertical-align: middle;
+}
+.CesLegacyFacetItem {
+    color: #1F1F1F;
+    padding: 2px 7px 2px 7px;
+    vertical-align: middle;
+    font-size: 9pt;
+}
+.CesLegacyFacetItemIcon {
+    vertical-align: middle;
+    margin-right: 7px;
+}
+.CesLegacyFacetItemRemoveIcon {
+    visibility: hidden;
+    margin-top: 1px;
+}
+.CesLegacyFacetSelectedItem {
+    color: #052C7D;
+    font-weight: bold;
+}
+.CesLegacyFacetRemovedItem {
+    color: #666666;
+    text-decoration: line-through;
+}
+.CesLegacyFacetItemSideCaption {
+    font-size: 7pt;
+}
+.CesLegacyFacetItemSubCaption {
+    font-size: 7pt;
+    text-align: right;
+    padding: 0px;
+    clear: both;
+}
+.CesLegacyFacetHoveredItem {
+    color: #052C7D;
+    background-color: #D7EBFF;
+    padding: 2px 7px 2px 7px;
+    cursor: pointer;
+    vertical-align: middle;
+    font-size: 9pt;
+}
+.CesLegacyFacetHoveredItem .CesLegacyFacetItemRemoveIcon {
+    visibility: visible;
+}
+.CesLegacyFacetBottom {
+    color: #1F1F1F;
+    font-size: 8pt;
+    text-align: center;
+}
+.CesQueryInformation {
+    color: #444444;
+    font-size: 9pt;
+    margin-top: 10px;
+    width: 521px;
+}
+.CesMiniResults {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #cdcdcd;
+}
+.CesResult {
+    width: 100%;
+    margin-top: 8px;
+}
+.CesResultBadge {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 5px 2px 5px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.CesResultSmallColumn {
+    width: 1%;
+}
+.CesResult .CesShowOnHover, .CesChildResult .CesShowOnHover {
+    visibility: hidden;
+}
+.CesResult:hover .CesShowOnHover, .CesChildResult:hover .CesShowOnHover {
+    visibility: visible;
+}
+.CesResultHeader {
+    max-width: 680px;
+    margin: 8px 0 10px 0;
+}
+.CesResultFooter {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid silver;
+    width: 680px;
+}
+.CesResultNumber {
+    font-size: 8pt;
+    font-weight: bold;
+}
+.CesResultTitle {
+    font-size: 11pt;
+    font-weight: bold;
+}
+.CesResultTitle a {
+    text-decoration: none;
+}
+.CesResultTitle a:link {
+    color: #000;
+}
+.CesResultTitle a:visited {
+    color: #000;
+}
+.CesResultTitle a:hover {
+    color: #000;
+}
+.CesResultScore {
+    color: Gray;
+    font-size: 8pt;
+    font-weight: bold;
+}
+.CesResultLanguage {
+    color: Gray;
+}
+.CesResultLastClick {
+    color: Gray;
+    font-size: 8pt;
+}
+.CesResultRecentLastClick {
+    color: SlateBlue;
+    font-weight: bold;
+}
+.CesResultFromToCC {
+    font-size: 8pt;
+}
+.CesResultExcerpt {
+    max-width: 680px;
+    margin: 2px 0px 2px 0px;
+    color: #444444;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.CesResultConcepts {
+    color: Gray;
+    font-size: 8pt;
+}
+.CesResultAuthor {
+    color: Gray;
+    font-size: 9pt;
+}
+.CesResultModifiedDate {
+    color: Gray;
+    font-size: 9pt;
+}
+.CesResultIndexedDate {
+    font-size: 8pt;
+}
+.CesResultOrigin {
+    font-size: 8pt;
+}
+.CesCustomResultFields {
+    font-size: 8pt;
+}
+.CesCustomResultFieldsTitle {
+    font-weight: bold;
+    vertical-align: top;
+}
+.CesCustomResultFieldsValue {
+}
+.CesCustomResultFields table {
+    font-size: 8pt;
+}
+.CesResultUri {
+    color: DarkGreen;
+    font-size: 9pt;
+}
+.CesResultUri a {
+    color: DarkGreen;
+}
+.CesResultUri a:link {
+    color: DarkGreen;
+}
+.CesResultSize {
+    color: Gray;
+    font-size: 9pt;
+}
+.CesResultContextualCommand {
+    font-size: 9pt;
+    color: Gray;
+}
+.CesResultContextualCommand a:link {
+    color: SteelBlue;
+}
+.CesResultContextualCommand a:hover {
+    color: Red;
+}
+.CesResultHighlight {
+    font-weight: bold;
+}
+.CesResultConversationHeader {
+    color: ForestGreen;
+    font-family: Tahoma;
+    font-size: 9pt;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+.CesResultInlineInformation {
+    font-size: 9pt;
+    clear: both;
+}
+.CesResultInlineInformationUnselectedTab {
+    color: Gray;
+    background-color: WhiteSmoke;
+    font-family: Tahoma;
+    font-size: 8pt;
+    font-weight: bold;
+    margin-right: 5px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 3px;
+    padding-bottom: 2px;
+}
+.CesResultInlineInformationSelectedTab {
+    background-color: Silver;
+    font-family: Tahoma;
+    font-size: 8pt;
+    font-weight: bold;
+    margin-right: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-left: 1px solid WhiteSmoke;
+    border-top: 1px solid WhiteSmoke;
+    border-right: 1px solid gray;
+}
+.CesResultInlineInformationBody {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top: 2px solid silver;
+    border-bottom: 1px solid silver;
+}
+.CesChildResult {
+    width: 93%;
+    margin-left: 50px;
+    margin-top: 8px;
+}
+.CesChildResult .CesResultHeader {
+    max-width: 450px;
+}
+.CesChildResult .CesResultExcerpt {
+    max-width: 450px;
+}
+.CesChildResult .CesResultFooter {
+    width: 450px;
+}
+.CesSummary {
+}
+.CesSummaryHeader {
+    color: Gray;
+    font-family: Tahoma;
+    font-size: 8pt;
+    font-weight: bold;
+    position: relative;
+    top: -3px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid silver;
+}
+.CesSummaryParagraph {
+    font-size: 9pt;
+    margin-bottom: 5px;
+    text-align: justify;
+}
+.CesSummaryConcept {
+    color: DarkGreen;
+    font-family: Tahoma;
+    font-size: 9pt;
+    margin-bottom: 2px;
+}
+.CesResultsPageFooter {
+    margin-top: 10px;
+    padding-left: 21px;
+    padding-bottom: 25px;
+}
+.CesUnselectedMenuItem {
+    background-color: White;
+    padding: 3px;
+}
+.CesSelectedMenuItem {
+    background-color: #FEE197;
+    border-color: Black;
+    border-width: 1px;
+    border-style: Solid;
+    padding: 2px;
+}
+.CesActiveMenuItem {
+    background-color: #DDDDDD;
+    padding: 3px;
+}
+.CesQueryComments {
+    color: DarkGreen;
+    font-size: 9pt;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.CesQuerySuggestions {
+    margin-top: 40px;
+}
+.CesQuerySuggestion {
+    margin-top: 20px;
+}
+.CesQuerySuggestionLink {
+    padding-bottom: 5px;
+    font-size: 13px;
+}
+.CesQuerySuggestionLink a:link {
+    color: #333333;
+}
+.CesSuggestedExpression {
+    font-weight: bold;
+    color: #F48020;
+}
+.CesRemovedWord {
+    text-decoration: line-through;
+    font-weight: normal;
+}
+.CesRemovedFilter {
+    font-weight: bold;
+}
+.CesDidYouMean {
+    color: Peru;
+    font-size: 11pt;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.CesSuperUserMessage {
+    color: IndianRed;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.CesQueryExpansion {
+    color: Peru;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.CesQueryException {
+    color: IndianRed;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.CesNotice {
+    color: SeaGreen;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.CesViewAsHtmlNotice {
+    position: relative;
+    padding-top: 3px;
+    padding-right: 19px;
+}
+.CesGlobalNotice {
+    color: Black;
+    background-color: #FFF1A8;
+    border-color: #FFDC2E;
+    border-width: 1px;
+    border-style: Solid;
+    font-size: 9pt;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 7px 19px 7px 7px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.CesErrorMessage {
+    color: IndianRed;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.CesQueryNotification {
+    color: Gray;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.CesPager {
+}
+.CesPager a {
+    display: inline-block;
+    padding: 5px 10px 5px 10px;
+    border-radius: 2px;
+}
+.CesPager a:hover {
+    display: inline-block;
+    padding: 5px 10px 5px 10px;
+    background-color: #DDDDDD;
+    text-decoration: none;
+}
+.CesPager .CesPagerActive {
+    display: inline-block;
+    padding: 5px 10px 5px 10px;
+    margin: 0px 5px 0px 5px;
+    color: #000;
+    font-weight: bold;
+    background-color: #ffb800;
+    border-radius: 2px;
+}
+.CesToolbar {
+    font-size: 9pt;
+}
+.CesToolbarGroup {
+    margin-top: 10px;
+}
+.CesToolbar a {
+}
+.CesToolbar a:link {
+}
+.CesToolbar a:hover {
+}
+.CesAutoCompleteDropdownMenu {
+    border-style: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 0px;
+    box-shadow: 0 3px 2px #e8e8e8;
+    -moz-box-shadow: 0 3px 2px #e8e8e8;
+    -webkit-box-shadow: 0 3px 2px #e8e8e8;
+    background-color: #eeeeee;
+}
+.CesAutoCompleteDropdownInnerMenu {
+    border: 1px solid silver;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 3px 0px 3px 0px;
+    font-weight: normal;
+    background: -moz-linear-gradient(top, #ffffff, #eeeeee);
+    zoom: 1;
+}
+.CesAutoCompleteDropdownTooltip {
+    color: black;
+    background-color: white;
+    position: absolute;
+    display: none;
+    padding: 5px;
+    left: 5px;
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.CesAutoCompleteDropdownItem {
+    color: black;
+}
+.CesAutoCompleteDropdownItem span {
+    font-weight: bold;
+}
+.CesAutoCompleteDropdownItemSelected {
+    color: White;
+    background-color: CornflowerBlue;
+}
+.CesAutoCompleteDropdownItemSelected span {
+    font-weight: bold;
+}
+.BbSearchButton {
+    float: right;
+}
+.BbAdvancedSearch {
+    float: right;
+    margin: 8px 0 0 15px;
+}
+.BbAdvancedSearch:hover {
+    color: #000;
+}
+#CesQueryContainer {
+    height: 33px;
+    border: 1px solid #d7d7d7;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+    float: right;
+    overflow: hidden;
+    width: 535px;
+}
+#CesSearchHome {
+    min-height: 300px;
+}
+#CesSearchHome #CesQueryContainer, #CesSearchHome .BbAdvancedSearch {
+    float: left;
+}
+.CesQueryBox td {
+}
+.topResult {
+    border-top: 3px solid #ffb800;
+    border-bottom: 3px solid #ffb800;
+    padding-bottom: 14px;
+}
+.topResultHeader {
+    background: url(/corporate/coveo/images/top-result.png) no-repeat;
+    color: #000;
+    font-weight: bold;
+    font-size: 0.86em;
+    margin-top: 14px;
+    min-height: 19px;
+    padding-left: 28px;
+}

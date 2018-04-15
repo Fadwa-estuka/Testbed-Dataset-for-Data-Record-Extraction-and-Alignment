@@ -1,0 +1,210 @@
+
+/*
+/		Navigation Properties / ENGLISH
+--------------------------------------------------------------------------------------------------------*/
+
+#navigation		{ height: 86px; width: 880px; float: right; margin-top: 8px;}
+ul#MainNav 	{ list-style: none; background: url('../images/nav/bg.gif') repeat-x; }
+ul#MainNav li { float: left; background: url('../images/nav/div.gif') no-repeat right top; padding-right: 2px; }
+ul#MainNav li.last{ padding-right: 0; }
+ul#MainNav li a { list-style: none; float: left; display: block; height: 42px; text-indent: -9999px; }
+
+ul#MainNav li img { float: left; }
+ul#MainNav .TeachingLearning a { background: url('../images/nav/TeachingLearning.gif'); width: 156px; }
+ul#MainNav .CommerceSecurity a { background: url('../images/nav/CommerceSecurity.gif'); width: 160px; }
+ul#MainNav .AlertNotification a { background: url('../images/nav/AlertNotification.gif'); width: 146px; }
+ul#MainNav .Mobile a { background: url('../images/nav/MobileSolutions.gif'); width: 71px; }
+ul#MainNav .SolutionsMarket a { background: url('../images/nav/SolutionsMarket.gif'); width: 150px; }
+ul#MainNav .Support a { background: url('../images/nav/Support.gif'); width: 75px; }
+ul#MainNav .Communities a { background: url('../images/nav/Communities.gif'); width: 108px; }
+ul#MainNav .Communities.active a {padding-right: 0;}
+/*ul#MainNav .Company a { background: url('../images/nav/Company.gif'); width: 87px; }*/
+/*ul#MainNav .Company.active a {padding-right: 0;}*/ 
+ul#MainNav li a:hover { background-position: left -42px; }
+ul#MainNav li.active a { background-position: bottom; padding-right: 2px;}
+ul#MainNav li.active { padding-right: 0px;}
+ul#MainNav li.leftActive{ padding-right: 0px;}
+ul#MainNav li.active a:hover { background-position: bottom; }
+ul#MainNav li ul { display: none; }
+.subNav { margin-left:16px;}
+.subNav ul { list-style: none; }
+.subNav ul li a { text-decoration: none; }
+
+.subNav .CMSListMenuLinkHighlighted {
+	font-weight: bold;
+	}
+#navigation .subNav {
+	list-style: none;
+	clear: left;
+	}
+	#navigation .subNav li {
+	float: left;
+	padding: 13px 20px 0 0;
+	font-size: 11px;
+	color: #666;
+	}
+
+
+.leftNav,
+.sideBar {
+	float: left;
+	width: 185px;
+	margin-right: 10px;
+	}
+	.leftNav ul {
+	float: left;
+	width: 165px;
+	padding: 0 10px 21px 10px;
+	list-style: none;
+	overflow: hidden;
+	}
+	.leftNav #leftNav li  {
+	_height: 28px;
+	clear: left;
+	display: inline;
+	}
+	.leftNav #leftNav li a {
+	display: block;
+	border-top: 1px solid #CCC;
+	font-size: 12px;
+	line-height: 15px;
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+	padding: 5px 0 5px 0;
+	}
+	.leftNav #leftNav li a:hover,
+	.leftNav #leftNav li a.CMSListMenuLinkHighlighted {
+	color: #F0B310;
+	text-decoration: none;
+	}
+	.leftNav #leftNav li li a.CMSListMenuLinkHighlighted {
+	color: #666 !important;
+	font-weight: bold !important;
+	}
+	.leftNav #leftNav li.CMSListMenuLI.first a,
+	.leftNav #leftNav li.CMSListMenuHighlightedLI.first a {
+	border: none;
+	}
+	.leftNav #leftNav li ul { padding: 0 0 5px 13px; width: 150px; }
+	.leftNav #leftNav li ul li { display: inline; }
+	.leftNav #leftNav li.CMSListMenuLIfirst ul ,
+	.leftNav #leftNav li.CMSListMenuLI ul {
+	display: none;
+	}
+	
+	.leftNav #leftNav li ul li a,
+	.leftNav #leftNav li.CMSListMenuHighlightedLI.first ul li a,
+	.leftNav #leftNav li.CMSListMenuHighlightedLI ul li a {
+	font-size: 12px;
+	font-weight: normal;
+	border: 0 !important;
+	padding: 0;
+	zline-height: 23px;
+	line-height: 13px;
+	padding: 5px 0;
+	}
+	.leftNav .gradient {
+	color: #666;
+	line-height: 27px;
+	}
+
+#footer {
+	background: url('../images/master/footerBG.gif') repeat-x;
+	margin: 40px 0 0 0;
+	padding-bottom: 30px;
+	color: #666;
+	font-size: 10px;
+	}
+	#footer ul {
+	float: right;
+	display: inline;
+	margin: 0 60px;
+	}
+	#footer ul li {
+	background-color: #FFF;
+	list-style: none;
+	float: left;
+	padding: 0 10px 0 10px;
+	}
+	#footer p {
+	clear: both;
+	}
+	
+
+/*
+/		GERMAN
+--------------------------------------------------------------------------------------------------------*/
+
+ul#MainNav .DELehrenLernen  a { background: url('../images/nav/de_LehrenLernen.gif'); width: 218px; }
+ul#MainNav .DEKundenSupport a { background: url('../images/nav/de_KundenSupport.gif'); width: 218px; }
+ul#MainNav .DECommunitys a { background: url('../images/nav/de_Communitys.gif'); width: 218px; }
+ul#MainNav .DEUnternehmen a { background: url('../images/nav/de_Unternehmen.gif'); width: 220px; }
+ul#MainNav .DEUnternehmen.active a {padding-right: 0;}
+
+/*
+/		FRENCH
+--------------------------------------------------------------------------------------------------------*/
+
+ul#MainNav .FRTeachingLearning  a { background: url('../images/nav/fr_TeachingLearning.gif'); width: 218px; }
+ul#MainNav .FRSupport a { background: url('../images/nav/fr_Support.gif'); width: 218px; }
+ul#MainNav .FRCommunities a { background: url('../images/nav/fr_Communities.gif'); width: 218px; }
+ul#MainNav .FRCompany a { background: url('../images/nav/fr_Company.gif'); width: 220px; }
+ul#MainNav .FRCompany.active a {padding-right: 0;}
+
+/*
+/		PORTUGUESE - BRAZIL
+--------------------------------------------------------------------------------------------------------*/
+
+ul#MainNav .BRTeachingLearning  a { background: url('../images/nav/br_TeachingLearning.gif'); width: 218px; }
+ul#MainNav .BRSupport a { background: url('../images/nav/br_Support.gif'); width: 218px; }
+ul#MainNav .BRCommunities a { background: url('../images/nav/br_Communities.gif'); width: 218px; }
+ul#MainNav .BRCompany a { background: url('../images/nav/br_Company.gif'); width: 220px; }
+ul#MainNav .BRCompany.active a {padding-right: 0;}
+
+/*
+/		CZECH REPUBLIC
+--------------------------------------------------------------------------------------------------------*/
+
+ul#MainNav .CZTeachingLearning  a { background: url('../images/nav/cz_TeachingLearning.gif'); width: 218px; }
+ul#MainNav .CZSupport a { background: url('../images/nav/cz_Support.gif'); width: 218px; }
+ul#MainNav .CZCommunities a { background: url('../images/nav/cz_Communities.gif'); width: 218px; }
+ul#MainNav .CZCompany a { background: url('../images/nav/cz_Company.gif'); width: 220px; }
+ul#MainNav .CZCompany.active a {padding-right: 0;}
+
+/*
+/		SPANISH
+--------------------------------------------------------------------------------------------------------*/
+
+ul#MainNav .ESTeachingLearning  a { background: url('../images/nav/es_TeachingLearning.gif'); width: 218px; }
+ul#MainNav .ESSupport a { background: url('../images/nav/es_Support.gif'); width: 218px; }
+ul#MainNav .ESCommunities a { background: url('../images/nav/es_Communities.gif'); width: 218px; }
+ul#MainNav .ESCompany a { background: url('../images/nav/es_Company.gif'); width: 220px; }
+ul#MainNav .ESCompany.active a {padding-right: 0;}
+
+/*
+/		CHINESE
+--------------------------------------------------------------------------------------------------------*/
+
+ul#MainNav .CNTeachingLearning  a { background: url('../images/nav/cz_TeachingLearning.gif'); width: 218px; }
+ul#MainNav .CNSupport a { background: url('../images/nav/cz_Support.gif'); width: 218px; }
+ul#MainNav .CNCommunities a { background: url('../images/nav/cz_Communities.gif'); width: 218px; }
+ul#MainNav .CNCompany a { background: url('../images/nav/cz_Company.gif'); width: 220px; }
+ul#MainNav .CNCompany.active a {padding-right: 0;}
+
+/*
+/		ARABIC
+--------------------------------------------------------------------------------------------------------*/
+
+body.ARSA ul#MainNav li { float: right; background: url('../images/nav/div.gif') no-repeat left top; padding: 0; padding-left: 2px; }
+body.ARSA ul#MainNav li.last { padding-left: 0; }
+body.ARSA ul#MainNav li.last a { padding-left: 0 !important; }
+body.ARSA ul#MainNav li.active a { background-position: bottom; padding-left: 2px;}
+body.ARSA ul#MainNav li.active { padding-left: 0px;}
+body.ARSA ul#MainNav li.leftActive{ padding-left: 0px;}
+
+ul#MainNav .SATeachingLearning  a { background: url('../images/nav/ar_TeachingLearning.gif'); width: 220px; }
+ul#MainNav .SASupport a { background: url('../images/nav/ar_Support.gif'); width: 217px; }
+ul#MainNav .SACommunities a { background: url('../images/nav/ar_Communities.gif'); width: 217px; }
+ul#MainNav .SACompany a { background: url('../images/nav/ar_Company.gif'); width: 220px; }
+body.ARSA ul#MainNav .SATeachingLearning.active a {padding-right: 0; padding-left: 0; }
