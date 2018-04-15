@@ -1,0 +1,1 @@
+$(document).ready(function(){$('.closeBoxButton').click(function(){var boxId=$(this).parents('.reveal-modal').attr('id');$('#'+ boxId).trigger('reveal:close');});$('.closeModal').click(function(){var boxId=$(this).parents('.reveal-modal').attr('id');$('#'+ boxId).trigger('reveal:close');})});
