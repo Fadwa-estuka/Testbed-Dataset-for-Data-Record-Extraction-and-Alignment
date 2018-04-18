@@ -1,0 +1,292 @@
+#page-lede.oneUp small.credit { background: url(http://csmb.staticworld.net/images/furniture/techhive/backgroundwhite70.png); color:#333; font-size: 9px; padding:1px 3px 5px; position:absolute; bottom: 20px;}
+
+
+/* remove after IDGMPM-7050 build */
+.fb-like { height: auto !important; }
+#home-main-primary .excerpt, .landing-listing .excerpt{ position:relative; }
+.side-product-list li .priceTopRated a{ color:#4D4E4E; }
+.sponsored-links.foot{ width:728px; clear: both; padding: 15px 20px 10px; overflow:hidden; margin:0 auto 40px; }
+#bing-sidebar.sponsored-links.foot{ width:100%; max-width:1130px; padding:0 95px 40px; }
+section.sponsored div.col1 h3, section.sponsored div.col2 h3{ font-size:16px; line-height: 21px; margin-top:5px;}
+section.sponsored div.col2 h3 a{ color:#4D4E4E; }
+#footer-subscribe h2{ clear:none; }
+#footer-subscribe.clearfix{ overflow:visible;}
+.comment-text img{ max-width:100%; }
+.story-pkg-hed figure img{ max-width:100%; }
+.excerpt.sponsored .post-meta{ display:none;}
+.excerpt.sponsored p{ color:#777; }
+.excerpt.sponsored .excerpt-text h3 a{ color:#444; }
+div.col1.twoCols,div.col1.threeCols,div.col1.fourCols{ z-index:29;}
+figure.medium.inline{ margin:0 auto; }
+
+
+
+html.touch .product-results div.compare,
+html.touch .product #compare-lede,
+html.touch #product-cap #compare-lede, 
+html.touch .collection #compare-lede,
+html.touch #saved-comparisons{ 
+  display:none;
+}
+
+html.no-textshadow .network-header input#banner-search-term {
+  position:absolute;
+  top:0;
+  right:0;  
+}
+html.no-textshadow .network-header #network-tools{
+  width:415px;  
+}
+
+html.no-textshadow .home #banner-search-submit, html.no-textshadow .home-hero-image img{
+  display:none;
+}
+
+
+
+/* end remove after IDGMPM-7050 build */
+
+
+#article2013822 table.stats tr:nth-of-type(even){ background-color:#f2f2f2; } 
+#article2013822 table.stats th{ border-left:1px solid #D9D9D9; }
+#article2013822 table.stats tr:first-child(odd){ border-left:none; border-right:none;  }
+#article2013822 table.stats tr th:first-child{ border-left:none; }
+
+
+div.blxPproductdirectoryad{ overflow:hidden; float:right; display:block; max-width:795px; }
+.product-results.sponsored{overflow:hidden; display:block;}
+div.blx.blxPbizdevinternalprimary img{ max-width:100%;}
+div.blx.blxPbizdevinternalprimary{margin-bottom:10px;}
+div.blx.blxPadopstechnetpixel{ display:none; }
+
+/* business ready header */
+body.pcworld#business_index header#hed-span h1{ 
+background:url(http://csmb.staticworld.net/images/furniture/techhive/BusinessReadyLogo-BusinessHeader-pcw.png) 203px 2px no-repeat;
+}
+body.macworld#business_index header#hed-span h1{ 
+background:url(http://csmb.staticworld.net/images/furniture/techhive/BusinessReadyLogo-BusinessHeader-mw.png) 203px 4px no-repeat;
+}
+
+body.pcworld .hideFromSubscriptionPages{ display:none; }
+
+
+@media only screen and (min-width:769px){
+.excerpt-img.bug.video:after{ content:url("http://csmb.staticworld.net/images/furniture/techhive/icn-play-overlay-sm.png"); display:block; z-index:100; position:absolute; left:54px; top:30%; height:30px; width:31px; }
+}
+
+
+@media only screen and (min-width:768px) and (max-width:768px) {
+body.article section.page{ overflow:hidden; }
+.footer-col img.footerIcon{ width:auto; }
+#internal-social,body.pcworld #internal-social,body.macworld #internal-social{width:66px;float:left;margin:-5px 0 0 0;}
+
+body #logo a.banner-logo{ width:192px; }
+body.pcworld #logo a.banner-logo{ width:192px;}
+body.macworld #logo a.banner-logo{ width:192px;}
+
+#banner-toggle { width: 152px; }
+#banner-toggle a { padding: 24px 25px 13px; width: 150px; }
+#banner-toggle a span { font-size: 26px; clear:both; }
+#banner-toggle-arrow { left: 58px; }
+#panel-nav li { width: 192px; }
+}
+
+@media only screen and (min-width:320px) and (max-width:767px) {
+  body.article section.page{ overflow:hidden; }  
+  .blx.blxM115.blox4_html.blxC120{ display:none;}
+  #banner-search-term{ width:155px;}
+  #banner .hmenu{ margin: 42px 5px 0 0; }
+  #home-social{ width:59px; }
+  body.directory .product-results.sponsored{ display:none; }
+  .sponsored-links.foot{ width:95%; margin:10px 5px 20px; display:inline-block; }
+  #tso{ width:95%; margin:10px 0 20px 7px; display:inline-block; }
+  #tso ul{ float: none; }
+  #tso ul li{ float: none; width: 100%; margin-right:0; }
+  div.blxPadopstechnetpixel{ height:0px; }
+  body.pcworld#business_index header#hed-span h1, body.macworld#business_index header#hed-span h1{ background:none; }
+  .product #carousel-thumbs div img, .article #carousel-thumbs div img, .article #carousel-thumbs-holder .items img, .product             
+  #carousel-thumbs-holder .items img { width: auto; }
+  .slideshow #slides .img img{ width:auto; max-height:230px; max-width:767px; }
+  #adleaderboardmobile{ margin:10px auto; max-width:320px; width:320px; text-align:center; }   
+}
+
+
+@media only screen and (min-width:1024px) and (max-width: 1024px){
+#banner { padding: 0 23px; }
+#header-leaderboard { margin: 0 25px 0 0; }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 1px){
+body.home .home-hero-split .home-hero-one .home-hero-text.lightTheme,
+body.home .home-hero-split .home-hero-two .home-hero-text.lightTheme,
+body.home .home-hero-split .home-hero-one .home-hero-text, 
+body.home .home-hero-split .home-hero-two .home-hero-text{ 
+  background: #494949 none; padding:17px 22px 13px;
+}
+.home-hero.home-hero-split{ 
+  background: #494949 none; 
+}
+.home-hero.home-hero-split .home-hero-one .home-hero-image,
+.home-hero.home-hero-split .home-hero-two .home-hero-image{
+  background: #FFFFFF none;
+}
+.side-promo.mobile-only{
+  display:block;
+}
+}
+
+
+
+body.macworld li.linkedinShare, body.techhive li.linkedinShare{ display:none; }
+body.superguides #main{ max-width: 100%; }
+
+
+.product #carousel-thumbs div img, .article #carousel-thumbs div img { display: block; margin: auto; max-height: 60px; max-width: 100%; position: relative; width: auto; }
+
+
+
+
+
+#article2042945 figure.thm-gallery:after{ content:'A look at the best Ultrabook Systems for Entrepreneurs'; font-size:13px; font-family: "facitweb",sans-serif; color:#333;  }
+
+.category section .sistersite span.ss-redirect{ display:block; }
+
+
+body#product1253490 section#download-top section, body#product1253490 section#download-top #gpt-crawl{ display:none}
+
+#gpt-peek{ padding:0; display:none; }
+#gpt-peek.product-peek.out{ padding:0; width:596px !important; height:120px; }
+
+article pre{  
+  display: block; max-width: 100%; overflow-x: auto; overflow-y: hidden; padding:10px; white-space:pre; word-wrap: normal; background-color:#e5e5e5; font-size:12px;
+}
+
+.blxPpartnerhubheader{
+  margin:0 auto;
+  max-width:970px;
+}
+
+body.product #toasterText{
+  margin-left:17px;
+}
+
+.product-list {
+    clear: both;
+    margin-top: 10px;
+}
+
+.slideshow #page-wrapper #main-nav .container {
+    background-color: #3A3A3A;
+}
+
+body.videoIndex #home-main-primary .excerpt-text { float:right; width:750px; color:#3b3b3b; }
+
+body #skinAdSource img, body #skinAdTarget img{ width:0px;height:0px;visibility:hidden;position:absolute;top:0;left:0; }
+.breakingNewsModule{ z-index:2; position:relative; }
+
+body.macworld .sponsored-links.foot { max-width: 1010px; margin: auto; width: 100%; text-align: center; z-index:2; }
+
+body#article2071020 .product-list{ display:none; }
+
+body.article .video-blox-thumb.leadVideoModalClick .posterImage, body.article #side #mediaContainerHowTo{ box-shadow: 0 0 3px 2px rgba(37,167,215,0.7); }
+
+#cboxContent li.linkedinShare{
+  display:none;
+}
+
+body.videoIndex ul.sharing-tools-video li.pinterestShare{
+  margin-top:20px;
+}
+
+.product .imageContainer580xX #page-lede, .article .imageContainer580xX #page-lede{
+  border:none;
+}
+
+body#article2091804 #comments{
+  display:none;
+}
+
+/* #page-top{ z-index:3; position:relative; } */
+
+.slideshow #section-nav{ background:#333; }
+.slideshow #main-nav{ background:none; }
+
+
+
+/* inFunnel ad unit fix RM 02202014 */
+
+
+#gpt-infunnel {
+  text-align:center;
+  position:fixed;
+  bottom:0;
+  z-index:5000;
+  margin:0 auto;
+  width:100%;
+  }
+
+
+#gpt-infunnel #infunnelstyle109 {
+  margin:0 auto;
+  text-align:center;
+  }
+
+
+/* display:none-ing subnav per brandon mahne / bob melf RM 02212014 */
+
+body.techhive #section-nav {
+  display:none;
+}
+
+
+/* fixing homepage ad issue */
+
+#homepageLeaderboardInner{
+  max-width:970px;
+}
+
+
+body.pcworld .home-hero-solo .home-hero-text ul li:before{
+  color:#000;
+}
+
+/* disclaimer text for SMS slideshows */
+
+body#article2362401 #slides h3:after, body#article2309621 #slides h3:after{
+  content:"[ This sponsored article was written by IDG Creative Lab, a partner of PCWorld, and not by PCWorld's editorial staff. ]";
+  display:block;
+  font-size:11px;
+  color:#ddd;  
+  padding:4px 0;
+}
+
+/* fix for google i/o banner */
+
+a.promoBannerImage {
+/* z-index: 2; */
+position: relative;
+}
+
+
+/* fix for intel content */
+body iframe.eprise{
+  min-height:975px;
+}
+
+
+/* fix for intel ad unit */
+
+body.static.pcworld #homepageLeaderboardWrapper{
+  display:none;  
+}
+body.static.intel14.pcworld #homepageLeaderboardWrapper{
+  display:block;  
+}
+
+
+/* quick fix for infunnel ad positioning  - Lise  March 2015 per IDGMPM-8920*/
+/* to be removed after Dell campaign ends in May */
+
+#gpt-infunnel > div > iframe {
+  height:108px;
+}
