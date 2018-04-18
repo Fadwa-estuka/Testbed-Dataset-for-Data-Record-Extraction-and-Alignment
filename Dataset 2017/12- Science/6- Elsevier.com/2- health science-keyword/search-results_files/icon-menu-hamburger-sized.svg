@@ -1,0 +1,24 @@
+<svg 
+  class="svg-icon-hamburger" 
+  xmlns="http://www.w3.org/2000/svg" 
+  xmlns:xlink="http://www.w3.org/1999/xlink" 
+  version="1.1" 
+  x="0px" 
+  y="0px" 
+  width="25"
+  height="30"
+  viewBox="0 0 15.12 20" 
+  enable-background="new 0 0 15.12 20" 
+  preserveAspectRatio="xMinYMax meet">
+<g>
+  <g>
+    <rect x="0" y="4" width="15.1" height="1.6" />
+  </g>
+  <g>
+    <rect x="0" y="9.2" width="15.1" height="1.6" />
+  </g>
+  <g>
+    <rect x="0" y="14.4" width="15.1" height="1.6" />
+  </g>
+</g>
+</svg>
