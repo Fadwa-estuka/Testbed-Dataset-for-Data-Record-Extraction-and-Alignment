@@ -1,0 +1,238 @@
+
+.main-menu-toggle {
+  float: none !important;
+  height: auto !important;
+  margin: auto !important;
+}
+.inline {
+  display: inline-block;
+}
+.right-menu-container .inline {
+  vertical-align: middle;
+}
+.right-menu-container .bigsearch-toggle-icon img, .right-menu-container .menu-toggle-icon img {
+  float: none;
+}
+.right-menu-container .menu-toggle-text {
+  float: none;
+}
+.menu-container-icon {
+  float: left;
+}
+.menu-container-label {
+  float:right;
+  margin-top: 0.8em;
+  font-size:1.1em;
+  font-weight:bold;
+}
+#optimizely-search-b .header-item.bigsearch-toggle {
+  float: none !important;
+  height: auto !important;
+  margin: auto !important;
+}
+.shopping-cart-dropdown-container {
+  position: absolute;
+  width: auto;
+  top: 3.6rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%) scaleY(0);
+  -ms-transform: translateX(-50%) scaleY(0);
+  transform: translateX(-50%) scaleY(0);
+  -webkit-transition: all 350ms ease-out;
+  transition: all 350ms ease-out;
+  -webkit-transform-origin: top left;
+  -ms-transform-origin: top left;
+  transform-origin: top left;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  outline: 1px solid transparent;
+}
+.shopping-cart-container.show-menu ~ .shopping-cart-dropdown-container, .shopping-cart-container.show-menu ~ .menu-pointer {
+  -webkit-transition: all 350ms ease-out;
+  transition: all 350ms ease-out;
+  -webkit-transform: translateX(-50%) scaleY(1);
+  -ms-transform: translateX(-50%) scaleY(1);
+  transform: translateX(-50%) scaleY(1);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  outline: 1px solid transparent;
+}
+.shopping-cart-container ~ .shopping-cart-dropdown-container li * {
+  opacity: 0;
+  -webkit-transition: all 350ms ease-out;
+  transition: all 350ms ease-out;
+}
+.shopping-cart-container.show-menu ~ .shopping-cart-dropdown-container li * {
+  opacity: 1;
+  -webkit-transition: all 350ms ease-out;
+  transition: all 350ms ease-out;
+}
+.shopping-cart-dropdown li {
+  color: #007398;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  outline: 1px solid transparent;
+}
+.shopping-cart-dropdown li:last-of-type,
+.dd-account.hide ~ .dd-what {
+  margin-bottom: 0;
+}
+.shopping-cart-dropdown {
+  position: relative;
+  background-color: white;
+  padding: 1rem;
+  width: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: left;
+  margin-bottom: 0;
+  box-shadow: 0 0 6px rgba(0, 0, 0, .16), 0 6px 12px rgba(0, 0, 0, .32);
+}
+.shopping-cart-dropdown:focus {
+  outline: 0;
+}
+.menu-pointer {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  left: 50%;
+  -webkit-transform: translateX(-50%) scaleY(0);
+  -ms-transform: translateX(-50%) scaleY(0);
+  transform: translateX(-50%) scaleY(0);
+  -webkit-transition: all 350ms ease-out;
+  transition: all 350ms ease-out;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  outline: 1px solid transparent;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+.menu-pointer:before {
+  color: transparent;
+  text-shadow: 0 0 6px rgba(0, 0, 0, .16), 0 6px 50px rgba(0, 0, 0, .32);
+}
+.menu-pointer:after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid white;
+  position: absolute;
+  top: 9px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  outline: 1px solid transparent;
+}
+.shopping-cart-content-container {
+  position: relative;
+  margin: 0 1rem;
+  text-align: center;
+  margin-left: -1.875rem;
+}
+.shopping-cart-content-container .hide {
+  display: none !important;
+}
+
+.shopping-cart-content-container .icon-standalone-up.menu-pointer {
+  z-index: 1;
+}
+.shopping-cart-content-container .shopping-cart-dropdown-container {
+  z-index: 2;
+}
+
+.shopping-cart-container {
+  position: relative;
+  z-index: 1;
+  height: auto;
+  display: block;
+  margin: 0;
+  color: #323232;
+  cursor: pointer;
+}
+.shopping-cart-container:hover {
+  border: 0;
+}
+.shopping-cart-container .shopping-cart-icon {
+  width: 40px;
+  position: relative;
+  z-index: -1;
+  display: block;
+}
+.shopping-cart-count {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  height: 18px;
+  width: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #FF8200;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 18px;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: -webkit-transform 0.2s 0s;
+  transition: transform 0.2s 0s;
+}
+
+body.has-sticky-header .shopping-cart-count {
+    top: 2px;
+    left: 12px;
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+}
+
+body.has-sticky-header .shopping-cart-count.start {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+}
+
+.shopping-cart-count.start {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+@media only screen and (max-width: 40em) {
+  .shopping-cart-content-container {
+    margin: 0 0.5rem 0 0;
+  }
+  .shopping-cart-dropdown {
+    margin-right: 5.3rem;
+  }
+}
+.right-menu-container {
+  margin-right: 40px;
+}
+.right-menu-container span[class^=icon-standalone] {
+  font-family: Gizmo, "Segoe UI Symbol", "Lucida Grande", "Arial Unicode MS", sans-serif;
+  font-size: 1.5rem;
+}
+.right-menu-container .icon-standalone-cart:after {
+  content: '\E500';
+}
+.right-menu-container .icon-standalone-login:after {
+  content: '\EE03';
+}
+.right-menu-container .icon-standalone-help:after {
+  content: '\2753';
+}
+.right-menu-container .icon-standalone-info:after {
+  content: '\2139';
+}
+.right-menu-container .icon-standalone-logout:after {
+  content: '\EE02';
+}
