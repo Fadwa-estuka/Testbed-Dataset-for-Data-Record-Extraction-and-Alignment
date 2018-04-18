@@ -1,0 +1,8 @@
+if ( BKTAG != 'undefined' && BKTAG.htmlToDom ) {
+  BKTAG.htmlToDom('<script type="text/javascript">function bk_clear(id){try{document.getElementById(id).innerHTML=\'\'}catch(e){}} setTimeout("bk_clear(\'bk_js_1001\')",15000);</script><div id="bk_js_1001"> <script type="text/javascript">  window._bluekai_guid="2G05UT5E99e3Q8%2BR"; </script>   </div> ', document);
+}
+
+if ( BKTAG != 'undefined' && BKTAG.htmlToDom ) {
+  BKTAG.htmlToDom('<script type="text/javascript">function bk_clear(id){try{document.getElementById(id).innerHTML=\'\'}catch(e){}} setTimeout("bk_clear(\'bk_js_5746\')",15000);</script><div id="bk_js_5746"> <img style="display: none;" src="//di.rlcdn.com/454289.gif?pdata=<PDATA>"/>  </div> ', document);
+}
+

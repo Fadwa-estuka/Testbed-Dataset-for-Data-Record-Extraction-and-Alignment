@@ -1,0 +1,2 @@
+Bootstrapper.bindImmediate(function(){var Bootstrapper=window["Bootstrapper"];var ensightenOptions=Bootstrapper.ensightenOptions;console.log(".: Injecting SpiceWorks... :.");var toInject=document.createElement("script");toInject.type="text/javascript";toInject.src="//px.spiceworks.com/px.js";document.getElementsByTagName("head")[0].appendChild(toInject);var SWPX=SWPX||{};SWPX.cmd=SWPX.cmd||[];SWPX.cmd.push(function(){SWPX.pixel.setPixel("yahf");SWPX.pixel.fire()});(new Image).src="//px.spiceworks.com/px/yahf"},
+1425196,392667);
