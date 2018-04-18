@@ -1,0 +1,255 @@
+/**
+  Structure of floating viewer:
+  
+  div.floating-viewer is outer frame containing all of the viewer in DOM. It is
+  divided to div.floating-viewer-header and div.floating-viewer-body.
+
+  div.floating-viewer-header contains buttons for controlling the viewer and
+  status information. All of them are 'div' elements with class 'controls'.
+
+  div.floating-viewer-body contains the actual area where the preview images
+  are displayed.
+
+  div.floating-viewer-arrow is an empty 'div' element which is used for
+  displaying arrow shape in left of outer frame.
+*/
+
+/* Main outer frame of floating viewer */
+div.floating-viewer {
+  width: 255px;
+  min-height: 160px;
+  position: absolute;
+  z-index: 5;
+  background-color: #eeeeee;
+  padding: 8px;
+  border: 1px solid silver;
+  
+  -moz-border-radius: 5px; 
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  
+  -moz-box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+/* Area where preview images are shown */
+div.floating-viewer-body {
+  margin-top: 8px;
+}
+
+div.floating-viewer-body .dps-viewer {
+  margin: 0;
+  border: 1px solid silver;
+}
+
+div.floating-viewer-body .dps-pageFrame {
+  border: none;
+}
+
+/* Arrow outside the frame */
+div.floating-viewer-arrow {
+  width: 25px;
+  height: 35px;
+  position: absolute;
+  background: transparent url(arrow.png);
+}
+
+/* Controls and buttons */
+div.floating-viewer-header .controls {
+  float: left;
+  cursor: pointer;
+  height: 18px;
+/*  border-bottom: 1px solid transparent; */
+  background-image: url(buttons.png);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+div.previous-page {
+  background-position: 0 0;
+  width: 20px;
+}
+
+div.previous-page-hover {
+  background-position: 0 -36px !important;
+}
+
+div.previous-page-disabled {
+  background-position: 0 -18px !important;
+  cursor: default !important;
+}
+
+div.next-page {
+  background-position: -20px 0;
+  width: 20px;
+}
+
+div.next-page-hover {
+  background-position: -20px -36px !important;
+}
+
+div.next-page-disabled {
+  background-position: -20px -18px !important;
+  cursor: default !important;
+}
+
+div.filter-pages {
+  width: 38px;
+  margin-left: 8px;
+  background-position: -82px 0;
+}
+
+div.filter-pages-hover {
+  background-position: -82px -36px;
+}
+
+div.filter-pages-on {
+  background-position: -82px 36px !important;
+}
+
+div.filter-pages-disabled {
+  background-position: -82px -18px !important;
+  cursor: default !important;
+}
+
+div.page-indicator {
+  margin-left: 14px;
+  font-size: 13px;
+  cursor: default !important;
+  background-image: none !important;
+}
+
+div.footer-page-indicator {
+  text-align: center;
+  margin-left: 0;
+  height: 16px;
+}
+
+div.zoom-floating-viewer {
+  float: right !important;
+  margin-right: 1px;
+  background-position: -40px -18px;
+  width: 21px;
+}
+
+div.zoom-floating-viewer-hover {
+  background-position: -40px -36px !important;
+}
+
+div.zoom-disabled {
+  cursor: default !important;
+}
+
+div.zoom-maximized {
+  background-position: -61px -18px;
+}
+
+div.zoom-maximized-hover {
+  background-position: -61px -36px; !important;
+}
+
+div.disable-floating-viewer {
+  float: right !important;
+  margin-right: 0 !important;
+  background-position: -40px 0 !important;
+  width: 21px;
+}
+
+div.disable-floating-viewer-hover {
+  background-position: -62px 0 !important;
+}
+
+/* Workaround for divs containing floats, so that container div width and
+   height would be correct */
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/* And same for IE6 */
+* html .clearfix {
+  height: 1%;
+  overflow: visible;
+}
+
+/* And same for IE7 */
+*+html .clearfix {
+  min-height: 1%;  
+}
+
+/** Duplicated from dps-main.css so that users of Floating viewer do not need
+    to include it. */
+
+.hlight0 { opacity: 0.5; filter:alpha(opacity=50); background-color: #FFFF00; }
+.hlight1 { opacity: 0.5; filter:alpha(opacity=50); background-color: #00BFFF; }
+.hlight2 { opacity: 0.5; filter:alpha(opacity=50); background-color: #9ACD32; }
+.hlight3 { opacity: 0.5; filter:alpha(opacity=50); background-color: red; }
+.hlight4 { opacity: 0.5; filter:alpha(opacity=50); background-color: orange; }
+.hlight5 { opacity: 0.5; filter:alpha(opacity=50); background-color: navy; }
+
+.dps-viewer
+{
+  align: left;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.dps-pageFrame
+{
+  cursor: pointer;
+  border: 1px solid silver;
+  margin: 6px 1px 6px 1px;
+  overflow: hidden;
+}
+
+.dps-progressBarArea
+{
+  width: 200px;  
+  border: 1px solid gray; 
+  display: none;
+  position: relative;  
+}
+
+.dps-bar
+{
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 20px;
+  opacity: 0.8;
+  filter:alpha(opacity=80);
+  z-index: -1;
+}
+
+.dps-barText
+{
+  text-align:center;
+}
+
+.dps-progressSpinner
+{
+  width: 100%;
+  min-height: 120px;
+}
+
+.dps-errorText
+{
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+.dps-hliteDiv
+{
+  /* Work around for overflow bug in IE quirks mode */
+  width: 100%;
+  overflow: hidden;
+}
