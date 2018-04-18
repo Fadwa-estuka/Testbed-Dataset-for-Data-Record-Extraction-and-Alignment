@@ -1,0 +1,282 @@
+/*------------------------------
+=BASIC SETUP
+------------------------------*/
+
+/* Makeshift CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Tell the browser to render HTML 5 elements as block */
+header, footer, section, aside, nav, article {
+    display: block;
+}
+
+a {color: #044E8E; text-decoration: none;}
+a:hover {text-decoration: underline;}
+a img {display: block;}
+button:hover {cursor: pointer;}
+b, strong {font-weight: bold;}
+p {color: #333; line-height: 1.4;}
+
+/*------------------------------
+=HEADER
+------------------------------*/
+
+#page_head {
+    border-bottom: 1px solid #D5D5D5;
+    padding: 19px 0 10px;
+    position: relative;
+}
+#page_head h1 {
+    clear: left;
+    font-size: 3.5em;
+    line-height: normal;
+    margin-top: 1px;
+}
+
+/*------------------------------
+=CONTENT AREA AND SIDEBAR LAYOUT
+------------------------------*/
+
+#container {
+    margin: 10px auto;
+}
+
+.kids #container {
+    margin: 0 auto;
+}
+
+#content {
+ /* display: table;*/
+}
+#content > div {
+    border-bottom: 0;
+    padding-bottom: 0px;
+}
+#main_content {
+    clear: both;
+    float: left;
+    margin: 20px 0;
+    padding-right: 20px;
+    min-width: 300px;        
+}
+
+
+aside {        
+    width: 430px;
+    display: inline-block;
+ }
+
+.aside #content > div { 
+    border: none;
+    max-width: 300px;
+    padding: 0;
+}
+.aside div#main_content{
+    width: 300px;
+}
+.aside div#main_content > section#results{
+    width: 300px;
+}
+.aside div#main_content > section#pagination {
+    width:300px;
+}
+.aside > div {
+    border: none;
+    margin-top: 0;
+    padding-top: 0;
+}
+.aside #results div {
+    display: table-cell;
+}
+.aside #results img.one_image_result{
+    float: left;
+    width:100px;
+}
+
+.aside .image_result > div > a > img {
+    width: 55px;
+}
+
+.aside #results img.multiple_image_result {
+    float: left;
+    height: 40px;
+    width: 50px;
+}
+.aside #results .image_result {
+    height: 42px;
+}
+
+
+/*------------------------------
+=SEARCH FORM
+------------------------------*/
+
+.searched_form form {
+    background-color: #EEEEEE;
+    padding: 8px;
+}  
+.searched_form form input {
+    color: #333333;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 4px;
+    width: 80%;
+}
+
+
+.searched_form  form input[type="submit"] {
+    background-color: #333333;
+    border: medium none;
+    color: #FFFFFF;
+    width: 15%;
+}
+
+/*------------------------------
+=FILTERS NAVIGATION 
+------------------------------*/
+
+#search_filters {    
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    letter-spacing: 0.4px;
+    line-height: 3;
+}
+#search_filters nav {
+    left: 0;
+    width: 610px;  
+}
+
+#search_filters nav ul {
+    margin: 0 auto;
+    list-style: none;
+}
+
+#search_filters nav ul li {
+    float: left;
+    margin-left: 16px; 
+}
+#search_filters nav ul li:first-child{
+    margin-left: 0px;    
+}
+
+#search_filters nav ul li a {
+    color: #24649C;
+    font-size: 18px;                
+}
+
+#search_filters nav ul li a:hover {
+    color: #24649C;
+}
+
+#search_filters nav ul li.selected a {
+    color: #333;
+    border-bottom-color: #666;
+    border-bottom-width: 6px;
+    border-bottom-style: solid;  
+    padding-bottom: 2px;
+}
+
+#search_filters nav ul li.selected a:hover {
+    text-decoration: none;
+}
+#search_filters h3{
+    clear: both;
+    color: #333;
+    font-size: 14px;
+    font-weight: normal;    
+}
+
+#search_filters .search_text {
+    color: #044E8E;
+    font-weight: bold;
+}
+
+/*------------------------------
+=RESULTS
+------------------------------*/
+
+#results {
+    margin-top: 4px;
+    border-top: 1px solid #d7d7d7;
+}
+#results article {
+    border-bottom: 1px solid #d7d7d7;
+    clear: both;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    letter-spacing: 0.4px;
+    padding: 20px 0 20px 0;
+}
+
+#results article header {
+    margin-bottom: 16px;
+}
+
+#results article header h3{
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    line-height: normal;
+}
+#results article header a{
+    color: #000;
+    font-size: 18px;
+}
+
+#results article header a:hover {
+    text-decoration: none;
+}
+
+#results article p {
+    padding: 0 0 12px 0;
+    font-size: 14px;
+}
+
+#results article p.multiple_image_result {
+    margin-bottom: 16px;
+}
+
+#results article p.more_results {
+    margin-top: 16px;
+}
+
+
+#results article .more_results span{
+    font-weight: bold;
+}
+
+#results div {            
+    display: table-cell;        
+    vertical-align: top;
+}
+
+#results img.one_image_result {
+    margin: 3px 20px 0 0;
+}
+
+#results img.multiple_image_result {
+    margin-right: 4px;
+}
+
+#results .image_result > div:last-child > a > img{
+    margin-right: 0px;
+}
+
+/*------------------------------
+=PAGINATION
+------------------------------*/
+#pagination {
+    display: block;
+    float: left;
+    padding: 15px 12px;
+    text-align: center;
+    font-size: 18px;
+    width: 586px;
+}
+
+#pagination .page_number{
+    width: 430px;
+    display: inline-block;
+}
