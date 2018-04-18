@@ -1,0 +1,1 @@
+require(["jquery"],function(o){var i=window.Etsy||{};i.isSignedIn()||o("body").on("focusin",".listing-card",function(){o(this).addClass("col-focus")}).on("focusout",".listing-card",function(){o(this).removeClass("col-focus")})});
