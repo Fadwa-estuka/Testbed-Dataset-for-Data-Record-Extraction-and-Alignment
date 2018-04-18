@@ -1,0 +1,1382 @@
+
+    /*
+    NEW SEARCH PAGE START
+*/
+/*
+    Fixes the issue with the vertical line that has 15px bottom margin
+*/
+    #allContent #mainPadding {
+        padding: 0.63em 1.02em 1.563em 1.02em;
+        background-color: white;
+        overflow: visible;
+        _overflow: none;
+    }
+    
+    #allContent #mainPadding #main {
+        background-color: #FFFFFF;
+        margin-top: 0.21em;
+        overflow: hidden;
+    }
+/*
+    Fixes the issue with jumping product module.
+*/
+    .rightContent .productContainer .productPadding a, .rightContent .productsContainer .productContainer a {
+        margin-top: -2px;
+        text-decoration: none;
+    }
+    
+/*
+    Fixes the error message when search is turned off.
+*/
+
+    .error_message {
+         font-size: 14px;
+         color: #880000;
+     } 
+    
+    div#feedback {
+        display: block;
+        float:left;
+        font-family: Verdana;
+        margin: 1.1em 0 0 0;
+        *margin: 1.1em 0px -2.083em 0px;
+        width: 71.6em;
+        *width: 71.4em;
+        height:auto;
+        *float: none;
+        background: #EEE url("../img/feedExp_bg.gif") repeat-x top left;
+        border-right: 1px solid #E0E0E0;
+        border-left: 1px solid #E0E0E0;
+        border-bottom: 1px solid #E0E0E0;
+        border-top:1px solid #E0E0E0;
+    }
+
+    div#feedback div.feedExp {
+        display: block;
+        float:left;
+        font-family: Verdana;
+        margin:0 0 0 -1px;
+        width: 71.6em;
+        *width: 71.4em;
+        background: #EEE url("../img/feedExp_bg.gif") repeat-x scroll left bottom;
+        border-right: 1px solid #E0E0E0;
+        border-left: 1px solid #E0E0E0;
+    }
+    
+    div#feedback h1, div#feedExp h1 {
+        font-size: 14px;    
+        color: #333;
+        margin: 0;
+        padding: 15px 0 0 0;
+        font-weight: normal;
+    }
+
+    div#feedback p, div#feedExp p {
+        font-size: 11px;
+        font-weight: normal;
+    }
+  
+    div#feedback div.text, div#feedExp div.text {
+        margin:0;
+        height:auto;
+        padding:0;
+    }
+    
+    .rightContent #feedback .text {
+        font-size: 14px;
+        line-height: 2.429em;
+        margin: 0 0 0 1.1em;
+        padding: 0;
+    }
+    .question b {
+        margin: 0 0 0 1.1em;
+    }
+    .rightContent #feedback .text .inp {
+        display: inline;
+        font-size: 11px; 
+    }
+    .rightContent #feedback .text .inp input {
+        margin:0 0 0 20px;
+    }
+    
+    .rightContent #feedback label {
+        margin: 1em 0 1em 0;
+    }
+    
+    div#feedExp div.text p {
+        display: inline;
+        font-size:14px;
+        color:#333;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    div#feedback p.small, div#feedExp p.small {
+        font-size: 11px;
+        font-style: normal;
+        color: #333;
+        margin: 0;
+        padding: 0 0 0 15px !important;
+    }
+    
+    div#feedback div.info_text {
+        display:block;
+        width:320px;
+        margin:5px 0 0 15px;
+        font-family: Verdana;
+        font-size: 9px;
+        color: #333;
+    }
+    
+    div#feedback div.info_text a {
+        font-family: Verdana;
+        font-size: 9px;
+        color: #3399FD;
+    }
+    
+    div#feedback div.feedExp div.buttonContainer {
+        float: right;
+        margin: -30px 0 10px 0;
+        padding: 5px 283px 0 0;
+    }
+    
+    div#feedback textarea, div.feedExp textarea {
+        font-size: 11px;
+        display: block;
+        margin: 5px 0 0 15px;
+        padding: 0;
+        width: 384px;
+        height: 60px;
+    }
+    
+    input {
+        background-color: ;
+        background:none;
+    }
+    
+    div#feedback_comment {
+        padding: 0 0 0 15px !important;
+    }
+    div#feedback_result {
+        display:inline;
+        font-size:14px;
+        color:#333;
+        margin:0 0 0 1.1em;
+        line-height: 2.429em;
+        *height: 3.542em;
+        height: auto;
+        width: auto;
+    }    
+    div#feedback_result h1 {
+        font-size: 14px;    
+        color: #333;
+        margin: 10px 0 5px 0;
+    }
+    
+    .client-error-text {
+        color:#FF5050;
+        margin-bottom:2px;
+        margin-top:2px;
+    }
+    
+    div#priceFilterDash {
+        display: inline;
+        margin: 0px;
+        padding: 0 2px 0 2px;
+        font-size: 17px;
+    }
+    
+    div#priceFilterDash:hover {
+        color: #333;
+    }
+    
+    div#priceFilterViewButtonContainer {
+        padding-top: 10px;
+    }
+    
+    div#minMaxPriceContent:hover {
+        color: #333;
+    }
+    
+    div#priceFilterViewButtonContainer a {
+        padding: 0px;
+    }
+
+    
+    div#sendUserFeedbackButton {
+        margin: 0 0 17px 0;
+    }
+    
+    .contentWrapper {
+        border-bottom:1px solid #ccc;
+        padding-bottom:0.313em;
+        padding-top:0.417em;
+    }
+
+    .search-result-navigation .contentWrapper form {
+        padding:1.04em 0 1.04em 1.815em;
+    }
+    
+    #minPrice, #maxPrice {
+        width:50px;
+    }
+    
+/* Modified CSS for Search IRW page starts here */
+    div#searchlist div#results .searchattachmentExtContainer{
+        padding:0 0 0em;
+    }
+  
+    div#searchlist div#results .searchAttachmentContainer{
+        padding:0 0 0em;
+    }
+  
+    div#searchlist div#results .searchIRWAttachment{
+        font-size:14px;
+        line-height:1.7714em;
+        font-weight:normal !important;
+        color:#999;
+    }
+    
+    div#searchlist div#results a.searchAttachmentLink{
+        color: #3399fd !important;
+        text-decoration:none !important;
+        font-size:14px !important;
+        line-height:1.7714em;
+    }
+
+    div#searchlist div#results .searchDateLabel{
+        font-size:11px;
+        line-height:14px;
+        font-weight:normal;
+        color: #333;
+        padding-bottom:0.2em;
+    }
+  
+    div#searchlist div#results .searchIRWHeadline{
+        font-size:14px !important;
+        line-height:17px !important;
+        font-weight:normal !important;
+        color:#333 !important;
+        padding-bottom: 0.2em;
+    }
+ 
+    div#searchlist div#results .searchIRWPreamble{
+        font-size:11px;
+        line-height:14px;
+        font-weight:normal;
+        color:#333;
+        padding-bottom:0.3em;
+    }
+  
+    div#searchlist div#results .searchIRWReadmore{
+        font-size:11px !important;
+        line-height:14px !important;
+        font-weight:normal !important;
+        color:#3399fd;
+    }
+  
+    div#searchlist div#results .itemSearch {
+        width:680px;
+        padding:1em 0 0.5em 0;
+        margin:1.042em 0 0 0;
+        border-top:1px solid #ebe8d8 !important;
+    }
+
+    div#searchlist div#results .itemFirst {
+        width:680px;
+        padding:0 0 0.6em 0;
+        margin:0 0 1.042em 0;
+    }
+
+    div#searchlist div#results {
+        padding: 0em;
+        margin: 0 0 0 1.042em;
+    }
+    .paginationContainerFW10{
+        width:70.88em !important;
+    }
+/* Search IRW page ends here */
+    .rightContent {
+        float:left;
+        display:block;
+        width:71.6em;
+        margin:1.5em 0 0 1.042em; /* old 19.79em */
+        padding:0 0 0 ;
+        *padding: 0 0 2.083em 0;
+    }
+    
+/*===================================
+/    OTHER SERP STYLING BEGINS
+/==================================*/
+    
+    .ulContainer {
+        float:left;
+        width: 33.76em;
+        margin-top:0.417em;
+        margin-bottom:1.25em;
+        padding:0;
+        height:18.333em;
+    }
+    .ulContainerMargin {
+        margin-left:4.00em;
+    }
+    
+    .ulContainer span {
+        font-family:Verdana, Sans-serif;
+        font-size:14px;
+        margin:0 0 0.6em 0.571em;
+        display:block;
+        line-height:14px;
+    }
+    
+    .ulContainer span a {
+        display:block;
+        font-family:Verdana, Sans-Serif;
+        font-size:14px;
+        color: #333;
+        margin:0;
+        padding:0;
+        text-decoration:none;
+        *line-height: 15px;
+    }
+    
+    .ulContainer li a {
+        display: block;
+        *display: inline;
+    }
+    
+    .ulContainer a {
+        font-family: Verdana, Sans-Serif;
+        font-size: 11px;
+        color: #3399FD;
+        padding: 0 0.909em 0 0.909em;
+    }
+    
+    .ulContainer a:hover {
+        text-decoration: underline;
+    }
+    
+    .serpViewAll {
+        display:block;
+        margin:0.73em 0 0 0;
+    }
+    .SERPcategoryList {
+        margin:0;
+        padding:0;
+        *padding: 0 0 1.563em 0;
+        list-style-type: none;
+    }
+    .SERPcategoryList .listItem {
+        border-bottom: 1px solid #DDDDDD;
+        height: 25px;
+        line-height: 25px;
+        overflow: hidden;
+        width: 32em;
+    }
+    .SERPcategoryList .viewAll {
+        margin: 0.9em 0 0 0;
+    }
+/*===================================
+/    SERP TOOLTIP STYLING BEGINS
+/==================================*/
+/* Start new border-styling */    
+
+    .newTooltip {
+        *height:auto;
+        *width:325px;
+        *margin:0;
+        *background: url(../ms/img/popup_shadow.png) no-repeat top left;
+    }
+
+    .tooltip_title {
+        display:block;
+        text-align:left;
+        font-size: 14px;
+        color: #333;
+        padding:0.786em 0 0.357em 0.714em;
+        width: 21.786em;
+    }
+
+    .tooltip_text {
+        display:block;
+        text-align:left;
+        font-size:11px;
+        color:#333;
+        margin: 0 0 0 0.909em;
+        width:27.727em;
+    }
+
+    .tooltip_date {
+        display:block;
+        text-align:left;
+        font-size:9px;
+        color:#666;
+        margin:0;
+        width: 33.889em;
+        padding:1.111em 0 2.222em 1.111em;
+    }
+
+/*===================================
+/   SERP TOOLTIP STYLING ENDS
+/==================================*/
+
+/*===================================
+/   OTHER SERP CONTENT PAGE BEGINS
+/==================================*/
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    .serpBreadCrumb {
+        display:block;
+        font-family:Verdana, Sans-serif;
+        font-size:14px;
+        margin:0 0 1.429em 0;
+        padding:0;
+    }
+    
+    .serpBreadCrumb a:hover {
+        text-decoration: underline;
+    }
+    
+    .serpHeadline {
+        display:block;
+        font-family: Verdana, Sans-serif;
+        font-size:1.458em;
+        margin: 0 0 0.714em 0;
+        padding:0;
+    }
+    
+    .serpHeadline a:hover {
+        text-decoration: underline;
+    }
+    
+    .serpContentDate {
+        font-family: Verdana, Sans-serif;
+        font-size: 9px;
+        color:#666;
+    }
+    
+    .serpContent {
+        font-family: Verdana, Sans-serif;
+        font-size: 11px;
+        line-height: 14px;
+        color: #333;
+        margin: 0;
+    }
+        
+    .serpContentDivider {
+        display: block;
+        width:100%;
+        height:1px;
+        background-color:#DDD;
+        margin: 1.563em 0 1.042em;
+        padding:0;
+    }
+    
+    .rightContent .paginationContainer {
+        margin: 1.1em 1.1em 0 1.1em;
+        color:#999;
+        clear:both;
+        width:auto;
+        height:2.14em; /* 21px / 2.14em */
+    }
+
+/* PAGINATION STARTS */
+
+    .paginationContainerBottom {
+        margin-top:1.04em;
+    }
+
+    .paginationContainer .buttons {
+        overflow:hidden;
+        padding-left:1.04em;
+    }
+    .paginationContainer .buttonContainer {
+        padding-right:5px;
+        display:inline;
+    }
+
+    .rightContent .paginationContainer .pagination {
+        padding:0.43em 0 0 0; /* changed from 0.93em to 0 */
+        *padding: 0.43em 0 0.43em 0; /* for IE7 */
+        float:right;
+    }
+
+    .paginationContainer .pagination a {
+        font-size:1.15em;
+        border:1px solid #CCC;
+        color:#666;
+        padding:3px 4px;
+        -moz-border-radius: 3px;        /* mozilla rounded corners */
+        -webkit-border-radius: 3px;     /* safari rounded corners */
+    }
+
+    .paginationContainer .pagination a:hover {
+        border:1px solid #F60;
+        cursor:pointer;
+        text-decoration:none;
+    }
+
+    .paginationContainer .pagination a.active {
+        color:#FFF;
+        background-color:#F60;
+        border:1px solid #F60;
+        cursor:text;
+    }
+
+/* PAGINATION ENDS */    
+
+/*===================================
+/    OTHER SERP STYLING ENDS
+/==================================*/
+
+/*===================================
+/    NEW LEFT MENU STYLING BEGINS
+/==================================*/
+
+    .serpLeftMenu {
+        display:block;
+        float:left;
+        width:20.8em;
+        margin:2.5em 0 -10000px 0;
+        padding:0 0 10000px 0;
+        border-right: 1px solid #DDD;
+        overflow:visible;
+    }
+
+    .serpLeftMenu a:hover {
+        text-decoration: none;
+    }
+    
+    .headerLeftNavi {
+        font-family: Verdana, Sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        color: #333;
+        margin:0 0 0.6em 1.111em;
+        padding:0;
+    }
+    
+    .serpTabActive {
+        display:block;
+        width:20.8em;
+        background:#FFF;
+        margin:0.417em 0 0 0;
+        vertical-align:middle;
+        border-right:none;
+        border-left:1px solid #DDD;
+        border-bottom:1px solid #DDD;
+        border-top:1px solid #DDD;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        /* IE */
+        *width:20.9em;
+        *height:3.6em;
+        *margin: 0.417em 0 0 0;
+    }
+    
+    .serpTabActive a, .serpTabActive a:hover {
+        display:block;
+        width:17.273em;
+        height:1em;
+        *height:1.2em;
+        font-family: Verdana, Sans-serif;
+        font-weight: bold;
+        font-size: 11px;
+        line-height: 11px;
+        *line-height:;
+        color: #FF6600;
+        padding:0;
+        margin:0.909em 0 1em 0.909em;
+        text-decoration:none;
+        border:none;
+        background-color:#FFFFFF;
+    }
+
+     .serpTabActive a:link, .serpTabActive a:active, .serpTabActive a:visited {
+        color: #FF6600;
+    }
+
+    .serpTabInActive {
+        display:block;
+        width:17.3em;
+        height:3em;
+        margin:0.417em 0 0 0.909em;
+        background:url("../img/dimmed_tab.png") no-repeat;
+        font-family: Verdana;
+        font-size: 11px;
+        color: #888;
+        text-decoration:none;
+    }
+
+
+    .serpTabInActive a {
+        display:block;
+        width:16.4em;
+        height:1.208em;
+        font-family: Verdana, Sans-serif;
+        font-size: 11px;
+        font-weight:;
+        text-decoration:none;
+        color: #333;
+        padding:0.909em 0 0.909em 0.909em;
+        margin:0;
+    }
+
+    .serpTabInActive a:link, .serpTabInActive a:active, .serpTabInActive a:visited {
+        color: #333;
+    }
+
+    .serpTabInActive a:hover {
+        font-weight:;
+        color:#FF6600;
+    }
+
+    .serpTabZeroHits {
+        display:block;
+        width:16.4em;
+        height:1.208em;
+        font-family: Verdana, Sans-serif;
+        font-size: 11px;
+        font-weight:;
+        text-decoration:none;
+        color: #888;
+        padding:0.909em 0 0.909em 0.909em;
+        margin:0;
+        
+    }
+
+    .serpFilterHeadline {
+        display:block;
+        margin:1.364em 0 0 0.909em;
+        font-family:Verdana, Sans-serif;
+        font-weight:bold;
+        font-size:11px;
+        line-height:18px;
+    }
+
+    .serpFilterLnk a {
+        display:block;
+        margin:0 0 0.4em 1.818em;
+        font-family: Verdana, Sans-serif;
+        font-weight: normal;
+        font-size: 11px;
+        color: #333;
+    }
+
+    .serpFilterLnk a:hover {
+        color: #FF6600;
+    }
+
+    .serpFilterLnkActive {
+        *display: inline;
+        color: #FF6600;
+        font-size: 11px;
+        line-height: 18px;
+        font-family: Verdana, sans-serif;
+        font-weight: bold;
+        margin: 0 0 0 1.818em;
+    }
+    .serpFilterLnkActive a {
+        color: #FF6600;
+        margin:0;
+    }
+
+    div.serpFilterList {
+        display:block;
+        margin:0 0 0 2.1em;
+        *margin: 0.2em 0 0 2.2em;
+        font-family: Verdana, Sans-serif;
+    }
+/* Indent the subcategories in leftnav*/
+    #filter_subcategory #subCatSerp {
+        margin: 0 0 0 1.1em;
+    }
+
+    #filter_color.serpFilterList {
+        margin:0.4em 0 0 2.1em;
+    }
+
+    .serpFilterList li, .serpFilterList span, .serpRss li, .serpRss span {
+        font-size:11px;
+        height:auto;
+        width:auto;
+        color: #333;
+        list-style:none;
+        padding:0;
+        vertical-align:top;
+        clear:both;
+        line-height:;
+        *line-height:;
+        *padding:0.2em 0 0 0;
+    }
+
+    .serpFilterList a:hover span {
+        color: #FF6600;
+    }
+
+    .serpFilterList img, .serpRss img {
+        margin:0 0.364em 0.364em 0;
+        width:1.273em;
+        height:1.273em;
+    }
+
+    .expander-link-container .serpArrowImg {
+        float: left;
+        margin: 4px 5px 0 0;
+        padding: 0;
+        cursor: pointer;
+        height: 9px;
+        width: 9px;
+        *margin: -12px 5px 0px 0px;
+        *display: block;
+        *float: none:
+    }
+    .serpFilterList ul #subCatSerp {
+        margin: 0 0 0 5px;
+        display: block;
+    }
+    
+    #subCatSerp li a {
+        font-weight: normal;
+    }
+
+
+    .serpFilterListLnk {
+        font-family:Verdana, Sans-serif;
+        font-size:11px;
+        color:#3399FD;
+    }
+
+    .serpLine {
+        width:18.8em;
+        height:0.104em;
+        background-color:#DDD;
+        margin:1.042em 0 1.563em 1.042em;
+    }
+
+    .serpFilterForm {
+        width:18.8em;
+        margin:0.4em 0 0 2.1em;
+    }
+
+    .serpFilterForm #maxPrice, #minPrice {
+        width:5.25em;
+    }
+
+    #serpButtonContainer {
+        margin:1.042em 0 0.6em 0;
+    }
+    .serpMinPrice {
+        display: block;
+        margin:0;
+        font-family: Verdana, sans-serif;
+        font-size: 11px;
+    }
+
+    .serpMaxPrice {
+        display: block;
+        margin: -1.2em 0 0 8.5em;
+        font-family: Verdana, sans-serif;
+        font-size: 11px;
+    }
+
+    .serpFilterFormLnk {
+        margin: 0;
+        font-size:11px;
+        font-family:Verdana, Sans-serif;
+        color:#3399FD;
+        cursor: pointer;
+    }
+
+    .serpFilterFormLnk a {
+        display: block;
+        margin: 0.909em 0 0 1.818em;
+        cursor: pointer;
+    }
+
+    .serpCat, .serpRss {
+        display: block;
+        margin: 0.727em 0 0 1.818em;
+        font-family: Verdana, Sans-serif;
+    }
+
+    .serpCatHeadline, .serpRssHeadline {
+        display: block;
+        margin: 1.364em 0 0 0.909em;
+        font-family: Verdana, Sans-serif;
+        font-weight: bold;
+        font-size: 11px;
+    }
+
+    .serpCat li, .serpCat span {
+        font-size: 11px;
+        height: auto;
+        width: auto;
+        color: #333;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        vertical-align: top;
+    }
+
+    .serpCatLnk a, .serpRssLnk a {
+        display: block;
+        margin: 0.909em 0 0 1.6em;
+        font-family: Verdana, Sans-serif;
+        font-weight: bold;
+        font-size: 11px;
+        color: #FF6600;
+    }
+
+    .serpCatListLnk, .serpRssListLnk {
+        display:block;
+        margin:0.909em 0 0 0;
+        font-family: Verdana, Sans-serif;
+        font-size: 11px;
+    }
+
+    .serpRssIcon {
+        background:url("../img/rss.gif") no-repeat;
+    }
+
+    .serpRssX {
+        /*display:block;*/
+        margin:-25px 0 4px 18px;
+        *margin: 0px 0px 0px -20px;
+    }
+    span.serpRssX {
+        margin: 0;
+        *margin: 0px 0px 0px -20px;
+    }
+
+/* COLOR FILTERING FOR LEFT MENU */
+    .serpFilterList ul {
+        list-style-type:none;
+        margin:0;
+        padding:0;
+    }
+    .serpFilterList .colorRow {
+        margin-bottom:4px;
+        padding:0;
+        margin-top:0;
+        height:14px;
+    }
+    .serpFilterList span {
+        clear:none;
+        *margin: 0;
+        line-height:;
+    }
+    .serpFilterList .color {
+        display:block;
+        float:left;
+        display:inline;
+        clear:none;
+        margin-left:1px;
+        /* CSS3  */
+        width:14px;
+        height:14px;
+        margin-right:0.364em;
+        *margin: 0 0.2em 0 0;
+        *padding:0;
+        background:url(/ms/img/filter/color_transp.png) no-repeat;
+    }
+
+    .serpFilterList .multicolor {
+        display:block;
+        background:url(../img/filter/multicolor.gif) no-repeat;
+        background-position: -5px -4px;
+        clear: none;
+        display: inline;
+        height: 16px;
+        margin-left: 1px;
+        padding-right: 15px;
+        width: 16px;
+        *padding:0 10px 0 0;
+        *margin:0 0.4em 0 0;
+    }
+
+    /* used by IE to change the bg on mouseover (by filterColorBg()) */
+    .serpFilterList .colorHover {
+        *background:#FFF url(../img/filter/color_menu_transp_hover.png) no-repeat scroll 0 0;
+    }
+
+    .serpFilterList .colorRow span {
+        line-height: 11px;
+        *line-height:;
+    }
+
+    #filter_color.serpFilterList li.serpFilterListActive span {
+        margin:0 0 0.364em 0;
+    }
+
+    #filter_color.serpFilterList li.serpFilterListActive span.color {
+        margin: 0 0.364em 0.364em 0.091em;
+        *margin: 0 0.1em 0.364em 0;
+    }
+
+    div.serpFilterList .serpFilterListActive {
+        color: #FF6600;
+        font-weight: bold;
+    }
+
+    div.serpFilterList .serpFilterListActive span {
+        color: #FF6600;
+        font-weight: bold;
+    }    
+
+    *div.serpFilterList .serpFilterListActive a:active {
+        color: #FF6600;
+        font-weight: bold;
+    }
+
+    *div.serpFilterList .serpFilterListActive ul li a {
+        font-weight: normal;
+    }
+
+    div.serpFilterList li a {
+        color:#333;
+        line-height: 14px;
+    }
+
+    div.serpFilterList li a:hover {
+        color:#FF6600;
+    }
+
+    div.serpFilterList li a.expander-link  {
+        font-size:11px;
+        font-family:Verdana, Sans-serif;
+        color:#3399FD;
+    }
+
+    .expander-link-container {
+        margin:0.1em 0 0 0;
+    }
+
+    span.serpRssX {
+        display: inline;
+        margin: 0;
+        *margin: 0 0 0 -20px;
+    }
+
+    .serpFilterList img {
+        *margin: 0 0.364em 0.364em 0;
+        *float: left;
+    }
+
+/*===================================
+/    NEW LEFT MENU STYLING ENDS
+/==================================*/
+
+/*=====================================
+/ IKEA00699334 Inspiration page start
+/======================================*/
+
+    .search-result-ideas {
+        float:left;
+        width:71.8em;
+        border-bottom: 1px solid #DDD;
+        margin: 0 0 1.042em;
+        padding: 0 0 1.042em;
+        *padding-bottom: 1.4em;
+        *cursor: pointer;
+    }
+
+    .search-result-ideas table a:hover {
+        *text-decoration: none;
+        *cursor: pointer;
+    }
+
+    .search-result-ideas a:hover {
+        text-decoration: none;
+    }
+
+
+    .search-result-ideas p, .search-result-ideas a {
+        font-size: 14px;
+        font-family: Verdana, Sans-serif;
+        color: #3399FD;
+        margin: 0.571em 0 0.714em 0;
+        padding: 0;
+        width: 40.429em;
+        *width:40em;
+        *cursor: pointer;
+    }
+
+    .search-result-ideas-ruler {
+        width:100%;
+        border-bottom: 1px solid #DDD;
+    }
+
+    .search-result-ideas p:hover {
+        text-decoration:underline;
+    }
+
+    .search-result-ideas img {
+        float:right;
+        margin:1.042em 0 1.042em 2em;
+        padding:0;
+        clear:left;
+    }
+
+    .search-result-ideas-date {
+        font-family: Verdana;
+        font-size: 9px;
+        color: #666;
+        float: left;
+        margin: 0.2em 0.3em 0 0;
+    }
+
+    .search-result-ideas-text, .search-result-ideas-text span:hover {
+        font-family: Verdana;
+        font-size: 11px;
+        line-height: 1.273em;
+        color: #333;
+        width:100%;
+        text-decoration: none;
+        margin: 0 0 1.4em 0;
+        display: block;
+        *display: inherit;
+        *cursor: pointer;
+    }
+
+    .search-result-ideas-text span:hover {
+        *text-decoration: none;
+    }
+
+/*=====================================
+/ IKEA00699334 Inspiration page ends
+/======================================*/
+
+/*===================================
+    FIX FOR PRODUCTLISTING IN 690PX
+===================================*/
+
+    .filterContainer {
+        margin:1em 0 1em 0;
+        width: 71.6em;
+    }
+
+    .rightContent #productsTable {
+        border-collapse: collapse;
+        display: table;
+        margin-left: 0;
+        table-layout: fixed;
+        width: 71.6em;
+}
+
+    .rightContent .paginationContainer .buttons {
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+}
+
+/*=====================================
+/ Give Chrome and Safari a working shot
+/======================================*/
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+    .rightContent {
+        float: left;
+        display: block;
+        width: 71.6em;
+        margin: 1.6em 0 0 1.042em;
+    }
+
+    .rightContent a:hover {
+        text-decoration: none;
+    }
+
+    div#feedback {
+        width: 71.5em;
+        margin: 1.1em 0 0 0;
+    }
+
+    div#feedback div.feedExp{
+        width: 71.5em;
+    }
+
+    .ulContainer {
+        width: 33.8em;
+        margin-top: 1.1em;
+    }
+
+    .ulContainer a, .ulContainerR a {
+        margin-top:0;
+    }
+
+    .ulContainerR {
+        width: 33.9em;
+        margin-left: 4.2em;
+        margin-top: 1.1em;
+    }
+
+    .headerLeftNavi {
+        margin-bottom:1.16em;
+    }
+
+    .SERPcategoryList .listItem {
+        border-bottom: 1px solid #DDDDDD;
+        height: 25px;
+        line-height: 25px;
+        overflow: hidden;
+        width: 32em;
+    }
+
+    .serpLeftMenu {
+        display: block;
+        float: left;
+        width: 21.8em;
+        margin: 2.7em 0 -10000px -1em;
+        padding: 0 0 10000px 0;
+        border-right: 1px solid #DDD;
+        overflow:visible;
+    }
+
+    .serpLine {
+        margin: 1.042em 0 1.563em 2.084em;
+    }
+
+    .serpTabActive {
+        display: block;
+        width: 20.9em;
+        height: 3.5em;
+        background: white;
+        margin: 0.4em 0 0 1em;
+        vertical-align: middle;
+        border-right: none;
+        border-left: 1px solid #DDD;
+        border-bottom: 1px solid #DDD;
+        border-top: 1px solid #DDD;
+    }
+
+    .serpTabActive a:hover {
+        width:19em;
+        border:none;
+    }
+
+    .serpTabActive a {
+        width:17.5em;
+        font-weight: bold;
+    }
+    .serpTabInActive {
+        display: block;
+        width: 17.2em;
+        height: 3em;
+        margin: 0.417em 0 0 1.818em;
+        background: url("../img/dimmed_tab.png") no-repeat;
+        font-family: Verdana;
+        font-size: 11px;
+        color: #888;
+        text-decoration: none;
+    }
+    .serpTabInActive a {
+        width:16.4em;
+        margin:0;
+        font-weight: normal;
+    }
+
+    .serpFilterHeadline {
+        margin: 1.364em 0 0 1.818em;
+    }
+    .serpFilterLnk a {
+        margin: 0.909em 0 0 2.8em;
+        color: #333;
+        font-weight: normal;
+    }
+
+    .serpFilterLnk a:hover {
+        margin: 0.909em 0 0 2.8em;
+        color: #FF6600;
+        font-weight: normal;
+    }
+
+    .serpFilterLnkActive span {
+        display: block;
+        color: #FF6600;
+        font-size: 11px;
+        font-family: Verdana, sans-serif;
+        font-weight: bold;
+        margin:0 0 0 2.8em;
+    }
+
+    div.serpFilterList {
+        margin: 0.2em 0 0 3.2em;
+    }
+
+    .serpLine {
+        width: 18.8em;
+    }
+
+    .serpFilterForm {
+        margin: 1.364em 0 0 3.2em;
+    }
+
+    .serpFilterListActive {
+        color: #FF6600;
+        font-size: 11px;
+        font-family: Verdana, sans-serif;
+        font-weight: bold;
+    }
+
+    .serpNoHitsWrapper {
+        width: 71.7em;
+        margin: 2.5em 0 2em 0;
+        padding: 0 0 1.818em 0;
+        border-bottom: 1px solid #DDD;
+        font-family: Verdana, sans-serif;
+        font-size: 11px;
+        line-height: 14px;
+        color: #333;
+    }
+
+
+    .filterContainer {
+        width: 71.5em;
+    }
+
+    .rightContent #productsTable {
+        border-collapse: collapse;
+        display: table;
+        margin-left: 0;
+        table-layout: fixed;
+        width: 71.8em;
+    }
+
+    .rightContent .paginationContainer {
+        width:auto;
+    }
+
+    .search-result-ideas a:hover {
+        text-decoration: none;
+    }
+
+    .serpFilterFormLnk a {
+        display: block;
+        margin: 0.909em 0 0 2.818em;
+        cursor: pointer;
+    }
+
+    #filter_color.serpFilterList {
+        margin: 0.4em 0 0 3.2em;
+    }
+}
+
+/*=====================================
+/ End to giving Chrome a working shot
+/======================================*/
+
+
+/*===================================
+    ZERO HITS STYLE BEGINS
+===================================*/
+
+    .serpNoHitsWrapper {
+        width: 62.727em;
+        margin: 0.909em 0 1.818em 0;
+        padding: 0 0 1.818em 0;
+        border-bottom: 1px solid #DDD;
+        font-family: Verdana, sans-serif;
+        font-size: 11px;
+        line-height: 14px;
+        color: #333;
+    }
+
+    .serpNoHitsWrapper a {
+        font-family: Verdana;
+        font-size: 11px;
+        color: #3399FD;
+    }
+
+    .serpMatches {
+        font-family: Verdana, Sans-serif;
+        font-size: 11px;
+        line-height: 1.273em;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    .serpNoHitsWrapper p {
+        font-family: Verdana, Sans-serif;
+        font-size: 11px;
+        line-height: 1.273em;
+        color: #333;
+        padding: 0 0 1.636em 0;
+        margin:0.909em 0 0 0;
+    }
+
+    .serpNoHitsWrapper ul {
+        font-family:Verdana, Sans-serif;
+        font-size: 11px;
+        line-height: 1.273em;
+        color: #333;
+        padding: 0 0 1.636em 0;
+        margin:0 0 0 1.1em;
+        *margin:0 0 0 1.4em;
+        list-style-type: disc;
+    }
+
+/*===================================
+    ZERO HITS STYLE ENDS
+===================================*/
+/*===================================
+    PRODUCT VIEW STYLE STARTS
+===================================*/
+
+    .serpSearchString {
+        display: block;
+        width: 60.909em;
+        font-family: Verdana, Sans-serif;
+        font-size: 1.146em;
+        line-height: 1.636em;
+        color: #333;
+        margin: 0.909em 0 0.909em 0.909em;
+    }
+    .serpSearchTerm {
+        display: block;
+        width: 60.909em;
+        font-family: Verdana, Sans-serif;
+        font-size: 1.146em;
+        line-height: 1.636em;
+        color: #333;
+        margin: 0.909em 0 0.909em 0.909em;
+    }
+
+    .serpSearchSeries {
+        display: block;
+        width: 60.909em;
+        font-family: Verdana, Sans-serif;
+        font-size: 1.146em;
+        line-height: 1.636em;
+        color: #333;
+        margin: 0.909em 0 0.909em 0.909em;
+    }
+
+    .serpSearchSeries a {
+        display: inline;
+        font-family: Verdana, Sans-serif;
+        font-size: 1em;
+        color: #3399FD;
+    }
+
+    .plannerSearchPage {
+    padding-top: 3px;
+    }
+
+/*===================================
+    PRODUCT VIEW STYLE ENDS
+===================================*/
+
+/*
+    NEW SEARCH PAGE ENDS
+*/
+
+    // FW11 - Update
+    //Styles for showing products has been removed as part  of FW11 - part2 , to use the same style as of category
+ 
+
