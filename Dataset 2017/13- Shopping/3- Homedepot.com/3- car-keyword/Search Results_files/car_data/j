@@ -1,0 +1,2 @@
+var SSKY=function(){var b=function(){};return{fire:function(c,d){var a=new Image(1,1);a.onload=function(){a.onload=null;(d||b)()};a.src=c}}}();
+SSKY.fire('http://geo-um.btrll.com/v1/map/9dccb79465ae31e9/d4.dc1c1f209e95497b8018fc53125539c3/');
