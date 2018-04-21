@@ -1,0 +1,1 @@
+var SSKY=function(){var b=function(){};return{fire:function(c,d){var a=new Image(1,1);a.onload=function(){a.onload=null;(d||b)()};a.src=c}}}();
