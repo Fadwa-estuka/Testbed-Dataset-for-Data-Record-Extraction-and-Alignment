@@ -1,0 +1,3 @@
+var SSKY=function(){var b=function(){};return{fire:function(c,d){var a=new Image(1,1);a.onload=function(){a.onload=null;(d||b)()};a.src=c}}}();
+SSKY.fire('http://cm.g.doubleclick.net/pixel?google_nid=sundaysky&cb=150397254&v=1.0.0&google_cm&google_sc&google_hm=WkRUY0hCOGducFZKZTRBWS9GTVNWVG5E');
+SSKY.fire('http://sync.adaptv.advertising.com/sync?type=gif&key=sundaysky&uid=d4.dc1c1f209e95497b8018fc53125539c3&dcord=2053079094');
