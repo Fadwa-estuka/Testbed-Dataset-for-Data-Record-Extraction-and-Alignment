@@ -1,0 +1,229 @@
+/* ****************added on 6/10/2016 for WSC Feature */
+.wsc-feature {
+    margin-right: 20px;
+    padding: 0px 0px 15px 0px;
+    color: #707070;
+    font-size: 12px;
+    width:220px;
+    background-color: #f2f2f2;
+    border:1px solid #d0cece;
+}
+.wsc-row {
+    background-color: #fff;
+    padding: 10px 10px 5px 10px;
+    margin:0px;
+}
+.wsc-feature h3 {
+    font-family: 'Open Sans';
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400; line-height:20px;
+    background-color: #00a3b2; border-top: 4px solid #075b81;
+    padding:10px 10px 10px 10px;
+    margin:0px;
+}
+.wsc-feature h3 b {
+    font-weight: 700; 
+}
+.wsc-gray
+{ color:#484848}
+.wsc-white
+{ color:#fff}
+.wsc-small-btn {
+    background-color: #00a3b2;
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    font: 9px/100% "Lato",sans-serif;
+    padding: 6px 4px 6px 4px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 1s ease 0s;
+	margin:15px 0px 0px 4px;
+}
+/* ****************added on 4/6 */
+
+div.column#third-col{ 
+    float: right;
+    margin-right: 5px !important;
+    _margin-right: 0 !important;
+    padding-right: 0;
+    }
+
+div.greybox ul.wide{
+    font-size: 12px;
+    padding-top: 8px;
+}    
+div.greybox ul.wide li {
+    margin: 0;
+    padding-bottom:6px;
+    padding-right:5px;
+}
+
+.product-grouped .product-bcs { margin-left: 95px; }
+
+.product-grouped .product-bcs .product-bcs { margin-left: 0; }
+
+.expanding-box .accordion-content .product-bcs { margin-bottom: 10px; margin-left: -8px !important; }
+
+.accordion-content { z-index: 10; }
+
+.accordion-content .productDetail-btb ul {
+    width: 150px !important;
+}
+
+ul.orangedot{ float: none; }
+#press a:link { text-decoration: none; }
+.press-release_publicity-contacts { margin-left: 10px; margin-bottom: 10px; }
+
+/* Mobile Apps page */
+
+    
+.mobile-apps .mobile-splash{
+    display: block;
+    margin: 0 0 15px 0;
+    }   
+    
+.mobile-apps .panel {
+    position: relative;
+    float: left;
+    width: 175px;
+    height: 243px;
+    margin: 0 0 10px 14px;
+    padding: 7px 0 0 0;
+    border: 1px solid #ccc;
+    background: url(http://media.wiley.com/assets/2220/22/apps-bg.gif) repeat-x top left;
+    }
+
+.mobile-apps .panel h2{
+    font-size: 17px;
+        font-weight: normal;
+    margin: 0 5px 5px 5px;
+    }
+    
+.mobile-apps .panel h3{
+    color: #367ec0;
+    font-size: 12px;
+    margin: 0 0 5px;
+    }   
+
+.mobile-apps .panel img {
+        display: block;
+        margin: 0 0 5px 7px;
+}
+    
+.mobile-apps .panel-content{
+    color: #666;
+    margin: 0 5px;
+    min-height: 80px;
+    }
+
+.mobile-apps .panel-content p { font-size: 11px; margin: 0; }     
+.mobile-apps .panel-link {
+    font-size: 11px;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}  
+.mobile-apps .panel-link a:link,
+.mobile-apps .panel-link a:visited,
+.mobile-apps .panel-link a:hover{
+    color: #D36227 !important;
+    font-weight: bold;
+    text-decoration: underline;
+    }   
+.mobile-apps .panel-link a:hover{ text-decoration: none; }
+
+.retailer-text .accordion-content {
+    width: 341px;
+}
+
+.accordion-content .productDetail-btb ul { width: 100%; }
+.productDetail-btb ul { min-height: 50px;}
+
+/* Ingram Error Pages */
+div.content-copy { margin-bottom: 20px; }
+.button-help {
+    border: 1px solid #36571c;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-image: -moz-linear-gradient(top, #7fa75a, #264c0e);
+    background-image: -webkit-gradient(linear,left top,left bottom, color-stop(0,#7fa75a), color-stop(1,#264c0e));
+    background-color: #4d762f;
+	color: #ffffff !important;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.subjectsbox {
+    margin-bottom: 15px;
+    margin-left: 0;
+    margin-right: 20px;
+    margin-top: 0;
+}
+
+div.feature.feature-social { float: right; font-size: 11px; margin: 0 -6px 0 0; }
+div.feature.feature-social ul { list-style-type: none; padding: 0; margin: 0; font-size: 11px; }
+div.feature.feature-social ul li { float: left; margin-left: 5px; color: #888888; }
+.feature .inline-list li {
+	display: inline;
+	margin-right: 5px;
+}
+
+/* 11/30/12 */
+.publicity-contact-header { border-left: 0; padding: 0; }
+.publicity-contact-header div { padding: 5px; border-left: 7px solid #4D8F91; }
+.list-space li { margin-bottom: 16px; }
+#main-content p img.left { margin: 0 10px 10px 0; } 
+#main-content p img.right { margin: 0 0 10px 10px; } 
+
+.press-release_utilities_corp { display: none; }
+
+/* 12/11/12 */
+.press-release_results .press-release_title{ font-size: 14px; margin: 0; }
+#container-featured-news .press-release_details img { width: 60px; float: left; }
+
+
+.product-main .productDetail-purchase, 
+.product-main .productDetail-purchaseNote, 
+.product-main .productDetail-purchaseHow {
+	margin-left: 235px;
+}
+
+.productDetail-btb a.BOOKDEPO { font-size: 0.9em; }
+
+/* BACK TO TOP SCROLLER */
+#back-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+#back-top a {
+    width: 108px;
+    display: block;
+    text-align: center;
+    font: 11px/100% Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #656565;
+
+    /* transition */
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+
+    background-color: #f1f1f1;
+    padding: 10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+#back-top a:hover {
+    background-color: #f1f1f1;
+    color: #444444;
+}
+
+.footer__copyright { font-size: 11px; }
