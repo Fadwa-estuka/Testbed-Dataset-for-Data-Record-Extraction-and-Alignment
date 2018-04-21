@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <script>
+      var trustedDomains = [
+
+        /* No subdomain allowed */
+
+        /^http(s)?:\/\/10.0.2.2(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/121.199.160.54(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/ecn\.rootcom\.jp(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/linedev\.rootcom\.jp(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/localhost(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/rt\.rzm\.io(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/nikeelite\.com(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/yunjifen1.ews.m.jaeapp\.com(:[0-9]+)?[\/]?$/,
+
+        /* Optional subdomains */
+
+        /^http(s)?:\/\/([^\/]*\.)?air-jordan\.com(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/([^\/]*\.)?akqa\.net(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/([^\/]*\.)?akqatest\.cn(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/([^\/]*\.)?amazonaws\.com(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/([^\/]*\.)?amvb2016\.com(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/([^\/]*\.)?converse\.com(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/([^\/]*\.)?eventfarm\.com(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/([^\/]*\.)?facebook\.com(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/([^\/]*\.)?frees0lo\.net(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/([^\/]*\.)?hurley\.com(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/([^\/]*\.)?jordan\.com(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/([^\/]*\.)?jordan30paris\.com(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/([^\/]*\.)?kitchen-digital\.com(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/([^\/]*\.)?nike\.com(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/([^\/]*\.)?nike\.com\.cn(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/([^\/]*\.)?nike\.com\.hk(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/([^\/]*\.)?nike\.com\.tw(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/([^\/]*\.)?nike\.jp(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/([^\/]*\.)?nike\.net(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/([^\/]*\.)?nikeapp\.com(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/([^\/]*\.)?nikecdn\.com(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/([^\/]*\.)?nikecloud\.com(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/([^\/]*\.)?nikecloud\.net(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/([^\/]*\.)?nikedev\.com(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/([^\/]*\.)?nikeelite\.com(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/([^\/]*\.)?nikelab\.com(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/([^\/]*\.)?nikenyclockers\.com(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/([^\/]*\.)?niketaiwanevents\.com(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/([^\/]*\.)?nikewomen2016\.com\.hk(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/([^\/]*\.)?nikewomen2016\.hk(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/([^\/]*\.)?nikewomens-seoul\.com(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/([^\/]*\.)?palaisofspeed\.com(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/([^\/]*\.)?quncrm\.com(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/([^\/]*\.)?rallyup\.com(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/([^\/]*\.)?rgadev\.com(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/([^\/]*\.)?sonicboom\.com\.cn(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/([^\/]*\.)?swoosh\.com(:[0-9]+)?[\/]?$/,
+        /^http(s)?:\/\/([^\/]*\.)?whatsmyid\.thisissecure\.net(:[0-9]+)?[\/]?$/
+
+      ];
+
+      function isTrustedDomain(domain){
+        for (var i = 0; i < trustedDomains.length; i++){
+          if (domain.match(trustedDomains[i])){
+            return true;
+          }
+        }
+
+        return false;
+      }
+
+      function receiveMessage(event){
+        if (!isTrustedDomain(event.origin)){
+          return;
+        }
+
+        var data = JSON.parse(event.data);
+
+        switch(data.type){
+          case 'clear':
+            window.localStorage.clear();
+            window.sessionStorage.clear();
+            break;
+          case 'get':
+            data.value = window.localStorage.getItem(data.key);
+            break;
+          case 'getSession':
+            data.value =  window.sessionStorage.getItem(data.key);
+            break;
+          case 'remove':
+            window.localStorage.removeItem(data.key);
+            break;
+          case 'removeSession':
+            window.sessionStorage.removeItem(data.key);
+            break;
+          case 'search':
+            var regExp = new RegExp(data.key);
+            var queryResult = { };
+
+            for(var i = 0; i < localStorage.length; i++) {
+              var key = window.localStorage.key(i);
+              if(regExp.test(key)){
+                queryResult[key] = localStorage.getItem(key);
+              }
+            }
+
+            data.value = queryResult;
+            break;
+          case 'set':
+            window.localStorage.setItem(data.key, data.value);
+            break;
+          case 'setSession':
+            window.sessionStorage.setItem(data.key, data.value);
+            break;
+        }
+
+        window.parent.postMessage(JSON.stringify(data), event.origin);
+      }
+
+      window.addEventListener('message', receiveMessage, false);
+    </script>
+
+  </head>
+
+  <body>
+  
+
+</body></html>
