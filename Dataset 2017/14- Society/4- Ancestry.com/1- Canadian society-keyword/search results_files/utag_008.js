@@ -1,0 +1,42 @@
+//tealium universal tag - utag.194 ut4.0.201504061718, Copyright 2015 Tealium.com Inc. All Rights Reserved.
+try{(function(id,loader){var u={};utag.o[loader].sender[id]=u;if(utag===undefined){utag={};}if(utag.ut===undefined){utag.ut={};}if(utag.ut.loader===undefined){u.loader=function(o){var a,b,c,l;a=document;if(o.type==="iframe"){b=a.createElement("iframe");b.setAttribute("height","1");b.setAttribute("width","1");b.setAttribute("style","display:none");b.setAttribute("src",o.src);}else if(o.type==="img"){utag.DB("Attach img: "+o.src);b=new Image();b.src=o.src;return;}else{b=a.createElement("script");b.language="javascript";b.type="text/javascript";b.async=1;b.charset="utf-8";b.src=o.src;}if(o.id){b.id=o.id;}if(typeof o.cb==="function"){if(b.addEventListener){b.addEventListener("load",function(){o.cb();},false);}else{b.onreadystatechange=function(){if(this.readyState==="complete"||this.readyState==="loaded"){this.onreadystatechange=null;o.cb();}};}}l=o.loc||"head";c=a.getElementsByTagName(l)[0];if(c){utag.DB("Attach to "+l+": "+o.src);if(l==="script"){c.parentNode.insertBefore(b,c);}else{c.appendChild(b);}}};}else{u.loader=utag.ut.loader;}
+u.ev={'view':1};u.initialized=false;u.map={};u.extend=[];u.send=function(a,b){if(u.ev[a]||u.ev.all!==undefined){var c,d,e,f,i;u.data={};for(d in utag.loader.GV(u.map)){if(b[d]!==undefined&&b[d]!==""){e=u.map[d].split(",");for(f=0;f<e.length;f++){u.data[e[f]]=b[d];}}}
+}};utag.o[loader].loader.LOAD(id);})("194","ancestry.canada");}catch(error){utag.DB(error);}
+geo_serviceIntegration=true;geo_cookieExpiration=30;var Geo_CookieUtil=function(){scope=this;scope.setCookie=function(name,value,days){var expires=";expires=Sat, 01 Jan 2050 00:00:01 GMT";if(days!==false){var date=new Date();date.setTime(date.getTime()+(days*24*60*60*1000));expires=";expires="+date.toUTCString();}
+document.cookie=name+'='+value+expires+';path=/;domain='+window.location.hostname.replace(/.+?\./,'');}
+scope.getCookie=function(name){var c=document.cookie.split(';');for(var i=0;i<c.length;i++){if(c[i].indexOf(name+"=")!=-1){return c[i].substring(c[i].indexOf(name+"=")+(name+"=").length);}}
+return null;}
+scope.getGeoCookieName=function(suffix){return'geoPreference.'+suffix;}
+return scope;};var Geo_UrlHelper=function(){scope=this;getBaseUrl=function(){var h=window.location.host;var isDev=h.indexOf('ancestrydev.');var isStage=h.indexOf('ancestrystage.');var baseUrl="//mitsvc.ancestry";var u=window.location.protocol.replace('file:','http:')+baseUrl+(isDev!==-1?'dev':(isStage!==-1?'stage':''))+'.'+getDomainSuffix(h);if(urlParam('port')){u+=":"+urlParam('port')}
+return u;}
+scope.getLoggerUrl=function(){return getBaseUrl()+'/mit/api/log/businessEvent';}
+scope.getGeoServiceUrl=function(){var u=getBaseUrl()+'/mit/api/geo/rd?sourceUrl='+encodeURIComponent(window.location.href);if(urlParam('lcid')){u+="&lcid="+urlParam('lcid')}
+if(urlParam('geo_tc')){u+="&tc="+urlParam('geo_tc')}
+return u;}
+scope.chopUrl=function(url){var elems=url.split('/');return elems.slice(0,3).join('/');}
+scope.getDomainSuffix=function(url){var host=url.replace('http://','').replace('https://','').split(':')[0];var elems=host.split('.');return elems.slice(2).join('.');}
+scope.urlParam=function(name,url){url=url||"";var regex=new RegExp("[\\?&]"+name+"=([^&#]*)");var querystring=url?url.substring(url.indexOf('?')+1):location.search;results=regex.exec(querystring);return results===null?"":decodeURIComponent(results[1].replace(/\+/g," "));}
+scope.appendQueryStringParam=function(url,key,value){var returnUrl=url;if(url.indexOf('?')>-1){returnUrl+='&';}else{returnUrl+='?';}
+return returnUrl+key+'='+value;}
+return scope;}
+var Geo_TrackUtil=function(){scope=this;scope.trackPage=function(pageName){if(utag!==undefined){utag.view({page_name:pageName});}}
+scope.trackClick=function(clickName){if(utag!==undefined){utag.link({action:clickName});}}
+scope.getGeoCookieName=function(suffix){return'geoPreference.'+suffix;}
+return scope;};var Geo_Logger=function(){scope=this;var urlHelper=Geo_UrlHelper();scope.businessEvent=function(event,properties){var eventName="FrontEnd.GeoRedirect.Overlay."+event;properties.url=encodeURIComponent(window.location.href);$.ajax({type:"GET",url:urlHelper.getLoggerUrl(),data:{eventName:eventName,properties:JSON.stringify(properties)},dataType:"jsonp"});}
+return scope;}
+$(function(){function createOverlay(options){options=$.extend({'pageName':false,'resources':['x/css/v3/modal.css','x/js/v3/modal.js']},options);var h=window.location.host;function loadResources(o){var h=window.location.host,u=window.location.protocol.replace('file:','http:')+'//canary.mfcreative'+(h.indexOf('ancestrydev.')!==-1?'dev':(h.indexOf('ancestrystage.')!==-1?'stage':''))+'.com/lib/tgn/';function r(){ResourceManager.addResources(u+'combo.ashx',o.resources,function(){setTimeout(function(){o.callback(o);},100);});}
+(typeof ResourceManager==='undefined'?$.getScript(u+'util/resourcemanager.js',r):r());}
+loadResources(options);}
+var sameGeo='-';function callGeoService(){var urlHelper=Geo_UrlHelper();$.ajax({type:"GET",dataType:"jsonp",url:urlHelper.getGeoServiceUrl()+"&callback=?",success:function(data){var cookieUtil=Geo_CookieUtil();var trackHelper=Geo_TrackUtil();var logger=Geo_Logger();if(data.html){createOverlay({'resources':['x/css/v1/main.css','x/css/v1/icon.css','x/css/v1/button.css','x/css/v3/modal.css','x/js/v3/modal.js'],'callback':function(settings){var myHtml=data.html;$(myHtml)
+.removeClass('noDisplay')
+.modal({'width':900,'isMarketing':true,'hideCloseBtn':true,'closeOnBkgClick':false,'onOpen':function(){function setGeoCookie(baseRedirectUrl){var geoCookieName=cookieUtil.getGeoCookieName(urlHelper.getDomainSuffix(window.location.hostname));cookieUtil.setCookie(geoCookieName,baseRedirectUrl,geo_cookieExpiration);}
+var overlayTimeout=15000;if(urlHelper.urlParam('geo_to')){overlayTimeout=parseInt(urlHelper.urlParam('geo_to'));}
+var timeoutId=setTimeout(function(){setGeoCookie(data.basePhysicalRedirectUrl);window.location=data.timeoutRedirectUrl;},overlayTimeout);$('#redirectPhysical').one('click',function(){window.clearTimeout(timeoutId);setGeoCookie(data.basePhysicalRedirectUrl);});$('#redirectRequested').one('click',function(){window.clearTimeout(timeoutId);setGeoCookie(data.baseRequestedRedirectUrl);});trackHelper.trackPage("ancestry "+data.requestedLocaleMarketingCode+" : mit : geo redirect : overlay");if(parseInt(urlHelper.urlParam('geo_v',data.requestedRedirectUrl))>1){var properties={physicalLocale:data.physicalLocaleMarketingCode,requestedLocale:data.requestedLocaleMarketingCode,contentLocale:data.contentLocale}
+logger.businessEvent('View',properties)}},onClose:function(){}});}});}
+else if(data.physicalLocale==data.requestedLocale){var geoCookieName=cookieUtil.getGeoCookieName(urlHelper.getDomainSuffix(window.location.hostname));cookieUtil.setCookie(geoCookieName,sameGeo,geo_cookieExpiration);}}});}
+var urlHelper=Geo_UrlHelper();var cookieUtil=Geo_CookieUtil();var logger=Geo_Logger();var geoCancel=cookieUtil.getCookie('geoCancel');if(!geoCancel){if(urlHelper.urlParam('geo_a')){if(urlHelper.urlParam('geo_a')=='c'){cookieUtil.setCookie('geoCancel',true,365);}
+else{var isTimeout;var eventName="geo redirect";if(urlHelper.urlParam('geo_a')=='t'){eventName+=" timeout";isTimeout=true;}
+if(urlHelper.urlParam('geo_s')&&urlHelper.urlParam('geo_t')){var source=urlHelper.urlParam('geo_s');var target=urlHelper.urlParam('geo_t');var pageClickName='ancestry '+source+' : mit : '+eventName+' : '+target;var trackUtil=Geo_TrackUtil();trackUtil.trackClick(pageClickName);if(parseInt(urlHelper.urlParam('geo_v'))>1){var event=isTimeout?'Timeout':((source===target)?"OptOutClick":"OptInClick");var properties={}
+properties.source=source;properties.target=target;logger.businessEvent(event,properties);}}}}
+else if(urlHelper.urlParam('o_sch')!='Affiliate External'){var domainSuffix=urlHelper.getDomainSuffix(window.location.hostname).toLowerCase();var geoCookieName=cookieUtil.getGeoCookieName(domainSuffix);var geoCookie=cookieUtil.getCookie(geoCookieName);if(geoCookie){if(geoCookie!=sameGeo&&urlHelper.getDomainSuffix(urlHelper.chopUrl(geoCookie))!=domainSuffix){var elements=window.location.href.split('/');if(elements.length>1){elements[2]=elements[2].replace(domainSuffix,urlHelper.getDomainSuffix(urlHelper.chopUrl(geoCookie)));var redirectUrl=urlHelper.appendQueryStringParam(elements.join('/'),'geo_a','r');window.location=geoCookie+encodeURIComponent(redirectUrl);}}}
+else if(geo_serviceIntegration){callGeoService();}}}});
