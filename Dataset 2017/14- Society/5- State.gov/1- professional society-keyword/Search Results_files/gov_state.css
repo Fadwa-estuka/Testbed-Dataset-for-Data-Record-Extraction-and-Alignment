@@ -1,0 +1,21 @@
+#gov-state-disclaimer-wrapper {
+    font-size: 1.3em;
+    padding: 12px
+}
+
+#gov-state-disclaimer-wrapper > div {
+    background: url("https://d3qcdigd1fhos0.cloudfront.net/dos/gov-state-flag.png") no-repeat 0 8px;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0 0 0 50px;
+    text-align: center;
+}
+
+#gov-state-disclaimer-wrapper-usagov > div {
+    background: url("https://d3qcdigd1fhos0.cloudfront.net/dos/gov-state-usagov.gif") no-repeat 0 8px;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0 0 0 28px;
+    text-align: center;
+}
+
