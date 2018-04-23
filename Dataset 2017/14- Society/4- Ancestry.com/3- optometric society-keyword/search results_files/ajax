@@ -1,0 +1,33 @@
+var mboxCurrent = mboxFactories.get('default').get('journey_data',0);mboxCurrent.setOffer(new mboxOfferAjax('\n<!--\nPlace the below script in the offer currently be served to all mboxes for this purpose:\n**Journey Data Integration\n-->'));mboxCurrent.getOffer().setOnLoad(function() {
+/*mboxHighlight+ (1of2) v1 ==> Response Plugin*/
+window.ttMETA=(typeof(window.ttMETA)!='undefined')?window.ttMETA:[];window.ttMETA.push({'mbox':'journey_data','campaign':'','experience':'','offer':''});window.ttMBX=function(x){var mbxList=[];for(i=0;i<ttMETA.length;i++){if(ttMETA[i].mbox==x.getName()){mbxList.push(ttMETA[i])}}return mbxList[x.getId()]}
+
+var campExp = ':';
+
+    if (typeof tao === 'object' && document.location.hostname.indexOf('ancestry') > -1) {  // Check to make sure tao function doesn't fire unless new mbox.js is being used
+        var mboxName = 'journey_data';
+        tao.g.noMboxes = typeof tao.g.noMboxes !== 'undefined' ? tao.g.noMboxes : ['journey_data','speedMetrics'];  // establishes mbox name to be used it checking Journey Data \u2013 T&T token system used
+        if (tao.g.noMboxes.indexOf(mboxName) === -1) {  // makes sure these checks aren't done when we send extra data.
+            tao.g.noMboxes.push(mboxName);  // prevent duplicate fires on the same mbox
+            tao.g.confirmMboxes = [  // defines confirm mboxes to check against for special functions to operate on.
+                'confirm',
+                tao.g.site + '_phx_complete'
+            ];
+            tao.g.forcedMboxes = [  // defines mboxes to check and see if taoUpdateFromCookies should be forced. 
+                tao.g.site + '_RegConfirmation',
+                tao.g.site + '_Signup_Payment_Global',
+                tao.g.site + '_phx_registration',
+                tao.g.site + '_phx_payment'
+            ];
+            tao.g.mboxSessionCount = 2;  // establish mbox session count (using T&T's tokens) for tracking sessions inside test
+            tao.c.mSC = (typeof tao.c.mSC === 'undefined') ? tao.g.mboxSessionCount : tao.c.mSC;  // set mbox session count in cookie object if it isn't already set
+            tao.g.ttids = [87461];  // surface T&T ids for all test this user is currently in
+            tao.g.device = tao.f.getDevice();
+            tao.f.ttidsGenUpdate(mboxName); // go through T&T Ids to make sure any necessary changes are made and sent to T&T reports
+            if (typeof cleanupTao === 'undefined') {  // make sure this script is only fired once per load
+                tao.f.ttidsCleanup(10);  // checks to see if any tao.c campaigns are no longer active. Removes if hasn't been active for x page loads
+                window.cleanupTao = 'done';
+            }
+        }
+    }
+});mboxCurrent.loaded();mboxFactories.get('default').get('journey_data',0).cancelTimeout();mboxFactories.get('default').get('journey_data',0).setOffer(new mboxOfferDefault()).show();
