@@ -1,0 +1,1 @@
+monetate.c.cr({"data": "<div></div><p style=\"text-align: center;\"><span style=\"color:#999; font-size:9px; font-family:'Helvetica Neue','Helvetica','Arial,sans-serif';\">Advertisement</span></p> <div id=\"purch_Y_S_0_1\"></div> ", "ref": "233/770469.htm"});
