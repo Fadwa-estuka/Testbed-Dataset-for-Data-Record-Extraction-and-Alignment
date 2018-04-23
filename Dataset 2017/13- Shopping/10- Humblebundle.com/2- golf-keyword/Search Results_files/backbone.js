@@ -1,0 +1,2 @@
+Backbone.GSModel=Backbone.Model.extend({get:function(t){return _.isFunction(this.getters[t])?this.getters[t].call(this):Backbone.Model.prototype.get.call(this,t)},set:function(t,e,s){var n,o;_.isObject(t)||null==t?(n=t,s=e):(n={},n[t]=e),s=s||{};for(o in n)_.isFunction(this.setters[o])&&(n[o]=this.setters[o].call(this,n[o],s));return Backbone.Model.prototype.set.call(this,n,s)},getters:{},setters:{}});
+//# sourceMappingURL=backbone.getters.setters.js.map
