@@ -1,0 +1,5 @@
+@font-face {
+  font-family: 'HM Icon Font';
+  src: url("../icon-font/hm-icon-font.eot");
+  src: local('â˜º'), url("../icon-font/hm-icon-font.eot?#iefix") format('embedded-opentype'), url("../icon-font/hm-icon-font.woff2") format('woff2'), url("../icon-font/hm-icon-font.woff") format('woff'), url("../icon-font/hm-icon-font.ttf") format('truetype');
+}
