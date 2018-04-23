@@ -1,0 +1,27 @@
+.AffiliateFooter.Footer__Footer___aJ8_c {
+  min-height: 50px;
+  height: 50px;
+  padding: 0 10px; }
+  .AffiliateFooter.Footer__Footer___aJ8_c .Footer__secondRow___1nPh6 {
+    margin-top: 0px;
+    border-top: none; }
+    .AffiliateFooter.Footer__Footer___aJ8_c .Footer__secondRow___1nPh6 .Footer_Logo {
+      width: 25%;
+      height: 25px;
+      display: inline-block;
+      margin-top: 15px; }
+    .AffiliateFooter.Footer__Footer___aJ8_c .Footer__secondRow___1nPh6 .Footer__footerRightSide___dWwvs {
+      margin-top: 0px; }
+      .AffiliateFooter.Footer__Footer___aJ8_c .Footer__secondRow___1nPh6 .Footer__footerRightSide___dWwvs .Footer__footerLegalNav___hzuzk {
+        margin-top: 0px;
+        line-height: 50px; }
+        .AffiliateFooter.Footer__Footer___aJ8_c .Footer__secondRow___1nPh6 .Footer__footerRightSide___dWwvs .Footer__footerLegalNav___hzuzk .Footer_Copyright {
+          display: inline-block;
+          margin-left: 6px;
+          color: #999; }
+      @media only screen and (max-width: 1100px) {
+        .AffiliateFooter.Footer__Footer___aJ8_c .Footer__secondRow___1nPh6 .Footer__footerRightSide___dWwvs {
+          width: 75%;
+          text-align: right; } }
+
+/*# sourceMappingURL=affiliate_footer.css.map */
