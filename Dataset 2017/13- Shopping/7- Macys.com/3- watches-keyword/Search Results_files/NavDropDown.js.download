@@ -1,0 +1,122 @@
+define( [
+    'jquery',
+    'mcomTemplates/features/header/experiment/topNav/navDropDown',
+    'mcomTemplates/features/header/experiment/topNav/signInNavDropDown',
+    'mcomTemplates/features/header/experiment/topNav/globalNavDropDown',
+    'cookie',
+    'logger',
+    'globals',
+    'userStatus',
+    'hbsHelpers'
+], function ( $, navDropDown, signInNavDropDown, globalNavDropDown, Cookie, Logger, Globals, UserStatus, JustToLoadHelpers ) {
+
+    var urlData = {},
+        userName = null,
+        signedIn = null,
+        userStatus = null;
+
+    function start( myAccountUrl, baseSecureUrl ) {
+        urlData.myAccountUrl = myAccountUrl;
+        urlData.baseSecureUrl = baseSecureUrl;
+        urlData.baseUrl = Globals.getValue( 'props.baseHost' );
+        urlData.walletDashboardEnabled = Globals.getValue( 'props.walletDashboardEnabled' );
+        userStatus = ( UserStatus.isSoftSignedIn() ? "soft signed-in" : UserStatus.isSignedIn() ? "signed-in" : "guest" );
+        renderStaticDashboard();
+        if ( urlData.walletDashboardEnabled ) {
+            if ( userStatus !== "guest" ) {
+                userName = Cookie.get( "UserName", "GCs" );
+                signedIn = Cookie.get( "SignedIn" ) === "1";
+                var responseOnGetDashBoardData = getDashboardDetails();
+                responseOnGetDashBoardData
+                    .done( function ( response, textStatus ) {
+                        renderDashboard( response );
+                    } )
+                    .fail( function ( jqXHR, textStatus, errorThrown ) {
+                        if ( textStatus ) {
+                            Logger.info( "Status in getDashboardDetails:" + textStatus );
+                        }
+                        if ( errorThrown ) {
+                            Logger.info( "Error in fetching dashboardData:" + errorThrown );
+                        }
+                    } );
+            }
+        }
+
+        if ( Globals.getValue( 'props.simplifiedWalletDashboardEnabled' ) ) {
+            renderGlobalDashboard();
+        }
+    }
+
+    function getDashboardDetails() {
+        var deferred = $.Deferred();
+        $.ajax( {
+            type: 'GET',
+            url: urlData.baseSecureUrl + '/account/ocwalletservice/getocwalletdashboarddetails',
+            contentType: "application/json",
+            dataType: 'jsonp'
+        } )
+            .done( function ( response, textStatus ) {
+                if ( textStatus === "success" && response && !response.hasOwnProperty( "error" ) ) {
+                    deferred.resolve.apply( null, arguments );
+                } else {
+                    deferred.reject.apply( null, arguments );
+                }
+            } )
+            .fail( function ( jqXHR, textStatus, errorThrown ) {
+                deferred.reject.apply( null, arguments );
+            } );
+        return deferred.promise();
+    }
+
+    function renderDashboard( response ) {
+        var user = "My";
+        if ( signedIn && userName ) {
+            user = userName + "'s";
+        }
+        var resultHTML = signInNavDropDown( {
+            urlData: urlData,
+            data: response,
+            user: user,
+            userStatus: userStatus,
+            touchEnabled: isTouchDevice()
+        } ),
+            expContainer = $( "#dropDownABTest" );
+        expContainer.html( resultHTML );
+    }
+
+    function renderGlobalDashboard() {
+        var resultHTML;
+        resultHTML = globalNavDropDown( {
+            baseSecureUrl: urlData.baseSecureUrl,
+            myAccountUrl: urlData.myAccountUrl,
+            userStatus: userStatus,
+            cnfNavGlobalHeaderChangesEnabled: false,
+            touchEnabled: isTouchDevice()
+        } );
+        var expContainer = $( "#dropDownABTest" );
+        expContainer.html( resultHTML );
+    }
+
+
+    function renderStaticDashboard() {
+        var resultHTML = navDropDown( {
+            baseSecureUrl: urlData.baseSecureUrl,
+            myAccountUrl: urlData.myAccountUrl,
+            userStatus: userStatus,
+            walletDashboardEnabled: urlData.walletDashboardEnabled,
+            touchEnabled: isTouchDevice()
+        } ),
+            expContainer = $( "#dropDownABTest" );
+        expContainer.html( resultHTML );
+    }
+
+    // Method to identify a touch device
+    function isTouchDevice() {
+        return !!( 'ontouchstart' in window );
+    }
+
+    return {
+        render: start
+    };
+
+} );
