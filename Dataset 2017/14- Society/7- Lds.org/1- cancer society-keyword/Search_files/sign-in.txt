@@ -1,0 +1,1 @@
+platformCallback({loggedin:false})
