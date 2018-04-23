@@ -1,0 +1,69 @@
+(window.JSON||(JSON={}))&&(!JSON.stringify||JSON.org||JSON.copyright)&&(JSON.stringify=function(l,i){var g,k,j,h="";
+switch(typeof l){case"object":if(l){if("______array"==l.______array){for(k=0;k<l.length;++k){g=this.stringify(l[k]),h&&(h+=","),h+=g
+}return"["+h+"]"}if("undefined"!=typeof l.toString){for(k in l){g=l[k],"undefined"!=typeof g&&"function"!=typeof g&&(g=this.stringify(g),h&&(h+=","),h+=this.stringify(k,!0)+":"+g)
+}return"{"+h+"}"}}return"null";case"number":return isFinite(l)?String(l):"null";case"string":j=l.length;
+h='"';for(k=0;k<j;k+=1){if(g=l.charAt(k)," "<=g){if("\\"==g||'"'==g){h+="\\"}h+=g}else{switch(g){case"\b":h+="\\b";
+break;case"\f":h+="\\f";break;case"\n":h+="\\n";break;case"\r":h+="\\r";break;case"\t":h+="\\t";break;
+default:g=g.charCodeAt(),h+="\\u00"+Math.floor(g/16).toString(16)+(g%16).toString(16)}}}return h+'"';
+case"boolean":return String(l);default:return"null"}});var truste=window.truste||{};truste.util||(truste.util={});
+truste.util.getUniqueID=function(){return"truste_"+Math.random()};truste.util.getScriptElement=function(c,d){var a,f,b;
+var e=(c&&c.test)?c:new RegExp(c);if(document.currentScript){a=document.currentScript}else{a=document.scripts&&document.scripts[document.scripts.length-1]
+}if(a&&a.src&&(!c||((d||!a.id)&&e.test(a.src)))){return a}b=(f=document.getElementsByTagName("script")).length;
+while(b-->0){a=f[b];if((d||!a.id)&&e.test(a.src)){return a}}return null};truste.util.initParameterMap=function(d,f,e){if(d===null){f._query=f._url=""
+}else{var c,a=f._url=d.src||f._url;a=(f._query=a.replace(/^[^;?#]*[;?#]/,"").replace(/&(amp|#38|#x00026);/ig,"&").replace(/&(equals|#61|#x0003d);/ig,"=").replace(/&(semi|#59|#x0003b);/ig,";")).replace(/[#;?]|&(num|#35|#x00023|quest|#63|#x0003f);/ig,"&");
+if(a){for(a=a.split("&"),c=a.length;c-->0;){var g=a[c].split("=");var b=g.shift();if(g.length){f[b]=(b!==e)?decodeURIComponent(g.join("=")):g.join("=")
+}else{f[b]=""}}}d.id=f.sid=f.sid||truste.util.getUniqueID()}return f};truste.util.addScriptElement=function(f,g,c,b,a){if(!f){truste.util.trace("ERROR adding script element to page, src is null");
+return null}var e=null;if("string"==typeof f){e=(c?c.ownerDocument:document).createElement("SCRIPT");
+e.src=f}else{if((e.nodeName+"").toLowerCase()=="script"){e=f;if(!e.src){truste.util.trace("ERROR Object passed into addSCriptElement does not have required 'src' attribute");
+return null}}else{truste.util.trace("ERROR Object passed into addSCriptElement is not a ScriptElement");
+return null}}if(a){e.setAttribute("type",a)}if(b){e.setAttribute("async","async")}var d=function(i){var h;
+if(i&&i.type=="error"){truste.util.trace("ERROR Script was unable to load: "+f);h=2}else{if(i&&i.type=="load"||e.readyState=="loaded"){h=1
+}}if(h){e.onload=e.onreadystatechange=e.onerror=null;e.parentNode.removeChild(e);g(e,h)}};e.onload=e.onreadystatechange=e.onerror=d;
+(c||document.getElementsByTagName("body")[0]||document.getElementsByTagName("head")[0]).appendChild(e);
+return e};truste.util.msglog=function(a,b){truste.eu&&truste.eu.msg&&truste.eu.msg.log(a,truste.eu.bindMap,b)
+};truste.util.round=function(b,a){return Number(Math.round(b+"e"+a)+"e-"+a)};truste.util.getDefaultStyleProperty=function(a,b){var c=document.createElement(b);
+document.body.appendChild(c);var d=window.getComputedStyle(c,null)[a];c.parentNode.removeChild(c);return d
+};truste.util.getDisplayProperty=function(b){var a=window.getComputedStyle(b,null).display;return(a=="none")?truste.util.getDefaultStyleProperty("display",b.nodeName):a
+};truste.util.show=function(c){if(!c){return}var b=truste.util.getDisplayProperty(c);if(requestAnimationFrame){c.style.opacity=0;
+c.style.display=b;(function a(d){var e=truste.util.round(parseFloat(d.style.opacity),2);if((e=e+0.1)<=1){d.style.opacity=e;
+requestAnimationFrame(function(){a(d)})}})(c)}else{c.style.display=b}};truste.util.hide=function(b){if(!b){return
+}if(requestAnimationFrame){(function a(c){var d=truste.util.round(parseFloat(c.style.opacity||1),2);d=d-0.1;
+c.style.opacity=d;if(d<=0){c.style.display="none"}else{requestAnimationFrame(function(){a(c)})}})(b)}else{b.style.display="none"
+}};truste.util.isVisible=function(b){var a=window.getComputedStyle(b);return a.display!=="none"&&a.opacity>0&&a.visibility!=="hidden"
+};truste.util.removeEvent=function(c,b,a){if(c&&typeof b=="string"&&a instanceof Function){if(c.removeEventListener){c.removeEventListener(b,a,false)
+}else{if(c.detachEvent){c.detachEvent("on"+b,a)}}}};truste.util.addEvent=function(c,b,a){if(c&&typeof b=="string"&&a instanceof Function){if(c.addEventListener){c.addEventListener(b,a,false)
+}else{if(c.attachEvent){c.attachEvent("on"+b,a)}}}};(function cmBannerScript(){cmBannerScript.cnt=cmBannerScript.cnt||0;
+var r=2;var l="truste-consent-track";var u={},o="http"+(/s/.test(location.protocol)?"s:":":");u.domain="lds.org";
+u.baseURL="http://consent.truste.com/".replace(/^\w{3,5}:/,o);u.bannerMsgURL=u.baseURL+"bannermsg?";u.country="ca";
+u.iconws=o+"//preferences.truste.com/webservices/js";if(cmBannerScript.cnt===0){cmBannerScript.script=truste.util.getScriptElement(/\/\/[^\.]+\.(intranet\.)?truste(-labs|-svc)?\.(com|net)(:\n+)?\/[^\?#;]*(notice|banner)(\?|\.js)/,true)
+}truste.util.initParameterMap(cmBannerScript.script,u,"privacypolicylink");var n=(u.cdn==2)?u.baseURL:o+"//consent-st.truste.com/";
+var p=(u.cm||(u.cdn&&n+"get?name=notice.js&")||(u.baseURL+"notice?"))+"domain="+u.domain+"&country="+u.country+"&"+u._query.replace(/\b(js|domain|country|name)=[^&#]*&?/g,"");
+var a=u.c||"teconsent";var q=u.bb||"consent_blackbar";var k=document.getElementById(a);var d=document.getElementById(q);
+if(cmBannerScript.cnt<=10&&(!d||!k)){setTimeout(cmBannerScript,50);cmBannerScript.cnt++;return}truste.util.addEvent(window,"message",g);
+var c=document.readyState;if(c&&(c=="complete"||c=="interactive")){s("ready")}else{truste.util.addEvent(document,"DOMContentLoaded",function(){s("ready")
+})}truste.util.addScriptElement(p,function f(y,A,z){s("notice0");var x,w=function(){if(x&&truste.eu&&truste.eu.bindMap&&truste.cma){x=clearInterval(x);
+s("notice1")}};x=setInterval(w,7);w();setTimeout(function(){clearInterval(x)},10000)});function s(w){if(s[w]){return
+}s[w]=1;switch(w){case"loaded":if(t()){m();e();j();truste.util.show(document.getElementById(l));truste.util.msglog("views",u.bannerMsgURL)
+}else{s("done");truste.util.msglog("returns",u.bannerMsgURL)}break;case"ready":if(s.notice1){s("loaded")
+}break;case"notice1":if(s.ready){s("loaded")}break;case"done":truste.util.removeEvent(document,"click",h);
+truste.util.removeEvent(document,"scroll",i);truste.util.show(k);truste.util.hide(document.getElementById(l));
+break;case"open":window.dispatchEvent(new Event("resize"))}}function e(){var w='<style>    #truste-consent-track {    max-height:auto;    margin: 0px;    position: fixed;    border: 0px solid rgb(0, 0, 0);    bottom: 0px;    left: 0%;    width: 100%;    z-index: 2147483647;    color: rgb(255, 255, 255);    display: none;    background: rgb(164, 165, 170);  }  .truste-banner {    margin: 0 auto;     background-color: #  }  .truste-messagecolumn {    font-family: Verdana, sans-serif;    font-size:8pt;    margin:15px 35px 10px 35px;    text-align:left;    line-height: 12px;  }.truste-privacypolicylink {    color: #486fae;    text-decoration: none;    cursor:pointer;  }    .truste-privacypolicylink:hover {    color: #486fae;    text-decoration: none;    cursor:pointer;  }	.truste-cookielink {    color: #486fae;    text-decoration: none;    cursor:pointer;  }  .truste-close {    float:right;    cursor:pointer;    margin: 8px 8px 7px 7px;    opacity:0.75;    width:20px;    height:20px;  }    </style><div id="truste-consent-track"><div id="truste-consent-content" class="truste-banner" style="overflow: hidden;">    <img id="truste-consent-button" class="truste-close" src="//consent.truste.com/get?name=close_btn.png" alt="close">      <div id="truste-consent-text" class="truste-messagecolumn">We use cookies to provide you with the best experience on our website and show custom content based on your interests, as described in our&nbsp;<a href="http://www.lds.org/legal/privacy?lang=eng" class="truste-privacypolicylink">Privacy&nbsp;Policy</a>. You can change your cookie settings at any time. By continuing to use the site you agree to our use of cookies. To set your cookie preferences, please use our&nbsp;<span id="truste-show-consent" class="truste-cookielink">Cookie Consent Tool</span>.&nbsp;&nbsp;&nbsp;</div></div></div>';
+w=w.replace("&lt;i&gt;","<i>").replace("&lt;/i&gt;","</i>").replace("&lt;b&gt;","<b>").replace("&lt;/b&gt;","</b>");
+if(!w||w.length<15){w='<div id="truste-consent-track" style="display:none; background-color:#000;"><div id="truste-consent-content" style="overflow: hidden; margin: 0 auto; max-width: 1000px"><div id="truste-consent-text" style="float:left; margin:15px 0 10px 10px; width:500px;"><h2 style="color: #fff; font-size: 16px; font-weight:bold; font-family:arial;">Some functionality on this site requires your consent for cookies to work properly.</h2></div><div id="truste-consent-buttons" style="float:right; margin:20px 10px 20px 0;"><button id="truste-consent-button" type=button style="padding:5px; margin-right:5px; font-size:12px;">I consent to cookies</button><button id="truste-show-consent" type=button style="padding:5px; margin-right:5px; font-size:12px;">I want more information</button></div></div></div>'
+}if(u.responsive==="false"){w=w.replace(/(class=["'].*?)[\s]?truste-responsive(.*?["'])/g,"$1$2")}if(d.insertAdjacentHTML){d.insertAdjacentHTML("afterbegin",w)
+}else{d.innerHTML=w}}function b(y){if(!isNaN(y=parseInt(y))&&truste.eu&&truste.eu.actmessage){var x=(truste.util&&truste.util.getJSON)||(truste.cma&&truste.cma.cheapJSON)||window.JSON.stringify,w={source:"preference_manager",message:"submit_preferences",data:{value:y}};
+truste.eu.actmessage(w);if(window.PREF_MGR_API_DEBUG){PREF_MGR_API_DEBUG.authorities.push(window.location.hostname)
+}window.postMessage&&window.postMessage(x(w),"*");s("selection")}else{s("done")}}function j(){var w={consentButton:"truste-consent-button",footerCallback:"truste-show-consent",cookieButton:"truste-cookie-button",bannerHolder:l,closeBanner:"truste-consent-close"};
+var x=document.getElementById(w.consentButton);if(x){x.onclick=function(){truste.util.msglog("accepts",u.bannerMsgURL);
+b(r)}}x=document.getElementById(w.footerCallback);if(x){x.onclick=function(){truste.util.msglog("moreinfo",u.bannerMsgURL);
+if(truste.eu&&truste.eu.clickListener){truste.eu.clickListener(parseInt(u.pn)||0)}}}x=document.getElementById(w.cookieButton);
+if(x){x.onclick=function(){truste.util.msglog("cookiepolicy",u.bannerMsgURL);if(u.cookieLink){window.open(u.cookieLink)
+}}}x=document.getElementById(w.closeBanner);if(x){x.onclick=function(){s("done")}}parseInt(u.fade)&&setTimeout(function(){b(u.sl)
+},parseInt(u.fade));s("open")}function v(){if(truste.eu.bindMap){var w=truste.eu.bindMap;return !w.prefCookie
+}else{return false}}function t(){var w=/ip(hone|od|ad)|iOS/i.test(navigator.userAgent||navigator.vendor||window.opera);
+return !!truste.eu&&(u.ios!=1||!w)&&truste.eu.bindMap.behaviorManager=="eu"&&truste.eu.bindMap.behavior!="expressed"&&v()
+}function g(w){var x;try{x=w&&w.data&&JSON&&JSON.parse(w.data)}catch(y){return null}if(x&&x.source=="preference_manager"&&x.message=="submit_preferences"){s("done")
+}}function m(){if(u.oc){truste.util.addEvent(document,"click",h)}if(u.px){truste.util.addEvent(document,"scroll",i)
+}}function h(x){blackbar=document.getElementById(l);var w=function(){var y=document.getElementById(truste.eu.popdiv2);
+return !y};if(blackbar&&truste.util.isVisible(blackbar)&&!blackbar.contains(x.target)&&w()){b(r)}}function i(w){blackbar=document.getElementById(l);
+if(blackbar&&truste.util.isVisible(blackbar)&&document.body.scrollTop>=u.px){b(r)}}})();
