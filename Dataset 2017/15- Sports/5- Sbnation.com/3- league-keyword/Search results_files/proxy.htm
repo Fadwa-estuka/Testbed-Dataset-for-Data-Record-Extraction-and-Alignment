@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><!--<script type='text/javascript' language='javascript'>
+	if (window.addEventListener)
+	{
+	   window.addEventListener("load", init, false);
+	}
+	else
+	if (window.attachEvent)
+	{
+		window.attachEvent("onload", init);
+	}
+</script>--><head><link rel="stylesheet" type="text/css" href="proxy_data/ndhui.css"><!--[if lt IE 8]><link rel='stylesheet' type='text/css' href='/B1D671CF-E532-4481-99AA-19F420D90332/netdefender/hui/ndhui_ie7.css' /><![endif]-->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+    <link rel="shortcut icon" href="http://cdn.krxd.net/F9CD80F3-B79B-49AB-AD16-6F61BFFFC81B/netdefender/alert/images/bdicon.ico" type="image/x-icon">
+	<!--BEGIN_TRANSLATABLE_TEXT--><title>Bitdefender - Alert</title><!--END_TRANSLATABLE_TEXT-->
+	
+<link rel="stylesheet" href="proxy_data/tl_style.css" type="text/css" media="all" charset="utf-8">
+
+<style>
+#bd_nd_E893A5F3FE87409FB167F51A030D021C_id_add2whitelist {
+    display:none;
+}
+#bd_nd_E893A5F3FE87409FB167F51A030D021C_id_askPermission {
+    display:none;
+}
+#bd_nd_E893A5F3FE87409FB167F51A030D021C_id_aph_disable  {
+    display:none;
+}
+#bd_nd_E893A5F3FE87409FB167F51A030D021C_id_fraud_disable  {
+    display:none;
+}
+#bd_nd_E893A5F3FE87409FB167F51A030D021C_id_av_disable  {
+    display:none;
+}
+</style>
+</head>
+<body><script type="text/javascript" language="javascript" src="proxy_data/ndhui.js"></script>
+
+<script type="text/javascript">
+var bd_nd_hui_more_info_lnk = false;
+</script>
+
+	<!-- alert: page_blocked.html -->
+	<div class="alert_container">
+		
+		<div class="bg_center_alert">
+			<div class="alert_red"></div>
+			<div>
+				<div class="title_style"><!--BEGIN_TRANSLATABLE_TEXT-->Bitdefender blocked this page<!--END_TRANSLATABLE_TEXT--></div>
+				<div class="link_lenght"><style>
+#bd_nd_E893A5F3FE87409FB167F51A030D021C_id_add2whitelist {
+    display:block;
+}
+#bd_nd_E893A5F3FE87409FB167F51A030D021C_id_aph_disable  {
+    display:block;
+}
+</style>
+
+<script type="text/javascript">
+    bd_nd_hui_more_info_lnk = true;
+</script>
+
+<!-- alert: NetDefender.HTTP.Event.Cloud.URLBL.Phishing-->
+<div class="text_content"><!--BEGIN_TRANSLATABLE_TEXT-->This page is blocked by Bitdefender Antiphishing filter.<!--END_TRANSLATABLE_TEXT--><br><br></div>
+</div>
+			</div>
+
+
+			<div class="buttons_container" style="display:block;">
+				<div class="button_blue" id="bd_nd_E893A5F3FE87409FB167F51A030D021C_id_goToHomePage" onclick="bd_nd_E893A5F3FE87409FB167F51A030D021C_goToHomePage(); return false;"><!--BEGIN_TRANSLATABLE_TEXT-->Take me back to safety<!--END_TRANSLATABLE_TEXT--></div><!-- 
+				--><div class="button_black" id="bd_nd_E893A5F3FE87409FB167F51A030D021C_id_add2whitelist" onclick="bd_nd_E893A5F3FE87409FB167F51A030D021C_add2whitelist(); return false;"><!--BEGIN_TRANSLATABLE_TEXT-->Add to whitelist<!--END_TRANSLATABLE_TEXT--></div>
+			</div>
+
+		</div>
+
+		<div class="bottom_link">
+			<a href="#" id="bd_nd_E893A5F3FE87409FB167F51A030D021C_id_proceedAnyway" onclick="bd_nd_E893A5F3FE87409FB167F51A030D021C_proceedAnyway(); return false;"><!--BEGIN_TRANSLATABLE_TEXT-->I understand the risks, take me there anyway<!--END_TRANSLATABLE_TEXT--></a>
+		</div>
+
+
+	</div>
+
+	
+
+<script type="text/javascript">
+var bd_nd_hui_is_alert_page = true;
+function bd_nd_E893A5F3FE87409FB167F51A030D021C_proceedAnyway()
+{
+	var obj_ajax = null;
+    (window.ActiveXObject) ? obj_ajax = new ActiveXObject("Microsoft.XMLHTTP") : obj_ajax = new XMLHttpRequest();
+	if (obj_ajax)
+	{
+		obj_ajax.onreadystatechange = function()
+		{
+		  if (4 == obj_ajax.readyState)
+		    {
+				//refresh pagea
+				window.location.reload();
+		    }
+		}		
+		
+		var params = "xml=" + encodeURIComponent("<module uid=\"NetDefender.HTTP.Core\"><plugin uid=\"NetDefender.HTTP.WBList\"><process pid=\"%PID%\"><add><url><![CDATA["+window.location+"]]></url></add></process></plugin></module>");
+
+		sid=Math.random();
+		obj_ajax.open("POST", sid, true);
+		obj_ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		obj_ajax.setRequestHeader("BDNDSS_B67EA559F21B487F861FDA8A44F01C50", "10000000a75f3e1158a0e54a58a0c1eea75f3e11d3a669998eac39d43f6c988230c5b4086597a593");
+		obj_ajax.send(params);  
+	}
+}
+
+function bd_nd_E893A5F3FE87409FB167F51A030D021C_goToHomePage()
+{
+	if (typeof window.home == 'function')
+	{ 
+		window.home();
+	}else 
+	{ // For IE 
+		window.location = 'about:blank';
+	} 
+}
+
+function bd_nd_E893A5F3FE87409FB167F51A030D021C_add2whitelist()
+{
+	var obj_ajax = null;
+    (window.ActiveXObject) ? obj_ajax = new ActiveXObject("Microsoft.XMLHTTP") : obj_ajax = new XMLHttpRequest();
+	if (obj_ajax)
+	{
+		obj_ajax.onreadystatechange = function()
+		{
+		  if (4 == obj_ajax.readyState)
+		    {
+				//refresh pagea
+				window.location.reload();
+		    }
+		}
+        var params = "event=" + encodeURIComponent("<module uid=\"NetDefender.HTTP.Core\"><event><action><![" + "CDATA" + "[click]" + "]></action><source><![" + "CDATA" + "[" + window.location + "]" + "]></source><value><![" + "CDATA" + "[aph.add2whitelist]" + "]></value></event></module>");
+
+		obj_ajax.open("POST", window.location + Math.random(), true);
+		obj_ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		obj_ajax.setRequestHeader("BDNDSS_B67EA559F21B487F861FDA8A44F01C50", "10000000a75f3e1158a0e54a58a0c1eea75f3e11d3a669998eac39d43f6c988230c5b4086597a593");
+		obj_ajax.send(params);  
+	}
+}
+
+//    alert('bd_nd_E893A5F3FE87409FB167F51A030D021C_add2whitelist' + '\n' + window.location);
+//    var webEvt = new bd_nd_E893A5F3FE87409FB167F51A030D021C_webEvt();
+//    webEvt.addEvent("click", "aph.add2whitelist", window.location);
+//    webEvt.sendEvents();
+//    window.location.reload();
+//}
+
+function bd_nd_E893A5F3FE87409FB167F51A030D021C_askPermission() {
+    var webEvt = new bd_nd_E893A5F3FE87409FB167F51A030D021C_webEvt();
+    webEvt.addEvent("click", "parental.askPermission", window.location);
+    webEvt.sendEvents();
+}
+function bd_nd_E893A5F3FE87409FB167F51A030D021C_aph_disable() {
+    var webEvt = new bd_nd_E893A5F3FE87409FB167F51A030D021C_webEvt();
+    webEvt.addEvent("click", "aph.disable", window.location);
+    webEvt.sendEvents();
+    window.location.reload();
+}
+function bd_nd_E893A5F3FE87409FB167F51A030D021C_fraud_disable() {
+    var webEvt = new bd_nd_E893A5F3FE87409FB167F51A030D021C_webEvt();
+    webEvt.addEvent("click", "fraud.disable", window.location);
+    webEvt.sendEvents();
+    window.location.reload();
+}
+function bd_nd_E893A5F3FE87409FB167F51A030D021C_av_disable() {
+    var webEvt = new bd_nd_E893A5F3FE87409FB167F51A030D021C_webEvt();
+    webEvt.addEvent("click", "av.disable", window.location);
+    webEvt.sendEvents();
+    window.location.reload();
+}
+
+</script>
+
+<!-- end wrapper -->
+
+
+
+</body></html>
