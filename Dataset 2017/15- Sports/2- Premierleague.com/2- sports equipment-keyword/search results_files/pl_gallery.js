@@ -1,0 +1,1 @@
+!function(a,e,l,o){var r=document.querySelectorAll('[data-widget="gallery"]');Array.prototype.map.call(r,function(a){a=new l.galleryModal(a)})}(PULSE.app,PULSE.ui,PULSE.app.common,PULSE.core);
