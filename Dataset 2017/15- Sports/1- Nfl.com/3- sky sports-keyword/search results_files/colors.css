@@ -1,0 +1,114 @@
+.ARIcolors, .ARZcolors, .CardinalsColors { background-color: #A1003E !important; color: #ffffff !important;}
+.ARIborder, .ARZborder { border-color: #A1003E !important;}
+.ARIfont, .ARZfont { color:#A1003E !important;}
+.ATLcolors, .FalconsColors { background-color: #000 !important; color: #FFF !important;}
+.ATLborder { border-color: #000 !important;}
+.ATLfont { color:#000 !important;}
+.BALcolors, .RavensColors { background-color: #31196B !important; color: #FFF !important;}
+.BALborder { border-color: #31196B !important;}
+.BALfont { color: #31196B !important;}
+.BUFcolors, .BillsColors { background-color: #194B8C !important; color: #FFF !important;}
+.BUFborder { border-color: #194B8C !important;}
+.BUFfont { color: #194B8C !important;}
+.CARcolors, .PanthersColors { background-color: #009FD7 !important; color: #FFF !important;}
+.CARborder { border-color: #009FD7 !important;}
+.CARfont { color: #009FD7 !important;}
+.CHIcolors, .BearsColors { background-color: #061E3E !important; color: #FFF !important;}
+.CHIborder { border-color: #061E3E !important;}
+.CHIfont { color: #061E3E !important;}
+.CINcolors, .BengalsColors { background-color: #F05737 !important; color: #FFF !important;}
+.CINborder { border-color: #F05737 !important;}
+.CINfont { color: #F05737 !important;}
+.CLEcolors, .CLVcolors, .BrownsColors { background-color: #E93825 !important; color: #FFF !important;}
+.CLEborder, .CLVborder { border-color: #E93825 !important;}
+.CLEfont, .CLVfont { color: #E93825 !important;}
+.DALcolors, .CowboysColors { background-color: #162859 !important; color: #FFF !important;}
+.DALborder { border-color: #162859 !important;}
+.DALfont { color: #162859 !important;}
+.DENcolors, .BroncosColors { background-color: #004 !important; color: #FFF !important;}
+.DENborder { border-color: #004 !important;}
+.DENfont { color: #004 !important;}
+.DETcolors, .LionsColors { background-color: #0069B3 !important; color: #FFF !important;}
+.DETborder { border-color: #0069B3 !important;}
+.DETfont { color: #0069B3 !important;}
+.GBcolors, .PackersColors { background-color: #003B2A !important; color: #FFF !important;}
+.GBborder { border-color: #003B2A !important;}
+.GBfont { color: #003B2A !important;}
+.HOUcolors, .TexansColors { background-color: #BF093A !important; color: #FFF !important;}
+.HOUborder { border-color: #BF093A !important;}
+.HOUfont { color: #BF093A !important;}
+.INDcolors, .ColtsColors { background-color: #24396A !important; color: #FFF !important;}
+.INDborder { border-color: #24396A !important;}
+.INDfont { color: #24396A !important;}
+.JACcolors, .JAXcolors, .JaguarsColors { background-color: #007B92 !important; color: #FFF !important;}
+.JACborder, .JAXborder { border-color: #007B92 !important;}
+.JACfont, .JAXfont { color: #007B92 !important;}
+.KCcolors, .ChiefsColors { background-color: #CE0226 !important; color: #FFF !important;}
+.KCborder { border-color: #CE0226 !important;}
+.KCfont { color: #CE0226 !important;}
+.MIAcolors, .DolphinsColors { background-color: #007883 !important; color: #FFF !important;}
+.MIAborder { border-color: #007883 !important;}
+.MIAfont { color: #007883 !important;}
+.MINcolors, .VikingsColors { background-color: #360651 !important; color: #FFF !important;}
+.MINborder { border-color: #360651 !important;}
+.MINfont { color: #360651 !important;}
+.NEcolors, .PatriotsColors { background-color: #243E82 !important; color: #FFF !important;}
+.NEborder { border-color: #243E82 !important;}
+.NEfont { color: #243E82 !important;}
+.NOcolors, .SaintsColors { background-color: #c9b074 !important; color: #FFF !important;}
+.NOborder { border-color: #c9b074 !important;}
+.NOfont { color: #c9b074 !important;}
+.NYGcolors, .GiantsColors { background-color: #03497F !important; color: #FFF !important;}
+.NYGborder { border-color: #03497F !important;}
+.NYGfont { color: #03497F !important;}
+.NYJcolors, .JetsColors { background-color: #16452D !important; color: #FFF !important;}
+.NYJborder { border-color: #16452D !important;}
+.NYJfont { color: #16452D !important;}
+.OAKcolors, .RaidersColors { background-color: #000 !important; color: #FFF !important;}
+.OAKborder { border-color: #000 !important;}
+.OAKfont { color: #000 !important;}
+.PHIcolors, .EaglesColors { background-color: #004149 !important; color: #FFF !important;}
+.PHIborder { border-color: #004149 !important;}
+.PHIfont { color: #004149 !important;}
+.PITcolors, .SteelersColors { background-color: #000 !important; color: #FFF !important;}
+.PITborder { border-color: #000 !important;}
+.PITfont { color: #000 !important;}
+.SDcolors, .ChargersColors { background-color: #04284F !important; color: #FFF !important;}
+.SDborder { border-color: #04284F !important;}
+.SDfont { color: #04284F !important;}
+.SEAcolors, .SeahawksColors { background-color: #3C5179 !important; color: #FFF !important;}
+.SEAborder { border-color: #3C5179 !important;}
+.SEAfont { color: #3C5179 !important;}
+.SFcolors, .SF49ersColors { background-color: #A1003E !important; color: #FFF !important;}
+.SFborder { border-color: #A1003E !important;}
+.SFfont { color: #A1003E !important;}
+.STLcolors, .LAcolors, .RamsColors { background-color: #001945 !important; color: #FFF !important;}
+.STLborder, .LAborder { border-color: #001945 !important;}
+.STLfont, .LAfont { color: #001945 !important;}
+.TBcolors, .BuccaneersColors { background-color: #d50a0a !important; color: #FFF !important;}
+.TBborder { border-color: #d50a0a !important;}
+.TBfont { color: #d50a0a !important;}
+.TENcolors, .TitansColors { background-color: #689DC9 !important; color: #FFF !important;}
+.TENborder { border-color: #689DC9 !important;}
+.TENfont { color: #689DC9 !important;}
+.WAScolors, .RedskinsColors { background-color: #79002E !important; color: #FFF !important;}
+.WASborder { border-color: #79002E !important;}
+.WASfont { color: #79002E !important;}
+.ALLTIMEcolors { background-color: #039 !important; color: #FFF !important;}
+.ALLTIMEborder { border-color: #039 !important;}
+.ALLTIMEfont { color: #039 !important;}
+.DEFAULTcolors { background-color: #a2a2a2; color: #FFF;}
+.DEFAULTfont { color: #a2a2a2 !important;}
+.AFCcolors, .APRcolors { background-color: #b50023; font-size: 11px;}
+.AFCfont, .APRfont { color: #b50023 !important;}
+.NFCcolors, .NPRcolors { background-color: #004079; font-size: 11px;}
+.NFCfont, .NPRfont { color: #004079 !important;}
+.RICcolors { background-color: #084ca1; font-size: 11px;}
+.RICfont { color: #084ca1 !important;}
+.SANcolors { background-color: #dfe225; font-size: 11px;}
+.SANfont { color: #545658 !important;}
+.IRVcolors { background-color: #f05a22; font-size: 11px;}
+.IRVfont { color: #f05a22 !important;}
+.CRTcolors { background-color: #e0e326; font-size: 11px;}
+.CRTfont { color: #555959 !important;}
+.defaultConf { background-color: #e6eeff; color: #000; font-size: 11px;}
