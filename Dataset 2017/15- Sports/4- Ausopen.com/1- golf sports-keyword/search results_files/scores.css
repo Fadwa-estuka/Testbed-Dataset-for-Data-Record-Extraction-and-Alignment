@@ -1,0 +1,252 @@
+/** scores helpers **/
+#pageContent { font-size: .9em; line-height: normal; }
+a.blue:link, a.blue:active, a.blue:visited { color: #0000FF; text-decoration: underline; }
+a.ss:link, a.ss:visited, a.ss:active { color: #ffffff; }
+a.plName:link, a.plName:visited, a.plName:active { color: #993300; }
+a.sc { font-size: 13px; }
+a.sc:link, a.sc:active, a.sc:visited { color: #018DE5; text-decoration: none; }
+a .st { font-size: 10px; }
+a.matchLinks:link, a.matchLinks:visited { color: #000000; font-size: .9em; font-weight: bold; text-decoration: none; }
+a.matchLinks:active { color: #666600; font-size: .9em; font-weight: bold; text-decoration: none; }
+#traceWindow { position: absolute; visibility: visible; top: 0px; left: 760px; height: 400px; width: 400px; overflow: auto; line-height: 20px; white-space: nowrap; }
+#mipLeft { float: left; width: 610px; margin-right: 10px; overflow: hidden; }
+/*#mipRight{float:left; width:150px; overflow:hidden;}*/
+#flashHolder { width: 1px; height: 1px; overflow: hidden; }
+.msgArea { float: left; width: 440px; width: 438px !important; height: 100px; height: 98px !important; padding: 1px; }
+.msgTitle { width: 438px; width: 434px !important; height: 15px; padding-left: 4px; margin-bottom: 9px; }
+.msgText { font-size: 17px; font-weight: bold; width: 438px; height: 74px; height: 54px !important; padding-top: 20px; text-align: center; background: #FFFFFF; }
+a.extraLinks { text-decoration: none; }
+.statsBorder { background: #0090FF; }
+.elapsedTime { background: #B1E1F5; }
+.statsSummaryHeader { background: #005479; color: #FFFFFF; font-weight: bold; }
+/** matches in progress **/
+.subLeftTextScores { float: left; width: 610px; height: auto; background: white; }
+#mipFeaturedTitleBar { float: left; position: relative; width: 610px; height: 28px; line-height: 28px; overflow: hidden; text-align: center; color: #FFFFFF; font-weight: bold; font-size: 1.3em; display: none; background: #003159; /* for non-css3 browsers */ background: -webkit-gradient(linear, left top, left bottom, from(#003159), to(#0172af)); /* for webkit browsers */ background: -moz-linear-gradient(top, #003159, #0172af); /* for firefox 3.6+ */ }
+#mipFeaturedTitleBar .popout { position: absolute; top: 7px; right: 10px; width: 71px; height: 15px; }
+#mipFeatured { float: left; width: 610px; width: 590px !important; height: 164px; height: 145px !important; padding: 9px 10px; background: url(/images/scores/aus_mip_fmBackground.jpg) no-repeat; overflow: hidden; position: relative; display: none; }
+#mipFeaturedNav { float: left; position: relative; width: 80px; height: 20px; margin: -34px 275px 0px 275px; z-index: 11; display: none; }
+#mipFeaturedNav .mip_prev { float: left; width: 10px; height: 20px; background: url(/images/scores/ao_sc_featuredprev.png) no-repeat; cursor: pointer; }
+#mipFeaturedNav .counter { float: left; width: 60px; height: 20px; line-height: 20px; text-align: center; font-weight: bold; font-size: 1.1em; color: #FFFFFF; }
+#mipFeaturedNav .mip_next { float: left; width: 10px; height: 20px; background: url(/images/scores/ao_sc_featurednext.png) no-repeat; cursor: pointer; }
+/* info bar (event selector, units, stats) */
+#mipInfoBar { float: left; width: 610px; width: 608px !important; height: 38px; height: 36px !important; background: #EDEDED; margin: 0px 0px 20px 0px; color: #00264C; }
+#mipInfoBar .selectevent { float: left; width: calc(50% - 10px); height: 38px; height: 18px !important; line-height: 18px; padding: 10px 0px; margin-left: 10px; margin-right: 10px; text-align: right; }
+#mipInfoBar .selectevent label { font-weight: bold; }
+#mipInfoBar .selectevent select { height: 18px; border: 1px solid #7F9DB9; }
+#mipInfoBar .selectsdisp { float: left; width: 150px; height: 38px; height: 20px !important; padding: 9px 0px; text-align: center; }
+#mipInfoBar .selectsdisp a { display: inline-block; width: 42px; height: 20px; margin: 0px; line-height: 20px; text-align: center; color: #00264C; font-weight: bold; text-decoration: none; cursor: pointer; }
+#mipInfoBar .selectsdisp a:hover, #mipInfoBar .selectsdisp a.selected { color: #FFFFFF; background: #0090FF; }
+#mipInfoBar .eventstats { float: left; position: relative; width: 199px; height: 38px; height: 14px !important; padding: 12px 10px 12px 0; text-align: right; display: none; }
+#mipInfoBar .eventstats a.openstatslink { display: inline-block; height: 14px; color: #00264C; text-transform: uppercase; font-weight: bold; padding-right: 23px; background: url(/images/scores/ao_sc_statsopen.gif) right no-repeat; text-decoration: none; cursor: pointer; }
+#mipInfoBar .eventstats #tabimg { float: right; margin: 7px 0px 0px 0px; cursor: pointer; }
+#mipInfoBar .eventstats #statstable { position: absolute; top: 7px; right: -4px; width: 360px; width: 330px !important; height: 267px; height: 237px !important; margin: 0px; padding: 10px; z-index: 20; background: #FFFFFF; border: 5px solid #005479; display: none; }
+#mipInfoBar .eventstats #statstable #statscontent { float: left; width: 330px; height: 237px; }
+#mipInfoBar .eventstats #statstable #statscontent .top { float: left; height: 15px; width: 330px; margin-bottom: 15px; text-align: center; color: #000000; font-weight: bold; background: none; }
+#mipInfoBar .eventstats #statstable #statscontent .top #close { float: right; width: 14px; height: 14px; cursor: pointer; }
+#mipInfoBar .eventstats #statstable #statscontent .tabs { float: left; position: relative; width: 272px; height: 34px; margin: 0px 29px; text-align: center; font-weight: bold; }
+#mipInfoBar .eventstats #statstable #statscontent .tabs a { display: block; text-decoration: none; height: 34px; height: 30px !important; padding-top: 4px; color: #FFFFFF; font-size: .9em; }
+#mipInfoBar .eventstats #statstable #statscontent .tabs #acl { float: left; width: 71px; width: 69px !important; color: #FFFFFF; background: #0090FF; border-right: 2px solid #FFFFFF; cursor: pointer; }
+#mipInfoBar .eventstats #statstable #statscontent .tabs #acl a.selected, #mipInfoBar .eventstats #statstable #statscontent .tabs #acl a:hover { width: 67px !important; height: 28px !important; color: #000000; background: #FFFFFF; border: 1px solid #0090FF; cursor: pointer; }
+#mipInfoBar .eventstats #statstable #statscontent .tabs #ssl { float: left; width: 91px; width: 89px !important; color: #FFFFFF; background: #0090FF; border-right: 2px solid #FFFFFF; cursor: pointer; }
+#mipInfoBar .eventstats #statstable #statscontent .tabs #ssl a.selected, #mipInfoBar .eventstats #statstable #statscontent .tabs #ssl a:hover { width: 87px !important; height: 28px !important; color: #000000; background: #FFFFFF; border: 1px solid #0090FF; cursor: pointer; }
+#mipInfoBar .eventstats #statstable #statscontent .tabs #spl { float: left; width: 110px; color: #FFFFFF; background: #0090FF; cursor: pointer; }
+#mipInfoBar .eventstats #statstable #statscontent .tabs #spl a.selected, #mipInfoBar .eventstats #statstable #statscontent .tabs #spl a:hover { width: 108px !important; height: 28px !important; color: #000000; background: #FFFFFF; border: 1px solid #0090FF; cursor: pointer; }
+#mipInfoBar .eventstats #statstable #statscontent .tabsarrow { position: absolute; bottom: 0px; left: 31px; width: 10px; height: 7px; display: none; }
+#mipInfoBar .eventstats #statstable #statscontent .list { clear: left; float: left; width: 330px; margin: 15px 0px 0px 0px; overflow: hidden; text-align: left; font-size: .9em; }
+#mipInfoBar .eventstats #statstable #statscontent .list .men, #mipInfoBar .eventstats #statstable #statscontent .list .women { float: left; width: 165px; color: #000000; }
+#mipInfoBar .eventstats #statstable #statscontent .list .header { float: left; width: 165px; color: #000000; font-weight: bold; margin-bottom: 3px; }
+#mipTables { float: left; display: none; width: 620px; overflow: hidden; margin-left: -5px; }
+#mipTables.extendedcontent { width: 302px; margin-left: 0px; }
+.msg { font-size: 1em; font-weight: bold; color: #CA4710; letter-spacing: 1px; width: 400px; }
+.msg2 { font-size: 1.2em; font-weight: bold; color: #006633; letter-spacing: 1px; line-height: 16px; width: 400px; }
+#mipText { float: left; width: 100%; margin: 10px 0px 20px 0px; }
+.fcourts { display: none; }
+/** featured match **/
+sup.alt { font-size: .6em; color: #FFFFFF; }
+/** scoring tables **/
+.courts { float: left; display: none; margin: 0px 5px 10px 5px; width: 300px; height: 128px; overflow: hidden; z-index: 10; }
+.courts2 { float: left; padding: 0px 5px 5px 0px; }
+.crtMsg { float: left; display: none; margin: 0px 5px 10px 5px; width: 300px; height: 128px; z-index: 11; background-color: #FFFFFF; }
+.scoringtable { float: left; width: 300px; height: 127px; text-align: left; }
+.scoringtable .courtinfo { float: left; width: 300px; box-sizing: border-box; height: 19px; line-height: 18px; padding: 0px 5px; }
+.scoringtable .courtContentContainer { float: left; width: 300px; height: 108px; box-sizing: border-box; border: 1px solid #EDEDED; }
+.scoringtable .headers { float: left; width: 298px; box-sizing: border-box; height: 12px; padding-left: 167px; background: #EDEDED; color: #000000; font-size: .8em; line-height: 12px; text-align: center; }
+.scoringtable .headers .crtgms { float: left; width: 24px; margin-left: 0px; }
+.scoringtable .headers .crtpts { float: left; width: 22px; margin-left: 3px; }
+.scoringtable .headers .crtset { float: left; width: 19px; margin-left: 1px; }
+.scoringtable #crtcontent { float: left; width: 298px; box-sizing: border-box; height: 72px; padding: 0px 5px 4px 5px; background: #EDEDED; color: #666666; }
+.scoringtable .crtrow { clear: left; float: left; height: 28px; width: 288px; overflow: hidden; font-size: 1.1em; }
+.scoringtable .name { float: left; width: 163px; box-sizing: border-box; height: 28px; background: #FFFFFF; padding-left: 3px; margin: 0px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.scoringtable .name.singles { line-height: 26px; }
+.scoringtable .name.doubles { line-height: 13px; }
+.scoringtable .name a { color: #666666; font-weight: bold; }
+.scoringtable .name a:hover { color: #0091D2; }
+.scoringtable .crticon { float: left; width: 20px; height: 28px; background: #FFFFFF; margin-right: 3px; margin-left: -20px; }
+.scoringtable .crticon.currentServer { background: white url(/images/scores/mip_serveIndicator.png) 50% 50% no-repeat; }
+.scoringtable .crticon.winner { background: white url(/images/scores/mip_winIndicator.png) 50% 50% no-repeat; }
+.scoringtable .crtrow .crtgms { float: left; position: relative; width: 24px; height: 28px; text-align: center; background: #FFFFFF; }
+.scoringtable .crtrow .crtgms span { position: absolute; left: 0px; bottom: 4px; width: 24px; }
+.scoringtable .crtrow .crtpts { float: left; position: relative; width: 22px; height: 28px; text-align: center; background: #FFFFFF; margin-right: 1px; }
+.scoringtable .crtrow .crtpts.latestScore { background: #FF922D; color: #FFFFFF; font-weight: bold; }
+.scoringtable .crtrow .crtpts span { position: absolute; left: 0px; bottom: 6px; width: 22px; }
+.scoringtable .crtrow .crtset { float: left; position: relative; width: 19px; height: 28px; text-align: center; background: #FFFFFF; margin-right: 1px; }
+.scoringtable .crtrow .crtset span { position: absolute; left: 0px; bottom: 6px; width: 19px; }
+.scoringtable .crtrow .crtset.five, .scoringtable .crtrow .crtset:last-child { margin-right: 0px; }
+.scoringtable .crtrow .setwinner { font-weight: bold; }
+.scoringtable .status { float: left; width: 100%; height: 12px; line-height: 13px; text-align: center; overflow: hidden; color: #00264C; text-transform: uppercase; font-size: .8em; font-weight: bold; margin: 0px; }
+.scoringtable .crtlinks { float: left; width: 298px; height: 22px; box-sizing: border-box; background: #EDEDED; padding: 4px 4px; font-size: .9em; position: relative; }
+.scoringtable .crtlinks .linkItem { float: left; width: 140px; height: 14px; line-height: 12px; text-align: left; overflow: hidden; font-size: 1.1em; display: none; cursor: pointer; position: absolute; }
+.scoringtable .crtlinks .linkItem a { display: inline-block; width: 100%; background: url("/images/scores/link_bg_long.png") top left no-repeat; padding: 1px 0; font-weight: bold; color: #FFFFFF; text-transform: uppercase; font-size: 0.9em !important; height: 14px; text-decoration: none; text-align: center; }
+.scoringtable .crtlinks .linkItem a:hover { color: #FFFFFF; }
+.scoringtable .crtlinks .linkItem.slamtracker a { padding-left: 7px; width: 133px !important; }
+.scoringtable .crtlinks .linkItem.watchvideo a { background: url("/images/scores/link_bg_long_red.png") top left no-repeat; text-align: center; }
+.scoringtable .crtlinks .scoreboard { width: 0px; }
+.scoringtable .crtlinks .slamtracker { left: 4px; }
+.scoringtable .crtlinks .servestats { width: 0px; }
+.scoringtable .crtlinks .watchvideo { right: 4px; }
+.scoringtable .slamtracker-promo { display: none; }
+#spacerCell .scoringtable .crtrow .name { font-size: .9em; }
+.courts2 .scoringtable .crtlinks .linkItem { display: block; }
+.sidebarTabs .courts { width: 300px; height: 139px; overflow: hidden; z-index: 10; border-top: 1px solid #CCCCCC; margin: 0px; }
+.sidebarTabs .courts:first-child { border-top: none; }
+.sidebarTabs .courts:hover .crtlinks { display: none; }
+.sidebarTabs .scoringtable { float: left; width: 300px; height: 107px; text-align: left; background: none; position: relative; margin: 5px 0px; }
+.sidebarTabs .scoringtable .courtname { display: none; }
+.sidebarTabs .scoringtable .courtinfo { float: left; width: 100%; height: 26px; line-height: 12px; padding: 0px 0px; background: none; color: #808080; font-family: 'sourcesanspro-regular', Helvetica, Arial, sans-serif; font-weight: normal; text-transform: uppercase; font-size: 9px; cursor: default; }
+.sidebarTabs .scoringtable .courtinfo .eventinfo { float: left; width: 60%; }
+.sidebarTabs .scoringtable .courtinfo .statusmsg { float: left; width: 40%; text-align: right; color: #000000; font-size: 9px; }
+.sidebarTabs .scoringtable .courtContentContainer { float: left; width: 100%; height: 81px; padding: 0px 0px; background: none; border: none; }
+.sidebarTabs .scoringtable .headers { float: left; width: 100%; width: 131px !important; height: 12px; padding-left: 167px; background: none; color: #000000; font-size: .8em; line-height: 12px; text-align: center; display: none; }
+.sidebarTabs .scoringtable .headers .crtgms { float: left; width: 24px; margin-left: 0px; }
+.sidebarTabs .scoringtable .headers .crtpts { float: left; width: 22px; margin-left: 3px; }
+.sidebarTabs .scoringtable .headers .crtset { float: left; width: 19px; margin-left: 1px; }
+.sidebarTabs .scoringtable #crtcontent { float: left; width: 100%; height: 81px; padding: 0px; background: none; color: #000000; }
+.sidebarTabs .scoringtable .crtrow { clear: left; float: left; height: 40px; width: 100%; overflow: hidden; font-size: .9em; }
+.sidebarTabs .scoringtable .flag { float: left; width: 23px; height: 40px; }
+.sidebarTabs .scoringtable .flag.singles img { width: 17px; height: 11px; margin-top: 14px; }
+.sidebarTabs .scoringtable .flag.doubles img { width: 14px; height: 10px; margin-top: 5px; }
+.sidebarTabs .scoringtable .name { float: left; width: calc(100% - 140px); height: 40px; padding-left: 0px; margin: 0px; overflow: hidden; background: none; font-family: 'sourcesanspro-regular', Helvetica, Arial, sans-serif; }
+.sidebarTabs .scoringtable .name.singles { line-height: 40px; font-size: 14px; }
+.sidebarTabs .scoringtable .name.doubles { line-height: 20px; font-size: 14px; }
+.sidebarTabs .scoringtable .name a { color: #000000; font-weight: normal; }
+.sidebarTabs .scoringtable .seed { color: #8A8A8A; font-size: 12px; }
+.sidebarTabs .scoringtable .crticon { float: left; width: 20px; height: 40px; background: none; margin-right: 0px; margin-left: -20px; line-height: 40px; }
+.sidebarTabs .scoringtable .crticon.currentServer { color: #D2D900; text-align: center; }
+.sidebarTabs .scoringtable .crticon.winner { text-align: center; font-size: 14px; font-weight: bold; }
+.sidebarTabs .scoringtable .crtrow .crtgms { float: left; position: relative; width: 24px; height: 28px; text-align: center; background: none; }
+.sidebarTabs .scoringtable .crtrow .crtgms span { position: absolute; left: 0px; bottom: 4px; width: 24px; }
+.sidebarTabs .scoringtable .crtrow .crtpts { float: left; position: relative; width: 22px; height: 40px; text-align: center; background: none; margin-right: 0px; font-size: 14px; }
+.sidebarTabs .scoringtable .crtrow .crtpts.latestScore { color: #009BDF; font-weight: bold; }
+.sidebarTabs .scoringtable .crtrow .crtpts span { position: absolute; left: 0px; bottom: 11px; width: 100%; }
+.sidebarTabs .scoringtable .crtrow .crtset { float: left; position: relative; width: 19px; height: 40px; text-align: center; background: none; margin-right: 0px; font-size: 14px; }
+.sidebarTabs .scoringtable .crtrow .crtset span { position: absolute; left: 0px; bottom: 11px; width: 100%; }
+.sidebarTabs .scoringtable .crtrow .setwinner { font-weight: bold; }
+.sidebarTabs .scoringtable .status { float: left; width: 100%; height: 12px; line-height: 13px; text-align: center; overflow: hidden; color: #00264C; text-transform: uppercase; font-size: .8em; font-weight: bold; margin: 0px; }
+.sidebarTabs .scoringtable .crtlinks { float: none; position: absolute; top: 0px; left: 0px; width: 300px; height: 107px; background: #BEBEBE; padding: 0px; border-radius: 2px; font-size: .9em; background-color: transparent; background-color: rgba(255, 255, 255, 0.9); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#E6FFFFFF,endColorstr=#E6FFFFFF); zoom: 1; display: none; }
+.sidebarTabs .scoringtable .crtlinks .linkItem { float: none; width: auto; height: 45px; line-height: 12px; text-align: center; overflow: hidden; font-size: 10px; position: absolute; top: 31px; }
+.sidebarTabs .scoringtable .crtlinks .linkItem span { font-size: 3.1em; font-weight: bold; }
+.sidebarTabs .scoringtable .crtlinks .scoreboard { width: 0px; }
+.sidebarTabs .scoringtable .crtlinks .matchstats { margin-right: 0px; left: 128px; }
+.sidebarTabs .scoringtable .crtlinks .slamtracker { margin-right: 0px; }
+.sidebarTabs .scoringtable .crtlinks .servestats { width: 0px; }
+.sidebarTabs .scoringtable .crtlinks .watchvideo { width: 40px; left: 52px; }
+.sidebarTabs .scoringtable .crtlinks .radio { width: 40px; right: 46px; }
+.sidebarTabs .scoringtable .crtlinks .linkItem a { display: block; width: 100%; height: 100%; background: none; padding: 0px; font-weight: normal; color: #009BDF; text-transform: uppercase; font-size: 10px !important; text-decoration: none; cursor: pointer; }
+.sidebarTabs .scoringtable .crtlinks .linkItem a:hover { color: #009BDF; }
+.sidebarTabs .scoringtable .crtlinks .linkItem.matchstats a { padding-left: 0px; width: 60px !important; }
+.sidebarTabs .scoringtable .crtlinks .linkItem.slamtracker a { padding-left: 0px; width: 86px !important; }
+.sidebarTabs .scoringtable .crtlinks .linkItem.watchvideo a { background: none; padding-left: 0px; text-align: center; }
+.sidebarTabs .scoringtable .crtlinks .linkItem.radio a { padding-left: 0px; text-align: center; }
+.sidebarTabs .courts.completed .eventinfo { width: 100%; }
+.sidebarTabs .courts.completed .courtstatusmsg { width: 100%; }
+.sidebarTabs .slamtracker-promo { position: relative; z-index: 2; display: block; width: auto; clear: both; text-align: center; font-family: 'sourcesanspro-extralight', Helvetica, Arial, sans-serif; }
+.sidebarTabs .slamtracker-promo .strong { font-family: 'sourcesanspro-regular', Helvetica, Arial, sans-serif; }
+.sidebarTabs .slamtracker-promo.disabled { display: none; }
+.sidebarTabs .slamtracker-promo a { background: #0091D2; color: #FFFFFF; border-radius: 5px; height: 22px; line-height: 22px; padding: 0px 10px; margin: 0px auto; display: inline-block; cursor: pointer; }
+#sbs_completed .courts { display: block; }
+#sbs_completed .courts:hover .crtlinks { display: none; }
+#sbs_completed .scoringtable .courtname { display: none; }
+#sbs_upcoming .courts { display: block; }
+#sbs_upcoming .courts:hover .crtlinks { display: none; }
+#sbs_upcoming .scoringtable .courtname { position: absolute; top: 45px; right: 15px; text-transform: uppercase; display: block; width: 125px; height: 40px; color: #4C4C4C; text-align: center; font-size: 18px; }
+#sbs_upcoming .scoringtable .courtname:before { content: "Next In"; display: block; font-size: 11px; }
+/** message tables **/
+.messagetable { float: left; width: 300px; height: 127px; }
+.messagetable .courtinfo { float: left; width: 300px; box-sizing: border-box; height: 19px; line-height: 18px; padding: 0px 5px; background: #0191D7; color: #FFFFFF; font-weight: bold; cursor: pointer; }
+.messagetable .msgheader { float: left; width: 300px; width: 290px !important; height: 19px; line-height: 17px; padding: 0px 5px; background: #0191D7; color: #FFFFFF; font-weight: bold; }
+.messagetable .bar { float: left; width: 298px !important; height: 12px !important; background: #BEBEBE; border: 1px solid #919191; border-bottom: none; }
+.messagetable .msgcontent { float: left; width: 300px; height: 108px; box-sizing: border-box; padding-top: 40px; text-align: center; color: #666666; font-size: 15px; font-weight: bold; border: 1px solid #919191; }
+.messagetable .bottombar { float: left; width: 298px !important; height: 21px !important; background: #BEBEBE; border: 1px solid #919191; border-top: none; }
+/** working table **/
+#working { float: left; width: 610px; height: 127px; margin: 0px; z-index: 12; }
+.workingtable { float: left; width: 610px; height: 127px; }
+.workingtable .header { float: left; width: 600px !important; height: 19px; line-height: 19px; padding: 0px 5px; background: #0191D7; color: #000000; font-weight: bold; }
+.workingtable .bar { float: left; width: 608px !important; height: 12px !important; background: #BEBEBE; border: 1px solid #919191; border-bottom: none; }
+.workingtable .content { float: left; width: 608px !important; height: 74px; height: 49px !important; padding-top: 25px; text-align: center; color: #666666; font-size: 15px; font-weight: bold; border-left: 1px solid #919191; border-right: 1px solid #919191; }
+.workingtable .bottombar { float: left; width: 608px !important; height: 21px !important; background: #BEBEBE; border: 1px solid #919191; border-top: none; }
+/** ipad specific styles **/
+@media only screen and (device-width: 768px) { .scoringtable .crtlinks .link1, .scoringtable .crtlinks .link3 { display: none; }
+#mipFeatured .matchlinks .link1, #mipFeatured .matchlinks .link3 { display: none; } }
+.cmatch .scoringtable { float: none; width: 440px; width: 438px !important; }
+.cmatch .scoringtable .eventinfo { width: 428px !important; }
+.cmatch .scoringtable .headers { padding-left: 308px; }
+.cmatch .scoringtable #crtcontent { width: 428px !important; }
+.cmatch .scoringtable .crtrow { width: 428px; }
+.cmatch .scoringtable .name { width: 279px !important; }
+.cmatch .scoringtable .crtlinks { width: 430px !important; }
+.cmatch .scoringtable .crtlinks .matchstats { left: 4px; padding-left: 7px; width: 133px !important; display: block; }
+.cmatch.stats .scoringtable { height: 143px !important; }
+.cmatch .scoringtable .crtdata { clear: left; float: left; height: 16px; width: 100%; overflow: hidden; font-size: .9em; background: #B1E1F5; line-height: 16px; }
+.cmatch .scoringtable .crtdata .elapsed { float: left; width: 333px; text-align: right; }
+.cmatch .scoringtable .crtdata .crtset { float: left; position: relative; width: 19px; height: 16px; text-align: center; margin-right: 1px; }
+/** event stats **/
+#content.eventstats { width: 650px; margin: 6px 00px 40px 0px; }
+#stat_navigation { float: left; width: 610px; }
+#stat_navigation a { float: left; display: block; width: 150px; height: 30px; line-height: 30px; text-align: center; text-decoration: none; background: #d7d7d7; color: #001325; font-size: 12px; margin-bottom: 3px; cursor: pointer; }
+#stat_navigation a.selected { background: #009BDF; color: #FFFFFF; cursor: default; }
+#stat_navigation .column { float: left; width: 150px; height: auto; margin: 2px 2px 0px 0px; overflow: hidden; }
+#stat_navigation .column.last { margin-right: 0px; }
+#stat_navigation .column a:last-child { margin-bottom: 0px; }
+#stat_navigation .row { clear: left; float: left; width: 150px !important; margin: 3px 230px 0px 230px; }
+#stat_leaders { float: left; width: 610px; margin-top: 20px; display: block; }
+#stat_leaders .leaderbox { float: left; width: 300px !important; height: 212px !important; border: 1px solid #CDCDCD; overflow: hidden; }
+#stat_leaders .leaderbox.men { margin-right: 5px; }
+#stat_leaders .leaderbox .header { float: left; width: 300px !important; height: 28px; background: #009BDF; line-height: 28px; color: #FFFFFF; font-size: 12px; text-transform: uppercase; margin: 1px; padding-left: 8px; }
+#stat_leaders .leaderbox .content { float: left; width: 290px !important; height: 174px !important; margin: 1px; padding: 8px; }
+#stat_leaders .leaderbox .content .image { float: left; width: 119px; height: 163px; margin-right: 11px; }
+#stat_leaders .leaderbox .content .info { float: left; width: 160px; }
+#stat_leaders .leaderbox .content .info .title { float: left; width: 100%; height: 25px; line-height: 25px; font-family: 'sourcesanspro-bold', Helvetica, Arial, sans-serif; font-size: 14px; color: #000000; }
+#stat_leaders .leaderbox .content .info .name { float: left; width: 100%; height: 60px; line-height: 20px; font-family: 'sourcesanspro-regular', Helvetica, Arial, sans-serif; font-size: 20px; color: #001325; text-transform: uppercase; }
+#stat_leaders .leaderbox .content .info .stat { float: left; width: 100%; height: 52px; font-family: 'sourcesanspro-bold', Helvetica, Arial, sans-serif; font-size: 26px; }
+#stat_leaders .leaderbox .content .info .stat .number { font-size: 46px; }
+#stat_leaders .leaderbox .content .info .flag { float: left; width: 100%; height: 26px; }
+#stat_tables .datatable { float: left; width: 610px; margin-top: 30px; display: table; }
+#stat_tables .datatable .row { /*(float:left;*/ display: table-row; }
+#stat_tables .datatable .titlebar { text-transform: capitalize; font-size: 1.1em; font-weight: bold; display: table-caption; }
+#stat_tables .datatable .datacell { /*float:left;*/ display: table-cell; /*height:18px;*/ /*line-height:18px;*/ height: auto; vertical-align: middle; text-align: center; border-right: 3px solid #FFFFFF; border-bottom: 2px solid #FFFFFF; padding: 2px 0px; overflow: hidden; }
+#stat_tables .datatable .datacell:last-child { border-right: none; }
+#stat_tables .datatable .data1 { width: 80px; background-color: #009BDF; color: #FFFFFF; }
+#stat_tables .datatable .data2 { width: 200px; background-color: #d7d7d7; }
+#stat_tables .datatable .data3 { width: 104px; background-color: #009BDF; color: #FFFFFF; }
+#stat_tables .datatable .data4 { width: 86px; background-color: #d7d7d7; }
+#stat_tables .datatable .data5 { width: 126px; background-color: #d7d7d7; }
+#stat_tables .datatable .header { /*float:left;*/ display: table-cell; /*height:25px;*/ /*line-height:25px;*/ height: auto; vertical-align: middle; background-color: #626262; color: #FFFFFF; font-size: 1.1em; font-weight: bold; border-right: 3px solid #FFFFFF; border-bottom: 2px solid #FFFFFF; padding: 3px 2px; text-align: center; }
+#stat_tables .datatable .header:last-child { border-right: none; }
+#stat_tables .datatable.rally_count .data1 { width: 205px; background-color: #009BDF; color: #FFFFFF; }
+#stat_tables .datatable.rally_count .data2 { width: 50px; background-color: #d7d7d7; color: #000000; }
+#stat_tables .datatable.rally_count .data3 { width: 75px; padding: 0px 5px !important; background-color: #009BDF; color: #FFFFFF; }
+#stat_tables .datatable.rally_count .data4 { width: 66px; background-color: #d7d7d7; color: #000000; }
+#stat_tables .datatable.rally_count .data5 { width: 131px; background-color: #d7d7d7; color: #000000; }
+#stat_tables .datatable.rally_count .data6 { width: 58px; background-color: #d7d7d7; color: #000000; }
+#stat_tables .datatable.rally_count .header { background-color: #626262; color: #FFFFFF; height: 40px; line-height: 18px; }
+#stat_tables .datatable.rally_count .header.tall { /*line-height:40px;*/ }
+#stat_tables .datatable.stats .data1 { width: 167px; background-color: #009BDF; color: #FFFFFF; }
+#stat_tables .datatable.stats .data2 { width: 60px; background-color: #d7d7d7; color: #000000; }
+#stat_tables .datatable.stats .data3 { width: 60px; background-color: #d7d7d7; color: #000000; }
+#stat_tables .datatable.stats .data4 { width: 60px; background-color: #d7d7d7; color: #000000; }
+#stat_tables .datatable.stats .data5 { width: 60px; background-color: #d7d7d7; color: #000000; }
+#stat_tables .datatable.stats .data6 { width: 60px; background-color: #d7d7d7; color: #000000; }
+#stat_tables .datatable.stats .data7 { width: 60px; background-color: #d7d7d7; color: #000000; }
+#stat_tables .datatable.stats .data8 { width: 60px; background-color: #d7d7d7; color: #000000; }
+#stat_tables .datatable.stats .header { background-color: #626262; color: #FFFFFF; }
+/*# sourceMappingURL=scores.css.map */
