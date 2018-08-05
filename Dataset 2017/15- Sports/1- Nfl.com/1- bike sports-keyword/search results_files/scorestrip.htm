@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html class=" js flexbox canvas touch geolocation postmessage history rgba multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations cssgradients csstransforms csstransforms3d csstransitions generatedcontent video audio webworkers svg cors placeholder formvalidation yui3-js-enabled no-ie8 no-android no-android2 no-webkit no-ios agrade desktop-view no-tablet-view no-mobile-view"><head>
+		<title>NFL.com Score Strip</title>
+		<script type="text/javascript">document.domain="nfl.com"</script>
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	
+	<style type="text/css">
+html, body { margin:0;padding:0; }
+body { overflow-y:hidden; }
+	</style>
+	<link charset="utf-8" rel="stylesheet" id="yui_3_10_0_1_1486944957081_6" href="index_008.css"><link charset="utf-8" rel="stylesheet" id="yui_3_10_0_1_1486944957081_7" href="scorestrip_data/index.css"><link charset="utf-8" rel="stylesheet" id="yui_3_10_0_1_1486944957081_8" href="scorestrip_data/index_002.css"><script charset="utf-8" id="yui_3_10_0_1_1486944957081_10" src="scorestrip_data/index_002.js" async=""></script><script charset="utf-8" id="yui_3_10_0_1_1486944957081_11" src="scorestrip_data/index_003.js" async=""></script><script charset="utf-8" id="yui_3_10_0_1_1486944957081_12" src="scorestrip_data/index.js" async=""></script><link charset="utf-8" rel="stylesheet" id="yui_3_10_0_1_1486944957081_13" href="scorestrip_data/index_002.css"><link charset="utf-8" rel="stylesheet" id="yui_3_10_0_1_1486944957081_14" href="scorestrip_data/index.css"><script charset="utf-8" id="yui_3_10_0_1_1486944957081_120" src="radar.js" async=""></script><!-- base href="http://www.nfl.com/partner/scorestrip?query=bike+sports&responsive=true" -->
+	</head>
+	<body>
+		<div id="hd-scorestrip"><div id="hdscorestripContainer" class="responsive"><div id="yui_3_10_0_1_1486944957081_21" class="yui3-widget yui3-nfl-scorestrip-event"><div id="yui_3_10_0_1_1486944957081_23" class="yui3-nfl-scorestrip-event-content nfl-scorestrip-event-sb"><div id="ss-container" class="state-post"><div id="ss-content"><div id="game-tile-h" class="game-tile"><div class="city">Atlanta</div><div class="mascot ">Falcons</div><div class="pill"><img src="scorestrip_data/ATL.svg"></div><div class="score">28</div><div class="pi"></div><div class="rz">RED ZONE</div></div> <div class="jewel"><div class="quarter">FINAL OT</div><div class="time">Sun 6:30PM EST FOX</div></div> <div id="game-tile-v" class="game-tile"><div class="city">New England</div><div class="mascot ">Patriots</div><div class="pill"><img src="scorestrip_data/NE.svg"></div><div class="score">34</div><div class="pi"></div><div class="rz">RED ZONE</div></div>   <div class="gc-link"><a href="http://www.nfl.com/gamecenter/2017020500/2016/POST22/patriots@falcons" target="_top" class="gc-anchor">GAME CENTER &gt;</a></div><a href="http://www.nfl.com/gamecenter/2017020500/2016/POST22/patriots@falcons" target="_top" class="ss-link"></a><div class="ballot-link"><a href="http://www.nfl.com/partner/%7BballotUrl%7D" target="_top"><span></span></a></div></div><div id="yui_3_10_0_1_1486944957081_131" class="yui3-widget yui3-nfl-scorestrip-event-alert"><div id="game-alert-h" class="game-alert yui3-nfl-scorestrip-event-alert-content" style="right: -226px;"></div></div><div id="yui_3_10_0_1_1486944957081_167" class="yui3-widget yui3-nfl-scorestrip-event-alert"><div id="game-alert-v" class="game-alert yui3-nfl-scorestrip-event-alert-content" style="left: -226px;"></div></div></div></div></div></div></div>
+	
+  
+  
+    <!-- BEGIN INCLUDE global/nfl-constants -->
+    <script>/* SS_TYPE : SB */
+
+
+
+/* scoresStripSponsorshipTracking : https://bs.serving-sys.com/serving/adServer.bs?cn=display&c=19&mc=imp&pli=20228508&PluID=0&ord=%%CACHEBUSTER%%&rtu=-1 */
+
+
+
+if (window.location.href.search('nfl.com/scores') > -1){ window.useYUIQueryString = true; }
+
+
+
+
+<!-- begin /static/html/widgets/config-files/photogallery/presby-config.html -->
+
+<!-- end /static/html/widgets/config-files/photogallery/presby-config.html -->
+try {
+	(function(){
+		var linkInterval = setInterval(function(){ if(nfl != undefined && nfl.Y != undefined){
+		    clearInterval(linkInterval);
+			nfl.use('node', function(Y) {
+				Y.on('contentready', function() {
+					var teamLinks = Y.all('#team-sites-header-bar .team-sites-header-bar-logo-container a');
+					teamLinks.each(function (linkNode) {
+						var abbr = linkNode.get('className').toUpperCase();
+						var href = linkNode.get('href') + "?icampaign=nflcom-header-clublogos-" + abbr;
+						linkNode.set('href', href);
+					});
+				}, '#team-sites-header-bar');
+			});
+		}},100);
+	})();
+} catch(err){}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+window.NFL_GLOBAL_CACHE = {};
+window.NFL_GLOBAL_CACHE.NFL_SUBS = [];
+
+(function (w) {
+  "use strict";
+  var nfl = w.nfl = w.nfl || {};
+  nfl.constants = {
+    ASSET_VERSION:            "7.4",
+    ASSET_BUILD:              "hotfix\/7.4.51.1",
+    IMAGE_PATH:               "http:\/\/i.nflcdn.com\/static\/site\/7.4",
+    STYLE_PATH:               "http:\/\/s.nflcdn.com\/static\/site\/7.4",
+    SCRIPT_PATH:              "http:\/\/s.nflcdn.com\/static\/site\/7.4",
+    FLASH_PATH:               "http:\/\/flash.static.nfl.com\/static\/site\/7.4",
+    ENV:                      "PROD",
+    IS_MOBILE:                false,
+    IS_TABLET:                false,
+    DEVICE_CONTEXT:           "DESKTOP",
+    APP_CONTEXT:              {
+                                app: "",
+                                view: "",
+                                video: ""
+                              },
+    CARRIER:                  "",
+    OAUTH_MANAGER:            "https:\/\/www.nfl.com",
+    ID_MANAGER:               "https:\/\/id2.s.nfl.com",
+    ECM_IMAGE_PATH:           "http:\/\/static.nfl.com\/static\/content\/",
+    SEARCH_DOMAIN:            "search.nfl.com",
+    SITELIFE_URL:             "http:\/\/pluck.nfl.com",
+    SITE_URL:                 "http:\/\/www.nfl.com",
+    FANTASY_DOMAIN:           "http:\/\/fantasy.nfl.com",
+    FANTASY_API:              "http:\/\/api.fantasy.nfl.com",
+    PLAYOFF_CHALLENGE_DOMAIN: "http:\/\/playoffchallenge.fantasy.nfl.com",
+    PLAYOFF_CHALLENGE_API:    "http:\/\/api.playoffchallenge.fantasy.nfl.com",
+    FEEDS_URL:                "http:\/\/feeds.nfl.com",
+    PREDICTPICK_DOMAIN:       "http:\/\/predictpick.nfl.com",
+    FACEBOOK_APP_ID:          "108273802559405",
+    TWITTER_ID:               "DkWLqcP3j8i9wHuJ7fiw",
+    YUI_ENABLED:              true,
+    YUI_COMBO_URL:            "http:\/\/combine.nflcdn.com\/yui\/min2\/index.php",
+    YUI_DEPLOY_URL:           "http:\/\/s.nflcdn.com\/yui",
+    YUI_VERSION:              "3.10.3",
+    NFL_COMBO_ENABLED:        true,
+    NFL_COMBO_URL:            "http:\/\/combine.nflcdn.com\/yui\/min2\/index.php",
+    NFL_MIN_ENABLED:          false,
+    CURRENT_SEASON:           "2016",
+    CURRENT_SEASONTYPE:       "REG",
+    COUNTRY_CODE:             "ca",
+    ET_OFFSET:                (function () {
+      var offset  = ("-0500").match(/([\+\-]\d\d)(\d\d)/),
+        hours   = parseInt(offset[1], 10),
+        minutes = parseInt(offset[2], 10);
+
+      return (hours + (minutes / 60)) * 60 * 60 * 1000;
+    }()),
+    GIGYA_CONF: {
+      APIKey: "2_kMCvXUlFCZJhwaNXbxzePaXPYb9T__rgiF5y7EnWuEM5a84cueVv-MkPRKjVFc31",
+      enabledProviders: "facebook,twitter,google,yahoo,messenger",
+      facebookExtraPermissions: "offline_access",
+      cid: w.location.pathname.substr(0, 100),
+      shortURLs: "whenRequired",
+      sessionExpiration: 0
+    },
+    SS_TYPE: 'SB',
+    AD_CONF: {
+      networkId: '4595',
+      site: '.partner',
+      zone: 'partner/scorestrip',
+      zoneUrl: 'url=partner_scorestrip',
+      zoneKeys: 's1=partner;s2=scorestrip',
+      env: '',
+      pageKeyValues: ''
+    },
+    WILDCAT_URL: 'https://www.nfl.com'
+  };
+
+
+
+
+nfl.constants.SS_CONF = nfl.constants.SS_CONF || {};
+
+  nfl.constants.SS_CONF.year = parseInt('2016');
+
+
+  nfl.constants.SS_CONF.responsive = true;
+
+nfl.constants.SS_CONF.trackingSponPixel = 'https://bs.serving-sys.com/serving/adServer.bs?cn=display&c=19&mc=imp&pli=20228508&PluID=0&ord=%%CACHEBUSTER%%&rtu=-1';
+nfl.constants.SS_CONF.sponClickThrough = 'https://bs.serving-sys.com/serving/adServer.bs?cn=trd&mc=click&pli=20228508&PluID=0&ord=%%CACHEBUSTER%%';
+nfl.constants.SS_CONF.trackingMobileSponPixel = 'https://bs.serving-sys.com/serving/adServer.bs?cn=display&c=19&mc=imp&pli=20228508&PluID=0&ord=%%CACHEBUSTER%%&rtu=-1';
+nfl.constants.SS_CONF.sponMobileClickThrough = 'https://bs.serving-sys.com/serving/adServer.bs?cn=trd&mc=click&pli=20228508&PluID=0&ord=%%CACHEBUSTER%%';
+
+  // set s_account on the window, allow it to be overriden, and set it on nfl.constants too
+  nfl.constants.ANALYTICS = w.s_account = w.s_account || "cbsnfl";
+  nfl.SHARED_VIDEO_URL = "http://combine.nflcdn.com/yui/min2/index.php?7.4hotfix/7.4.51.1&g=nflui";
+
+}(window));</script>
+    
+      
+      
+      
+      
+      
+        
+      
+    
+	
+	
+    
+    <script src="VisitorAPI.js"></script>
+    <script src="ad.js"></script>
+    
+      
+        <script src="index.js"></script><div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class=""></div>
+        
+      
+      
+    
+    <!-- END INCLUDE global/nfl-constants -->
+    <!-- BEGIN HEADER ADDITIONS -->
+    
+<style>
+	
+		body {
+			background: #fff url('http://static.nfl.com/static/content/public/static/img/head/nov-30-2016-background.jpg') no-repeat top center;
+		}
+	
+
+	
+
+	
+	/* remove this after 6.4 when photo.tag serves image on mobile */
+	/*.nfl-mobile .nfl-tag-photo img {
+		width: 100%;
+	}*/
+
+	.nfl-tag-photo table {
+		width: 1px !important;
+	}
+	@media screen and (max-width: 767px) {
+		.nfl-responsive .nfl-tag-photo table {
+			width: 100% !important;
+		}
+	}
+
+
+</style>
+
+
+
+<!-- BEGIN page-header-fix -->
+<style>
+	.article-decorator .content-link,
+	.article-decorator .sponsor-link {top: 0;}
+</style>
+<!-- END page-header-fix -->
+
+
+
+
+
+
+
+<script>
+	(function(win){
+		// This code disables HP personalization
+		nfl.Y.use('event-custom', function(Y){
+			var pathName = win.location.pathname,
+				isDesktop = nfl.constants.DEVICE_CONTEXT === 'DESKTOP';
+			if(isDesktop && (pathName === '/' || pathName.substr(0, 5) === '/home')){
+				nfl.Y.Global.once('home:nflNowVideoLoaded', function(e){
+					nfl.Y.Global.detachAll('home:nflNowVideoLoaded');
+				});
+			}
+		});
+	})(window);
+</script>
+
+<!-- BEGIN TAG javascript files="modules/geocode/geocode.js,modules/nfl-user/nfl-user.js,modules/nfl-subscriptions/nfl-subscriptions.js" type="" -->
+<!-- 
+	nfl_combo_enabled: true
+	nfl_combo_url:     http://combine.nflcdn.com/yui/min2/index.php
+	nfl_min_enabled:   false
+	use_debug:         false
+-->
+
+	
+	
+	
+		
+		<script src="index_002.js"></script>
+	
+	
+
+<!-- END TAG javascript -->
+
+<script>
+    (function(){
+        YUI.add("hp-subscriptions", (function(Y) {
+          "use strict";
+          var headerNode;
+
+          var getHeaderNode = (function () {
+            if (window.Y && window.Y.NFL && window.Y.NFL.Header2012) {
+              headerNode = window.Y.NFL.Header2012.headerNode;
+            }
+
+            if (headerNode) {
+              return personalizeSubscriptions();
+            }
+          });
+
+          /**
+          @namespace Y.NFL.Header2012
+          @method PersonalizeSubscriptions
+          @static
+          */
+          var personalizeSubscriptions = (function () {
+            return Y.namespace("NFL.Header2012").PersonalizeSubscriptions = function() {
+              var GAME_PASS_SECTION_WIDTH, LAUNCH_BUTTON, LEARN_MORE_BUTTON, RENEW_BUTTON, SUBSCRIPTIONS, applySubProductsVisibility, headerSubProducts, subscriptionKey, subscriptions, uris, useJSONP,
+                _this = this;
+              RENEW_BUTTON = "<span class='button button-red'>RENEW</span>";
+              LEARN_MORE_BUTTON = "<span class='button button-gray'>LEARN MORE</span>";
+              LAUNCH_BUTTON = "<span class='button button-green'>LAUNCH</span>";
+              GAME_PASS_SECTION_WIDTH = 945;
+              SUBSCRIPTIONS = {
+                "PRESEASON_LIVE": {
+                  active: false,
+                  selector: "preseasonLiveClass",
+                  geoURI: "/gamecenter/preseasonLive"
+                },
+                "GAME_PASS": {
+                  active: false,
+                  selector: "gamePassClass",
+                  geoURI: "/gamecenter/gamePass"
+                },
+                "GAME_REWIND": {
+                  active: false,
+                  selector: "gameRewindClass",
+                  geoURI: "/gamecenter/gameRewind"
+                },
+                "NETWORK_ONLINE": {
+                  active: false,
+                  selector: "nflnOnlineClass",
+                  geoURI: "/gamecenter/nflNetworkOnline"
+                },
+                "AUDIO_PASS": {
+                  active: false,
+                  selector: "audioPassClass",
+                  geoURI: null
+                }
+              };
+
+              setTimeout(function(){
+                  var gamePassNode, subscription, subscriptionKey, subscriptionNode, _i, _len, _ref, _ref2, _results;
+                  gamePassNode = headerNode.one("div.content.game-pass");
+                  subscriptions = [];
+                  console.info('hp-subscriptions overwritten');
+                  for (_i = 0, _len = subscriptions.length; _i < _len; _i++) {
+                    subscription = subscriptions[_i];
+                    if ((_ref = SUBSCRIPTIONS[subscription]) != null) _ref.active = true;
+                  }
+                  _results = [];
+                  for (subscriptionKey in SUBSCRIPTIONS) {
+                    subscription = SUBSCRIPTIONS[subscriptionKey];
+                    subscriptionNode = gamePassNode != null ? gamePassNode.one("." + subscription.selector) : void 0;
+                    _results.push(subscriptionNode != null ? (_ref2 = subscriptionNode.one("span.button")) != null ? _ref2.replace(subscription.active ? LAUNCH_BUTTON : LEARN_MORE_BUTTON) : void 0 : void 0);
+                  }
+                  return _results;
+
+              }, 1000);
+
+              /**
+              @method applySubProductsVisibility
+              @private
+              @param String - selectors - comma-separated CSS classes string
+              */
+              applySubProductsVisibility = function(selectors) {
+                var columnWidthRegExp, columns, gamePassSectionNode, lastColumn, sectionWidth, subscription, subscriptionKey;
+                for (subscriptionKey in SUBSCRIPTIONS) {
+                  subscription = SUBSCRIPTIONS[subscriptionKey];
+                  if (subscription.geoURI === null) {
+                    headerNode.all("." + subscription.selector).setStyle("visibility", "visible");
+                  } else if (selectors.indexOf(subscription.selector) >= 0) {
+                    headerNode.all("." + subscription.selector).each(function(elm) {
+                      if (!elm.hasClass("force-hide")) {
+                        return elm.setStyle("visibility", "visible");
+                      } else {
+                        return elm.remove();
+                      }
+                    });
+                  } else {
+                    headerNode.all("." + subscription.selector).remove();
+                  }
+                }
+                /**
+                Game pass section node columns needs to fill up
+                the entire content container, if there are less than 3 sub-products
+                available to the visitor based on their geo-location. The last columns
+                width would need to fill up the remainder of the width.
+                */
+                gamePassSectionNode = headerNode.one(".content.game-pass");
+                columnWidthRegExp = /column-(\d+)/;
+                if (gamePassSectionNode) {
+                  sectionWidth = 0;
+                  columns = gamePassSectionNode.all("div.column");
+                  columns.each(function(elm, index) {
+                    if (columnWidthRegExp.test(elm.get("className")) && index !== (columns.size() - 1)) {
+                      return sectionWidth += parseInt(RegExp.$1, 10);
+                    }
+                  });
+                  if (GAME_PASS_SECTION_WIDTH - sectionWidth > 0) {
+                    lastColumn = columns.item(columns.size() - 1);
+                    lastColumn.set("className", "column column-" + (GAME_PASS_SECTION_WIDTH - sectionWidth));
+                  }
+                }
+              };
+              headerSubProducts = Y.Cookie.get("headerSubProducts");
+              if (headerSubProducts) {
+                console.info("Sub products visibility: " + headerSubProducts);
+                applySubProductsVisibility(headerSubProducts);
+              } else {
+                /**
+                Get the geocode response
+                */
+                uris = [];
+                for (subscriptionKey in SUBSCRIPTIONS) {
+                  if (SUBSCRIPTIONS[subscriptionKey]["geoURI"]) {
+                    uris.push(SUBSCRIPTIONS[subscriptionKey]["geoURI"]);
+                  }
+                }
+                useJSONP = true;
+                Y.getNFLGeoCode(uris.join(","), function(result) {
+                  var classRule, cookiedResults, d, expirationDate, results, subProductResult, _i, _len;
+                  try {
+                    results = result instanceof String ? Y.JSON.parse(result) : result;
+                    cookiedResults = [];
+                    if (results instanceof Array) {
+                      for (_i = 0, _len = results.length; _i < _len; _i++) {
+                        subProductResult = results[_i];
+                        classRule = subProductResult.classRule;
+                        if (classRule) cookiedResults.push(classRule);
+                      }
+                    }
+                    if (cookiedResults.length > 0) {
+                      applySubProductsVisibility(cookiedResults.join(","));
+                      try {
+                        d = new Date();
+                        expirationDate = new Date(d.setTime(d.getTime() + (7 * 24 * 60 * 60 * 1000)));
+                        Y.Cookie.set("headerSubProducts", cookiedResults.join(","), {
+                          path: "/",
+                          domain: ".nfl.com",
+                          expires: expirationDate
+                        });
+                      } catch (error) {
+                        return console.error("Error setting headerSubProducts cookie " + error);
+                      }
+                    }
+                   else {
+                    applySubProductsVisibility([]);
+                   }
+                  } catch (error) {
+                    return console.error(error);
+                  }
+                }, useJSONP);
+              }
+            };
+          });
+
+          getHeaderNode();
+          
+        }), "1.0.0", {
+          requires: ["nfl-user", "nfl-subscriptions", "geocode", "node", "json-parse", "cookie"]
+        });
+    })();
+</script>
+    <!-- END HEADER ADDITIONS -->
+  
+
+
+	<script>
+nfl.use('scorestrip-factory','querystring-parse', function (Y) {
+	var ssopts	= {render: '#hdscorestripContainer', isIframe: true};
+	try{
+		if(window.location){
+			if(window.location.search){
+				var _opts = [], _params = new String(window.location.search+'');
+				if(_params !== ''){
+					_params = Y.QueryString.parse(((_params.indexOf('?') === 0) ? _params.substring(1) : _params));
+					for(var _k in _params){
+						if(_params[_k] === 'false'){ _params[_k] = false; }
+						if(_params[_k] === 'true'){ _params[_k] = true; }
+						if(Y.Lang.isNumber(_params[_k])){ _params[_k] = parseInt(_params[_k]); }
+						ssopts[_k] = _params[_k];
+					}
+				}
+			}
+		}
+	}catch(e){}
+	var ss = new Y.ScoreStrip(ssopts),
+		w = Y.config.win,
+		p = w.parent || w.opener,
+		f = function (event) {
+			p._nflFireSSEvent(event.type, event.details[0]);
+		};
+
+	try {
+		if (p && p._nflFireSSEvent) {
+			Y.Global.after(Y.ScoreStripEngine.GC_VIDEO_ADDED, f);
+			Y.Global.after(Y.ScoreStripEngine.UPDATE, f);
+		}
+	}
+	catch (e) {
+		console.error(e);
+	}
+});	
+	</script>
+	
+
+</body></html>
