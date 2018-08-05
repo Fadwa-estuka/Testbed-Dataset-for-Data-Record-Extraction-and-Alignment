@@ -1,0 +1,7 @@
+[data-drupal-selector="edit-field-page-body-0-subform-field-marquee-slice-title"],
+[data-drupal-selector="edit-field-page-body-0-subform-field-half-slice-title"], 
+input[data-drupal-selector="edit-field-page-body-0-subform-field-marquee-0-value"],
+input[data-drupal-selector="edit-field-page-body-0-subform-field-half-0-value"] {
+  display: none;
+}
+
