@@ -1,0 +1,1032 @@
+.content-div { 
+ }
+.ez-content {
+	margin:0;
+    padding-left:10px;
+    padding-right:10px;
+}
+.ez-page-video-search.ez-content {
+    padding:0;
+}
+.ez-sideContent-right {
+    width:304px; /* because of ad border */
+}
+.ez-ad-right {
+    border: 2px solid #CCCCCC;
+}
+.ez-content a {
+	color:#364c88;
+}
+
+.ez-fb-like-button {
+    float:left;
+    height:20px;
+    overflow:hidden;
+    margin-left:0px;
+}
+
+.ez-socialLinks a.ez-rss {
+	background-image:url(../images/rss_button.gif);
+	border:0 none;
+	height:15px;
+	padding:0px;
+    margin-top:3px;
+	width:15px;
+}
+.ez-breadcrumb a {
+    font-weight: bold;
+}
+.ez-breadcrumb span {
+    color:#999;
+}
+.ez-breadcrumb {
+    margin-bottom:20px;
+}
+.ez-listMod.ez-letter-index {
+    border-bottom: 1px dotted #CCCCCC;
+    padding-bottom:10px;
+    margin-bottom:10px;
+}
+
+.ez-listMod .ez-listMod-item {
+    font-size:11px;
+    line-height:18px;
+}
+.ez-listMod .ez-listMod-folder {
+    padding-top:10px;
+    font-size:14px;
+}
+
+.ez-page-folder .ez-listMod h1 {
+    margin-bottom:20px !important;
+}
+.ez-page-letter .ez-listMod h1 {
+    margin:20px 0 !important;
+}
+/* Search & Topic */
+.ez-topContentExtra {
+    color: #333333;
+    font-size:26px;
+    font-weight:bold;
+    text-transform:uppercase;
+    border-bottom: 1px solid #D9D9D9;
+    margin:28px 0px 5px 0px;
+    height:18px;
+    text-indent:-1000px;
+    padding:0 0 8px 0;
+}
+.ez-range, 
+.ez-total { 
+    font-family:Arial;
+    font-weight:bold;
+ }
+.ez-page-search .ez-topContentExtra {
+    background:url(../images/search_page_banner.png) no-repeat;
+    margin-bottom:20px;
+}
+.ez-page-topic-2-col .ez-topContentExtra,
+.ez-page-root .ez-topContentExtra,
+.ez-page-letter .ez-topContentExtra,
+.ez-page-folder .ez-topContentExtra {
+    background:url(../images/topic_lander_banner.png) no-repeat;
+}
+
+.ez-itemMod-item .ez-duration {
+    background:#fff;
+    border:1px solid #CCCCCC;
+    padding:0 2px;
+    position:absolute;
+    right:0;
+    margin-right:0 !important;
+    font-family: Tahoma;
+    color: #999999 !important;
+	top:-21px;
+    font-size:10px !important;
+}
+
+
+.ez-page-search .ez-mainSearch,
+.ez-page-topic-2-col .ez-mainSearch {
+	border-top:1px dotted #a9a9a9;
+	margin-top:0;
+	padding-top:0;
+}
+.ez-mainSearch .ez-itemMod-item {
+	padding:20px 0px;
+	border-bottom:1px solid #ddd;
+    margin:0;
+}
+.ez-mainSearch .ez-itemMod-item.ez-pinned {
+    background: url("../images/editors-choice.png") repeat-x bottom right;
+}
+.ez-mainSearch .ez-itemMod-item .ez-meta {
+    margin-top:12px;
+}
+.ez-page-video-search .ez-mainSearch .ez-itemMod-item .ez-meta {
+    margin-top:-5px;
+}
+.ez-page-video-search .ez-itemMod-item .ez-meta p.ez-date  {
+    border:none;
+    padding:0;
+}
+.ez-mainSearch .ez-itemMod-item .ez-meta p {
+    font-size:12px;
+}
+.ez-mainSearch .ez-itemMod-item .ez-type {
+    color:#555;
+	margin-right:4px;
+}
+.ez-mainSearch .ez-itemMod-item .ez-date {
+	border-left:1px solid #999;
+	padding-left:5px;
+	color:#999;
+}
+.ez-mainSearch .ez-itemMod-item .ez-thumbs {
+	width:80px;
+	margin-right:20px;
+}
+.ez-mainSearch .ez-thumbs,
+.ez-mainSearch .ez-thumbs a {
+    width:80px;
+	height:auto;
+}
+.ez-mainSearch .ez-Video .ez-thumbs img, 
+.ez-mainSearch .ez-Audio .ez-thumbs img {
+	width:78px;
+	height:58px;
+	border:1px solid #999;
+}
+.ez-mainSearch .ez-thumbs .ez-blank {
+	width:80px;
+	height:60px;
+}
+.ez-mainSearch .ez-main  {
+    position:relative;
+    overflow:visible;
+    margin-left:100px;
+    padding-right:57px;
+}
+
+.ez-mainSearch .ez-itemMod-item .ez-title {
+    text-decoration:none !important;
+    color:#364c88;
+    font-size:18px;
+    line-height:21px;
+    margin:0 0 5px 0;
+    font-weight:bold;
+    height:auto;
+}
+.ez-mainSearch .ez-itemMod-item .ez-title:hover {
+    text-decoration:underline !important;  
+}
+.ez-mainSearch .ez-itemMod-item .ez-meta .ez-type {
+	background:none;
+	padding-left:0;
+}
+.ez-mainSearch .ez-itemMod-item .ez-desc {
+    text-decoration:none;
+    font-size:12px;
+    line-height:14px;
+    height:auto;
+    color:#000;
+}
+.ez-search-details {
+	color:#333;
+    margin:0 0 12px;
+    font-size:18px;
+}
+.ez-search-details b {
+	font-weight:bold;
+}
+.ez-search-details .ez-query {
+	color:#b6061e;
+	font-weight:normal;
+    font-size:inherit;
+}
+.ez-search-details.ez-details-two {
+	float:right;
+	margin-top:0;
+	font-size:11px;
+	text-transform:uppercase;
+    font-family:NFL Endzone Slab;
+	color:#555555;
+	margin-bottom:10px;
+}
+.ez-search-sort,
+.ez-search-sort .ez-label {
+
+}
+.ez-search-sort,
+.ez-search-sort .ez-label,
+.ez-search-sort a {
+    text-transform:uppercase;
+	font-size:10px;
+    font-family:NFL Endzone Slab;
+    color:#575757;
+	margin-bottom:10px;
+}
+/* mediatype filter */
+.ez-searchMod-filters {
+	padding-bottom:0;
+	margin-bottom:20px;
+}
+#ez-mediaTypes.ez-horizontal {
+	background:url(../images/diagonal-stripes.png);
+	height:17px;
+	padding:10px;
+}
+#ez-mediaTypes.ez-horizontal .ez-searchMod-filter-item {
+	border:0;
+    margin-right:20px;
+    width:102px;
+    height:17px;
+}
+#ez-mediaTypes.ez-horizontal .ez-searchMod-filter-item a {
+    font-size:0;
+    width:100%;
+    height:100%;
+    padding:0;
+}
+#ez-mediaTypes.ez-horizontal .ez-active a, 
+#ez-mediaTypes.ez-horizontal .ez-active a:hover, 
+#ez-mediaTypes.ez-horizontal .ez-filter-all.ez-trigger a, 
+#ez-mediaTypes.ez-horizontal .ez-filter-all.ez-trigger a:hover {
+    background: transparent;
+}
+.ez-searchMod-filters .ez-filter-all {
+    background: url("../images/filter-all-w.gif") no-repeat left top;
+}
+.ez-searchMod-filters .ez-filter-all.ez-trigger {
+    background: url("../images/filter-all-b.gif") no-repeat left top;
+}
+.ez-searchMod-filters .ez-filter-Text {
+    background: url("../images/filter-articles-w.gif") no-repeat left top;
+}
+.ez-searchMod-filters .ez-filter-Text.ez-active {
+    background: url("../images/filter-articles-b.gif") no-repeat left top;
+}
+.ez-searchMod-filters .ez-filter-Video {
+    background: url("../images/filter-videos-w.gif") no-repeat left top;
+}
+.ez-searchMod-filters .ez-filter-Video.ez-active {
+    background: url("../images/filter-videos-b.gif") no-repeat left top;
+}
+.ez-searchMod-filters .ez-filter-Image {
+    background: url("../images/filter-photos-w.gif") no-repeat left top;
+}
+.ez-searchMod-filters .ez-filter-Image.ez-active {
+    background: url("../images/filter-photos-b.gif") no-repeat left top;
+}
+/* Video Search */
+.ez-page-video-search .ez-topContent {
+    height:55px;
+    background:url(../images/nfl-search-results.png) no-repeat;
+    border-bottom:1px solid #ccc;
+}
+.ez-page-video-search .ez-search-details-row-one {
+	background:url(../images/diagonal-stripes.png);
+	font-size:18px;
+	line-height:34px;
+	color:#3c3c3c;
+	padding:0 10px;
+	margin:20px 0 12px 0;
+	font-weight:normal;
+}
+.ez-page-video-search .ez-search-details-row-one b {
+    color:#b6061e;	
+}
+.ez-page-video-search .ez-search-details-row-two {
+    background:url(../images/videos-list-bg.png) no-repeat;
+    font-size:11px;
+    line-height:32px;
+    color:#333;
+    padding:0 0 20px 6px;
+	border-bottom:1px solid #d9d9d9;
+	margin-bottom:0;
+}
+.ez-page-video-search .ez-search-details-row-two .ez-pageFilter {
+    float:right;	
+}
+.ez-page-video-search .ez-search-details-row-two .ez-pageFilter select {
+	margin:0 5px;
+}
+.ez-page-video-search .ez-searchMod-filters {
+	display:none;
+}
+.ez-page-video-search .ez-Video .ez-thumbs  {
+	width:60px;
+	height:45px;
+	margin-right:12px;
+}
+.ez-page-video-search .ez-Video .ez-main  {
+    position:relative;
+	overflow:visible;
+	margin-left:72px;
+	padding-right:35px;
+}
+.ez-page-video-search .ez-Video .ez-thumbs a, 
+.ez-page-video-search .ez-Video .ez-thumbs img {
+	width:60px;
+	height:45px;
+}
+.ez-page-video-search .ez-Video .ez-thumbs .ez-plainOverlay {
+    background-image:none;
+}
+
+.ez-page-video-search .ez-Video .ez-thumbs a:hover .ez-plainOverlay {
+    background-image:url(../images/play-button-x-small.png);
+}
+
+.ez-Video .ez-thumbs .ez-plainOverlay {
+    background-image: none;
+}
+
+.ez-Video .ez-thumbs a .ez-plainOverlay {
+    background: url("../images/playbutton.png") no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 5px;
+    top: auto;
+    right: auto;
+    bottom: 5px;
+    height: 37px !important;
+    width: 37px;
+}
+
+.ez-Video.ez-first .ez-thumbs a .ez-plainOverlay {
+    height: 40px !important;
+    width: 40px;
+}
+
+.ez-page-video-search .ez-mainSearch .ez-itemMod-item .ez-desc {
+    height:28px;
+}
+
+
+
+
+
+
+/* Topic Page */
+.ez-page-topic-2-col h1 {
+	border-bottom:0;
+	color:#575757 !important;
+	margin-bottom:10px;
+    margin-left:5px;
+	font-family:NFL Endzone Slab;
+    text-transform:uppercase;
+	font-size:18px !important;
+	padding:0;
+}
+.ez-page-topic-2-col .ez-searchMod-filters {
+	float:none;
+	margin-top:0;
+}
+/* Pagination */
+.ez-paginationMod {
+    text-align:left;
+}
+.ez-paginationMod a,
+.ez-paginationMod .ez-paginationMod-currentPage {
+    display:inline;
+	float:left;
+	font-weight:bold;
+	margin-right:5px;
+	color:#364c88;
+	border:1px solid #DCDCDC;
+	height:23px;
+	line-height:23px;
+	text-align:center;
+	text-decoration:none;
+	width:23px;
+	padding:0;
+    font-size:14px;
+}
+.ez-paginationMod a:hover {
+    color:#364c88;
+	background:#fff;
+}
+.ez-paginationMod .ez-paginationMod-currentPage {
+    background:#eee;	
+}
+.ez-paginationMod span.ez-ellipsis {
+	float:left;
+    height:25px;
+    line-height:25px;
+    font-size:11px;
+}
+span.ez-paginationMod-prev,
+span.ez-paginationMod-next  {
+    display:none;
+}
+a.ez-paginationMod-prev,
+a.ez-paginationMod-next  {
+    text-decoration:underline;
+    height:25px;
+    line-height:25px;
+	border:0;
+	text-transform:capitalize;
+	width:auto;
+}
+a.ez-paginationMod-prev:hover,
+a.ez-paginationMod-next:hover  {
+	text-decoration:underline !important;
+}
+.ez-paginationMod-prev  {
+    margin-right:14px;
+}
+.ez-paginationMod-next  {
+	float:left;
+}
+.ez-paginationMod .ez-ellipsis-end {
+    display:none;
+}
+/* Side Content */
+.ez-sideContent .ez-mod p.ez-title {
+    font-size: 16px;
+    font-family:NFL Endzone Slab;
+	margin-bottom:5px;
+}
+.ez-sideContent .ez-relatedTopics {
+    border-top:0;
+    padding-top:15px;
+	margin-bottom:15px;
+}
+.ez-sideContent .ez-relatedTopics {
+	color:#575757;
+}
+.ez-sideContent .ez-relatedTopics ol {
+    background:#fff url(../images/related-topics-bg.png) repeat-x;
+    padding:0 10px;
+}
+.ez-sideContent .ez-relatedTopics li {
+    display:inline;
+    padding:0;
+    padding:0 5px 0 0;
+	margin:0;
+	font-size:11px;
+	line-height:23px;
+}
+.ez-sideContent .ez-relatedTopics li a {
+    padding-bottom:1px;
+    border-bottom:1px dotted #a9a9a9;
+}
+.ez-sideContent .ez-relatedTopics .ez-bullet {
+	padding-left:5px;
+}
+/* metaq */
+.ez-spotlights {
+    border-top:1px solid #C3C3C3;
+    border-bottom:1px solid #C3C3C3;
+    margin:10px 0;
+    padding: 10px 0;
+    font-size:11px;
+    color:#585858;
+    background: #fff url(../images/related-topics-bg.png) repeat-x;
+}
+.ez-spotlights a {
+    color:#364C88;
+}
+.ez-spotlights .teambio a {
+    padding-right:20px;
+}
+.ez-spotlights a:hover {
+    text-decoration:underline;
+}
+.ez-spotlights img {
+    float: left;
+    padding:0 20px 0 10px;
+}
+.ez-spotlights p {
+    padding-bottom:4px;
+}
+.ez-spotlights .playerbio p.player,
+.ez-spotlights .teambio p.team {
+    padding-top:20px;
+    font-size:15px;
+    font-weight:bold;
+}
+
+.ez-spotlights .playerbio p.team a { 
+    font-weight:bold;
+ }
+
+.ez-spotlights .playerbio p.player .ez-bar {
+    padding: 0 7px;
+}
+.ez-spotlights .playerbio a.player {
+    color:#364C88;
+}
+.ez-spotlights .ez-bar {
+    padding: 0 5px;
+}
+
+.ez-content.ez-page-video-search {
+	padding:10px;
+}
+
+
+/* redesign - root overrides */
+.nfl-redesigned-content { padding: 0 20px 34px; background: white; }
+.nfl-redesigned-content .ez-topContentExtra {
+    color: #333333;
+    font-size:22px;
+    font-weight:bold;
+    font-family: NFLEndZoneTechBold, sans-serif;
+    text-transform:uppercase;
+    border-bottom: 1px solid #999999;
+    padding: 12px;
+    margin: 0 -20px;
+    height: 26px;
+    line-height: 26px;
+    background: #eaeaea;
+    text-indent: 0;
+}
+.nfl-redesigned-content .ez-sideContent-right { width: 300px; margin-left: 15px; }
+.nfl-redesigned-content .ez-sideContent-right .ez-ad-right { border: none; /* tmp */ background: linear-gradient(to bottom, #efefef, #ffffff); }
+
+.nfl-redesigned-content .ez-mainSearch .ez-itemMod-item {
+    padding: 0;
+    margin:0;
+    border: none;
+}
+.nfl-redesigned-content .ez-mainSearch .ez-main { margin-left: 215px; padding-right: 0; }
+.nfl-redesigned-content .ez-mainSearch .ez-itemMod-item .ez-title { color: #333333; font-family: NFLEndzoneSansCondMedium; font-size: 24px; line-height: 24px; max-height: 48px; overflow: hidden; margin:-1px 0 5px 0; }
+.nfl-redesigned-content .ez-mainSearch .ez-itemMod-item .ez-title,
+.nfl-redesigned-content .ez-mainSearch .ez-itemMod-item .ez-title b { font-weight: normal; }
+.nfl-redesigned-content .ez-itemMod .ez-itemMod-item .ez-thumbs { margin-bottom: 12px; margin-right:15px; }
+.nfl-redesigned-content .ez-itemMod-item .ez-main { min-height: 115px; }
+.nfl-redesigned-content .ez-itemMod .ez-itemMod-item .ez-thumbs,
+.nfl-redesigned-content .ez-itemMod .ez-itemMod-item .ez-thumbs a,
+.nfl-redesigned-content .ez-itemMod .ez-itemMod-item .ez-thumbs a img {
+    width: 200px;
+    height: 115px;
+}
+.nfl-redesigned-content .ez-mainSearch .ez-itemMod-item .ez-thumbs,
+.nfl-redesigned-content .ez-mainSearch .ez-itemMod-item .ez-thumbs a {
+    width:200px;
+    height:auto;
+}
+
+.nfl-redesigned-content .ez-mainSearch .ez-Video .ez-thumbs img {
+    border: none;
+}
+.nfl-redesigned-content .ez-itemMod-item .ez-meta .ez-icon.ez-duration {
+    display: none;
+}
+.nfl-redesigned-content .ez-mainSearch .ez-itemMod-item .ez-meta {
+    margin-bottom: 4px;
+    font-size: 12px;
+}
+.nfl-redesigned-content .ez-mainSearch .ez-itemMod-item .ez-meta p {
+    font-size:12px;
+    color: #666666;
+}
+.nfl-redesigned-content .ez-mainSearch .ez-itemMod-item .ez-meta p.ez-type {
+    text-transform: uppercase;
+    color: #333333;
+    font-size: 11px;
+}
+.nfl-redesigned-content .ez-mainSearch {
+    padding-top: 0;
+    margin-top: 0;
+    border-top: none;
+}
+.nfl-redesigned-content .ez-search-details {
+    color:#888888;
+    font-size:12px;
+    text-transform: uppercase;
+    font-family: NFLEndZoneTechBold;
+    margin:0 0 20px;
+    width: 320px;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.nfl-redesigned-content .ez-search-details .ez-query {
+    margin-left: 5px;
+}
+.nfl-redesigned-content .ez-search-details .ez-total {
+    color:#333333;
+    margin-right: 5px;
+    font-family: inherit;
+}
+.nfl-redesigned-content .ez-searchMod-filters {
+    padding-bottom:0;
+    margin-bottom:0;
+}
+.nfl-redesigned-content .ez-searchMod-filter-mediatype.ez-horizontal {
+    margin: 0 -20px 0;
+    padding: 15px 20px;
+    height: 35px;
+    background: url(../images/filter_background.gif) repeat-x;
+}
+
+.nfl-redesigned-content .ez-searchMod-filters .ez-mod-content {
+    background: linear-gradient(to bottom, #fff, #e7e7e7);
+    box-shadow: inset 0 0 0 1px #bfc1c3, inset -2px -2px 0 0 #ffffff;
+    height: 30px;
+}
+
+.nfl-redesigned-content .ez-searchMod-filter-mediatype.ez-horizontal .ez-searchMod-filter-item {
+    border:0;
+    width: auto;
+    height: auto;
+    float: left;
+}
+.nfl-redesigned-content .ez-searchMod-filter-mediatype.ez-horizontal .ez-searchMod-filter-item a {
+    display: block;
+}
+.nfl-redesigned-content .ez-searchMod-filter-mediatype.ez-horizontal .ez-active a, 
+.nfl-redesigned-content .ez-searchMod-filter-mediatype.ez-horizontal .ez-active a:hover, 
+.nfl-redesigned-content .ez-searchMod-filter-mediatype.ez-horizontal .ez-filter-all.ez-trigger a, 
+.nfl-redesigned-content .ez-searchMod-filter-mediatype.ez-horizontal .ez-filter-all.ez-trigger a:hover {
+    background: linear-gradient(to bottom, #0b497e, #013369);
+    color: white;
+}
+.nfl-redesigned-content .ez-searchMod-filter-mediatype.ez-horizontal {
+    margin: 0 -20px 5px;
+    padding: 15px 20px;
+    height: 30px;
+    background: url(../images/filter_background.gif) repeat-x;
+}
+.nfl-redesigned-content .ez-searchMod-filter-mediatype.ez-horizontal .ez-searchMod-filter-item a {
+    padding:0;
+    font-family: NFLEndzoneSansCondMedium;
+    font-size: 18px;
+    font-weight: normal;
+    text-transform: uppercase;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 20px;
+    text-align: center;
+}
+.nfl-redesigned-content .ez-searchMod-filter-mediatype.ez-horizontal .ez-active a, 
+.nfl-redesigned-content .ez-searchMod-filter-mediatype.ez-horizontal .ez-active a:hover, 
+.nfl-redesigned-content .ez-searchMod-filter-mediatype.ez-horizontal .ez-filter-all.ez-trigger a, 
+.nfl-redesigned-content .ez-searchMod-filter-mediatype.ez-horizontal .ez-filter-all.ez-trigger a:hover {
+    background: linear-gradient(to bottom, #0b497e, #013369);
+}
+.nfl-redesigned-content .ez-spotlights {
+    border: none;
+    margin:10px 0 20px;
+    padding: 0;
+    font-size:13px;
+    color:#999999;
+    background: linear-gradient(to right, #e0e0e0, #f9f9f9 50%, #e0e0e0);
+    min-height: 80px;
+}
+.nfl-redesigned-content .ez-spotlights a {
+    color:#013369;
+    white-space: nowrap;
+}
+.nfl-redesigned-content .ez-spotlights img {
+    margin: 0 12px 0 0;
+    padding: 0;
+}
+.nfl-redesigned-content .ez-spotlights .playerbio p.player,
+.nfl-redesigned-content .ez-spotlights .teambio p.team {
+    padding: 12px 0;
+    font-size:26px;
+    font-weight:normal;
+    font-family: NFLEndzoneSansCondMedium;
+    text-transform: uppercase;
+    color: #013369;
+    white-space: nowrap;
+}
+.nfl-redesigned-content .ez-spotlights .playerbio p.team {
+    padding: 0 0 5px 0;
+    line-height: 22px;
+    font-size:18px;
+    white-space: nowrap;
+}
+.nfl-redesigned-content .ez-spotlights .playerbio a.player,
+.nfl-redesigned-content .ez-spotlights .playerbio a.team {
+    text-transform: uppercase;
+    font-family: NFLEndzoneSansCondMedium;
+    color: #013369;
+}
+.nfl-redesigned-content .ez-spotlights .playerbio p.team .ez-bar {
+    padding: 0
+}
+.nfl-redesigned-content .ez-spotlights .playerbio .number,
+.nfl-redesigned-content .ez-spotlights .playerbio .position {
+    font-family: NFLEndzoneSansCondMedium;
+    color:#333333;
+}
+.nfl-redesigned-content .ez-searchMod-filters .ez-searchMod-filter-item { background-image: none; }
+
+/* redesign - new elements */
+.nfl-redesigned-content .nfl-search-toggle { float: right; height: 24px; margin: 0 0 20px 14px; padding: 0; overflow: hidden; border-radius: 4px; background: #f2f2f2; }
+.nfl-redesigned-content .nfl-search-toggle-button { color: #013369; font-weight: normal; font-size: 12px; line-height: 24px; font-family: NFLEndZoneTechBold; text-transform: uppercase; height: 24px; padding: 0 10px; display: inline-block; }
+.nfl-redesigned-content .nfl-search-toggle-button:first-child { padding: 0 10px 0 11px; }
+.nfl-redesigned-content .nfl-search-toggle-button:last-child { padding: 0 11px 0 10px; }
+.nfl-redesigned-content .nfl-search-toggle-button.active { cursor: default; color: white; background: #013369; }
+
+.nfl-search-item-hr { height: 1px; width: auto;
+    clear: left;
+    margin: 20px 0;
+    border: none;
+    background: linear-gradient(to right, #eaeaea, #ffffff);
+}
+.nfl-redesigned-content .ez-sideContent .ez-relatedTopics ol /* topic page */ { background: none; padding: 0; }
+.nfl-redesigned-content .ez-sideContent .ez-relatedTopics li a /* topic page */ { border-bottom: none; }
+.nfl-redesigned-content .ez-sideContent-right .ez-relatedTopics /* topic page */,
+.nfl-redesigned-content .ez-mainSearch .ez-relatedTopics { padding: 14px; background: linear-gradient(to bottom, #f2f2f2, #fff); }
+.nfl-redesigned-content .ez-mainSearch.nfl-search-layout-grid .ez-itemMod-relatedTopics .ez-relatedTopics .ez-title,
+.nfl-redesigned-content .ez-sideContent-right .ez-relatedTopics .ez-title /* topic page */,
+.nfl-redesigned-content .ez-mainSearch .ez-itemMod-relatedTopics .ez-relatedTopics .ez-title { color: #c51d27; text-transform: uppercase; font-size: 12px; line-height: 10px; padding-bottom: 2px; font-family: NFLEndZoneTechBold; }
+.nfl-redesigned-content .ez-mainSearch .ez-itemMod-relatedTopics .ez-relatedTopics .ez-title:hover { text-decoration: none; }
+.nfl-redesigned-content .ez-relatedTopics .ez-listMod-item { font-size: 13px; display: inline-block; margin: 0 15px 0 0;}
+.nfl-redesigned-content .ez-relatedTopics .ez-listMod-item a { color: #013369; font-size: 13px; font-family: Arial, sans-serif; line-height: 24px; }
+.nfl-redesigned-content .ez-relatedTopics .ez-listMod-item a:hover { text-decoration: underline; }
+.nfl-redesigned-content .ez-relatedTopics .ez-listMod-item .ez-bar { color: #666; line-height: 24px; }
+
+.nfl-redesigned-content .ez-mainSearch .ez-relatedTopics .ez-listMod-item .ez-bar,
+.nfl-redesigned-content .ez-spotlights .teambio .ez-bar 
+{ position: absolute; top: auto; left: auto; margin: 0 0 0 -11px; padding: 0; }
+
+
+.nfl-redesigned-content .ez-getMoreResults { text-align: center; }
+.nfl-redesigned-content .ez-getMoreResults .ez-loadBtn {
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 12px;
+    text-transform: uppercase;
+    font-family: NFLEndzoneSansCondMedium;
+    font-size: 20px;
+    color: #ffffff;
+    background: linear-gradient(to bottom, #666, #333);
+}
+.nfl-redesigned-content .ez-getMoreResults .ez-loadBtn:hover {
+    background: linear-gradient(to bottom, #666, #666);
+}
+.nfl-redesigned-content .ez-loader {
+    display: inline-block;
+    height: 85px;
+    width: 85px;
+    background: url(../images/spinner_gray_85x85.gif) no-repeat 50% 50%;
+
+}
+/* grid layout */
+.nfl-redesigned-content .ez-itemMod-item .ez-main { min-height: 0; }
+.nfl-redesigned-content .nfl-search-layout-grid .ez-mod-content {
+    margin-right: -20px;
+}
+.nfl-redesigned-content .ez-mainSearch.nfl-search-layout-grid .ez-itemMod-item {
+    float: left;
+    width: 200px;
+    height: 230px;
+    overflow: hidden;
+    margin-right: 14px;
+    margin-bottom: 14px;
+    clear: none !important; /* sorry, that's a lesser evil */
+}
+.nfl-redesigned-content .ez-mainSearch.nfl-search-layout-grid .ez-itemMod-item .ez-thumbs {
+    float: none;
+    margin-bottom: 8px;
+}
+.nfl-redesigned-content .ez-mainSearch.nfl-search-layout-grid .ez-itemMod-item .ez-main {
+    margin: 0;
+    padding: 0;
+}
+.nfl-redesigned-content .ez-mainSearch.nfl-search-layout-grid .ez-itemMod-item .ez-title { 
+    font-size: 20px;
+    line-height: 22px;
+    max-height: 69px;
+}
+.nfl-redesigned-content .ez-sideContent-right .ez-listMod-item /* topic page */,
+.nfl-redesigned-content .nfl-search-layout-grid .ez-relatedTopics .ez-listMod-item {
+    display: block;
+    font-size: 13px;
+}
+.nfl-redesigned-content .nfl-search-layout-grid .ez-relatedTopics .ez-listMod-item .ez-bar,
+.nfl-redesigned-content .ez-mainSearch.nfl-search-layout-grid .ez-itemMod-item .ez-main .ez-desc {
+    display: none;
+}
+.nfl-redesigned-content .ez-mainSearch.nfl-search-layout-grid .ez-relatedTopics .ez-listMod-item { height: 24px; overflow: hidden; }
+.nfl-redesigned-content .ez-mainSearch .ez-itemMod-item .ez-desc {  
+    color: #333333;
+    font-size: 13px;
+    line-height: 18px;
+}
+.nfl-redesigned-content .ez-mainSearch .ez-itemMod-item .ez-meta {
+    margin-top: 0;
+}
+
+.nfl-redesigned-content .nfl-search-layout-grid .nfl-search-item-hr {
+    display: none;
+}
+/* team/player cards */
+.nfl-redesigned-content .ez-spotlights .teambio {
+    line-height: 20px;
+}
+.nfl-redesigned-content .ez-spotlights .playerbio p.player,
+.nfl-redesigned-content .ez-spotlights .teambio p.team {
+  padding: 12px 0 5px;
+  line-height: 22px;
+}
+.nfl-redesigned-content .ez-spotlights .teambio a {
+    padding-right: 15px;
+}
+
+/* related videos */
+.nfl-redesigned-content .ez-mainSearch.nfl-search-layout-grid.nfl-related-videos {
+    margin-bottom: 0;
+}
+.nfl-redesigned-content .nfl-related-videos .ez-clearingDiv {
+    display: none;  
+}
+
+@media (min-width: 816px) {
+    .nfl-redesigned-content .nfl-related-videos.nfl-search-layout-grid .ez-itemMod-item.ez-first {
+        float: none;
+        width: auto;
+    }
+    .nfl-redesigned-content .ez-mainSearch.nfl-search-layout-grid.nfl-related-videos .ez-itemMod-item {
+        margin-bottom: 0;
+        height: 225px;
+    }
+    .nfl-redesigned-content .ez-mainSearch.nfl-search-layout-grid.nfl-related-videos .ez-itemMod-item.ez-first,
+    .nfl-redesigned-content .nfl-related-videos .ez-itemMod-item.ez-first {
+        height: 238px;
+        margin-bottom: 20px;
+        background-color: #f2f2f2;
+    }
+    .nfl-redesigned-content .nfl-related-videos .ez-itemMod-item.ez-first .ez-thumbs {
+        float: left;
+    }
+    .nfl-redesigned-content .nfl-related-videos .ez-itemMod-item.ez-first .ez-thumbs,
+    .nfl-redesigned-content .nfl-related-videos .ez-itemMod-item.ez-first .ez-thumbs a,
+    .nfl-redesigned-content .nfl-related-videos .ez-itemMod-item.ez-first .ez-thumbs a img {
+        width: 414px;
+        height: 238px;
+    }
+    .nfl-redesigned-content .nfl-related-videos .ez-itemMod-item.ez-first .ez-main {
+        margin: 0 0 0 414px;
+        padding: 14px;
+    }
+    .nfl-redesigned-content .nfl-related-videos .ez-itemMod-item.ez-first .ez-title {
+        font-size: 24px;
+        line-height: 25px;
+        max-height: 75px;
+        overflow: hidden;
+        margin: -6px 0 8px 0;
+    }
+    .nfl-redesigned-content .nfl-related-videos .ez-itemMod-item.ez-first .ez-meta {
+        margin-bottom: 6px;
+    }
+    .nfl-redesigned-content .nfl-related-videos.nfl-search-layout-grid .ez-itemMod-item.ez-first .ez-main .ez-desc {
+        display: block;
+    }
+}
+.nfl-redesigned-content .nfl-more-videos {
+    text-align: right;
+}
+.nfl-redesigned-content .more-videos-link {
+    text-transform: uppercase;
+    color: #013369;
+    font-size: 12px;
+    line-height: 12px;
+    font-family: NFLEndZoneTechBold, sans-serif;
+}
+.nfl-redesigned-content .more-videos-link:hover {
+    text-decoration: underline;
+}
+
+/* no results */
+.nfl-redesigned-content .ez-error {
+    font-family: Arial, sans-serif;
+    color: #333333;
+}
+.nfl-redesigned-content .ez-error h2 {
+    font-size: 18px;
+    margin: 2px 0 19px;
+    font-weight: normal;
+}
+.nfl-redesigned-content .ez-error h2 b {
+    color: #c51d27;
+    font-weight: normal;
+}
+.nfl-redesigned-content .ez-error p {
+    font-weight: bold;
+}
+.nfl-redesigned-content .ez-error ul {
+    line-height: 18px;
+    margin-top: 1px;
+}
+
+/* topic page */
+.nfl-redesigned-content .topic-display-name h1 {
+    font-family: NFLEndZoneTechBold, sans-serif;
+}
+.nfl-redesigned-content .ez-search-details.ez-details-two {
+    float: none;
+}
+
+/* responsiveness */
+/* @media (min-width: 415px) and (max-width: 815px) { */
+
+@media (max-width: 1001px) {
+    .nfl-redesigned-content .ez-sideContent-right { display: none; }
+} 
+@media (max-width: 1001px) and (min-width: 815px) {
+    .nfl-redesigned-content .nfl-related-videos,
+    .nfl-redesigned-content .nfl-more-videos { max-width: 628px; }
+}
+
+@media (max-width: 815px) { 
+    .nfl-redesigned-content { padding: 0 10px 34px; }
+    .nfl-redesigned-content .ez-searchMod-filter-mediatype.ez-horizontal { margin: 0 -10px 0; }
+    .nfl-redesigned-content .ez-topContentExtra { margin: 0 -10px; }
+    .nfl-redesigned-content .ez-spotlights .ez-clearingDiv { height: 8px !important; visibility: visible !important; }
+
+    .nfl-redesigned-content .ez-searchMod-filter-mediatype.ez-horizontal .ez-searchMod-filter-item .count { display: none; }
+    .nfl-redesigned-content .ez-searchMod-filter-mediatype.ez-horizontal { background-image: none; }
+    .nfl-redesigned-content .ez-searchMod-filter-mediatype.ez-horizontal .ez-mod-content { display: flex; }
+    .nfl-redesigned-content .ez-searchMod-filter-mediatype.ez-horizontal .ez-searchMod-filter-item { justify-content: space-between; flex-grow: 1; float: none; }
+    .nfl-redesigned-content .ez-sideContent-right { display: none; }
+    .nfl-redesigned-content .ez-searchMod-filter-mediatype.ez-horizontal { padding: 15px 0; }
+
+    
+    .nfl-redesigned-content .ez-itemMod-item .ez-main { min-height: 57px; margin-left: 0;  }
+    .nfl-redesigned-content .ez-itemMod-item .ez-main .ez-meta { clear: left; }
+    .nfl-redesigned-content .ez-itemMod .ez-itemMod-item .ez-thumbs {
+        float: none;
+        width: auto;
+    }
+    .nfl-redesigned-content .ez-itemMod .ez-itemMod-item .ez-thumbs a {
+
+        display: block;
+        width: auto;
+    }
+    .nfl-redesigned-content .ez-itemMod .ez-itemMod-item .ez-thumbs a img {
+        /*
+        width: 100px;
+        height: 57px;
+        */
+        width: 100%;
+        height: auto;
+    }
+    .nfl-redesigned-content .ez-mainSearch .ez-itemMod-item .ez-desc { 
+        display: none;
+    }
+
+    .nfl-redesigned-content .nfl-related-videos.ez-itemMod .ez-itemMod-item .ez-thumbs,
+    .nfl-redesigned-content .nfl-related-videos.ez-itemMod .ez-itemMod-item .ez-thumbs a,
+    .nfl-redesigned-content .nfl-related-videos.ez-itemMod .ez-itemMod-item .ez-thumbs a img {
+        width: 145px;
+        height: 84px;
+    }
+
+    .nfl-redesigned-content .ez-mainSearch.nfl-search-layout-grid.nfl-related-videos .ez-itemMod-item .ez-title {
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .nfl-redesigned-content .ez-itemMod-item .ez-main .ez-meta {
+        font-size: 11px;
+    }
+
+    .nfl-redesigned-content .ez-mainSearch.nfl-search-layout-grid .ez-itemMod-item { height: auto; width: 145px; }
+    .nfl-redesigned-content .nfl-related-videos.nfl-search-layout-grid .ez-mod-content {
+        display: flex;
+        justify-content: space-around;
+    }
+    .nfl-redesigned-content .nfl-related-videos.nfl-search-layout-grid .ez-itemMod-item {
+    }
+    .nfl-redesigned-content .nfl-more-videos { text-align: center; }
+    .nfl-redesigned-content .ez-Video .ez-thumbs a .ez-plainOverlay {
+        background: url("../images/play_button_small.png") no-repeat left bottom;
+    }
+
+    .nfl-redesigned-content .playerbio { padding: 0 0 0 12px; }
+    .nfl-redesigned-content .ez-spotlights img { margin: 0 12px 0 -12px; }
+
+    .nfl-redesigned-content .ez-mainSearch .ez-itemMod-item .ez-meta p { font-size: 11px; }
+    .nfl-redesigned-content .ez-mainSearch .ez-itemMod-item .ez-type { margin-right: 1px; }
+    .nfl-redesigned-content .ez-mainSearch .ez-itemMod-item .ez-date { padding-left: 3px; }
+
+    .nfl-redesigned-content .nfl-search-layout-grid .ez-mod-content { margin-right: -15px; }
+    .nfl-redesigned-content .ez-itemMod .ez-itemMod-item .ez-thumbs { margin-right: 0; }
+
+}
+
+@media (max-width: 670px) { 
+    .nfl-redesigned-content .nfl-related-videos.nfl-search-layout-grid .ez-itemMod-item:nth-child(4) { display: none; }
+}
+
+
+@media (max-width: 415px) { 
+    .nfl-redesigned-content .nfl-related-videos.nfl-search-layout-grid .ez-itemMod-item:nth-child(3) { display: none; }
+}
+
+.nfl-redesigned-content .ez-itemMod .ez-itemMod-item .ez-thumbs a {
+   width: 200px;
+   height: 150px;
+}
+.nfl-redesigned-content .ez-itemMod .ez-itemMod-item .ez-thumbs a img {
+   height: 150px;
+   width: auto;
+}
