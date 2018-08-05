@@ -1,0 +1,2423 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style type="text/css" id="bc-style-vjs">.video-js .vjs-big-play-button:before, .video-js .vjs-control:before, .video-js .vjs-modal-dialog, .vjs-modal-dialog .vjs-modal-dialog-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.video-js .vjs-big-play-button:before, .video-js .vjs-control:before {
+  text-align: center; }
+
+@font-face {
+  font-family: VideoJS;
+  src: url("//vjs.zencdn.net/font/1.5.1/VideoJS.eot?#iefix") format("eot"); }
+
+@font-face {
+  font-family: VideoJS;
+  src: url(data:application/font-woff;charset=utf-8;base64,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) format("woff"), url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAAKAIAAAwAgT1MvMlGRXgUAAAEoAAAAVmNtYXDiMBC2AAAB/AAAAUpnbHlmW/HoBwAAA4gAAA9QaGVhZAyD6V8AAADQAAAANmhoZWEOogcgAAAArAAAACRobXR42QAAAAAAAYAAAAB8bG9jYTDINOoAAANIAAAAQG1heHABMAB5AAABCAAAACBuYW1l1cf1oAAAEtgAAAIKcG9zdGZEjeMAABTkAAABgQABAAAHAAAAAKEHAAAAAAAHAAABAAAAAAAAAAAAAAAAAAAAHwABAAAAAQAAwdxheF8PPPUACwcAAAAAANMyzzEAAAAA0zLPMQAAAAAHAAcAAAAACAACAAAAAAAAAAEAAAAfAG0ABwAAAAAAAgAAAAoACgAAAP8AAAAAAAAAAQcAAZAABQAIBHEE5gAAAPoEcQTmAAADXABXAc4AAAIABQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUGZFZABA8QHxHgcAAAAAoQcAAAAAAAABAAAAAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAAAAAMAAAADAAAAHAABAAAAAABEAAMAAQAAABwABAAoAAAABgAEAAEAAgAA8R7//wAAAADxAf//AAAPAAABAAAAAAAAAAABBgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAFAAZgCyAMYA5gEeAUgBdAGcAfICLgKOAroDCgOOA7AD6gQ4BHwEuAToBQwFogXoBjYGbAbaB3IHqAABAAAAAAWLBYsAAgAAAREBAlUDNgWL++oCCwAAAwAAAAAGawZrAAIADgAaAAAJAhMEAAMSAAUkABMCAAEmACc2ADcWABcGAALrAcD+QJX+w/5aCAgBpgE9AT0BpggI/lr+w/3+rgYGAVL9/QFSBgb+rgIwAVABUAGbCP5a/sP+w/5aCAgBpgE9AT0BpvrIBgFS/f0BUgYG/q79/f6uAAAAAgAAAAAFQAWLAAMABwAAASERKQERIREBwAEr/tUCVQErAXUEFvvqBBYAAAAEAAAAAAYgBiAABgATACQAJwAAAS4BJxUXNjcGBxc+ATUmACcVFhIBBwEhESEBEQEGBxU+ATcXNwEHFwTQAWVVuAO7AidxJSgF/t/lpc77t18BYf6fASsBdQE+TF1OijuZX/1gnJwDgGSeK6W4GBhqW3FGnFT0AWM4mjT+9AHrX/6f/kD+iwH2/sI7HZoSRDGYXwSWnJwAAAEAAAAABKsF1gAFAAABESEBEQECCwEqAXb+igRg/kD+iwSq/osAAAACAAAAAAVmBdYABgAMAAABLgEnET4BAREhAREBBWUBZVRUZfwRASsBdf6LA4Bkniv9piueAUT+QP6LBKr+iwAAAwAAAAAGIAYPAAUADAAaAAATESEBEQEFLgEnET4BAxUWEhcGAgcVNgA3JgDgASsBdf6LAsUBZVVVZbqlzgMDzqXlASEFBf7fBGD+QP6LBKr+i+Bkniv9piueAvOaNP70tbX+9DSaOAFi9fUBYgAAAAQAAAAABYsFiwAFAAsAEQAXAAABIxEhNSMDMzUzNSEBIxUhESMDFTMVMxECC5YBduCWluD+igOA4AF2luDglgLr/oqWAgrglvyAlgF2AqCW4AF2AAQAAAAABYsFiwAFAAsAEQAXAAABMxUzESETIxUhESMBMzUzNSETNSMRITUBdeCW/org4AF2lgHAluD+ipaWAXYCVeABdgHAlgF2++rglgHA4P6KlgAAAAACAAAAAAXWBdYADwATAAABIQ4BBxEeARchPgE3ES4BAyERIQVA/IA/VQEBVT8DgD9VAQFVP/yAA4AF1QFVP/yAP1UBAVU/A4A/VfvsA4AAAAYAAAAABmsGawAHAAwAEwAbACAAKAAACQEmJw4BBwElLgEnAQUhATYSNyYFAQYCBxYXIQUeARcBMwEWFz4BNwECvgFkTlSH8GEBEgOONemh/u4C5f3QAXpcaAEB/BP+3VxoAQEOAjD95DXpoQESeP7dTlSH8GH+7gPwAmgSAQFYUP4nd6X2Pv4nS/1zZAEBk01NAfhk/v+TTUhLpfY+Adn+CBIBAVhQAdkAAAAFAAAAAAZrBdYADwATABcAGwAfAAABIQ4BBxEeARchPgE3ES4BASEVIQEhNSEFITUhNSE1IQXV+1ZAVAICVEAEqkBUAgJU+xYBKv7WAur9FgLqAcD+1gEq/RYC6gXVAVU//IA/VQEBVT8DgD9V/ayV/tWVlZWWlQADAAAAAAYgBdYADwAnAD8AAAEhDgEHER4BFyE+ATcRLgEBIzUjFTM1MxUUBgcjLgEnET4BNzMeARUFIzUjFTM1MxUOAQcjLgE1ETQ2NzMeARcFi/vqP1QCAlQ/BBY/VAICVP1rcJWVcCog4CAqAQEqIOAgKgILcJWVcAEqIOAgKiog4CAqAQXVAVU//IA/VQEBVT8DgD9V/fcl4CVKICoBASogASogKgEBKiBKJeAlSiAqAQEqIAEqICoBASogAAAGAAAAAAYgBPYAAwAHAAsADwATABcAABMzNSMRMzUjETM1IwEhNSERITUhERUhNeCVlZWVlZUBKwQV++sEFfvrBBUDNZb+QJUBwJX+QJb+QJUCVZWVAAAAAQAAAAAGIAZsAC4AAAEiBgcBNjQnAR4BMz4BNy4BJw4BBxQXAS4BIw4BBx4BFzI2NwEGBx4BFz4BNy4BBUArSh797AcHAg8eTixffwICf19ffwIH/fEeTixffwICf18sTh4CFAUBA3tcXHsDA3sCTx8bATcZNhkBNB0gAn9fX38CAn9fGxn+zRwgAn9fX38CIBz+yhcaXHsCAntcXXsAAAIAAAAABlkGawBDAE8AAAE2NCc3PgEnAy4BDwEmLwEuASchDgEPAQYHJyYGBwMGFh8BBhQXBw4BFxMeAT8BFh8BHgEXIT4BPwE2NxcWNjcTNiYnBS4BJz4BNx4BFw4BBasFBZ4KBgeWBxkNujpEHAMUD/7WDxQCHEU5ug0aB5UHBQudBQWdCwUHlQcaDbo5RRwCFA8BKg8UAhxFOboNGgeVBwUL/ThvlAIClG9vlAIClAM3JEokewkaDQEDDAkFSy0cxg4RAQERDsYcLUsFCQz+/QwbCXskSiR7CRoN/v0MCQVLLRzGDhEBAREOxhwtSwUJDAEDDBsJQQKUb2+UAgKUb2+UAAAAAAEAAAAABmsGawALAAATEgAFJAATAgAlBACVCAGmAT0BPQGmCAj+Wv7D/sP+WgOA/sP+WggIAaYBPQE9AaYICP5aAAAAAgAAAAAGawZrAAsAFwAAAQQAAxIABSQAEwIAASYAJzYANxYAFwYAA4D+w/5aCAgBpgE9AT0BpggI/lr+w/3+rgYGAVL9/QFSBgb+rgZrCP5a/sP+w/5aCAgBpgE9AT0BpvrIBgFS/f0BUgYG/q79/f6uAAADAAAAAAZrBmsACwAXACMAAAEEAAMSAAUkABMCAAEmACc2ADcWABcGAAMOAQcuASc+ATceAQOA/sP+WggIAaYBPQE9AaYICP5a/sP9/q4GBgFS/f0BUgYG/q4dAn9fX38CAn9fX38Gawj+Wv7D/sP+WggIAaYBPQE9Aab6yAYBUv39AVIGBv6u/f3+rgJPX38CAn9fX38CAn8AAAAEAAAAAAYgBiAADwAbACUAKQAAASEOAQcRHgEXIT4BNxEuAQEjNSMVIxEzFTM1OwEhHgEXEQ4BByE3MzUjBYv76j9UAgJUPwQWP1QCAlT9a3CVcHCVcJYBKiAqAQEqIP7WcJWVBiACVD/76j9UAgJUPwQWP1T8gpWVAcC7uwEqIP7WICoBcOAAAgAAAAAGawZrAAsAFwAAAQQAAxIABSQAEwIAEwcJAScJATcJARcBA4D+w/5aCAgBpgE9AT0BpggI/lo4af70/vRpAQv+9WkBDAEMaf71BmsI/lr+w/7D/loICAGmAT0BPQGm/BFpAQv+9WkBDAEMaf71AQtp/vQAAQAAAAAF1ga2ABYAAAERCQERHgEXDgEHLgEnIxYAFzYANyYAA4D+iwF1vv0FBf2+vv0FlQYBUf7+AVEGBv6vBYsBKv6L/osBKgT9v779BQX9vv7+rwYGAVH+/gFRAAAAAQAAAAAFPwcAABQAAAERIyIGHQEhAyMRIREjETM1NDYzMgU/nVY8ASUn/v7O///QrZMG9P74SEi9/tj9CQL3ASjaus0AAAAABAAAAAAGjgcAADAARQBgAGwAAAEUHgMVFAcGBCMiJicmNTQ2NzYlLgE1NDcGIyImNTQ2Nz4BMyEHIx4BFRQOAycyNjc2NTQuAiMiBgcGFRQeAxMyPgI1NC4BLwEmLwImIyIOAxUUHgIBMxUjFSM1IzUzNTMDH0BbWkAwSP7qn4TlOSVZSoMBESAfFS4WlMtIP03TcAGiioNKTDFFRjGSJlAaNSI/akAqURkvFCs9WTY6a1s3Dg8THgocJU4QIDVob1M2RnF9A2vV1WnU1GkD5CRFQ1CATlpTenNTYDxHUYouUhIqQCkkMQTBlFKaNkJAWD+MWkhzRztAPiEbOWY6hn1SJyE7ZS5nZ1I0/JcaNF4+GTAkGCMLFx04Ag4kOF07Rms7HQNsbNvbbNkAAwAAAAAGgAZsAAMADgAqAAABESERARYGKwEiJjQ2MhYBESERNCYjIgYHBhURIRIQLwEhFSM+AzMyFgHd/rYBXwFnVAJSZGemZASP/rdRVj9VFQv+twIBAQFJAhQqR2c/q9AEj/whA98BMkliYpNhYfzd/cgCEml3RTMeM/3XAY8B8DAwkCAwOB/jAAABAAAAAAaUBgAAMQAAAQYHFhUUAg4BBCMgJxYzMjcuAScWMzI3LgE9ARYXLgE1NDcWBBcmNTQ2MzIXNjcGBzYGlENfAUyb1v7SrP7x4SMr4bBpph8hHCsqcJNETkJOLHkBW8YIvYaMYG1gJWldBWhiRQ4cgv797rdtkQSKAn1hBQsXsXUEJgMsjlNYS5WzCiYkhr1mFTlzPwoAAAABAAAAAAWABwAAIgAAARcOAQcGLgM1ESM1PgQ3PgE7AREhFSERFB4CNzYFMFAXsFlorXBOIahIckQwFAUBBwT0AU3+sg0gQzBOAc/tIz4BAjhceHg6AiDXGlddb1ctBQf+WPz9+h40NR4BAgABAAAAAAaABoAASgAAARQCBCMiJzY/AR4BMzI+ATU0LgEjIg4DFRQWFxY/ATY3NicmNTQ2MzIWFRQGIyImNz4CNTQmIyIGFRQXAwYXJgI1NBIkIAQSBoDO/p/Rb2s7EzYUaj15vmh34o5ptn9bK1BNHggIBgIGETPRqZepiWs9Sg4IJRc2Mj5WGWMRBM7+zgFhAaIBYc4DgNH+n84gXUfTJzmJ8JZyyH46YH2GQ2ieIAwgHxgGFxQ9WpfZpIOq7lc9I3VZHzJCclVJMf5eRmtbAXzp0QFhzs7+nwAABwAAAAAHAATPAA4AFwAqAD0AUABaAF0AAAERNh4CBw4BBwYmIycmNxY2NzYmBxEUBRY2Nz4BNy4BJyMGHwEeARcOARcWNjc+ATcuAScjBh8BHgEXFAYXFjY3PgE3LgEnIwYfAR4BFw4BBTM/ARUzESMGAyUVJwMchM2UWwgNq4JHrQgBAapUaAoJcWMBfiIhDiMrAQJLMB0BBAokNAIBPmMiIQ4iLAECSzAeAQUKJDQBP2MiIQ4iLAECSzAeAQUKJDQBAT75g+5B4arNLNIBJ44ByQL9BQ9mvYCKwA8FBQMDwwJVTGdzBf6VB8IHNR08lld9uT4LCRA/qGNxvUwHNR08lld9uT4LCRA/qGNxvUwHNR08lld9uT4LCRA/qGNxvVJkAWUDDEf+tYP5AQAAAAEAAAAABiAGtgAbAAABBAADER4BFzMRITU2ADcWABcVIREzPgE3EQIAA4D+4v6FBwJ/X+D+1QYBJ97eAScG/tXgX38CB/6FBrUH/oX+4v32X38CAlWV3gEnBgb+2d6V/asCf18CCgEeAXsAAAAAEADGAAEAAAAAAAEABwAAAAEAAAAAAAIABwAHAAEAAAAAAAMABwAOAAEAAAAAAAQABwAVAAEAAAAAAAUACwAcAAEAAAAAAAYABwAnAAEAAAAAAAoAKwAuAAEAAAAAAAsAEwBZAAMAAQQJAAEADgBsAAMAAQQJAAIADgB6AAMAAQQJAAMADgCIAAMAAQQJAAQADgCWAAMAAQQJAAUAFgCkAAMAAQQJAAYADgC6AAMAAQQJAAoAVgDIAAMAAQQJAAsAJgEeVmlkZW9KU1JlZ3VsYXJWaWRlb0pTVmlkZW9KU1ZlcnNpb24gMS4wVmlkZW9KU0dlbmVyYXRlZCBieSBzdmcydHRmIGZyb20gRm9udGVsbG8gcHJvamVjdC5odHRwOi8vZm9udGVsbG8uY29tAFYAaQBkAGUAbwBKAFMAUgBlAGcAdQBsAGEAcgBWAGkAZABlAG8ASgBTAFYAaQBkAGUAbwBKAFMAVgBlAHIAcwBpAG8AbgAgADEALgAwAFYAaQBkAGUAbwBKAFMARwBlAG4AZQByAGEAdABlAGQAIABiAHkAIABzAHYAZwAyAHQAdABmACAAZgByAG8AbQAgAEYAbwBuAHQAZQBsAGwAbwAgAHAAcgBvAGoAZQBjAHQALgBoAHQAdABwADoALwAvAGYAbwBuAHQAZQBsAGwAbwAuAGMAbwBtAAAAAgAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfAAABAgEDAQQBBQEGAQcBCAEJAQoBCwEMAQ0BDgEPARABEQESARMBFAEVARYBFwEYARkBGgEbARwBHQEeAR8EcGxheQtwbGF5LWNpcmNsZQVwYXVzZQt2b2x1bWUtbXV0ZQp2b2x1bWUtbG93CnZvbHVtZS1taWQLdm9sdW1lLWhpZ2gQZnVsbHNjcmVlbi1lbnRlcg9mdWxsc2NyZWVuLWV4aXQGc3F1YXJlB3NwaW5uZXIJc3VidGl0bGVzCGNhcHRpb25zCGNoYXB0ZXJzBXNoYXJlA2NvZwZjaXJjbGUOY2lyY2xlLW91dGxpbmUTY2lyY2xlLWlubmVyLWNpcmNsZQJoZAZjYW5jZWwGcmVwbGF5CGZhY2Vib29rBWdwbHVzCGxpbmtlZGluB3R3aXR0ZXIGdHVtYmxyCXBpbnRlcmVzdBFhdWRpby1kZXNjcmlwdGlvbgVhdWRpbwAAAAAA) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+.vjs-icon-play, .video-js .vjs-big-play-button, .video-js .vjs-play-control {
+  font-family: VideoJS;
+  font-weight: normal;
+  font-style: normal; }
+  .vjs-icon-play:before, .video-js .vjs-big-play-button:before, .video-js .vjs-play-control:before {
+    content: "\f101"; }
+
+.vjs-icon-play-circle {
+  font-family: VideoJS;
+  font-weight: normal;
+  font-style: normal; }
+  .vjs-icon-play-circle:before {
+    content: "\f102"; }
+
+.vjs-icon-pause, .video-js .vjs-play-control.vjs-playing {
+  font-family: VideoJS;
+  font-weight: normal;
+  font-style: normal; }
+  .vjs-icon-pause:before, .video-js .vjs-play-control.vjs-playing:before {
+    content: "\f103"; }
+
+.vjs-icon-volume-mute, .video-js .vjs-mute-control.vjs-vol-0,
+.video-js .vjs-volume-menu-button.vjs-vol-0 {
+  font-family: VideoJS;
+  font-weight: normal;
+  font-style: normal; }
+  .vjs-icon-volume-mute:before, .video-js .vjs-mute-control.vjs-vol-0:before,
+  .video-js .vjs-volume-menu-button.vjs-vol-0:before {
+    content: "\f104"; }
+
+.vjs-icon-volume-low, .video-js .vjs-mute-control.vjs-vol-1,
+.video-js .vjs-volume-menu-button.vjs-vol-1 {
+  font-family: VideoJS;
+  font-weight: normal;
+  font-style: normal; }
+  .vjs-icon-volume-low:before, .video-js .vjs-mute-control.vjs-vol-1:before,
+  .video-js .vjs-volume-menu-button.vjs-vol-1:before {
+    content: "\f105"; }
+
+.vjs-icon-volume-mid, .video-js .vjs-mute-control.vjs-vol-2,
+.video-js .vjs-volume-menu-button.vjs-vol-2 {
+  font-family: VideoJS;
+  font-weight: normal;
+  font-style: normal; }
+  .vjs-icon-volume-mid:before, .video-js .vjs-mute-control.vjs-vol-2:before,
+  .video-js .vjs-volume-menu-button.vjs-vol-2:before {
+    content: "\f106"; }
+
+.vjs-icon-volume-high, .video-js .vjs-mute-control,
+.video-js .vjs-volume-menu-button {
+  font-family: VideoJS;
+  font-weight: normal;
+  font-style: normal; }
+  .vjs-icon-volume-high:before, .video-js .vjs-mute-control:before,
+  .video-js .vjs-volume-menu-button:before {
+    content: "\f107"; }
+
+.vjs-icon-fullscreen-enter, .video-js .vjs-fullscreen-control {
+  font-family: VideoJS;
+  font-weight: normal;
+  font-style: normal; }
+  .vjs-icon-fullscreen-enter:before, .video-js .vjs-fullscreen-control:before {
+    content: "\f108"; }
+
+.vjs-icon-fullscreen-exit, .video-js.vjs-fullscreen .vjs-fullscreen-control {
+  font-family: VideoJS;
+  font-weight: normal;
+  font-style: normal; }
+  .vjs-icon-fullscreen-exit:before, .video-js.vjs-fullscreen .vjs-fullscreen-control:before {
+    content: "\f109"; }
+
+.vjs-icon-square {
+  font-family: VideoJS;
+  font-weight: normal;
+  font-style: normal; }
+  .vjs-icon-square:before {
+    content: "\f10a"; }
+
+.vjs-icon-spinner {
+  font-family: VideoJS;
+  font-weight: normal;
+  font-style: normal; }
+  .vjs-icon-spinner:before {
+    content: "\f10b"; }
+
+.vjs-icon-subtitles, .video-js .vjs-subtitles-button {
+  font-family: VideoJS;
+  font-weight: normal;
+  font-style: normal; }
+  .vjs-icon-subtitles:before, .video-js .vjs-subtitles-button:before {
+    content: "\f10c"; }
+
+.vjs-icon-captions, .video-js .vjs-captions-button {
+  font-family: VideoJS;
+  font-weight: normal;
+  font-style: normal; }
+  .vjs-icon-captions:before, .video-js .vjs-captions-button:before {
+    content: "\f10d"; }
+
+.vjs-icon-chapters, .video-js .vjs-chapters-button {
+  font-family: VideoJS;
+  font-weight: normal;
+  font-style: normal; }
+  .vjs-icon-chapters:before, .video-js .vjs-chapters-button:before {
+    content: "\f10e"; }
+
+.vjs-icon-share {
+  font-family: VideoJS;
+  font-weight: normal;
+  font-style: normal; }
+  .vjs-icon-share:before {
+    content: "\f10f"; }
+
+.vjs-icon-cog {
+  font-family: VideoJS;
+  font-weight: normal;
+  font-style: normal; }
+  .vjs-icon-cog:before {
+    content: "\f110"; }
+
+.vjs-icon-circle, .video-js .vjs-mouse-display, .video-js .vjs-play-progress, .video-js .vjs-volume-level {
+  font-family: VideoJS;
+  font-weight: normal;
+  font-style: normal; }
+  .vjs-icon-circle:before, .video-js .vjs-mouse-display:before, .video-js .vjs-play-progress:before, .video-js .vjs-volume-level:before {
+    content: "\f111"; }
+
+.vjs-icon-circle-outline {
+  font-family: VideoJS;
+  font-weight: normal;
+  font-style: normal; }
+  .vjs-icon-circle-outline:before {
+    content: "\f112"; }
+
+.vjs-icon-circle-inner-circle {
+  font-family: VideoJS;
+  font-weight: normal;
+  font-style: normal; }
+  .vjs-icon-circle-inner-circle:before {
+    content: "\f113"; }
+
+.vjs-icon-hd {
+  font-family: VideoJS;
+  font-weight: normal;
+  font-style: normal; }
+  .vjs-icon-hd:before {
+    content: "\f114"; }
+
+.vjs-icon-cancel, .video-js .vjs-control.vjs-close-button {
+  font-family: VideoJS;
+  font-weight: normal;
+  font-style: normal; }
+  .vjs-icon-cancel:before, .video-js .vjs-control.vjs-close-button:before {
+    content: "\f115"; }
+
+.vjs-icon-replay {
+  font-family: VideoJS;
+  font-weight: normal;
+  font-style: normal; }
+  .vjs-icon-replay:before {
+    content: "\f116"; }
+
+.vjs-icon-facebook {
+  font-family: VideoJS;
+  font-weight: normal;
+  font-style: normal; }
+  .vjs-icon-facebook:before {
+    content: "\f117"; }
+
+.vjs-icon-gplus {
+  font-family: VideoJS;
+  font-weight: normal;
+  font-style: normal; }
+  .vjs-icon-gplus:before {
+    content: "\f118"; }
+
+.vjs-icon-linkedin {
+  font-family: VideoJS;
+  font-weight: normal;
+  font-style: normal; }
+  .vjs-icon-linkedin:before {
+    content: "\f119"; }
+
+.vjs-icon-twitter {
+  font-family: VideoJS;
+  font-weight: normal;
+  font-style: normal; }
+  .vjs-icon-twitter:before {
+    content: "\f11a"; }
+
+.vjs-icon-tumblr {
+  font-family: VideoJS;
+  font-weight: normal;
+  font-style: normal; }
+  .vjs-icon-tumblr:before {
+    content: "\f11b"; }
+
+.vjs-icon-pinterest {
+  font-family: VideoJS;
+  font-weight: normal;
+  font-style: normal; }
+  .vjs-icon-pinterest:before {
+    content: "\f11c"; }
+
+.vjs-icon-audio-description, .video-js .vjs-descriptions-button {
+  font-family: VideoJS;
+  font-weight: normal;
+  font-style: normal; }
+  .vjs-icon-audio-description:before, .video-js .vjs-descriptions-button:before {
+    content: "\f11d"; }
+
+.vjs-icon-audio, .video-js .vjs-audio-button {
+  font-family: VideoJS;
+  font-weight: normal;
+  font-style: normal; }
+  .vjs-icon-audio:before, .video-js .vjs-audio-button:before {
+    content: "\f11e"; }
+
+.video-js {
+  display: block;
+  vertical-align: top;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: #000;
+  position: relative;
+  padding: 0;
+  font-size: 10px;
+  line-height: 1;
+  font-weight: normal;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .video-js:-moz-full-screen {
+    position: absolute; }
+  .video-js:-webkit-full-screen {
+    width: 100% !important;
+    height: 100% !important; }
+
+.video-js *,
+.video-js *:before,
+.video-js *:after {
+  box-sizing: inherit; }
+
+.video-js ul {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  list-style-position: outside;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.video-js.vjs-fluid,
+.video-js.vjs-16-9,
+.video-js.vjs-4-3 {
+  width: 100%;
+  max-width: 100%;
+  height: 0; }
+
+.video-js.vjs-16-9 {
+  padding-top: 56.25%; }
+
+.video-js.vjs-4-3 {
+  padding-top: 75%; }
+
+.video-js.vjs-fill {
+  width: 100%;
+  height: 100%; }
+
+.video-js .vjs-tech {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+body.vjs-full-window {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  overflow-y: auto; }
+
+.vjs-full-window .video-js.vjs-fullscreen {
+  position: fixed;
+  overflow: hidden;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0; }
+
+.video-js.vjs-fullscreen {
+  width: 100% !important;
+  height: 100% !important;
+  padding-top: 0 !important; }
+
+.video-js.vjs-fullscreen.vjs-user-inactive {
+  cursor: none; }
+
+.vjs-hidden {
+  display: none !important; }
+
+.vjs-disabled {
+  opacity: 0.5;
+  cursor: default; }
+
+.video-js .vjs-offscreen {
+  height: 1px;
+  left: -9999px;
+  position: absolute;
+  top: 0;
+  width: 1px; }
+
+.vjs-lock-showing {
+  display: block !important;
+  opacity: 1;
+  visibility: visible; }
+
+.vjs-no-js {
+  padding: 20px;
+  color: #fff;
+  background-color: #000;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  width: 300px;
+  height: 150px;
+  margin: 0px auto; }
+
+.vjs-no-js a,
+.vjs-no-js a:visited {
+  color: #66A8CC; }
+
+.video-js .vjs-big-play-button {
+  font-size: 3em;
+  line-height: 1.5em;
+  height: 1.5em;
+  width: 3em;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 0;
+  cursor: pointer;
+  opacity: 1;
+  border: 0.06666em solid #fff;
+  background-color: #2B333F;
+  background-color: rgba(43, 51, 63, 0.7);
+  -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  border-radius: 0.3em;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s; }
+
+.vjs-big-play-centered .vjs-big-play-button {
+  top: 50%;
+  left: 50%;
+  margin-top: -0.75em;
+  margin-left: -1.5em; }
+
+.video-js:hover .vjs-big-play-button,
+.video-js .vjs-big-play-button:focus {
+  outline: 0;
+  border-color: #fff;
+  background-color: #73859f;
+  background-color: rgba(115, 133, 159, 0.5);
+  -webkit-transition: all 0s;
+  -moz-transition: all 0s;
+  -o-transition: all 0s;
+  transition: all 0s; }
+
+.vjs-controls-disabled .vjs-big-play-button,
+.vjs-has-started .vjs-big-play-button,
+.vjs-using-native-controls .vjs-big-play-button,
+.vjs-error .vjs-big-play-button {
+  display: none; }
+
+.vjs-has-started.vjs-paused.vjs-show-big-play-button-on-pause .vjs-big-play-button {
+  display: block; }
+
+.video-js button {
+  background: none;
+  border: none;
+  color: inherit;
+  display: inline-block;
+  overflow: visible;
+  font-size: inherit;
+  line-height: inherit;
+  text-transform: none;
+  text-decoration: none;
+  transition: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+.video-js .vjs-control.vjs-close-button {
+  cursor: pointer;
+  height: 3em;
+  position: absolute;
+  right: 0;
+  top: 0.5em;
+  z-index: 2; }
+
+.vjs-menu-button {
+  cursor: pointer; }
+
+.vjs-menu-button.vjs-disabled {
+  cursor: default; }
+
+.vjs-workinghover .vjs-menu-button.vjs-disabled:hover .vjs-menu {
+  display: none; }
+
+.vjs-menu .vjs-menu-content {
+  display: block;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.vjs-scrubbing .vjs-menu-button:hover .vjs-menu {
+  display: none; }
+
+.vjs-menu li {
+  list-style: none;
+  margin: 0;
+  padding: 0.2em 0;
+  line-height: 1.4em;
+  font-size: 1.2em;
+  text-align: center;
+  text-transform: lowercase; }
+
+.vjs-menu li.vjs-menu-item:focus,
+.vjs-menu li.vjs-menu-item:hover {
+  outline: 0;
+  background-color: #73859f;
+  background-color: rgba(115, 133, 159, 0.5); }
+
+.vjs-menu li.vjs-selected,
+.vjs-menu li.vjs-selected:focus,
+.vjs-menu li.vjs-selected:hover {
+  background-color: #fff;
+  color: #2B333F; }
+
+.vjs-menu li.vjs-menu-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1em;
+  line-height: 2em;
+  padding: 0;
+  margin: 0 0 0.3em 0;
+  font-weight: bold;
+  cursor: default; }
+
+.vjs-menu-button-popup .vjs-menu {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  width: 10em;
+  left: -3em;
+  height: 0em;
+  margin-bottom: 1.5em;
+  border-top-color: rgba(43, 51, 63, 0.7); }
+
+.vjs-menu-button-popup .vjs-menu .vjs-menu-content {
+  background-color: #2B333F;
+  background-color: rgba(43, 51, 63, 0.7);
+  position: absolute;
+  width: 100%;
+  bottom: 1.5em;
+  max-height: 15em; }
+
+.vjs-workinghover .vjs-menu-button-popup:hover .vjs-menu,
+.vjs-menu-button-popup .vjs-menu.vjs-lock-showing {
+  display: block; }
+
+.video-js .vjs-menu-button-inline {
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  overflow: hidden; }
+
+.video-js .vjs-menu-button-inline:before {
+  width: 2.222222222em; }
+
+.video-js .vjs-menu-button-inline:hover,
+.video-js .vjs-menu-button-inline:focus,
+.video-js .vjs-menu-button-inline.vjs-slider-active,
+.video-js.vjs-no-flex .vjs-menu-button-inline {
+  width: 12em; }
+
+.video-js .vjs-menu-button-inline.vjs-slider-active {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none; }
+
+.vjs-menu-button-inline .vjs-menu {
+  opacity: 0;
+  height: 100%;
+  width: auto;
+  position: absolute;
+  left: 4em;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s; }
+
+.vjs-menu-button-inline:hover .vjs-menu,
+.vjs-menu-button-inline:focus .vjs-menu,
+.vjs-menu-button-inline.vjs-slider-active .vjs-menu {
+  display: block;
+  opacity: 1; }
+
+.vjs-no-flex .vjs-menu-button-inline .vjs-menu {
+  display: block;
+  opacity: 1;
+  position: relative;
+  width: auto; }
+
+.vjs-no-flex .vjs-menu-button-inline:hover .vjs-menu,
+.vjs-no-flex .vjs-menu-button-inline:focus .vjs-menu,
+.vjs-no-flex .vjs-menu-button-inline.vjs-slider-active .vjs-menu {
+  width: auto; }
+
+.vjs-menu-button-inline .vjs-menu-content {
+  width: auto;
+  height: 100%;
+  margin: 0;
+  overflow: hidden; }
+
+.video-js .vjs-control-bar {
+  display: none;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3.0em;
+  background-color: #2B333F;
+  background-color: rgba(43, 51, 63, 0.7); }
+
+.vjs-has-started .vjs-control-bar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: visibility 0.1s, opacity 0.1s;
+  -moz-transition: visibility 0.1s, opacity 0.1s;
+  -o-transition: visibility 0.1s, opacity 0.1s;
+  transition: visibility 0.1s, opacity 0.1s; }
+
+.vjs-has-started.vjs-user-inactive.vjs-playing .vjs-control-bar {
+  visibility: visible;
+  opacity: 0;
+  -webkit-transition: visibility 1s, opacity 1s;
+  -moz-transition: visibility 1s, opacity 1s;
+  -o-transition: visibility 1s, opacity 1s;
+  transition: visibility 1s, opacity 1s; }
+
+.vjs-controls-disabled .vjs-control-bar,
+.vjs-using-native-controls .vjs-control-bar,
+.vjs-error .vjs-control-bar {
+  display: none !important; }
+
+.vjs-audio.vjs-has-started.vjs-user-inactive.vjs-playing .vjs-control-bar {
+  opacity: 1;
+  visibility: visible; }
+
+.vjs-has-started.vjs-no-flex .vjs-control-bar {
+  display: table; }
+
+.video-js .vjs-control {
+  outline: none;
+  position: relative;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 4em;
+  -webkit-box-flex: none;
+  -moz-box-flex: none;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none; }
+  .video-js .vjs-control:before {
+    font-size: 1.8em;
+    line-height: 1.67; }
+
+.video-js .vjs-control:focus:before,
+.video-js .vjs-control:hover:before,
+.video-js .vjs-control:focus {
+  text-shadow: 0em 0em 1em white; }
+
+.video-js .vjs-control-text {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.vjs-no-flex .vjs-control {
+  display: table-cell;
+  vertical-align: middle; }
+
+.video-js .vjs-custom-control-spacer {
+  display: none; }
+
+.video-js .vjs-progress-control {
+  -webkit-box-flex: auto;
+  -moz-box-flex: auto;
+  -webkit-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 4em; }
+
+.vjs-live .vjs-progress-control {
+  display: none; }
+
+.video-js .vjs-progress-holder {
+  -webkit-box-flex: auto;
+  -moz-box-flex: auto;
+  -webkit-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  height: 0.3em; }
+
+.video-js .vjs-progress-control:hover .vjs-progress-holder {
+  font-size: 1.666666666666666666em; }
+
+/* If we let the font size grow as much as everything else, the current time tooltip ends up
+ ginormous. If you'd like to enable the current time tooltip all the time, this should be disabled
+ to avoid a weird hitch when you roll off the hover. */
+.video-js .vjs-progress-control:hover .vjs-time-tooltip,
+.video-js .vjs-progress-control:hover .vjs-mouse-display:after,
+.video-js .vjs-progress-control:hover .vjs-play-progress:after {
+  font-family: Arial, Helvetica, sans-serif;
+  visibility: visible;
+  font-size: 0.6em; }
+
+.video-js .vjs-progress-holder .vjs-play-progress,
+.video-js .vjs-progress-holder .vjs-load-progress,
+.video-js .vjs-progress-holder .vjs-tooltip-progress-bar,
+.video-js .vjs-progress-holder .vjs-load-progress div {
+  position: absolute;
+  display: block;
+  height: 0.3em;
+  margin: 0;
+  padding: 0;
+  width: 0;
+  left: 0;
+  top: 0; }
+
+.video-js .vjs-mouse-display:before {
+  display: none; }
+
+.video-js .vjs-play-progress {
+  background-color: #fff; }
+  .video-js .vjs-play-progress:before {
+    position: absolute;
+    top: -0.333333333333333em;
+    right: -0.5em;
+    font-size: 0.9em; }
+
+.video-js .vjs-time-tooltip,
+.video-js .vjs-mouse-display:after,
+.video-js .vjs-play-progress:after {
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+  top: -3.4em;
+  right: -1.9em;
+  font-size: 0.9em;
+  color: #000;
+  content: attr(data-current-time);
+  padding: 6px 8px 8px 8px;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  border-radius: 0.3em; }
+
+.video-js .vjs-time-tooltip,
+.video-js .vjs-play-progress:before,
+.video-js .vjs-play-progress:after {
+  z-index: 1; }
+
+.video-js .vjs-progress-control .vjs-keep-tooltips-inside:after {
+  display: none; }
+
+.video-js .vjs-load-progress {
+  background: #bfc7d3;
+  background: rgba(115, 133, 159, 0.5); }
+
+.video-js .vjs-load-progress div {
+  background: white;
+  background: rgba(115, 133, 159, 0.75); }
+
+.video-js.vjs-no-flex .vjs-progress-control {
+  width: auto; }
+
+.video-js .vjs-time-tooltip {
+  display: inline-block;
+  height: 2.4em;
+  position: relative;
+  float: right;
+  right: -1.9em; }
+
+.vjs-tooltip-progress-bar {
+  visibility: hidden; }
+
+.video-js .vjs-progress-control .vjs-mouse-display {
+  display: none;
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: #000;
+  z-index: 1; }
+
+.vjs-no-flex .vjs-progress-control .vjs-mouse-display {
+  z-index: 0; }
+
+.video-js .vjs-progress-control:hover .vjs-mouse-display {
+  display: block; }
+
+.video-js.vjs-user-inactive .vjs-progress-control .vjs-mouse-display,
+.video-js.vjs-user-inactive .vjs-progress-control .vjs-mouse-display:after {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 1s, opacity 1s;
+  -moz-transition: visibility 1s, opacity 1s;
+  -o-transition: visibility 1s, opacity 1s;
+  transition: visibility 1s, opacity 1s; }
+
+.video-js.vjs-user-inactive.vjs-no-flex .vjs-progress-control .vjs-mouse-display,
+.video-js.vjs-user-inactive.vjs-no-flex .vjs-progress-control .vjs-mouse-display:after {
+  display: none; }
+
+.vjs-mouse-display .vjs-time-tooltip,
+.video-js .vjs-progress-control .vjs-mouse-display:after {
+  color: #fff;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.8); }
+
+.video-js .vjs-slider {
+  outline: 0;
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+  margin: 0 0.45em 0 0.45em;
+  background-color: #73859f;
+  background-color: rgba(115, 133, 159, 0.5); }
+
+.video-js .vjs-slider:focus {
+  text-shadow: 0em 0em 1em white;
+  -webkit-box-shadow: 0 0 1em #fff;
+  -moz-box-shadow: 0 0 1em #fff;
+  box-shadow: 0 0 1em #fff; }
+
+.video-js .vjs-mute-control,
+.video-js .vjs-volume-menu-button {
+  cursor: pointer;
+  -webkit-box-flex: none;
+  -moz-box-flex: none;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none; }
+
+.video-js .vjs-volume-control {
+  width: 5em;
+  -webkit-box-flex: none;
+  -moz-box-flex: none;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.video-js .vjs-volume-bar {
+  margin: 1.35em 0.45em; }
+
+.vjs-volume-bar.vjs-slider-horizontal {
+  width: 5em;
+  height: 0.3em; }
+
+.vjs-volume-bar.vjs-slider-vertical {
+  width: 0.3em;
+  height: 5em;
+  margin: 1.35em auto; }
+
+.video-js .vjs-volume-level {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #fff; }
+  .video-js .vjs-volume-level:before {
+    position: absolute;
+    font-size: 0.9em; }
+
+.vjs-slider-vertical .vjs-volume-level {
+  width: 0.3em; }
+  .vjs-slider-vertical .vjs-volume-level:before {
+    top: -0.5em;
+    left: -0.3em; }
+
+.vjs-slider-horizontal .vjs-volume-level {
+  height: 0.3em; }
+  .vjs-slider-horizontal .vjs-volume-level:before {
+    top: -0.3em;
+    right: -0.5em; }
+
+.vjs-volume-bar.vjs-slider-vertical .vjs-volume-level {
+  height: 100%; }
+
+.vjs-volume-bar.vjs-slider-horizontal .vjs-volume-level {
+  width: 100%; }
+
+.vjs-menu-button-popup.vjs-volume-menu-button .vjs-menu {
+  display: block;
+  width: 0;
+  height: 0;
+  border-top-color: transparent; }
+
+.vjs-menu-button-popup.vjs-volume-menu-button-vertical .vjs-menu {
+  left: 0.5em;
+  height: 8em; }
+
+.vjs-menu-button-popup.vjs-volume-menu-button-horizontal .vjs-menu {
+  left: -2em; }
+
+.vjs-menu-button-popup.vjs-volume-menu-button .vjs-menu-content {
+  height: 0;
+  width: 0;
+  overflow-x: hidden;
+  overflow-y: hidden; }
+
+.vjs-volume-menu-button-vertical:hover .vjs-menu-content,
+.vjs-volume-menu-button-vertical:focus .vjs-menu-content,
+.vjs-volume-menu-button-vertical.vjs-slider-active .vjs-menu-content,
+.vjs-volume-menu-button-vertical .vjs-lock-showing .vjs-menu-content {
+  height: 8em;
+  width: 2.9em; }
+
+.vjs-volume-menu-button-horizontal:hover .vjs-menu-content,
+.vjs-volume-menu-button-horizontal:focus .vjs-menu-content,
+.vjs-volume-menu-button-horizontal .vjs-slider-active .vjs-menu-content,
+.vjs-volume-menu-button-horizontal .vjs-lock-showing .vjs-menu-content {
+  height: 2.9em;
+  width: 8em; }
+
+.vjs-volume-menu-button.vjs-menu-button-inline .vjs-menu-content {
+  background-color: transparent !important; }
+
+.vjs-poster {
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  background-color: #000000;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%; }
+
+.vjs-poster img {
+  display: block;
+  vertical-align: middle;
+  margin: 0 auto;
+  max-height: 100%;
+  padding: 0;
+  width: 100%; }
+
+.vjs-has-started .vjs-poster {
+  display: none; }
+
+.vjs-audio.vjs-has-started .vjs-poster {
+  display: block; }
+
+.vjs-using-native-controls .vjs-poster {
+  display: none; }
+
+.video-js .vjs-live-control {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: flex-start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-flex: auto;
+  -moz-box-flex: auto;
+  -webkit-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  font-size: 1em;
+  line-height: 3em; }
+
+.vjs-no-flex .vjs-live-control {
+  display: table-cell;
+  width: auto;
+  text-align: left; }
+
+.video-js .vjs-time-control {
+  -webkit-box-flex: none;
+  -moz-box-flex: none;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  font-size: 1em;
+  line-height: 3em;
+  min-width: 2em;
+  width: auto;
+  padding-left: 1em;
+  padding-right: 1em; }
+
+.vjs-live .vjs-time-control {
+  display: none; }
+
+.video-js .vjs-current-time,
+.vjs-no-flex .vjs-current-time {
+  display: none; }
+
+.video-js .vjs-duration,
+.vjs-no-flex .vjs-duration {
+  display: none; }
+
+.vjs-time-divider {
+  display: none;
+  line-height: 3em; }
+
+.vjs-live .vjs-time-divider {
+  display: none; }
+
+.video-js .vjs-play-control {
+  cursor: pointer;
+  -webkit-box-flex: none;
+  -moz-box-flex: none;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none; }
+
+.vjs-text-track-display {
+  position: absolute;
+  bottom: 3em;
+  left: 0;
+  right: 0;
+  top: 0;
+  pointer-events: none; }
+
+.video-js.vjs-user-inactive.vjs-playing .vjs-text-track-display {
+  bottom: 1em; }
+
+.video-js .vjs-text-track {
+  font-size: 1.4em;
+  text-align: center;
+  margin-bottom: 0.1em;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.vjs-subtitles {
+  color: #fff; }
+
+.vjs-captions {
+  color: #fc6; }
+
+.vjs-tt-cue {
+  display: block; }
+
+video::-webkit-media-text-track-display {
+  -moz-transform: translateY(-3em);
+  -ms-transform: translateY(-3em);
+  -o-transform: translateY(-3em);
+  -webkit-transform: translateY(-3em);
+  transform: translateY(-3em); }
+
+.video-js.vjs-user-inactive.vjs-playing video::-webkit-media-text-track-display {
+  -moz-transform: translateY(-1.5em);
+  -ms-transform: translateY(-1.5em);
+  -o-transform: translateY(-1.5em);
+  -webkit-transform: translateY(-1.5em);
+  transform: translateY(-1.5em); }
+
+.video-js .vjs-fullscreen-control {
+  cursor: pointer;
+  -webkit-box-flex: none;
+  -moz-box-flex: none;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none; }
+
+.vjs-playback-rate .vjs-playback-rate-value {
+  font-size: 1.5em;
+  line-height: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center; }
+
+.vjs-playback-rate .vjs-menu {
+  width: 4em;
+  left: 0em; }
+
+.vjs-error .vjs-error-display .vjs-modal-dialog-content {
+  font-size: 1.4em;
+  text-align: center; }
+
+.vjs-error .vjs-error-display:before {
+  color: #fff;
+  content: 'X';
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4em;
+  left: 0;
+  line-height: 1;
+  margin-top: -0.5em;
+  position: absolute;
+  text-shadow: 0.05em 0.05em 0.1em #000;
+  text-align: center;
+  top: 50%;
+  vertical-align: middle;
+  width: 100%; }
+
+.vjs-loading-spinner {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+  opacity: 0.85;
+  text-align: left;
+  border: 6px solid rgba(43, 51, 63, 0.7);
+  box-sizing: border-box;
+  background-clip: padding-box;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px; }
+
+.vjs-seeking .vjs-loading-spinner,
+.vjs-waiting .vjs-loading-spinner {
+  display: block; }
+
+.vjs-loading-spinner:before,
+.vjs-loading-spinner:after {
+  content: "";
+  position: absolute;
+  margin: -6px;
+  box-sizing: inherit;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  opacity: 1;
+  border: inherit;
+  border-color: transparent;
+  border-top-color: white; }
+
+.vjs-seeking .vjs-loading-spinner:before,
+.vjs-seeking .vjs-loading-spinner:after,
+.vjs-waiting .vjs-loading-spinner:before,
+.vjs-waiting .vjs-loading-spinner:after {
+  -webkit-animation: vjs-spinner-spin 1.1s cubic-bezier(0.6, 0.2, 0, 0.8) infinite, vjs-spinner-fade 1.1s linear infinite;
+  animation: vjs-spinner-spin 1.1s cubic-bezier(0.6, 0.2, 0, 0.8) infinite, vjs-spinner-fade 1.1s linear infinite; }
+
+.vjs-seeking .vjs-loading-spinner:before,
+.vjs-waiting .vjs-loading-spinner:before {
+  border-top-color: white; }
+
+.vjs-seeking .vjs-loading-spinner:after,
+.vjs-waiting .vjs-loading-spinner:after {
+  border-top-color: white;
+  -webkit-animation-delay: 0.44s;
+  animation-delay: 0.44s; }
+
+@keyframes vjs-spinner-spin {
+  100% {
+    transform: rotate(360deg); } }
+
+@-webkit-keyframes vjs-spinner-spin {
+  100% {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes vjs-spinner-fade {
+  0% {
+    border-top-color: #73859f; }
+  20% {
+    border-top-color: #73859f; }
+  35% {
+    border-top-color: white; }
+  60% {
+    border-top-color: #73859f; }
+  100% {
+    border-top-color: #73859f; } }
+
+@-webkit-keyframes vjs-spinner-fade {
+  0% {
+    border-top-color: #73859f; }
+  20% {
+    border-top-color: #73859f; }
+  35% {
+    border-top-color: white; }
+  60% {
+    border-top-color: #73859f; }
+  100% {
+    border-top-color: #73859f; } }
+
+.vjs-chapters-button .vjs-menu ul {
+  width: 24em; }
+
+.video-js.vjs-layout-tiny:not(.vjs-fullscreen) .vjs-custom-control-spacer {
+  -webkit-box-flex: auto;
+  -moz-box-flex: auto;
+  -webkit-flex: auto;
+  -ms-flex: auto;
+  flex: auto; }
+
+.video-js.vjs-layout-tiny:not(.vjs-fullscreen).vjs-no-flex .vjs-custom-control-spacer {
+  width: auto; }
+
+.video-js.vjs-layout-tiny:not(.vjs-fullscreen) .vjs-current-time, .video-js.vjs-layout-tiny:not(.vjs-fullscreen) .vjs-time-divider, .video-js.vjs-layout-tiny:not(.vjs-fullscreen) .vjs-duration, .video-js.vjs-layout-tiny:not(.vjs-fullscreen) .vjs-remaining-time,
+.video-js.vjs-layout-tiny:not(.vjs-fullscreen) .vjs-playback-rate, .video-js.vjs-layout-tiny:not(.vjs-fullscreen) .vjs-progress-control,
+.video-js.vjs-layout-tiny:not(.vjs-fullscreen) .vjs-mute-control, .video-js.vjs-layout-tiny:not(.vjs-fullscreen) .vjs-volume-control, .video-js.vjs-layout-tiny:not(.vjs-fullscreen) .vjs-volume-menu-button,
+.video-js.vjs-layout-tiny:not(.vjs-fullscreen) .vjs-chapters-button, .video-js.vjs-layout-tiny:not(.vjs-fullscreen) .vjs-descriptions-button, .video-js.vjs-layout-tiny:not(.vjs-fullscreen) .vjs-captions-button,
+.video-js.vjs-layout-tiny:not(.vjs-fullscreen) .vjs-subtitles-button, .video-js.vjs-layout-tiny:not(.vjs-fullscreen) .vjs-audio-button {
+  display: none; }
+
+.video-js.vjs-layout-x-small:not(.vjs-fullscreen) .vjs-current-time, .video-js.vjs-layout-x-small:not(.vjs-fullscreen) .vjs-time-divider, .video-js.vjs-layout-x-small:not(.vjs-fullscreen) .vjs-duration, .video-js.vjs-layout-x-small:not(.vjs-fullscreen) .vjs-remaining-time,
+.video-js.vjs-layout-x-small:not(.vjs-fullscreen) .vjs-playback-rate,
+.video-js.vjs-layout-x-small:not(.vjs-fullscreen) .vjs-mute-control, .video-js.vjs-layout-x-small:not(.vjs-fullscreen) .vjs-volume-control, .video-js.vjs-layout-x-small:not(.vjs-fullscreen) .vjs-volume-menu-button,
+.video-js.vjs-layout-x-small:not(.vjs-fullscreen) .vjs-chapters-button, .video-js.vjs-layout-x-small:not(.vjs-fullscreen) .vjs-descriptions-button, .video-js.vjs-layout-x-small:not(.vjs-fullscreen) .vjs-captions-button,
+.video-js.vjs-layout-x-small:not(.vjs-fullscreen) .vjs-subtitles-button, .video-js.vjs-layout-x-small:not(.vjs-fullscreen) .vjs-audio-button {
+  display: none; }
+
+.video-js.vjs-layout-small:not(.vjs-fullscreen) .vjs-current-time, .video-js.vjs-layout-small:not(.vjs-fullscreen) .vjs-time-divider, .video-js.vjs-layout-small:not(.vjs-fullscreen) .vjs-duration, .video-js.vjs-layout-small:not(.vjs-fullscreen) .vjs-remaining-time,
+.video-js.vjs-layout-small:not(.vjs-fullscreen) .vjs-playback-rate,
+.video-js.vjs-layout-small:not(.vjs-fullscreen) .vjs-mute-control, .video-js.vjs-layout-small:not(.vjs-fullscreen) .vjs-volume-control,
+.video-js.vjs-layout-small:not(.vjs-fullscreen) .vjs-chapters-button, .video-js.vjs-layout-small:not(.vjs-fullscreen) .vjs-descriptions-button, .video-js.vjs-layout-small:not(.vjs-fullscreen) .vjs-captions-button,
+.video-js.vjs-layout-small:not(.vjs-fullscreen) .vjs-subtitles-button .vjs-audio-button {
+  display: none; }
+
+.vjs-caption-settings {
+  position: relative;
+  top: 1em;
+  background-color: #2B333F;
+  background-color: rgba(43, 51, 63, 0.75);
+  color: #fff;
+  margin: 0 auto;
+  padding: 0.5em;
+  height: 16em;
+  font-size: 12px;
+  width: 40em; }
+
+.vjs-caption-settings .vjs-tracksettings {
+  top: 0;
+  bottom: 1em;
+  left: 0;
+  right: 0;
+  position: absolute;
+  overflow: auto; }
+
+.vjs-caption-settings .vjs-tracksettings-colors,
+.vjs-caption-settings .vjs-tracksettings-font {
+  float: left; }
+
+.vjs-caption-settings .vjs-tracksettings-colors:after,
+.vjs-caption-settings .vjs-tracksettings-font:after,
+.vjs-caption-settings .vjs-tracksettings-controls:after {
+  clear: both; }
+
+.vjs-caption-settings .vjs-tracksettings-controls {
+  position: absolute;
+  bottom: 1em;
+  right: 1em; }
+
+.vjs-caption-settings .vjs-tracksetting {
+  margin: 5px;
+  padding: 3px;
+  min-height: 40px;
+  border: none; }
+
+.vjs-caption-settings .vjs-tracksetting label,
+.vjs-caption-settings .vjs-tracksetting legend {
+  display: block;
+  width: 100px;
+  margin-bottom: 5px; }
+
+.vjs-caption-settings .vjs-tracksetting span {
+  display: inline;
+  margin-left: 5px;
+  vertical-align: top;
+  float: right; }
+
+.vjs-caption-settings .vjs-tracksetting > div {
+  margin-bottom: 5px;
+  min-height: 20px; }
+
+.vjs-caption-settings .vjs-tracksetting > div:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  min-height: 0; }
+
+.vjs-caption-settings label > input {
+  margin-right: 10px; }
+
+.vjs-caption-settings fieldset {
+  margin-top: 1em;
+  margin-left: .5em; }
+
+.vjs-caption-settings fieldset .vjs-label {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  /* for Internet Explorer */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden; }
+
+.vjs-caption-settings input[type="button"] {
+  width: 40px;
+  height: 40px; }
+
+.video-js .vjs-modal-dialog {
+  background: rgba(0, 0, 0, 0.8);
+  background: -webkit-linear-gradient(-90deg, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0)); }
+
+.vjs-modal-dialog .vjs-modal-dialog-content {
+  font-size: 1.2em;
+  line-height: 1.5;
+  padding: 20px 24px;
+  z-index: 1; }
+
+@media print {
+  .video-js > *:not(.vjs-tech):not(.vjs-poster) {
+    visibility: hidden; } }
+</style><style type="text/css" class="bc-style-41lxByjWql-default">.bc-player-41lxByjWql_default *,.bc-player-41lxByjWql_default :after,.bc-player-41lxByjWql_default :before{box-sizing:inherit;font-size:inherit;color:inherit;line-height:inherit}.bc-player-41lxByjWql_default{width:300px;height:150px;font-size:14px;overflow:hidden}.bc-iframe,.bc-iframe body,.bc-player-41lxByjWql_default{background-color:#151B17}.bc-iframe,.bc-iframe .bc-player-41lxByjWql_default,.bc-iframe body{margin:0;width:100%;height:100%}.bc-player-41lxByjWql_default.vjs-fullscreen,.bc-player-41lxByjWql_default.vjs-fullscreen .vjs-tech{width:100%!important;height:100%!important}.bc-player-41lxByjWql_default .vjs-control-bar{background-color:rgba(0,0,0,.45);color:#fff}.bc-player-41lxByjWql_default .vjs-control{color:inherit}.bc-player-41lxByjWql_default .vjs-mouse-display:after,.bc-player-41lxByjWql_default .vjs-play-progress:after{border-radius:0}.bc-player-41lxByjWql_default .vjs-menu-button-inline:hover,.bc-player-41lxByjWql_default.vjs-no-flex .vjs-menu-button-inline{width:8.35em}.bc-player-41lxByjWql_default .vjs-volume-menu-button.vjs-volume-menu-button-horizontal:hover .vjs-menu .vjs-menu-content{height:3em;width:6.35em}.bc-player-41lxByjWql_default.vjs-ios[muted] .vjs-volume-menu-button{width:4em}.bc-player-41lxByjWql_default.vjs-ios[muted] .vjs-volume-menu-button .vjs-menu{display:none}.bc-player-41lxByjWql_default .vjs-control:focus:before,.bc-player-41lxByjWql_default .vjs-control:hover:before{text-shadow:0 0 1em #fff,0 0 1em #fff,0 0 1em #fff}.bc-player-41lxByjWql_default .vjs-spacer{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-box-flex:1 1 auto;-moz-box-flex:1 1 auto;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto}.bc-player-41lxByjWql_default .vjs-time-control{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-box-flex:0 1 auto;-moz-box-flex:0 1 auto;-webkit-flex:0 1 auto;-ms-flex:0 1 auto;flex:0 1 auto;width:auto}.bc-player-41lxByjWql_default .vjs-time-control.vjs-time-divider{width:14px}.bc-player-41lxByjWql_default .vjs-time-control.vjs-time-divider div{width:100%;text-align:center}.bc-player-41lxByjWql_default .vjs-time-control.vjs-current-time{margin-left:1em}.bc-player-41lxByjWql_default .vjs-time-control .vjs-current-time-display,.bc-player-41lxByjWql_default .vjs-time-control .vjs-duration-display{width:100%}.bc-player-41lxByjWql_default .vjs-time-control .vjs-current-time-display{text-align:right}.bc-player-41lxByjWql_default .vjs-time-control .vjs-duration-display{text-align:left}.bc-player-41lxByjWql_default .vjs-remaining-time{display:none}.bc-player-41lxByjWql_default.vjs-no-flex .vjs-time-control.vjs-remaining-time{display:none}.bc-player-41lxByjWql_default.vjs-no-flex .vjs-time-control{display:table-cell;width:4em}.bc-player-41lxByjWql_default .vjs-play-progress,.bc-player-41lxByjWql_default .vjs-volume-level{background-color:#d52484}.bc-player-41lxByjWql_default .vjs-play-progress:before,.bc-player-41lxByjWql_default .vjs-volume-level:before{display:none}.bc-player-41lxByjWql_default .vjs-volume-level:after{display:none}.bc-player-41lxByjWql_default .vjs-progress-control{position:absolute;left:0;right:0;width:100%;height:1.5em;top:-1.5em}.bc-player-41lxByjWql_default .vjs-progress-control .vjs-load-progress,.bc-player-41lxByjWql_default .vjs-progress-control .vjs-play-progress,.bc-player-41lxByjWql_default .vjs-progress-control .vjs-progress-holder{height:100%}.bc-player-41lxByjWql_default .vjs-progress-control .vjs-progress-holder{margin:0}.bc-player-41lxByjWql_default .vjs-progress-control:hover{height:1.5em;top:-1.5em}.bc-player-41lxByjWql_default .vjs-control-bar{-webkit-transition:-webkit-transform .1s ease 0s;-moz-transition:-moz-transform .1s ease 0s;-ms-transition:-ms-transform .1s ease 0s;-o-transition:-o-transform .1s ease 0s;transition:transform .1s ease 0s}.bc-player-41lxByjWql_default.not-hover.vjs-has-started.vjs-paused.vjs-user-active .vjs-control-bar,.bc-player-41lxByjWql_default.not-hover.vjs-has-started.vjs-paused.vjs-user-inactive .vjs-control-bar,.bc-player-41lxByjWql_default.not-hover.vjs-has-started.vjs-playing.vjs-user-active .vjs-control-bar,.bc-player-41lxByjWql_default.not-hover.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-control-bar,.bc-player-41lxByjWql_default.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-control-bar{visibility:visible;opacity:1;-webkit-backface-visibility:hidden;-webkit-transform:translateY(3em);-moz-transform:translateY(3em);-ms-transform:translateY(3em);-o-transform:translateY(3em);transform:translateY(3em);-webkit-transition:-webkit-transform 1s ease 0s;-moz-transition:-moz-transform 1s ease 0s;-ms-transition:-ms-transform 1s ease 0s;-o-transition:-o-transform 1s ease 0s;transition:transform 1s ease 0s}.bc-player-41lxByjWql_default.not-hover.vjs-has-started.vjs-paused.vjs-user-active .vjs-progress-control,.bc-player-41lxByjWql_default.not-hover.vjs-has-started.vjs-paused.vjs-user-inactive .vjs-progress-control,.bc-player-41lxByjWql_default.not-hover.vjs-has-started.vjs-playing.vjs-user-active .vjs-progress-control,.bc-player-41lxByjWql_default.not-hover.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-progress-control,.bc-player-41lxByjWql_default.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-progress-control{height:.3em;top:-.3em;pointer-events:none;-webkit-transition:height 1s,top 1s;-moz-transition:height 1s,top 1s;-ms-transition:height 1s,top 1s;-o-transition:height 1s,top 1s;transition:height 1s,top 1s}.bc-player-41lxByjWql_default.not-hover.vjs-has-started.vjs-paused.vjs-user-active.vjs-fullscreen .vjs-progress-control,.bc-player-41lxByjWql_default.not-hover.vjs-has-started.vjs-paused.vjs-user-inactive.vjs-fullscreen .vjs-progress-control,.bc-player-41lxByjWql_default.not-hover.vjs-has-started.vjs-playing.vjs-user-active.vjs-fullscreen .vjs-progress-control,.bc-player-41lxByjWql_default.not-hover.vjs-has-started.vjs-playing.vjs-user-inactive.vjs-fullscreen .vjs-progress-control,.bc-player-41lxByjWql_default.vjs-has-started.vjs-playing.vjs-user-inactive.vjs-fullscreen .vjs-progress-control{opacity:0;-webkit-transition:opacity 1s ease 1s;-moz-transition:opacity 1s ease 1s;-ms-transition:opacity 1s ease 1s;-o-transition:opacity 1s ease 1s;transition:opacity 1s ease 1s}.bc-player-41lxByjWql_default.vjs-live .vjs-live-control{margin-left:1em}.bc-player-41lxByjWql_default.vjs-live .vjs-time-control.vjs-current-time,.bc-player-41lxByjWql_default.vjs-live .vjs-time-control.vjs-duration,.bc-player-41lxByjWql_default.vjs-live .vjs-time-control.vjs-time-divider{display:none}.bc-player-41lxByjWql_default .vjs-big-play-button{top:50%;left:50%;margin-left:-1em;margin-top:-1em;width:2em;height:2em;line-height:2em;border:none;border-radius:50%;font-size:3.5em;background-color:rgba(0,0,0,.45);color:#fff;-webkit-transition:border-color .4s,outline .4s,background-color .4s;-moz-transition:border-color .4s,outline .4s,background-color .4s;-ms-transition:border-color .4s,outline .4s,background-color .4s;-o-transition:border-color .4s,outline .4s,background-color .4s;transition:border-color .4s,outline .4s,background-color .4s}.bc-player-41lxByjWql_default .vjs-big-play-button:active,.bc-player-41lxByjWql_default .vjs-big-play-button:focus,.bc-player-41lxByjWql_default:active .vjs-big-play-button,.bc-player-41lxByjWql_default:hover .vjs-big-play-button{background-color:#d52484}.bc-player-41lxByjWql_default .vjs-menu-button-popup .vjs-menu{left:-3em}.bc-player-41lxByjWql_default .vjs-menu-button-popup .vjs-menu .vjs-menu-content{background-color:transparent;width:12em;left:-1.5em;padding-bottom:.5em}.bc-player-41lxByjWql_default .vjs-menu-button-popup .vjs-menu .vjs-menu-item,.bc-player-41lxByjWql_default .vjs-menu-button-popup .vjs-menu .vjs-menu-title{background-color:#151B17;margin:.3em 0;padding:.5em;border-radius:.3em}.bc-player-41lxByjWql_default .vjs-menu-button-popup .vjs-menu .vjs-menu-item.vjs-selected{background-color:#d52484}.bc-player-41lxByjWql_default .vjs-menu-button-popup .vjs-menu .vjs-menu-item:active,.bc-player-41lxByjWql_default .vjs-menu-button-popup .vjs-menu .vjs-menu-item:focus,.bc-player-41lxByjWql_default .vjs-menu-button-popup .vjs-menu .vjs-menu-item:hover{text-shadow:0 0 1em #fff,0 0 1em #fff,0 0 1em #fff;color:#fff}.bc-player-41lxByjWql_default .vjs-caption-settings{position:absolute;left:50%;margin:0;margin-left:-20em;z-index:1}.bc-player-41lxByjWql_default .vjs-caption-settings select{color:#000}.bc-player-41lxByjWql_default .vjs-tracksettings-controls{position:absolute;bottom:0;text-align:right}@media only screen and (max-width:480px){.bc-player-41lxByjWql_default .vjs-caption-settings{position:absolute;left:0;right:0;top:0;bottom:0;z-index:1;margin:0;height:100%;width:100%}.bc-player-41lxByjWql_default .vjs-tracksettings,.bc-player-41lxByjWql_default .vjs-tracksettings-controls{left:35px;right:35px}.bc-player-41lxByjWql_default .vjs-tracksettings{top:20px;bottom:40px}.bc-player-41lxByjWql_default .vjs-tracksettings-controls{padding:5px 0;bottom:0}}.bc-player-41lxByjWql_default .vjs-caption-settings .vjs-tracksetting{margin:5px;padding:3px;min-height:40px}.bc-player-41lxByjWql_default .vjs-caption-settings .vjs-tracksetting label{display:block;width:100px;margin-bottom:5px}.bc-player-41lxByjWql_default .vjs-caption-settings .vjs-tracksetting span{display:inline;margin-left:5px}.bc-player-41lxByjWql_default .vjs-caption-settings .vjs-tracksetting>div{margin-bottom:5px;min-height:20px}.bc-player-41lxByjWql_default .vjs-caption-settings .vjs-tracksetting>div:last-child{margin-bottom:0;padding-bottom:0;min-height:0}.bc-player-41lxByjWql_default .vjs-caption-settings label>input{margin-right:10px}.bc-player-41lxByjWql_default .vjs-caption-settings input[type=button]{width:40px;height:40px}.bc-player-41lxByjWql_default .vjs-tracksettings .vjs-label{display:block}.bc-player-41lxByjWql_default .vjs-tracksettings-colors,.bc-player-41lxByjWql_default .vjs-tracksettings-font{box-sizing:border-box;float:left;width:50%;padding:3px;min-height:40px;min-width:280px}.bc-player-41lxByjWql_default .vjs-tracksettings-colors:after,.bc-player-41lxByjWql_default .vjs-tracksettings-controls:after,.bc-player-41lxByjWql_default .vjs-tracksettings-font:after{clear:both}.bc-player-41lxByjWql_default .vjs-tracksetting{margin-bottom:16px;min-height:20px}.bc-player-41lxByjWql_default .vjs-opacity{margin-left:10px}.bc-player-41lxByjWql_default .vjs-tracksetting button,.bc-player-41lxByjWql_default .vjs-tracksetting input,.bc-player-41lxByjWql_default .vjs-tracksetting select,.bc-player-41lxByjWql_default .vjs-tracksettings-controls button{margin-top:6px;font:inherit;border-radius:2px;background-color:#fff;padding:0 9px;line-height:24px;height:24px;border:none;color:#515151;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}.bc-player-41lxByjWql_default .vjs-edge-style select,.bc-player-41lxByjWql_default .vjs-font-family select{display:block}.bc-player-41lxByjWql_default .vjs-caption-settings button{margin-right:10px}.bc-player-41lxByjWql_default .vjs-caption-settings .vjs-done-button{margin-right:0}.bc-player-41lxByjWql_default.vjs-ad-playing .vjs-mouse-display,.bc-player-41lxByjWql_default.vjs-ad-playing .vjs-mouse-display:after{display:none}.bc-player-41lxByjWql_default.vjs-ad-playing.vjs-ad-playing .vjs-progress-control:after{pointer-events:auto;width:100%;height:100%;position:absolute;left:0;bottom:0;content:" ";user-select:none;-ms-user-select:none;-moz-user-select:none;-webkit-user-select:none}.ie8.bc-player-41lxByjWql_default.not-hover.vjs-has-started.vjs-paused.vjs-user-active .vjs-progress-control,.ie8.bc-player-41lxByjWql_default.not-hover.vjs-has-started.vjs-paused.vjs-user-inactive .vjs-progress-control,.ie8.bc-player-41lxByjWql_default.not-hover.vjs-has-started.vjs-playing.vjs-user-active .vjs-progress-control,.ie8.bc-player-41lxByjWql_default.not-hover.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-progress-control,.ie8.bc-player-41lxByjWql_default.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-progress-control{height:.5em;top:-.5em}.ie8.bc-player-41lxByjWql_default.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-control-bar{display:none}.ie8.bc-player-41lxByjWql_default .vjs-control:focus:before,.ie8.bc-player-41lxByjWql_default .vjs-control:hover:before{border:2px solid #FFF}.ie8.bc-player-41lxByjWql_default .vjs-menu-button-popup .vjs-menu{margin:0}.ie8.bc-player-41lxByjWql_default .vjs-menu-button-popup .vjs-menu .vjs-menu-item{margin:0}.ie8.bc-player-41lxByjWql_default .vjs-menu-button-popup .vjs-menu .vjs-menu-item:active,.ie8.bc-player-41lxByjWql_default .vjs-menu-button-popup .vjs-menu .vjs-menu-item:focus,.ie8.bc-player-41lxByjWql_default .vjs-menu-button-popup .vjs-menu .vjs-menu-item:hover{border:2px solid #FFF}.bc-player-41lxByjWql_default.vjs-no-flex .vjs-spacer{display:table-cell}.bc-player-41lxByjWql_default.vjs-no-flex .vjs-time-control{display:table-cell;width:4em}.bc-player-41lxByjWql_default.vjs-no-flex .vjs-remaining-time{display:none}.vjs-mouse.bc-player-41lxByjWql_default .vjs-control-bar{font-size:10px}.vjs-mouse.bc-player-41lxByjWql_default .vjs-progress-control{height:.5em;top:-.5em}.vjs-mouse.bc-player-41lxByjWql_default .vjs-progress-control:hover{height:1.5em;top:-1.5em}.bc-player-41lxByjWql_default select{width:inherit}.vjs-error-display{color:#fff;display:none;font-family:Helvetica,Arial,sans serif;font-size:16px;line-height:1.428}.vjs-error .vjs-error-display{display:block;position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5)}.vjs-error .vjs-error-display .vjs-modal-dialog-content{font-size:14px}.vjs-errors-dialog{text-align:left;border:1px #999 solid;overflow:hidden;position:absolute;top:2%;bottom:2%;left:5%;right:5%;padding-left:1%;padding-right:1%;background:rgba(24,24,24,.8);-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000, endColorstr=#CC000000)"}.vjs-errors-details{margin-top:15px}.vjs-errors-message{border:1px #999 solid;background-color:#2c2c2c;overflow:auto;margin-top:15px;padding:15px}.vjs-errors-ok-button-container{display:block;position:absolute;bottom:15px;left:15px;right:15px;text-align:center}.vjs-errors-ok-button{display:block;margin:0 auto;width:80px;height:36px;background-color:#000;border:1px #999 solid;border-radius:5px;color:#999;font-size:14px;cursor:pointer}.vjs-errors-ok-button:hover{border:1px #FFF solid;color:#CCC}.vjs-errors-content-container{overflow:auto;position:absolute;padding-bottom:15px;top:0;left:15px;right:15px;bottom:61px}.vjs-errors-headline{font-size:14px;font-weight:700;padding-right:3em}.vjs-errors-dialog .vjs-control.vjs-close-button{width:3em;height:3em;top:0}.vjs-errors-flashmessage{float:right;font-size:9px;font-style:italic}.vjs-xs.vjs-error-display{font-size:14px;background-color:#000}.vjs-xs.vjs-error-display .vjs-errors-details,.vjs-xs.vjs-error-display .vjs-errors-message{display:none}.vjs-xs .vjs-errors-content-container{top:0}.vjs-xs .vjs-errors-headline{font-size:16px;font-weight:700}.vjs-xs .vjs-errors-dialog{border:none;top:0;bottom:0;left:0;right:0}.vjs-xs.vjs-errors-flashmessage{display:none}@media (max-width:600px),(max-height:250px){.vjs-error-display{font-size:14px;background-color:#000}.vjs-error-display .vjs-errors-details,.vjs-error-display .vjs-errors-message{display:none}.vjs-error-display .vjs-errors-content-container{top:15px}.vjs-error-display .vjs-errors-headline{font-size:16px;font-weight:700}.vjs-error-display .vjs-errors-dialog{border:none;top:0;bottom:0;left:0;right:0}.vjs-errors-flashmessage{display:none}}.video-js .vjs-dock-shelf,.video-js .vjs-dock-text{font-size:1.8em;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;pointer-events:none;position:absolute;top:0;-webkit-transition:opacity .1s;-moz-transition:opacity .1s;-o-transition:opacity .1s;transition:opacity .1s}.video-js .vjs-dock-text{left:0;margin:0;width:100%;background:rgba(0,0,0,.8);background:-webkit-linear-gradient(to bottom,rgba(0,0,0,.8) 0,rgba(0,0,0,.7) 30%,rgba(0,0,0,.7) 70%,transparent 100%);background:linear-gradient(to bottom,rgba(0,0,0,.8) 0,rgba(0,0,0,.7) 30%,rgba(0,0,0,.7) 70%,transparent 100%);padding:1em 25% 2em 1em}.video-js.vjs-no-flex .vjs-dock-text{padding-bottom:1em}.video-js .vjs-dock-shelf{padding:1em 1em;right:0;text-align:right;width:25%}.video-js .vjs-dock-shelf *{pointer-events:auto}.video-js .vjs-dock-description,.video-js .vjs-dock-title{margin:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.video-js .vjs-dock-title{font-weight:700;letter-spacing:1px;line-height:1.333;margin-bottom:.333em}.video-js .vjs-dock-description{font-weight:400;line-height:1.5}.vjs-playing.vjs-user-inactive .vjs-dock-shelf,.vjs-playing.vjs-user-inactive .vjs-dock-text{opacity:0;-webkit-transition:opacity 1s;-moz-transition:opacity 1s;-o-transition:opacity 1s;transition:opacity 1s}.vjs-playing.vjs-no-flex.vjs-user-inactive .vjs-dock-shelf,.vjs-playing.vjs-no-flex.vjs-user-inactive .vjs-dock-text{display:none}.video-js .vjs-dock-shelf,.video-js .vjs-dock-text{font-size:1em}.vjs-has-started.not-hover .vjs-dock-shelf,.vjs-has-started.not-hover .vjs-dock-text{opacity:0;-webkit-transition:opacity 1s;-moz-transition:opacity 1s;-ms-transition:opacity 1s;-o-transition:opacity 1s;transition:opacity 1s}.vjs-contextmenu-ui-menu{position:absolute}.vjs-contextmenu-ui-menu .vjs-menu-content{background-color:#2B333F;background-color:rgba(43,51,63,.7);border-radius:.3em;padding:.25em}.vjs-contextmenu-ui-menu .vjs-menu-item{border-radius:.3em;cursor:pointer;margin:0 0 1px;padding:.5em 1em;font-size:1em;line-height:1.2;text-transform:none}.vjs-contextmenu-ui-menu .vjs-menu-item:active,.vjs-contextmenu-ui-menu .vjs-menu-item:hover{background-color:rgba(0,0,0,.5);text-shadow:0 0 1em #fff}.vjs-modal-dialog.vjs-player-info-modal{background:rgba(0,0,0,.9);font-size:10px}.vjs-modal-dialog.vjs-player-info-modal .vjs-modal-dialog-content{overflow:auto}.vjs-modal-dialog.vjs-player-info-modal .vjs-pi-section{float:left;width:49%}.vjs-modal-dialog.vjs-player-info-modal .vjs-pi-section:nth-child(2n+1){float:right}.vjs-modal-dialog.vjs-player-info-modal .vjs-pi-section.vjs-pi-section--source{float:none;clear:both;width:auto}.vjs-modal-dialog.vjs-player-info-modal .vjs-pi-section.vjs-pi-section--source td:first-child{min-width:150px}.vjs-modal-dialog.vjs-player-info-modal table{border-collapse:collapse;margin-bottom:1em;width:100%}.vjs-modal-dialog.vjs-player-info-modal th{font-weight:400;text-align:left}.vjs-modal-dialog.vjs-player-info-modal td{border-bottom:1px solid rgba(255,255,255,.2);opacity:.5}.vjs-modal-dialog.vjs-player-info-modal tr:last-child td{border-bottom:0}.vjs-modal-dialog.vjs-player-info-modal tr:hover td{opacity:1}</style>
+        <meta name="twitter:title" content="Official Site of the English Premier League">
+<meta name="keywords" content="Premier League, Football, Soccer, Official">
+<meta property="og:type" content="website">
+<meta name="description" content="Premier League - Scores, Fixtures, Results, Video and News!">
+<meta name="twitter:description" content="Premier League - Scores, Fixtures, Results, Video and News!">
+<meta property="og:title" content="Official Site of the English Premier League">
+<title>Official Site of the English Premier League</title>
+<meta property="og:description" content="Premier League - Scores, Fixtures, Results, Video and News!">
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <script type="text/javascript" async="" src="search%20results_files/analytics.js"></script><script async="" src="search%20results_files/gtm.js"></script><script src="search%20results_files/i18n-en.js" charset="UTF-8"></script><!--[if gt IE 8]><!--><link rel="stylesheet" href="search%20results_files/screen.css"><!--<![endif]-->
+
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="//resources-pl.pulselive.com/ver/styles/ie-old.css">
+		<script src="//resources-pl.pulselive.com/ver/bower/html5shiv/dist/html5shiv.js"></script>
+	<![endif]-->
+    <link href="search%20results_files/css.css" rel="stylesheet" type="text/css">
+    
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MS75QT"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MS75QT');</script>
+    <!-- End Google Tag Manager -->
+
+	<!-- Polyfill service provided by the FT - https://github.com/Financial-Times/polyfill-service -->
+	<script src="search%20results_files/polyfill.js"></script>
+
+	<!-- FastClick speeds up click bindings on touch screens by the FT - https://github.com/ftlabs/fastclick -->
+	<script src="search%20results_files/fastclick.js"></script>
+	
+	<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+	<script src="search%20results_files/mustache.js"></script>
+	<script src="search%20results_files/moment-with-locales.js"></script>
+	<script src="search%20results_files/moment-timezone.js"></script>
+
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://resources-pl.pulselive.com/ver/i/favicon/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://resources-pl.pulselive.com/ver/i/favicon/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://resources-pl.pulselive.com/ver/i/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://resources-pl.pulselive.com/ver/i/favicon/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://resources-pl.pulselive.com/ver/i/favicon/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://resources-pl.pulselive.com/ver/i/favicon/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://resources-pl.pulselive.com/ver/i/favicon/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://resources-pl.pulselive.com/ver/i/favicon/apple-touch-icon-152x152.png">
+	<link rel="icon" type="image/png" href="https://resources-pl.pulselive.com/ver/i/favicon/favicon-196x196.png" sizes="196x196">
+	<link rel="icon" type="image/png" href="https://resources-pl.pulselive.com/ver/i/favicon/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="https://resources-pl.pulselive.com/ver/i/favicon/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="https://resources-pl.pulselive.com/ver/i/favicon/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="https://resources-pl.pulselive.com/ver/i/favicon/favicon-128.png" sizes="128x128">
+	<link rel="shortcut icon" href="https://resources-pl.pulselive.com/ver/i/favicon/favicon.ico">
+	<meta name="application-name" content="&nbsp;">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="mstile-144x144.png">
+	<meta name="msapplication-square70x70logo" content="mstile-70x70.png">
+	<meta name="msapplication-square150x150logo" content="mstile-150x150.png">
+	<meta name="msapplication-wide310x150logo" content="mstile-310x150.png">
+	<meta name="msapplication-square310x310logo" content="mstile-310x310.png">
+	<meta name="apple-itunes-app" content="app-id=1138895159">
+	<link rel="manifest" href="https://cdn.pulselive.com/test/client/pl/test/manifest.json">
+
+</head>
+<body><div id="videoPlayerWrapModal" class="plModal"><div id="videoPlayerContentModal" class="plModalContent"><a class="close" role="button" tabindex="0">close</a><div data-script="pl_video-player" data-widget="video-player" id="videoPlayer" style="display:none;">
+	<div class="modalWrapper">
+				<div class="modalContentWrapper">
+		    <div class="modalNowPlaying">Now Playing</div>
+		    <div class="videoTitle"></div>
+		    <div class=" video-js vjs-mouse vjs-paused vjs-controls-enabled vjs-workinghover bc-player-41lxByjWql_default vjs-dock vjs-plugins-ready vjs-contextmenu vjs-contextmenu-ui vjs-player-info vjs-errors vjs-user-inactive" data-embed="default" data-player="41lxByjWql" data-account="2508689025001" id="plVideoModal" role="region" aria-label="video player"><video id="plVideoModal_html5_api" data-account="2508689025001" data-player="41lxByjWql" data-embed="default" class="vjs-tech" aria-labelledby="vjs-dock-title-1" aria-describedby="vjs-dock-description-2"></video><div></div><div class="vjs-poster vjs-hidden" tabindex="-1" aria-disabled="false"></div><div class="vjs-text-track-display" aria-live="off" aria-atomic="true"></div><div class="vjs-loading-spinner" dir="ltr"></div><button class="vjs-big-play-button" type="button" aria-live="polite" title="Play Video" aria-disabled="false"><span class="vjs-control-text">Play Video</span></button><div class="vjs-control-bar" dir="ltr" role="group"><button class="vjs-play-control vjs-control vjs-button " type="button" aria-live="polite" title="Play" aria-disabled="false"><span class="vjs-control-text">Play</span></button><div class="vjs-volume-menu-button vjs-menu-button vjs-menu-button-inline vjs-control vjs-button  vjs-volume-menu-button-horizontal" tabindex="0" role="button" aria-live="polite" title="Mute" aria-disabled="false"><div class="vjs-menu"><div class="vjs-menu-content"><div tabindex="0" class="vjs-volume-bar vjs-slider-bar vjs-slider vjs-slider-horizontal" role="slider" aria-valuenow="100.00" aria-valuemin="0" aria-valuemax="100" aria-label="volume level" aria-valuetext="100.00%"><div class="vjs-volume-level"><span class="vjs-control-text"></span></div></div></div></div><span class="vjs-control-text">Mute</span></div><div class="vjs-current-time vjs-time-control vjs-control vjs-time-controls"><div class="vjs-current-time-display" aria-live="off"><span class="vjs-control-text">Current Time </span>0:00</div></div><div class="vjs-time-control vjs-time-divider vjs-time-controls"><div><span>/</span></div></div><div class="vjs-duration vjs-time-control vjs-control vjs-time-controls"><div class="vjs-duration-display" aria-live="off"><span class="vjs-control-text">Duration Time</span> 0:00</div></div><div class="vjs-progress-control vjs-control"><div tabindex="0" class="vjs-progress-holder vjs-slider vjs-slider-horizontal" role="slider" aria-valuenow="NaN" aria-valuemin="0" aria-valuemax="100" aria-label="progress bar" aria-valuetext="0:00"><div class="vjs-load-progress"><span class="vjs-control-text"><span>Loaded</span>: 0%</span></div><div class="vjs-mouse-display vjs-keep-tooltips-inside" style="left: 0px;" data-current-time="0:00"><div class="vjs-time-tooltip" style="">0:00</div></div><div class="vjs-play-progress vjs-slider-bar vjs-keep-tooltips-inside" data-current-time="0:00"><span class="vjs-control-text"><span>Progress</span>: 0%</span></div><div class="vjs-tooltip-progress-bar vjs-slider-bar" data-current-time="0:00" aria-valuenow="NaN" aria-valuetext="0:00" style=""><div class="vjs-time-tooltip">0:00</div>
+        <span class="vjs-control-text"><span>Progress</span>: 0%</span></div></div></div><div class="vjs-live-control vjs-control vjs-live-controls vjs-hidden"><div class="vjs-live-display" aria-live="off"><span class="vjs-control-text">Stream Type</span>LIVE</div></div><div class="vjs-remaining-time vjs-time-control vjs-control vjs-time-controls"><div class="vjs-remaining-time-display" aria-live="off"><span class="vjs-control-text">Remaining Time</span> -0:00</div></div><div class="vjs-custom-control-spacer vjs-spacer ">&nbsp;</div><div class="vjs-playback-rate vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden" tabindex="0" role="menuitem" aria-live="polite" title="Playback Rate" aria-disabled="false" aria-expanded="false" aria-haspopup="true"><div class="vjs-menu" role="presentation"><ul class="vjs-menu-content" role="menu"></ul></div><span class="vjs-control-text">Playback Rate</span><div class="vjs-playback-rate-value">1</div></div><div class="vjs-chapters-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden" tabindex="0" role="menuitem" aria-live="polite" title="Chapters" aria-disabled="false" aria-expanded="false" aria-haspopup="true" aria-label="Chapters Menu"><div class="vjs-menu" role="presentation"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-title" tabindex="-1">Chapters</li></ul></div><span class="vjs-control-text">Chapters</span></div><div class="vjs-descriptions-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden" tabindex="0" role="menuitem" aria-live="polite" title="Descriptions" aria-disabled="false" aria-expanded="false" aria-haspopup="true" aria-label="Descriptions Menu"><div class="vjs-menu" role="presentation"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemcheckbox" aria-live="polite" aria-disabled="false" aria-checked="true" title=", selected">descriptions off<span class="vjs-control-text">, selected</span></li></ul></div><span class="vjs-control-text">Descriptions</span></div><div class="vjs-subtitles-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden" tabindex="0" role="menuitem" aria-live="polite" title="Subtitles" aria-disabled="false" aria-expanded="false" aria-haspopup="true" aria-label="Subtitles Menu"><div class="vjs-menu" role="presentation"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemcheckbox" aria-live="polite" aria-disabled="false" aria-checked="true" title=", selected">subtitles off<span class="vjs-control-text">, selected</span></li></ul></div><span class="vjs-control-text">Subtitles</span></div><div class="vjs-captions-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden" tabindex="0" role="menuitem" aria-live="polite" title="Captions" aria-disabled="false" aria-expanded="false" aria-haspopup="true" aria-label="Captions Menu"><div class="vjs-menu" role="presentation"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item vjs-texttrack-settings" tabindex="-1" role="menuitem" aria-live="polite" aria-disabled="false" title=", opens captions settings dialog">captions settings<span class="vjs-control-text">, opens captions settings dialog</span></li><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemcheckbox" aria-live="polite" aria-disabled="false" aria-checked="true" title=", selected">captions off<span class="vjs-control-text">, selected</span></li></ul></div><span class="vjs-control-text">Captions</span></div><div class="vjs-audio-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden" tabindex="0" role="menuitem" aria-live="polite" title="Audio Track" aria-disabled="false" aria-expanded="false" aria-haspopup="true" aria-label="Audio Menu"><div class="vjs-menu" role="presentation"><ul class="vjs-menu-content" role="menu"></ul></div><span class="vjs-control-text">Audio Track</span></div><button class="vjs-fullscreen-control vjs-control vjs-button " type="button" aria-live="polite" title="Fullscreen" aria-disabled="false"><span class="vjs-control-text">Fullscreen</span></button></div><div class="vjs-error-display vjs-modal-dialog vjs-hidden " tabindex="-1" aria-describedby="plVideoModal_component_415_description" aria-hidden="true" aria-label="Modal Window" role="dialog"><p class="vjs-modal-dialog-description vjs-offscreen" id="plVideoModal_component_415_description">This is a modal window.</p><div class="vjs-modal-dialog-content" role="document"></div></div><div class="vjs-caption-settings vjs-modal-overlay vjs-hidden" tabindex="-1" role="dialog" aria-labelledby="TTsettingsDialogLabel-plVideoModal_component_420" aria-describedby="TTsettingsDialogDescription-plVideoModal_component_420"><div role="document"><div class="vjs-control-text" id="TTsettingsDialogLabel-plVideoModal_component_420" aria-level="1" role="heading">Caption Settings Dialog</div><div class="vjs-control-text" id="TTsettingsDialogDescription-plVideoModal_component_420">Beginning of dialog window. Escape will cancel and close the window.</div><div class="vjs-tracksettings"><div class="vjs-tracksettings-colors"><fieldset class="vjs-fg-color vjs-tracksetting"><legend>Text</legend><label class="vjs-label" for="captions-foreground-color-plVideoModal_component_420">Color</label><select id="captions-foreground-color-plVideoModal_component_420"><option value="#FFF" selected="selected">White</option><option value="#000">Black</option><option value="#F00">Red</option><option value="#0F0">Green</option><option value="#00F">Blue</option><option value="#FF0">Yellow</option><option value="#F0F">Magenta</option><option value="#0FF">Cyan</option></select><span class="vjs-text-opacity vjs-opacity"><label class="vjs-label" for="captions-foreground-opacity-plVideoModal_component_420">Transparency</label><select id="captions-foreground-opacity-plVideoModal_component_420"><option value="1" selected="selected">Opaque</option><option value="0.5">Semi-Transparent</option></select></span></fieldset><fieldset class="vjs-bg-color vjs-tracksetting"><legend>Background</legend><label class="vjs-label" for="captions-background-color-plVideoModal_component_420">Color</label><select id="captions-background-color-plVideoModal_component_420"><option value="#000" selected="selected">Black</option><option value="#FFF">White</option><option value="#F00">Red</option><option value="#0F0">Green</option><option value="#00F">Blue</option><option value="#FF0">Yellow</option><option value="#F0F">Magenta</option><option value="#0FF">Cyan</option></select><span class="vjs-bg-opacity vjs-opacity"><label class="vjs-label" for="captions-background-opacity-plVideoModal_component_420">Transparency</label><select id="captions-background-opacity-plVideoModal_component_420"><option value="1" selected="selected">Opaque</option><option value="0.5">Semi-Transparent</option><option value="0">Transparent</option></select></span></fieldset><fieldset class="vjs-window-color vjs-tracksetting"><legend>Window</legend><label class="vjs-label" for="captions-window-color-plVideoModal_component_420">Color</label><select id="captions-window-color-plVideoModal_component_420"><option value="#000" selected="selected">Black</option><option value="#FFF">White</option><option value="#F00">Red</option><option value="#0F0">Green</option><option value="#00F">Blue</option><option value="#FF0">Yellow</option><option value="#F0F">Magenta</option><option value="#0FF">Cyan</option></select><span class="vjs-window-opacity vjs-opacity"><label class="vjs-label" for="captions-window-opacity-plVideoModal_component_420">Transparency</label><select id="captions-window-opacity-plVideoModal_component_420"><option value="0" selected="selected">Transparent</option><option value="0.5">Semi-Transparent</option><option value="1">Opaque</option></select></span></fieldset></div><div class="vjs-tracksettings-font"><div class="vjs-font-percent vjs-tracksetting"><label class="vjs-label" for="captions-font-size-plVideoModal_component_420">Font Size</label><select id="captions-font-size-plVideoModal_component_420"><option value="0.50">50%</option><option value="0.75">75%</option><option value="1.00" selected="selected">100%</option><option value="1.25">125%</option><option value="1.50">150%</option><option value="1.75">175%</option><option value="2.00">200%</option><option value="3.00">300%</option><option value="4.00">400%</option></select></div><div class="vjs-edge-style vjs-tracksetting"><label class="vjs-label" for="plVideoModal_component_420">Text Edge Style</label><select id="plVideoModal_component_420"><option value="none" selected="selected">None</option><option value="raised">Raised</option><option value="depressed">Depressed</option><option value="uniform">Uniform</option><option value="dropshadow">Dropshadow</option></select></div><div class="vjs-font-family vjs-tracksetting"><label class="vjs-label" for="captions-font-family-plVideoModal_component_420">Font Family</label><select id="captions-font-family-plVideoModal_component_420"><option value="proportionalSansSerif" selected="selected">Proportional Sans-Serif</option><option value="monospaceSansSerif">Monospace Sans-Serif</option><option value="proportionalSerif">Proportional Serif</option><option value="monospaceSerif">Monospace Serif</option><option value="casual">Casual</option><option value="script">Script</option><option value="small-caps">Small Caps</option></select></div></div><div class="vjs-tracksettings-controls"><button class="vjs-default-button">Defaults</button><button class="vjs-done-button">Done</button></div></div></div></div><div class="vjs-dock-text"><div class="vjs-dock-title" title="" id="vjs-dock-title-1"></div><div class="vjs-dock-description" title="" id="vjs-dock-description-2"></div></div><div class="vjs-dock-shelf"></div><div class="vjs-player-info-modal vjs-modal-dialog vjs-hidden " tabindex="-1" aria-describedby="plVideoModal_component_509_description" aria-hidden="true" aria-label="Player Information Dialog" role="dialog"><button class="vjs-close-button vjs-control vjs-button " type="button" aria-live="polite" aria-disabled="false" title="Close Modal Dialog"><span class="vjs-control-text">Close Modal Dialog</span></button><p class="vjs-modal-dialog-description vjs-offscreen" id="plVideoModal_component_509_description">This is a modal window. This modal can be closed by pressing the Escape key or activating the close button.</p><div class="vjs-modal-dialog-content" role="document"></div></div><script src="search%20results_files/vtt.js"></script></div>
+
+			<div class="modalCaption">
+			    <div class="videoDescription"></div>
+			    <div class="videoDate"></div>
+				<div class="audioDesc" tabindex="0"></div>
+			</div>
+			<div class="videoSocialShare" data-render="pagehover">
+			</div>
+		</div>
+	</div>
+</div></div></div><div id="galleryWrapModal" class="plModal"><div id="galleryContentModal" class="plModalContent"><a class="close" role="button" tabindex="0">close</a><div data-script="pl_gallery" data-widget="gallery-modal" id="galleryModal" class="galleryModal" style=""><div class="galleryWrapper"><ul class="galleryList"><li class="prev"><img class="galleryImageContainer"><figcaption class="galleryFigCaptionContainer"><span class="galleryCaptionTitle"></span><span class="galleryCaptionBody"></span></figcaption></li><li class="current"><img class="galleryImageContainer"><figcaption class="galleryFigCaptionContainer"><span class="galleryCaptionTitle"></span><span class="galleryCaptionBody"></span></figcaption></li><li class="next"><img class="galleryImageContainer"><figcaption class="galleryFigCaptionContainer"><span class="galleryCaptionTitle"></span><span class="galleryCaptionBody"></span></figcaption></li></ul><a tabindex="0" class="galleryNavButton prev"></a><a tabindex="0" class="galleryNavButton next"></a></div></div></div></div>
+		<header class="masthead">
+	
+<a class="skipTo" href="#mainNav">Skip to main navigation</a>
+<a class="skipTo" href="#mainContent">Skip to main content</a>
+
+<nav class="clubNavigation" data-script="pl_global-header" role="menubar">
+
+    <div class="clubSitesHeading">
+        <!-- TO-TRANSLATE -->
+        <h4>Club Sites<div class="icon"></div></h4>
+    </div>
+    <ul class="clubList" role="menu">
+                <li>
+                    <a target="_blank" href="http://www.afcb.co.uk/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" role="menuitem">
+                        <span alt="" class="badge-25         BOU
+"></span>
+                        <span alt="" class="badge-50         BOU
+"></span>
+                        <span class="name">AFC Bournemouth</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.arsenal.com/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" role="menuitem">
+                        <span alt="" class="badge-25         ARS
+"></span>
+                        <span alt="" class="badge-50         ARS
+"></span>
+                        <span class="name">Arsenal</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.burnleyfootballclub.com/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" role="menuitem">
+                        <span alt="" class="badge-25         BUR
+"></span>
+                        <span alt="" class="badge-50         BUR
+"></span>
+                        <span class="name">Burnley</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.chelseafc.com/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" role="menuitem">
+                        <span alt="" class="badge-25         CHE
+"></span>
+                        <span alt="" class="badge-50         CHE
+"></span>
+                        <span class="name">Chelsea</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.cpfc.co.uk/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" role="menuitem">
+                        <span alt="" class="badge-25         CRY
+"></span>
+                        <span alt="" class="badge-50         CRY
+"></span>
+                        <span class="name">Crystal Palace</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.evertonfc.com/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" role="menuitem">
+                        <span alt="" class="badge-25         EVE
+"></span>
+                        <span alt="" class="badge-50         EVE
+"></span>
+                        <span class="name">Everton </span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.hullcitytigers.com/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" role="menuitem">
+                        <span alt="" class="badge-25         HUL
+"></span>
+                        <span alt="" class="badge-50         HUL
+"></span>
+                        <span class="name">Hull City</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.lcfc.com/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" role="menuitem">
+                        <span alt="" class="badge-25         LEI
+"></span>
+                        <span alt="" class="badge-50         LEI
+"></span>
+                        <span class="name">Leicester City</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.liverpoolfc.com/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" role="menuitem">
+                        <span alt="" class="badge-25         LIV
+"></span>
+                        <span alt="" class="badge-50         LIV
+"></span>
+                        <span class="name">Liverpool</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.mancity.com/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" role="menuitem">
+                        <span alt="" class="badge-25         MCI
+"></span>
+                        <span alt="" class="badge-50         MCI
+"></span>
+                        <span class="name">Manchester City</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.manutd.com/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" role="menuitem">
+                        <span alt="" class="badge-25         MUN
+"></span>
+                        <span alt="" class="badge-50         MUN
+"></span>
+                        <span class="name">Manchester United</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.mfc.co.uk/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" role="menuitem">
+                        <span alt="" class="badge-25         MID
+"></span>
+                        <span alt="" class="badge-50         MID
+"></span>
+                        <span class="name">Middlesbrough</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://southamptonfc.com/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" role="menuitem">
+                        <span alt="" class="badge-25         SOU
+"></span>
+                        <span alt="" class="badge-50         SOU
+"></span>
+                        <span class="name">Southampton</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.stokecityfc.com/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" role="menuitem">
+                        <span alt="" class="badge-25         STK
+"></span>
+                        <span alt="" class="badge-50         STK
+"></span>
+                        <span class="name">Stoke City</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.safc.com/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" role="menuitem">
+                        <span alt="" class="badge-25         SUN
+"></span>
+                        <span alt="" class="badge-50         SUN
+"></span>
+                        <span class="name">Sunderland</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.swanseacity.net/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" role="menuitem">
+                        <span alt="" class="badge-25         SWA
+"></span>
+                        <span alt="" class="badge-50         SWA
+"></span>
+                        <span class="name">Swansea</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.tottenhamhotspur.com/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" role="menuitem">
+                        <span alt="" class="badge-25         TOT
+"></span>
+                        <span alt="" class="badge-50         TOT
+"></span>
+                        <span class="name">Spurs</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.watfordfc.com/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" role="menuitem">
+                        <span alt="" class="badge-25         WAT
+"></span>
+                        <span alt="" class="badge-50         WAT
+"></span>
+                        <span class="name">Watford</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.wba.co.uk/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" role="menuitem">
+                        <span alt="" class="badge-25         WBA
+"></span>
+                        <span alt="" class="badge-50         WBA
+"></span>
+                        <span class="name">West Brom</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.whufc.com/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" role="menuitem">
+                        <span alt="" class="badge-25         WHU
+"></span>
+                        <span alt="" class="badge-50         WHU
+"></span>
+                        <span class="name">West Ham</span>
+                    </a>
+                </li>
+    </ul>
+</nav>
+<!-- TO-TRANSLATE -->
+
+
+    <div class="fixedContainer">
+        <div class="navContainer" data-script="pl_global-header">
+            <section id="mainNav" class="navBar" role="menubar">
+                <div class="menuBtn" role="button" id="hamburgerToggle">
+                    <span>Menu</span>
+                    <div class="menuBtnContainer">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <a href="https://www.premierleague.com/" class="plLogo" aria-label="Premier League Home Page on logo link">
+                    <picture>
+                        <source srcset="//resources-pl.pulselive.com/ver/i/elements/premier-league-logo-header.svg" type="image/svg+xml">
+                        <img id="mainLogo" src="search%20results_files/premier-league-logo-header.png" alt="Premier League Logo" style="height: 69px;">
+                    </picture>
+                    <span class="mobile"><img src="search%20results_files/premier-league-logo-header-mob.svg" alt="Premier League Logo"></span>
+                </a>
+                <nav class="mainNav">
+                    <ul class="pageLinks" role="menu">
+
+
+    <li class="premierleague " tabindex="0" aria-haspopup="true" role="menuitem">
+
+        <div role="button" class="navLink active  " tabindex="index">
+            Premier League
+                <span class="icn chevron-down-sm-w"></span>
+        </div>
+
+            <div class="dropdown " aria-hidden="true">
+                <ul role="menu">
+                        <li tabindex="-1">
+                            <a tabindex="0" href="https://www.premierleague.com/home" role="menuitem">
+                            Home
+                            </a>
+                        </li>
+                        <li tabindex="-1">
+                            <a tabindex="0" href="https://www.premierleague.com/fixtures" role="menuitem">
+                            Fixtures
+                            </a>
+                        </li>
+                        <li tabindex="-1">
+                            <a tabindex="0" href="https://www.premierleague.com/results" role="menuitem">
+                            Results
+                            </a>
+                        </li>
+                        <li tabindex="-1">
+                            <a tabindex="0" href="https://www.premierleague.com/tables" role="menuitem">
+                            Tables
+                            </a>
+                        </li>
+                        <li tabindex="-1">
+                            <a tabindex="0" href="https://www.premierleague.com/broadcast-schedules" role="menuitem">
+                            Broadcast
+                            </a>
+                        </li>
+                        <li tabindex="-1">
+                            <a tabindex="0" href="https://www.premierleague.com/tickets" role="menuitem">
+                            Tickets
+                            </a>
+                        </li>
+                        <li tabindex="-1">
+                            <a tabindex="0" href="https://www.premierleague.com/clubs" role="menuitem">
+                            Clubs
+                            </a>
+                        </li>
+                        <li tabindex="-1">
+                            <a tabindex="0" href="https://www.premierleague.com/players" role="menuitem">
+                            Players
+                            </a>
+                        </li>
+                        <li tabindex="-1">
+                            <a tabindex="0" href="https://www.premierleague.com/managers" role="menuitem">
+                            Managers
+                            </a>
+                        </li>
+                        <li tabindex="-1">
+                            <a tabindex="0" href="https://www.premierleague.com/news" role="menuitem">
+                            News
+                            </a>
+                        </li>
+                        <li tabindex="-1">
+                            <a tabindex="0" href="https://www.premierleague.com/social" role="menuitem">
+                            Social
+                            </a>
+                        </li>
+                        <li tabindex="-1">
+                            <a tabindex="0" href="https://www.premierleague.com/youth" role="menuitem">
+                            Youth
+                            </a>
+                        </li>
+                        <li tabindex="-1">
+                            <a tabindex="0" href="https://www.premierleague.com/history" role="menuitem">
+                            History
+                            </a>
+                        </li>
+                        <li tabindex="-1">
+                            <a tabindex="0" href="https://www.premierleague.com/transfers/january" role="menuitem">
+                            Transfers
+                            </a>
+                        </li>
+                        <li tabindex="-1">
+                            <a tabindex="0" href="https://www.premierleague.com/referees/overview" role="menuitem">
+                            Referees
+                            </a>
+                        </li>
+                </ul>
+            </div>
+    </li>
+
+
+    <li class="fantasy noDrop" role="menuitem">
+            <a href="http://fantasy.premierleague.com/" data-link-index="1" class="navLink " role="menuitem">
+                Fantasy
+            </a>
+
+        <div role="button" data-nochildrenlink="http://fantasy.premierleague.com/" class="navLink  mobile " tabindex="index">
+            Fantasy
+        </div>
+
+            <div class="dropdown" aria-hidden="true">
+            </div>
+    </li>
+
+
+    <li class="stats " role="menuitem">
+            <a href="https://www.premierleague.com/stats" data-link-index="2" class="navLink " role="menuitem">
+                Stats
+            </a>
+
+        <div role="button" class="navLink  mobile " tabindex="index">
+            Stats
+        </div>
+
+            <div class="dropdown  dropdownMobile" aria-hidden="true">
+                <ul role="menu">
+                        <li tabindex="-1">
+                            <a tabindex="0" href="https://www.premierleague.com/stats" role="menuitem">
+                            Dashboard
+                            </a>
+                        </li>
+                        <li tabindex="-1">
+                            <a tabindex="0" href="https://www.premierleague.com/stats/top/players" role="menuitem">
+                            Player Stats
+                            </a>
+                        </li>
+                        <li tabindex="-1">
+                            <a tabindex="0" href="https://www.premierleague.com/stats/top/clubs" role="menuitem">
+                            Club Stats
+                            </a>
+                        </li>
+                        <li tabindex="-1">
+                            <a tabindex="0" href="https://www.premierleague.com/stats/all-time" role="menuitem">
+                            All-time
+                            </a>
+                        </li>
+                        <li tabindex="-1">
+                            <a tabindex="0" href="https://www.premierleague.com/stats/head-to-head" role="menuitem">
+                            Head-to-Head
+                            </a>
+                        </li>
+                        <li tabindex="-1">
+                            <a tabindex="0" href="https://www.premierleague.com/stats/awards" role="menuitem">
+                            Awards
+                            </a>
+                        </li>
+                </ul>
+            </div>
+    </li>
+
+
+    <li class="video " role="menuitem">
+            <a href="https://www.premierleague.com/video" data-link-index="3" class="navLink " role="menuitem">
+                Video
+            </a>
+
+        <div role="button" class="navLink  mobile " tabindex="index">
+            Video
+        </div>
+
+            <div class="dropdown  dropdownMobile" aria-hidden="true">
+                <ul role="menu">
+                        <li tabindex="-1">
+                            <a tabindex="0" href="https://www.premierleague.com/video" role="menuitem">
+                            Dashboard
+                            </a>
+                        </li>
+                </ul>
+            </div>
+    </li>
+
+
+    <li class="communities " role="menuitem">
+            <a href="https://www.premierleague.com/communities" data-link-index="4" class="navLink " role="menuitem">
+                Communities
+            </a>
+
+        <div role="button" class="navLink  mobile " tabindex="index">
+            Communities
+        </div>
+
+            <div class="dropdown " aria-hidden="true">
+                <ul role="menu">
+                        <li tabindex="-1">
+                            <a tabindex="0" href="https://www.premierleague.com/communities" role="menuitem">
+                            Latest
+                            </a>
+                        </li>
+                        <li tabindex="-1">
+                            <a tabindex="0" href="https://www.premierleague.com/communities/programmes" role="menuitem">
+                            Programmes
+                            </a>
+                        </li>
+                        <li tabindex="-1">
+                            <a tabindex="0" href="https://www.premierleague.com/communities/PLKicksheroes" role="menuitem">
+                            PL Kicks Heroes
+                            </a>
+                        </li>
+                        <li tabindex="-1">
+                            <a tabindex="0" href="https://www.premierleague.com/communities/strategy" role="menuitem">
+                            Strategy
+                            </a>
+                        </li>
+                </ul>
+            </div>
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li class="more " tabindex="0" aria-haspopup="true" role="menuitem">
+        <div role="button" class="navLink ">More<span class="icn chevron-down-sm-w"></span></div>
+        <div class="dropdown" aria-hidden="true">
+            <ul role="menu">
+                        <li>
+                            <a href="https://www.premierleague.com/photos" role="menuitem">Photos</a>
+                        </li>
+                        <li>
+                            <a href="https://www.premierleague.com/transfers" role="menuitem">Transfers</a>
+                        </li>
+                        <li>
+                            <a href="https://www.premierleague.com/partners" role="menuitem">Partners</a>
+                        </li>
+                        <li>
+                            <a href="https://www.premierleague.com/nike-ball-hub" role="menuitem">Nike Ball Hub</a>
+                        </li>
+                        <li>
+                            <a href="https://www.premierleague.com/about" role="menuitem">About</a>
+                        </li>
+                        <li>
+                            <a href="https://www.premierleague.com/publications" role="menuitem">Publications</a>
+                        </li>
+                        <li>
+                            <a href="http://stories.premierleague.com/" role="menuitem">Inspiring Stories</a>
+                        </li>
+                        <li>
+                            <a href="https://www.premierleague.com/fan-panel" role="menuitem">Fan Panel</a>
+                        </li>
+                        <li>
+                            <a href="https://www.premierleague.com/legal" role="menuitem">Legal</a>
+                        </li>
+                        <li>
+                            <a href="https://www.premierleague.com/contact" role="menuitem">Contact Us</a>
+                        </li>
+            </ul>
+        </div>
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--TO-TRANSLATE -->
+    <li class="clubs" aria-haspopup="true">
+        <div role="button" class="navLink clubListMobileButton">Clubs<span class="icn external-w"></span></div>
+        <div class="dropdown" aria-hidden="true" role="menu">
+        </div>
+    </li>
+                    </ul>
+                </nav>
+    <a href="https://users.premierleague.com/?redirect_uri=https://www.premierleague.com/&amp;app=pl-web" class="navLink navOption fantasySignIn" role="button" tabindex="0">
+        <div class="icn user-w show-m"></div>
+            <span class="fantasySignInLabel">Sign in</span>
+    </a>
+    <a href="https://users.premierleague.com/" class="navLink navOption fantasySignOut visuallyHidden" role="button" tabindex="0">
+            <div class="icn user-w show-m"></div>
+            <span class="fantasyUsername"></span>
+    </a>
+    <div class="navOption search">
+        <div class="searchBtn headerSearchButton" role="button" tabindex="0"><span class="visuallyHidden">Search</span><div alt="" class="icn search-w"></div></div>
+    </div>
+            </section>
+            <div class="searchBar searchBarContainer" data-widget="search-header-redirect" role="search">
+                <div class="searchBox">
+                    <div class="plSearch">
+                        <input id="searchPremierLeagueInput" class="searchInput searchInputContainer" placeholder="Search Premier League" type="text">
+                        <label for="searchPremierLeagueInput" class="visuallyHidden">Search Premier League</label>
+                        <span class="focusBorder"></span>
+                        <span class="searchBtnContainer searchButtonContainer">
+                            <input class="searchInputBtn" tabindex="0" type="submit">
+                            <span class="btnBg"></span>
+                            <span alt="" class="icn search-sm"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="searchOverlay"></div>
+        </div>
+
+        <nav class="subNav" role="menubar">
+            <ul>
+                        <li><a href="https://www.premierleague.com/home" class="" data-link-index="0" role="menuitem">Home</a></li>
+                        <li><a href="https://www.premierleague.com/fixtures" class="" data-link-index="1" role="menuitem">Fixtures</a></li>
+                        <li><a href="https://www.premierleague.com/results" class="" data-link-index="2" role="menuitem">Results</a></li>
+                        <li><a href="https://www.premierleague.com/tables" class="" data-link-index="3" role="menuitem">Tables</a></li>
+                        <li><a href="https://www.premierleague.com/broadcast-schedules" class="" data-link-index="4" role="menuitem">Broadcast</a></li>
+                        <li><a href="https://www.premierleague.com/tickets" class="" data-link-index="5" role="menuitem">Tickets</a></li>
+                        <li><a href="https://www.premierleague.com/clubs" class="" data-link-index="6" role="menuitem">Clubs</a></li>
+                        <li><a href="https://www.premierleague.com/players" class="" data-link-index="7" role="menuitem">Players</a></li>
+                        <li><a href="https://www.premierleague.com/managers" class="" data-link-index="8" role="menuitem">Managers</a></li>
+                        <li><a href="https://www.premierleague.com/news" class="" data-link-index="9" role="menuitem">News</a></li>
+                        <li><a href="https://www.premierleague.com/social" class="" data-link-index="10" role="menuitem">Social</a></li>
+                        <li><a href="https://www.premierleague.com/youth" class="" data-link-index="11" role="menuitem">Youth</a></li>
+                        <li><a href="https://www.premierleague.com/history" class="" data-link-index="12" role="menuitem">History</a></li>
+                        <li><a href="https://www.premierleague.com/transfers/january" class="" data-link-index="13" role="menuitem">Transfers</a></li>
+                        <li><a href="https://www.premierleague.com/referees/overview" class="" data-link-index="14" role="menuitem">Referees</a></li>
+            </ul>
+            <div class="moreList" aria-haspopup="true">
+                <div class="moreListBtn" role="button" tabindex="0"><div class="icn more-sm"></div>More</div>
+                <ul aria-hidden="true" role="menu">
+                            <li><a href="https://www.premierleague.com/home" class="" data-link-index="0" role="menuitem">Home</a></li>
+                            <li><a href="https://www.premierleague.com/fixtures" class="" data-link-index="1" role="menuitem">Fixtures</a></li>
+                            <li><a href="https://www.premierleague.com/results" class="" data-link-index="2" role="menuitem">Results</a></li>
+                            <li><a href="https://www.premierleague.com/tables" class="" data-link-index="3" role="menuitem">Tables</a></li>
+                            <li><a href="https://www.premierleague.com/broadcast-schedules" class="" data-link-index="4" role="menuitem">Broadcast</a></li>
+                            <li><a href="https://www.premierleague.com/tickets" class="" data-link-index="5" role="menuitem">Tickets</a></li>
+                            <li><a href="https://www.premierleague.com/clubs" class="" data-link-index="6" role="menuitem">Clubs</a></li>
+                            <li><a href="https://www.premierleague.com/players" class="" data-link-index="7" role="menuitem">Players</a></li>
+                            <li><a href="https://www.premierleague.com/managers" class="" data-link-index="8" role="menuitem">Managers</a></li>
+                            <li><a href="https://www.premierleague.com/news" class="" data-link-index="9" role="menuitem">News</a></li>
+                            <li><a href="https://www.premierleague.com/social" class="" data-link-index="10" role="menuitem">Social</a></li>
+                            <li><a href="https://www.premierleague.com/youth" class="" data-link-index="11" role="menuitem">Youth</a></li>
+                            <li><a href="https://www.premierleague.com/history" class="" data-link-index="12" role="menuitem">History</a></li>
+                            <li><a href="https://www.premierleague.com/transfers/january" class="" data-link-index="13" role="menuitem">Transfers</a></li>
+                            <li><a href="https://www.premierleague.com/referees/overview" class="" data-link-index="14" role="menuitem">Referees</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+</header>
+
+<main id="mainContent" tabindex="0">
+	<div data-widget="search" data-script="pl_search">
+	<header class="pageHero tabbedHero searchHero">
+		<div class="wrapper col-12">
+			<h1 class="pageTitle">Search Results for:</h1>
+			<div class="searchDataContainer searchInputContainer" role="search"><div class="searchInputContainer" role="search"><label><span class="visuallyHidden"></span> <input id="" value="sports programmes" placeholder="" class="searchTextContainer searchInput" type="text"></label><div class="searchIconContainer searchCommit" role="button" tabindex="0"><span class="visuallyHidden">Submit Search</span><div alt="" class="icn search-sm"></div></div></div></div>
+			<div class="tabLinks searchTabsContainer" data-tab-wrap=".tabs" data-ui-more-nav="search-nav">
+				<div class="tabs"></div>
+			<ul class="tablist" role="tablist"><li role="tab" tabindex="0" data-tab-index="0" class="" data-nav-index="0">All</li><li role="tab" tabindex="0" data-tab-index="1" data-nav-index="1" class="active">News</li><li role="tab" tabindex="0" data-tab-index="2" data-nav-index="2">Photos</li><li role="tab" tabindex="0" data-tab-index="3" data-nav-index="3">Videos</li><li role="tab" tabindex="0" data-tab-index="4" data-nav-index="4">Clubs</li><li role="tab" tabindex="0" data-tab-index="5" data-nav-index="5">Players</li><li role="tab" tabindex="0" data-tab-index="6" data-nav-index="6">Managers</li><li class="more"><div class="moreToggle">More<span class="icn chevron-down"></span></div><ul class="moreToggleDropdown"></ul></li></ul></div>
+		</div>
+	</header>
+	<section class="searchResults">
+		<div class="wrapper">
+			<div class="tabbedContent"><div class="searchResultTab searchResults" data-ui-tab="All" data-ui-args="{&quot;type&quot;: &quot;all&quot;}">
+				<div class="wrapper">
+					<div class="col-9">
+						<div class="textAllContainer"><a href="http://www.premierleague.com/communities/programmes/community-programmes/pl-4-sport" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/Jump_Shot.jpg" alt="Premier League 4 Sport"> </span><figcaption> <span class="tag">Communities</span>  <span class="title">Premier League 4 Sport</span> <span class="text">Olympic legacy programme giving young people the opportunity to try out different sports</span></figcaption></figure></a><a href="https://www.premierleague.com/news/111169" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/BT_PL_Man_City_140916_351.jpg" alt="Premier League and BT launch Disability Sport initiative"> </span><figcaption> <span class="tag">Communities</span>  <span class="title">Premier League and BT launch Disability Sport initiative</span> <span class="text">Three-year programme to inspire disabled people through sport and engage millions across England and Wales</span></figcaption></figure></a><a href="http://www.premierleague.com/communities/programmes/community-programmes/pl-bt-disability-fund" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/BT_PL_West_Brom_060916_056.jpg" alt="Premier League/BT Disability Fund"> </span><figcaption> <span class="tag">Communities</span>  <span class="title">Premier League/BT Disability Fund</span> <span class="text">New programme will be launched in 2016/17 to help engage disabled participants in sport</span></figcaption></figure></a><a href="https://www.premierleague.com/news/119362" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/GettyImages-589516584.jpg" alt="Win tickets with EA SPORTS FIFA 17 Fantasy League"> </span><figcaption> <span class="tag">Fantasy Premier League</span>  <span class="title">Win tickets with EA SPORTS FIFA 17 Fantasy League</span> <span class="text">Join the EA SPORTS Fantasy League to win Premier League prizes</span></figcaption></figure></a></div>
+						<ul class="videoAllContainer block-list-3"><li data-ui-modal="#videoPlayer" data-ui-args="{&quot;contentId&quot;: 50048, &quot;mediaId&quot;:4602841039001, &quot;mediaTitle&quot;:&quot;BT Sport  League team up for Newcastle Foundation&quot;, &quot;mediaDescription&quot;:&quot;A partnership between the Premier League and BT Sport will fund a programme run by the Newcastle United Foundation. Courtesy: BT Sport&quot;, &quot;mediaDate&quot;:&quot;09/11/2015&quot;}"><a href="#%21" class="thumbnail videoThumb"><figure><span class="image"> <img src="search%20results_files/ANGjClIx.jpg" alt="">  <span class="runTime"><span class="icn play"></span><time datetime="PT2M59S">02:23</time></span></span><figcaption><span class="title">BT Sport &amp; League team up for Newcastle Foundation</span></figcaption></figure></a></li><li data-ui-modal="#videoPlayer" data-ui-args="{&quot;contentId&quot;: 58252, &quot;mediaId&quot;:2854044214001, &quot;mediaTitle&quot;:&quot;Focus on Premier League 4 Sport&quot;, &quot;mediaDescription&quot;:&quot;Find out about how the thriving Premier League 4 Sport programme is helping thousands of young people engage in sport and making positive changes to their lives.&quot;, &quot;mediaDate&quot;:&quot;20/11/2013&quot;}"><a href="#%21" class="thumbnail videoThumb"><figure><span class="image"> <img src="search%20results_files/qkAFFWxU.jpg" alt="">  <span class="runTime"><span class="icn play"></span><time datetime="PT2M59S">06:11</time></span></span><figcaption><span class="title">Focus on Premier League 4 Sport</span></figcaption></figure></a></li><li data-ui-modal="#videoPlayer" data-ui-args="{&quot;contentId&quot;: 51360, &quot;mediaId&quot;:4347638455001, &quot;mediaTitle&quot;:&quot;#39It gives young people the opportunity to play sport#39&quot;, &quot;mediaDescription&quot;:&quot;Greg Rusedski and Graeme Le Saux see the Premier League 4 Sport programme in action at the PL4Sport National Tennis Finals in Roehampton&quot;, &quot;mediaDate&quot;:&quot;10/7/2015&quot;}"><a href="#%21" class="thumbnail videoThumb"><figure><span class="image"> <img src="search%20results_files/igUnvAwz.jpg" alt="">  <span class="runTime"><span class="icn play"></span><time datetime="PT2M59S">01:50</time></span></span><figcaption><span class="title">'It gives young people the opportunity to play sport'</span></figcaption></figure></a></li><li data-ui-modal="#videoPlayer" data-ui-args="{&quot;contentId&quot;: 147123, &quot;mediaId&quot;:5225739797001, &quot;mediaTitle&quot;:&quot;#39I#39m available for Burnley#39s coaching staff!#39&quot;, &quot;mediaDescription&quot;:&quot;How Burnley#39s disability sports programme has inspired one coach. Courtesy: BT Sport&quot;, &quot;mediaDate&quot;:&quot;27/11/2016&quot;}"><a href="#%21" class="thumbnail videoThumb"><figure><span class="image"> <img src="search%20results_files/GHvPgvjw.jpg" alt="">  <span class="runTime"><span class="icn play"></span><time datetime="PT2M59S">03:34</time></span></span><figcaption><span class="title">'I'm available for Burnley's coaching staff!'</span></figcaption></figure></a></li><li data-ui-modal="#videoPlayer" data-ui-args="{&quot;contentId&quot;: 144963, &quot;mediaId&quot;:5224550795001, &quot;mediaTitle&quot;:&quot;#39I#39m available for Burnley#39s coaching staff!#39&quot;, &quot;mediaDescription&quot;:&quot;How Burnley#39s disability sports programme has inspired one coach. Courtesy: BT Sport (subtitles)&quot;, &quot;mediaDate&quot;:&quot;24/11/2016&quot;}"><a href="#%21" class="thumbnail videoThumb"><figure><span class="image"> <img src="search%20results_files/GHvPgvjw.jpg" alt="">  <span class="runTime"><span class="icn play"></span><time datetime="PT2M59S">03:27</time></span></span><figcaption><span class="title">'I'm available for Burnley's coaching staff!'</span></figcaption></figure></a></li><li data-ui-modal="#videoPlayer" data-ui-args="{&quot;contentId&quot;: 147120, &quot;mediaId&quot;:5225739795001, &quot;mediaTitle&quot;:&quot;#39I#39m available for Burnley#39s coaching staff!#39&quot;, &quot;mediaDescription&quot;:&quot;How Burnley#39s disability sports programme has inspired one coach. Courtesy: BT Sport (audio description)&quot;, &quot;mediaDate&quot;:&quot;24/11/2016&quot;}"><a href="#%21" class="thumbnail videoThumb"><figure><span class="image"> <img src="search%20results_files/GHvPgvjw.jpg" alt="">  <span class="runTime"><span class="icn play"></span><time datetime="PT2M59S">03:34</time></span></span><figcaption><span class="title">'I'm available for Burnley's coaching staff!'</span></figcaption></figure></a></li></ul>
+						<div class="textAllContainer"><a href="http://www.liverpoolfc.com/news/announcements/233721-reds-to-be-fuelled-by-science-in-sport" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/t14.png" alt="Reds to be fuelled by Science in Sport"> </span><figcaption> <span class="title">Reds to be fuelled by Science in Sport</span> <span class="text">Liverpool
+ Football Club has today announced that Science in Sport (SiS) will 
+become the official sports nutrition partner for the 2016-17 season.</span></figcaption></figure></a><a href="https://www.premierleague.com/news/133113" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/SPL_PREMIER_LEAGUE_LAUNCH_2016-17_184.JPG" alt="PL4Sport a 'brilliant opportunity' for handball"> </span><figcaption> <span class="tag">Communities</span>  <span class="title">PL4Sport a 'brilliant opportunity' for handball</span> <span class="text">GB Olympian John Pearce praises impact of programme on his sport, while Fulham win at national tournament</span></figcaption></figure></a><a href="https://www.watfordfc.com/club/exclusive-nbc-sports-documentary" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/t57.png" alt="Exclusive NBC Sports Documentary"> </span><figcaption> <span class="title">Exclusive NBC Sports Documentary</span> <span class="text">Exclusive
+ NBC Sports Documentary liam.mcgarry Wed, 11/23/2016 - 17:00 Body 
+Watford FC has been delighted to welcome NBC Sports behind-the-scenes at
+ the club, to be the subject of their prestigious ‘Behind The Badge’ 
+documentary, with the first of a four-episode series set to air 
+exclusively across the American broadcaster’s NBC Sports Network (NBCSN)
+ this weekend. &nbsp; Accepted by the club as a chance to explain how it
+ ticks primarily to football fans outside of the UK, it’s been 
+completely open-house for the cameras at NBC Sports, who are Premier 
+League rightsholders. SEO Image</span></figcaption></figure></a><a href="https://www.premierleague.com/news/312384" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/Zlatan_FPL_Fans_Favourite.JPG" alt="Zlatan among EA SPORTS FPL award winners"> </span><figcaption> <span class="tag">Fantasy Premier League</span>  <span class="title">Zlatan among EA SPORTS FPL award winners</span> <span class="text">Man Utd striker joins Sanchez, Costa, Alli and Heaton in claiming EA SPORTS Fantasy Half-Time accolades</span></figcaption></figure></a></div>
+						<ul class="photoAllContainer block-list-3"><li class="galleryItem" data-ui-src="https://premierleague-static-files.s3.amazonaws.com/premierleague/photo/2016/11/04/38dae9ea-c822-4622-9bff-a7bc5dff5193/D4S_1016.jpg" data-index="0"><div class="thumbnail"><figure> <span class="image"><img src="search%20results_files/D4S_1016.jpg" alt="PL/BT Disability Sport Programme: Chelsea"> <span class="openModal" data-ui-modal="#galleryModal" role="button" tabindex="0"><svg class="expandIcon" version="1.1" id="Layer_1" xmlns="//www.w3.org/2000/svg" xlink="//www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 75 75" style="enable-background:new 0 0 75 75" xml:space="preserve"><path d="M39.8,65.2H13.5c-1.2,0-2.2-1-2.2-2.2V36.7c0-0.9,0.5-1.7,1.4-2.1c0.8-0.4,1.8-0.2,2.4,0.4l8.4,8c0.9,0.9,0.9,2.3,0.1,3.2c-0.9,0.9-2.3,0.9-3.2,0.1l-4.6-4.4v18.9h18.9l-4.4-4.6c-0.8-0.9-0.8-2.2,0-3.1l12.5-12.9c0.9-0.9,2.3-0.9,3.2-0.1c0.9,0.9,0.9,2.3,0.1,3.2L35,54.6l6.5,6.8c0.6,0.7,0.8,1.6,0.4,2.4C41.6,64.7,40.7,65.2,39.8,65.2z M63,42.1c-0.6,0-1.1-0.2-1.5-0.6l-8.4-8c-0.9-0.9-0.9-2.3-0.1-3.2c0.9-0.9,2.3-0.9,3.2-0.1l4.6,4.4V15.8H41.9l4.4,4.6c0.8,0.9,0.8,2.2,0,3.1L33.7,36.4c-0.9,0.9-2.3,0.9-3.2,0.1c-0.9-0.9-0.9-2.3-0.1-3.2l11-11.4L35,15c-0.6-0.7-0.8-1.6-0.4-2.4c0.4-0.8,1.2-1.4,2.1-1.4H63c1.2,0,2.2,1,2.2,2.2v26.3c0,0.9-0.5,1.7-1.4,2.1C63.6,42,63.3,42.1,63,42.1z"></path></svg> <span class="ieOpenModal icn expand-w"></span> </span></span></figure></div></li><li class="galleryItem" data-ui-src="https://premierleague-static-files.s3.amazonaws.com/premierleague/photo/2016/10/28/b61fa6f2-a5ec-4082-8be9-b20e33b0f853/PL_BT_CPFC_121016_312.jpg" data-index="1"><div class="thumbnail"><figure> <span class="image"><img src="search%20results_files/PL_BT_CPFC_121016_312.jpg" alt="PL/BT Disability Sport Programme: Crystal Palace"> <span class="openModal" data-ui-modal="#galleryModal" role="button" tabindex="0"><svg class="expandIcon" version="1.1" id="Layer_1" xmlns="//www.w3.org/2000/svg" xlink="//www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 75 75" style="enable-background:new 0 0 75 75" xml:space="preserve"><path d="M39.8,65.2H13.5c-1.2,0-2.2-1-2.2-2.2V36.7c0-0.9,0.5-1.7,1.4-2.1c0.8-0.4,1.8-0.2,2.4,0.4l8.4,8c0.9,0.9,0.9,2.3,0.1,3.2c-0.9,0.9-2.3,0.9-3.2,0.1l-4.6-4.4v18.9h18.9l-4.4-4.6c-0.8-0.9-0.8-2.2,0-3.1l12.5-12.9c0.9-0.9,2.3-0.9,3.2-0.1c0.9,0.9,0.9,2.3,0.1,3.2L35,54.6l6.5,6.8c0.6,0.7,0.8,1.6,0.4,2.4C41.6,64.7,40.7,65.2,39.8,65.2z M63,42.1c-0.6,0-1.1-0.2-1.5-0.6l-8.4-8c-0.9-0.9-0.9-2.3-0.1-3.2c0.9-0.9,2.3-0.9,3.2-0.1l4.6,4.4V15.8H41.9l4.4,4.6c0.8,0.9,0.8,2.2,0,3.1L33.7,36.4c-0.9,0.9-2.3,0.9-3.2,0.1c-0.9-0.9-0.9-2.3-0.1-3.2l11-11.4L35,15c-0.6-0.7-0.8-1.6-0.4-2.4c0.4-0.8,1.2-1.4,2.1-1.4H63c1.2,0,2.2,1,2.2,2.2v26.3c0,0.9-0.5,1.7-1.4,2.1C63.6,42,63.3,42.1,63,42.1z"></path></svg> <span class="ieOpenModal icn expand-w"></span> </span></span></figure></div></li><li class="galleryItem" data-ui-src="http://platform-static-files.s3.amazonaws.com/premierleague/photo/2016/05/18/36c13f2b-a159-4bd6-bf8d-f80dd525a042/ANGjClIx.jpg" data-index="2"><div class="thumbnail"><figure> <span class="image"><img src="search%20results_files/ANGjClIx_002.jpg" alt="BT Sport &amp; League team up for Newcastle Foundation"> <span class="openModal" data-ui-modal="#galleryModal" role="button" tabindex="0"><svg class="expandIcon" version="1.1" id="Layer_1" xmlns="//www.w3.org/2000/svg" xlink="//www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 75 75" style="enable-background:new 0 0 75 75" xml:space="preserve"><path d="M39.8,65.2H13.5c-1.2,0-2.2-1-2.2-2.2V36.7c0-0.9,0.5-1.7,1.4-2.1c0.8-0.4,1.8-0.2,2.4,0.4l8.4,8c0.9,0.9,0.9,2.3,0.1,3.2c-0.9,0.9-2.3,0.9-3.2,0.1l-4.6-4.4v18.9h18.9l-4.4-4.6c-0.8-0.9-0.8-2.2,0-3.1l12.5-12.9c0.9-0.9,2.3-0.9,3.2-0.1c0.9,0.9,0.9,2.3,0.1,3.2L35,54.6l6.5,6.8c0.6,0.7,0.8,1.6,0.4,2.4C41.6,64.7,40.7,65.2,39.8,65.2z M63,42.1c-0.6,0-1.1-0.2-1.5-0.6l-8.4-8c-0.9-0.9-0.9-2.3-0.1-3.2c0.9-0.9,2.3-0.9,3.2-0.1l4.6,4.4V15.8H41.9l4.4,4.6c0.8,0.9,0.8,2.2,0,3.1L33.7,36.4c-0.9,0.9-2.3,0.9-3.2,0.1c-0.9-0.9-0.9-2.3-0.1-3.2l11-11.4L35,15c-0.6-0.7-0.8-1.6-0.4-2.4c0.4-0.8,1.2-1.4,2.1-1.4H63c1.2,0,2.2,1,2.2,2.2v26.3c0,0.9-0.5,1.7-1.4,2.1C63.6,42,63.3,42.1,63,42.1z"></path></svg> <span class="ieOpenModal icn expand-w"></span> </span></span></figure></div></li><li class="galleryItem" data-ui-src="http://platform-static-files.s3.amazonaws.com/premierleague/photo/2016/05/18/f9c9c842-f21a-4c51-916e-af72bc527d51/qkAFFWxU.jpg" data-index="3"><div class="thumbnail"><figure> <span class="image"><img src="search%20results_files/qkAFFWxU_002.jpg" alt="Focus on Premier League 4 Sport"> <span class="openModal" data-ui-modal="#galleryModal" role="button" tabindex="0"><svg class="expandIcon" version="1.1" id="Layer_1" xmlns="//www.w3.org/2000/svg" xlink="//www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 75 75" style="enable-background:new 0 0 75 75" xml:space="preserve"><path d="M39.8,65.2H13.5c-1.2,0-2.2-1-2.2-2.2V36.7c0-0.9,0.5-1.7,1.4-2.1c0.8-0.4,1.8-0.2,2.4,0.4l8.4,8c0.9,0.9,0.9,2.3,0.1,3.2c-0.9,0.9-2.3,0.9-3.2,0.1l-4.6-4.4v18.9h18.9l-4.4-4.6c-0.8-0.9-0.8-2.2,0-3.1l12.5-12.9c0.9-0.9,2.3-0.9,3.2-0.1c0.9,0.9,0.9,2.3,0.1,3.2L35,54.6l6.5,6.8c0.6,0.7,0.8,1.6,0.4,2.4C41.6,64.7,40.7,65.2,39.8,65.2z M63,42.1c-0.6,0-1.1-0.2-1.5-0.6l-8.4-8c-0.9-0.9-0.9-2.3-0.1-3.2c0.9-0.9,2.3-0.9,3.2-0.1l4.6,4.4V15.8H41.9l4.4,4.6c0.8,0.9,0.8,2.2,0,3.1L33.7,36.4c-0.9,0.9-2.3,0.9-3.2,0.1c-0.9-0.9-0.9-2.3-0.1-3.2l11-11.4L35,15c-0.6-0.7-0.8-1.6-0.4-2.4c0.4-0.8,1.2-1.4,2.1-1.4H63c1.2,0,2.2,1,2.2,2.2v26.3c0,0.9-0.5,1.7-1.4,2.1C63.6,42,63.3,42.1,63,42.1z"></path></svg> <span class="ieOpenModal icn expand-w"></span> </span></span></figure></div></li><li class="galleryItem" data-ui-src="https://premierleague-static-files.s3.amazonaws.com/premierleague/photo/2016/10/28/fb2cf3df-ba64-4cff-90d6-0b3aec682336/PL_BT_CPFC_121016_225.jpg" data-index="4"><div class="thumbnail"><figure> <span class="image"><img src="search%20results_files/PL_BT_CPFC_121016_225.jpg" alt="PL/BT Disability Sport Programme: Crystal Palace"> <span class="openModal" data-ui-modal="#galleryModal" role="button" tabindex="0"><svg class="expandIcon" version="1.1" id="Layer_1" xmlns="//www.w3.org/2000/svg" xlink="//www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 75 75" style="enable-background:new 0 0 75 75" xml:space="preserve"><path d="M39.8,65.2H13.5c-1.2,0-2.2-1-2.2-2.2V36.7c0-0.9,0.5-1.7,1.4-2.1c0.8-0.4,1.8-0.2,2.4,0.4l8.4,8c0.9,0.9,0.9,2.3,0.1,3.2c-0.9,0.9-2.3,0.9-3.2,0.1l-4.6-4.4v18.9h18.9l-4.4-4.6c-0.8-0.9-0.8-2.2,0-3.1l12.5-12.9c0.9-0.9,2.3-0.9,3.2-0.1c0.9,0.9,0.9,2.3,0.1,3.2L35,54.6l6.5,6.8c0.6,0.7,0.8,1.6,0.4,2.4C41.6,64.7,40.7,65.2,39.8,65.2z M63,42.1c-0.6,0-1.1-0.2-1.5-0.6l-8.4-8c-0.9-0.9-0.9-2.3-0.1-3.2c0.9-0.9,2.3-0.9,3.2-0.1l4.6,4.4V15.8H41.9l4.4,4.6c0.8,0.9,0.8,2.2,0,3.1L33.7,36.4c-0.9,0.9-2.3,0.9-3.2,0.1c-0.9-0.9-0.9-2.3-0.1-3.2l11-11.4L35,15c-0.6-0.7-0.8-1.6-0.4-2.4c0.4-0.8,1.2-1.4,2.1-1.4H63c1.2,0,2.2,1,2.2,2.2v26.3c0,0.9-0.5,1.7-1.4,2.1C63.6,42,63.3,42.1,63,42.1z"></path></svg> <span class="ieOpenModal icn expand-w"></span> </span></span></figure></div></li><li class="galleryItem" data-ui-src="https://premierleague-static-files.s3.amazonaws.com/premierleague/photo/2016/10/29/fc636cd1-46d2-4cf5-8d23-69216fddc3e2/IHN_SPT_110415-003.JPG" data-index="5"><div class="thumbnail"><figure> <span class="image"><img src="search%20results_files/IHN_SPT_110415-003.JPG" alt="NBC Sports Premier League Live"> <span class="openModal" data-ui-modal="#galleryModal" role="button" tabindex="0"><svg class="expandIcon" version="1.1" id="Layer_1" xmlns="//www.w3.org/2000/svg" xlink="//www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 75 75" style="enable-background:new 0 0 75 75" xml:space="preserve"><path d="M39.8,65.2H13.5c-1.2,0-2.2-1-2.2-2.2V36.7c0-0.9,0.5-1.7,1.4-2.1c0.8-0.4,1.8-0.2,2.4,0.4l8.4,8c0.9,0.9,0.9,2.3,0.1,3.2c-0.9,0.9-2.3,0.9-3.2,0.1l-4.6-4.4v18.9h18.9l-4.4-4.6c-0.8-0.9-0.8-2.2,0-3.1l12.5-12.9c0.9-0.9,2.3-0.9,3.2-0.1c0.9,0.9,0.9,2.3,0.1,3.2L35,54.6l6.5,6.8c0.6,0.7,0.8,1.6,0.4,2.4C41.6,64.7,40.7,65.2,39.8,65.2z M63,42.1c-0.6,0-1.1-0.2-1.5-0.6l-8.4-8c-0.9-0.9-0.9-2.3-0.1-3.2c0.9-0.9,2.3-0.9,3.2-0.1l4.6,4.4V15.8H41.9l4.4,4.6c0.8,0.9,0.8,2.2,0,3.1L33.7,36.4c-0.9,0.9-2.3,0.9-3.2,0.1c-0.9-0.9-0.9-2.3-0.1-3.2l11-11.4L35,15c-0.6-0.7-0.8-1.6-0.4-2.4c0.4-0.8,1.2-1.4,2.1-1.4H63c1.2,0,2.2,1,2.2,2.2v26.3c0,0.9-0.5,1.7-1.4,2.1C63.6,42,63.3,42.1,63,42.1z"></path></svg> <span class="ieOpenModal icn expand-w"></span> </span></span></figure></div></li></ul>
+					</div>
+					<div class="col-3 searchResultSidebar allSearchSideBarContainer">
+						<div class="sidebarItem">
+							<h3 class="subHeader">Clubs</h3>
+							<div class="clubIndex">
+								<div class="indexSection">
+									<ul class="teamAllContainer"><li class="noResults">No results have matched your search</li></ul>
+								</div>
+							</div>
+							<a href="https://www.premierleague.com/clubs" class="btn">View More Clubs<span class="icn arrow-right"></span></a>
+						</div>
+						<div class="sidebarItem">
+							<h3 class="subHeader">Players</h3>
+							<div class="clubIndex">
+								<div class="indexSection">
+									<ul class="playersAllContainer"><li class="noResults">No results have matched your search</li></ul>
+								</div>
+							</div>
+							<a href="https://www.premierleague.com/players" class="btn">View More Players<span class="icn arrow-right"></span></a>
+						</div>
+						<div class="sidebarItem">
+							<h3 class="subHeader">Managers</h3>
+							<div class="clubIndex">
+								<div class="indexSection">
+									<ul class="managerAllContainer"><li class="noResults">No results have matched your search</li></ul>
+								</div>
+							</div>
+							<a href="https://www.premierleague.com/managers" class="btn">View More Managers<span class="icn arrow-right"></span></a>
+						</div>
+					</div>
+				</div>
+			</div><div class="searchResultTab active" data-ui-tab="News" data-ui-args="{&quot;type&quot;: &quot;text&quot;}"><a href="http://www.premierleague.com/communities/programmes/community-programmes/pl-4-sport" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/Jump_Shot.jpg" alt="Premier League 4 Sport"> </span><figcaption> <span class="tag">Communities</span>  <span class="title">Premier League 4 Sport</span> <span class="text">Olympic legacy programme giving young people the opportunity to try out different sports</span></figcaption></figure></a><a href="https://www.premierleague.com/news/111169" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/BT_PL_Man_City_140916_351.jpg" alt="Premier League and BT launch Disability Sport initiative"> </span><figcaption> <span class="tag">Communities</span>  <span class="title">Premier League and BT launch Disability Sport initiative</span> <span class="text">Three-year programme to inspire disabled people through sport and engage millions across England and Wales</span></figcaption></figure></a><a href="http://www.premierleague.com/communities/programmes/community-programmes/pl-bt-disability-fund" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/BT_PL_West_Brom_060916_056.jpg" alt="Premier League/BT Disability Fund"> </span><figcaption> <span class="tag">Communities</span>  <span class="title">Premier League/BT Disability Fund</span> <span class="text">New programme will be launched in 2016/17 to help engage disabled participants in sport</span></figcaption></figure></a><a href="https://www.premierleague.com/news/119362" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/GettyImages-589516584.jpg" alt="Win tickets with EA SPORTS FIFA 17 Fantasy League"> </span><figcaption> <span class="tag">Fantasy Premier League</span>  <span class="title">Win tickets with EA SPORTS FIFA 17 Fantasy League</span> <span class="text">Join the EA SPORTS Fantasy League to win Premier League prizes</span></figcaption></figure></a><a href="http://www.liverpoolfc.com/news/announcements/233721-reds-to-be-fuelled-by-science-in-sport" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/t14.png" alt="Reds to be fuelled by Science in Sport"> </span><figcaption> <span class="title">Reds to be fuelled by Science in Sport</span> <span class="text">Liverpool
+ Football Club has today announced that Science in Sport (SiS) will 
+become the official sports nutrition partner for the 2016-17 season.</span></figcaption></figure></a><a href="https://www.premierleague.com/news/133113" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/SPL_PREMIER_LEAGUE_LAUNCH_2016-17_184.JPG" alt="PL4Sport a 'brilliant opportunity' for handball"> </span><figcaption> <span class="tag">Communities</span>  <span class="title">PL4Sport a 'brilliant opportunity' for handball</span> <span class="text">GB Olympian John Pearce praises impact of programme on his sport, while Fulham win at national tournament</span></figcaption></figure></a><a href="https://www.watfordfc.com/club/exclusive-nbc-sports-documentary" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/t57.png" alt="Exclusive NBC Sports Documentary"> </span><figcaption> <span class="title">Exclusive NBC Sports Documentary</span> <span class="text">Exclusive
+ NBC Sports Documentary liam.mcgarry Wed, 11/23/2016 - 17:00 Body 
+Watford FC has been delighted to welcome NBC Sports behind-the-scenes at
+ the club, to be the subject of their prestigious ‘Behind The Badge’ 
+documentary, with the first of a four-episode series set to air 
+exclusively across the American broadcaster’s NBC Sports Network (NBCSN)
+ this weekend. &nbsp; Accepted by the club as a chance to explain how it
+ ticks primarily to football fans outside of the UK, it’s been 
+completely open-house for the cameras at NBC Sports, who are Premier 
+League rightsholders. SEO Image</span></figcaption></figure></a><a href="https://www.premierleague.com/news/312384" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/Zlatan_FPL_Fans_Favourite.JPG" alt="Zlatan among EA SPORTS FPL award winners"> </span><figcaption> <span class="tag">Fantasy Premier League</span>  <span class="title">Zlatan among EA SPORTS FPL award winners</span> <span class="text">Man Utd striker joins Sanchez, Costa, Alli and Heaton in claiming EA SPORTS Fantasy Half-Time accolades</span></figcaption></figure></a><a href="http://www.tottenhamhotspur.com/news/dele-alli-player-of-the-month-award-100217/" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/t6.png" alt="Dele named Premier League EA SPORTS Player of the Month"> </span><figcaption> <span class="title">Dele named Premier League EA SPORTS Player of the Month</span> <span class="text">Dele Alli has lifted the Premier League EA SPORTS Player of the Month award for January.</span></figcaption></figure></a><a href="http://www.liverpoolfc.com/news/community/253743-foundation-hosts-premier-league-4-sport-netball-tournament" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/t14.png" alt="Foundation hosts Premier League 4 Sport netball tournament"> </span><figcaption> <span class="title">Foundation hosts Premier League 4 Sport netball tournament</span> <span class="text">The
+ clubâs official charity, the LFC Foundation, recently hosted a 
+regional Premier League 4 Sport netball tournament in Liverpool.</span></figcaption></figure></a><a href="http://www.liverpoolfc.com/news/first-team/241881-reds-appoint-michael-edwards-as-sporting-director" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/t14.png" alt="Reds appoint Michael Edwards as sporting director"> </span><figcaption> <span class="title">Reds appoint Michael Edwards as sporting director</span> <span class="text">Michael Edwards has today been appointed as Liverpool Football Club's sporting director.</span></figcaption></figure></a><a href="https://www.premierleague.com/news/323084" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/BTPL_Spurs_180117_005.jpg" alt="'Spurs gave me the skills and belief to succeed'"> </span><figcaption> <span class="tag">Communities</span>  <span class="title">'Spurs gave me the skills and belief to succeed'</span> <span class="text">How Tottenham Hotspur Foundation and the PL/BT Disability Sport programme has helped one participant gain confidence</span></figcaption></figure></a><a href="http://www.liverpoolfc.com/news/announcements/236825-sporting-chance-makes-special-visit-to-lfc-academy" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/t14.png" alt="Sporting Chance makes special visit to LFC Academy"> </span><figcaption> <span class="title">Sporting Chance makes special visit to LFC Academy</span> <span class="text">Liverpool FC's U23s and U18s were recently paid a special visit by behavioural problems clinic Sporting Chance, at the Academy.</span></figcaption></figure></a><a href="https://www.premierleague.com/news/117421" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/Owen_Hargreaves_Blind_Football_-_BTPL_Disability_Launch.jpg" alt="'It was an amazing learning curve'"> </span><figcaption> <span class="tag">Communities</span>  <span class="title">'It was an amazing learning curve'</span> <span class="text">BT
+ Sport's Owen Hargreaves and Michael Owen try visually impaired football
+ at launch of Premier League and BT Disability Programme</span></figcaption></figure></a><a href="http://www.premierleague.com/communities/programmes/community-programmes/pl-kicks" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/PL_FerryLane_Kicks20.png" alt="Premier League Kicks"> </span><figcaption> <span class="tag">Communities</span>  <span class="title">Premier League Kicks</span> <span class="text">Find
+ out more about our flagship community programme which uses the power of
+ football and sport to inspire young people in some of the most 
+high-need areas in England and Wales</span></figcaption></figure></a><a href="http://www.liverpoolfc.com/news/first-team/233965-lazar-markovic-moves-to-sporting-lisbon-on-loan" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/t14.png" alt="Lazar Markovic moves to Sporting Lisbon on loan"> </span><figcaption> <span class="title">Lazar Markovic moves to Sporting Lisbon on loan</span> <span class="text">Lazar Markovic has joined Sporting Lisbon on a season-long loan, Liverpool FC can confirm.</span></figcaption></figure></a><a href="https://www.premierleague.com/news/124238" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/BT_PL_Man_City_140916_351.jpg" alt="City in the Community begin anniversary celebrations"> </span><figcaption> <span class="tag">Communities</span>  <span class="title">City in the Community begin anniversary celebrations</span> <span class="text">Man City's foundation programmes on show at special event attended by Sports Minister Tracey Crouch</span></figcaption></figure></a><a href="https://www.watfordfc.com/club/careers/watford-fc-ladies-careers-sports-therapistchartered-physiotherapist" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/t57.png" alt="Watford FC Ladies Careers: Sports Therapist/Chartered Physiotherapist"> </span><figcaption> <span class="title">Watford FC Ladies Careers: Sports Therapist/Chartered Physiotherapist</span> <span class="text">Watford
+ FC Ladies Careers: Sports Therapist/Chartered Physiotherapist 
+steve.scott Wed, 11/09/2016 - 15:06 Body Watford FC Ladies is looking to
+ add a Sports Therapist or Chartered Physiotherapist to its Medical 
+Department. The successful candidate will work on a flexible, part-time 
+basis with the First and Development Team players within the FA WSL 
+squad. This role will be ideal for a newly-qualified Sports 
+Therapist/Physiotherapist or someone wanting to gain valuable exposure 
+to an elite football environment. SEO Meta Description Watford FC Ladies
+ are recruiting a Sports Therapist or Chartered Physiotherapist SEO 
+Image</span></figcaption></figure></a><a href="http://www.manutd.com/en/News-And-Features/Club-News/2016/Aug/Manchester-United-and-EA-SPORTS-join-forces.aspx?newsid=BD646B5B-75CE-4567-9B7F-C619FB2A5E8D" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/t1.png" alt="Manchester United link up with EA SPORTS"> </span><figcaption> <span class="title">Manchester United link up with EA SPORTS</span> <span class="text">EA SPORTS agrees a three-year deal to become United's Official Football Video Games Partner.</span></figcaption></figure></a><a href="https://www.premierleague.com/news/61403" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/Big_Ben_group_shot.jpg" alt="'This is an enormous opportunity for tennis'"> </span><figcaption> <span class="tag">Communities</span>  <span class="title">'This is an enormous opportunity for tennis'</span> <span class="text">Great Britain Fed Cup captain Judy Murray on how the Premier League 4 Sport programme engages young people in tennis</span></figcaption></figure></a><a href="http://www.tottenhamhotspur.com/news/heung-min-son-wins-september-premier-league-ea-sports-player-of-the-month-141016/" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/t6.png" alt="Heung-Min Son named Premier League EA SPORTS Player of the Month"> </span><figcaption> <span class="title">Heung-Min Son named Premier League EA SPORTS Player of the Month</span> <span class="text">Heung-Min Son has been named Premier League EA SPORTS Player of the Month for September.</span></figcaption></figure></a><a href="https://www.premierleague.com/news/60872" class="thumbnail thumbLong"><figure><figcaption> <span class="title">EA SPORTS</span> <span class="text"></span></figcaption></figure></a><a href="https://www.premierleague.com/news/61152" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/Tim_Howard__Tony_Bellew-022.jpg" alt="Howard: Programmes like PL4Sport get kids off the street"> </span><figcaption> <span class="tag">Communities</span>  <span class="title">Howard: Programmes like PL4Sport get kids off the street</span> <span class="text">Everton goalkeeper Tim Howard steps into the ring to see Premier League 4 Sport Boxing in action</span></figcaption></figure></a><a href="https://www.premierleague.com/news/61421" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/IMG_0302.JPG" alt="Stoke shining a new light on girls' football programme"> </span><figcaption> <span class="tag">Communities</span>  <span class="title">Stoke shining a new light on girls' football programme</span> <span class="text">Innovative UV Football project helping to attract more girls to take up the sport</span></figcaption></figure></a><a href="http://www.tottenhamhotspur.com/news/club-partnership-harry-winks-former-school-251116/" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/t6.png" alt="Club to work in partnership with Winks’ former school"> </span><figcaption> <span class="title">Club to work in partnership with Winks’ former school</span> <span class="text">The
+ Club is offering a new full-time sports programme in partnership with 
+The Cavendish School, whose alumni include Harry Winks.</span></figcaption></figure></a><a href="https://www.premierleague.com/news/60880" class="thumbnail thumbLong"><figure><figcaption> <span class="title">BBC Sport</span> <span class="text"></span></figcaption></figure></a><a href="https://www.premierleague.com/news/64074" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/SPL_PREMIER_LEAGUE_4_SPORT_08.JPG" alt="Willis: I'm sure this will get more kids playing tennis"> </span><figcaption> <span class="tag">Communities</span>  <span class="title">Willis: I'm sure this will get more kids playing tennis</span> <span class="text">Wimbledon sensation Marcus Willis sees how Premier League, clubs and British Tennis helping grow sport</span></figcaption></figure></a><a href="http://www.tottenhamhotspur.com/news/community-sports-day-a-hit-with-local-residents-280716/" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/t6.png" alt="Community sports day a hit with local residents"> </span><figcaption> <span class="title">Community sports day a hit with local residents</span> <span class="text">Earlier
+ this week the Club supported Haringey Council’s Tottenham Sports Day 
+for local residents, one of a number of summer activities taking place 
+in the community over the coming weeks.</span></figcaption></figure></a><a href="https://www.premierleague.com/news/60898" class="thumbnail thumbLong"><figure><figcaption> <span class="title">Sporting iD</span> <span class="text"></span></figcaption></figure></a><a href="https://www.premierleague.com/news/139578" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/JL1_6808.jpg" alt="'Seeing players inspires pupils to get into sport'"> </span><figcaption> <span class="tag">Communities</span>  <span class="title">'Seeing players inspires pupils to get into sport'</span> <span class="text">Manchester United's Phil Jones and Timothy Fosu-Mensah join a PE lesson as part of the PL Primary Stars programme</span></figcaption></figure></a><a href="http://feeds.evertonfc.com/%7Er/everton-news/%7E3/Ug7PuGsiubk/deputy-ceo-joins-sport-england-board" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/t11.png" alt="Deputy CEO Joins Sport England Board"> </span><figcaption> <span class="title">Deputy CEO Joins Sport England Board</span> <span class="text">Dr
+ Denise Barrett-Baxendale MBE, Deputy Chief Executive of Everton and 
+Executive Chair of Everton in the Community, has been appointed to the 
+Board of Sport England, the national body for grassroots s...</span></figcaption></figure></a><a href="https://www.premierleague.com/news/60486" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/0339.jpg" alt="Gold impressed by Premier League Enterprise programme"> </span><figcaption> <span class="tag">Communities</span>  <span class="title">Gold impressed by Premier League Enterprise programme</span> <span class="text">West
+ Ham joint-chairman sees the impact of Premier League Enterprise at a 
+House of Commons reception to celebrate new partnership with Sport 
+Relief</span></figcaption></figure></a><a href="https://www.premierleague.com/communities/programmes/community-programmes/pl-bt-disability-fund?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" class="thumbnail thumbLong"><figure><figcaption> <span class="title">What is the PL/BT Disability Sport Programme?</span> <span class="text"></span></figcaption></figure></a><a href="http://www.tottenhamhotspur.com/news/spurs-fan-helen-richardson-walsh-olympic-gold-sporting-story-180117/" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/t6.png" alt="From her lowest ebb to Olympic gold - Spurs fan Helen Richardson-Walsh's amazing sporting journey"> </span><figcaption> <span class="title">From her lowest ebb to Olympic gold - Spurs fan Helen Richardson-Walsh's amazing sporting journey</span> <span class="text">Helen
+ Richardson-Walsh admits she was ‘at the lowest of the low’ after a 
+second surgery on her back in March, 2014. Now, almost three years 
+later, she’s an Olympic gold medallist, has been awarded an MBE and 
+recently talked tactics and sporting philosophy with Mauricio 
+Pochettino. Helen spoke about her extraordinary sporting journey after 
+that meeting with Mauricio at Hotspur Way...</span></figcaption></figure></a><a href="http://www.tottenhamhotspur.com/news/spurs-v-west-brom-media-view-with-nigel-pearson-of-sky-sports-and-talksport-130117/" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/t6.png" alt="Spurs v West Brom: Media view with Nigel Pearson of Sky Sports and TalkSport"> </span><figcaption> <span class="title">Spurs v West Brom: Media view with Nigel Pearson of Sky Sports and TalkSport</span> <span class="text">A
+ familiar voice on Sky Sports and TalkSport, Nigel Pearson is a regular 
+in the press box at The Hawthorns, so we tapped into his knowledge of 
+the Baggies ahead of Saturday's Premier League clash at the Lane...</span></figcaption></figure></a><a href="http://www.tottenhamhotspur.com/news/spurs-v-west-brom-media-view-with-nigel-pearson-of-sky-sports-and-talksport-130117/" class="thumbnail thumbLong"><figure> <span class="image"><img src="search%20results_files/t6.png" alt="Spurs v West Brom: Media view with Nigel Pearson of Sky Sports and TalkSport"> </span><figcaption> <span class="title">Spurs v West Brom: Media view with Nigel Pearson of Sky Sports and TalkSport</span> <span class="text">A
+ familiar voice on Sky Sports and TalkSport, Nigel Pearson is a regular 
+in the press box at The Hawthorns, so we tapped into his knowledge of 
+the Baggies ahead of Saturday's Premier League clash at the Lane...</span></figcaption></figure></a></div><ul class="block-list-3 searchResultTab" data-ui-tab="Photos" data-ui-args="{&quot;type&quot;: &quot;photo&quot;}">
+			</ul><ul class="block-list-3 searchResultTab" data-ui-tab="Videos" data-ui-args="{&quot;type&quot;: &quot;video&quot;}">
+			</ul><ul class="searchResultTab block-list-5 block-list-3-m block-list-2-s block-list-2-xs block-list-padding" data-ui-tab="Clubs" data-ui-args="{&quot;type&quot;: &quot;team&quot;}">
+			</ul><ul class="searchResultTab block-list-4 mobileScrollList" data-ui-tab="Players" data-ui-args="{&quot;type&quot;: &quot;players&quot;}">
+			</ul><ul class="searchResultTab block-list-4 mobileScrollList" data-ui-tab="Managers" data-ui-args="{&quot;type&quot;: &quot;managers&quot;}">
+			</ul></div>
+			
+			
+			
+			
+			
+			
+		</div>
+	</section>
+<div class="loader" data-scroll-loader="" style="min-height:10px;">Loading More Content...<div class="loader-small"><div class="line"></div></div></div></div>
+
+
+</main>
+
+<footer class="mainFooter">
+	
+
+        <div class="footerSponsorStrip">
+            <ul>
+    <li>
+        <a href="https://www.easports.com/fifa?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" target="_blank">
+            <span alt="" class="large icn sponsor-footer-ea"></span>
+            <span alt="" class="small icn sponsor-footer-ea-sm"></span>
+            <span alt="" class="type">Lead Partner<span class="visuallyHidden">EA SPORTS</span></span>
+        </a>
+    </li>
+    <li>
+        <a href="https://www.home.barclays/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" target="_blank">
+            <span alt="" class="large icn sponsor-footer-barclays"></span>
+            <span alt="" class="small icn sponsor-footer-barclays-sm"></span>
+            <span alt="" class="type">Official Bank<span class="visuallyHidden">Barclays</span></span>
+        </a>
+    </li>
+    <li>
+        <a href="https://www.carling.com/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" target="_blank">
+            <span alt="" class="large icn sponsor-footer-carling"></span>
+            <span alt="" class="small icn sponsor-footer-carling-sm"></span>
+            <span alt="" class="type">Official Beer<span class="visuallyHidden">Carling</span></span>
+        </a>
+    </li>
+    <li>
+        <a href="http://www.nikefootball.com/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" target="_blank">
+            <span alt="" class="large icn sponsor-footer-nike"></span>
+            <span alt="" class="small icn sponsor-footer-nike-sm"></span>
+            <span alt="" class="type">Official Ball<span class="visuallyHidden">Nike</span></span>
+        </a>
+    </li>
+    <li>
+        <a href="http://www.tagheuer.com/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" target="_blank">
+            <span alt="" class="large icn sponsor-footer-tag"></span>
+            <span alt="" class="small icn sponsor-footer-tag-sm"></span>
+            <span alt="" class="type">Official Timekeeper<span class="visuallyHidden">TAG Heuer</span></span>
+        </a>
+    </li>
+    <li>
+        <a href="http://www.sporting-id.com/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" target="_blank">
+            <span alt="" class="large icn sponsor-footer-sporting"></span>
+            <span alt="" class="small icn sponsor-footer-sporting-sm"></span>
+            <span alt="" class="type">Official Licensee<span class="visuallyHidden">Sporting ID</span></span>
+        </a>
+    </li>
+    <li>
+        <a href="https://www.toppsdirect.com/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" target="_blank">
+            <span alt="" class="large icn sponsor-footer-topps"></span>
+            <span alt="" class="small icn sponsor-footer-topps-sm"></span>
+            <span alt="" class="type">Official Licensee<span class="visuallyHidden">Topps</span></span>
+        </a>
+    </li>
+            </ul>
+        </div>
+
+<div class="footerContent">
+    <div class="wrapper">
+            <div class="footerCol double">
+    <h3 class="subHeader">Premier League</h3>
+                    <ul role="menu">
+                            <li>        <a href="https://www.premierleague.com/" target="_self" role="menuitem">
+            <span class=" link">Home</span>
+        </a>
+</li>
+                            <li>        <a href="https://www.premierleague.com/fixtures" target="_self" role="menuitem">
+            <span class=" link">Fixtures</span>
+        </a>
+</li>
+                            <li>        <a href="https://www.premierleague.com/results" target="_self" role="menuitem">
+            <span class=" link">Results</span>
+        </a>
+</li>
+                            <li>        <a href="https://www.premierleague.com/tables" target="_self" role="menuitem">
+            <span class=" link">Tables</span>
+        </a>
+</li>
+                            <li>        <a href="https://www.premierleague.com/broadcast-schedules" target="_self" role="menuitem">
+            <span class=" link">Broadcast</span>
+        </a>
+</li>
+                            <li>        <a href="https://www.premierleague.com/tickets" target="_self" role="menuitem">
+            <span class=" link">Tickets</span>
+        </a>
+</li>
+                            <li>        <a href="https://www.premierleague.com/clubs" target="_self" role="menuitem">
+            <span class=" link">Clubs</span>
+        </a>
+</li>
+                            <li>        <a href="https://www.premierleague.com/players" target="_self" role="menuitem">
+            <span class=" link">Players</span>
+        </a>
+</li>
+                            <li>        <a href="https://www.premierleague.com/managers" target="_self" role="menuitem">
+            <span class=" link">Managers</span>
+        </a>
+</li>
+                            <li>        <a href="https://www.premierleague.com/news" target="_self" role="menuitem">
+            <span class=" link">News</span>
+        </a>
+</li>
+                            <li>        <a href="https://www.premierleague.com/social" target="_self" role="menuitem">
+            <span class=" link">Social</span>
+        </a>
+</li>
+                            <li>        <a href="https://www.premierleague.com/youth" target="_self" role="menuitem">
+            <span class=" link">Youth</span>
+        </a>
+</li>
+                            <li>        <a href="https://www.premierleague.com/history" target="_self" role="menuitem">
+            <span class=" link">History</span>
+        </a>
+</li>
+                            <li>        <a href="https://www.premierleague.com/referees" target="_self" role="menuitem">
+            <span class=" link">Referees</span>
+        </a>
+</li>
+                    </ul>
+            </div>
+            <div class="footerCol ">
+    <h3 class="subHeader">Fantasy</h3>
+                    <ul role="menu">
+                            <li>        <a href="https://fantasy.premierleague.com/" target="_blank" role="menuitem">
+            <span class=" link">Home</span>
+            <span class="icn external-sm-ter"></span>
+        </a>
+</li>
+                            <li>        <a href="https://fantasy.premierleague.com/a/team/my" target="_blank" role="menuitem">
+            <span class=" link">My Team</span>
+            <span class="icn external-sm-ter"></span>
+        </a>
+</li>
+                            <li>        <a href="https://fantasy.premierleague.com/a/squad/transfers" target="_blank" role="menuitem">
+            <span class=" link">Transfers</span>
+            <span class="icn external-sm-ter"></span>
+        </a>
+</li>
+                            <li>        <a href="https://fantasy.premierleague.com/a/leagues/main" target="_blank" role="menuitem">
+            <span class=" link">Leagues</span>
+            <span class="icn external-sm-ter"></span>
+        </a>
+</li>
+                            <li>        <a href="https://fantasy.premierleague.com/a/fixtures" target="_blank" role="menuitem">
+            <span class=" link">Fixtures</span>
+            <span class="icn external-sm-ter"></span>
+        </a>
+</li>
+                            <li>        <a href="https://fantasy.premierleague.com/a/statistics/total_points" target="_blank" role="menuitem">
+            <span class=" link">Statistics</span>
+            <span class="icn external-sm-ter"></span>
+        </a>
+</li>
+                            <li>        <a href="https://fantasy.premierleague.com/the-scout" target="_blank" role="menuitem">
+            <span class=" link">The Scout</span>
+            <span class="icn external-sm-ter"></span>
+        </a>
+</li>
+                    </ul>
+            </div>
+            <div class="footerCol ">
+    <h3 class="subHeader">Stats</h3>
+                    <ul role="menu">
+                            <li>        <a href="https://www.premierleague.com/stats" target="_self" role="menuitem">
+            <span class=" link">Dashboard</span>
+        </a>
+</li>
+                            <li>        <a href="https://www.premierleague.com/stats/top/players/goals?se=54" target="_self" role="menuitem">
+            <span class=" link">Player Stats</span>
+        </a>
+</li>
+                            <li>        <a href="https://www.premierleague.com/stats/top/clubs/wins?se=54" target="_self" role="menuitem">
+            <span class=" link">Club Stats</span>
+        </a>
+</li>
+                            <li>        <a href="https://www.premierleague.com/stats/all-time" target="_self" role="menuitem">
+            <span class=" link">All-time Stats</span>
+        </a>
+</li>
+                            <li>        <a href="https://www.premierleague.com/stats/head-to-head" target="_self" role="menuitem">
+            <span class=" link">Head-to-Head</span>
+        </a>
+</li>
+                            <li>        <a href="https://www.premierleague.com/stats/awards" target="_self" role="menuitem">
+            <span class=" link">Awards</span>
+        </a>
+</li>
+                    </ul>
+            </div>
+            <div class="footerCol ">
+    <h3 class="subHeader">Video</h3>
+                    <ul role="menu">
+                            <li>        <a href="https://www.premierleague.com/video" target="_self" role="menuitem">
+            <span class=" link">Latest Videos</span>
+        </a>
+</li>
+                    </ul>
+            </div>
+            <div class="footerCol ">
+    <h3 class="subHeader">Communities</h3>
+                    <ul role="menu">
+                            <li>        <a href="https://www.premierleague.com/communities" target="_self" role="menuitem">
+            <span class=" link">Latest</span>
+        </a>
+</li>
+                            <li>        <a href="https://www.premierleague.com/communities/programmes" target="_self" role="menuitem">
+            <span class=" link">Programmes</span>
+        </a>
+</li>
+                            <li>        <a href="https://www.premierleague.com/communities/PLKicksheroes" target="_self" role="menuitem">
+            <span class=" link">PL Kicks Heroes</span>
+        </a>
+</li>
+                            <li>        <a href="https://www.premierleague.com/communities/strategy" target="_self" role="menuitem">
+            <span class=" link">Strategy</span>
+        </a>
+</li>
+                    </ul>
+            </div>
+            <div class="footerCol double">
+    <h3 class="subHeader">More</h3>
+                    <ul role="menu">
+                            <li>        <a href="https://www.premierleague.com/photos" target="_self" role="menuitem">
+            <span class=" link">Photos</span>
+        </a>
+</li>
+                            <li>        <a href="https://www.premierleague.com/transfers" target="_self" role="menuitem">
+            <span class=" link">Transfers</span>
+        </a>
+</li>
+                            <li>        <a href="https://www.premierleague.com/partners" target="_self" role="menuitem">
+            <span class=" link">Partners</span>
+        </a>
+</li>
+                            <li>        <a href="https://www.premierleague.com/nike-ball-hub" target="_self" role="menuitem">
+            <span class=" link">Nike Ball Hub</span>
+        </a>
+</li>
+                            <li>        <a href="https://www.premierleague.com/about" target="_self" role="menuitem">
+            <span class=" link">About</span>
+        </a>
+</li>
+                            <li>        <a href="https://www.premierleague.com/publications" target="_self" role="menuitem">
+            <span class=" link">Publications</span>
+        </a>
+</li>
+                            <li>        <a href="http://stories.premierleague.com/" target="_blank" role="menuitem">
+            <span class=" link">Inspiring Stories</span>
+            <span class="icn external-sm-ter"></span>
+        </a>
+</li>
+                            <li>        <a href="https://www.premierleague.com/fan-panel" target="_self" role="menuitem">
+            <span class=" link">Fan Panel</span>
+        </a>
+</li>
+                            <li>        <a href="https://www.premierleague.com/legal" target="_self" role="menuitem">
+            <span class=" link">Legal</span>
+        </a>
+</li>
+                            <li>        <a href="https://www.premierleague.com/contact" target="_self" role="menuitem">
+            <span class=" link">Contact</span>
+        </a>
+</li>
+                    </ul>
+            </div>
+            <div class="footerCol ">
+    <h3 class="subHeader">Social</h3>
+                    <ul role="menu">
+                            <li>        <a href="https://www.facebook.com/premierleague" target="_blank" role="menuitem">
+            <span class=" link">PL on Facebook</span>
+            <span class="icn external-sm-ter"></span>
+        </a>
+</li>
+                            <li>        <a href="https://twitter.com/premierleague" target="_blank" role="menuitem">
+            <span class=" link">PL on Twitter</span>
+            <span class="icn external-sm-ter"></span>
+        </a>
+</li>
+                            <li>        <a href="https://twitter.com/OfficialFPL" target="_blank" role="menuitem">
+            <span class=" link">FPL on Twitter</span>
+            <span class="icn external-sm-ter"></span>
+        </a>
+</li>
+                            <li>        <a href="https://twitter.com/PLCommunities" target="_blank" role="menuitem">
+            <span class=" link">PL Communities on Twitter</span>
+            <span class="icn external-sm-ter"></span>
+        </a>
+</li>
+                            <li>        <a href="https://twitter.com/PLYouth" target="_blank" role="menuitem">
+            <span class=" link">PL Youth on Twitter</span>
+            <span class="icn external-sm-ter"></span>
+        </a>
+</li>
+                            <li>        <a href="https://www.instagram.com/premierleague" target="_blank" role="menuitem">
+            <span class=" link">PL on Instagram</span>
+            <span class="icn external-sm-ter"></span>
+        </a>
+</li>
+                    </ul>
+            </div>
+    </div>
+</div>
+    <div class="footerCorporate" data-script="pl_footer" data-widget="footer-corporate">
+        <div class="wrapper col-12">
+            <ul role="menu">
+                        <li>
+                                <strong class="">© PREMIER LEAGUE 2017</strong>
+                        </li>
+                        <li>
+                                <a href="https://www.premierleague.com/modern-slavery-statement" class="" role="menuitem">Modern Slavery Statement</a>
+                        </li>
+                        <li>
+                                <a href="https://www.premierleague.com/terms-and-conditions" class="" role="menuitem">Terms &amp; Conditions</a>
+                        </li>
+                        <li>
+                                <a href="https://www.premierleague.com/privacy-policy" class="" role="menuitem">Privacy Policy</a>
+                        </li>
+                        <li>
+                                <a href="https://www.premierleague.com/cookie-policy" class="" role="menuitem">Cookie Policy</a>
+                        </li>
+                        <li>
+                                <a href="https://www.premierleague.com/#" class="backToTopContainer" role="menuitem">Back To Top</a>
+                        </li>
+            </ul>
+            <div class="official"><a href="https://www.premierleague.com/" class="icn pl-logo-corporate"></a></div>
+        </div>
+    </div>
+
+</footer>
+
+
+<script src="search%20results_files/pulse.js"></script>
+<script src="search%20results_files/main.js"></script>
+<script src="search%20results_files/common.js"></script>
+
+<script type="text/javascript" src="search%20results_files/pl_global-header.js"></script><script type="text/javascript" src="search%20results_files/pl_search.js"></script><script type="text/javascript" src="search%20results_files/pl_gallery.js"></script><script type="text/javascript" src="search%20results_files/pl_video-player.js"></script><script type="text/javascript" src="search%20results_files/pl_footer.js"></script><script data-player="plVideoModal" src="search%20results_files/index.js"></script></body></html>
