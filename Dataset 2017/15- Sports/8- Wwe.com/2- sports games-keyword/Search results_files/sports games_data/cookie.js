@@ -1,0 +1,1 @@
+window.parent.googletag.impl.pubads.setCookieInfo({"_cookies_":[{"_value_":"ID=7f909049066f6e91:T=1486966890:S=ALNI_MbjBkiSqAnJGL1EHBiN2S8hhQEEbg","_expires_":1550038890,"_path_":"/","_domain_":"wwe.com"}]});
