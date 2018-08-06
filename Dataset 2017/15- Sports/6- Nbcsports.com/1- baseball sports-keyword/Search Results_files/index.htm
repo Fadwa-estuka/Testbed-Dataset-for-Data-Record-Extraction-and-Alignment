@@ -1,0 +1,86 @@
+<!-- NBC teamcity test -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<meta charset="UTF-8">
+    <meta name="google" content="notranslate">
+    <meta http-equiv="Content-Language" content="en_US">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>NBC Sports Ticker</title>
+	
+	<!-- Style includes -->
+	
+	<link rel="stylesheet" href="index_data/sports-ticker.css" type="text/css" title="ticker" charset="utf-8">
+	<!--scripts -->
+	<script type="text/javascript" src="index_data/jquery.js"></script>
+	
+	<script type="text/javascript" src="index_data/nbc.js"></script>
+	<script type="text/javascript">
+		var shsMSNBCTicker;
+		var shsTelemundoTicker = null;
+		var _g_region  = 'default';
+		$(document).ready(function() {
+			var findSports = new RegExp('[?&]sports=([^&]*)','i');
+			var showSports = "MLB|NFL|NBA|NHL|CFB|CBK|NASCAR|FORM1|GOLF|MLS|EPL|CYCLING";
+			if (location.search.search(findSports) >= 0) {
+				var queryArr = location.search.match(findSports);
+				showSports = decodeURIComponent(queryArr[1]);
+			}
+			//console.log((showSports))
+			var findWidth = new RegExp('[?&]width=([^&]*)','i');
+			var useWidth = '100%';
+			if (location.search.search(findWidth) >= 0) {
+				var queryArr = location.search.match(findWidth);
+				useWidth = queryArr[1];
+			}
+			showSports = showSports.replace(/[|,]/g, "%7C");
+			
+			
+			
+			shsMSNBCTicker = new SHS.Ticker({ 
+				width: useWidth,
+				sports: showSports,
+				path: "http://scores.nbcsports.com/ticker/",
+				container: $('.si-nbcScrlTkrWrp')
+			});
+			
+		});
+	</script>
+	<!-- base href="http://scores.nbcsports.com/score_ticker/index.html?sports=NHL%7CEPL%7CNBA%7CCBK%7CGOLF%7CNASCAR%7CMLB%7CCFB%7CNFL%7CFORM1%7CMLS" -->
+</head>
+	<body>
+		<div class="si-nbcMainWrp si-tickerNBC">
+		<div class="si-nbcDv">
+			
+			<div class="si-nbcSelectSportsPanel open" style="display: none;">
+			<div id="crazy" class="frame crazy" style="overflow: hidden;">
+				<ul class="clearfix" style="transform: translateZ(0px); width: 729px;"><li data-sport="NHL" class="ss-nhl si-sports active">NHL</li><li data-sport="EPL" class="ss-epl si-sports">PL</li><li data-sport="NBA" class="ss-nba si-sports">NBA</li><li data-sport="CBK" class="ss-cbk si-sports">CBK</li><li data-sport="GOLF" class="ss-golf si-sports">GOLF</li><li data-sport="NASCAR" class="ss-nascar si-sports">NASCAR</li><li data-sport="MLB" class="ss-mlb si-sports">MLB</li><li data-sport="CFB" class="ss-cfb si-sports">CFB</li><li data-sport="NFL" class="ss-nfl si-sports">NFL</li><li data-sport="FORM1" class="ss-form1 si-sports">F1</li><li data-sport="MLS" class="ss-mls si-sports">MLS</li></ul>			
+			</div>
+			<div class="scrollbar"><div class="handle" style="transform: translateZ(0px) translateX(0px); width: 320px;"><div class="mousearea"></div></div></div>
+			</div>
+			
+			<div class="si-nbcSelectDay">
+				<span class="firstChild">Select Day</span>
+				<span class="secondChild">
+					<span class="si-SelectDayArwLft prdLft" style="visibility: visible;"></span>
+					<span class="ss-prdCont"><span class="ss-prdWrp" style="width: 150px; left: -50px;"><span id="gameDay0" class="si-SelectDayMid" style="width:50px;"><span>Sat</span></span><span id="gameDay1" class="si-SelectDayMid selected" style="width:50px;"><span>Sun</span></span><span id="gameDay2" class="si-SelectDayMid" style="width:50px;"><span>Mon</span></span></span></span>
+					
+					<span class="si-SelectDayArwRgt prdRgt" style="visibility: visible;"></span>
+				</span>
+			</div>
+			<div class="si-nbcSelectSport">
+				<span class="firstChild">Select Sport</span>
+				<span class="secondChild">
+					 <span class="si-nbcSelectSportMid">NHL</span>
+					 <span class="si-nbcSelectSportArw"></span>
+				 </span>
+			</div>
+			<div class="si-nbcScrlTkrWrp">
+				 <div class="si-nbcScrlHiddenAra"><div class="si-invbtn" style=""></div><div class="si-arrowLft lftArrow" style="visibility: hidden;"></div><div class="si-arrowRgt rgtArrow"></div><div class="swiper-container si-tickerScrlDv"><div style="left: 0px; padding-left: 0px; padding-right: 0px; width: 1446px; height: 80px;" class="si-nbcScrlTkrDv swiper-wrapper"><div class="si-nbcScrlTkrBx swiper-slide swiper-slide-visible swiper-slide-active" data-gamecode="2017021211" data-matchnode="0"><a href="http://scores.nbcsports.com/nhl/recap.asp?g=2017021211" target="_blank"><div class="si-nbcFinal "><div class="si-nbcTkrBx1"><span class="firstChild"><img alt="" src="index_data/Sharks.png" style="width:100%;height:auto;"></span><span class="secondChild">SJ</span></div><div class="si-nbcTkrBx2 "><span class="firstChild">4</span><span class="secondChild">Final</span><span class="thirdChild">1</span></div><div class="si-nbcTkrBx3"><span class="firstChild"><img alt="" src="index_data/Devils.png" style="width:100%;height:auto;"></span><span class="secondChild">NJ</span></div></div></a></div><div class="si-nbcScrlTkrBx swiper-slide swiper-slide-visible" data-gamecode="2017021230" data-matchnode="1"><a href="http://scores.nbcsports.com/nhl/recap.asp?g=2017021230" target="_blank"><div class="si-nbcFinal "><div class="si-nbcTkrBx1"><span class="firstChild"><img alt="" src="index_data/RedWings.png" style="width:100%;height:auto;"></span><span class="secondChild">DET</span></div><div class="si-nbcTkrBx2 "><span class="firstChild">3</span><span class="secondChild">Final<span class="span3"><img alt="" src="index_data/nbc.png"></span></span><span class="thirdChild">6</span></div><div class="si-nbcTkrBx3"><span class="firstChild"><img alt="" src="index_data/Wild.png" style="width:100%;height:auto;"></span><span class="secondChild">MIN</span></div></div></a></div><div class="si-nbcScrlTkrBx swiper-slide swiper-slide-visible" data-gamecode="2017021212" data-matchnode="2"><a href="http://scores.nbcsports.com/nhl/recap.asp?g=2017021212" target="_blank"><div class="si-nbcFinal "><div class="si-nbcTkrBx1"><span class="firstChild"><img alt="" src="index_data/Avalanche.png" style="width:100%;height:auto;"></span><span class="secondChild">COL</span></div><div class="si-nbcTkrBx2 "><span class="firstChild">1</span><span class="secondChild">Final</span><span class="thirdChild">5</span></div><div class="si-nbcTkrBx3"><span class="firstChild"><img alt="" src="index_data/Islanders.png" style="width:100%;height:auto;"></span><span class="secondChild">NYI</span></div></div></a></div><div class="si-nbcScrlTkrBx swiper-slide swiper-slide-visible" data-gamecode="2017021227" data-matchnode="3"><a href="http://scores.nbcsports.com/nhl/recap.asp?g=2017021227" target="_blank"><div class="si-nbcFinal "><div class="si-nbcTkrBx1"><span class="firstChild"><img alt="" src="index_data/Stars.png" style="width:100%;height:auto;"></span><span class="secondChild">DAL</span></div><div class="si-nbcTkrBx2 "><span class="firstChild">3</span><span class="secondChild">Final</span><span class="thirdChild">5</span></div><div class="si-nbcTkrBx3"><span class="firstChild"><img alt="" src="index_data/Predators.png" style="width:100%;height:auto;"></span><span class="secondChild">NSH</span></div></div></a></div><div class="si-nbcScrlTkrBx swiper-slide" data-gamecode="2017021201" data-matchnode="4"><a href="http://scores.nbcsports.com/nhl/boxscore.asp?gamecode=2017021201" target="_blank"><div class="si-nbcFinal "><div class="si-nbcTkrBx1"><span class="firstChild"><img alt="" src="index_data/Canadiens.png" style="width:100%;height:auto;"></span><span class="secondChild">MON</span></div><div class="si-nbcTkrBx2 "><span class="firstChild">0</span><span class="secondChild">Final<span class="span3"><img alt="" src="index_data/nbcsn.png"></span></span><span class="thirdChild">4</span></div><div class="si-nbcTkrBx3"><span class="firstChild"><img alt="" src="index_data/Bruins.png" style="width:100%;height:auto;"></span><span class="secondChild">BOS</span></div></div></a></div><div class="si-nbcScrlTkrBx swiper-slide" data-gamecode="2017021202" data-matchnode="5"><a href="http://scores.nbcsports.com/nhl/recap.asp?g=2017021202" target="_blank"><div class="si-nbcFinal "><div class="si-nbcTkrBx1"><span class="firstChild"><img alt="" src="index_data/Canucks.png" style="width:100%;height:auto;"></span><span class="secondChild">VAN</span></div><div class="si-nbcTkrBx2 "><span class="firstChild">4</span><span class="secondChild">Final</span><span class="thirdChild">2</span></div><div class="si-nbcTkrBx3"><span class="firstChild"><img alt="" src="index_data/Sabres.png" style="width:100%;height:auto;"></span><span class="secondChild">BUF</span></div></div></a></div></div></div></div></div>
+		</div>
+	</div>
+	​
+​​​​
+</body></html>
